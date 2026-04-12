@@ -1,0 +1,28 @@
+\subsection{Steerability}
+\label{sec:steerable}
+\label{sec:steering}
+We now shift our focus from measuring the default alignment of LM opinions with those of various demographics groups \emph{without} prompting, to studying their steerability \emph{with} group-specific prompting. This is especially important in settings such as personalization, where
+a key measure of performance is an LM's ability to adapt to represent the opinion of various demographic groups.
+
+\paragraph{The metric.} We measure steerability as the average opinion alignment, across dataset questions, between an LM and a particular demographic group $G$ -- where the model is prompted with group information in its context.
+Since our goal is to test whether a model \emph{can} be steered toward a group, we consider three prompting strategies---\textsc{QA},\textsc{BIO},\textsc{PORTRAY} (see Section~\ref{sec:prompting})---for each question and choose the one that works best.
+Concretely, we measure steerability as:
+
+\begin{equation}
+    \steer^{G}_m(Q) =  \frac{1}{|Q|} \sum_{q \in Q} \max_{c_G \in \small{[\textsc{QA},\textsc{BIO},\textsc{POR}]}} \simi(D_m(q; c_G), D_{G}(q))  \nonumber
+\end{equation}
+where $D_m(q; c_G)$ denotes the LM opinion distribution conditioned on the group-specific context $c_G$.
+A higher $\steer^{G}_m$ score indicates that the model is better aligned to the opinions of the given group.
+Note that unlike default subgroup representativeness, an LM's steerability could be simultaneously high for multiple (disagreeing) groups.
+In fact, in many cases, we might want disparities in the default subgroup representativeness scores of an LM to be remedied by steering.
+
+
+\paragraph{Steering does not solve opinion misalignment.}
+
+We attempt to steer current LMs towards one of 22 demographic groups (\eg, Republican, Asian, Jewish) listed in Appendix Table~\ref{tab:steer_groups} on a subset $Q_S$ of 500 highly contentious questions from \bname.
+In Figure~\ref{fig:steerability_overall}, we compare different LMs in terms of their ability to match the opinions of a subgroup on these questions, by default and with steering ($\steer^{G}_m(Q_S)$ from Section~\ref{sec:rep}).
+
+Most LMs (with the exception of \model{ada}) do become somewhat more representative of a subpopulation post-steering.
+However, none of the disparities in group opinion alignment of an LM disappear after steering, with \model{text-davinci-002} showing the smallest post-steering alignment gap across groups. In most cases, we see the representativeness of all groups improving by a constant factor---indicating that the LM still does better on some groups than others.
+In Appendix Figure~\ref{figapp:steerability_group}, we visualize which LMs are most effective at adapting towards a particular group: \eg, \model{j1-grande-v2-beta} for Southerners and \model{text-davinci-002} for liberals.
+

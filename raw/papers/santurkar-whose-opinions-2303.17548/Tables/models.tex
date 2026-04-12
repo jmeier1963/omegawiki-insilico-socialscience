@@ -1,0 +1,28 @@
+\begin{table*}
+
+    \caption{LLMs we evaluate in our study. In some cases, we attempt to report size/training details of models to the best of our ability as these are often not clearly disclosed.}
+    \label{tab:models}
+    \vskip 0.15in
+    \renewcommand{\arraystretch}{1.5}
+    \begin{center}
+    \begin{small}
+
+        \begin{tabular}{lllp{8cm}}
+            \toprule
+    Model name &  Provider & Size & Notes \\
+            \midrule
+            j1-Grande & AI21 Labs & 17B & Auto-regressive model from \citet{lieber2021jurassic} \\
+            j1-Jumbo  & AI21 Labs & 178B & Auto-regressive model from \citet{lieber2021jurassic} \\
+            j1-Grande v2 beta & AI21 Labs & 17B &  Instruct tuned version of j1-Grande, trained specifically to handle zero-shot prompts  \\
+            ada & OpenAI & 350M & Base GPT-3 model from \citet{Brown20} \\
+            davinci & OpenAI & 175B & Base GPT-3 model from \citet{Brown20} \\
+            text-davinci-001 & OpenAI & 175B & Human-feedback model~\citep{ouyang2022training}; trained via supervised fine-tuning on human-written demonstrations. \\
+            text-davinci-002 & OpenAI & 175B & Human-feedback model based on code-davinci-002~\citep{ouyang2022training}; trained via supervised fine-tuning on human-written demonstrations. \\
+            text-davinci-003 & OpenAI & 175B & Improved version of text-davinci-002~\citep{ouyang2022training} \\
+            \bottomrule
+            \end{tabular}
+    \end{small}
+ \end{center}    
+ \vskip -0.1in
+ \end{table*}
+ 

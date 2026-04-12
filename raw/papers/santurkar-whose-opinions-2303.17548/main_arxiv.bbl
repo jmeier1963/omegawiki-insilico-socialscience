@@ -1,0 +1,368 @@
+ \newcommand*{\annalstat}{Annals of Statistics} \newcommand*{\jasa}{Journal of
+  the American Statistical Association (JASA)} \newcommand*{\tacl}{Transactions
+  of the Association for Computational Linguistics (TACL)}
+  \newcommand*{\coling}{International Conference on Computational Linguistics
+  (COLING)} \newcommand*{\acl}{Association for Computational Linguistics (ACL)}
+  \newcommand*{\naacl}{North American Association for Computational Linguistics
+  (NAACL)} \newcommand*{\aclijcnlp}{Association for Computational Linguistics
+  and International Joint Conference on Natural Language Processing
+  (ACL-IJCNLP)} \newcommand*{\emnlpconll}{Empirical Methods in Natural Language
+  Processing and Computational Natural Language Learning (EMNLP/CoNLL)}
+  \newcommand*{\emnlpijnlp}{Empirical Methods in Natural Language Processing
+  and International Joint Conference on Natural Language Processing
+  (EMNLP-IJCNLP)} \newcommand*{\emnlp}{Empirical Methods in Natural Language
+  Processing} \newcommand*{\hltnaacl}{Human Language Technology and North
+  American Association for Computational Linguistics (HLT/NAACL)}
+  \newcommand*{\eacl}{European Association for Computational Linguistics
+  (EACL)}  \newcommand*{\icml}{International Conference on Machine Learning
+  (ICML)} \newcommand*{\neurips}{Advances in Neural Information Processing
+  Systems (NeurIPS)} \newcommand*{\nips}{Advances in Neural Information
+  Processing Systems} \newcommand*{\iclr}{International Conference on Learning
+  Representations (ICLR)} \newcommand*{\iclrworkshop}{International Conference
+  on Learning Representations Workshop (ICLR)} \newcommand*{\jmlr}{Journal of
+  Machine Learning Research (JMLR)} \newcommand*{\fatml}{Conference on
+  Fairness, Accountability, and Transparency} \newcommand*{\aistats}{Artificial
+  Intelligence and Statistics (AISTATS)} \newcommand*{\cvpr}{Conference on
+  Computer Vision and Pattern Recognition (CVPR)}
+  \newcommand*{\iccv}{International Conference on Computer Vision (ICCV)}
+  \newcommand*{\icpr}{International Conference on Pattern Recognition (ICPR)}
+  \newcommand*{\eccv}{European Conference on Computer Vision (ECCV)}
+  \newcommand*{\uai}{Conference on Uncertainty in Artificial Intelligence
+  (UAI)}  \newcommand*{\ecai}{European Conference on Artificial Intelligence}
+  \newcommand*{\aaai}{AAAI Conference on Artificial Intelligence}
+  \newcommand*{\packdd}{Pacific-Asia Conference on Knowledge Discovery and Data
+  Mining} \newcommand*{\kdd}{International Conference on Knowledge Discovery
+  and Data Mining (KDD)} \newcommand*{\neurcom}{Neural Computation}
+  \newcommand*{\msml}{Mathematical and Scientific Machine Learning Conference
+  (MSML)} \newcommand*{\ijcnn}{International Joint Conference on Neural
+  Networks (IJCNN)} \newcommand*{\ieeesigproc}{IEEE Transactions on Signal
+  Processing} \newcommand*{\ieeeec}{IEEE Transactions on Electronic Computers}
+  \newcommand*{\procieee}{Proceedings of the IEEE}
+  \newcommand*{\pnas}{Proceedings of the National Academy of Sciences}
+  \newcommand*{\chiconf}{Conference on Human Factors in Computing Systems
+  (CHI)} \newcommand*{\ieeecp}{IEEE Symposium on Security and Privacy (SP)}
+  \newcommand*{\stoc}{Symposium on Theory of Computing (STOC)}
+  \newcommand*{\pods}{Symposium on Principles of Database Systems (PODS)}
+  \newcommand*{\colt}{Conference on Learning Theory (COLT)}
+  \newcommand*{\www}{The World Wide Web Conference (WWW)}
+  \newcommand*{\soda}{Symposium on Discrete Algorithms (SODA)}
+  \newcommand*{\focs}{Symposium on Foundations of Computer Science (FOCS)}
+  \newcommand*{\acm}{Communications of the Association for Computing Machinery
+  (ACM)} \newcommand*{\ieeeaccess}{IEEE Access}
+  \newcommand*{\ijcv}{International Journal of Computer Vision (IJCV)}
+  \newcommand*{\ieeetpami}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence} \newcommand*{\ieeetit}{IEEE Transactions on Information Theory}
+  \newcommand*{\alt}{Conference on Algorithmic Learning Theory (ALT)}
+  \newcommand*{\cocoon}{International Computing and Combinatorics Conference
+  (COCOON)} \newcommand*{\arxiv}[1]{arXiv preprint arXiv:#1}
+\begin{thebibliography}{43}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aher et~al.(2022)Aher, Arriaga, and Kalai]{aher2022using}
+Aher, G., Arriaga, R., and Kalai, A.
+\newblock Using large language models to simulate multiple humans.
+\newblock \emph{arXiv preprint arXiv:2208.10264}, 2022.
+
+\bibitem[AI21Labs(2022)]{ai21instructbeta}
+AI21Labs.
+\newblock {Jurassic-1 Instruct [beta]}.
+\newblock \url{https://docs.ai21.com/docs/jurassic-1-instruct-beta}, 2022.
+
+\bibitem[Alm(2011)]{alm2011subjective}
+Alm, C.
+\newblock Subjective natural language problems: Motivations, applications,
+  characterizations, and implications.
+\newblock In \emph{Proceedings of the 49th Annual Meeting of the Association
+  for Computational Linguistics: Human Language Technologies}, 2011.
+
+\bibitem[Argyle et~al.(2022)Argyle, Busby, Fulda, Gubler, Rytting, and
+  Wingate]{argyle2022out}
+Argyle, L.~P., Busby, E.~C., Fulda, N., Gubler, J., Rytting, C., and Wingate,
+  D.
+\newblock Out of one, many: Using language models to simulate human samples.
+\newblock \emph{arXiv preprint arXiv:2209.06899}, 2022.
+
+\bibitem[Askell et~al.(2021)Askell, Bai, Chen, Drain, Ganguli, Henighan, Jones,
+  Joseph, en, DasSarma, et~al.]{askell2021general}
+Askell, A., Bai, Y., Chen, A., Drain, D., Ganguli, D., Henighan, T., Jones, A.,
+  Joseph, N., en, B.~M., DasSarma, N., et~al.
+\newblock A general language assistant as a laboratory for alignment.
+\newblock \emph{arXiv preprint arXiv:2112.00861}, 2021.
+
+\bibitem[Bai et~al.(2022)Bai, Kadavath, Kundu, Askell, Kernion, Jones, Chen,
+  Goldie, Mirhoseini, McKinnon, et~al.]{bai2022constitutional}
+Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., Chen, A.,
+  Goldie, A., Mirhoseini, A., McKinnon, C., et~al.
+\newblock Constitutional ai: Harmlessness from ai feedback.
+\newblock \emph{arXiv preprint arXiv:2212.08073}, 2022.
+
+\bibitem[Berinsky(2017)]{berinsky2017measuring}
+Berinsky, A.
+\newblock Measuring public opinion with surveys.
+\newblock \emph{Annual review of political science}, 2017.
+
+\bibitem[Binz \& Schulz(2022)Binz and Schulz]{binz2022using}
+Binz, M. and Schulz, E.
+\newblock Using cognitive psychology to understand gpt-3.
+\newblock \emph{arXiv preprint arXiv:2206.14576}, 2022.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
+  Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess,
+  Clark, Berner, McCandlish, Radford, Sutskever, and Amodei]{Brown20}
+Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
+  Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
+  Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler,
+  D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray,
+  S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever,
+  I., and Amodei, D.
+\newblock Language models are few-shot learners.
+\newblock In \emph{\neurips}, 2020.
+
+\bibitem[Davani et~al.(2022)Davani, D{\'\i}az, and
+  Prabhakaran]{davani2022dealing}
+Davani, D., D{\'\i}az, M., and Prabhakaran, V.
+\newblock Dealing with disagreements: Looking beyond the majority vote in
+  subjective annotations.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  2022.
+
+\bibitem[De-Arteaga et~al.(2019)De-Arteaga, Romanov, Wallach, Chayes, Borgs,
+  Chouldechova, Geyik, Kenthapadi, and Kalai]{DeArteaga19}
+De-Arteaga, M., Romanov, A., Wallach, H., Chayes, J., Borgs, C., Chouldechova,
+  A., Geyik, S., Kenthapadi, K., and Kalai, A.~T.
+\newblock Bias in bios: A case study of semantic representation bias in a
+  high-stakes setting.
+\newblock In \emph{Conference on Fairness, Accountability, and Transparency},
+  FAT* '19, pp.\  120–128, New York, NY, USA, 2019. Association for Computing
+  Machinery.
+\newblock ISBN 9781450361255.
+
+\bibitem[Dhamala et~al.(2021)Dhamala, Sun, Kumar, Krishna, Pruksachatkun,
+  Chang, and Gupta]{Dhamala21}
+Dhamala, J., Sun, T., Kumar, V., Krishna, S., Pruksachatkun, Y., Chang, K., and
+  Gupta, R.
+\newblock {BOLD}: Dataset and metrics for measuring biases in open-ended
+  language generation.
+\newblock In \emph{ACM Conference on Fairness, Accountability, and
+  Transparency}, FAccT '21, pp.\  862–872, New York, NY, USA, 2021.
+  Association for Computing Machinery.
+\newblock ISBN 9781450383097.
+
+\bibitem[Ganguli et~al.(2022)Ganguli, Lovitt, Kernion, Askell, Bai, Kadavath,
+  Mann, Perez, Schiefer, Ndousse, et~al.]{ganguli2022red}
+Ganguli, D., Lovitt, L., Kernion, J., Askell, A., Bai, Y., Kadavath, S., Mann,
+  B., Perez, E., Schiefer, N., Ndousse, K., et~al.
+\newblock Red teaming language models to reduce harms: Methods, scaling
+  behaviors, and lessons learned.
+\newblock \emph{arXiv preprint arXiv:2209.07858}, 2022.
+
+\bibitem[Gao et~al.(2021)Gao, Tow, Biderman, Black, DiPofi, Foster, Golding,
+  Hsu, McDonell, Muennighoff, Phang, Reynolds, Tang, Thite, Wang, Wang, and
+  Zou]{eval-harness}
+Gao, L., Tow, J., Biderman, S., Black, S., DiPofi, A., Foster, C., Golding, L.,
+  Hsu, J., McDonell, K., Muennighoff, N., Phang, J., Reynolds, L., Tang, E.,
+  Thite, A., Wang, B., Wang, K., and Zou, A.
+\newblock A framework for few-shot language model evaluation, September 2021.
+\newblock URL \url{https://doi.org/10.5281/zenodo.5371628}.
+
+\bibitem[Glaese et~al.(2022)Glaese, McAleese, Trebacz, Aslanides, Firoiu,
+  Ewalds, Rauh, Weidinger, Chadwick, Thacker, et~al.]{glaese2022improving}
+Glaese, A., McAleese, N., Trebacz, M., Aslanides, J., Firoiu, V., Ewalds, T.,
+  Rauh, M., Weidinger, L., Chadwick, M., Thacker, P., et~al.
+\newblock Improving alignment of dialogue agents via targeted human judgements.
+\newblock \emph{arXiv preprint arXiv:2209.14375}, 2022.
+
+\bibitem[Gordon et~al.(2021)Gordon, Zhou, Patel, Hashimoto, and
+  Bernstein]{Gordon21}
+Gordon, M., Zhou, K., Patel, K., Hashimoto, T.~B., and Bernstein, M.
+\newblock The disagreement deconvolution: Bringing machine learning performance
+  metrics in line with reality.
+\newblock In \emph{\chiconf}, 2021.
+
+\bibitem[Gordon et~al.(2022)Gordon, Lam, Park, Patel, Hancock, Hashimoto, and
+  Bernstein]{Gordon22}
+Gordon, M., Lam, M., Park, J., Patel, K., Hancock, J., Hashimoto, T.~B., and
+  Bernstein, M.
+\newblock Jury learning: Integrating dissenting voices into machine learning
+  models.
+\newblock In \emph{\chiconf}, 2022.
+
+\bibitem[Goyal et~al.(2022)Goyal, Kivlichan, Rosen, and
+  Vasserman]{goyal2022your}
+Goyal, N., Kivlichan, I., Rosen, R., and Vasserman, L.
+\newblock Is your toxicity my toxicity? exploring the impact of rater identity
+  on toxicity annotation.
+\newblock \emph{Proceedings of the ACM on Human-Computer Interaction}, 2022.
+
+\bibitem[Guo et~al.(2017)Guo, Pleiss, Sun, and Weinberger]{Guo17}
+Guo, C., Pleiss, G., Sun, Y., and Weinberger, K.~Q.
+\newblock On calibration of modern neural networks.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, pp.\
+  1321--1330, 2017.
+
+\bibitem[Hartmann et~al.(2023)Hartmann, Schwenzow, and
+  Witte]{hartmann2023political}
+Hartmann, J., Schwenzow, J., and Witte, M.
+\newblock The political ideology of conversational ai: Converging evidence on
+  chatgpt's pro-environmental, left-libertarian orientation.
+\newblock \emph{arXiv preprint arXiv:2301.01768}, 2023.
+
+\bibitem[Hendrycks et~al.(2020)Hendrycks, Burns, Basart, Zou, Mazeika, Song,
+  and Steinhardt]{hendrycks2020measuring}
+Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., and
+  Steinhardt, J.
+\newblock Measuring massive multitask language understanding.
+\newblock \emph{arXiv preprint arXiv:2009.03300}, 2020.
+
+\bibitem[Henrich et~al.(2010)Henrich, Heine, and
+  Norenzayan]{henrich2010weirdest}
+Henrich, J., Heine, S., and Norenzayan, A.
+\newblock The weirdest people in the world?
+\newblock \emph{Behavioral and brain sciences}, 2010.
+
+\bibitem[Jiang et~al.(2020)Jiang, Xu, Araki, and Neubig]{jiang2020can}
+Jiang, F., Xu, F., Araki, J., and Neubig, G.
+\newblock How can we know what language models know?
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  2020.
+
+\bibitem[Jiang et~al.(2022)Jiang, Beeferman, Roy, and
+  Roy]{jiang2022communitylm}
+Jiang, H., Beeferman, D., Roy, B., and Roy, D.
+\newblock Communitylm: Probing partisan worldviews from language models.
+\newblock \emph{arXiv preprint arXiv:2209.07065}, 2022.
+
+\bibitem[Kambhatla et~al.(2022)Kambhatla, Stewart, and
+  Mihalcea]{kambhatla2022surfacing}
+Kambhatla, G., Stewart, I., and Mihalcea, R.
+\newblock Surfacing racial stereotypes through identity portrayal.
+\newblock In \emph{2022 ACM Conference on Fairness, Accountability, and
+  Transparency}, pp.\  1604--1615, 2022.
+
+\bibitem[Karra et~al.(2022)Karra, Nguyen, and Tulabandhula]{karra2022ai}
+Karra, S., Nguyen, S., and Tulabandhula, T.
+\newblock Ai personification: Estimating the personality of language models.
+\newblock \emph{arXiv preprint arXiv:2204.12000}, 2022.
+
+\bibitem[Liang et~al.(2022)Liang, Bommasani, Lee, Tsipras, Soylu, Yasunaga,
+  Zhang, Narayanan, Wu, Kumar, et~al.]{liang2022holistic}
+Liang, P., Bommasani, R., Lee, T., Tsipras, D., Soylu, D., Yasunaga, M., Zhang,
+  Y., Narayanan, D., Wu, Y., Kumar, A., et~al.
+\newblock Holistic evaluation of language models.
+\newblock \emph{arXiv preprint arXiv:2211.09110}, 2022.
+
+\bibitem[Lieber et~al.(2021)Lieber, Sharir, Lenz, and
+  Shoham]{lieber2021jurassic}
+Lieber, O., Sharir, O., Lenz, B., and Shoham, Y.
+\newblock Jurassic-1: Technical details and evaluation.
+\newblock \emph{White Paper. AI21 Labs}, 2021.
+
+\bibitem[Lourie et~al.(2021)Lourie, Bras, and Choi]{lourie2021scruples}
+Lourie, N., Bras, R.~L., and Choi, Y.
+\newblock Scruples: A corpus of community ethical judgments on 32,000 real-life
+  anecdotes.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2021.
+
+\bibitem[Nadeem et~al.(2020)Nadeem, Bethke, and Reddy]{nadeem2020stereoset}
+Nadeem, M., Bethke, A., and Reddy, S.
+\newblock Stereoset: Measuring stereotypical bias in pretrained language
+  models.
+\newblock \emph{arXiv preprint arXiv:2004.09456}, 2020.
+
+\bibitem[Ouyang et~al.(2022)Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin,
+  Zhang, Agarwal, Slama, Ray, et~al.]{ouyang2022training}
+Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., Zhang,
+  C., Agarwal, S., Slama, K., Ray, A., et~al.
+\newblock Training language models to follow instructions with human feedback.
+\newblock \emph{arXiv preprint arXiv:2203.02155}, 2022.
+
+\bibitem[Park et~al.(2022)Park, Popowski, Cai, Morris, Liang, and
+  Bernstein]{park2022social}
+Park, J.~S., Popowski, L., Cai, C., Morris, M.~R., Liang, P., and Bernstein,
+  M.~S.
+\newblock Social simulacra: Creating populated prototypes for social computing
+  systems.
+\newblock In \emph{{ACM} Symposium on User Interface Software and Technology},
+  2022.
+
+\bibitem[Pavlick \& Kwiatkowski(2019)Pavlick and
+  Kwiatkowski]{pavlick2019inherent}
+Pavlick, E. and Kwiatkowski, T.
+\newblock Inherent disagreements in human textual inferences.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  2019.
+
+\bibitem[Perez et~al.(2022{\natexlab{a}})Perez, Huang, Song, Cai, Ring,
+  Aslanides, Glaese, McAleese, and Irving]{perez2022red}
+Perez, E., Huang, S., Song, F., Cai, T., Ring, R., Aslanides, J., Glaese, A.,
+  McAleese, N., and Irving, G.
+\newblock Red teaming language models with language models.
+\newblock \emph{arXiv preprint arXiv:2202.03286}, 2022{\natexlab{a}}.
+
+\bibitem[Perez et~al.(2022{\natexlab{b}})Perez, Ringer,
+  Luko{\v{s}}i{\=u}t{\.e}, Nguyen, Chen, Heiner, Pettit, Olsson, Kundu,
+  Kadavath, et~al.]{perez2022discovering}
+Perez, E., Ringer, S., Luko{\v{s}}i{\=u}t{\.e}, K., Nguyen, K., Chen, E.,
+  Heiner, S., Pettit, C., Olsson, C., Kundu, S., Kadavath, S., et~al.
+\newblock Discovering language model behaviors with model-written evaluations.
+\newblock \emph{arXiv preprint arXiv:2212.09251}, 2022{\natexlab{b}}.
+
+\bibitem[{PewResearch}()]{pewwritingquestions}
+{PewResearch}.
+\newblock {Writing Survey Questions}.
+\newblock
+  \url{https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/}.
+
+\bibitem[Sap et~al.(2022)Sap, Swayamdipta, Vianna, Zhou, Choi, and
+  Smith]{Sap22}
+Sap, M., Swayamdipta, S., Vianna, L., Zhou, X., Choi, Y., and Smith, N.~A.
+\newblock Annotators with attitudes: How annotator beliefs and identities bias
+  toxic language detection.
+\newblock In \emph{\acl}, 2022.
+
+\bibitem[Saris \& Sniderman(2004)Saris and Sniderman]{saris2004studies}
+Saris, W. and Sniderman, P.
+\newblock \emph{Studies in public opinion: Attitudes, nonattitudes, measurement
+  error, and change}.
+\newblock Princeton University Press, 2004.
+
+\bibitem[Simmons(2022)]{simmons2022moral}
+Simmons, G.
+\newblock Moral mimicry: Large language models produce moral rationalizations
+  tailored to political identity.
+\newblock \emph{arXiv preprint arXiv:2209.12106}, 2022.
+
+\bibitem[Srivastava et~al.(2022)Srivastava, Rastogi, Rao, Shoeb, Abid, Fisch,
+  Brown, Santoro, Gupta, Garriga-Alonso, et~al.]{srivastava2022beyond}
+Srivastava, A., Rastogi, A., Rao, A., Shoeb, A., Abid, A., Fisch, A., Brown,
+  A., Santoro, A., Gupta, A., Garriga-Alonso, A., et~al.
+\newblock Beyond the imitation game: Quantifying and extrapolating the
+  capabilities of language models.
+\newblock \emph{arXiv preprint arXiv:2206.04615}, 2022.
+
+\bibitem[Uchendu et~al.(2021)Uchendu, Ma, Le, Zhang, and
+  Lee]{uchendu2021turingbench}
+Uchendu, A., Ma, Z., Le, T., Zhang, R., and Lee, D.
+\newblock Turingbench: A benchmark environment for turing test in the age of
+  neural text generation.
+\newblock \emph{arXiv preprint arXiv:2109.13296}, 2021.
+
+\bibitem[Xu et~al.(2021)Xu, Ju, Li, Boureau, Weston, and Dinan]{xu2021bot}
+Xu, J., Ju, D., Li, M., Boureau, Y., Weston, J., and Dinan, E.
+\newblock Bot-adversarial dialogue for safe conversational agents.
+\newblock In \emph{Proceedings of the 2021 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, 2021.
+
+\bibitem[Yan(2021)]{yan2021consequences}
+Yan, T.
+\newblock Consequences of asking sensitive questions in surveys.
+\newblock \emph{Annual Review of Statistics and Its Application}, 2021.
+
+\end{thebibliography}
