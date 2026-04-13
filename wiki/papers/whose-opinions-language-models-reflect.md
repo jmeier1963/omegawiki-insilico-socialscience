@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [opinion alignment, demographic representation, language model bias, public opinion surveys, steerability, OpinionQA, Wasserstein distance]
 domain: NLP
 code_url: "https://github.com/tatsu-lab/opinions_qa"
-cited_by: []
+cited_by: [beyond-static-responses-multi-agent-llm]
 ---
 
 ## Problem

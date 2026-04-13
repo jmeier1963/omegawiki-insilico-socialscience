@@ -5,12 +5,16 @@ status: supported
 confidence: 0.8
 tags: [llm-bias, opinion-alignment, demographic-representation, rlhf, evaluation]
 domain: NLP
-source_papers: [whose-opinions-language-models-reflect]
+source_papers: [whose-opinions-language-models-reflect, beyond-static-responses-multi-agent-llm]
 evidence:
   - source: whose-opinions-language-models-reflect
     type: supports
     strength: strong
     detail: "OpinionQA evaluation of 9 LMs shows misalignment with general US population on par with Democrat-Republican divide on climate change; RLHF-tuned models skew toward liberal/educated/high-income groups matching crowdworker demographics; elderly (65+), widowed, and high-religious-attendance groups are underrepresented by all models"
+  - source: beyond-static-responses-multi-agent-llm
+    type: supports
+    strength: weak
+    detail: "Framework survey reaffirms that RLHF-trained models produce homogenized viewpoints with reduced representational fidelity for underrepresented groups, citing this as a persistent challenge across all six agentic tiers"
 conditions: "Evaluated on US demographic groups via Pew ATP opinion surveys in multiple-choice format; RLHF-tuned models show stronger skew than base models; findings may not generalize to non-US populations or open-ended generation"
 date_proposed: 2026-04-12
 date_updated: 2026-04-12

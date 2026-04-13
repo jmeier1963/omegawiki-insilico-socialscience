@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for beyond-static-responses-multi-agent-llm: 1 matched existing, 1 new
+## [2026-04-13] ingest | concepts for beyond-static-responses-multi-agent-llm: 4 matched existing, 0 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/beyond-static-responses-multi-agent-llm | updated: concepts/llm-powered-agent-architecture, concepts/generative-agent-based-modeling, concepts/persona-conditioning, concepts/silicon-sampling, claims/llms-misrepresent-human-opinion-distributions | new: claims/multi-agent-llm-systems-enable-qualitatively

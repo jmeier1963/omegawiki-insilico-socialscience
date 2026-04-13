@@ -1,11 +1,11 @@
 ---
 title: "LLM-Powered Agent Architecture"
-aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture"]
+aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture", "agentic LLM system", "LLM agentic continuum"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, beyond-static-responses-multi-agent-llm]
 first_introduced: "2023"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [generative-agent-memory-stream, agent-reflection]
 ---
 
@@ -33,6 +33,7 @@ At each time step t:
 - **ReAct pattern**: interleaves reasoning traces and actions in a single prompt; no persistent external memory.
 - **Toolformer / function-calling agents**: LLM selects tools (APIs) to call; memory is typically ephemeral (in-context only).
 - **AutoGPT-style agents**: multi-step task decomposition with tool use; typically no social/behavioral simulation component.
+- **Six-tier agentic continuum** (Haase & Pokutta 2025): classifies LLM systems into L0 (tool) → L1 (role) → L2 (agent-like) → L3 (fully agentic) → L4 (multi-agent) → L5 (complex adaptive), each tier defined by functional thresholds (memory, autonomy, coordination, emergence) mapped to OODA loop phases.
 
 ## Comparison
 
@@ -59,6 +60,7 @@ Use when: (1) the agent must reason in open-ended natural language domains, (2) 
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — introduced the full generative agent architecture with memory stream, reflection, and planning
+- [[beyond-static-responses-multi-agent-llm]] — proposes a six-tier taxonomy classifying LLM agent architectures from stateless tools to complex adaptive systems, mapping each tier's architectural requirements
 
 ## My understanding
 

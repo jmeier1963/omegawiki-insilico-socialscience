@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [homo-silicus, llm-simulation, behavioral-economics, persona, social-preferences, status-quo-bias, prospect-theory, experimental-economics]
 domain: "NLP"
 code_url: "https://pypi.org/project/edsl/"
-cited_by: []
+cited_by: [beyond-static-responses-multi-agent-llm]
 ---
 
 ## Problem

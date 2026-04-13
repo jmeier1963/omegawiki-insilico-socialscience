@@ -3,7 +3,7 @@ title: "Persona Conditioning"
 aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents]
+key_papers: [large-language-models-simulated-economic-agents, beyond-static-responses-multi-agent-llm]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-12
 related_concepts: [homo-silicus]
