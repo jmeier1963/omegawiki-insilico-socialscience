@@ -1,11 +1,11 @@
 ---
 title: "Generative Agent Memory Stream"
-aliases: ["memory stream", "agent memory stream", "long-term agent memory", "memory retrieval scoring", "recency-importance-relevance retrieval"]
+aliases: ["memory stream", "agent memory stream", "long-term agent memory", "memory retrieval scoring", "recency-importance-relevance retrieval", "stream memory", "dual-stream memory", "event flow and perception flow"]
 tags: [agents, memory, retrieval, llm-agents, long-term-memory]
 maturity: emerging
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, agentsociety-large-scale-simulation-llm-driven]
 first_introduced: "2023"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [agent-reflection, llm-powered-agent-architecture]
 ---
 
@@ -32,6 +32,7 @@ score(m) = α_recency · recency(m) + α_importance · importance(m) + α_releva
 
 - **Hierarchical memory**: memory stream is complemented by reflections (higher-level inferences) stored back as memory objects, forming a tree structure.
 - **Planning entries**: plans are also stored as memory objects and retrieved alongside observations and reflections, giving the agent access to its own future intentions during reasoning.
+- **Dual-stream memory (AgentSociety)**: splits the memory stream into an Event Flow (chronological record of actions, external events, and environmental changes) and a Perception Flow (agent's cognitive appraisals and emotional responses linked to events). This separation makes internal state dynamics (emotions, attitudes) first-class memory citizens alongside factual observations.
 
 ## Comparison
 
