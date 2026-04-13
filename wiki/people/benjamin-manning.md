@@ -16,6 +16,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — co-author on Homo silicus framework
+- [[automated-social-science-language-models-scientist]] — co-first author; automated social science via SCM-based LLM experimentation
 
 ## Recent work
 

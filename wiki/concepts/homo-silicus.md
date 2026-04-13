@@ -3,10 +3,10 @@ title: "Homo Silicus"
 aliases: ["LLM as simulated human", "AI economic agent", "LLM economic simulation", "silicon human", "computational model of humans", "LLM as homo economicus"]
 tags: [llm-simulation, behavioral-economics, social-science, experimental-economics]
 maturity: emerging
-key_papers: [large-language-models-simulated-economic-agents]
+key_papers: [large-language-models-simulated-economic-agents, automated-social-science-language-models-scientist]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-12
-related_concepts: [persona-conditioning]
+related_concepts: [persona-conditioning, scm-based-automated-experimentation]
 ---
 
 ## Definition
@@ -28,6 +28,7 @@ Not formalized — the framework is conceptual. The closest formalization is the
 - **Persona-less Homo silicus**: off-the-shelf LLM queried without any persona endowment; tends to reflect the modal/average behavior in training data, often mismatched to specific human populations
 - **Endowed Homo silicus**: LLM given explicit persona instructions (preferences, beliefs, constraints) to represent a particular agent type
 - **Calibrated Homo silicus**: mixture of typed agents with weights optimized on held-out human data to improve predictive validity
+- **SCM-based Homo silicus**: agents endowed only with exogenous variables from a structural causal model, used in factorial experiments for automated causal inference (Manning, Zhu & Horton 2024)
 
 ## Comparison
 
@@ -67,6 +68,7 @@ Not formalized — the framework is conceptual. The closest formalization is the
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — introduces the Homo silicus concept and framework
+- [[automated-social-science-language-models-scientist]] — extends Homo silicus to automated SCM-based experimentation; demonstrates that simulation reveals latent knowledge beyond direct elicitation
 
 ## My understanding
 
