@@ -3,7 +3,7 @@ title: "Generative Agent-Based Modeling"
 aliases: ["GABM", "generative ABM", "LLM agent-based model", "LLM-powered agent-based modeling", "generative agent-based simulation"]
 tags: [multi-agent, social-simulation, llm-agents, agent-based-modeling]
 maturity: emerging
-key_papers: [generative-agent-based-modeling-actions-grounded]
+key_papers: [generative-agent-based-modeling-actions-grounded, modeling-earth-scale-human-like-societies]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [llm-powered-agent-architecture, generative-agent-memory-stream, silicon-sampling, game-master-architecture]

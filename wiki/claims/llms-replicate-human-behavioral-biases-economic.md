@@ -5,12 +5,16 @@ status: weakly_supported
 confidence: 0.7
 tags: [llm-simulation, behavioral-economics, behavioral-biases, social-preferences, homo-silicus]
 domain: "NLP"
-source_papers: [large-language-models-simulated-economic-agents]
+source_papers: [large-language-models-simulated-economic-agents, modeling-earth-scale-human-like-societies]
 evidence:
   - source: large-language-models-simulated-economic-agents
     type: supports
     strength: moderate
     detail: "Five experiments show high-capability LLMs reproduce qualitative patterns from canonical behavioral economics studies: price-gouging fairness, dictator game social preferences, status quo bias, prospect theory fourfold pattern, and labor-labor substitution under minimum wage."
+  - source: modeling-earth-scale-human-like-societies
+    type: supports
+    strength: moderate
+    detail: "Trust game simulations with 96K WVS-derived personas show LLM agents reproduce socio-demographic stratification in trust and reciprocity: higher social class and education → higher trust; reciprocity varies with class, residence, and education — consistent with documented human behavioral patterns."
 conditions: "Holds primarily for high-capability frontier LLMs (GPT-4+, Claude-Sonnet-3.5+); lower-capability models show weaker or inconsistent patterns. Results are qualitative recapitulations, not quantitative replication. Memorization of published results cannot be fully ruled out."
 date_proposed: 2026-04-12
 date_updated: 2026-04-12
