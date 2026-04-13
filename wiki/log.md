@@ -39,3 +39,4 @@
 ## [2026-04-13] ingest | claims for deliberate-lab-platform-real-time-human: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for deliberate-lab-platform-real-time-human: 2 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/deliberate-lab-platform-real-time-human | updated: concepts/generative-agent-based-modeling, concepts/llm-powered-agent-architecture | new: concepts/hybrid-human-ai-experimentation-platform, claims/no-code-platforms-enable-scalable-real
+## [2026-04-13] ingest | claims for modeling-earth-scale-human-like-societies: 2 matched existing, 1 new
