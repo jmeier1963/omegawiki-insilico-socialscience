@@ -17,6 +17,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — introduces Homo silicus framework for LLM-based economic simulation
+- [[automated-social-science-language-models-scientist]] — automated social science via SCM-based LLM experimentation
 
 ## Recent work
 

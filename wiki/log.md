@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for automated-social-science-language-models-scientist: 1 matched existing (llms-replicate-human-behavioral-biases-economic), 1 new (llm-simulations-elicit-latent-causal-knowledge)
+## [2026-04-13] ingest | concepts for automated-social-science-language-models-scientist: 2 matched existing (homo-silicus, generative-agent-based-modeling), 1 new (scm-based-automated-experimentation), 0 foundation-refs
+## [2026-04-13] ingest | added papers/automated-social-science-language-models-scientist | updated: concepts/homo-silicus, claims/llms-replicate-human-behavioral-biases-economic, people/benjamin-manning, people/john-horton | created: concepts/scm-based-automated-experimentation, claims/llm-simulations-elicit-latent-causal-knowledge, people/kehang-zhu
