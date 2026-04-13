@@ -3,7 +3,7 @@ title: "LLM-Powered Agent Architecture"
 aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, agentsociety-large-scale-simulation-llm-driven]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [generative-agent-memory-stream, agent-reflection]
@@ -33,6 +33,7 @@ At each time step t:
 - **ReAct pattern**: interleaves reasoning traces and actions in a single prompt; no persistent external memory.
 - **Toolformer / function-calling agents**: LLM selects tools (APIs) to call; memory is typically ephemeral (in-context only).
 - **AutoGPT-style agents**: multi-step task decomposition with tool use; typically no social/behavioral simulation component.
+- **Psychologically grounded agents (AgentSociety)**: extends the architecture with explicit internal mental states — OCC-based emotions, Maslow-hierarchy needs, and cognition (attitudes + thoughts) — linked to behavior via dual-stream memory. Needs drive plan formation; emotions modulate communication tone; cognition shapes decision-making. Designed for large-scale (10K+) social simulation.
 
 ## Comparison
 

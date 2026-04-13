@@ -2,15 +2,19 @@
 title: "Generative agent-based models with LLM-powered agents can simulate complex human social behavior in grounded physical, social, and digital environments"
 slug: concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior
 status: weakly_supported
-confidence: 0.55
+confidence: 0.65
 tags: [multi-agent, social-simulation, llm-agents, generative-agents, gabm]
 domain: NLP
-source_papers: [generative-agent-based-modeling-actions-grounded]
+source_papers: [generative-agent-based-modeling-actions-grounded, agentsociety-large-scale-simulation-llm-driven]
 evidence:
   - source: generative-agent-based-modeling-actions-grounded
     type: supports
     strength: moderate
     detail: "Concordia library demonstrates GABM across six application domains including behavioral economics (social dilemmas), psychological model implementation (Theory of Planned Behavior), synthetic user studies, and multi-scale modeling — but presents illustrative examples, not large-scale quantitative validation against real human behavioral data."
+  - source: agentsociety-large-scale-simulation-llm-driven
+    type: supports
+    strength: moderate
+    detail: "AgentSociety demonstrates 10K LLM agents in grounded urban/social/economic environments reproducing four real-world social phenomena (polarization, misinformation spread, UBI effects, hurricane impact), providing the first large-scale quantitative evidence for grounded LLM agent simulations."
 conditions: "Requires a sufficiently capable base LLM; may not generalize across minority populations or rare cultural contexts; validity depends on algorithmic fidelity which remains unvalidated at scale."
 date_proposed: 2026-04-12
 date_updated: 2026-04-12

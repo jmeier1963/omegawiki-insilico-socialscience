@@ -3,7 +3,7 @@ title: "Generative Agent-Based Modeling"
 aliases: ["GABM", "generative ABM", "LLM agent-based model", "LLM-powered agent-based modeling", "generative agent-based simulation"]
 tags: [multi-agent, social-simulation, llm-agents, agent-based-modeling]
 maturity: emerging
-key_papers: [generative-agent-based-modeling-actions-grounded]
+key_papers: [generative-agent-based-modeling-actions-grounded, agentsociety-large-scale-simulation-llm-driven]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [llm-powered-agent-architecture, generative-agent-memory-stream, silicon-sampling, game-master-architecture]
@@ -46,6 +46,7 @@ where:
 - **PhoneGameMaster / PhoneUniverse** (Concordia): specialised GABM variant for simulating digital activity on smartphone apps, where actions are grounded in app API calls
 - **Multi-scale GABM**: agents at one simulation scale become macro-level actors in a higher-scale simulation (e.g. banks in an economy simulation)
 - **Nested GABMs**: a GM can spawn sub-GMs for specific interaction types (e.g. a phone call triggers a PhoneGameMaster episode)
+- **Large-scale GABM with realistic environments (AgentSociety)**: 10K+ agents in integrated urban/social/economic spaces; agents have psychologically grounded internal states (OCC emotions, Maslow needs, cognition) with dual-stream memory; distributed engine (Ray + MQTT) enables large-scale social experiment replication
 
 ## Comparison
 

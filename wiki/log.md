@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for agentsociety-large-scale-simulation-llm-driven: 2 matched existing, 1 new
+## [2026-04-13] ingest | concepts for agentsociety-large-scale-simulation-llm-driven: 3 matched existing, 0 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/agentsociety-large-scale-simulation-llm-driven | updated: concepts/generative-agent-memory-stream, concepts/llm-powered-agent-architecture, concepts/generative-agent-based-modeling, claims/llm-agents-simulate-believable-human-social, claims/concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior, claims/large-scale-llm-agent-simulations-reproduce, people/yong-li, people/chen-gao
