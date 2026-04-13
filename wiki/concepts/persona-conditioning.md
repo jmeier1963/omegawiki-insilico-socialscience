@@ -1,9 +1,9 @@
 ---
 title: "Persona Conditioning"
-aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing", "interview-grounded agent", "interview-based agent conditioning"]
+aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing", "interview-grounded agent", "interview-based agent conditioning", "context-rich prompting", "interview-based prompting", "LLM-as-subject prompting"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people]
+key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-13
 related_concepts: [homo-silicus]
@@ -31,6 +31,7 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 - **Theory-grounded persona**: derived from an explicit behavioral-economic theory (efficiency, inequity-aversion, self-interest from Charness and Rabin)
 - **Atheoretical persona**: describes hobbies, TV preferences, lifestyle — shown to not improve predictive fidelity
 - **Interview-grounded persona** (Park et al. 2024): full two-hour qualitative interview transcript injected into the prompt, augmented with expert reflections from four domain-expert personas. Outperforms demographic and self-written persona baselines by 14-15 normalized points on GSS, with lower demographic bias across subgroups. The richest conditioning approach validated to date.
+- **LLM-as-expert prompting**: instructs the LLM to predict human responses as a third-party expert/forecaster rather than roleplay the subject; may harness sycophantic tendencies productively (Anthis et al. 2025)
 
 ## Comparison
 
@@ -64,6 +65,7 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — introduces theory-grounded persona calibration and demonstrates transfer across game formats
+- [[position-llm-social-simulations-promising-research]] — reviews explicit/implicit demographics, context-rich prompting, distribution elicitation, and LLM-as-expert prompting as promising persona conditioning directions
 
 ## My understanding
 

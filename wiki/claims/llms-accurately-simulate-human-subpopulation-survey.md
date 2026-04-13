@@ -5,7 +5,7 @@ status: weakly_supported
 confidence: 0.75
 tags: [silicon-sampling, llm, survey-simulation, demographic-conditioning, social-science]
 domain: NLP
-source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people]
+source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research]
 evidence:
   - source: out-one-many-using-language-models
     type: supports
@@ -15,6 +15,10 @@ evidence:
     type: supports
     strength: strong
     detail: "Interview-grounded agents achieve 68.85% raw accuracy on 177-item GSS (85% normalized against self-consistency), substantially exceeding demographic-only conditioning (71% normalized), validated at individual level across 1,052 participants."
+  - source: position-llm-social-simulations-promising-research
+    type: supports
+    strength: moderate
+    detail: "Reviews multiple studies showing LLM simulation accuracy: GPT-4 predicted 91% of treatment effect variation across 70 experiments (Hewitt et al. 2024); interview-based sims predicted 85% of participants' retest variation (Park et al. 2024a); fine-tuned Centaur outperformed cognitive models (Binz et al. 2024)."
 conditions: "Holds for aggregate subgroup comparisons; fidelity may be lower for rare demographic intersections; constrained to training data time period; model must have been trained on relevant demographic text."
 date_proposed: 2026-04-12
 date_updated: 2026-04-13

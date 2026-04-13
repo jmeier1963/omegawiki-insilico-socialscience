@@ -74,3 +74,4 @@ This is a genuinely seminal paper that opened a new research program — using L
 - supports: [[demographic-conditioning-enables-intersectional-attitude-replication]]
 - [[lisa-argyle]]
 - [[ethan-busby]]
+- [[position-llm-social-simulations-promising-research]]
