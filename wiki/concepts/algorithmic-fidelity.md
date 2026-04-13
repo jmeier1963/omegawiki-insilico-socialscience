@@ -3,9 +3,9 @@ title: "Algorithmic Fidelity"
 aliases: ["demographic replication fidelity", "LLM demographic fidelity", "subpopulation replication accuracy"]
 tags: [algorithmic-fidelity, silicon-sampling, demographic-conditioning, evaluation, llm]
 maturity: active
-key_papers: [out-one-many-using-language-models]
+key_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people]
 first_introduced: "2022"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [silicon-sampling]
 ---
 
@@ -66,6 +66,7 @@ Use algorithmic fidelity as an evaluation criterion when:
 ## Key papers
 
 - [[out-one-many-using-language-models]] — defines algorithmic fidelity and provides the first empirical demonstration
+- [[generative-agent-simulations-000-people]] — extends fidelity measurement from subgroup-level to individual-level using interview-grounded agents; introduces normalized accuracy (agent accuracy / self-consistency) as a fidelity metric
 
 ## My understanding
 

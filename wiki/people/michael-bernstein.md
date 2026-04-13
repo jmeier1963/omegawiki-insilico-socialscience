@@ -4,7 +4,7 @@ affiliation: "Stanford University"
 tags: [human-computer-interaction, llm-agents, social-computing, generative-ai, crowdsourcing]
 homepage: ""
 scholar: ""
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 ---
 
 ## Research areas
@@ -17,6 +17,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — corresponding/senior author; PI for the generative agents project at Stanford
+- [[generative-agent-simulations-000-people]] — senior author; scaled generative agents to 1,052 real individuals with interview-grounded architecture
 
 ## Recent work
 

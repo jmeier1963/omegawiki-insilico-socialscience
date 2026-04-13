@@ -3,9 +3,9 @@ title: "Agent Reflection"
 aliases: ["self-reflection", "higher-level reflection", "reflection mechanism", "agentic reflection", "reflective synthesis"]
 tags: [agents, reflection, llm-agents, meta-cognition, reasoning]
 maturity: emerging
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people]
 first_introduced: "2023"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [generative-agent-memory-stream, llm-powered-agent-architecture]
 ---
 
@@ -31,6 +31,7 @@ Reflection process:
 - **Recursive reflection**: reflections themselves can be reflected upon, producing multi-level abstraction trees (leaf = raw observation, higher nodes = increasingly abstract inferences).
 - **Self-reflection**: agents can reflect about themselves ("I am highly dedicated to my work") enabling consistent self-representation when queried.
 - **Social reflection**: agents can reflect about others, enabling theory of mind ("Maria puts a lot of effort into her research, similar to Klaus").
+- **Expert reflection** (Park et al. 2024): pre-computed domain-expert persona-guided reflections over interview transcripts. Four expert personas (psychologist, behavioral economist, political scientist, demographer) each generate up to 20 observations about the interviewee. At query time, the most relevant expert's reflections are retrieved and appended to the prompt alongside the full transcript. Unlike periodic sandbox reflection, expert reflections are generated once and stored as permanent memory.
 
 ## Comparison
 

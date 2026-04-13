@@ -2,18 +2,22 @@
 title: "LLMs conditioned on demographic backstories accurately simulate subpopulation survey responses"
 slug: llms-accurately-simulate-human-subpopulation-survey
 status: weakly_supported
-confidence: 0.65
+confidence: 0.75
 tags: [silicon-sampling, llm, survey-simulation, demographic-conditioning, social-science]
 domain: NLP
-source_papers: [out-one-many-using-language-models]
+source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people]
 evidence:
   - source: out-one-many-using-language-models
     type: supports
     strength: strong
     detail: "GPT-3 conditioned on socio-demographic backstories replicates word choice, attitude correlations, and behavioral patterns from ANES and Pigeonholing Partisans datasets at the subgroup level."
+  - source: generative-agent-simulations-000-people
+    type: supports
+    strength: strong
+    detail: "Interview-grounded agents achieve 68.85% raw accuracy on 177-item GSS (85% normalized against self-consistency), substantially exceeding demographic-only conditioning (71% normalized), validated at individual level across 1,052 participants."
 conditions: "Holds for aggregate subgroup comparisons; fidelity may be lower for rare demographic intersections; constrained to training data time period; model must have been trained on relevant demographic text."
 date_proposed: 2026-04-12
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 ---
 
 ## Statement

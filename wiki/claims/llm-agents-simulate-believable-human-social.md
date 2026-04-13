@@ -5,15 +5,19 @@ status: supported
 confidence: 0.8
 tags: [llm-agents, social-simulation, believability, emergent-behavior, human-behavior]
 domain: NLP
-source_papers: [generative-agents-interactive-simulacra-human-behavior]
+source_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people]
 evidence:
   - source: generative-agents-interactive-simulacra-human-behavior
     type: supports
     strength: strong
     detail: "25 generative agents in Smallville produced emergent information diffusion (52% party awareness from 1 seed), relationship formation, and coordination (Valentine's Day party) over 2 simulated days without user intervention; human evaluators rated full-architecture agents as more believable than crowd-worker-authored responses."
+  - source: generative-agent-simulations-000-people
+    type: supports
+    strength: strong
+    detail: "Scaling from 25 sandbox agents to 1,052 real individuals: interview-grounded agents replicate GSS responses at 85% normalized accuracy, Big Five at 80% normalized correlation, and experimental treatment effects at r=0.98, validating behavioral believability against ground-truth individual data rather than subjective ratings."
 conditions: "Holds when agents are equipped with persistent memory, reflection, and planning modules backed by a capable LLM (GPT-3.5/4 class); believability degrades substantially with ablated architectures; social norms that are hard to express in natural language remain failure points."
 date_proposed: 2026-04-12
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 ---
 
 ## Statement

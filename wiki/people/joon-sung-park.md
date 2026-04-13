@@ -4,7 +4,7 @@ affiliation: "Stanford University"
 tags: [llm-agents, social-simulation, human-computer-interaction, generative-ai]
 homepage: ""
 scholar: ""
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 ---
 
 ## Research areas
@@ -16,6 +16,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — first author; introduced generative agents with memory stream, reflection, and planning
+- [[generative-agent-simulations-000-people]] — first author; scaled generative agents to simulate 1,052 real individuals via interview-grounded architecture
 
 ## Recent work
 
