@@ -17,6 +17,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — corresponding/senior author; PI for the generative agents project at Stanford
+- [[position-llm-social-simulations-promising-research]] — co-author; ICML 2025 position paper on five tractable challenges for LLM social simulations
 
 ## Recent work
 

@@ -67,3 +67,4 @@ Highly influential diagnostic paper that quantifies the demographic skew introdu
 - [[shibani-santurkar]]
 - [[percy-liang]]
 - [[tatsunori-hashimoto]]
+- [[position-llm-social-simulations-promising-research]]

@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for position-llm-social-simulations-promising-research: 2 matched existing, 1 new
+## [2026-04-13] ingest | concepts for position-llm-social-simulations-promising-research: 3 matched existing, 0 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/position-llm-social-simulations-promising-research | updated: concepts/silicon-sampling, concepts/persona-conditioning, concepts/algorithmic-fidelity, claims/llms-accurately-simulate-human-subpopulation-survey, claims/llms-misrepresent-human-opinion-distributions, people/michael-bernstein | new: claims/llm-social-simulations-tractable-promising-research, people/jacy-reese-anthis, people/james-evans, people/erik-brynjolfsson

@@ -1,11 +1,11 @@
 ---
 title: "Persona Conditioning"
-aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing"]
+aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing", "context-rich prompting", "interview-based prompting", "LLM-as-subject prompting"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents]
+key_papers: [large-language-models-simulated-economic-agents, position-llm-social-simulations-promising-research]
 first_introduced: "2023-01-18"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [homo-silicus]
 ---
 
@@ -30,6 +30,8 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 - **Cognitive ability persona**: states reasoning capacity ("You are very bad at math")
 - **Theory-grounded persona**: derived from an explicit behavioral-economic theory (efficiency, inequity-aversion, self-interest from Charness and Rabin)
 - **Atheoretical persona**: describes hobbies, TV preferences, lifestyle — shown to not improve predictive fidelity
+- **Interview-based persona**: conditions on a 1-2 hour interview transcript for highly individualized simulation, incorporating implicit demographic and personality information (Park et al. 2024a, discussed in Anthis et al. 2025)
+- **LLM-as-expert prompting**: instructs the LLM to predict human responses as a third-party expert/forecaster rather than roleplay the subject; may harness sycophantic tendencies productively (Anthis et al. 2025)
 
 ## Comparison
 
@@ -63,6 +65,7 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — introduces theory-grounded persona calibration and demonstrates transfer across game formats
+- [[position-llm-social-simulations-promising-research]] — reviews explicit/implicit demographics, context-rich prompting, distribution elicitation, and LLM-as-expert prompting as promising persona conditioning directions
 
 ## My understanding
 

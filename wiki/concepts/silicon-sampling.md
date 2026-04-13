@@ -1,11 +1,11 @@
 ---
 title: "Silicon Sampling"
-aliases: ["LLM-as-survey-respondent", "synthetic survey sampling", "AI survey simulation", "LLM population simulation"]
+aliases: ["LLM-as-survey-respondent", "synthetic survey sampling", "AI survey simulation", "LLM population simulation", "LLM social simulation", "LLM sims", "human subject simulation"]
 tags: [silicon-sampling, survey-simulation, llm, social-science, synthetic-data]
 maturity: active
-key_papers: [out-one-many-using-language-models]
+key_papers: [out-one-many-using-language-models, position-llm-social-simulations-promising-research]
 first_introduced: "2022"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [algorithmic-fidelity]
 ---
 
@@ -31,6 +31,8 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 - **Few-shot silicon sampling**: Provide exemplar responses from the target demographic as in-context examples.
 - **Ensemble silicon sampling**: Generate multiple responses per demographic cell and aggregate.
 - **Iterative silicon sampling**: Refine the backstory prompt based on validation against a held-out survey subset.
+- **Distribution elicitation**: Prompt the LLM to generate a distribution of responses directly (via log-probabilities, sequence generation, or verbalized proportions) rather than one-at-a-time individual responses (Anthis et al. 2025).
+- **Interview-based silicon sampling**: Condition on a participant's 1-2 hour interview transcript for highly individualized simulation, reducing maximum demographic accuracy disparities (Park et al. 2024a, discussed in Anthis et al. 2025).
 
 ## Comparison
 
@@ -69,6 +71,7 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 ## Key papers
 
 - [[out-one-many-using-language-models]] — introduces silicon sampling and demonstrates algorithmic fidelity on ANES
+- [[position-llm-social-simulations-promising-research]] — comprehensive review identifying five tractable challenges and promising directions for LLM social simulations
 
 ## My understanding
 
