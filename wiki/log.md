@@ -9,3 +9,6 @@
 ## [2026-04-13] ingest | claims for generative-agents-interactive-simulacra-human-behavior: 0 matched existing, 2 new
 ## [2026-04-13] ingest | concepts for generative-agents-interactive-simulacra-human-behavior: 0 matched existing, 3 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/generative-agents-interactive-simulacra-human-behavior | updated: concepts/generative-agent-memory-stream, concepts/agent-reflection, concepts/llm-powered-agent-architecture, claims/llm-agents-simulate-believable-human-social, claims/memory-retrieval-reflection-planning-each-contribute, people/joon-sung-park, people/michael-bernstein
+## [2026-04-13] ingest | claims for large-language-models-simulated-economic-agents: 0 matched existing, 2 new
+## [2026-04-13] ingest | concepts for large-language-models-simulated-economic-agents: 0 matched existing, 2 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/large-language-models-simulated-economic-agents | updated: concepts/homo-silicus, concepts/persona-conditioning, claims/llms-replicate-human-behavioral-biases-economic, claims/theory-grounded-persona-calibration-improves-llm, people/john-horton, people/benjamin-manning
