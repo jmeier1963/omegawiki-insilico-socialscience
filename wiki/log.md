@@ -18,3 +18,6 @@
 ## [2026-04-13] ingest | claims for whose-opinions-language-models-reflect: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-opinions-language-models-reflect: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-opinions-language-models-reflect | updated: concepts/opinionqa, claims/llms-misrepresent-human-opinion-distributions, people/shibani-santurkar, people/percy-liang, people/tatsunori-hashimoto
+## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
+## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
