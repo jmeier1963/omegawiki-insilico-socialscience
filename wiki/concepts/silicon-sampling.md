@@ -3,7 +3,7 @@ title: "Silicon Sampling"
 aliases: ["LLM-as-survey-respondent", "synthetic survey sampling", "AI survey simulation", "LLM population simulation", "LLM social simulation", "LLM sims", "human subject simulation"]
 tags: [silicon-sampling, survey-simulation, llm, social-science, synthetic-data]
 maturity: active
-key_papers: [out-one-many-using-language-models, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm]
+key_papers: [out-one-many-using-language-models, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey]
 first_introduced: "2022"
 date_updated: 2026-04-13
 related_concepts: [algorithmic-fidelity]
@@ -33,6 +33,7 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 - **Iterative silicon sampling**: Refine the backstory prompt based on validation against a held-out survey subset.
 - **Distribution elicitation**: Prompt the LLM to generate a distribution of responses directly (via log-probabilities, sequence generation, or verbalized proportions) rather than one-at-a-time individual responses (Anthis et al. 2025).
 - **Interview-based silicon sampling**: Condition on a participant's 1-2 hour interview transcript for highly individualized simulation, reducing maximum demographic accuracy disparities (Park et al. 2024a, discussed in Anthis et al. 2025).
+- **Fine-tuned silicon sampling**: Instruction-tune compact models with LoRA/QLoRA on persona-grounded survey datasets rather than relying on prompt-only conditioning (PolyPersona).
 
 ## Comparison
 
@@ -72,6 +73,7 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 
 - [[out-one-many-using-language-models]] — introduces silicon sampling and demonstrates algorithmic fidelity on ANES
 - [[position-llm-social-simulations-promising-research]] — comprehensive review identifying five tractable challenges and promising directions for LLM social simulations
+- [[polypersona-persona-grounded-llm-synthetic-survey]] — extends silicon sampling via persona-conditioned LoRA fine-tuning on compact models across 10 survey domains
 
 ## My understanding
 

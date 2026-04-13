@@ -40,3 +40,6 @@
 ## [2026-04-13] ingest | concepts for deliberate-lab-platform-real-time-human: 2 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/deliberate-lab-platform-real-time-human | updated: concepts/generative-agent-based-modeling, concepts/llm-powered-agent-architecture | new: concepts/hybrid-human-ai-experimentation-platform, claims/no-code-platforms-enable-scalable-real
 ## [2026-04-13] ingest | claims for modeling-earth-scale-human-like-societies: 2 matched existing, 1 new
+## [2026-04-13] ingest | claims for polypersona-persona-grounded-llm-synthetic-survey: 2 matched existing, 0 new
+## [2026-04-13] ingest | concepts for polypersona-persona-grounded-llm-synthetic-survey: 2 matched existing, 0 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/polypersona-persona-grounded-llm-synthetic-survey | updated: concepts/silicon-sampling, concepts/persona-conditioning, claims/theory-grounded-persona-calibration-improves-llm, claims/llms-accurately-simulate-human-subpopulation-survey
