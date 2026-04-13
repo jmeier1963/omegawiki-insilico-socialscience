@@ -4,7 +4,7 @@ affiliation: "Stanford University"
 tags: [llm-evaluation, foundation-models, robustness, alignment, benchmarking]
 homepage: "https://cs.stanford.edu/~pliang/"
 scholar: ""
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 ---
 
 ## Research areas
@@ -16,6 +16,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[whose-opinions-language-models-reflect]]
+- [[generative-agent-simulations-000-people]]
 
 ## Recent work
 

@@ -3,9 +3,9 @@ title: "LLM-Powered Agent Architecture"
 aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people]
 first_introduced: "2023"
-date_updated: 2026-04-12
+date_updated: 2026-04-13
 related_concepts: [generative-agent-memory-stream, agent-reflection]
 ---
 
@@ -33,6 +33,7 @@ At each time step t:
 - **ReAct pattern**: interleaves reasoning traces and actions in a single prompt; no persistent external memory.
 - **Toolformer / function-calling agents**: LLM selects tools (APIs) to call; memory is typically ephemeral (in-context only).
 - **AutoGPT-style agents**: multi-step task decomposition with tool use; typically no social/behavioral simulation component.
+- **Interview-grounded agent** (Park et al. 2024): full interview transcript + expert reflections replace the sandbox memory stream; no persistent memory needed since the entire context is injected per query. Designed for behavioral prediction of specific real individuals rather than open-ended sandbox simulation.
 
 ## Comparison
 

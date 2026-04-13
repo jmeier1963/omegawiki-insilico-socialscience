@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for generative-agent-simulations-000-people: 2 matched existing, 2 new
+## [2026-04-13] ingest | concepts for generative-agent-simulations-000-people: 4 matched existing, 0 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/generative-agent-simulations-000-people | updated: concepts/agent-reflection, concepts/persona-conditioning, concepts/algorithmic-fidelity, concepts/llm-powered-agent-architecture, claims/llms-accurately-simulate-human-subpopulation-survey, claims/llm-agents-simulate-believable-human-social, people/joon-sung-park, people/michael-bernstein, people/percy-liang, people/robb-willer
