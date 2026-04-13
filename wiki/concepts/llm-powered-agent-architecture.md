@@ -3,7 +3,7 @@ title: "LLM-Powered Agent Architecture"
 aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, deliberate-lab-platform-real-time-human]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [generative-agent-memory-stream, agent-reflection]
@@ -59,6 +59,7 @@ Use when: (1) the agent must reason in open-ended natural language domains, (2) 
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — introduced the full generative agent architecture with memory stream, reflection, and planning
+- [[deliberate-lab-platform-real-time-human]] — operationalizes LLM agent architectures as first-class participants in hybrid human–AI experiments
 
 ## My understanding
 

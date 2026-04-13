@@ -21,3 +21,6 @@
 ## [2026-04-13] ingest | claims for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new
 ## [2026-04-13] ingest | concepts for whose-personae-synthetic-persona-experiments-llm: 0 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-13] ingest | added papers/whose-personae-synthetic-persona-experiments-llm | updated: concepts/persona-transparency-checklist, claims/llm-persona-underspecification-limits-ecological-validity
+## [2026-04-13] ingest | claims for deliberate-lab-platform-real-time-human: 0 matched existing, 1 new
+## [2026-04-13] ingest | concepts for deliberate-lab-platform-real-time-human: 2 matched existing, 1 new, 0 foundation-refs
+## [2026-04-13] ingest | added papers/deliberate-lab-platform-real-time-human | updated: concepts/generative-agent-based-modeling, concepts/llm-powered-agent-architecture | new: concepts/hybrid-human-ai-experimentation-platform, claims/no-code-platforms-enable-scalable-real

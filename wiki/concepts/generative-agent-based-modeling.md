@@ -3,7 +3,7 @@ title: "Generative Agent-Based Modeling"
 aliases: ["GABM", "generative ABM", "LLM agent-based model", "LLM-powered agent-based modeling", "generative agent-based simulation"]
 tags: [multi-agent, social-simulation, llm-agents, agent-based-modeling]
 maturity: emerging
-key_papers: [generative-agent-based-modeling-actions-grounded]
+key_papers: [generative-agent-based-modeling-actions-grounded, deliberate-lab-platform-real-time-human]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [llm-powered-agent-architecture, generative-agent-memory-stream, silicon-sampling, game-master-architecture]
@@ -82,6 +82,7 @@ where:
 ## Key papers
 
 - [[generative-agent-based-modeling-actions-grounded]] — Concordia library, introduces GABM as a distinct modeling paradigm
+- [[deliberate-lab-platform-real-time-human]] — complementary hybrid platform enabling human–AI experiments that can validate GABM simulations against real behavior
 
 ## My understanding
 
