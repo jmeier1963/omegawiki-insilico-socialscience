@@ -3,7 +3,7 @@ title: "Silicon Sampling"
 aliases: ["LLM-as-survey-respondent", "synthetic survey sampling", "AI survey simulation", "LLM population simulation", "LLM social simulation", "LLM sims", "human subject simulation"]
 tags: [silicon-sampling, survey-simulation, llm, social-science, synthetic-data]
 maturity: active
-key_papers: [out-one-many-using-language-models, position-llm-social-simulations-promising-research]
+key_papers: [out-one-many-using-language-models, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm]
 first_introduced: "2022"
 date_updated: 2026-04-13
 related_concepts: [algorithmic-fidelity]

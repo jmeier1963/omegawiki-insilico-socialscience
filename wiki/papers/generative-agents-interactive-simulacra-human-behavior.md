@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [generative agents, memory stream, reflection, planning, social simulation, Smallville, believable behavior, emergent social dynamics]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [beyond-static-responses-multi-agent-llm]
 ---
 
 ## Problem

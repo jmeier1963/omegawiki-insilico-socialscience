@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [silicon sampling, algorithmic fidelity, demographic conditioning, survey simulation, GPT-3, ANES, subpopulation simulation]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [beyond-static-responses-multi-agent-llm]
 ---
 
 ## Problem

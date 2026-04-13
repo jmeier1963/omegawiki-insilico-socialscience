@@ -1,9 +1,9 @@
 ---
 title: "LLM-Powered Agent Architecture"
-aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture"]
+aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture", "agentic LLM system", "LLM agentic continuum"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm]
 first_introduced: "2023"
 date_updated: 2026-04-13
 related_concepts: [generative-agent-memory-stream, agent-reflection]
@@ -35,6 +35,7 @@ At each time step t:
 - **AutoGPT-style agents**: multi-step task decomposition with tool use; typically no social/behavioral simulation component.
 - **Interview-grounded agent** (Park et al. 2024): full interview transcript + expert reflections replace the sandbox memory stream; no persistent memory needed since the entire context is injected per query. Designed for behavioral prediction of specific real individuals rather than open-ended sandbox simulation.
 - **Psychologically grounded agents (AgentSociety)**: extends the architecture with explicit internal mental states — OCC-based emotions, Maslow-hierarchy needs, and cognition (attitudes + thoughts) — linked to behavior via dual-stream memory. Needs drive plan formation; emotions modulate communication tone; cognition shapes decision-making. Designed for large-scale (10K+) social simulation.
+- **Six-tier agentic continuum** (Haase & Pokutta 2025): classifies LLM systems into L0 (tool) → L1 (role) → L2 (agent-like) → L3 (fully agentic) → L4 (multi-agent) → L5 (complex adaptive), each tier defined by functional thresholds (memory, autonomy, coordination, emergence) mapped to OODA loop phases.
 
 ## Comparison
 
@@ -61,6 +62,7 @@ Use when: (1) the agent must reason in open-ended natural language domains, (2) 
 ## Key papers
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — introduced the full generative agent architecture with memory stream, reflection, and planning
+- [[beyond-static-responses-multi-agent-llm]] — proposes a six-tier taxonomy classifying LLM agent architectures from stateless tools to complex adaptive systems, mapping each tier's architectural requirements
 
 ## My understanding
 
