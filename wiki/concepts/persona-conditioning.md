@@ -3,7 +3,7 @@ title: "Persona Conditioning"
 aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents]
+key_papers: [large-language-models-simulated-economic-agents, polypersona-persona-grounded-llm-synthetic-survey]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-12
 related_concepts: [homo-silicus]
@@ -30,6 +30,7 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 - **Cognitive ability persona**: states reasoning capacity ("You are very bad at math")
 - **Theory-grounded persona**: derived from an explicit behavioral-economic theory (efficiency, inequity-aversion, self-interest from Charness and Rabin)
 - **Atheoretical persona**: describes hobbies, TV preferences, lifestyle — shown to not improve predictive fidelity
+- **Fine-tuned persona conditioning**: Embedding persona cues into model weights via LoRA fine-tuning on dialogue-formatted persona-response pairs, rather than relying solely on prompt-time conditioning (PolyPersona)
 
 ## Comparison
 
@@ -63,6 +64,7 @@ A conditioned agent is $A_\theta(p_{\text{persona}} \oplus p_{\text{scenario}})$
 ## Key papers
 
 - [[large-language-models-simulated-economic-agents]] — introduces theory-grounded persona calibration and demonstrates transfer across game formats
+- [[polypersona-persona-grounded-llm-synthetic-survey]] — applies persona conditioning via LoRA fine-tuning on compact models for multi-domain survey generation
 
 ## My understanding
 

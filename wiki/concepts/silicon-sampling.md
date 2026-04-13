@@ -3,7 +3,7 @@ title: "Silicon Sampling"
 aliases: ["LLM-as-survey-respondent", "synthetic survey sampling", "AI survey simulation", "LLM population simulation"]
 tags: [silicon-sampling, survey-simulation, llm, social-science, synthetic-data]
 maturity: active
-key_papers: [out-one-many-using-language-models]
+key_papers: [out-one-many-using-language-models, polypersona-persona-grounded-llm-synthetic-survey]
 first_introduced: "2022"
 date_updated: 2026-04-12
 related_concepts: [algorithmic-fidelity]
@@ -31,6 +31,7 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 - **Few-shot silicon sampling**: Provide exemplar responses from the target demographic as in-context examples.
 - **Ensemble silicon sampling**: Generate multiple responses per demographic cell and aggregate.
 - **Iterative silicon sampling**: Refine the backstory prompt based on validation against a held-out survey subset.
+- **Fine-tuned silicon sampling**: Instruction-tune compact models with LoRA/QLoRA on persona-grounded survey datasets rather than relying on prompt-only conditioning (PolyPersona).
 
 ## Comparison
 
@@ -69,6 +70,7 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 ## Key papers
 
 - [[out-one-many-using-language-models]] — introduces silicon sampling and demonstrates algorithmic fidelity on ANES
+- [[polypersona-persona-grounded-llm-synthetic-survey]] — extends silicon sampling via persona-conditioned LoRA fine-tuning on compact models across 10 survey domains
 
 ## My understanding
 

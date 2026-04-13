@@ -5,12 +5,16 @@ status: weakly_supported
 confidence: 0.65
 tags: [llm-simulation, persona-conditioning, calibration, behavioral-economics, homo-silicus]
 domain: "NLP"
-source_papers: [large-language-models-simulated-economic-agents]
+source_papers: [large-language-models-simulated-economic-agents, polypersona-persona-grounded-llm-synthetic-survey]
 evidence:
   - source: large-language-models-simulated-economic-agents
     type: supports
     strength: moderate
     detail: "Calibrating mixture weights of theory-grounded personas (efficient/inequity-averse/self-interested) on unilateral dictator games halves out-of-sample MSE on two-stage games (0.094 vs. 0.182 for persona-less agents), and persona endowment makes agents track assigned types near-perfectly."
+  - source: polypersona-persona-grounded-llm-synthetic-survey
+    type: supports
+    strength: weak
+    detail: "Persona-conditioned LoRA fine-tuning on compact models (1.1B–2B) achieves BERTScore F1 > 0.88 and stable survey quality metrics across 10 domains and 433 personas, matching 7B baselines. However, evaluation is against LLM-generated references, not real human data."
 conditions: "Calibration works when the same theoretical construct (e.g., social preferences) plausibly drives behavior in both calibration and target settings. Atheoretical or scientifically meaningless persona traits (hobbies, TV preferences) do not improve fidelity. Requires that agents faithfully follow their persona instructions, which holds mainly for frontier models."
 date_proposed: 2026-04-12
 date_updated: 2026-04-12

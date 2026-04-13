@@ -5,12 +5,16 @@ status: weakly_supported
 confidence: 0.65
 tags: [silicon-sampling, llm, survey-simulation, demographic-conditioning, social-science]
 domain: NLP
-source_papers: [out-one-many-using-language-models]
+source_papers: [out-one-many-using-language-models, polypersona-persona-grounded-llm-synthetic-survey]
 evidence:
   - source: out-one-many-using-language-models
     type: supports
     strength: strong
     detail: "GPT-3 conditioned on socio-demographic backstories replicates word choice, attitude correlations, and behavioral patterns from ANES and Pigeonholing Partisans datasets at the subgroup level."
+  - source: polypersona-persona-grounded-llm-synthetic-survey
+    type: supports
+    strength: weak
+    detail: "Persona-conditioned fine-tuned small models generate survey responses with high semantic similarity (BERTScore > 0.88) and structural consistency across 10 domains, though evaluation is against LLM-generated references rather than real human survey data."
 conditions: "Holds for aggregate subgroup comparisons; fidelity may be lower for rare demographic intersections; constrained to training data time period; model must have been trained on relevant demographic text."
 date_proposed: 2026-04-12
 date_updated: 2026-04-12
