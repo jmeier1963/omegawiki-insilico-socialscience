@@ -33,7 +33,7 @@ _Auto-generated open questions. Do not edit._
 - [paper/agentic-ai-next-intelligence-explosion] Does collective AI intelligence exhibit emergent capabilities absent from individual models?
 - [paper/agentsocialbench-evaluating-privacy-risks-human-centered] Can architectural changes (privacy-aware attention, information flow constraints) solve the abstraction paradox?
 - [
-## Papers (134 total)
+## Papers (135 total)
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research (Computational Social Science)
 - [5] Generative Agent Simulations of 1,000 People (NLP)
 - [5] Generative Agents: Interactive Simulacra of Human Behavior (NLP)
@@ -49,9 +49,7 @@ _Auto-generated open questions. Do not edit._
 - [2] This human study did not involve human subjects: Validating LLM simulations as behavioral evidence (NLP)
 - [4] Whose Opinions Do Language Models Reflect? (NLP)
 - [3] Agent Laboratory: Using LLM Agents as Research Assistants (ML Systems)
-## Recent Relationships (195 total)
-  chai-paradigm-shifts-robot-scientists --extends--> kuhn-structure-scientific-revolutions
-  krauss-debunking-paradigm-shifts --supports--> laudan-progress-problems
+## Recent Relationships (197 total)
   messeri-crockett-ai-illusions-understanding --contradicts--> humphreys-extending-ourselves
   richardson-scancar-papermill-detection --supports--> shumailov-model-collapse
   kapoor-narayanan-leakage-reproducibility --extends--> open-science-collaboration-reproducibility
@@ -61,4 +59,6 @@ _Auto-generated open questions. Do not edit._
   duran-formanek-computational-reliabilism --extends--> sullivan-understanding-machine-learning-models
   boge-two-dimensions-opacity-deep-learning --extends--> duede-deep-learning-opacity
   alvarado-explaining-epistemic-opacity --extends--> boge-two-dimensions-opacity-deep-learning
- 
+  wang-yu-ml-reveals-physics-plasma --extends--> iten-discovering-physical-concepts
+  wang-yu-ml-reveals-physics-plasma --extends--> udrescu-tegmark-ai-feynman
+  szym

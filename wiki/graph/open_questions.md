@@ -287,6 +287,8 @@ _Auto-generated open questions. Do not edit._
 - [paper/richardson-scancar-papermill-detection] How does papermill contamination of the literature affect AI models trained on scientific text (Shumailov 2024)?
 - [paper/risko-gilbert-cognitive-offloading] Does cognitive offloading to AI tools differ mechanistically from offloading to notebooks or calculators?
 - [paper/risko-gilbert-cognitive-offloading] What are the conditions under which AI cognitive offloading becomes maladaptive (Bastani 2024, Kosmyna 2025)?
+- [paper/sapkota-raza-llm-transparency-accessibility] Will EU AI Act transparency requirements drive convergence toward genuine open-source in practice?
+- [paper/sapkota-raza-llm-transparency-accessibility] Does open-weight (without training data) provide meaningful reproducibility benefits?
 - [paper/scaling-deep-learning-materials-discovery] What fraction of the 381k materials are practically synthesizable at scale?
 - [paper/scaling-deep-learning-materials-discovery] Can GNoME-style approaches extend to organic/molecular materials?
 - [paper/schroter-ki-und-wissenschaften] What is the proper method for studying AI's discipline-specific effects?

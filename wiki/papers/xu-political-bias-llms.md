@@ -26,8 +26,8 @@ Reviews evidence for political bias in LLMs — particularly a left-leaning tend
 ## Method
 
 - Survey/review paper on political bias in LLMs
-- Note: the arXiv ID 2502.18505 cited by the user has been confirmed to point to a different paper (transparency/open-source LLMs). The correct paper and arXiv ID for "Xu et al. 2025" on political bias in LLMs could not be verified; metadata here is provisional.
-- If the correct source is located, the arxiv field and venue should be updated.
+- **Citation unverified** — arXiv 2502.18505 is confirmed to be Sapkota, Raza & Karkee (2025) on LLM transparency/open-washing (see [[sapkota-raza-llm-transparency-accessibility]]), not a political bias paper. The correct arXiv ID for "Xu et al. 2025 on political bias in LLMs" has not been identified.
+- This page is a placeholder; update arxiv, venue, and authorship when the source is located.
 
 ## Results
 

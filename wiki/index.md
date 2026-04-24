@@ -739,6 +739,11 @@ papers:
     tags: [political-bias, llm, bias, fairness, alignment]
     importance: 2
 
+  - slug: sapkota-raza-llm-transparency-accessibility
+    title: "Comprehensive Analysis of Transparency and Accessibility of ChatGPT, DeepSeek, and other SoTA LLMs"
+    tags: [transparency, open-source, open-weight, llm, open-washing, reproducibility]
+    importance: 2
+
 foundations:
   - slug: kuhn-structure-scientific-revolutions
     title: "The Structure of Scientific Revolutions"
