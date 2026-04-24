@@ -5,7 +5,7 @@ status: weakly_supported
 confidence: 0.75
 tags: [silicon-sampling, llm, survey-simulation, demographic-conditioning, social-science]
 domain: NLP
-source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, polypersona-persona-grounded-llm-synthetic-survey]
+source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, polypersona-persona-grounded-llm-synthetic-survey, emulating-public-opinion-proof-concept-ai, foundation-model-predict-capture-human-cognition]
 evidence:
   - source: out-one-many-using-language-models
     type: supports
@@ -23,6 +23,14 @@ evidence:
     type: supports
     strength: weak
     detail: "Persona-conditioned fine-tuned small models generate survey responses with high semantic similarity (BERTScore > 0.88) and structural consistency across 10 domains, though evaluation is against LLM-generated references rather than real human survey data."
+  - source: foundation-model-predict-capture-human-cognition
+    type: supports
+    strength: strong
+    detail: "Centaur (Llama 3.1 70B fine-tuned on Psych-101 with 10.6M behavioral choices from 160 experiments) outperforms existing cognitive models at predicting human choices out-of-distribution; establishes foundation model fine-tuning as a path to high-fidelity behavioral simulation. Published in Nature."
+  - source: emulating-public-opinion-proof-concept-ai
+    type: supports
+    strength: moderate
+    detail: "Benchmark of 128 prompt-model-question triplets against Chilean probabilistic survey shows >0.90 F1 on trust items; GPT-4o, GPT-4o-mini, and Llama 4 Maverick perform comparably, but substantial item-level heterogeneity and demographic skew (best alignment with ages 45–59) limit generalizability."
 conditions: "Holds for aggregate subgroup comparisons; fidelity may be lower for rare demographic intersections; constrained to training data time period; model must have been trained on relevant demographic text."
 date_proposed: 2026-04-12
 date_updated: 2026-04-13

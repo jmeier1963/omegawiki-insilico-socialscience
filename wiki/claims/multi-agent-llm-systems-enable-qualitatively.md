@@ -5,8 +5,12 @@ status: proposed
 confidence: 0.4
 tags: [multi-agent, social-simulation, emergent-behavior, computational-social-science, llm]
 domain: "Computational Social Science"
-source_papers: [beyond-static-responses-multi-agent-llm]
+source_papers: [beyond-static-responses-multi-agent-llm, llm-agent-based-social-simulation-attitude]
 evidence:
+  - source: llm-agent-based-social-simulation-attitude
+    type: supports
+    strength: weak
+    detail: "Discourse Simulator uses LLM agents with multidimensional belief structures and real-time news retrieval in a small-world network to simulate attitude diffusion dynamics; demonstrates qualitatively realistic polarization patterns emerging from agent interactions."
   - source: beyond-static-responses-multi-agent-llm
     type: supports
     strength: moderate

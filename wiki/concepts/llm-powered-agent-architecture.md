@@ -3,9 +3,9 @@ title: "LLM-Powered Agent Architecture"
 aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture", "agentic LLM system", "LLM agentic continuum"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human, metagpt-meta-programming-multi-agent-collaborative, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, agent0-unleashing-self-evolving-agents-zero, numina-lean-agent-open-general-agentic]
 first_introduced: "2023"
-date_updated: 2026-04-13
+date_updated: 2026-04-23
 related_concepts: [generative-agent-memory-stream, agent-reflection]
 ---
 
@@ -64,6 +64,11 @@ Use when: (1) the agent must reason in open-ended natural language domains, (2) 
 - [[generative-agents-interactive-simulacra-human-behavior]] — introduced the full generative agent architecture with memory stream, reflection, and planning
 - [[beyond-static-responses-multi-agent-llm]] — proposes a six-tier taxonomy classifying LLM agent architectures from stateless tools to complex adaptive systems, mapping each tier's architectural requirements
 - [[deliberate-lab-platform-real-time-human]] — operationalizes LLM agent architectures as first-class participants in hybrid human–AI experiments
+- [[metagpt-meta-programming-multi-agent-collaborative]] — introduces SOP-encoded multi-agent collaboration, reducing cascading hallucinations via workflow structure
+- [[agent-laboratory-using-llm-agents-research]] — applies multi-stage agent pipeline to autonomous scientific research (EMNLP 2025)
+- [[towards-end-end-automation-ai-research]] — The AI Scientist: fully autonomous research agent producing peer-review-quality manuscripts (Nature 2026)
+- [[agent0-unleashing-self-evolving-agents-zero]] — self-evolving dual-agent curriculum learning without human-curated data
+- [[numina-lean-agent-open-general-agentic]] — general coding agent as formal math reasoner via MCP tool integration
 
 ## My understanding
 

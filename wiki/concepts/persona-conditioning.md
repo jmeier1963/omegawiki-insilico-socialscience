@@ -3,7 +3,7 @@ title: "Persona Conditioning"
 aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing", "interview-grounded agent", "interview-based agent conditioning", "context-rich prompting", "interview-based prompting", "LLM-as-subject prompting"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey]
+key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey, assessing-reliability-persona-conditioned-llms-synthetic]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-13
 related_concepts: [homo-silicus]

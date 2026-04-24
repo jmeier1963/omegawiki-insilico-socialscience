@@ -5,8 +5,12 @@ status: weakly_supported
 confidence: 0.55
 tags: [social-simulation, large-scale, policy-evaluation, emergent-behavior, llm-agents, validation]
 domain: NLP
-source_papers: [agentsociety-large-scale-simulation-llm-driven]
+source_papers: [agentsociety-large-scale-simulation-llm-driven, law-silico-simulating-legal-society-llm]
 evidence:
+  - source: law-silico-simulating-legal-society-llm
+    type: supports
+    strength: moderate
+    detail: "Law in Silico hierarchical LLM agent framework reproduces macro-level crime trends aligned with real-world statistics; micro-level emergent 'cat-and-mouse' behaviors and institutional corruption dynamics emerge as expected; transparent legal systems show better outcomes for vulnerable populations."
   - source: agentsociety-large-scale-simulation-llm-driven
     type: supports
     strength: moderate

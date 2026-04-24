@@ -30,4 +30,4 @@ Thumbs.db
 .venv/
 
 # Raw data (large files managed separately)
-raw/papers/*.pdf
+# raw/papers/*.pdf
