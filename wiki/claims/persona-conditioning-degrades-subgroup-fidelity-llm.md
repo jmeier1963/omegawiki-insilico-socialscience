@@ -5,15 +5,23 @@ status: proposed
 confidence: 0.6
 tags: [persona-conditioning, silicon-sampling, subgroup-fidelity, demographic-bias, survey-alignment]
 domain: NLP
-source_papers: [assessing-reliability-persona-conditioned-llms-synthetic]
+source_papers: [assessing-reliability-persona-conditioned-llms-synthetic, quantifying-persona-effect-llm-simulations, balancing-large-language-model-alignment-algorithmic]
 evidence:
   - source: assessing-reliability-persona-conditioned-llms-synthetic
     type: supports
     strength: moderate
     detail: "Large-scale evaluation on World Values Survey U.S. microdata: multi-attribute persona conditioning does not improve overall alignment, degrades performance for underrepresented subgroups, with heterogeneous effects across demographic attributes and disproportionate error redistribution."
+  - source: quantifying-persona-effect-llm-simulations
+    type: supports
+    strength: moderate
+    detail: "Hu et al. (ACL 2024) quantify the persona effect in LLM simulations, finding that persona conditioning changes responses but does not reliably improve subgroup alignment; the gap between persona-conditioned and actual subgroup responses remains substantial across demographic dimensions."
+  - source: balancing-large-language-model-alignment-algorithmic
+    type: supports
+    strength: moderate
+    detail: "Lyman et al. (2025) find that optimizing LLMs for alignment objectives trades off against algorithmic fidelity for demographic subgroups — improving overall alignment degrades subgroup representation, reinforcing the tension between general and specific fidelity."
 conditions: "Tested on multi-attribute attribute-list persona prompting with off-the-shelf LLMs (no fine-tuning); richer conditioning formats (interview-based) and fine-tuned models may differ."
 date_proposed: 2026-04-14
-date_updated: 2026-04-14
+date_updated: 2026-04-28
 ---
 
 ## Statement

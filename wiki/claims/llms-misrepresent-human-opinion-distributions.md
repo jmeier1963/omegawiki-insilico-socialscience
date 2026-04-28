@@ -5,7 +5,7 @@ status: supported
 confidence: 0.8
 tags: [llm-bias, opinion-alignment, demographic-representation, rlhf, evaluation]
 domain: NLP
-source_papers: [whose-opinions-language-models-reflect, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm]
+source_papers: [whose-opinions-language-models-reflect, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, illusion-artificial-inclusion, synthetic-replacements-human-survey-data-perils, how-generative-language-models-answer-opinion, cultural-bias-cultural-alignment-large-language, artificial-intelligence-unbiased-opinions-assessing-gpt, assessing-bias-llm-generated-synthetic-datasets, vox-populi-vox-ai-using-language, large-language-models-replace-human-participants, problems-llm-generated-data-social-science, revealing-fine-grained-values-opinions-large]
 evidence:
   - source: whose-opinions-language-models-reflect
     type: supports
@@ -19,9 +19,49 @@ evidence:
     type: supports
     strength: weak
     detail: "Framework survey reaffirms that RLHF-trained models produce homogenized viewpoints with reduced representational fidelity for underrepresented groups, citing this as a persistent challenge across all six agentic tiers"
-conditions: "Evaluated on US demographic groups via Pew ATP opinion surveys in multiple-choice format; RLHF-tuned models show stronger skew than base models; findings may not generalize to non-US populations or open-ended generation"
+  - source: illusion-artificial-inclusion
+    type: supports
+    strength: moderate
+    detail: "Agnew et al. (CHI 2024) argue that LLM simulations create an 'illusion of inclusion' — they appear to represent diverse stakeholder perspectives but systematically misrepresent marginalized groups through stereotyped and homogenized synthetic voices, conflicting with foundational values of participatory research."
+  - source: synthetic-replacements-human-survey-data-perils
+    type: supports
+    strength: strong
+    detail: "Bisbee et al. (Political Analysis 2024) show that LLM synthetic replacements produce narrower opinion distributions than actual survey data, systematically compressing within-group heterogeneity; bias toward WEIRD demographics documented across multiple LLMs."
+  - source: how-generative-language-models-answer-opinion
+    type: supports
+    strength: moderate
+    detail: "Boelaert (2024) finds that generative LLMs exhibit 'machine bias' — systematic over-representation of dominant cultural norms in opinion generation — with models skewing toward liberal, educated, Western viewpoints regardless of demographic prompting."
+  - source: cultural-bias-cultural-alignment-large-language
+    type: supports
+    strength: moderate
+    detail: "Tao et al. (PNAS Nexus 2024) demonstrate that LLMs from different training backgrounds exhibit distinct cultural biases; U.S.-trained models systematically misalign with non-Western populations even when culturally prompted, showing the misrepresentation extends to cross-national contexts."
+  - source: artificial-intelligence-unbiased-opinions-assessing-gpt
+    type: supports
+    strength: weak
+    detail: "Von der Heyde et al. (GOR 2023 poster) find GPT-3 fails to predict German party preferences with only a Green/Left bias, providing early non-US evidence of systematic misrepresentation."
+  - source: assessing-bias-llm-generated-synthetic-datasets
+    type: supports
+    strength: moderate
+    detail: "Von der Heyde et al. (2023) systematically document bias in LLM-generated synthetic opinion datasets, showing that GPT-3-based synthetic data diverges significantly from German survey benchmarks — bias compounds across demographic subgroups."
+  - source: vox-populi-vox-ai-using-language
+    type: supports
+    strength: moderate
+    detail: "Von der Heyde et al. (2023) replicate the Argyle et al. methodology on German GLES data and find GPT-3 systematically biased toward Green and Left parties, failing on nuanced subgroup-specific political attitudes — confirming misrepresentation outside the U.S. context."
+  - source: large-language-models-replace-human-participants
+    type: supports
+    strength: strong
+    detail: "Wang et al. (Nature Machine Intelligence 2025) show that LLMs replacing human participants harmfully misportray and flatten identity groups — reducing within-group diversity to stereotyped representations, with disproportionate harm to marginalized and underrepresented groups."
+  - source: problems-llm-generated-data-social-science
+    type: supports
+    strength: moderate
+    detail: "Rossi et al. (2024) document systematic problems in LLM-generated social science data including distributional misrepresentation, homogenization of responses, and failure to capture authentic minority viewpoints."
+  - source: revealing-fine-grained-values-opinions-large
+    type: supports
+    strength: moderate
+    detail: "Wright et al. (2024) show that LLMs exhibit consistent 'tropes' — recurring semantic patterns that reveal latent opinion structures biased toward liberal/Western viewpoints — regardless of demographic prompting, and that demographic prompts significantly affect Political Compass Test outcomes."
+conditions: "Evaluated on US demographic groups via Pew ATP opinion surveys in multiple-choice format; RLHF-tuned models show stronger skew than base models; findings extend to non-US populations (German elections, cross-cultural surveys) but misrepresentation patterns vary by context"
 date_proposed: 2026-04-12
-date_updated: 2026-04-13
+date_updated: 2026-04-28
 ---
 
 ## Statement

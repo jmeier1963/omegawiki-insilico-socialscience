@@ -5,15 +5,19 @@ status: proposed
 confidence: 0.7
 tags: [llm-validity, behavioral-science, statistical-calibration, causal-inference, methodology]
 domain: NLP
-source_papers: [human-study-did-involve-human-subjects]
+source_papers: [human-study-did-involve-human-subjects, survey-response-generation-generating-closed-ended]
 evidence:
   - source: human-study-did-involve-human-subjects
     type: supports
     strength: moderate
     detail: "Formal argument: heuristic calibration lacks statistical guarantees for unbiased causal effect estimation; statistical calibration with control variates and small human samples provides formal guarantees under stated assumptions."
+  - source: survey-response-generation-generating-closed-ended
+    type: supports
+    strength: moderate
+    detail: "Ahnert (2025) demonstrates that LLM-generated closed-ended survey responses require systematic statistical calibration to account for systematic response biases; uncalibrated LLM survey responses introduce distortions that affect distributional inference even when aggregate alignment appears high."
 conditions: "Applies specifically to confirmatory behavioral science research where causal effect estimation is the goal; exploratory use of LLMs for hypothesis generation does not require this level of rigor."
 date_proposed: 2026-04-14
-date_updated: 2026-04-14
+date_updated: 2026-04-28
 ---
 
 ## Statement

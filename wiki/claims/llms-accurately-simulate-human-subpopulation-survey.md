@@ -5,7 +5,7 @@ status: weakly_supported
 confidence: 0.75
 tags: [silicon-sampling, llm, survey-simulation, demographic-conditioning, social-science]
 domain: NLP
-source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, polypersona-persona-grounded-llm-synthetic-survey, emulating-public-opinion-proof-concept-ai, foundation-model-predict-capture-human-cognition]
+source_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, polypersona-persona-grounded-llm-synthetic-survey, emulating-public-opinion-proof-concept-ai, foundation-model-predict-capture-human-cognition, donald-trumps-virtual-polls-simulating-predicting, ai-augmented-surveys-leveraging-large-language]
 evidence:
   - source: out-one-many-using-language-models
     type: supports
@@ -31,6 +31,14 @@ evidence:
     type: supports
     strength: moderate
     detail: "Benchmark of 128 prompt-model-question triplets against Chilean probabilistic survey shows >0.90 F1 on trust items; GPT-4o, GPT-4o-mini, and Llama 4 Maverick perform comparably, but substantial item-level heterogeneity and demographic skew (best alignment with ages 45–59) limit generalizability."
+  - source: donald-trumps-virtual-polls-simulating-predicting
+    type: supports
+    strength: moderate
+    detail: "Jiang et al. (2024) use LLM personas to simulate and predict U.S. polling outcomes, showing that demographic-conditioned LLMs can track directional electoral opinion trends, though calibration errors remain for subpopulations."
+  - source: ai-augmented-surveys-leveraging-large-language
+    type: supports
+    strength: moderate
+    detail: "Kim et al. (2023) demonstrate that LLM-augmented surveys using post-stratification can recover subpopulation estimates from small samples with comparable accuracy to large traditional surveys, validating the simulation approach for augmentation use cases."
 conditions: "Holds for aggregate subgroup comparisons; fidelity may be lower for rare demographic intersections; constrained to training data time period; model must have been trained on relevant demographic text."
 date_proposed: 2026-04-12
 date_updated: 2026-04-13

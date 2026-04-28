@@ -3,7 +3,7 @@ title: "LLM-Powered Agent Architecture"
 aliases: ["generative agent architecture", "LLM agent", "language model agent", "LLM-backed agent", "cognitive agent architecture", "agentic LLM system", "LLM agentic continuum"]
 tags: [agents, llm-agents, architecture, planning, perception, action]
 maturity: active
-key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human, metagpt-meta-programming-multi-agent-collaborative, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, agent0-unleashing-self-evolving-agents-zero, numina-lean-agent-open-general-agentic]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, generative-agent-simulations-000-people, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human, metagpt-meta-programming-multi-agent-collaborative, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, agent0-unleashing-self-evolving-agents-zero, numina-lean-agent-open-general-agentic, aviary-training-language-agents-challenging-scientific]
 first_introduced: "2023"
 date_updated: 2026-04-23
 related_concepts: [generative-agent-memory-stream, agent-reflection]

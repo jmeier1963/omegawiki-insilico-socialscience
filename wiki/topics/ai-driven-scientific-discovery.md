@@ -57,6 +57,7 @@ The field is advancing rapidly in narrow domains (materials, genomics) where the
 - No robust benchmark for evaluating *novelty* of AI-generated scientific ideas
 - Semantic integration gap between AI and traditional science remains unaddressed
 - Reproducibility of AI-generated research is poorly characterized
+- Institutional barriers to AI-driven innovation in regulated sectors are understudied — Knie (2026) argues peer review conservatism and Daseinsvorsorge logic systematically prevent breakthrough technology deployment ([[keine-autonomen-autos-aus-deutschland-das]])
 
 ## Key people
 

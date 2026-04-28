@@ -60,3 +60,4 @@ The most clearly argued case that peer review's reputation far exceeds its evide
 - [[richardson-scancar-papermill-detection]]
 - [[open-science-collaboration-reproducibility]]
 - [[merton-sociology-of-science]]
+- supports: [[peer-review-epistemic-conservatism]]

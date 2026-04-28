@@ -5,15 +5,23 @@ status: weakly_supported
 confidence: 0.6
 tags: [llm-simulation, social-science, position-paper, survey-simulation, pilot-studies, exploratory-research]
 domain: "NLP"
-source_papers: [position-llm-social-simulations-promising-research]
+source_papers: [position-llm-social-simulations-promising-research, large-language-models-computational-social-science, using-llms-advance-cognitive-science-collectives]
 evidence:
   - source: position-llm-social-simulations-promising-research
     type: supports
     strength: moderate
     detail: "Position paper argues five key challenges (diversity, bias, sycophancy, alienness, generalization) are tractable given promising directions including context-rich prompting, steering vectors, fine-tuning, and iterative evaluation; grounded in review of ~40 empirical studies."
+  - source: large-language-models-computational-social-science
+    type: supports
+    strength: weak
+    detail: "Thapa et al. (2025) survey LLM applications in computational social science, concluding that LLMs are a promising and tractable tool for social science research across annotation, simulation, and analysis tasks, with methodological best practices emerging."
+  - source: using-llms-advance-cognitive-science-collectives
+    type: supports
+    strength: moderate
+    detail: "Sucholutsky et al. (Nature Computational Science 2025) demonstrate that LLMs can advance cognitive science research on collectives, providing empirical evidence that LLM simulations are a productive complement to traditional experimental methods in a high-bar venue."
 conditions: "Applies primarily to pilot and exploratory studies in the near term; complete study replacement depends on advances in addressing alienness and generalization challenges. Evidence base is largely U.S.-centric and English-language."
 date_proposed: 2026-04-13
-date_updated: 2026-04-13
+date_updated: 2026-04-28
 ---
 
 ## Statement

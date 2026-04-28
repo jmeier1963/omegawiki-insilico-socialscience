@@ -5,15 +5,19 @@ status: weakly_supported
 confidence: 0.7
 tags: [persona, llm-alignment, ecological-validity, representativeness, sociodemographics, transparency]
 domain: NLP
-source_papers: [whose-personae-synthetic-persona-experiments-llm]
+source_papers: [whose-personae-synthetic-persona-experiments-llm, prompt-perturbations-reveal-human-like-biases]
 evidence:
   - source: whose-personae-synthetic-persona-experiments-llm
     type: supports
     strength: moderate
     detail: "Systematic review of 63 NLP/AI papers (2023–2025) finds 43% target an undifferentiated 'general population,' only 35% discuss representativeness of their LLM personae, and 65% do not explicitly discuss sociodemographic representation — establishing a wide, cross-venue pattern of underspecification."
+  - source: prompt-perturbations-reveal-human-like-biases
+    type: supports
+    strength: moderate
+    detail: "Rupprecht et al. (2025) demonstrate that prompt perturbations (minor variations in prompt wording) reveal systematic human-like biases in LLM persona responses, showing that LLM responses are sensitive to underspecified aspects of persona prompts — what isn't specified is filled in with biased defaults, limiting ecological validity."
 conditions: "Applies to persona-based LLM alignment and evaluation experiments published 2023–2025 in leading NLP/AI venues. Scope may broaden or narrow with inclusion of preprints and non-English venues."
 date_proposed: 2026-04-12
-date_updated: 2026-04-12
+date_updated: 2026-04-28
 ---
 
 ## Statement

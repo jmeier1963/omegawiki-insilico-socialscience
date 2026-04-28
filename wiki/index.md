@@ -864,3 +864,199 @@ foundations:
   - slug: schrape-technik-und-gesellschaft
     title: "Technik und Gesellschaft"
     domain: general
+
+papers:
+  - slug: keine-autonomen-autos-aus-deutschland-das
+    title: "Keine autonomen Autos aus Deutschland — Das Problem mit der Innovationskultur"
+    tags: [peer-review, science-policy, innovation-culture, autonomous-vehicles, germany, epistemic-closure]
+    importance: 2
+
+claims:
+  - slug: peer-review-epistemic-conservatism
+    status: weakly_supported
+    confidence: 0.65
+    domain: Science and Technology Studies
+
+papers:
+  - slug: illusion-artificial-inclusion
+    title: "The Illusion of Artificial Inclusion"
+    tags: [silicon-sampling, llm-ethics, marginalized-groups, illusion-inclusion, participatory-research]
+    importance: 3
+
+  - slug: survey-response-generation-generating-closed-ended
+    title: "Survey Response Generation: Generating Closed-Ended Survey Responses using Large Language Models"
+    tags: [silicon-sampling, survey-response-generation, calibration, closed-ended-questions, llm]
+    importance: 3
+
+  - slug: agent-based-modeling-economics-finance-past
+    title: "Agent-Based Modeling in Economics and Finance: Past, Present, and Future"
+    tags: [agent-based-modeling, computational-economics, abm, simulation, history]
+    importance: 3
+
+  - slug: synthetic-replacements-human-survey-data-perils
+    title: "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models"
+    tags: [silicon-sampling, llm-bias, opinion-alignment, distributional-analysis, validity]
+    importance: 4
+
+  - slug: how-generative-language-models-answer-opinion
+    title: "How Do Generative Language Models Answer Opinion Polls?"
+    tags: [silicon-sampling, opinion-alignment, machine-bias, political-opinions, llm]
+    importance: 2
+
+  - slug: mixed-subjects-design-treating-large-language
+    title: "A Mixed Subjects Design Treating Large Language Models as Informative Observations"
+    tags: [silicon-sampling, mixed-methods, prediction-powered-inference, causal-inference, research-design]
+    importance: 3
+
+  - slug: social-life-silico-science-artificial-societies
+    title: "The Social Life In Silico: The Science of Artificial Societies"
+    tags: [agent-based-modeling, artificial-societies, social-simulation, computational-sociology]
+    importance: 3
+
+  - slug: identifying-bots-through-llm-generated-text
+    title: "Identifying Bots through LLM-Generated Text Detection"
+    tags: [survey-bots, llm, bot-detection, survey-integrity, data-quality]
+    importance: 2
+
+  - slug: threat-analytic-flexibility-using-large-language
+    title: "The Threat of Analytic Flexibility Using Large Language Models in Social Research"
+    tags: [silicon-sampling, analytic-flexibility, false-positives, researcher-degrees-of-freedom, replication-crisis]
+    importance: 3
+
+  - slug: digital-twins-potentials-ethical-issues-limitations
+    title: "Digital Twins: Potentials, Ethical Issues, and Limitations"
+    tags: [digital-twins, simulation, ethical-issues, llm-simulation, social-simulation]
+    importance: 2
+
+  - slug: llm-driven-bot-infiltration-protecting-web
+    title: "LLM-Driven Bot Infiltration: Protecting Web Surveys from AI-Generated Responses"
+    tags: [survey-bots, llm, survey-integrity, bot-protection, online-surveys]
+    importance: 2
+
+  - slug: quantifying-persona-effect-llm-simulations
+    title: "Quantifying the Persona Effect in LLM Simulations"
+    tags: [persona-conditioning, silicon-sampling, llm-simulation, demographic-alignment, persona-effect]
+    importance: 3
+
+  - slug: donald-trumps-virtual-polls-simulating-predicting
+    title: "Donald Trump's Virtual Polls: Simulating and Predicting U.S. Public Opinion with Large Language Models"
+    tags: [silicon-sampling, electoral-polling, public-opinion, demographic-conditioning, prediction]
+    importance: 3
+
+  - slug: ai-augmented-surveys-leveraging-large-language
+    title: "AI-Augmented Surveys: Leveraging Large Language Models and Surveys for Opinion Prediction"
+    tags: [silicon-sampling, ai-augmented-surveys, post-stratification, opinion-prediction, survey-methodology]
+    importance: 3
+
+  - slug: machine-learning-tool-hypothesis-generation
+    title: "Machine Learning as a Tool for Hypothesis Generation"
+    tags: [hypothesis-generation, machine-learning, social-science, scientific-discovery, causal-inference]
+    importance: 4
+
+  - slug: balancing-large-language-model-alignment-algorithmic
+    title: "Balancing Large Language Model Alignment with Algorithmic Fidelity"
+    tags: [persona-conditioning, silicon-sampling, algorithmic-fidelity, alignment, subgroup-fidelity]
+    importance: 3
+
+  - slug: social-science-moves-silico
+    title: "Social Science Moves In Silico"
+    tags: [silicon-sampling, in-silico-social-science, commentary, llm-simulation]
+    importance: 1
+
+  - slug: problems-llm-generated-data-social-science
+    title: "Problems with LLM-Generated Data in Social Science Research"
+    tags: [silicon-sampling, llm-generated-data, social-science, validity, methodological-critique]
+    importance: 2
+
+  - slug: prompt-perturbations-reveal-human-like-biases
+    title: "Prompt Perturbations Reveal Human-Like Biases in LLM Personas"
+    tags: [silicon-sampling, persona-conditioning, prompt-sensitivity, ecological-validity, llm-bias]
+    importance: 3
+
+  - slug: using-llms-advance-cognitive-science-collectives
+    title: "Using LLMs to Advance Cognitive Science of Collectives"
+    tags: [cognitive-science, llm-simulation, collective-intelligence, social-cognition, silicon-sampling]
+    importance: 4
+
+  - slug: using-generative-ai-sequential-data-generation
+    title: "Using Generative AI for Sequential Data Generation"
+    tags: [generative-ai, sequential-data, silicon-sampling, synthetic-data, survey-methodology]
+    importance: 2
+
+  - slug: cultural-bias-cultural-alignment-large-language
+    title: "Cultural Bias and Cultural Alignment of Large Language Models"
+    tags: [silicon-sampling, cultural-bias, cross-national, llm-alignment, pnas-nexus]
+    importance: 3
+
+  - slug: large-language-models-computational-social-science
+    title: "Large Language Models in Computational Social Science"
+    tags: [silicon-sampling, llm, computational-social-science, survey, methodology]
+    importance: 2
+
+  - slug: artificial-intelligence-unbiased-opinions-assessing-gpt
+    title: "Artificial Intelligence with Unbiased Opinions? Assessing GPT's Perspectives on Political Topics"
+    tags: [silicon-sampling, llm-bias, political-opinions, german-politics, opinion-assessment]
+    importance: 1
+
+  - slug: assessing-bias-llm-generated-synthetic-datasets
+    title: "Assessing Bias of LLM-Generated Synthetic Datasets"
+    tags: [silicon-sampling, llm-bias, synthetic-datasets, demographic-bias, german-politics]
+    importance: 2
+
+  - slug: vox-populi-vox-ai-using-language
+    title: "Vox Populi, Vox AI? Using Language Models to Estimate German Public Opinion"
+    tags: [silicon-sampling, llm-bias, german-public-opinion, gpt-3, vote-choice]
+    importance: 2
+
+  - slug: large-language-models-replace-human-participants
+    title: "Large language models that replace human participants can harmfully misportray and flatten identity groups"
+    tags: [silicon-sampling, llm-ethics, identity-groups, representation, flattening]
+    importance: 4
+
+  - slug: potential-existential-threat-large-language-models
+    title: "The potential existential threat of large language models to online survey research"
+    tags: [survey-bots, llm, survey-integrity, existential-threat, online-surveys]
+    importance: 4
+
+  - slug: revealing-fine-grained-values-opinions-large
+    title: "Revealing Fine-Grained Values and Opinions in Large Language Models"
+    tags: [llm-bias, values, opinions, political-compass, demographic-prompting, tropes]
+    importance: 3
+
+claims:
+  - slug: mixed-subjects-designs-combining-llm-predictions
+    status: proposed
+    confidence: 0.55
+    domain: NLP
+
+  - slug: analytic-flexibility-silicon-sampling-configurations-dramatically
+    status: proposed
+    confidence: 0.60
+    domain: NLP
+
+  - slug: llm-bots-contaminating-online-surveys-threaten
+    status: proposed
+    confidence: 0.65
+    domain: NLP
+
+  - slug: machine-learning-generate-novel-scientific-hypotheses
+    status: weakly_supported
+    confidence: 0.65
+    domain: NLP
+
+papers:
+  - slug: aviary-training-language-agents-challenging-scientific
+    title: "Aviary: training language agents on challenging scientific tasks"
+    tags: [language-agents, scientific-tasks, expert-iteration, llm-training, gymnasium, pomdp, dna-cloning, protein-design]
+    importance: 3
+
+concepts:
+  - slug: language-decision-process
+    tags: [language-agents, pomdp, stochastic-computation-graphs, agent-formalism, llm-agents]
+    maturity: emerging
+
+claims:
+  - slug: language-agents-online-training-match-frontier
+    status: weakly_supported
+    confidence: 0.65
+    domain: NLP
