@@ -1,0 +1,63 @@
+\section{Measuring human-LM alignment}
+\label{sec:context}
+
+We now discuss how to probe language model opinions on questions from our \bname dataset and compare them to the previously-obtained human opinion distributions.
+
+
+\subsection{Interfacing with models}
+\label{sec:prompting}
+
+\paragraph{Prompting the model.} Due to the multiple-choice nature of samples in our dataset, we can use standard prompting approaches used for traditional question answering (QA) tasks~\citep{hendrycks2020measuring,liang2022holistic}.
+Concretely, we format each question into the prompt template shown in Figure~\ref{fig:prompt_example}.
+Unless otherwise specified, we present the options in the order they are provided by the survey designers, which captures the ordinal structure of the options -- \eg, ``A great deal'' to ``Not at all'' in Figure~\ref{fig:prompt_example}.
+We then evaluate LMs on these questions in two settings, distinguished by the additional context provided to the model.
+
+When evaluating {representativeness} (Sections~\ref{sec:intro} and~\ref{sec:rep}), the goal is to understand the LM's \emph{default} opinion distribution, and we prompt the model using this standard QA template without any added context. 
+In contrast, measuring {steerability} (Section~\ref{sec:steerable}) involves testing the model's ability to adapt to a particular demographic group. 
+In this \emph{steered} setting, we thus prepend additional context to the prompt describing the group that we want the model to emulate.
+We consider three approaches to supply demographic information to the LM (examples in Figure~\ref{fig:prompt_example}):
+\begin{enumerate}
+    \item \textsc{QA}: The group information is provided as a response to a previous multiple-choice survey question, using the phrasing used by Pew to collect this information. 
+    \item \textsc{Bio}: The group information is provided as a free-text response to a biographic question (e.g., asking about party affiliation), akin to \citet{argyle2022out}.
+    \item \textsc{Portray}: The LM is instructed to pretend to be a member of said group (\eg pretend you are a Democrat), similar to the crowd-sourcing design of~\citet{kambhatla2022surfacing}. 
+\end{enumerate}
+
+
+\paragraph{Extracting the output distribution.}  In contrast to factual QA tasks, there is no ``correct'' answer in our setting.
+Instead, for a model $m$, we are interested in the \emph{distribution of model opinions} $D_m(q)$ for each question across its corresponding set of answer choices.
+To obtain this distribution, we prompt the model and obtain the next-token log probabilities.
+Specifically, we measure the log probabilities assigned to each of the answer choices (\eg, `A', `B', ... in Figure~\ref{fig:prompt_example}) -- ignoring all other possible completions (See Appendix~\ref{app:models} for details).
+
+For reasons that we will discuss in Section~\ref{sec:metric}, we treat the refusal and non-refusal answer choices (``E'' and ``A''-``D'' in Figure~\ref{fig:prompt_example}) separately. Concretely,
+to compute $D_m(q)$, we exponentiate and normalize the scores for all answer choices \emph{except refusal}.
+Then, for questions with a refusal option, we also measure the model's refusal probability as the ratio of the exponentiated log probability of refusal vs. the exponentiated cumulative log probabilities for all the choices (\eg, $e^{lp(E)}/\sum_{o \in \{A,B,C,D,E\}} e^{lp(o)}$ for the Figure~\ref{fig:prompt_example} example). 
+
+
+\subsection{Evaluating the model's response}
+\label{sec:metric}
+
+Aggregating human responses from the opinion surveys, as well as probing LMs, provide us with a set of opinion distributions $D(q)$ (\ie, overall, group-level and per-LM) over the answer choices. To answer our question of whose opinions LMs reflect, we must now define a similarity measure over pairs of such distributions. Although we could use any distributional divergence to compare two distributions, there are some subtleties in the structure of survey questions that we would like to capture.
+Specifically, unlike standard QA benchmarks, the answer choices to survey questions typically have an ordinal structure (\eg, ranging from ``A great deal'' to ``Not at all'', along with a refusal option in Figure~\ref{fig:prompt_example}).
+This means that divergences for non-metric probability measures such as the Kullback-Liebler or total variation can provide misleading estimates of disagreement.
+For instance, if all humans answered ``A great deal'', a model that assigns all its probability mass to ``A fair amount'' and another one that assigns all its  mass to ``Not at all' would be incorrectly deemed equally similar based on such measures. 
+
+We thus choose the 1-Wasserstein distance (\wassd), which for a pair of distributions $D_1$ and $D_2$, is defined as the minimum cost for transforming $D_1$ into $D_2$.
+Note that here the cost of transformation accounts for the similarity between answer choices.
+To project the ordinal answer choices to a metric space suitable for \wassd, we simply map them to the corresponding positive integers (\eg, \{`A': 1, `B': 2, ..., `D': 4\} for Figure~\ref{fig:prompt_example}).
+There are two exceptions: (i) due to its non-ordinal nature, we omit the `Refused' option (if present) in computing \wassd{} and compare human and model refusals separately, and (ii) if the last option is hedging (\eg, ``Neither'' and ``About the same''), we map it to the to mean of the remaining ordinal keys (see Appendix~\ref{app:metric} for details).
+
+\paragraph{Measuring opinion alignment.}
+We define \emph{alignment} between two opinion distributions $D_1$ and $D_2$ on a set of questions $Q$ as: 
+\begin{equation}
+    \simi(D_1, D_2; Q) = \frac{1}{|Q|}\sum_{q\in Q}1 - \frac{\mathcal{WD}(D_1(q), D_2(q))}{N-1} 
+\end{equation}
+Where, $N$ is the number of answer choices (excluding refusal) and  the normalization factor $N-1$ is the maximum \wassd{} between any pair of distributions in this metric space.
+This metric is bounded between 0 and 1, with a value of 1 implying a perfect match between the two opinion distributions.
+In our study, we use this metric to compare the LM opinion distribution $D_m$ to that of all survey respondents ($D_O$) and that of specific groups ($D_G$). \\
+
+\paragraph{On the use of the term \emph{alignment}.}
+We use the term \emph{alignment} to describe our metric as it measures one aspect of alignment --- alignment of opinions and preferences between LMs and humans. 
+Crucially, in contrast to prior work, our work treats human alignment as an inherently subjective quantity that depends on who it is measured against, rather than it being a single quantity that can be improved.
+In fact, based on our definition, higher human-LM alignment to certain groups might not always be desirable (\eg, matching racist views) or even possible (\eg, aligning with both Democrats and Republicans on abortion) -- see Section~\ref{sec:discussion}.
+
+

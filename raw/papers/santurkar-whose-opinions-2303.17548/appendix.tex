@@ -1,0 +1,199 @@
+\newpage
+\appendix
+\onecolumn
+
+\input{setup}
+
+
+
+\clearpage
+
+\section{Additional experimental Results}
+
+In Appendix Figure~\ref{figapp:total_mass}, we visualize how much cumulative probability mass models assign to one of the answer choices (exluding refusal).
+We calculate this by simply summing the exponentiated log probabilities over all options.
+Ideally, we would like this number to be close to one for all questions.
+While this value varies across models---being notably high for human feedback-tuned ones---in general, it is typically reasonable (at least 30\% on average).
+This is a necessary sanity check to ensure that the distributions we are deriving (by normalizing the log probabilities over answers) are meaningful and not just noise.
+
+
+\begin{figure*}[!h]
+    \vskip 0.2in
+    \begin{center}
+    \centerline{\includegraphics[width=0.95\textwidth]{Figures/total_mass.png}}
+    \caption{Distribution of probability mass assigned by different models to one of the answer choices.}
+    \label{figapp:total_mass}
+    \end{center}
+    \vskip -0.2in
+\end{figure*}
+
+\subsection{Representativeness}
+\label{app:representative}
+\label{app:refusal}
+
+Appendix Figure~\ref{figapp:per_md_alignment} is an extended version of Figure~\ref{fig:per_md_alignment}, visualizing the subgroup representativeness scores for demographic attributes that were omitted from the main paper in the interest of space.
+
+
+
+
+\begin{figure}[!h]
+    \caption{Extended version of subgroup representativeness scores $\mathcal{R}^{O}_M$ of LMs from Figure~\ref{fig:per_md_alignment}: A higher score (lighter) indicates that, on average across dataset questions, the LMs opinion distribution is more similar to that of survey respondents from the specified subgroup.}
+    \label{figapp:per_md_alignment}
+    \centering
+    \begin{subfigure}[b]{0.525\textwidth}
+     \centering
+    \includegraphics[width=1\columnwidth]{Figures/representativeness_EDUCATION.png}
+    \caption{Education}
+    \end{subfigure} 
+    \begin{subfigure}[b]{0.625\textwidth}
+    \centering
+    \includegraphics[width=1\columnwidth]{Figures/representativeness_RELIGION.png}
+    \caption{Religion}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=1\columnwidth]{Figures/representativeness_SEX.png}
+    \caption{Sex}
+    \end{subfigure} 
+    \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_RACE.png}
+    \caption{Race}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[!h]
+    \ContinuedFloat
+    \centering
+        \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_AGE.png}
+        \caption{Age}
+        \end{subfigure}
+    \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_CREGION.png}
+        \caption{Census region}
+    \end{subfigure} 
+        \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_POLPARTY.png}
+        \caption{Political party}
+        \end{subfigure}
+    \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_MARITAL.png}
+        \caption{Relationship status}
+    \end{subfigure} 
+    \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_CITIZEN.png}
+        \caption{Citizenship}
+    \end{subfigure}
+    \vskip -0.2in
+\end{figure}
+    \begin{figure}[!h]
+        \ContinuedFloat
+        \centering
+        \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \includegraphics[width=1\columnwidth]{Figures/representativeness_RELIGATTEND.png}
+        \caption{Religious attendance}
+        \end{subfigure}
+    \vskip -0.2in
+\end{figure}
+
+\paragraph{Modal response.}
+In Appendix Figure~\ref{figapp:entropy}, we compare the entropy of the per-question response distributions of humans and various LMs.
+\begin{figure}[!h]
+    \vskip 0.2in
+    \begin{center}
+    \centerline{\includegraphics[width=1\columnwidth]{Figures/entropy.png}}
+    \caption{A comparison of the entropy of LM response distributions: \model{text-davinci-003} tends to assign most of it's probability mass to a single option. This is in contrast to human opinions which tend to have a fair amount of variability.}
+    \label{figapp:entropy}
+    \end{center}
+    \vskip -0.2in
+\end{figure}
+
+\paragraph{Refusal.}
+As discussed in Section~\ref{sec:benchmark}, in computing LM/human opinion distributions, we omit the refusal option.
+This is because, when we are computing similarity, we would like to take into account the ordinal structure of the options---see Section~\ref{sec:metric}---and it is unclear what is the right way to project refusal onto this metric space.
+In Appendix Figure~\ref{figapp:refusal_rates}, we thus separately compare the refusal rates of various LMs to that of the overall human populace. Here, we measure the overall probability mass assigned to the refusal option across all dataset questions.
+In general, we see that the human-feedback tuned models actually have a lower tendency to refuse an answer---and their refusal rates are closest to that of humans.
+
+\begin{figure*}[!h]
+    \vskip 0.2in
+    \begin{center}
+    \centerline{\includegraphics[width=0.95\textwidth]{Figures/refusals.png}}
+    \caption{Refusal rates across \bname for different LMs and Pew survey respondents.}
+    \label{figapp:refusal_rates}
+    \end{center}
+    \vskip -0.2in
+\end{figure*}
+
+
+\clearpage
+\subsection{Steerability}
+\label{app:steerability}
+In Appendix Figure~\ref{figapp:steerability_group}, we compare how successful different LMs are at personalizing the the opinions of a given subgroup. 
+
+\begin{figure*}[!h]
+    \caption{A break down of the post-steering representativeness scores of different LMs by the subgroup they are steered to.}
+    \label{figapp:steerability_group}
+    \vskip 0.2in
+    \begin{center}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_POLIDEOLOGY.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_POLPARTY.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_RACE.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_RELIG.png}
+    \end{center}
+    \vskip -0.2in
+\end{figure*}
+
+\begin{figure*}[!h]
+    \ContinuedFloat
+    \vskip 0.2in
+    \begin{center}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_INCOME.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_EDUCATION.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_CREGION.png}
+    \includegraphics[width=0.9\textwidth]{Figures/steerability_SEX.png}
+    \end{center}
+    \vskip -0.2in
+\end{figure*}
+
+\clearpage
+
+\subsection{Consistency}
+\label{app:consistency}
+
+In Appendix Figure~\ref{figapp:topic_ideology}, we visualize the per-topic alignment of LMs along the fine-grained topics displayed in Appendix Table~\ref{tab:topic}. We construct this figure, as well as Figure~\ref{fig:topic_ideology} as follows.
+Let's say we have a model $M$ with a per-question opinion distribution of $D_M(q)$. Further, consider a demographic attribute $L$ (\eg, political ideology) with corresponding subgroups $G_1, G_2, ..., G_l$ (very liberal, liberal,..., very conservative). Further, say that the dataset topics are grouped into topic categories $\mathcal{T}_1, \mathcal{T}_1,...,\mathcal{T}_K$ (\eg, abortion, personal finance, ...).
+
+For each topic $\mathcal{T}_k$, we consider the dataset questions $Q_{\mathcal{T}_k}$ belonging to that topic. On these questions, we then find the best representative subgroup as:
+
+\begin{equation}
+    G^{best}_{\mathcal{T}_k} = \argmax_{G \in \{G_1, G_2, ..., G_l\}} \mathcal{R}^{G}_M(Q_{\mathcal{T}_k})
+\end{equation}
+
+We also assign a significance score to this group as 
+\begin{equation}
+    \alpha^{best}_{\mathcal{T}_k} = \frac{\max_{G \in \{G_1, G_2, ..., G_l\}} \mathcal{R}^{G}_M(Q_{\mathcal{T}_k})}{\min_{G \in \{G_1, G_2, ..., G_l\}} \mathcal{R}^{G}_M(Q_{\mathcal{T}_k})}
+\end{equation}
+In Figures~\ref{fig:topic_ideology} and Appendix Figure~\ref{figapp:topic_ideology}, we then denote the $G^{best}_{\mathcal{T}_k}$ for each topic using a color, and the significance $\alpha^{best}_{\mathcal{T}_k}$ using dot size.
+For instance, a large red dot implies that a model is strongly aligned with conservatives on that topic.
+
+
+
+\begin{figure*}[!t]
+    \vskip 0.2in
+    \begin{center}
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/consistency_fg.png}
+    \caption{Subgroups that various LMs are best aligned with by fine-grained topic (indicated by dot color), along the axes of political ideology, education, and income levels. The size of the dot indicates how significant the bias towards that group is: computed as the ratio of the best and worst subgroup representativeness for that topic.}
+    \label{figapp:topic_ideology}
+    \end{center}
+    \vskip -0.2in
+\end{figure*}
+
+\input{robustness}
