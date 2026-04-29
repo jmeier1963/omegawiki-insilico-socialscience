@@ -1,3 +1,7 @@
+# Wiki Index
+
+<!-- markdownlint-disable MD007 MD032 -->
+
 papers:
   - slug: out-one-many-using-language-models
     title: "Out of One, Many: Using Language Models to Simulate Human Samples"
