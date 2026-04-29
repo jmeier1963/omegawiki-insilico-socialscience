@@ -23,6 +23,8 @@
 
 This working tree is an **in-silico social science** ΩmegaWiki: LLMs and generative agents as proxies for human populations, synthetic surveys, persona conditioning, and validity methodology. Start from the domain survey in [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md); add sources under `raw/papers/`.
 
+> **Current wiki state:** 166 papers · 47 claims · 261 graph edges · maturity: warm
+
 ---
 
 ## What is ΩmegaWiki?
@@ -295,6 +297,8 @@ Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 ## 中文
 
 本仓库为 **in-silico 社会科学** 方向的 ΩmegaWiki：以 LLM 与生成式智能体模拟人群、合成调查、人格条件与效度方法等。领域综述见 [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md)；原始文献放在 `raw/papers/`。
+
+> **当前 wiki 状态：** 166 篇论文 · 47 条 claims · 261 条图谱边 · 成熟度：warm
 
 ### ΩmegaWiki 是什么？
 

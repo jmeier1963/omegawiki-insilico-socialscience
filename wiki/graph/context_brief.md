@@ -48,13 +48,13 @@ _Auto-generated open questions. Do not edit._
 - [2] German General Personas: A Survey-Derived Persona Prompt Collection for Population-Aligned LLM Studies (NLP)
 - [2] This human study did not involve human subjects: Validating LLM simulations as behavioral evidence (NLP)
 - [4] Whose Opinions Do Language Models Reflect? (NLP)
-## Recent Relationships (257 total)
-  papers/using-llms-advance-cognitive-science-collectives --supports--> claims/llm-social-simulations-tractable-promising-research
-  papers/using-llms-advance-cognitive-science-collectives --supports--> concepts/silicon-sampling
-  papers/cultural-bias-cultural-alignment-large-language --supports--> claims/llms-misrepresent-human-opinion-distributions
-  papers/cultural-bias-cultural-alignment-large-language --supports--> concepts/silicon-sampling
+## Recent Relationships (261 total)
   papers/large-language-models-computational-social-science --supports--> claims/llm-social-simulations-tractable-promising-research
   papers/large-language-models-computational-social-science --supports--> concepts/silicon-sampling
   papers/artificial-intelligence-unbiased-opinions-assessing-gpt --supports--> claims/llms-misrepresent-human-opinion-distributions
   papers/artificial-intelligence-unbiased-opinions-assessing-gpt --supports--> concepts/silicon-sampling
-  papers/assessing-bias-llm-generated-synthetic-datasets --supports--> claims/ll
+  papers/assessing-bias-llm-generated-synthetic-datasets --supports--> claims/llms-misrepresent-human-opinion-distributions
+  papers/assessing-bias-llm-generated-synthetic-datasets --supports--> concepts/silicon-sampling
+  papers/vox-populi-vox-ai-using-language --supports--> claims/llms-misrepresent-human-opinion-distributions
+  papers/vox-populi-vox-ai-using-language --supports--> concepts/silicon-sampling
+  papers/large-language-models-replace-human-participants --supports--> claims/llms-misrepresent-human-opinion-distrib

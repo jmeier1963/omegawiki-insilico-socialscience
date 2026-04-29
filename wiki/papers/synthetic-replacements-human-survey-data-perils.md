@@ -61,3 +61,4 @@ One of the most rigorous empirical critiques of silicon sampling from a politica
 - [[whose-opinions-language-models-reflect]]
 - [[llm-social-simulations-structural-heterogeneity-ceiling]]
 - [[out-one-many-using-language-models]]
+- [[james-bisbee]]

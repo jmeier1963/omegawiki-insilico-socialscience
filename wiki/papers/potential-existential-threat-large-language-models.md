@@ -56,5 +56,6 @@ Important alarm paper. PNAS venue gives it high visibility. The "existential thr
 
 - [[identifying-bots-through-llm-generated-text]]
 - [[llm-driven-bot-infiltration-protecting-web]]
-- supports: [[llm-bots-threaten-survey-integrity]]
+- supports: [[llm-bots-contaminating-online-surveys-threaten]]
 - [[silicon-sampling]]
+- [[sean-westwood]]

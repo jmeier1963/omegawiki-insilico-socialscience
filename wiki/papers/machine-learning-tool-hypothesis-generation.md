@@ -56,5 +56,7 @@ A landmark paper for understanding how ML integrates into the scientific process
 ## Related
 
 - [[ai-driven-scientific-discovery.md]]
-- supports: [[machine-learning-generates-novel-scientific-hypotheses]]
+- supports: [[machine-learning-generate-novel-scientific-hypotheses]]
+- [[jens-ludwig]]
+- [[sendhil-mullainathan]]
 - [[automated-social-science-language-models-scientist]]

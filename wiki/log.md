@@ -71,3 +71,4 @@
 ## [2026-04-28] ingest | claims for aviary-training-language-agents-challenging-scientific: 0 matched existing, 1 new
 ## [2026-04-28] ingest | concepts for aviary-training-language-agents-challenging-scientific: 2 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-28] ingest | added papers/aviary-training-language-agents-challenging-scientific | updated: concepts/llm-powered-agent-architecture, concepts/automated-research-pipeline | new: concepts/language-decision-process, claims/language-agents-online-training-match-frontier
+## [2026-04-29] ingest | author pages: created people/sendhil-mullainathan, people/jens-ludwig, people/sean-westwood, people/james-bisbee | fixed stale claim slugs in identifying-bots and llm-driven-bot-infiltration paper Related sections

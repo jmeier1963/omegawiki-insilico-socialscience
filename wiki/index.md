@@ -1060,3 +1060,13 @@ claims:
     status: weakly_supported
     confidence: 0.65
     domain: NLP
+
+people:
+  - slug: sendhil-mullainathan
+    affiliation: "University of Chicago Booth School of Business"
+  - slug: jens-ludwig
+    affiliation: "University of Chicago Harris School / Crime Lab"
+  - slug: sean-westwood
+    affiliation: "Dartmouth College"
+  - slug: james-bisbee
+    affiliation: "Vanderbilt University"
