@@ -31,6 +31,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/ai-augmented-surveys-leveraging-large-language] What is the minimum fine-tuning data size for reliable retrodiction?
 - [paper/ai-coming-mathematics-nyt] How has the mathematical community's attitude toward AI changed since this 2023 piece?
 - [paper/ai-scientists-chatbots-maths-guardian] Which specific mathematical results prompted this coverage?
+- [paper/ai-tools-boost-scientists-impact-narrow] Does the domain-narrowing effect persist as generative AI matures?
+- [paper/ai-tools-boost-scientists-impact-narrow] Is narrowing harmful if narrow-but-deep AI-enabled research produces more breakthroughs?
+- [paper/ai-tools-boost-scientists-impact-narrow] How does the finding generalise to social sciences, humanities, and AI research itself?
+- [paper/ai-tools-boost-scientists-impact-narrow] Could policy interventions (cross-disciplinary AI grants) reverse the narrowing?
 - [paper/alvarado-explaining-epistemic-opacity] Is agent-independent opacity in AI ethically problematic, or is computational reliabilism (Duran & Formanek) sufficient?
 - [paper/alvarado-explaining-epistemic-opacity] Does this distinction matter for legal and regulatory frameworks for AI?
 - [paper/anderson-end-of-theory-wired] With LLMs, has Anderson's vision been partially vindicated? Can models "know" without theories?
@@ -466,6 +470,7 @@ _Auto-generated open questions. Do not edit._
 - [topic/ai-driven-scientific-discovery] What is the right level of human oversight in AI-automated research pipelines?
 - [topic/ai-driven-scientific-discovery] Will AI-generated science suffer from self-reinforcing biases as it trains on its own outputs?
 - [topic/ai-driven-scientific-discovery] How can AI research tools integrate semantically with existing non-AI research (the Oil & Water gap)?
+- [topic/ai-driven-scientific-discovery] Can the productivity-diversity paradox be reversed? Does AI eventually enable broader exploration once adoption matures?
 - [topic/llm-human-simulacra] **Behavioral validity gap**: simulacra responses correlate with stated preferences but diverge from incentivized/behavioral choices
 - [topic/llm-human-simulacra] **Demographic skew**: LLMs systematically underrepresent non-Western, low-education, minority perspectives
 - [topic/llm-human-simulacra] **Persona collapse**: when given demographic prompts, models often converge to similar "average" outputs rather than preserving real variance
@@ -491,6 +496,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/agent-reflection] Can the quality of reflections be evaluated without human annotation?
 - [concept/ai-mathematical-discovery] Can AI prove problems that require genuinely new mathematical concepts?
 - [concept/ai-mathematical-discovery] How to reliably distinguish AI novelty from sophisticated pattern-matching on training data?
+- [concept/ai-research-productivity-paradox] Does the paradox persist or reverse as AI lowers barriers to cross-domain work?
+- [concept/ai-research-productivity-paradox] Can policy interventions (interdisciplinary AI funding) break the productivity-diversity tradeoff?
+- [concept/ai-research-productivity-paradox] Is the paradox a transitional phase of early adoption, or a structural feature of AI-augmented science?
 - [concept/ai-science-adoption-gap] Is the integration gap closing post-2022 as LLMs make AI more accessible to non-AI researchers?
 - [concept/ai-science-adoption-gap] Does the gap matter if AI tools produce useful scientific results regardless of semantic integration?
 - [concept/algorithmic-fidelity] Contamination-corrected fidelity estimation methods.
@@ -563,6 +571,7 @@ _Auto-generated open questions. Do not edit._
 - [concept/spirit-semi-structured-persona-inference-framework] Can SPIRIT be applied with survey-elicited narrative text instead of social media?
 - [concept/spirit-semi-structured-persona-inference-framework] How does SPIRIT handle populations with sparse or unrepresentative social media presence?
 - [concept/spirit-semi-structured-persona-inference-framework] What are the representativeness biases introduced by social media persona sourcing?
+- [claim/ai-adoption-expands-individual-scientific-impact] AI adoption in natural sciences expands individual researchers' impact but narrows collective research domain diversity (status: weakly_supported)
 - [claim/ai-models-discover-interpretable-symbolic-cognitive] AI models can discover interpretable symbolic cognitive models from behavioral data (status: proposed)
 - [claim/ai-research-diffuses-across-scientific-fields] AI research diffuses across scientific fields but fails to semantically integrate with non-AI research (status: weakly_supported)
 - [claim/ai-resolves-open-mathematical-problems-synthesizing] AI resolves open mathematical problems by synthesizing knowledge across disciplinary silos (status: weakly_supported)

@@ -6,7 +6,7 @@ maturity: emerging
 key_papers: [oil-water-diffusion-ai-within-across]
 first_introduced: "2024"
 date_updated: 2026-04-23
-related_concepts: [automated-research-pipeline]
+related_concepts: [automated-research-pipeline, ai-research-productivity-paradox]
 ---
 
 ## Definition

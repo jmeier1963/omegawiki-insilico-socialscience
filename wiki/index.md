@@ -270,6 +270,10 @@ concepts:
     tags: [ai-science, bibliometrics, semantic-integration, diffusion]
     maturity: emerging
 
+  - slug: ai-research-productivity-paradox
+    tags: [ai-science, productivity, research-diversity, scientometrics, bibliometrics]
+    maturity: emerging
+
 topics:
   - slug: ai-driven-scientific-discovery
     title: "AI-Driven Scientific Discovery"
@@ -285,6 +289,11 @@ claims:
     status: weakly_supported
     confidence: 0.5
     domain: NLP
+
+  - slug: ai-adoption-expands-individual-scientific-impact
+    status: weakly_supported
+    confidence: 0.65
+    domain: general
 
   - slug: ai-research-diffuses-across-scientific-fields
     status: weakly_supported
@@ -517,6 +526,11 @@ papers:
     title: "Emergent Autonomous Scientific Research Capabilities of Large Language Models"
     tags: [autonomous-science, chemistry, llm-agents, laboratory-automation, ai-science]
     importance: 3
+
+  - slug: ai-tools-boost-scientists-impact-narrow
+    title: "AI tools boost scientists' impact but narrow focus"
+    tags: [ai-science, scientometrics, research-diversity, bibliometrics, news-and-views, productivity-paradox]
+    importance: 2
 
   - slug: gao-wang-quantifying-ai-scientific-research
     title: "Quantifying the Impact of AI on Scientific Research"

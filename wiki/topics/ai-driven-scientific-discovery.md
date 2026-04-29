@@ -19,7 +19,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - **2020**: Neural networks predict Big Five personality from facial images (Scientific Reports)
 - **2023**: GNoME discovers 2.2M+ new crystal structures via graph networks (Nature); GPT-4 evaluated across scientific domains (Microsoft Research); MetaGPT introduces SOP-encoded multi-agent framework
 - **2024**: CORE-Bench benchmarks AI computational reproducibility; Oil & Water documents AI's diffusion/semantic-gap paradox
-- **2025**: Agent Laboratory automates research pipeline (EMNLP); AlphaGenome unifies genomics prediction; autonomous enzyme engineering platform demonstrated; Agent0 self-evolves without human data; LabOS enables AI-XR lab collaboration
+- **2025**: Agent Laboratory automates research pipeline (EMNLP); AlphaGenome unifies genomics prediction; autonomous enzyme engineering platform demonstrated; Agent0 self-evolves without human data; LabOS enables AI-XR lab collaboration; Hao et al. document AI productivity-diversity paradox in 41M natural science papers (Nature)
 - **2026**: The AI Scientist published in Nature (end-to-end research automation); Gemini resolves 13 Erdős problems; Numina-Lean-Agent solves all Putnam 2025; LLMs evaluated for divergent scientific thinking
 
 ## Seminal works
@@ -47,6 +47,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - What is the right level of human oversight in AI-automated research pipelines?
 - Will AI-generated science suffer from self-reinforcing biases as it trains on its own outputs?
 - How can AI research tools integrate semantically with existing non-AI research (the Oil & Water gap)?
+- Can the productivity-diversity paradox be reversed? Does AI eventually enable broader exploration once adoption matures?
 
 ## My position
 

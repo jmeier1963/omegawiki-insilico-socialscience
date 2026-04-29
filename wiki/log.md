@@ -72,3 +72,6 @@
 ## [2026-04-28] ingest | concepts for aviary-training-language-agents-challenging-scientific: 2 matched existing, 1 new, 0 foundation-refs
 ## [2026-04-28] ingest | added papers/aviary-training-language-agents-challenging-scientific | updated: concepts/llm-powered-agent-architecture, concepts/automated-research-pipeline | new: concepts/language-decision-process, claims/language-agents-online-training-match-frontier
 ## [2026-04-29] ingest | author pages: created people/sendhil-mullainathan, people/jens-ludwig, people/sean-westwood, people/james-bisbee | fixed stale claim slugs in identifying-bots and llm-driven-bot-infiltration paper Related sections
+## [2026-04-29] ingest | claims for ai-tools-boost-scientists-impact-narrow: 0 matched existing, 1 new
+## [2026-04-29] ingest | concepts for ai-tools-boost-scientists-impact-narrow: 1 matched existing (ai-science-adoption-gap as related), 1 new (ai-research-productivity-paradox), 0 foundation-refs
+## [2026-04-29] ingest | added papers/ai-tools-boost-scientists-impact-narrow | updated: concepts/ai-science-adoption-gap, topics/ai-driven-scientific-discovery | created: concepts/ai-research-productivity-paradox, claims/ai-adoption-expands-individual-scientific-impact
