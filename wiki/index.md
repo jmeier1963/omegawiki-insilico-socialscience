@@ -3,12 +3,49 @@
 <!-- markdownlint-disable MD007 MD032 -->
 
 papers:
+  - slug: collapse-heterogeneity-silicon-philosophers
+    title: "The Collapse of Heterogeneity in Silicon Philosophers"
+    tags: [silicon-sampling, algorithmic-fidelity, heterogeneity, opinion-diversity, philosophy, llm-bias]
+    importance: 3
+
+  - slug: aia-forecaster
+    title: "AIA Forecaster: Technical Report"
+    tags: [forecasting, llm, agentic-ai, superforecasting, calibration, prediction-markets]
+    importance: 2
+
+  - slug: engineering-collective-attention-age-artificial-intelligence
+    title: "Engineering Collective Attention in the Age of Artificial Intelligence"
+    tags: [collective-attention, information-ecosystem, ai-governance, misinformation]
+    importance: 2
+
+  - slug: invisible-architectures-thought-toward-new-science
+    title: "Invisible Architectures of Thought: Toward a New Science of AI as Cognitive Infrastructure"
+    tags: [cognitive-infrastructure, epistemic-agency, distributed-cognition, system-0]
+    importance: 3
+
+  - slug: you-function
+    title: "You Are Not a Function: Why the Race to Stay Useful is a Trap"
+    tags: [bildung, human-formation, education, ai-effects, epistemic-formation]
+    importance: 2
+
   - slug: out-one-many-using-language-models
     title: "Out of One, Many: Using Language Models to Simulate Human Samples"
     tags: [silicon-sampling, algorithmic-fidelity, demographic-conditioning, survey-simulation, llm, social-science]
     importance: 5
 
 concepts:
+  - slug: heterogeneity-collapse
+    tags: [silicon-sampling, opinion-diversity, algorithmic-fidelity, llm-bias]
+    maturity: emerging
+  - slug: agentic-forecasting
+    tags: [forecasting, llm, agentic-ai, superforecasting, calibration]
+    maturity: emerging
+  - slug: collective-attention
+    tags: [collective-attention, information-ecosystem, social-cognition, epistemic-infrastructure]
+    maturity: active
+  - slug: cognitive-infrastructure
+    tags: [cognitive-infrastructure, epistemic-agency, distributed-cognition, infrastructure-theory]
+    maturity: emerging
   - slug: silicon-sampling
     tags: [silicon-sampling, survey-simulation, llm, social-science, synthetic-data]
     maturity: active
@@ -141,7 +178,23 @@ topics:
 
 people: []
 
-ideas: []
+ideas:
+  - slug: fourth-mode-scientific-understanding-ai-constrained
+    status: proposed
+    domain: NLP
+    priority: 5
+  - slug: bildung-casualty-ai-erosion-scientific-formation
+    status: proposed
+    domain: NLP
+    priority: 4
+  - slug: epistemic-calibration-ai-assisted-science-measuring
+    status: proposed
+    domain: NLP
+    priority: 4
+  - slug: opacity-epistemic-virtue-sociological-corpus-analysis
+    status: failed
+    domain: NLP
+    priority: 2
 
 experiments: []
 
@@ -156,6 +209,26 @@ people:
     affiliation: "Brigham Young University"
 
 claims:
+  - slug: llm-silicon-samples-collapse-opinion-heterogeneity
+    status: weakly_supported
+    confidence: 0.7
+    domain: NLP
+  - slug: llm-agentic-forecaster-achieves-superforecaster-level-accuracy
+    status: weakly_supported
+    confidence: 0.55
+    domain: NLP
+  - slug: ai-systems-reshape-collective-attention-dual-nature
+    status: weakly_supported
+    confidence: 0.65
+    domain: NLP
+  - slug: ai-as-cognitive-infrastructure-shifts-epistemic-agency
+    status: proposed
+    confidence: 0.55
+    domain: NLP
+  - slug: ai-pressure-toward-function-erodes-formative-development
+    status: proposed
+    confidence: 0.5
+    domain: NLP
   - slug: llms-accurately-simulate-human-subpopulation-survey
     status: weakly_supported
     confidence: 0.65

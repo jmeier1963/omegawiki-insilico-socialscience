@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD001 MD013 MD033 MD041 MD060 -->
 <div align="center">
 
 <img src="assets/logo.png" width="180" alt="ΩmegaWiki Logo">
@@ -202,7 +203,7 @@ All pages use **Obsidian `[[wikilink]]` format** — open `wiki/` in Obsidian fo
 
 ## Project Structure
 
-```
+```text
 OmegaWiki/
 ├── CLAUDE.md                    # Runtime schema & rules
 ├── wiki/                        # Knowledge base (LLM-maintained)
@@ -390,3 +391,4 @@ claude
 If this project helps your research, give it a ⭐
 
 </div>
+<!-- markdownlint-enable MD001 MD013 MD033 MD041 MD060 -->

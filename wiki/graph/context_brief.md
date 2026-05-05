@@ -2,7 +2,7 @@
 
 _Auto-generated compressed context. Do not edit._
 
-## Claims (48 total)
+## Claims (53 total)
 - [supported] LLMs systematically misrepresent human opinion distributions, skewing toward liberal, educated, high-income demographics (conf: 0.8)
 - [weakly_supported] LLMs conditioned on demographic backstories accurately simulate subpopulation survey responses (conf: 0.75)
 - [supported] LLM agents can simulate believable human social behavior (conf: 0.8)
@@ -32,7 +32,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/agent0-unleashing-self-evolving-agents-zero] Does self-evolution converge, plateau, or diverge given enough iterations?
 - [paper/agent0-unleashing-self-evolving-agents-zero] Can this approach extend to multi-modal or scientific reasoning tasks?
 - [paper/agentic-ai-next-intelligence-explosion] What institutional structures are most effective for AI collective del
-## Papers (167 total)
+## Failed Ideas (avoid repeating)
+- Opacity as Epistemic Virtue: Sociological Corpus Analysis of ML Rhetoric — Core empirical work already done by Avnoon & Eyal (Social Studies of Science, 2025) 'It's not a bug, it's a feature: How AI experts and data scientists account for the opacity of algorithms.' 60 in-depth interviews with ML experts show valorization of opacity as epistemic virtue; manuscript accepted/published. A new corpus analysis would replicate rather than extend this finding. Recommend instead: building on Avnoon & Eyal to examine downstream effects of opacity valorization on scientific epistemology, or testing whether the valorization is uniform across ML sub-communities.
+## Papers (172 total)
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research (Computational Social Science)
 - [5] Generative Agent Simulations of 1,000 People (NLP)
 - [5] Generative Agents: Interactive Simulacra of Human Behavior (NLP)
@@ -48,14 +50,13 @@ _Auto-generated open questions. Do not edit._
 - [2] German General Personas: A Survey-Derived Persona Prompt Collection for Population-Aligned LLM Studies (NLP)
 - [2] This human study did not involve human subjects: Validating LLM simulations as behavioral evidence (NLP)
 - [4] Whose Opinions Do Language Models Reflect? (NLP)
-## Recent Relationships (265 total)
-  papers/assessing-bias-llm-generated-synthetic-datasets --supports--> claims/llms-misrepresent-human-opinion-distributions
-  papers/assessing-bias-llm-generated-synthetic-datasets --supports--> concepts/silicon-sampling
-  papers/vox-populi-vox-ai-using-language --supports--> claims/llms-misrepresent-human-opinion-distributions
-  papers/vox-populi-vox-ai-using-language --supports--> concepts/silicon-sampling
-  papers/large-language-models-replace-human-participants --supports--> claims/llms-misrepresent-human-opinion-distributions
-  papers/large-language-models-replace-human-participants --supports--> concepts/silicon-sampling
-  papers/potential-existential-threat-large-language-models --supports--> claims/llm-bots-contaminating-online-surveys-threaten
-  papers/potential-existential-threat-large-language-models --supports--> concepts/silicon-sampling
-  papers/revealing-fine-grained-values-opinions-large --supports--> claims/llms-misrepresent-human-opinion-distributions
-  papers/reveali
+## Recent Relationships (286 total)
+  papers/ai-tools-boost-scientists-impact-narrow --supports--> claims/ai-adoption-expands-individual-scientific-impact
+  papers/ai-tools-boost-scientists-impact-narrow --supports--> concepts/ai-research-productivity-paradox
+  papers/ai-tools-boost-scientists-impact-narrow --supports--> concepts/ai-science-adoption-gap
+  concepts/ai-research-productivity-paradox --extends--> concepts/ai-science-adoption-gap
+  ideas/fourth-mode-scientific-understanding-ai-constrained --addresses_gap--> papers/krenn-scientific-understanding-ai
+  ideas/fourth-mode-scientific-understanding-ai-constrained --inspired_by--> papers/sullivan-understanding-machine-learning-models
+  ideas/fourth-mode-scientific-understanding-ai-constrained --inspired_by--> papers/jumper-alphafold-protein-structure
+  ideas/bildung-casualty-ai-erosion-scientific-formation --addresses_gap--> papers/messeri-crockett-ai-illusions-understanding
+  ideas/bildung-casualty-ai-erosion-scientific-formation --inspired_by--> papers/kosmyna-brai

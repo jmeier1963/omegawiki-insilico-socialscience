@@ -75,3 +75,20 @@
 ## [2026-04-29] ingest | claims for ai-tools-boost-scientists-impact-narrow: 0 matched existing, 1 new
 ## [2026-04-29] ingest | concepts for ai-tools-boost-scientists-impact-narrow: 1 matched existing (ai-science-adoption-gap as related), 1 new (ai-research-productivity-paradox), 0 foundation-refs
 ## [2026-04-29] ingest | added papers/ai-tools-boost-scientists-impact-narrow | updated: concepts/ai-science-adoption-gap, topics/ai-driven-scientific-discovery | created: concepts/ai-research-productivity-paradox, claims/ai-adoption-expands-individual-scientific-impact
+## [2026-05-02] ideate | 3 ideas proposed, 1 idea filtered out | direction: AI epistemic quality of science — functioning vs. understanding tension
+## [2026-05-04] ingest | added papers/collapse-heterogeneity-silicon-philosophers | updated: concepts/silicon-sampling (key_papers), concepts/heterogeneity-collapse (new), claims/llm-silicon-samples-collapse-opinion-heterogeneity (new)
+## [2026-05-04] ingest | claims for collapse-heterogeneity-silicon-philosophers: 0 matched existing, 1 new
+## [2026-05-04] ingest | concepts for collapse-heterogeneity-silicon-philosophers: 1 matched existing (silicon-sampling), 1 new (heterogeneity-collapse), 0 foundation-refs
+## [2026-05-04] ingest | added papers/aia-forecaster | updated: concepts/agentic-forecasting (new), claims/llm-agentic-forecaster-achieves-superforecaster-level-accuracy (new)
+## [2026-05-04] ingest | claims for aia-forecaster: 0 matched existing, 1 new
+## [2026-05-04] ingest | concepts for aia-forecaster: 0 matched existing, 1 new (agentic-forecasting), 0 foundation-refs
+## [2026-05-04] ingest | added papers/engineering-collective-attention-age-artificial-intelligence | updated: concepts/collective-attention (new), claims/ai-systems-reshape-collective-attention-dual-nature (new)
+## [2026-05-04] ingest | claims for engineering-collective-attention-age-artificial-intelligence: 0 matched existing, 1 new
+## [2026-05-04] ingest | concepts for engineering-collective-attention-age-artificial-intelligence: 0 matched existing, 1 new (collective-attention), 0 foundation-refs
+## [2026-05-04] ingest | added papers/invisible-architectures-thought-toward-new-science | updated: concepts/cognitive-infrastructure (new), claims/ai-as-cognitive-infrastructure-shifts-epistemic-agency (new)
+## [2026-05-04] ingest | claims for invisible-architectures-thought-toward-new-science: 0 matched existing, 1 new
+## [2026-05-04] ingest | concepts for invisible-architectures-thought-toward-new-science: 0 matched existing, 1 new (cognitive-infrastructure), 0 foundation-refs
+## [2026-05-04] ingest | added papers/you-function | updated: foundations/bildung (new), claims/ai-pressure-toward-function-erodes-formative-development (new)
+## [2026-05-04] ingest | claims for you-function: 0 matched existing, 1 new
+## [2026-05-04] ingest | concepts for you-function: 0 matched existing, 0 new, 1 foundation-ref (bildung)
+## [2026-05-04] ingest | batch complete: 5 papers ingested (collapse-heterogeneity-silicon-philosophers, aia-forecaster, engineering-collective-attention-age-artificial-intelligence, invisible-architectures-thought-toward-new-science, you-function) | PDFs moved to raw/papers/
