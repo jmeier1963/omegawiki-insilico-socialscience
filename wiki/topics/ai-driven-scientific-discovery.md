@@ -20,7 +20,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - **2023**: GNoME discovers 2.2M+ new crystal structures via graph networks (Nature); GPT-4 evaluated across scientific domains (Microsoft Research); MetaGPT introduces SOP-encoded multi-agent framework
 - **2024**: CORE-Bench benchmarks AI computational reproducibility; Oil & Water documents AI's diffusion/semantic-gap paradox
 - **2025**: Agent Laboratory automates research pipeline (EMNLP); AlphaGenome unifies genomics prediction; autonomous enzyme engineering platform demonstrated; Agent0 self-evolves without human data; LabOS enables AI-XR lab collaboration; Hao et al. document AI productivity-diversity paradox in 41M natural science papers (Nature)
-- **2026**: The AI Scientist published in Nature (end-to-end research automation); Gemini resolves 13 Erdős problems; Numina-Lean-Agent solves all Putnam 2025; LLMs evaluated for divergent scientific thinking
+- **2026**: The AI Scientist published in Nature (end-to-end research automation); Gemini resolves 13 Erdős problems; Numina-Lean-Agent solves all Putnam 2025; LLMs evaluated for divergent scientific thinking; METR task horizon reaches 12 hours (Opus 4.6); CORE-Bench "solved" at 95.5%; PostTrainBench shows AI at ~50% of human fine-tuning quality; Jack Clark estimates 60%+ chance of automated AI R&D by 2028
 
 ## Seminal works
 
@@ -36,7 +36,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 |------|-------------|------|--------|
 | Materials discovery | GNoME | 2023 | 381k new stable structures |
 | Genomics variant prediction | AlphaGenome | 2026 | Beats specialized tools 25/26 benchmarks |
-| Computational reproducibility | CORE-Agent | 2024 | 21% on hardest tasks |
+| Computational reproducibility | Opus 4.5 | 2025 | 95.5% ("solved"); was 21% at 2024 launch |
 | Formal math (Putnam) | Numina-Lean-Agent | 2026 | 12/12 problems |
 | Autonomous research quality | The AI Scientist | 2026 | 70% workshop acceptance rate |
 
@@ -61,4 +61,6 @@ The field is advancing rapidly in narrow domains (materials, genomics) where the
 - Institutional barriers to AI-driven innovation in regulated sectors are understudied — Knie (2026) argues peer review conservatism and Daseinsvorsorge logic systematically prevent breakthrough technology deployment ([[keine-autonomen-autos-aus-deutschland-das]])
 
 ## Key people
+
+- [[jack-clark]] — Anthropic co-founder; synthesizes capability benchmarks; forecasts automated AI R&D by 2028
 

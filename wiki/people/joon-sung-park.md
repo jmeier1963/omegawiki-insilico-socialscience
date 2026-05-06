@@ -17,6 +17,7 @@ date_updated: 2026-04-13
 
 - [[generative-agents-interactive-simulacra-human-behavior]] — first author; introduced generative agents with memory stream, reflection, and planning
 - [[generative-agent-simulations-000-people]] — first author; scaled generative agents to simulate 1,052 real individuals via interview-grounded architecture
+- [[social-simulacra-creating-populated-prototypes-social]] — first author; introduced social simulacra as LLM-based design prototyping for social computing systems (UIST 2022)
 
 ## Recent work
 

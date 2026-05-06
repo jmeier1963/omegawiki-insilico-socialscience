@@ -1,7 +1,7 @@
 ---
 title: "Large language models that replace human participants can harmfully misportray and flatten identity groups"
 slug: large-language-models-replace-human-participants
-arxiv: ""
+arxiv: "2402.01908"
 venue: "Nature Machine Intelligence"
 year: 2025
 tags: [silicon-sampling, llm-ethics, identity-groups, representation, flattening, harmful-bias, demographic-simulation]

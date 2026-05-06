@@ -17,6 +17,7 @@ date_updated: 2026-04-13
 
 - [[whose-opinions-language-models-reflect]]
 - [[generative-agent-simulations-000-people]]
+- [[social-simulacra-creating-populated-prototypes-social]] — co-author (Stanford); social simulacra for LLM-powered social computing design prototyping (UIST 2022)
 
 ## Recent work
 

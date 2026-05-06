@@ -3,7 +3,7 @@ title: "Automated Research Pipeline"
 aliases: ["LLM research automation", "autonomous research agent", "end-to-end research automation", "AI research agent", "autonomous scientific research"]
 tags: [research-automation, llm-agents, scientific-discovery, ai-science]
 maturity: emerging
-key_papers: [agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific]
+key_papers: [agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific, ai-systems-about-start-building-themselves, self-improving-ai-ai-human-co]
 first_introduced: "2023"
 date_updated: 2026-04-23
 related_concepts: [llm-powered-agent-architecture]
@@ -41,7 +41,7 @@ When the goal is to accelerate research throughput in domains where hypotheses c
 
 ## Known limitations
 
-- Best current agents achieve only ~21% on hardest computational reproducibility tasks (CORE-Bench)
+- CORE-Bench was "solved" (95.5%) by Opus 4.5 in December 2025 — the bottleneck has shifted to creativity and fine-tuning quality, not task execution
 - Systems tend to explore incremental variations rather than generating genuinely novel research directions
 - Risk of self-reinforcing biases when AI trains on AI-generated research
 - Human feedback significantly improves quality — fully autonomous pipelines produce lower-quality work
@@ -58,6 +58,7 @@ When the goal is to accelerate research throughput in domains where hypotheses c
 - [[towards-end-end-automation-ai-research]] — The AI Scientist, fully autonomous end-to-end (Nature 2026)
 - [[core-bench-fostering-credibility-published-research]] — benchmark for computational reproducibility stage
 - [[impact-large-language-models-scientific-discovery]] — GPT-4 evaluated across scientific domains (Microsoft Research 2023)
+- [[ai-systems-about-start-building-themselves]] — 2026 benchmark synthesis; CORE-Bench solved (95.5%), METR 12-hour horizon, PostTrainBench 50% of human quality
 
 ## My understanding
 

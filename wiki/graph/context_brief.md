@@ -2,25 +2,28 @@
 
 _Auto-generated compressed context. Do not edit._
 
-## Claims (53 total)
+## Claims (113 total)
+- [supported] AI capabilities and investment have advanced rapidly each year since 2022 (conf: 0.85)
 - [supported] LLMs systematically misrepresent human opinion distributions, skewing toward liberal, educated, high-income demographics (conf: 0.8)
+- [weakly_supported] AI races are destabilizing and increase catastrophic risk (conf: 0.6)
 - [weakly_supported] LLMs conditioned on demographic backstories accurately simulate subpopulation survey responses (conf: 0.75)
+- [weakly_supported] ChatGPT has a large positive effect on student learning performance (g≈0.87) and moderate effects on learning perception and higher-order thinking (conf: 0.65)
+- [weakly_supported] Generative AI renders traditional written-exam-based higher education teaching and examination dysfunctional (conf: 0.65)
+- [proposed] Education must be reoriented to develop uniquely human capacities (meaning, agency, ethical judgment) that AI cannot replicate (conf: 0.55)
+- [proposed] European digital sovereignty requires indigenous AI infrastructure to reduce foreign platform dependence (conf: 0.5)
+- [proposed] Effective national AI strategies require domestic compute infrastructure investment (conf: 0.5)
+- [proposed] AI policy must target specific societal outcomes rather than remain technology-neutral (conf: 0.5)
+- [weakly_supported] Internet platform scale threatens democracy and requires structural middleware solutions (conf: 0.55)
+- [proposed] AI adoption follows privilege gradients and risks reinforcing existing socioeconomic inequalities (conf: 0.55)
+- [weakly_supported] AI will fundamentally transform intelligence collection, analysis, and counterintelligence operations (conf: 0.65)
+- [weakly_supported] Frontier AI compute thresholds in regulation must be adjusted dynamically as AI capabilities advance (conf: 0.65)
 - [supported] LLM agents can simulate believable human social behavior (conf: 0.8)
-- [proposed] LLM bots contaminating online surveys threaten the validity of panel-based social science data (conf: 0.65)
-- [weakly_supported] LLM social simulations are a tractable and promising research method for social science (conf: 0.6)
-- [proposed] Persona conditioning in LLMs does not reliably improve survey alignment and often degrades subgroup fidelity (conf: 0.6)
-- [weakly_supported] Generative agent-based models with LLM-powered agents can simulate complex human social behavior in grounded physical, social, and digital environments (conf: 0.65)
-- [weakly_supported] Large-scale LLM agent simulations reproduce real-world social experiment outcomes (conf: 0.55)
-- [weakly_supported] LLM persona-based studies systematically underspecify task and target population, limiting ecological validity and generalizability (conf: 0.7)
-- [proposed] LLM behavioral surrogates require statistical calibration (not merely heuristic prompting) to provide unbiased causal inference in behavioral science (conf: 0.7)
-- [weakly_supported] LLMs replicate human behavioral biases in economic experiments (conf: 0.75)
-- [proposed] Multi-agent LLM systems enable qualitatively new social science inquiry through emergent dynamics (conf: 0.4)
-- [weakly_supported] Peer review enforces epistemic conservatism, systematically disadvantaging unconventional research (conf: 0.65)
-- [weakly_supported] Theory-grounded persona calibration improves LLM simulation fidelity (conf: 0.65)
-- [weakly_supported] AI adoption in natural sciences expands individual researchers' impact but narrows collective research domain diversity (conf: 0.65)
-- [proposed] 
+- [proposed] LLM bots contaminating online surveys threaten the validity of panel-based social science 
 ## Open Gaps
 _Auto-generated open questions. Do not edit._
+- [paper/adolescence-technology] What technical and governance interventions most effectively address AI-enabled bioweapon risk?
+- [paper/adolescence-technology] How should the race between AI offensive and defensive capability be managed?
+- [paper/adolescence-technology] What distinguishes "manageable" from "unmanageable" AI risk categories?
 - [paper/advancing-regulatory-variant-effect-prediction-alphagenome] Can AlphaGenome be applied to non-human disease model organisms?
 - [paper/advancing-regulatory-variant-effect-prediction-alphagenome] How does performance scale with sequence context beyond 1Mbp?
 - [paper/agent-based-modeling-economics-finance-past] Can LLM-based agents replace hand-coded behavioral rules in traditional ABMs for more realistic agent cognition?
@@ -29,12 +32,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/agent-laboratory-using-llm-agents-research] Can such pipelines generate genuinely novel hypotheses rather than recombining known ideas?
 - [paper/agent-laboratory-using-llm-agents-research] How does research quality degrade as task novelty increases?
 - [paper/agent-laboratory-using-llm-agents-research] What is the right granularity of human feedback gates?
-- [paper/agent0-unleashing-self-evolving-agents-zero] Does self-evolution converge, plateau, or diverge given enough iterations?
-- [paper/agent0-unleashing-self-evolving-agents-zero] Can this approach extend to multi-modal or scientific reasoning tasks?
-- [paper/agentic-ai-next-intelligence-explosion] What institutional structures are most effective for AI collective del
+- [paper/agent0-unleashing-s
 ## Failed Ideas (avoid repeating)
 - Opacity as Epistemic Virtue: Sociological Corpus Analysis of ML Rhetoric — Core empirical work already done by Avnoon & Eyal (Social Studies of Science, 2025) 'It's not a bug, it's a feature: How AI experts and data scientists account for the opacity of algorithms.' 60 in-depth interviews with ML experts show valorization of opacity as epistemic virtue; manuscript accepted/published. A new corpus analysis would replicate rather than extend this finding. Recommend instead: building on Avnoon & Eyal to examine downstream effects of opacity valorization on scientific epistemology, or testing whether the valorization is uniform across ML sub-communities.
-## Papers (172 total)
+## Papers (294 total)
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research (Computational Social Science)
 - [5] Generative Agent Simulations of 1,000 People (NLP)
 - [5] Generative Agents: Interactive Simulacra of Human Behavior (NLP)
@@ -44,19 +45,19 @@ _Auto-generated open questions. Do not edit._
 - [5] Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus? (NLP)
 - [4] Automated Social Science: Language Models as Scientist and Subjects (NLP)
 - [2] Polypersona: Persona-Grounded LLM for Synthetic Survey Responses (NLP)
+- [4] Import AI 455: AI Systems Are About to Start Building Themselves (ML Systems)
 - [3] Aviary: training language agents on challenging scientific tasks (NLP)
 - [3] Benchmarking Distributional Alignment of Large Language Models (NLP)
 - [3] Deliberate Lab: A Platform for Real-Time Human–AI Social Experiments (NLP)
 - [2] German General Personas: A Survey-Derived Persona Prompt Collection for Population-Aligned LLM Studies (NLP)
 - [2] This human study did not involve human subjects: Validating LLM simulations as behavioral evidence (NLP)
-- [4] Whose Opinions Do Language Models Reflect? (NLP)
-## Recent Relationships (286 total)
-  papers/ai-tools-boost-scientists-impact-narrow --supports--> claims/ai-adoption-expands-individual-scientific-impact
-  papers/ai-tools-boost-scientists-impact-narrow --supports--> concepts/ai-research-productivity-paradox
-  papers/ai-tools-boost-scientists-impact-narrow --supports--> concepts/ai-science-adoption-gap
-  concepts/ai-research-productivity-paradox --extends--> concepts/ai-science-adoption-gap
-  ideas/fourth-mode-scientific-understanding-ai-constrained --addresses_gap--> papers/krenn-scientific-understanding-ai
-  ideas/fourth-mode-scientific-understanding-ai-constrained --inspired_by--> papers/sullivan-understanding-machine-learning-models
-  ideas/fourth-mode-scientific-understanding-ai-constrained --inspired_by--> papers/jumper-alphafold-protein-structure
-  ideas/bildung-casualty-ai-erosion-scientific-formation --addresses_gap--> papers/messeri-crockett-ai-illusions-understanding
-  ideas/bildung-casualty-ai-erosion-scientific-formation --inspired_by--> papers/kosmyna-brai
+## Recent Relationships (468 total)
+  papers/regulating-ai-under-uncertainty --supports--> claims/frontier-ai-compute-thresholds-require-dynamic
+  papers/golden-opportunity-american-ai --supports--> claims/national-ai-strategies-require-sovereign-compute
+  papers/us-vs-china-how-win-wrong --supports--> claims/ai-races-destabilizing-increase-catastrophic-risk
+  papers/view-future-data-noema-data-sovereignty --supports--> claims/european-digital-sovereignty-requires-sovereign-ai
+  papers/ai-will-transform-character-warfare --supports--> claims/ai-transforms-intelligence-collection-analysis-counterintelligence
+  papers/ai-will-transform-character-warfare --supports--> claims/ai-races-destabilizing-increase-catastrophic-risk
+  papers/andrew-ng-commentary-ai-policy-voluntary --supports--> claims/ai-policy-must-target-outcomes-just
+  papers/artificial-intelligence-outlook-key-policies-deals --supports--> claims/ai-capabilities-investment-advanced-rapidly-each
+  papers/ukraine-arsenal-killer-ai-drones-war --supports--> claims/a
