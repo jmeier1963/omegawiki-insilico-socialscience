@@ -200,3 +200,4 @@
 ## [2026-05-06] ingest | added papers/guardian-scientist-leaving-us-china-song, papers/kara-swisher-silicon-valley-trump | matched existing claims
 ## [2026-05-06] ingest | claims for batch4-5: 0 matched existing (shared), 3 new (us-ai-governance-uses-light-touch, ai-transforms-intelligence-collection, open-source-ai-outcompetes-proprietary)
 ## [2026-05-06] ingest | completed stats_sovereignty batch: moved raw/stats_sovereignty/ to raw/papers/stats_sovereignty/ | 57 PDFs fully ingested across 5 batches | new: 28 papers, 3 claims (us-ai-governance-uses-light-touch, ai-transforms-intelligence-collection, open-source-ai-outcompetes-proprietary), 0 new concepts (all matched existing)
+## [2026-05-07] summary | updated in-silico-social-science.md | paper_count 34→294 | added 4 new core areas (safety/alignment, education, governance/geopolitics, cognitive effects) | date_updated 2026-05-07
