@@ -29,6 +29,7 @@ Validation — comparing synthetic responses to real survey data and to behavior
 - [[homo-silicus-horton]] — economic behavior validation
 - [[synthetic-survey-chile]] — large-scale population survey
 - [[validating-llm-simulations-behavioral-evidence]] — behavioral validity
+- [[deliberationbench-normative-benchmark-influence-large-language]] — 2026, normative benchmark using deliberative polling as standard for LLM influence on real users
 
 ## SOTA tracker
 

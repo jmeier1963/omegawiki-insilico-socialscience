@@ -59,3 +59,6 @@ The finding that physician+AI performs worse than AI alone is counterintuitive a
 - [[using-large-language-models-idea-generation]]
 - [[foundation-model-predict-capture-human-cognition]]
 - [[scientists-ai-tool-not-oracle]]
+- [[performance-large-language-model-reasoning-tasks]] — more rigorous follow-up (Science 2026, o1 vs. physicians, real ER cases)
+- [[llm-clinical-reasoning-benchmarking]]
+- supports: [[llm-matches-exceeds-physician-clinical-reasoning]]

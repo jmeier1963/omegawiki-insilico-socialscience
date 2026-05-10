@@ -77,6 +77,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/aia-forecaster] Does expert-level forecasting performance generalize to domain-specific forecasting (e.g., scientific, geopolitical) beyond ForecastBench's scope?
 - [paper/aia-forecaster] How sensitive is the system to the quality and breadth of the news sources accessible during agentic search?
 - [paper/aia-forecaster] Can the calibration approach transfer to other LLM-based prediction tasks beyond open-ended forecasting?
+- [paper/alphaevolve-how-gemini-powered-coding-agent] Which domain characteristics determine AlphaEvolve's success (oracle quality, solution space structure, evaluation speed)?
+- [paper/alphaevolve-how-gemini-powered-coding-agent] Does performance generalize to domains outside Google's infrastructure?
+- [paper/alphaevolve-how-gemini-powered-coding-agent] What is the failure mode distribution — how often does AlphaEvolve fail to improve or introduce regressions?
+- [paper/alphaevolve-how-gemini-powered-coding-agent] Can the evolutionary coding approach scale to multi-week optimization tasks with expensive evaluation?
 - [paper/alvarado-explaining-epistemic-opacity] Is agent-independent opacity in AI ethically problematic, or is computational reliabilism (Duran & Formanek) sufficient?
 - [paper/alvarado-explaining-epistemic-opacity] Does this distinction matter for legal and regulatory frameworks for AI?
 - [paper/ambitious-agenda-european-ai-collaboration] Which European sectors show actual AI adoption acceleration?
@@ -202,6 +206,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/deliberate-lab-platform-real-time-human] What is the right design for longitudinal experiments with persistent agent identity, trust, and memory?
 - [paper/deliberate-lab-platform-real-time-human] How to detect and handle adversarial participant behavior (e.g., pasting LLM-generated responses) at scale?
 - [paper/deliberate-lab-platform-real-time-human] Can tight integration with annotation and model fine-tuning workflows (LoRA, RLHF) close the loop from experimentation to model improvement?
+- [paper/deliberationbench-normative-benchmark-influence-large-language] Does alignment with deliberative polling standards hold for less cautious or deliberately persuasive models?
+- [paper/deliberationbench-normative-benchmark-influence-large-language] What specific conversational mechanisms drive the observed opinion changes?
+- [paper/deliberationbench-normative-benchmark-influence-large-language] How does differential influence across demographic groups interact with democratic legitimacy concerns?
+- [paper/deliberationbench-normative-benchmark-influence-large-language] Can the benchmark be applied prospectively to certify LLM compliance with democratic standards?
 - [paper/dfg-2023-generative-ai-guidelines] Is prohibiting AI authorship sufficient to preserve accountability, or does more detailed disclosure framework needed?
 - [paper/dfg-2023-generative-ai-guidelines] How do researchers ensure AI-generated content is accurate when they have limited ability to verify it?
 - [paper/dfg-2025-ai-review-process] How can DFG verify that reviewers comply with the four conditions?
@@ -487,6 +495,11 @@ _Auto-generated open questions. Do not edit._
 - [paper/path-towards-autonomous-machine-intelligence] Can JEPA-based architectures achieve sample-efficient learning at scale?
 - [paper/path-towards-autonomous-machine-intelligence] How should the world model handle uncertainty (latent variable models vs. energy-based approaches)?
 - [paper/path-towards-autonomous-machine-intelligence] How do LLM capabilities that have improved since 2022 affect the central argument?
+- [paper/performance-large-language-model-reasoning-tasks] Does text-only performance advantage translate to real patient outcomes when deployed?
+- [paper/performance-large-language-model-reasoning-tasks] What monitoring frameworks are needed to safely deploy o1-class models for clinical second opinions?
+- [paper/performance-large-language-model-reasoning-tasks] How does performance change across clinical specialties (surgery, pathology, radiology)?
+- [paper/performance-large-language-model-reasoning-tasks] Does physician skill level in AI use predict performance with AI assistance?
+- [paper/performance-large-language-model-reasoning-tasks] What is the appropriate human-AI teaming model given AI outperforms physicians when used alone?
 - [paper/persona-based-simulation-human-opinion-population] Does SPIRIT's advantage over demographic conditioning hold across diverse opinion domains?
 - [paper/persona-based-simulation-human-opinion-population] How does SPIRIT handle populations underrepresented on social media (elderly, low-income)?
 - [paper/persona-based-simulation-human-opinion-population] Can SPIRIT be used without social media input (e.g., with survey-based narrative elicitation)?
@@ -599,6 +612,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/synonymix-unified-group-personas-generative-simulations] How does unigraph fidelity compare to individual persona fidelity for rare demographic groups?
 - [paper/synonymix-unified-group-personas-generative-simulations] Can the synonymity detection scale to millions of personas?
 - [paper/synonymix-unified-group-personas-generative-simulations] Does collective narrative abstraction preserve within-group diversity?
+- [paper/synthetic-participants-generated-large-language-models] Under what specific conditions do synthetic participants achieve behavioral validity sufficient for high-stakes applications?
+- [paper/synthetic-participants-generated-large-language-models] Can augmentative approaches (combining real and synthetic data) reliably correct for known biases?
+- [paper/synthetic-participants-generated-large-language-models] How should ethical guidelines evolve to govern use of synthetic participants in policy and clinical research?
+- [paper/synthetic-participants-generated-large-language-models] Does the "heuristic" framing provide sufficient guidance for practitioners to determine appropriate use cases?
 - [paper/synthetic-personas-distort-structure-human-belief] Does the belief system distortion persist with richer persona formats (SPIRIT, Synonymix)?
 - [paper/synthetic-personas-distort-structure-human-belief] What training data properties cause LLMs to overemphasize ideological coherence?
 - [paper/synthetic-personas-distort-structure-human-belief] Can post-hoc calibration of LLM correlation matrices restore realistic belief system structure?
@@ -783,6 +800,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/collective-attention] What is the relationship between collective attention collapse and epistemic polarization?
 - [concept/deep-learning-scientific-discovery] How to extend beyond well-defined search spaces to open-ended discovery?
 - [concept/deep-learning-scientific-discovery] How reliable is the experimental validation rate for AI-predicted candidates?
+- [concept/deliberation-based-llm-influence-evaluation] Can the standard be operationalized for real-time monitoring at deployment scale?
+- [concept/deliberation-based-llm-influence-evaluation] Does the correlation hold for models specifically fine-tuned to be persuasive?
+- [concept/deliberation-based-llm-influence-evaluation] How to handle topic areas where deliberative polling data does not exist?
 - [concept/digital-sovereignty] Is regulatory sovereignty (EU approach) sufficient for AI, or is infrastructure sovereignty necessary?
 - [concept/digital-sovereignty] Can democratic sovereignty be achieved without authoritarian-style state control of platforms?
 - [concept/foundation-model-of-cognition] Can cognitive foundation models be validated against held-out human experiments?
@@ -831,6 +851,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/llm-brainstorming-diversity] Is there a diversity-quality frontier, and where does CoT sit on it?
 - [concept/llm-brainstorming-diversity] Can diversity methods generalize to research hypothesis generation, policy ideation, artistic tasks?
 - [concept/llm-brainstorming-diversity] How do multi-agent brainstorming approaches compare to prompt-level diversity methods?
+- [concept/llm-clinical-reasoning-benchmarking] How to benchmark clinical reasoning on rare or novel diseases where neither humans nor LLMs have sufficient training data?
+- [concept/llm-clinical-reasoning-benchmarking] What prospective trial designs would adequately demonstrate clinical benefit (not just case accuracy)?
+- [concept/llm-clinical-reasoning-benchmarking] How to account for multimodal inputs that clinicians routinely use?
 - [concept/llm-moral-self-correction] Does self-correction generalize to adversarial prompts, subtle harms, or non-English contexts?
 - [concept/llm-moral-self-correction] What is the minimum RLHF-to-scale ratio for reliable self-correction?
 - [concept/llm-moral-self-correction] Can self-correction be distilled to smaller models without the emergent scale threshold?
@@ -972,7 +995,10 @@ _Auto-generated open questions. Do not edit._
 - [claim/llm-bots-contaminating-online-surveys-threaten] LLM bots contaminating online surveys threaten the validity of panel-based social science data (status: proposed)
 - [claim/llm-default-brainstorming-less-diverse-cot-closes-gap] Default LLM brainstorming produces less diverse ideas than human groups, but Chain-of-Thought prompting substantially closes the diversity gap (status: weakly_supported)
 - [claim/llm-driven-automated-silico-discovery-loop] LLM-driven automated in-silico discovery loop can generate novel cognitive science hypotheses through closed-loop experimentation (status: proposed)
+- [claim/llm-evolutionary-coding-agents-achieve-real] LLM-evolutionary coding agents achieve real-world impact across diverse scientific and engineering domains (status: weakly_supported)
 - [claim/llm-generated-social-simulacra-produce-realistic] LLM-generated social simulacra produce realistic community behavior indistinguishable from real interactions (status: weakly_supported)
+- [claim/llm-influence-aligned-deliberative-polling-shifts] LLM influence on users' political opinions is positively aligned with shifts from deliberative polling, suggesting epistemically desirable effects (status: weakly_supported)
+- [claim/llm-matches-exceeds-physician-clinical-reasoning] Frontier LLMs match or exceed physician performance on clinical reasoning and diagnosis tasks (status: weakly_supported)
 - [claim/llm-persona-underspecification-limits-ecological-validity] LLM persona-based studies systematically underspecify task and target population, limiting ecological validity and generalizability (status: weakly_supported)
 - [claim/llm-predicts-social-science-experimental-effects-accurately] LLMs can predict social science experimental treatment effects with high accuracy (r=0.85), matching or surpassing human forecasters and holding for unpublished studies (status: weakly_supported)
 - [claim/llm-retrieval-augmented-hypothesis-generation-improves] Retrieval-augmented hypothesis generation with iterative novelty optimization produces more novel scientific ideas than unaugmented LLMs (status: weakly_supported)
@@ -982,6 +1008,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/llm-social-simulation-validity-requires-algorithmic] LLM social simulation validity requires algorithmic fidelity and access to unfiltered, human-like models (status: weakly_supported)
 - [claim/llm-social-simulations-structural-heterogeneity-ceiling] LLM social simulations exhibit persistent overregularization — a structural ceiling on heterogeneity preservation (status: proposed)
 - [claim/llm-social-simulations-tractable-promising-research] LLM social simulations are a tractable and promising research method for social science (status: weakly_supported)
+- [claim/llm-synthetic-participants-systematic-fidelity-limitations] LLM synthetic participants have systematic fidelity limitations across four issue categories that constrain their use as human research proxies (status: weakly_supported)
 - [claim/llms-accurately-simulate-human-subpopulation-survey] LLMs conditioned on demographic backstories accurately simulate subpopulation survey responses (status: weakly_supported)
 - [claim/llms-behavioral-surrogates-require-statistical-calibration] LLM behavioral surrogates require statistical calibration (not merely heuristic prompting) to provide unbiased causal inference in behavioral science (status: proposed)
 - [claim/llms-lack-bayesian-coherence-synthetic-social] LLMs lack Bayesian coherence and should not be treated as posterior samples from human population distributions (status: proposed)
@@ -992,7 +1019,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/meso-level-group-personas-preserve-behavioral] Meso-level group personas constructed via narrative merging preserve behavioral fidelity while providing privacy guarantees (status: proposed)
 - [claim/mixed-subjects-designs-combining-llm-predictions] Mixed subjects designs combining LLM predictions with human observations yield valid causal estimates at lower cost (status: proposed)
 - [claim/multi-agent-llm-systems-enable-qualitatively] Multi-agent LLM systems enable qualitatively new social science inquiry through emergent dynamics (status: proposed)
-- [claim/national-ai-strategies-require-sovereign-compute] Effective national AI strategies require domestic compute infrastructure investment (status: proposed)
+- [claim/national-ai-strategies-require-sovereign-compute] Effective national AI strategies require domestic compute infrastructure investment (status: weakly_supported)
 - [claim/no-code-platforms-enable-scalable-real] No-code platforms enable scalable real-time hybrid human-AI social experimentation (status: weakly_supported)
 - [claim/open-source-ai-outcompetes-proprietary-ai] Open-source AI outcompetes proprietary AI for most practical use cases due to iteration speed (status: weakly_supported)
 - [claim/peer-review-epistemic-conservatism] Peer review enforces epistemic conservatism, systematically disadvantaging unconventional research (status: weakly_supported)

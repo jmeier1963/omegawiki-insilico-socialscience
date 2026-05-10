@@ -62,3 +62,5 @@ The algorithmic improvements are modest but verifiable — that's what distingui
 - [[single-minus-gluon-tree-amplitudes-nonzero]]
 - [[ai-driven-scientific-discovery]]
 - [[hacking-representing-intervening]]
+- [[alphaevolve-how-gemini-powered-coding-agent]] — DeepMind impact report on real-world AlphaEvolve deployments
+- supports: [[llm-evolutionary-coding-agents-achieve-real]]

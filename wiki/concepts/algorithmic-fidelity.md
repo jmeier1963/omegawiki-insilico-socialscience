@@ -3,7 +3,7 @@ title: "Algorithmic Fidelity"
 aliases: ["demographic replication fidelity", "LLM demographic fidelity", "subpopulation replication accuracy"]
 tags: [algorithmic-fidelity, silicon-sampling, demographic-conditioning, evaluation, llm]
 maturity: active
-key_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, emulating-public-opinion-proof-concept-ai]
+key_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, emulating-public-opinion-proof-concept-ai, synthetic-participants-generated-large-language-models]
 first_introduced: "2022"
 date_updated: 2026-04-13
 related_concepts: [silicon-sampling]
