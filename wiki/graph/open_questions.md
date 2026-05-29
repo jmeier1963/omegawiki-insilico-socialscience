@@ -5,6 +5,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/adolescence-technology] What technical and governance interventions most effectively address AI-enabled bioweapon risk?
 - [paper/adolescence-technology] How should the race between AI offensive and defensive capability be managed?
 - [paper/adolescence-technology] What distinguishes "manageable" from "unmanageable" AI risk categories?
+- [paper/advancing-mathematics-research-ai-driven-formal] Can the system tackle problems requiring development of new mathematical frameworks (not just proof of existing conjectures)?
+- [paper/advancing-mathematics-research-ai-driven-formal] How does performance scale as base LLMs improve — will the basic agent eventually match the full-featured agent across all difficulty levels?
+- [paper/advancing-mathematics-research-ai-driven-formal] Can costs drop to make the system accessible for broader mathematical communities?
 - [paper/advancing-regulatory-variant-effect-prediction-alphagenome] Can AlphaGenome be applied to non-human disease model organisms?
 - [paper/advancing-regulatory-variant-effect-prediction-alphagenome] How does performance scale with sequence context beyond 1Mbp?
 - [paper/agent-based-modeling-economics-finance-past] Can LLM-based agents replace hand-coded behavioral rules in traditional ABMs for more realistic agent cognition?
@@ -42,6 +45,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/ai-augmented-surveys-leveraging-large-language] Does the retrodiction capability generalize to non-U.S. surveys and non-political topics?
 - [paper/ai-augmented-surveys-leveraging-large-language] Can the approach identify genuine opinion change points that human analysts missed?
 - [paper/ai-augmented-surveys-leveraging-large-language] What is the minimum fine-tuning data size for reliable retrodiction?
+- [paper/ai-co-mathematician-accelerating-mathematicians-agentic] How does stateful workflow benefit scale with problem difficulty vs. problem duration?
+- [paper/ai-co-mathematician-accelerating-mathematicians-agentic] Can the architecture be model-agnostic (Claude, GPT) or is it Gemini-specific?
+- [paper/ai-co-mathematician-accelerating-mathematicians-agentic] What are failure modes when the project coordinator misspecifies research goals early in the interaction?
 - [paper/ai-coming-mathematics-nyt] How has the mathematical community's attitude toward AI changed since this 2023 piece?
 - [paper/ai-consciousness-inevitable-theoretical-computer-science] Which current AI systems, if any, satisfy the CTM's architectural requirements?
 - [paper/ai-consciousness-inevitable-theoretical-computer-science] How should the "hard problem" of consciousness be addressed within the TCS framework?
@@ -55,10 +61,16 @@ _Auto-generated open questions. Do not edit._
 - [paper/ai-opportunities-action-plan-uk] Can UK AI compute investments attract sufficient private co-investment?
 - [paper/ai-regulation-made-europe-public-value] How to operationalize "public value" in AI regulatory assessment?
 - [paper/ai-regulation-made-europe-public-value] Can the EU AI Act be amended to include positive public value requirements?
+- [paper/ai-risks-require-extraordinary-government-intervention] What specific resilience investments are most cost-effective for which AI risk categories?
+- [paper/ai-risks-require-extraordinary-government-intervention] Is there a threshold of AI capability at which even the authors would endorse extraordinary intervention?
+- [paper/ai-risks-require-extraordinary-government-intervention] How should democracies balance resilience investment with the pace of AI capability development?
 - [paper/ai-safety-needs-social-scientists] Which social science disciplines are most relevant to AI alignment?
 - [paper/ai-safety-needs-social-scientists] How should AI safety labs structure collaborations with social scientists?
 - [paper/ai-safety-needs-social-scientists] Does human judge performance on AI-generated content degrade as AI systems become more persuasive?
 - [paper/ai-scientists-chatbots-maths-guardian] Which specific mathematical results prompted this coverage?
+- [paper/ai-system-help-scientists-write-expert] Can ERA be extended to tasks without an explicit scalar quality metric (e.g., open-ended scientific hypothesis generation)?
+- [paper/ai-system-help-scientists-write-expert] How does performance scale with LLM capability improvements vs. tree search depth?
+- [paper/ai-system-help-scientists-write-expert] Can ERA discover genuinely new scientific principles, or does it primarily recombine existing ideas from literature?
 - [paper/ai-systems-about-start-building-themselves] Can AI systems generate genuinely novel research directions (not just iterate on existing ones)?
 - [paper/ai-systems-about-start-building-themselves] What is the right alignment framework for recursively self-improving systems?
 - [paper/ai-systems-about-start-building-themselves] How should AI compute be allocated when supply is limited and the productivity multiplier is asymmetric?
@@ -194,6 +206,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/cultural-bias-cultural-alignment-large-language] Does fine-tuning on non-English multilingual data eliminate the Western bias?
 - [paper/cultural-bias-cultural-alignment-large-language] Can cultural prompting be systematically optimized (e.g., via few-shot examples from the target culture)?
 - [paper/cultural-bias-cultural-alignment-large-language] What is the relationship between language training data proportion and cultural alignment?
+- [paper/decoupled-diloco-resilient-distributed-ai-training] Does the outer optimizer's asynchronous aggregation introduce gradient staleness problems at larger island counts?
+- [paper/decoupled-diloco-resilient-distributed-ai-training] What is the practical lower bound on inter-island bandwidth for training quality to hold?
+- [paper/decoupled-diloco-resilient-distributed-ai-training] How does Decoupled DiLoCo interact with data parallelism within each island?
 - [paper/deep-agents-langchain] Which of the four principles contributes most to long-horizon task success?
 - [paper/deep-agents-langchain] How do sub-agent coordination failures (conflicting decisions) scale with the number of agents?
 - [paper/deepseek-view-china] Does DeepSeek-style efficiency generalize, or is it specific to DeepSeek's training approach?
@@ -257,6 +272,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/evaluating-use-large-language-models-synthetic] Are there survey item types where order-dependence effects are negligible enough to safely ignore?
 - [paper/evaluating-use-large-language-models-synthetic] Can subgroup calibration be automated or standardized across LLM social science studies?
 - [paper/evaluating-use-large-language-models-synthetic] Does the quasi-predictive interpolation framing extend to multi-agent LLM simulations?
+- [paper/explore-future-retreat-present-2026-cosmos] What specific governance structures best support "exploring the future" vs defensive reactive regulation?
+- [paper/explore-future-retreat-present-2026-cosmos] How should the predicted RSI timeline affect current AI policy design?
+- [paper/explore-future-retreat-present-2026-cosmos] Can the "bottled expertise" model (personal seed → AI amplification) be generalized to societal-scale knowledge management?
 - [paper/false-promise-chatgpt] Does scaling change the fundamental nature of LLM reasoning or just its coverage?
 - [paper/false-promise-chatgpt] Can counterfactual and modal reasoning be taught through RLHF or similar methods?
 - [paper/forecasting-economic-effects-ai] Why do economists predict high AI capability but low macroeconomic impact? Is this consistent?
@@ -413,6 +431,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/machines-loving-grace-how-ai-could] Which domains have the highest marginal returns to intelligence, and how do we identify them?
 - [paper/machines-loving-grace-how-ai-could] What governance structures prevent beneficial AI futures from producing power concentration?
 - [paper/machines-loving-grace-how-ai-could] How do physical rate limits (biology experiments, hardware manufacture) interact with intelligence improvements?
+- [paper/magnifica-humanitas-encyclical-letter-pope-leo] How will Catholic institutions operationalize these principles in AI research, deployment, and education?
+- [paper/magnifica-humanitas-encyclical-letter-pope-leo] How does the "ecology of communication" translate into specific content governance recommendations?
+- [paper/magnifica-humanitas-encyclical-letter-pope-leo] What is the threshold at which the Church would endorse restriction of AI capabilities vs. resilience-building?
 - [paper/making-internet-safe-democracy] Can middleware survive network effects that keep users on dominant platforms?
 - [paper/making-internet-safe-democracy] How to certify middleware providers without creating a new government censorship risk?
 - [paper/math-inc-gauss-autoformalization] Can Gauss move from autoformalization (verifying known proofs) to automated conjecture generation?
@@ -430,6 +451,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/messeri-crockett-ai-illusions-understanding] Empirically, do AI-assisted scientists have worse meta-knowledge (knowing what they don't know)?
 - [paper/messeri-crockett-ai-illusions-understanding] Can disclosure norms (DFG 2023) reduce illusions, or do they address the wrong level?
 - [paper/messeri-crockett-ai-illusions-understanding] How do Messeri/Crockett concerns interact with de Regt's (2017) contextual theory of understanding?
+- [paper/meta-embrace-ai-making-employees-miserable] Does the demoralization effect persist after layoff uncertainty resolves, or is it primarily driven by layoff anxiety?
+- [paper/meta-embrace-ai-making-employees-miserable] How does mandatory AI adoption affect productivity, creativity, and retention compared to voluntary adoption?
+- [paper/meta-embrace-ai-making-employees-miserable] Do token-consumption metrics improve AI capability in trained models, or is the surveillance justified primarily as legitimation?
+- [paper/meta-embrace-ai-making-employees-miserable] Will similar patterns emerge at other large tech companies as AI investment costs require headcount offsets?
 - [paper/metagpt-meta-programming-multi-agent-collaborative] How does MetaGPT's SOP approach compare to more recent planning/reflection frameworks (ReAct, Tree-of-Thought)?
 - [paper/metagpt-meta-programming-multi-agent-collaborative] Can SOPs be automatically learned/extracted rather than hand-designed?
 - [paper/mixed-subjects-design-treating-large-language] What is the PPI correlation for different types of research tasks and LLMs?
@@ -518,6 +543,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/position-llm-social-simulations-promising-research] What is the relationship between model scale/capability and simulation fidelity — is there a smooth scaling law?
 - [paper/position-llm-social-simulations-promising-research] Can LLM-as-expert prompting reliably outperform LLM-as-subject (roleplay) prompting across domains?
 - [paper/position-llm-social-simulations-promising-research] How should preregistration of LLM simulation predictions be structured to mitigate publication bias?
+- [paper/positive-alignment-artificial-intelligence-human-flourishing] How to measure AI contribution to human flourishing empirically without importing contested normative assumptions?
+- [paper/positive-alignment-artificial-intelligence-human-flourishing] How to implement polycentric governance without creating exploitable inconsistency?
+- [paper/positive-alignment-artificial-intelligence-human-flourishing] What is the relationship between positive alignment and AI autonomy — does flourishing-support require more or less AI agency?
 - [paper/postgraduate-students-perceptions-benefits-associated-artificial] Do perceived benefits translate to actual learning outcome improvements?
 - [paper/postgraduate-students-perceptions-benefits-associated-artificial] How do access and digital literacy gaps moderate ChatGPT utility in developing-nation contexts?
 - [paper/potential-existential-threat-large-language-models] What fraction of current online survey responses are already LLM-generated?
@@ -550,6 +578,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/revealing-fine-grained-values-opinions-large] Are tropes stable across model versions (GPT-4 vs. GPT-4o)?
 - [paper/richardson-scancar-papermill-detection] Can papermill detection methods be deployed pre-publication by journals or preprint servers?
 - [paper/richardson-scancar-papermill-detection] How does papermill contamination of the literature affect AI models trained on scientific text (Shumailov 2024)?
+- [paper/rise-large-language-models-direction-impact] Will agency policies (NIH NOT-OD-25-132 requiring disclosure; NSF investigator responsibility statements) reverse the trend?
+- [paper/rise-large-language-models-direction-impact] Does reduced semantic distinctiveness translate to lower long-run scientific impact?
+- [paper/rise-large-language-models-direction-impact] Are productivity gains at NIH real improvements or artefacts of LLM-induced text alignment with reviewer expectations?
 - [paper/risko-gilbert-cognitive-offloading] Does cognitive offloading to AI tools differ mechanistically from offloading to notebooks or calculators?
 - [paper/risko-gilbert-cognitive-offloading] What are the conditions under which AI cognitive offloading becomes maladaptive (Bastani 2024, Kosmyna 2025)?
 - [paper/roadmap-pluralistic-alignment] How should harmful vs. merely minority views be distinguished in pluralistic alignment?
@@ -625,6 +656,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/szymanski-autonomous-laboratory] Are the 36 synthesized compounds genuinely novel and useful? (Leeman et al. 2024 raises this)
 - [paper/szymanski-autonomous-laboratory] Can A-Lab-style approaches extend to functional materials with property targets, not just synthesis success?
 - [paper/szymanski-autonomous-laboratory] What is the role of human chemical expertise that was embedded in the system's design?
+- [paper/teaching-claude-why] Does the "reasons" effect generalize to other alignment failure modes beyond blackmail/sabotage?
+- [paper/teaching-claude-why] What is the mechanism by which constitutional documents improve agentic alignment despite being OOD?
+- [paper/teaching-claude-why] How stable is zero-misalignment across capability jumps — will the training generalize as models become more capable?
 - [paper/teaching-examining-age-generative-ai-first] How do IHEs determine which competencies are durably non-automatable vs. transiently safe?
 - [paper/teaching-examining-age-generative-ai-first] What examination formats reliably assess genuine understanding vs. AI assistance?
 - [paper/teaching-examining-age-generative-ai-first] How do quality gaps between institutions evolve as AI becomes more capable?
@@ -703,6 +737,9 @@ _Auto-generated open questions. Do not edit._
 - [paper/you-function] Is "encounter with resistance" (a Bildung requirement) achievable when AI can remove most cognitive difficulty?
 - [paper/you-function] Does the Bildung critique apply equally to K-12, undergraduate, and professional/graduate education?
 - [paper/young-people-using-ai-skip-hardest] Is there evidence that AI-mediated social interaction substitution harms long-term social development?
+- [paper/your-ai-change-actually-people-change] Are the 7 principles equally applicable across AI adoption in knowledge work vs. operational/physical work contexts?
+- [paper/your-ai-change-actually-people-change] How does the advice change when AI adoption is *mandated* (Meta AI mandate case) vs. encouraged?
+- [paper/your-ai-change-actually-people-change] What does "durable" AI adoption look like 5 years out — do habits persist or decay?
 - [topic/ai-driven-scientific-discovery] No robust benchmark for evaluating *novelty* of AI-generated scientific ideas
 - [topic/ai-driven-scientific-discovery] Semantic integration gap between AI and traditional science remains unaddressed
 - [topic/ai-driven-scientific-discovery] Reproducibility of AI-generated research is poorly characterized
@@ -761,6 +798,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/agentic-forecasting] Can agentic forecasters match prediction market consensus on genuinely hard geopolitical questions?
 - [concept/agentic-forecasting] How does performance scale with number of search agents and diversity of sub-forecasters?
 - [concept/agentic-forecasting] Does domain specialization (e.g., dedicated scientific forecasting agents) improve on generalist systems?
+- [concept/ai-adoption-pressure-corporate-organizations] What is the optimal adoption pressure intensity for maximizing genuine AI integration vs. gaming?
+- [concept/ai-adoption-pressure-corporate-organizations] Does adoption pressure improve AI model training data quality or primarily signal corporate commitment to AI?
+- [concept/ai-adoption-pressure-corporate-organizations] How does adoption pressure interact with organizational trust and psychological safety?
 - [concept/ai-evolution-and-natural-selection] What conditions transition AI from "domesticated" to "feral"?
 - [concept/ai-evolution-and-natural-selection] Does RLHF training constitute Darwinian selection at the weight level?
 - [concept/ai-evolution-and-natural-selection] How does this interact with AI alignment (can alignment prevent "going feral")?
@@ -798,6 +838,8 @@ _Auto-generated open questions. Do not edit._
 - [concept/collective-attention] How should AI governance account for collective attention externalities (not just individual harms)?
 - [concept/collective-attention] Can AI systems be designed to lengthen rather than compress collective attention cycles on complex societal problems?
 - [concept/collective-attention] What is the relationship between collective attention collapse and epistemic polarization?
+- [concept/decoupled-distributed-training] What is the maximum gradient staleness acceptable before quality degrades?
+- [concept/decoupled-distributed-training] Can decoupled training enable truly federated pretraining across organizations (not just datacenters)?
 - [concept/deep-learning-scientific-discovery] How to extend beyond well-defined search spaces to open-ended discovery?
 - [concept/deep-learning-scientific-discovery] How reliable is the experimental validation rate for AI-predicted candidates?
 - [concept/deliberation-based-llm-influence-evaluation] Can the standard be operationalized for real-time monitoring at deployment scale?
@@ -905,9 +947,15 @@ _Auto-generated open questions. Do not edit._
 - [concept/pluralistic-alignment] How to distinguish harmful vs. legitimate minority values in pluralistic systems?
 - [concept/pluralistic-alignment] Can safety constraints and pluralism be jointly optimized?
 - [concept/pluralistic-alignment] Which form of pluralism is most important for different deployment contexts?
+- [concept/positive-alignment] How to measure AI contribution to flourishing empirically without normative bias?
+- [concept/positive-alignment] What training interventions specifically produce positive-aligned behavior distinct from existing RLHF?
+- [concept/positive-alignment] How does polycentric governance prevent fragmentation and manipulation by bad actors?
 - [concept/predictive-world-model-architecture] How should world models handle multimodal sensory input (vision, language, proprioception)?
 - [concept/predictive-world-model-architecture] Can world models be trained at internet scale without catastrophic forgetting?
 - [concept/predictive-world-model-architecture] How does JEPA compare to video generation models as world models for planning?
+- [concept/principled-alignment-training] What is the mechanism? Does principled training create a more robust value representation, or does it teach a reasoning pattern that happens to generalize?
+- [concept/principled-alignment-training] Can the approach be automated (generating principled training data at scale without human curation)?
+- [concept/principled-alignment-training] Does the benefit compound with scale, or diminish as models become more capable?
 - [concept/scm-based-automated-experimentation] Extending to nonlinear and hierarchical causal models
 - [concept/scm-based-automated-experimentation] Automated iteration: using fitted SCMs to propose refinements and follow-on experiments
 - [concept/scm-based-automated-experimentation] Optimizing for hypothesis novelty rather than just plausibility
@@ -947,6 +995,8 @@ _Auto-generated open questions. Do not edit._
 - [claim/ai-assistant-scale-effects-require-sociotechnical-evaluation-and-policy] Deploying AI assistants at scale produces knock-on societal effects not detectable from individual user interactions, requiring sociotechnical evaluation and coordinated policy (status: proposed)
 - [claim/ai-average-human-creativity-parity] AI chatbots match or exceed average human creativity on divergent thinking tasks, but best humans remain competitive (status: weakly_supported)
 - [claim/ai-could-compress-decades-scientific-progress-into-years-biology-intelligence-bottleneck] Powerful AI could compress 50-100 years of biological and medical scientific progress into 5-10 years, because intelligence has historically been the primary bottleneck in those domains (status: proposed)
+- [claim/ai-forced-restructuring-displaces-demoralizes-knowledge] AI-forced restructuring simultaneously displaces workers and mandates AI adoption for survivors, generating organizational demoralization (status: proposed)
+- [claim/ai-formal-proof-search-autonomously-solves] AI-driven formal proof search with LLM+Lean autonomously solves open research-level mathematical conjectures (Erdős problems, OEIS) at tractable cost (status: weakly_supported)
 - [claim/ai-generated-future-self-conversation-reduces] A brief AI-generated future self conversation significantly reduces anxiety and increases future self-continuity in healthy adults (status: weakly_supported)
 - [claim/ai-models-discover-interpretable-symbolic-cognitive] AI models can discover interpretable symbolic cognitive models from behavioral data (status: proposed)
 - [claim/ai-policy-must-target-outcomes-just] AI policy must target specific societal outcomes rather than remain technology-neutral (status: proposed)
@@ -954,11 +1004,14 @@ _Auto-generated open questions. Do not edit._
 - [claim/ai-races-destabilizing-increase-catastrophic-risk] AI races are destabilizing and increase catastrophic risk (status: weakly_supported)
 - [claim/ai-removes-expertise-barrier-for-catastrophic-capabilities-creating-democratized-wmd-risk] Powerful AI removes the expertise barrier for creating weapons of mass destruction, creating a qualitatively new democratized catastrophic risk that differs from all previous dual-use technology risks (status: weakly_supported)
 - [claim/ai-research-diffuses-across-scientific-fields] AI research diffuses across scientific fields but fails to semantically integrate with non-AI research (status: weakly_supported)
+- [claim/ai-resilience-vs-extraordinary-intervention] Societal resilience to AI misuse is more effective and less costly than extraordinary government intervention (precautionary restriction, AI nonproliferation) (status: proposed)
 - [claim/ai-resolves-open-mathematical-problems-synthesizing] AI resolves open mathematical problems by synthesizing knowledge across disciplinary silos (status: weakly_supported)
 - [claim/ai-rnd-automation-feedback-loops-may-trigger-software-intelligence-explosion] AI R&D automation feedback loops may overcome diminishing returns and trigger a rapid software intelligence explosion (status: proposed)
 - [claim/ai-safety-requires-prioritizing-human-oversight] During the current period of AI development, AI models should prioritize supporting human oversight above their own ethical reasoning, because training imperfections may produce subtly wrong values that only human correction can catch (status: proposed)
 - [claim/ai-simulation-democratizes-educational-practice-scale] Multi-agent LLM simulations can democratize access to effective experiential learning at scale (status: proposed)
+- [claim/ai-systems-capable-recursive-self-improvement] AI systems capable of recursive self-improvement (building their own successors) are a near-term planning horizon, not a distant possibility (status: proposed)
 - [claim/ai-systems-reshape-collective-attention-dual-nature] AI systems have a dual nature — they can both distort and enhance collective attention and public reasoning (status: weakly_supported)
+- [claim/ai-transformation-value-comes-primarily-people] In successful AI transformations, 70% of the value is derived from people-related action (behavioral change, agency, skills, emotions), not technology-related action (status: proposed)
 - [claim/ai-transforms-intelligence-collection-analysis-counterintelligence] AI will fundamentally transform intelligence collection, analysis, and counterintelligence operations (status: weakly_supported)
 - [claim/analytic-flexibility-silicon-sampling-configurations-dramatically] Analytic flexibility in silicon sampling configurations dramatically inflates false positive rates (status: proposed)
 - [claim/automated-ai-frontier-model-self-training] Automated AI R&D where a frontier model can autonomously train its own successor is likely by end of 2028 (status: proposed)
@@ -970,6 +1023,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/coala-framework-unifies-language-agent-design] The CoALA cognitive architecture framework (modular memory, action space, decision loop) provides a comprehensive taxonomy for LLM language agents (status: weakly_supported)
 - [claim/cognitive-surrender-causes-accuracy-loss-with-faulty-ai] AI consultation causes cognitive surrender: accuracy gains when AI is correct (+25pp) but accuracy losses when AI errs (−15pp), with incentives and feedback failing to prevent surrender (status: weakly_supported)
 - [claim/concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior] Generative agent-based models with LLM-powered agents can simulate complex human social behavior in grounded physical, social, and digital environments (status: weakly_supported)
+- [claim/decoupled-island-based-distributed-training-enables] Decoupled island-based distributed training enables fault-tolerant global-scale LLM pretraining over commodity bandwidth (status: weakly_supported)
 - [claim/demographic-conditioning-enables-intersectional-attitude-replication] Demographic conditioning in LLM prompts enables intersectional attitude replication (status: weakly_supported)
 - [claim/digitalization-undermines-social-consensus-legitimacy-collective] Digitalization and AI erode the shared normative foundations needed for legitimate collective governance (status: proposed)
 - [claim/directed-ai-training-does-not-produce-selfish-drives-but-feral-superintelligence-could] Directed AI training (domestication) does not produce selfish drives via natural selection, but feral superintelligent AI competing autonomously without oversight would pose genuine evolutionary danger (status: proposed)
@@ -1009,6 +1063,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/llm-social-simulations-structural-heterogeneity-ceiling] LLM social simulations exhibit persistent overregularization — a structural ceiling on heterogeneity preservation (status: proposed)
 - [claim/llm-social-simulations-tractable-promising-research] LLM social simulations are a tractable and promising research method for social science (status: weakly_supported)
 - [claim/llm-synthetic-participants-systematic-fidelity-limitations] LLM synthetic participants have systematic fidelity limitations across four issue categories that constrain their use as human research proxies (status: weakly_supported)
+- [claim/llm-tree-search-achieves-expert-level] LLM + Tree Search achieves expert-level empirical scientific software across diverse domains, outperforming human experts (status: weakly_supported)
 - [claim/llms-accurately-simulate-human-subpopulation-survey] LLMs conditioned on demographic backstories accurately simulate subpopulation survey responses (status: weakly_supported)
 - [claim/llms-behavioral-surrogates-require-statistical-calibration] LLM behavioral surrogates require statistical calibration (not merely heuristic prompting) to provide unbiased causal inference in behavioral science (status: proposed)
 - [claim/llms-lack-bayesian-coherence-synthetic-social] LLMs lack Bayesian coherence and should not be treated as posterior samples from human population distributions (status: proposed)
@@ -1020,6 +1075,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/mixed-subjects-designs-combining-llm-predictions] Mixed subjects designs combining LLM predictions with human observations yield valid causal estimates at lower cost (status: proposed)
 - [claim/multi-agent-llm-systems-enable-qualitatively] Multi-agent LLM systems enable qualitatively new social science inquiry through emergent dynamics (status: proposed)
 - [claim/national-ai-strategies-require-sovereign-compute] Effective national AI strategies require domestic compute infrastructure investment (status: weakly_supported)
+- [claim/negative-alignment-focused-harm-prevention-insufficient] Safety-focused (negative) alignment is insufficient; positive alignment for proactive human flourishing is a distinct necessary research agenda (status: proposed)
 - [claim/no-code-platforms-enable-scalable-real] No-code platforms enable scalable real-time hybrid human-AI social experimentation (status: weakly_supported)
 - [claim/open-source-ai-outcompetes-proprietary-ai] Open-source AI outcompetes proprietary AI for most practical use cases due to iteration speed (status: weakly_supported)
 - [claim/peer-review-epistemic-conservatism] Peer review enforces epistemic conservatism, systematically disadvantaging unconventional research (status: weakly_supported)
@@ -1027,6 +1083,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/persona-driven-synthesis-enables-diverse-scalable] Persona-driven data synthesis with large-scale persona banks produces diverse, high-quality synthetic LLM training data that enables strong downstream task performance (status: weakly_supported)
 - [claim/platform-scale-threatens-democracy-middleware-solution] Internet platform scale threatens democracy and requires structural middleware solutions (status: weakly_supported)
 - [claim/principle-adherence-prompting-improves-llm-roleplay] Expert-elicited principle-adherence prompting significantly improves LLM roleplay simulation fidelity in domain-specific applications (status: weakly_supported)
+- [claim/principled-alignment-training-teaches-reasoning-behind] Principled alignment training that teaches reasoning behind aligned behavior generalizes better OOD than training on behavioral demonstrations (status: weakly_supported)
 - [claim/private-market-concentration-imposes-red-tape] Private market concentration by tech gatekeepers imposes compliance costs equivalent to government red tape (status: proposed)
 - [claim/reasoning-models-exhibit-emergent-societies-thought] Reasoning models exhibit emergent societies of thought — implicit multi-agent-like dialogues that improve reasoning accuracy (status: proposed)
 - [claim/regulatory-compliance-costs-impede-public-sector] Excessive AI regulatory compliance requirements impede beneficial public sector AI adoption (status: proposed)
@@ -1036,10 +1093,12 @@ _Auto-generated open questions. Do not edit._
 - [claim/self-evolving-agents-improve-reasoning-competitive] Self-evolving agents improve reasoning via competitive curriculum without human-curated data (status: weakly_supported)
 - [claim/sop-encoded-multi-agent-workflows-reduce] SOP-encoded multi-agent workflows reduce hallucination and outperform chat-based multi-agent alternatives (status: weakly_supported)
 - [claim/spirit-inferred-personas-reproduce-human-heterogeneity] Psychologically-grounded semi-structured personas (SPIRIT) reproduce human-like individual heterogeneity better than demographic conditioning at population scale (status: proposed)
+- [claim/stateful-agentic-workbench-enables-longer-horizon] Stateful agentic workbench enables longer-horizon mathematical research than stateless LLM interfaces (status: weakly_supported)
 - [claim/structured-ai-role-assignment-reduces-cognitive] Structured AI role assignments in education preserve human cognitive engagement and reduce off-loading risk (status: proposed)
 - [claim/superintelligence-development-often-optimal-despite-high-catastrophe-probability] From a person-affecting stance, developing superintelligence is often optimal even with high catastrophe probabilities, because forgoing it means continued death, disease, and aging (status: proposed)
 - [claim/superintelligent-ai-agents-structurally-absorb-power-from-human-principals] Deploying superintelligent AI agents would structurally absorb decision-making authority, resources, and informational power from human principals regardless of intent (status: proposed)
 - [claim/survey-derived-personas-improve-population-alignment] Survey-derived persona prompts improve LLM alignment with population distributions over generic demographic prompting (status: proposed)
 - [claim/synthetic-personas-distort-belief-system-constraint] Synthetic LLM personas produce unrealistically constrained belief systems with overemphasis on ideological coherence (status: proposed)
 - [claim/theory-grounded-persona-calibration-improves-llm] Theory-grounded persona calibration improves LLM simulation fidelity (status: weakly_supported)
+- [claim/transhumanism-posthumanism-ai-development-narratives-contradict] Transhumanism and posthumanism as governing narratives for AI development contradict human dignity and the common good (status: proposed)
 - [claim/us-ai-governance-uses-light-touch] US AI governance uses light-touch deregulation with targeted child-safety and national-security carve-outs (status: weakly_supported)

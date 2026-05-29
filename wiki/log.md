@@ -210,3 +210,30 @@
 ## [2026-05-10] ingest | claims for performance-large-language-model-reasoning-tasks: 0 matched, 1 new
 ## [2026-05-10] ingest | concepts for performance-large-language-model-reasoning-tasks: 0 matched, 1 new, 0 foundation-refs
 ## [2026-05-10] ingest | added papers/synthetic-participants-generated-large-language-models | new: claims/llm-synthetic-participants-systematic-fidelity-limitations | updated: concepts/silicon-sampling, concepts/algorithmic-fidelity, index.md | concepts: 0 new, 2 matched (silicon-sampling, algorithmic-fidelity)
+## [2026-05-12] ingest | claims for meta-embrace-ai-making-employees-miserable: 0 matched existing, 1 new (ai-forced-restructuring-displaces-demoralizes-knowledge)
+## [2026-05-12] ingest | concepts for meta-embrace-ai-making-employees-miserable: 0 matched existing, 1 new (ai-adoption-pressure-corporate-organizations), 0 foundation-refs
+## [2026-05-12] ingest | added papers/meta-embrace-ai-making-employees-miserable | updated: concepts/ai-adoption-pressure-corporate-organizations (new), claims/ai-forced-restructuring-displaces-demoralizes-knowledge (new), graph/edges.jsonl (+2 edges)
+## [2026-05-14] ideate | 3 ideas proposed, 2 ideas filtered out | direction: strengthening AI governance regulation architecture and political strategy arguments
+## [2026-05-14] ideate | 3 ideas proposed, 2 ideas filtered out | direction: architectures of regulation and market boundary-setting for AI systems
+## [2026-05-22] ingest | claims for ai-co-mathematician-accelerating-mathematicians-agentic: 0 matched existing, 1 new (stateful-agentic-workbench-enables-longer-horizon)
+## [2026-05-22] ingest | concepts for ai-co-mathematician-accelerating-mathematicians-agentic: 1 matched existing (ai-mathematical-discovery), 0 new, 0 foundation-refs
+## [2026-05-22] ingest | claims for positive-alignment-artificial-intelligence-human-flourishing: 0 matched existing, 1 new (negative-alignment-focused-harm-prevention-insufficient)
+## [2026-05-22] ingest | concepts for positive-alignment-artificial-intelligence-human-flourishing: 0 matched existing, 1 new (positive-alignment), 0 foundation-refs
+## [2026-05-22] ingest | claims for decoupled-diloco-resilient-distributed-ai-training: 0 matched existing, 1 new (decoupled-island-based-distributed-training-enables)
+## [2026-05-22] ingest | concepts for decoupled-diloco-resilient-distributed-ai-training: 0 matched existing, 1 new (decoupled-distributed-training), 0 foundation-refs
+## [2026-05-22] ingest | claims for teaching-claude-why: 0 matched existing, 1 new (principled-alignment-training-teaches-reasoning-behind)
+## [2026-05-22] ingest | concepts for teaching-claude-why: 1 matched existing (broadly-safe-behavior-cluster), 1 new (principled-alignment-training), 0 foundation-refs
+## [2026-05-22] ingest | added papers/ai-co-mathematician-accelerating-mathematicians-agentic | updated: concepts/ai-mathematical-discovery (Branch A +1 variant), concepts/automated-research-pipeline (key_papers), claims/stateful-agentic-workbench-enables-longer-horizon (new), graph/edges.jsonl (+3 edges)
+## [2026-05-22] ingest | added papers/positive-alignment-artificial-intelligence-human-flourishing | updated: concepts/positive-alignment (new), claims/negative-alignment-focused-harm-prevention-insufficient (new), graph/edges.jsonl (+2 edges)
+## [2026-05-22] ingest | added papers/decoupled-diloco-resilient-distributed-ai-training | updated: concepts/decoupled-distributed-training (new), claims/decoupled-island-based-distributed-training-enables (new), graph/edges.jsonl (+2 edges)
+## [2026-05-22] ingest | added papers/teaching-claude-why | updated: concepts/principled-alignment-training (new), concepts/broadly-safe-behavior-cluster (key_papers +teaching-claude-why), papers/claude-constitution (Related +teaching-claude-why), claims/principled-alignment-training-teaches-reasoning-behind (new), graph/edges.jsonl (+3 edges)
+## [2026-05-29] ingest | added papers/rise-large-language-models-direction-impact | updated: concepts/ai-research-productivity-paradox | new: claims/llm-grant-writing-reduces-semantic-distinctiveness, people/dashun-wang
+## [2026-05-29] ingest | claims for rise-large-language-models-direction-impact: 0 matched existing, 1 new
+## [2026-05-29] ingest | added papers/advancing-mathematics-research-ai-driven-formal | updated: concepts/ai-mathematical-discovery | new: claims/ai-formal-proof-search-autonomously-solves
+## [2026-05-29] ingest | claims for advancing-mathematics-research-ai-driven-formal: 0 matched existing, 1 new
+## [2026-05-29] ingest | added papers/ai-system-help-scientists-write-expert | updated: concepts/automated-research-pipeline | new: claims/llm-tree-search-achieves-expert-level
+## [2026-05-29] ingest | claims for ai-system-help-scientists-write-expert: 0 matched existing, 1 new
+## [2026-05-29] ingest | added papers/ai-risks-require-extraordinary-government-intervention | updated: papers/narayanan-kapoor-ai-normal-technology (extends) | new: claims/ai-resilience-vs-extraordinary-intervention
+## [2026-05-29] ingest | added papers/magnifica-humanitas-encyclical-letter-pope-leo | updated: concepts/positive-alignment | new: claims/transhumanism-posthumanism-ai-development-narratives-contradict
+## [2026-05-29] ingest | added papers/explore-future-retreat-present-2026-cosmos | updated: concepts/software-intelligence-explosion, people/jack-clark | new: claims/ai-systems-capable-recursive-self-improvement
+## [2026-05-29] ingest | added papers/your-ai-change-actually-people-change | updated: concepts/ai-adoption-pressure-corporate-organizations | new: claims/ai-transformation-value-comes-primarily-people

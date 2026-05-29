@@ -3,9 +3,9 @@ title: "AI Research Productivity Paradox"
 aliases: ["AI science paradox", "AI productivity-diversity tradeoff", "research narrowing paradox", "AI impact-diversity tradeoff"]
 tags: [ai-science, productivity, research-diversity, scientometrics, bibliometrics]
 maturity: emerging
-key_papers: [ai-tools-boost-scientists-impact-narrow]
+key_papers: [ai-tools-boost-scientists-impact-narrow, rise-large-language-models-direction-impact]
 first_introduced: "2025"
-date_updated: 2026-04-29
+date_updated: 2026-05-29
 related_concepts: [ai-science-adoption-gap]
 ---
 
@@ -55,3 +55,4 @@ Use when discussing: (1) systemic effects of AI adoption on scientific diversity
 
 - [[ai-tools-boost-scientists-impact-narrow]] — Storey (2025) N&V contextualising Hao et al.'s empirical findings
 - [[gao-wang-quantifying-ai-scientific-research]] — Gao & Wang (2024): inequality patterns in AI science adoption (complementary)
+- [[rise-large-language-models-direction-impact]] — Qian et al. (2026): extends paradox to the grant-funding pipeline (NIH/NSF); LLM use reduces semantic distinctiveness of proposals

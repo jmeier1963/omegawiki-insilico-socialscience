@@ -3,9 +3,9 @@ title: "Software Intelligence Explosion"
 aliases: ["SIE", "intelligence explosion", "recursive self-improvement", "ASARA feedback loop", "AI R&D automation explosion", "AI software feedback loop"]
 tags: [intelligence-explosion, ai-rnd-automation, feedback-loops, agi, ai-safety, software-progress]
 maturity: emerging
-key_papers: [will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development]
+key_papers: [will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos]
 first_introduced: "2025"
-date_updated: 2026-05-06
+date_updated: 2026-05-29
 related_concepts: [automated-research-pipeline, gradual-disempowerment]
 ---
 

@@ -3,9 +3,9 @@ title: "AI-Assisted Mathematical Discovery"
 aliases: ["AI math discovery", "formal reasoning agent", "ai theorem proving", "semi-autonomous mathematics", "LLM for mathematics"]
 tags: [ai-math, formal-reasoning, theorem-proving, mathematical-discovery, llm]
 maturity: emerging
-key_papers: [triumvirate-ai-driven-theoretical-discovery, semi-autonomous-mathematics-discovery-gemini-case, numina-lean-agent-open-general-agentic, novikov-alphaevolve, alphaevolve-how-gemini-powered-coding-agent]
+key_papers: [triumvirate-ai-driven-theoretical-discovery, semi-autonomous-mathematics-discovery-gemini-case, numina-lean-agent-open-general-agentic, novikov-alphaevolve, alphaevolve-how-gemini-powered-coding-agent, ai-co-mathematician-accelerating-mathematicians-agentic, advancing-mathematics-research-ai-driven-formal]
 first_introduced: "2023"
-date_updated: 2026-04-23
+date_updated: 2026-05-29
 related_concepts: [llm-powered-agent-architecture, automated-research-pipeline]
 ---
 
@@ -26,6 +26,7 @@ Not applicable — architectural/methodological concept.
 - **Formal verification agents** (Numina-Lean-Agent): LLM coding agents interact with Lean theorem prover via MCP to solve and formalize mathematical problems
 - **Semi-autonomous conjecture resolution** (Gemini + Erdős problems): LLM evaluates open conjectures via natural-language reasoning, narrows to plausible solutions, human experts validate
 - **AI for theoretical physics** (He, Yang-Hui): top-down, bottom-up, and meta-mathematical frameworks for AI-assisted discovery in pure math and physics
+- **Stateful agentic workbench** (AI co-mathematician): hierarchical multi-agent system with persistent file system, parallel workstreams, and failed-hypothesis tracking — supports long-horizon open-ended research beyond single-query proof tasks
 
 ## Comparison
 
@@ -55,6 +56,7 @@ When mathematical problems can be represented formally (Lean/Coq/Isabelle) or wh
 - [[triumvirate-ai-driven-theoretical-discovery]] — taxonomy of AI roles in mathematical/physics discovery
 - [[semi-autonomous-mathematics-discovery-gemini-case]] — Gemini resolves 13 Erdős problems via hybrid human-AI workflow
 - [[numina-lean-agent-open-general-agentic]] — general coding agent solves Putnam 2025 via Lean MCP integration
+- [[ai-co-mathematician-accelerating-mathematicians-agentic]] — stateful multi-agent workbench for long-horizon mathematical research; SOTA on FrontierMath Tier 4 (48%)
 
 ## My understanding
 

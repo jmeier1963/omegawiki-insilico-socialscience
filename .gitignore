@@ -33,6 +33,7 @@ Thumbs.db
 # Raw data (large files managed separately)
 # raw/papers/*.pdf
 
-# Files exceeding GitHub's 100 MB hard limit
+# Files exceeding GitHub's 100 MB hard limit or not wanted to be tracked
 raw/papers/government_policy/KI_enquete_kommission.pdf
 raw/papers/government_policy/Law_and_Policy_for_the_Quantum_Age.pdf
+raw/AI_governance/

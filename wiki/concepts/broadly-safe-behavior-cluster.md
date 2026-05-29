@@ -3,7 +3,7 @@ title: "Broadly Safe Behavior Cluster"
 aliases: ["broad safety", "broadly safe behaviors", "safe behavior cluster", "AI corrigibility cluster", "principal hierarchy safety"]
 tags: [ai-safety, corrigibility, alignment, anthropic, oversight, human-control]
 maturity: emerging
-key_papers: [claude-constitution]
+key_papers: [claude-constitution, teaching-claude-why]
 first_introduced: "2026"
 date_updated: 2026-05-06
 related_concepts: []
@@ -47,3 +47,4 @@ Key properties in the broadly safe cluster (per Claude's Constitution):
 ## Key papers
 
 - [[claude-constitution]] — Askell et al. 2026, Anthropic; primary source defining the broadly safe behavior cluster and principal hierarchy
+- [[teaching-claude-why]] — Anthropic 2026; empirical validation of principled alignment training; all Claude models from Haiku 4.5 achieve 0% agentic misalignment rate

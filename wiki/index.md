@@ -3,6 +3,41 @@
 <!-- markdownlint-disable MD007 MD032 -->
 
 papers:
+  - slug: your-ai-change-actually-people-change
+    title: "Your AI Change Is Actually a People Change"
+    tags: [ai-adoption, organizational-change, behavioral-science, change-management, ai-workforce]
+    importance: 3
+
+  - slug: explore-future-retreat-present-2026-cosmos
+    title: "Explore the Future, or Retreat from the Present — 2026 Cosmos HAI Lab Lecture (Jack Clark)"
+    tags: [ai-progress, software-intelligence-explosion, agi, rsi, ai-governance]
+    importance: 3
+
+  - slug: magnifica-humanitas-encyclical-letter-pope-leo
+    title: "Magnifica Humanitas — Encyclical Letter of Pope Leo XIV on AI and the Human Person"
+    tags: [ai-ethics, human-dignity, catholic-social-teaching, transhumanism, ai-governance, positive-alignment]
+    importance: 4
+
+  - slug: ai-risks-require-extraordinary-government-intervention
+    title: "Do AI Risks Require Extraordinary Government Intervention?"
+    tags: [ai-governance, regulation, resilience, nonproliferation, aint, policy]
+    importance: 3
+
+  - slug: ai-system-help-scientists-write-expert
+    title: "An AI system to help scientists write expert-level empirical software"
+    tags: [automated-research-pipeline, scientific-software, llm, tree-search, ai-science]
+    importance: 4
+
+  - slug: advancing-mathematics-research-ai-driven-formal
+    title: "Advancing Mathematics Research with AI-Driven Formal Proof Search"
+    tags: [formal-proof, lean, theorem-proving, ai-mathematical-discovery, erdos]
+    importance: 4
+
+  - slug: rise-large-language-models-direction-impact
+    title: "The Rise of Large Language Models and the Direction and Impact of US Federal Research Funding"
+    tags: [llm-adoption, science-of-science, research-funding, scientific-writing, ai-homogenization]
+    importance: 4
+
   - slug: strategic-insights-simulation-gaming-ai-race
     title: "Strategic Insights from Simulation Gaming of AI Race Dynamics"
     tags: [ai-governance, ai-race, simulation-gaming, wargaming, geopolitics, futures-studies]
@@ -128,7 +163,35 @@ papers:
     tags: [llm-influence, deliberative-polling, ai-persuasion, epistemic-desirability, political-opinions, benchmarks]
     importance: 3
 
+  - slug: meta-embrace-ai-making-employees-miserable
+    title: "Meta's Embrace of A.I. Is Making Its Employees Miserable"
+    tags: [ai-workplace, ai-adoption, labor-displacement, surveillance, organizational-ai, tech-industry]
+    importance: 2
+
+  - slug: ai-co-mathematician-accelerating-mathematicians-agentic
+    title: "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI"
+    tags: [agentic-ai, mathematics, research-automation, stateful-workflow, llm-agent, multi-agent]
+    importance: 3
+
+  - slug: positive-alignment-artificial-intelligence-human-flourishing
+    title: "Positive Alignment: Artificial Intelligence for Human Flourishing"
+    tags: [alignment, positive-psychology, human-flourishing, polycentric-governance, ai-safety, value-pluralism]
+    importance: 3
+
+  - slug: decoupled-diloco-resilient-distributed-ai-training
+    title: "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale"
+    tags: [distributed-training, fault-tolerance, low-communication, ml-infrastructure, pretraining]
+    importance: 2
+
+  - slug: teaching-claude-why
+    title: "Teaching Claude Why"
+    tags: [alignment-training, agentic-misalignment, constitutional-ai, safety-generalization, rlhf]
+    importance: 3
+
 concepts:
+  - slug: ai-adoption-pressure-corporate-organizations
+    tags: [ai-workplace, organizational-ai, ai-governance, labor, tech-industry]
+    maturity: emerging
   - slug: gradual-disempowerment
     tags: [ai-safety, human-agency, cognitive-surrender, deskilling, institutional-ai, coordination-failure]
     maturity: emerging
@@ -323,6 +386,46 @@ ideas:
     status: failed
     domain: NLP
     priority: 2
+  - slug: harness-specification-legal-technical-liability-bridge
+    status: proposed
+    domain: AI Governance
+    priority: 5
+  - slug: ai-redistribution-governance-legitimacy-experimental-evidence
+    status: proposed
+    domain: AI Governance
+    priority: 4
+  - slug: cognitive-abundance-education-governance-principle
+    status: proposed
+    domain: AI Governance
+    priority: 4
+  - slug: protocol-layer-versus-application-layer-ai
+    status: failed
+    domain: AI Governance
+    priority: 2
+  - slug: ai-safety-commons-repeated-game-formal
+    status: failed
+    domain: AI Governance
+    priority: 2
+  - slug: foundation-model-market-definition-two-sided
+    status: proposed
+    domain: AI Governance
+    priority: 5
+  - slug: open-weight-foundation-models-antitrust-structural
+    status: proposed
+    domain: AI Governance
+    priority: 4
+  - slug: intent-mastery-structural-governance-competency
+    status: proposed
+    domain: AI Governance
+    priority: 4
+  - slug: augmentation-trap-formalization-conditions-net-negative
+    status: failed
+    domain: AI Governance
+    priority: 2
+  - slug: interoperability-gatekeeper-interface-conformance-test-suite
+    status: failed
+    domain: AI Governance
+    priority: 2
 
 experiments: []
 
@@ -333,10 +436,48 @@ summaries:
     title: "In-Silico Social Science"
     paper_count: 38
 people:
+  - slug: dashun-wang
+    affiliation: "Kellogg School of Management / Northwestern University"
+
   - slug: lisa-argyle
     affiliation: "Brigham Young University"
 
 claims:
+  - slug: ai-transformation-value-comes-primarily-people
+    status: proposed
+    confidence: 0.50
+    domain: Computational Social Science
+
+  - slug: ai-systems-capable-recursive-self-improvement
+    status: proposed
+    confidence: 0.35
+    domain: AI Governance / Society
+
+  - slug: transhumanism-posthumanism-ai-development-narratives-contradict
+    status: proposed
+    confidence: 0.40
+    domain: AI Ethics / Philosophy
+
+  - slug: ai-resilience-vs-extraordinary-intervention
+    status: proposed
+    confidence: 0.45
+    domain: AI Governance / Policy
+
+  - slug: llm-tree-search-achieves-expert-level
+    status: weakly_supported
+    confidence: 0.73
+    domain: ML Systems
+
+  - slug: ai-formal-proof-search-autonomously-solves
+    status: weakly_supported
+    confidence: 0.72
+    domain: NLP
+
+  - slug: llm-grant-writing-reduces-semantic-distinctiveness
+    status: supported
+    confidence: 0.75
+    domain: Computational Social Science
+
   - slug: cognitive-surrender-causes-accuracy-loss-with-faulty-ai
     status: weakly_supported
     confidence: 0.70
@@ -2232,6 +2373,18 @@ concepts:
     tags: [llm-influence, benchmarking, deliberative-polling, epistemic-desirability, democratic-legitimacy]
     maturity: emerging
 
+  - slug: positive-alignment
+    tags: [alignment, human-flourishing, positive-psychology, polycentric-governance, ai-safety]
+    maturity: emerging
+
+  - slug: decoupled-distributed-training
+    tags: [distributed-training, fault-tolerance, ml-infrastructure, pretraining, ml-systems]
+    maturity: emerging
+
+  - slug: principled-alignment-training
+    tags: [alignment-training, constitutional-ai, safety-generalization, ood-generalization, rlhf]
+    maturity: emerging
+
 claims:
   - slug: llm-influence-aligned-deliberative-polling-shifts
     status: weakly_supported
@@ -2242,3 +2395,28 @@ claims:
     status: weakly_supported
     confidence: 0.75
     domain: NLP
+
+  - slug: ai-forced-restructuring-displaces-demoralizes-knowledge
+    status: proposed
+    confidence: 0.45
+    domain: "AI Governance / Social Science"
+
+  - slug: stateful-agentic-workbench-enables-longer-horizon
+    status: weakly_supported
+    confidence: 0.55
+    domain: ML Systems
+
+  - slug: negative-alignment-focused-harm-prevention-insufficient
+    status: proposed
+    confidence: 0.55
+    domain: AI Governance
+
+  - slug: decoupled-island-based-distributed-training-enables
+    status: weakly_supported
+    confidence: 0.65
+    domain: ML Systems
+
+  - slug: principled-alignment-training-teaches-reasoning-behind
+    status: weakly_supported
+    confidence: 0.70
+    domain: AI Safety

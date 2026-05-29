@@ -17,6 +17,7 @@ date_updated: 2026-05-05
 ## Key papers
 
 - [[ai-systems-about-start-building-themselves]] — Import AI 455: synthesis of benchmark evidence for approaching automated AI R&D; 60%+ probability estimate for frontier model self-training by 2028
+- [[explore-future-retreat-present-2026-cosmos]] — 2026 Cosmos HAI Lab Lecture: personal narrative of AI integration + RSI-within-2-years prediction; "explore the future or retreat from the present"
 
 ## Recent work
 
