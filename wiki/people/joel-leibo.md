@@ -16,6 +16,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[generative-agent-based-modeling-actions-grounded]] — senior author; Concordia GABM library
+- [[machine-culture]] — co-author; Nature Human Behaviour Perspective on machine culture (2023)
 
 ## Recent work
 

@@ -3,7 +3,7 @@ title: "Software Intelligence Explosion"
 aliases: ["SIE", "intelligence explosion", "recursive self-improvement", "ASARA feedback loop", "AI R&D automation explosion", "AI software feedback loop"]
 tags: [intelligence-explosion, ai-rnd-automation, feedback-loops, agi, ai-safety, software-progress]
 maturity: emerging
-key_papers: [will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos]
+key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos]
 first_introduced: "2025"
 date_updated: 2026-05-29
 related_concepts: [automated-research-pipeline, gradual-disempowerment]
@@ -27,6 +27,7 @@ Let C(t) = AI capability at time t. SIE condition: dC/dt ∝ C(t)^r where r > 1 
 - **Hardware-assisted explosion**: faster hardware + better software; limited by chip manufacturing timelines
 - **Partial SIE**: rapid but bounded acceleration; not runaway
 - **ASARA scenario**: AI Systems for AI R&D Automation reach the capability threshold for end-to-end AI research
+- **Collective/institutional RSI**: recursive improvement applied to entire research lab (models, allocation, infrastructure, teaming) — Inherent Labs manifesto; inspired by cultural evolution rather than software-only compounding
 
 ## Known limitations
 
@@ -43,3 +44,4 @@ Let C(t) = AI capability at time t. SIE condition: dC/dt ∝ C(t)^r where r > 1 
 ## Key papers
 
 - [[will-ai-automation-cause-software-intelligence]] — Eth & Davidson (2025, Epoch AI); technical analysis with empirical calibration; argues SIE is plausible given current AI software progress dynamics
+- [[living-within-experiment-inherent-labs-manifesto]] — collective/institutional RSI variant inspired by cultural evolution (Inherent Labs, 2026)

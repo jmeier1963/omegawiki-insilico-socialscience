@@ -3,6 +3,16 @@
 <!-- markdownlint-disable MD007 MD032 -->
 
 papers:
+  - slug: living-within-experiment-inherent-labs-manifesto
+    title: "Living within the Experiment — Inherent Labs Manifesto"
+    tags: [recursive-self-improvement, automated-science, ai-native-organization, collective-intelligence, human-machine-teaming]
+    importance: 3
+
+  - slug: machine-culture
+    title: "Machine Culture"
+    tags: [machine-culture, cultural-evolution, social-learning, recommender-systems, generative-ai, ai-society]
+    importance: 4
+
   - slug: your-ai-change-actually-people-change
     title: "Your AI Change Is Actually a People Change"
     tags: [ai-adoption, organizational-change, behavioral-science, change-management, ai-workforce]
@@ -2385,6 +2395,14 @@ concepts:
     tags: [alignment-training, constitutional-ai, safety-generalization, ood-generalization, rlhf]
     maturity: emerging
 
+  - slug: machine-culture
+    tags: [machine-culture, cultural-evolution, social-learning, generative-ai, recommender-systems, ai-society]
+    maturity: emerging
+
+  - slug: ai-native-research-organization
+    tags: [research-organization, recursive-self-improvement, human-machine-teaming, automated-science, collective-intelligence]
+    maturity: emerging
+
 claims:
   - slug: llm-influence-aligned-deliberative-polling-shifts
     status: weakly_supported
@@ -2420,3 +2438,20 @@ claims:
     status: weakly_supported
     confidence: 0.70
     domain: AI Safety
+
+  - slug: intelligent-machines-transform-cultural-evolutionary-processes
+    status: weakly_supported
+    confidence: 0.65
+    domain: Social Science
+
+  - slug: ai-driven-scientific-discovery-requires-institutional-redesign
+    status: proposed
+    confidence: 0.45
+    domain: ML Systems
+
+people:
+  - slug: levin-brinkmann
+    affiliation: "Max Planck Institute for Human Development, Center for Humans & Machines"
+
+  - slug: iyad-rahwan
+    affiliation: "Max Planck Institute for Human Development, Center for Humans & Machines"

@@ -22,6 +22,7 @@ Raw observations ("Klaus is writing a paper", "Klaus is reading a book on gentri
 Reflection trigger: when `Σ importance(recent_events) > threshold` (threshold = 150 in reference implementation; corresponds to roughly 2–3 reflections per simulated day).
 
 Reflection process:
+
 1. Query LLM with the 100 most recent memory records: "What are 3 most salient high-level questions we can answer about the subjects?"
 2. For each question, retrieve relevant memories and prompt LLM: "What N high-level insights can you infer from the above statements? (example format: insight (because of m1, m5, m3))"
 3. Parse insights as new memory objects with pointers to cited source memories.

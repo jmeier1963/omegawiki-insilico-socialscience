@@ -17,7 +17,7 @@ cited_by: []
 
 ## Problem
 
-LLMs are trained predominantly on English-language data. Does this introduce cultural bias into their outputs? Can cultural prompting reduce such bias? 
+LLMs are trained predominantly on English-language data. Does this introduce cultural bias into their outputs? Can cultural prompting reduce such bias?
 
 ## Key idea
 

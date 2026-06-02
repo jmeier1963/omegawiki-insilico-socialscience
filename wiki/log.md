@@ -237,3 +237,9 @@
 ## [2026-05-29] ingest | added papers/magnifica-humanitas-encyclical-letter-pope-leo | updated: concepts/positive-alignment | new: claims/transhumanism-posthumanism-ai-development-narratives-contradict
 ## [2026-05-29] ingest | added papers/explore-future-retreat-present-2026-cosmos | updated: concepts/software-intelligence-explosion, people/jack-clark | new: claims/ai-systems-capable-recursive-self-improvement
 ## [2026-05-29] ingest | added papers/your-ai-change-actually-people-change | updated: concepts/ai-adoption-pressure-corporate-organizations | new: claims/ai-transformation-value-comes-primarily-people
+## [2026-05-31] ingest | claims for machine-culture: 0 matched existing, 1 new
+## [2026-05-31] ingest | concepts for machine-culture: 1 matched existing (silicon-sampling via extends), 1 new, 1 foundation-refs
+## [2026-05-31] ingest | added papers/machine-culture | updated: concepts/machine-culture (new), concepts/silicon-sampling, claims/intelligent-machines-transform-cultural-evolutionary-processes (new), people/levin-brinkmann (new), people/iyad-rahwan (new), people/joel-leibo, topics/llm-human-simulacra, index.md, graph/edges.jsonl
+## [2026-06-02] ingest | claims for living-within-experiment-inherent-labs-manifesto: 0 matched existing, 1 new
+## [2026-06-02] ingest | concepts for living-within-experiment-inherent-labs-manifesto: 3 matched existing (automated-research-pipeline, software-intelligence-explosion, machine-culture), 1 new, 0 foundation-refs
+## [2026-06-02] ingest | added papers/living-within-experiment-inherent-labs-manifesto | moved raw/inherent.pdf → raw/papers/inherent-labs-living-within-experiment-manifesto.pdf | updated: concepts/ai-native-research-organization (new), automated-research-pipeline, software-intelligence-explosion, machine-culture, topics/ai-driven-scientific-discovery, index.md, graph/

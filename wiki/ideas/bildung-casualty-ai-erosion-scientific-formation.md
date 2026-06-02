@@ -35,7 +35,7 @@ AI-automated scientific research (automated hypothesis generation, AI-written li
 
 1. **Conceptual framework**: Map Humboldt's Bildung and its core features (productive resistance, self-development through encounter, formation vs. training) onto the cognitive and epistemic processes known to be involved in scientific inquiry (hypothesis generation, critical evaluation, revision, conceptual integration). Identify which processes are at risk from AI automation vs. which are enhanced.
 
-2. **Empirical operationalization**: Design a "scientific formation task battery" — tasks that measure not just output quality but the formation process: (a) spontaneous hypothesis generation without scaffolding, (b) assumption identification and revision under new evidence, (c) creative analogy generation across domains, (d) productive uncertainty management (ability to generate useful questions, not just answers). 
+2. **Empirical operationalization**: Design a "scientific formation task battery" — tasks that measure not just output quality but the formation process: (a) spontaneous hypothesis generation without scaffolding, (b) assumption identification and revision under new evidence, (c) creative analogy generation across domains, (d) productive uncertainty management (ability to generate useful questions, not just answers).
 
 3. **Comparison study**: Compare researchers at different stages of AI adoption (early-career vs. established; high-AI-use labs vs. low-AI-use labs) on formation task battery. Predict: high-AI-use participants show greater fragility when AI scaffolding is removed (worse formation scores on unscaffolded tasks), even if AI-assisted output quality is equal or higher.
 

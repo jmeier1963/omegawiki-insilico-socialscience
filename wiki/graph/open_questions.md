@@ -407,6 +407,12 @@ _Auto-generated open questions. Do not edit._
 - [paper/lila-sciences-turbocharge-scientific-discovery] When will peer-reviewed results from the platform appear?
 - [paper/limitations-opaque-learning-machines] Does chain-of-thought reasoning in LLMs constitute "causal reasoning" in Pearl's sense?
 - [paper/limitations-opaque-learning-machines] Can the opacity problem be resolved by interpretability research alone, or does it require architectural changes?
+- [paper/living-within-experiment-inherent-labs-manifesto] What does rigorous benchmarking look like for institution-level RSI?
+- [paper/living-within-experiment-inherent-labs-manifesto] How to train agents that follow their own curiosity without reward-hacking?
+- [paper/living-within-experiment-inherent-labs-manifesto] What initial conditions yield collective-level RSI?
+- [paper/living-within-experiment-inherent-labs-manifesto] How to preserve interpretability and human joy in discovery while accelerating counter-intuitive findings?
+- [paper/living-within-experiment-inherent-labs-manifesto] What is the right interface for many-humans–many-agents research collaboration?
+- [paper/living-within-experiment-inherent-labs-manifesto] How to recursively improve alignment and fairness of collective decision-making?
 - [paper/llm-agent-based-social-simulation-attitude] How accurately do multidimensional LLM beliefs track real population opinion changes?
 - [paper/llm-agent-based-social-simulation-attitude] Can the framework distinguish causal influence from correlation in attitude diffusion?
 - [paper/llm-agent-based-social-simulation-attitude] Does real-time news grounding improve or worsen hallucination tendencies?
@@ -425,6 +431,12 @@ _Auto-generated open questions. Do not edit._
 - [paper/llms-generate-structurally-realistic-social-networks] Can prompting or fine-tuning correct the political homophily overestimation?
 - [paper/llms-generate-structurally-realistic-social-networks] Do LLMs overestimate political homophily more in certain political climates (election years)?
 - [paper/llms-generate-structurally-realistic-social-networks] How do LLM-generated networks perform for downstream tasks like epidemic modeling?
+- [paper/machine-culture] How to quantify the fraction of contemporary cultural dynamics attributable to algorithmic vs. human social learning?
+- [paper/machine-culture] Can watermarking reliably distinguish machine-generated from human cultural artifacts as generative AI proliferates?
+- [paper/machine-culture] What constitutes a "healthy" level of diversity in an AI model ecosystem — between monolithic convergence and Tower-of-Babel fragmentation?
+- [paper/machine-culture] How to implement society-in-the-loop governance of machine culture at scale?
+- [paper/machine-culture] Will intelligent machines democratize human cultural participation or deskill creative and intellectual labor?
+- [paper/machine-culture] Can model collapse be prevented without human-curated diversity injection in training loops?
 - [paper/machine-learning-tool-hypothesis-generation] Can the ML-as-hypothesis-generator framework be systematized (automated hypothesis generation)?
 - [paper/machine-learning-tool-hypothesis-generation] How do LLMs change the hypothesis generation workflow — can they generate hypotheses from ML-discovered patterns?
 - [paper/machine-learning-tool-hypothesis-generation] What is the expected false hypothesis rate from ML-based discovery?
@@ -810,6 +822,10 @@ _Auto-generated open questions. Do not edit._
 - [concept/ai-generated-future-self-simulation] How does future self simulation interact with cultural variation in future orientation?
 - [concept/ai-mathematical-discovery] Can AI prove problems that require genuinely new mathematical concepts?
 - [concept/ai-mathematical-discovery] How to reliably distinguish AI novelty from sophisticated pattern-matching on training data?
+- [concept/ai-native-research-organization] Benchmarks for institution-level RSI.
+- [concept/ai-native-research-organization] Training curious agents without controllable reward signals.
+- [concept/ai-native-research-organization] Interfaces for many-humans–many-agents collaboration.
+- [concept/ai-native-research-organization] Recursive improvement of alignment and fairness in collective decision-making.
 - [concept/ai-race-dynamics] How can race dynamics be measured empirically (compute, publication rates, investment)?
 - [concept/ai-race-dynamics] Under what conditions do AI races produce stable deterrence vs. catastrophic equilibria?
 - [concept/ai-race-dynamics] Can AI safety coordination survive intense commercial competition?
@@ -921,6 +937,11 @@ _Auto-generated open questions. Do not edit._
 - [concept/machine-consciousness] Which current AI architectures, if any, instantiate consciousness-relevant structure?
 - [concept/machine-consciousness] Is consciousness substrate-independent or biologically constrained?
 - [concept/machine-consciousness] What would a scientific research program on machine consciousness look like?
+- [concept/machine-culture] Establishing baseline metrics for algorithmic contribution to cultural dynamics.
+- [concept/machine-culture] Detecting and attributing machine-generated cultural artifacts in mixed human–machine corpora.
+- [concept/machine-culture] Defining and operationalizing "healthy" diversity in AI model ecosystems.
+- [concept/machine-culture] Society-in-the-loop governance mechanisms for machine culture.
+- [concept/machine-culture] Preventing model collapse while scaling generative AI training on synthetic data.
 - [concept/marginal-returns-to-intelligence] How should marginal returns to intelligence be measured empirically across domains?
 - [concept/marginal-returns-to-intelligence] At what level of AI capability do non-intelligence bottlenecks become dominant?
 - [concept/marginal-returns-to-intelligence] How do sequential experimental dependencies interact with parallelizable AI intelligence?
@@ -995,6 +1016,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/ai-assistant-scale-effects-require-sociotechnical-evaluation-and-policy] Deploying AI assistants at scale produces knock-on societal effects not detectable from individual user interactions, requiring sociotechnical evaluation and coordinated policy (status: proposed)
 - [claim/ai-average-human-creativity-parity] AI chatbots match or exceed average human creativity on divergent thinking tasks, but best humans remain competitive (status: weakly_supported)
 - [claim/ai-could-compress-decades-scientific-progress-into-years-biology-intelligence-bottleneck] Powerful AI could compress 50-100 years of biological and medical scientific progress into 5-10 years, because intelligence has historically been the primary bottleneck in those domains (status: proposed)
+- [claim/ai-driven-scientific-discovery-requires-institutional-redesign] AI-driven scientific discovery requires radical redesign of research institutions, not only better AI tools within legacy labs (status: proposed)
 - [claim/ai-forced-restructuring-displaces-demoralizes-knowledge] AI-forced restructuring simultaneously displaces workers and mandates AI adoption for survivors, generating organizational demoralization (status: proposed)
 - [claim/ai-formal-proof-search-autonomously-solves] AI-driven formal proof search with LLM+Lean autonomously solves open research-level mathematical conjectures (Erdős problems, OEIS) at tractable cost (status: weakly_supported)
 - [claim/ai-generated-future-self-conversation-reduces] A brief AI-generated future self conversation significantly reduces anxiety and increases future self-continuity in healthy adults (status: weakly_supported)
@@ -1036,6 +1058,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/generative-ai-renders-traditional-higher-education] Generative AI renders traditional written-exam-based higher education teaching and examination dysfunctional (status: weakly_supported)
 - [claim/human-ai-co-improvement-safer-and-achievable-alternative-to-pure-ai-self-improvement] Human-AI co-improvement is a safer and more immediately achievable path to superintelligence than pure AI self-improvement (status: proposed)
 - [claim/human-obsolescence-through-structural-irrelevance-distinct] Human obsolescence through comprehensive AI superiority is a structurally distinct fourth category of AI risk not requiring misalignment or conflict (status: proposed)
+- [claim/intelligent-machines-transform-cultural-evolutionary-processes] Intelligent machines simultaneously transform cultural evolutionary processes of variation, transmission, and selection (status: weakly_supported)
 - [claim/interview-based-agent-conditioning-reduces-demographic] Interview-based agent conditioning reduces demographic accuracy bias (status: weakly_supported)
 - [claim/interview-grounded-generative-agents-replicate-individual] Interview-grounded generative agents replicate individual attitudes and behaviors at near-human self-consistency (status: weakly_supported)
 - [claim/language-agents-online-training-match-frontier] Language agents with online training can match or exceed frontier LLMs on complex multi-step scientific tasks at substantially lower inference cost (status: weakly_supported)

@@ -28,6 +28,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - [[towards-end-end-automation-ai-research]] — The AI Scientist: first system to autonomously produce peer-review-passing manuscripts
 - [[metagpt-meta-programming-multi-agent-collaborative]] — MetaGPT: SOP-encoded multi-agent framework for complex task automation
 - [[agent-laboratory-using-llm-agents-research]] — Agent Laboratory: human-in-the-loop LLM research automation pipeline
+- [[living-within-experiment-inherent-labs-manifesto]] — Inherent Labs (2026): AI-native research organization and collective RSI vision
 - [[advancing-regulatory-variant-effect-prediction-alphagenome]] — AlphaGenome: unified genomics foundation model
 
 ## SOTA tracker

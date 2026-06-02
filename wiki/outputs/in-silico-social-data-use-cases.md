@@ -1,5 +1,5 @@
 # In-Silico Data in Social Sciences — Use Case Analysis
-<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD024 MD013 -->
 
 > Synthesized from ΩmegaWiki (~310 papers, 129 claims, May 2026).
 > Organized by the five-block framework: **A** Maturity · **B** Data Type · **C** Model Logic · **D** Governance · **E** Output Utilization

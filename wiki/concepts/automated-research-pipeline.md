@@ -3,7 +3,7 @@ title: "Automated Research Pipeline"
 aliases: ["LLM research automation", "autonomous research agent", "end-to-end research automation", "AI research agent", "autonomous scientific research"]
 tags: [research-automation, llm-agents, scientific-discovery, ai-science]
 maturity: emerging
-key_papers: [agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific, ai-systems-about-start-building-themselves, self-improving-ai-ai-human-co, ai-co-mathematician-accelerating-mathematicians-agentic, ai-system-help-scientists-write-expert]
+key_papers: [living-within-experiment-inherent-labs-manifesto, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific, ai-systems-about-start-building-themselves, self-improving-ai-ai-human-co, ai-co-mathematician-accelerating-mathematicians-agentic, ai-system-help-scientists-write-expert]
 first_introduced: "2023"
 date_updated: 2026-05-29
 related_concepts: [llm-powered-agent-architecture]
@@ -26,6 +26,7 @@ Not applicable — this is an architectural pattern, not a mathematical formalis
 - **Fully autonomous** (The AI Scientist): single system executes all stages without human input; generates ideas, writes code, runs experiments, reviews own output
 - **Human-in-the-loop** (Agent Laboratory): human feedback gates at literature review, experiment planning, and report stages; significantly improves output quality
 - **Reproducibility agents** (CORE-Bench): agents focused on a single stage — replicating existing computational results from code and data
+- **AI-native institution** (Inherent): argues pipelines must be embedded in redesigned organizations with collective RSI, not legacy labs alone
 
 ## Comparison
 
@@ -59,6 +60,7 @@ When the goal is to accelerate research throughput in domains where hypotheses c
 - [[core-bench-fostering-credibility-published-research]] — benchmark for computational reproducibility stage
 - [[impact-large-language-models-scientific-discovery]] — GPT-4 evaluated across scientific domains (Microsoft Research 2023)
 - [[ai-systems-about-start-building-themselves]] — 2026 benchmark synthesis; CORE-Bench solved (95.5%), METR 12-hour horizon, PostTrainBench 50% of human quality
+- [[living-within-experiment-inherent-labs-manifesto]] — argues pipelines require AI-native institutional redesign, not legacy lab retrofit alone
 
 ## My understanding
 
