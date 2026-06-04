@@ -115,6 +115,11 @@ _Auto-generated open questions. Do not edit._
 - [paper/assigning-ai-seven-approaches-students-prompts] Which role archetypes most effectively preserve learning gains vs. those that produce cognitive off-loading?
 - [paper/assigning-ai-seven-approaches-students-prompts] How should AI role design differ across disciplines, grade levels, and learner populations?
 - [paper/assigning-ai-seven-approaches-students-prompts] What assessments can detect when students have shifted from productive AI collaboration to passive AI consumption?
+- [paper/automated-alignment-harder-than-you-think] How do we develop training proxies for hard-to-supervise fuzzy tasks when the true task is not evaluable?
+- [paper/automated-alignment-harder-than-you-think] Can scalable oversight protocols be extended to handle correlated uncertainty during subtask recombination?
+- [paper/automated-alignment-harder-than-you-think] What is the right human-agent team structure for alignment research review?
+- [paper/automated-alignment-harder-than-you-think] How do we validate that generalisation from a training proxy will hold for a hard-to-supervise fuzzy task?
+- [paper/automated-alignment-harder-than-you-think] Can "compactification" of research corpora reduce correlated uncertainty in OSA aggregation?
 - [paper/automated-social-science-language-models-scientist] Can the system discover genuinely novel (not just plausible) social scientific hypotheses?
 - [paper/automated-social-science-language-models-scientist] How do results change with different LLM backbones or across model generations?
 - [paper/automated-social-science-language-models-scientist] Can automated iteration (SCM → experiment → refined SCM) converge on ground-truth causal structure?
@@ -726,6 +731,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/when-ai-builds-ai-findings-workshop] What governance mechanisms could maintain visibility into closed-lab AI R&D automation?
 - [paper/when-ai-builds-ai-findings-workshop] Which trajectory model is empirically most consistent with current lab behavior?
 - [paper/when-ai-builds-ai-findings-workshop] How do compute limits interact with software-automation trajectories?
+- [paper/where-ai-gdp-statistics-filling-measurement] When and how will AI become a close enough substitute for labor that its rapidly growing productive capacity begins to register in nominal GDP? What triggers the "phase change"?
+- [paper/where-ai-gdp-statistics-filling-measurement] What design of AI satellite accounts best captures both nominal and quality-adjusted growth without requiring headline GDP methodology changes?
+- [paper/where-ai-gdp-statistics-filling-measurement] Can we develop measures of AI value delivered to users (economic value) rather than AI capability per benchmark token?
+- [paper/where-ai-gdp-statistics-filling-measurement] How should fiscal authorities design tax instruments (compute tax, AI services excise, windfall levy) when the base is currently unmeasured?
 - [paper/white-house-national-policy-framework-artificial] Will Congress adopt a comprehensive federal AI law or defer to executive action?
 - [paper/white-house-national-policy-framework-artificial] How to balance preemption of state laws (reducing fragmentation) vs. states as laboratories?
 - [paper/white-house-national-policy-framework-artificial] Is child-safety + national security framing sufficient, or do frontier risks require more?
@@ -832,6 +841,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/ai-research-productivity-paradox] Does the paradox persist or reverse as AI lowers barriers to cross-domain work?
 - [concept/ai-research-productivity-paradox] Can policy interventions (interdisciplinary AI funding) break the productivity-diversity tradeoff?
 - [concept/ai-research-productivity-paradox] Is the paradox a transitional phase of early adoption, or a structural feature of AI-augmented science?
+- [concept/ai-satellite-accounts] What benchmark(s) best anchor quality-adjusted inference price indices?
+- [concept/ai-satellite-accounts] How do we capture the AI sector's gross margins (training vs. inference split) without industry disclosure?
+- [concept/ai-satellite-accounts] How should satellite accounts handle the transition from AI-as-complement to AI-as-labor-substitute?
 - [concept/ai-science-adoption-gap] Is the integration gap closing post-2022 as LLMs make AI more accessible to non-AI researchers?
 - [concept/ai-science-adoption-gap] Does the gap matter if AI tools produce useful scientific results regardless of semantic integration?
 - [concept/algorithmic-fidelity] Contamination-corrected fidelity estimation methods.
@@ -886,6 +898,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/green-ai-kuznets-curve-energy-emissions] Does the GAKC hold for data center energy specifically?
 - [concept/green-ai-kuznets-curve-energy-emissions] How do efficiency breakthroughs (DeepSeek, Jevons Paradox) shift or eliminate the threshold?
 - [concept/green-ai-kuznets-curve-energy-emissions] Can policy interventions accelerate the transition to the beneficial phase?
+- [concept/hard-supervise-fuzzy-tasks] Can we identify hard-to-supervise fuzzy tasks before deploying agents on them?
+- [concept/hard-supervise-fuzzy-tasks] Do scalable oversight protocols work for tasks with irreducible correlated uncertainty?
+- [concept/hard-supervise-fuzzy-tasks] What training proxies reliably generalise to hard-to-supervise fuzzy tasks?
 - [concept/heterogeneity-collapse] What training or prompting strategies (ensemble, adversarial, diversity-aware fine-tuning) can restore heterogeneity?
 - [concept/heterogeneity-collapse] How does heterogeneity collapse interact with alignment evaluation benchmarks that use LLM juries?
 - [concept/heterogeneity-collapse] Is there a formal measure of heterogeneity collapse severity analogous to calibration error for accuracy?
@@ -1017,6 +1032,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/ai-average-human-creativity-parity] AI chatbots match or exceed average human creativity on divergent thinking tasks, but best humans remain competitive (status: weakly_supported)
 - [claim/ai-could-compress-decades-scientific-progress-into-years-biology-intelligence-bottleneck] Powerful AI could compress 50-100 years of biological and medical scientific progress into 5-10 years, because intelligence has historically been the primary bottleneck in those domains (status: proposed)
 - [claim/ai-driven-scientific-discovery-requires-institutional-redesign] AI-driven scientific discovery requires radical redesign of research institutions, not only better AI tools within legacy labs (status: proposed)
+- [claim/ai-economy-quality-adjusted-growth-invisible] Quality-adjusted AI output grows >2,000% per year but is nearly invisible in conventional GDP statistics (status: weakly_supported)
 - [claim/ai-forced-restructuring-displaces-demoralizes-knowledge] AI-forced restructuring simultaneously displaces workers and mandates AI adoption for survivors, generating organizational demoralization (status: proposed)
 - [claim/ai-formal-proof-search-autonomously-solves] AI-driven formal proof search with LLM+Lean autonomously solves open research-level mathematical conjectures (Erdős problems, OEIS) at tractable cost (status: weakly_supported)
 - [claim/ai-generated-future-self-conversation-reduces] A brief AI-generated future self conversation significantly reduces anxiety and increases future self-continuity in healthy adults (status: weakly_supported)
@@ -1037,6 +1053,7 @@ _Auto-generated open questions. Do not edit._
 - [claim/ai-transforms-intelligence-collection-analysis-counterintelligence] AI will fundamentally transform intelligence collection, analysis, and counterintelligence operations (status: weakly_supported)
 - [claim/analytic-flexibility-silicon-sampling-configurations-dramatically] Analytic flexibility in silicon sampling configurations dramatically inflates false positive rates (status: proposed)
 - [claim/automated-ai-frontier-model-self-training] Automated AI R&D where a frontier model can autonomously train its own successor is likely by end of 2028 (status: proposed)
+- [claim/automated-alignment-misleading-safety-assessments] Automated alignment research produces systematically misleading safety assessments even without scheming (status: proposed)
 - [claim/autoregressive-llms-insufficient-for-autonomous-intelligence-without-world-models] Autoregressive LLMs are insufficient for autonomous machine intelligence, which requires learned world models, intrinsic motivation, and hierarchical representations (status: proposed)
 - [claim/chatgpt-large-positive-effect-student-learning] ChatGPT has a large positive effect on student learning performance (g≈0.87) and moderate effects on learning perception and higher-order thinking (status: weakly_supported)
 - [claim/chatgpt4-behavioral-traits-statistically-indistinguishable-humans] ChatGPT-4 behavioral and personality traits in economic games are statistically indistinguishable from a random human, and biased toward greater altruism and cooperation than human averages (status: weakly_supported)

@@ -198,6 +198,16 @@ papers:
     tags: [alignment-training, agentic-misalignment, constitutional-ai, safety-generalization, rlhf]
     importance: 3
 
+  - slug: automated-alignment-harder-than-you-think
+    title: "Automated Alignment Is Harder Than You Think"
+    tags: [alignment, automated-alignment, safety-cases, scalable-oversight, fuzzy-tasks, ai-safety]
+    importance: 4
+
+  - slug: where-ai-gdp-statistics-filling-measurement
+    title: "Where Is AI in GDP Statistics? Filling the Measurement Gap"
+    tags: [ai-economics, gdp, macroeconomics, measurement, productivity, labor-substitution, policy]
+    importance: 4
+
 concepts:
   - slug: ai-adoption-pressure-corporate-organizations
     tags: [ai-workplace, organizational-ai, ai-governance, labor, tech-industry]
@@ -362,6 +372,12 @@ concepts:
   - slug: persona-transparency-checklist
     tags: [persona, transparency, ecological-validity, llm-alignment, methodology, checklist]
     maturity: emerging
+  - slug: hard-supervise-fuzzy-tasks
+    tags: [alignment, scalable-oversight, human-supervision, ai-safety, evaluation]
+    maturity: emerging
+  - slug: ai-satellite-accounts
+    tags: [ai-economics, gdp, macroeconomics, measurement, national-accounts, policy]
+    maturity: emerging
 
 topics:
   - slug: llm-human-simulacra
@@ -377,7 +393,13 @@ topics:
     title: "Synthetic Survey Research"
     tags: [survey, synthetic-data, public-opinion, methodology, validation]
 
-people: []
+people:
+  - slug: geoffrey-irving
+    affiliation: "AI Security Institute (DSIT, UK)"
+  - slug: jacob-pfau
+    affiliation: "AI Security Institute (DSIT, UK)"
+  - slug: anton-korinek
+    affiliation: "University of Virginia / PIIE / Anthropic Institute"
 
 ideas:
   - slug: fourth-mode-scientific-understanding-ai-constrained
@@ -439,7 +461,15 @@ ideas:
 
 experiments: []
 
-claims: []
+claims:
+  - slug: automated-alignment-misleading-safety-assessments
+    status: proposed
+    confidence: 0.60
+    domain: AI Safety
+  - slug: ai-economy-quality-adjusted-growth-invisible
+    status: weakly_supported
+    confidence: 0.70
+    domain: Economics
 
 summaries:
   - slug: in-silico-social-science

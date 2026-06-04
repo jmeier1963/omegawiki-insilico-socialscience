@@ -243,3 +243,9 @@
 ## [2026-06-02] ingest | claims for living-within-experiment-inherent-labs-manifesto: 0 matched existing, 1 new
 ## [2026-06-02] ingest | concepts for living-within-experiment-inherent-labs-manifesto: 3 matched existing (automated-research-pipeline, software-intelligence-explosion, machine-culture), 1 new, 0 foundation-refs
 ## [2026-06-02] ingest | added papers/living-within-experiment-inherent-labs-manifesto | moved raw/inherent.pdf → raw/papers/inherent-labs-living-within-experiment-manifesto.pdf | updated: concepts/ai-native-research-organization (new), automated-research-pipeline, software-intelligence-explosion, machine-culture, topics/ai-driven-scientific-discovery, index.md, graph/
+## [2026-06-04] ingest | claims for automated-alignment-harder-than-you-think: 0 matched existing, 1 new
+## [2026-06-04] ingest | concepts for automated-alignment-harder-than-you-think: 1 matched existing (automated-research-pipeline Branch A), 1 new (hard-supervise-fuzzy-tasks), 0 foundation-refs
+## [2026-06-04] ingest | added papers/automated-alignment-harder-than-you-think | updated: concepts/hard-supervise-fuzzy-tasks (new), concepts/automated-research-pipeline (Branch A), claims/automated-alignment-misleading-safety-assessments (new), people/geoffrey-irving (new), people/jacob-pfau (new)
+## [2026-06-04] ingest | claims for where-ai-gdp-statistics-filling-measurement: 0 matched existing, 1 new
+## [2026-06-04] ingest | concepts for where-ai-gdp-statistics-filling-measurement: 0 matched existing, 1 new (ai-satellite-accounts), 0 foundation-refs
+## [2026-06-04] ingest | added papers/where-ai-gdp-statistics-filling-measurement | updated: concepts/ai-satellite-accounts (new), claims/ai-economy-quality-adjusted-growth-invisible (new), people/anton-korinek (new)
