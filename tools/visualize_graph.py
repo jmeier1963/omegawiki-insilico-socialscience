@@ -14,34 +14,103 @@ import pathlib
 import re
 import sys
 
-# ── Color palettes ────────────────────────────────────────────────────────────
+# ── Schema-driven entity list ─────────────────────────────────────────────────
+# Source the entity kinds from the runtime schema loader so this tool tracks the
+# canonical schema (runtime/schema/entities.yaml) instead of a hardcoded list.
+# Falls back to the current 9-entity set if the loader can't be imported (keeps
+# the script runnable standalone). NOTE: there is no `claims` entity — testable
+# claims were migrated into `ideas` in the schema refactor.
+_REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_REPO_ROOT))
+try:
+    from runtime.loader import ENTITY_DIRS as _ENTITY_DIRS
+    NODE_DIRS = list(_ENTITY_DIRS)
+except Exception:
+    NODE_DIRS = ["papers", "concepts", "topics", "people",
+                 "ideas", "methods", "experiments", "Summary", "foundations"]
 
-NODE_COLORS = {
-    "papers":      {"background": "#4e79a7", "border": "#2d5a8a", "highlight": {"background": "#6b9fc8", "border": "#2d5a8a"}},
-    "concepts":    {"background": "#f28e2b", "border": "#c06a10", "highlight": {"background": "#f5ac60", "border": "#c06a10"}},
-    "foundations": {"background": "#76b7b2", "border": "#4a8f8a", "highlight": {"background": "#99cec9", "border": "#4a8f8a"}},
-    "claims":      {"background": "#e15759", "border": "#b52b2d", "highlight": {"background": "#ea8183", "border": "#b52b2d"}},
-    "topics":      {"background": "#59a14f", "border": "#3a7233", "highlight": {"background": "#7dc472", "border": "#3a7233"}},
-    "people":      {"background": "#b07aa1", "border": "#7d4d72", "highlight": {"background": "#c89fba", "border": "#7d4d72"}},
-    "ideas":       {"background": "#ff9da7", "border": "#d96b77", "highlight": {"background": "#ffbec5", "border": "#d96b77"}},
-    "experiments": {"background": "#9c755f", "border": "#6e4f3e", "highlight": {"background": "#b89384", "border": "#6e4f3e"}},
+# ── Color palettes ────────────────────────────────────────────────────────────
+# Fallback node palette (used when config/visualize.json is unavailable, and for
+# any entity kind the config doesn't define). One entry per schema entity kind.
+_FALLBACK_NODE_HEX = {
+    "papers":      "#4e79a7",
+    "concepts":    "#f28e2b",
+    "topics":      "#59a14f",
+    "people":      "#b07aa1",
+    "ideas":       "#ff9da7",
+    "methods":     "#8c6bb1",
+    "experiments": "#9c755f",
+    "Summary":     "#bab0ac",
+    "foundations": "#76b7b2",
 }
+
+
+def _clamp(v: int) -> int:
+    return max(0, min(255, v))
+
+
+def _shade(hex_color: str, factor: float) -> str:
+    """Lighten (factor>0) or darken (factor<0) a #rrggbb color. Stdlib only."""
+    h = hex_color.lstrip("#")
+    if len(h) != 6:
+        return hex_color
+    r, g, b = (int(h[i:i + 2], 16) for i in (0, 2, 4))
+    if factor >= 0:
+        r, g, b = (_clamp(int(c + (255 - c) * factor)) for c in (r, g, b))
+    else:
+        r, g, b = (_clamp(int(c * (1 + factor))) for c in (r, g, b))
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def _build_node_colors(repo_root: pathlib.Path) -> dict:
+    """Build the vis.js node color map for every entity kind, sourcing base hex
+    from config/visualize.json (canonical, shared with the SPA/Obsidian config)
+    and deriving border/highlight by shading. Falls back per-kind as needed."""
+    cfg_hex: dict = {}
+    cfg_path = repo_root / "config" / "visualize.json"
+    try:
+        cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+        for kind, info in cfg.get("entity_colors", {}).items():
+            if isinstance(info, dict) and info.get("hex"):
+                cfg_hex[kind] = info["hex"]
+    except Exception:
+        pass
+
+    colors = {}
+    for kind in NODE_DIRS:
+        base = cfg_hex.get(kind) or _FALLBACK_NODE_HEX.get(kind, "#999999")
+        colors[kind] = {
+            "background": base,
+            "border": _shade(base, -0.30),
+            "highlight": {"background": _shade(base, 0.25), "border": _shade(base, -0.30)},
+        }
+    return colors
+
+
+NODE_COLORS = _build_node_colors(_REPO_ROOT)
 
 EDGE_COLORS = {
     "supports":      "#59a14f",
     "contradicts":   "#e15759",
     "extends":       "#4e79a7",
+    "builds_on":     "#4e79a7",
+    "extends_concept": "#4e79a7",
+    "challenges":    "#e15759",
+    "critiques_concept": "#e15759",
     "addresses_gap": "#f28e2b",
     "derived_from":  "#b07aa1",
     "inspired_by":   "#edc948",
     "tested_by":     "#76b7b2",
     "invalidates":   "#d62728",
     "supersedes":    "#9c755f",
+    "cites":         "#7b8ab8",
+    "introduces_concept": "#f28e2b",
+    "uses_concept":  "#f5ac60",
+    "same_problem_as": "#888888",
+    "similar_method_to": "#8c6bb1",
 }
 
-EDGE_DASHED = {"contradicts", "invalidates"}
-
-NODE_DIRS = ["papers", "concepts", "foundations", "claims", "topics", "people", "ideas", "experiments"]
+EDGE_DASHED = {"contradicts", "invalidates", "challenges", "critiques_concept"}
 
 # ── Frontmatter parser (stdlib only) ─────────────────────────────────────────
 
@@ -55,16 +124,17 @@ def parse_frontmatter(text: str) -> dict:
         return {}
     fm = m.group(1)
     meta: dict = {}
-    for key in ("title", "domain", "status", "venue", "year"):
+    # `type` = method kind (architecture/training/…); `name` = people/methods title.
+    for key in ("title", "name", "domain", "status", "venue", "year", "type"):
         v = _fm_scalar(fm, key)
         if v:
             meta[key] = v
     im = re.search(r"^importance:\s*(\d)", fm, re.MULTILINE)
     if im:
         meta["importance"] = int(im.group(1))
-    cm = re.search(r"^confidence:\s*([\d.]+)", fm, re.MULTILINE)
-    if cm:
-        meta["confidence"] = float(cm.group(1))
+    pm = re.search(r"^priority:\s*(\d)", fm, re.MULTILINE)
+    if pm:
+        meta["priority"] = int(pm.group(1))
     tags_m = re.search(r"^tags:\s*\[(.*?)\]", fm, re.MULTILINE | re.DOTALL)
     if tags_m:
         meta["tags"] = [t.strip().strip("\"'") for t in tags_m.group(1).split(",") if t.strip()]
@@ -87,13 +157,15 @@ def collect_nodes(wiki_root: pathlib.Path) -> dict:
                 "id": node_id,
                 "type": dir_name,
                 "slug": slug,
-                "title": meta.get("title") or slug.replace("-", " ").title(),
+                # people/methods use `name`; everything else uses `title`.
+                "title": meta.get("title") or meta.get("name") or slug.replace("-", " ").title(),
                 "importance": meta.get("importance", 3),
                 "domain": meta.get("domain", ""),
                 "venue": meta.get("venue", ""),
                 "year": meta.get("year", ""),
                 "status": meta.get("status", ""),
-                "confidence": meta.get("confidence"),
+                "mtype": meta.get("type", ""),       # method kind (architecture/training/…)
+                "priority": meta.get("priority"),    # ideas
                 "tags": meta.get("tags", []),
             }
     return nodes
@@ -123,7 +195,7 @@ def build_vis_nodes(nodes: dict) -> list:
             size = 8 + (n["importance"] - 1) * 5   # 8–28
         elif n["type"] == "foundations":
             size = 20
-        elif n["type"] in ("claims", "topics"):
+        elif n["type"] in ("topics", "Summary"):
             size = 15
         else:
             size = 11
@@ -138,10 +210,12 @@ def build_vis_nodes(nodes: dict) -> list:
             if n["venue"]:
                 tt.append(f"Venue: {n['venue']}" + (f" {n['year']}" if n["year"] else ""))
             tt.append(f"Importance: {'★' * n['importance']}{'☆' * (5 - n['importance'])}")
+        if n["type"] == "methods" and n["mtype"]:
+            tt.append(f"Method type: {n['mtype']}")
         if n["status"]:
             tt.append(f"Status: {n['status']}")
-        if n["confidence"] is not None:
-            tt.append(f"Confidence: {n['confidence']:.0%}")
+        if n["type"] == "ideas" and n["priority"] is not None:
+            tt.append(f"Priority: {n['priority']}/5")
         if n["tags"]:
             tt.append("Tags: " + ", ".join(n["tags"][:5]))
 
