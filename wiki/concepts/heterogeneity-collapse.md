@@ -3,7 +3,7 @@ title: "Heterogeneity Collapse"
 aliases: ["opinion collapse", "diversity collapse", "artificial consensus", "LLM opinion homogenization", "specialist effect"]
 tags: [silicon-sampling, opinion-diversity, algorithmic-fidelity, llm-bias]
 maturity: emerging
-key_papers: [collapse-heterogeneity-silicon-philosophers]
+key_papers: [collapse-heterogeneity-silicon-philosophers, persona-generators-generating-diverse-synthetic-personas]
 first_introduced: "2026"
 date_updated: 2026-05-04
 related_concepts: [silicon-sampling, algorithmic-fidelity]

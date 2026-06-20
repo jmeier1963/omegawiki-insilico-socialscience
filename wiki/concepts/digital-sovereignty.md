@@ -3,9 +3,9 @@ title: "Digital Sovereignty"
 aliases: ["digital sovereignty", "technological sovereignty", "data sovereignty", "strategic digital autonomy", "tech sovereignty"]
 tags: [digital-sovereignty, geopolitics, platform-governance, data, cloud-computing, ai-governance]
 maturity: active
-key_papers: [eurostack-european-alternative-digital-sovereignty, eu-digital-policy-international-trade, digital-sovereignty-special-studies-project-europe, cloud-capitalism-ai-transition]
+key_papers: [eurostack-european-alternative-digital-sovereignty, eu-digital-policy-international-trade, digital-sovereignty-special-studies-project-europe, cloud-capitalism-ai-transition, europe-2031-what-getting-ai-wrong]
 first_introduced: "2010s"
-date_updated: 2026-05-06
+date_updated: 2026-06-20
 related_concepts: [cloud-capitalism-business-model]
 ---
 

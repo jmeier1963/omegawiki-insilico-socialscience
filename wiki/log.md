@@ -249,3 +249,41 @@
 ## [2026-06-04] ingest | claims for where-ai-gdp-statistics-filling-measurement: 0 matched existing, 1 new
 ## [2026-06-04] ingest | concepts for where-ai-gdp-statistics-filling-measurement: 0 matched existing, 1 new (ai-satellite-accounts), 0 foundation-refs
 ## [2026-06-04] ingest | added papers/where-ai-gdp-statistics-filling-measurement | updated: concepts/ai-satellite-accounts (new), claims/ai-economy-quality-adjusted-growth-invisible (new), people/anton-korinek (new)
+## [2026-06-20] ingest | added papers/making-ai-less-thirsty-uncovering-addressing | updated: concepts/ai-water-footprint (new), claims/ai-water-footprint-large-and-hidden (new), people/shaolei-ren (new), index.md
+## [2026-06-20] ingest | added papers/persona-generators-generating-diverse-synthetic-personas | updated: concepts/support-coverage (new), claims/support-coverage-beats-density-matching-for-diversity (new), concepts/persona-conditioning, concepts/optimization-induced-uniformity, concepts/heterogeneity-collapse, people/joel-leibo, people/alexander-sasha-vezhnevets, topics/persona-conditioning-evaluation, index.md
+## [2026-06-20] ingest | added papers/deep-research-agents-poisoned-user-generated | updated: concepts/retrieval-poisoning-attack (new), claims/deep-research-agents-poisonable-via-ugc (new), concepts/agentic-ai-security-vulnerabilities, index.md
+## [2026-06-20] ingest | added papers/large-language-models-hack-rewards-society | updated: concepts/societal-reward-hacking (new), claims/rl-llms-discover-regulatory-loopholes (new), concepts/gradual-disempowerment, index.md
+## [2026-06-20] ingest | concepts for act-real-researcher-benchmark-llm-research: 1 matched existing (automated-research-pipeline Branch A), 1 new (researcher-quality-evaluation), 0 foundation-refs
+## [2026-06-20] ingest | claims for act-real-researcher-benchmark-llm-research: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/act-real-researcher-benchmark-llm-research | updated: concepts/researcher-quality-evaluation (new), concepts/automated-research-pipeline, claims/frontier-ai-agents-fail-research-tasks (new), topics/ai-driven-scientific-discovery, index.md
+## [2026-06-20] ingest | concepts for agentic-coding-persistent-returns-expertise: 0 matched existing, 1 new (human-ai-division-labor-agentic-work), 0 foundation-refs
+## [2026-06-20] ingest | claims for agentic-coding-persistent-returns-expertise: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/agentic-coding-persistent-returns-expertise | updated: concepts/human-ai-division-labor-agentic-work (new), claims/domain-expertise-coding-skill-drives-agentic (new), index.md
+## [2026-06-20] ingest | concepts for policy-ai-exponential: 1 matched existing (frontier-ai-compute-governance Branch A), 1 new (ai-policy-pacing-problem), 0 foundation-refs
+## [2026-06-20] ingest | claims for policy-ai-exponential: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/policy-ai-exponential | updated: concepts/ai-policy-pacing-problem (new), concepts/frontier-ai-compute-governance, claims/frontier-ai-now-warrants-binding-faa (new), people/dario-amodei (new), index.md
+## [2026-06-20] ingest | concepts for synthetic-chamber-agentic-mediation-representative-democracy: 0 matched existing, 1 new (agentic-democratic-mediation), 0 foundation-refs
+## [2026-06-20] ingest | claims for synthetic-chamber-agentic-mediation-representative-democracy: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/synthetic-chamber-agentic-mediation-representative-democracy | updated: concepts/agentic-democratic-mediation (new), claims/ai-institutionalize-democratic-mediation-without-replacing (new), index.md
+## [2026-06-20] ingest | concepts for why-ai-replaced-software-engineers-will: 0 matched existing, 1 new (ai-normal-technology), 0 foundation-refs
+## [2026-06-20] ingest | claims for why-ai-replaced-software-engineers-will: 0 matched existing, 1 new (ai-capability-gains-automatically-transform-economy)
+## [2026-06-20] ingest | added papers/why-ai-replaced-software-engineers-will | updated: concepts/ai-normal-technology (new), claims/ai-capability-gains-automatically-transform-economy (new), people/arvind-narayanan (new), people/sayash-kapoor (new), index.md
+## [2026-06-20] ingest | concepts for ai-wont-make-legal-services-cheaper: 1 matched existing (ai-normal-technology Branch A), 0 new, 0 foundation-refs
+## [2026-06-20] ingest | claims for ai-wont-make-legal-services-cheaper: 1 matched existing (ai-capability-gains-automatically-transform-economy Branch A), 0 new
+## [2026-06-20] ingest | added papers/ai-wont-make-legal-services-cheaper | updated: concepts/ai-normal-technology (Branch A), claims/ai-capability-gains-automatically-transform-economy (Branch A), index.md
+## [2026-06-20] ingest | concepts for europe-2031-what-getting-ai-wrong: 2 matched existing (digital-sovereignty Branch A, ai-policy-pacing-problem), 0 new, 0 foundation-refs
+## [2026-06-20] ingest | claims for europe-2031-what-getting-ai-wrong: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/europe-2031-what-getting-ai-wrong | updated: concepts/digital-sovereignty (Branch A), claims/europe-loses-strategic-relevance-without-urgent (new), index.md
+## [2026-06-20] ingest | concepts for industrial-policy-intelligence-age: 1 matched existing (gradual-disempowerment), 1 new (sharing-ai-prosperity), 0 foundation-refs
+## [2026-06-20] ingest | claims for industrial-policy-intelligence-age: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/industrial-policy-intelligence-age | updated: concepts/sharing-ai-prosperity (new), concepts/gradual-disempowerment, claims/broad-ai-prosperity-requires-new-social (new), index.md
+## [2026-06-20] ingest | concepts for how-share-ai-riches: 1 matched existing (sharing-ai-prosperity Branch A), 0 new, 0 foundation-refs
+## [2026-06-20] ingest | claims for how-share-ai-riches: 1 matched existing (broad-ai-prosperity-requires-new-social Branch A), 1 new (ai-wealth-fund-equity-schemes-raise)
+## [2026-06-20] ingest | added papers/how-share-ai-riches | updated: concepts/sharing-ai-prosperity (Branch A), claims/broad-ai-prosperity-requires-new-social (Branch A), claims/ai-wealth-fund-equity-schemes-raise (new), index.md
+## [2026-06-20] ingest | concepts for monopoly-round-up-pope-silicon-valley: 1 matched existing (gradual-disempowerment), 1 new (silicon-valley-transhumanism), 0 foundation-refs
+## [2026-06-20] ingest | claims for monopoly-round-up-pope-silicon-valley: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/monopoly-round-up-pope-silicon-valley | updated: concepts/silicon-valley-transhumanism (new), concepts/gradual-disempowerment, claims/ai-moral-economic-direction-concentrated-transhumanist (new), index.md
+## [2026-06-20] ingest | concepts for machine-job-wrong-question: 1 matched existing (ai-satellite-accounts Branch A), 1 new (self-service-labour-displacement), 0 foundation-refs
+## [2026-06-20] ingest | claims for machine-job-wrong-question: 0 matched existing, 1 new
+## [2026-06-20] ingest | added papers/machine-job-wrong-question | updated: concepts/self-service-labour-displacement (new), concepts/ai-satellite-accounts (Branch A), claims/ai-self-service-displaces-labour-invisibly (new), index.md
+## [2026-06-20] ingest | batch: moved 15 raw/*.pdf → raw/papers/ (slug-named) after ingesting 11 new + finalizing 4 prior partials

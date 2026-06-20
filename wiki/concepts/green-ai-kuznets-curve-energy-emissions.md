@@ -3,7 +3,7 @@ title: "Green AI Kuznets Curve"
 aliases: ["Green AI Kuznets Curve", "AI environmental Kuznets curve", "AI energy Kuznets", "inverted-U AI energy emissions", "AI green dividend"]
 tags: [ai-energy, sustainability, environmental-economics, emissions, green-ai, kuznets-curve]
 maturity: emerging
-key_papers: [ai-grow-green-evidence-inverted-curve]
+key_papers: [ai-grow-green-evidence-inverted-curve, making-ai-less-thirsty-uncovering-addressing]
 first_introduced: "2025"
 date_updated: 2026-05-06
 related_concepts: []

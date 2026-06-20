@@ -17,6 +17,7 @@ date_updated: 2026-04-12
 
 - [[generative-agent-based-modeling-actions-grounded]] — senior author; Concordia GABM library
 - [[machine-culture]] — co-author; Nature Human Behaviour Perspective on machine culture (2023)
+- [[persona-generators-generating-diverse-synthetic-personas]] — co-author; Persona Generators (support coverage, AlphaEvolve)
 
 ## Recent work
 

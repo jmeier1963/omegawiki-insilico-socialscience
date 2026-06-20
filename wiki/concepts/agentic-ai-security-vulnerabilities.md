@@ -3,7 +3,7 @@ title: "Agentic AI Security Vulnerabilities"
 aliases: ["autonomous agent security failures", "LLM agent security", "agentic system vulnerabilities", "agent red teaming", "multi-agent attack surface"]
 tags: [agentic-ai, security, safety, red-teaming, accountability, multi-agent]
 maturity: emerging
-key_papers: [agents-chaos]
+key_papers: [agents-chaos, deep-research-agents-poisoned-user-generated]
 first_introduced: "2026"
 date_updated: 2026-05-06
 related_concepts: [llm-powered-agent-architecture]

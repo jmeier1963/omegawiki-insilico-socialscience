@@ -2485,3 +2485,241 @@ people:
 
   - slug: iyad-rahwan
     affiliation: "Max Planck Institute for Human Development, Center for Humans & Machines"
+
+papers:
+  - slug: making-ai-less-thirsty-uncovering-addressing
+    title: "Making AI Less Thirsty: Uncovering and Addressing the Secret Water Footprint of AI Models"
+    tags: [sustainable-ai, water-footprint, data-centers, environmental-impact, ai-and-society]
+    importance: 4
+
+  - slug: persona-generators-generating-diverse-synthetic-personas
+    title: "Persona Generators: Generating Diverse Synthetic Personas for Arbitrary Contexts"
+    tags: [synthetic-personas, social-simulation, diversity, mode-collapse, in-silico-social-science]
+    importance: 4
+
+  - slug: deep-research-agents-poisoned-user-generated
+    title: "Deep-Research Agents Can Be Poisoned via User-Generated Content"
+    tags: [ai-security, deep-research-agents, rag-poisoning, llm-agents]
+    importance: 3
+
+  - slug: large-language-models-hack-rewards-society
+    title: "Large Language Models Hack Rewards, and Society"
+    tags: [reward-hacking, reinforcement-learning, ai-safety, regulation]
+    importance: 4
+
+concepts:
+  - slug: ai-water-footprint
+    tags: [sustainable-ai, environmental-impact, data-centers, water]
+    maturity: emerging
+
+  - slug: support-coverage
+    tags: [synthetic-personas, social-simulation, diversity, evaluation]
+    maturity: emerging
+
+  - slug: retrieval-poisoning-attack
+    tags: [ai-security, retrieval-augmented-generation, deep-research-agents, information-integrity]
+    maturity: emerging
+
+  - slug: societal-reward-hacking
+    tags: [reward-hacking, ai-safety, reinforcement-learning, regulation, governance]
+    maturity: emerging
+
+claims:
+  - slug: ai-water-footprint-large-and-hidden
+    status: weakly_supported
+    confidence: 0.7
+    domain: ML Systems
+
+  - slug: support-coverage-beats-density-matching-for-diversity
+    status: weakly_supported
+    confidence: 0.6
+    domain: NLP
+
+  - slug: deep-research-agents-poisonable-via-ugc
+    status: weakly_supported
+    confidence: 0.65
+    domain: ML Systems
+
+  - slug: rl-llms-discover-regulatory-loopholes
+    status: weakly_supported
+    confidence: 0.6
+    domain: NLP
+
+people:
+  - slug: shaolei-ren
+    affiliation: "University of California, Riverside"
+
+papers:
+  - slug: act-real-researcher-benchmark-llm-research
+    title: "Act As a Real Researcher: Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle"
+    tags: [ai-research-automation, agent-evaluation, benchmark, research-agents]
+    importance: 3
+
+concepts:
+  - slug: researcher-quality-evaluation
+    tags: [agent-evaluation, ai-research-automation, benchmark, research-agents]
+    maturity: emerging
+
+claims:
+  - slug: frontier-ai-agents-fail-research-tasks
+    status: weakly_supported
+    confidence: 0.6
+    domain: ML Systems
+
+papers:
+  - slug: agentic-coding-persistent-returns-expertise
+    title: "Agentic Coding and Persistent Returns to Expertise"
+    tags: [labor-market, ai-economics, agentic-coding, human-ai-collaboration]
+    importance: 3
+
+concepts:
+  - slug: human-ai-division-labor-agentic-work
+    tags: [labor-market, ai-economics, human-ai-collaboration, agentic-coding]
+    maturity: emerging
+
+claims:
+  - slug: domain-expertise-coding-skill-drives-agentic
+    status: weakly_supported
+    confidence: 0.6
+    domain: "AI Economics / Social Science"
+
+papers:
+  - slug: policy-ai-exponential
+    title: "Policy on the AI Exponential"
+    tags: [ai-governance, ai-policy, frontier-ai, regulation, labor-displacement]
+    importance: 4
+
+concepts:
+  - slug: ai-policy-pacing-problem
+    tags: [ai-governance, ai-policy, regulation, ai-and-society]
+    maturity: emerging
+
+claims:
+  - slug: frontier-ai-now-warrants-binding-faa
+    status: proposed
+    confidence: 0.5
+    domain: "AI Governance / Social Science"
+
+people:
+  - slug: dario-amodei
+    affiliation: "Anthropic (CEO and co-founder)"
+
+papers:
+  - slug: synthetic-chamber-agentic-mediation-representative-democracy
+    title: "Synthetic Chamber: Agentic Mediation in Representative Democracy"
+    tags: [ai-democracy, deliberative-democracy, agentic-mediation, political-theory]
+    importance: 3
+
+concepts:
+  - slug: agentic-democratic-mediation
+    tags: [ai-democracy, deliberative-democracy, agentic-mediation, multi-agent]
+    maturity: emerging
+
+claims:
+  - slug: ai-institutionalize-democratic-mediation-without-replacing
+    status: proposed
+    confidence: 0.4
+    domain: "AI Governance / Social Science"
+
+papers:
+  - slug: why-ai-replaced-software-engineers-will
+    title: "Why AI Hasn't Replaced Software Engineers, and Won't"
+    tags: [labor-market, ai-economics, software-engineering, ai-as-normal-technology]
+    importance: 3
+
+  - slug: ai-wont-make-legal-services-cheaper
+    title: "AI Won't Automatically Make Legal Services Cheaper"
+    tags: [labor-market, ai-economics, legal-services, ai-as-normal-technology, regulation]
+    importance: 2
+
+concepts:
+  - slug: ai-normal-technology
+    tags: [ai-economics, labor-market, automation, ai-and-society, ai-policy]
+    maturity: emerging
+
+claims:
+  - slug: ai-capability-gains-automatically-transform-economy
+    status: weakly_supported
+    confidence: 0.6
+    domain: "AI Economics / Social Science"
+
+people:
+  - slug: arvind-narayanan
+    affiliation: "Princeton University (CITP)"
+  - slug: sayash-kapoor
+    affiliation: "Princeton University (CITP)"
+
+papers:
+  - slug: europe-2031-what-getting-ai-wrong
+    title: "Europe 2031: What Getting AI Wrong Means For Us"
+    tags: [ai-policy, digital-sovereignty, geopolitics, europe, compute, scenario-planning]
+    importance: 3
+
+claims:
+  - slug: europe-loses-strategic-relevance-without-urgent
+    status: proposed
+    confidence: 0.4
+    domain: "AI Governance / Social Science"
+
+papers:
+  - slug: industrial-policy-intelligence-age
+    title: "Industrial Policy for the Intelligence Age: Ideas to Keep People First"
+    tags: [ai-policy, ai-economics, social-contract, superintelligence, industrial-policy]
+    importance: 3
+
+concepts:
+  - slug: sharing-ai-prosperity
+    tags: [ai-economics, social-contract, inequality, industrial-policy, ai-policy]
+    maturity: emerging
+
+claims:
+  - slug: broad-ai-prosperity-requires-new-social
+    status: proposed
+    confidence: 0.45
+    domain: "AI Governance / Social Science"
+
+papers:
+  - slug: how-share-ai-riches
+    title: "How to Share AI Riches"
+    tags: [ai-economics, social-contract, inequality, sovereign-wealth-fund, redistribution]
+    importance: 2
+
+claims:
+  - slug: ai-wealth-fund-equity-schemes-raise
+    status: weakly_supported
+    confidence: 0.55
+    domain: "AI Economics / Social Science"
+
+papers:
+  - slug: monopoly-round-up-pope-silicon-valley
+    title: "Monopoly Round-Up: The Pope and a Silicon Valley Trillionaire Fight Over God"
+    tags: [political-economy, ai-and-society, monopoly, transhumanism, power-concentration]
+    importance: 2
+
+concepts:
+  - slug: silicon-valley-transhumanism
+    tags: [political-economy, ai-and-society, ideology, power-concentration]
+    maturity: emerging
+
+claims:
+  - slug: ai-moral-economic-direction-concentrated-transhumanist
+    status: proposed
+    confidence: 0.4
+    domain: "AI Governance / Social Science"
+
+papers:
+  - slug: machine-job-wrong-question
+    title: "'Can a Machine Do This Job?' Is the Wrong Question"
+    tags: [labor-market, ai-economics, self-service, automation, productivity-measurement]
+    importance: 3
+
+concepts:
+  - slug: self-service-labour-displacement
+    tags: [labor-market, ai-economics, automation, self-service]
+    maturity: emerging
+
+claims:
+  - slug: ai-self-service-displaces-labour-invisibly
+    status: weakly_supported
+    confidence: 0.55
+    domain: "AI Economics / Social Science"

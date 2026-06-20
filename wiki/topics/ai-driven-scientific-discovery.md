@@ -40,6 +40,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 | Computational reproducibility | Opus 4.5 | 2025 | 95.5% ("solved"); was 21% at 2024 launch |
 | Formal math (Putnam) | Numina-Lean-Agent | 2026 | 12/12 problems |
 | Autonomous research quality | The AI Scientist | 2026 | 70% workshop acceptance rate |
+| Researcher-quality (intern tasks) | Mini-SWE-Agent + Claude Opus 4.7 | 2026 | 68.3% on AARRI-Bench ([[act-real-researcher-benchmark-llm-research]]) |
 
 ## Open problems
 

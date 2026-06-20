@@ -16,6 +16,7 @@ date_updated: 2026-04-12
 ## Key papers
 
 - [[generative-agent-based-modeling-actions-grounded]] — corresponding author; introduced the Concordia GABM library
+- [[persona-generators-generating-diverse-synthetic-personas]] — co-author; evolved Persona Generators for diverse synthetic populations
 
 ## Recent work
 

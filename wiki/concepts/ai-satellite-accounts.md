@@ -3,9 +3,9 @@ title: "AI Satellite Accounts"
 aliases: ["AI satellite account", "AI GDP", "AI economy accounts", "AI national accounts", "AI sector statistics"]
 tags: [ai-economics, gdp, macroeconomics, measurement, national-accounts, policy]
 maturity: emerging
-key_papers: [where-ai-gdp-statistics-filling-measurement]
+key_papers: [where-ai-gdp-statistics-filling-measurement, machine-job-wrong-question]
 first_introduced: "2026"
-date_updated: 2026-06-04
+date_updated: 2026-06-20
 related_concepts: []
 ---
 

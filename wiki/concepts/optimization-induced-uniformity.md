@@ -3,7 +3,7 @@ title: "Optimization-Induced Uniformity"
 aliases: ["optimization convergence", "efficiency-driven uniformity", "convergence through selection", "AI-driven role convergence"]
 tags: [optimization, uniformity, human-meaning, ai-risk, obsolescence, structural-irrelevance]
 maturity: emerging
-key_papers: [obsolescence-without-hostility-optimization-uniformity-erosion]
+key_papers: [obsolescence-without-hostility-optimization-uniformity-erosion, persona-generators-generating-diverse-synthetic-personas]
 first_introduced: "2026"
 date_updated: 2026-05-05
 related_concepts: [heterogeneity-collapse]

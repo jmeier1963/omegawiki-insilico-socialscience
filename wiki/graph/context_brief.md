@@ -2,7 +2,7 @@
 
 _Auto-generated compressed context. Do not edit._
 
-## Claims (133 total)
+## Claims (147 total)
 - [supported] AI capabilities and investment have advanced rapidly each year since 2022 (conf: 0.85)
 - [supported] LLMs systematically misrepresent human opinion distributions, skewing toward liberal, educated, high-income demographics (conf: 0.8)
 - [weakly_supported] AI races are destabilizing and increase catastrophic risk (conf: 0.6)
@@ -15,10 +15,10 @@ _Auto-generated compressed context. Do not edit._
 - [weakly_supported] Effective national AI strategies require domestic compute infrastructure investment (conf: 0.65)
 - [weakly_supported] Internet platform scale threatens democracy and requires structural middleware solutions (conf: 0.55)
 - [proposed] AI adoption follows privilege gradients and risks reinforcing existing socioeconomic inequalities (conf: 0.55)
+- [weakly_supported] AI capability gains do not automatically transform labor markets or costs; structural bottlenecks dominate (conf: 0.6)
 - [weakly_supported] AI will fundamentally transform intelligence collection, analysis, and counterintelligence operations (conf: 0.65)
 - [weakly_supported] Frontier AI compute thresholds in regulation must be adjusted dynamically as AI capabilities advance (conf: 0.65)
-- [supported] LLM agents can simulate believable human social behavior (conf: 0.8)
-- [proposed] LLM bots contaminating online surveys threaten the validity of panel-based social
+- [proposed] Frontier AI risks are no
 ## Open Gaps
 _Auto-generated open questions. Do not edit._
 - [paper/adolescence-technology] What technical and governance interventions most effectively address AI-enabled bioweapon risk?
@@ -35,7 +35,7 @@ _Auto-generated open questions. Do not edit._
 ## Failed Ideas (avoid repeating)
 - AI Safety Commons as Repeated Game: Formal Economic Model — Core formal framework already published. RAND RRA4245-1 (Abraham, Kavner, Moon) provides a formal mathematical model of AGI development as a prisoner's dilemma with conditions on when acceleration becomes dominant and what coordination mechanisms break the equilibrium. arXiv:2501.15280 'Who's Driving? Game Theoretic Path Risk of AGI Development' presents a game-theoretic framework with concrete stabilization mechanisms (pre-registration, shared infrastructure, automated deterrence). The Cooperative AI Foundation has a substantial program on this exact class of problems. The general 'AI race as prisoner's dilemma' framing is standard in policy literature. Differentiation would need to focus on a specific uninvestigated mechanism triplet (e.g., compute governance + mandatory disclosure + joint audit together) or a multi-player repeated game with heterogeneous actors — but this is incremental relative to RAND RRA4245-1.
 - Augmentation Trap Formalization: Conditions for Net-Negative Human Capital Effects — Eliminated at Phase 3: overlaps too closely with active ideas 'bildung-casualty-ai-erosion-scientific-formation' (Bildung-formation hypothesis — AI erodes scientific formation) and 'epistemic-calibration-ai-assisted-science-measuring' (assumption recall deficit). The labor market / organizational context differentiates somewhat, but the formal model structure (conditions under which AI augmentation produces net-negat
-## Papers (314 total)
+## Papers (329 total)
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research (Computational Social Science)
 - [5] Generative Agent Simulations of 1,000 People (NLP)
 - [5] Generative Agents: Interactive Simulacra of Human Behavior (NLP)
@@ -51,13 +51,13 @@ _Auto-generated open questions. Do not edit._
 - [3] Benchmarking Distributional Alignment of Large Language Models (NLP)
 - [3] Deliberate Lab: A Platform for Real-Time Human–AI Social Experiments (NLP)
 - [2] German General Personas: A Survey-Derived Persona Prompt Collection for Population-Aligned LLM Studies (NLP)
-## Recent Relationships (531 total)
-  papers/advancing-mathematics-research-ai-driven-formal --extends--> concepts/ai-mathematical-discovery
-  papers/ai-system-help-scientists-write-expert --supports--> claims/llm-tree-search-achieves-expert-level
-  papers/ai-system-help-scientists-write-expert --extends--> concepts/automated-research-pipeline
-  papers/ai-risks-require-extraordinary-government-intervention --supports--> claims/ai-resilience-vs-extraordinary-intervention
-  papers/ai-risks-require-extraordinary-government-intervention --extends--> papers/narayanan-kapoor-ai-normal-technology
-  papers/magnifica-humanitas-encyclical-letter-pope-leo --supports--> claims/transhumanism-posthumanism-ai-development-narratives-contradict
-  papers/magnifica-humanitas-encyclical-letter-pope-leo --supports--> concepts/positive-alignment
-  papers/explore-future-retreat-present-2026-cosmos --supports--> claims/ai-systems-capable-recursive-self-improvement
-  papers/explore-future-retreat-present-2026-cosmos --supports--> concepts/softwa
+## Recent Relationships (576 total)
+  papers/synthetic-chamber-agentic-mediation-representative-democracy --supports--> concepts/agentic-democratic-mediation
+  papers/synthetic-chamber-agentic-mediation-representative-democracy --derived_from--> concepts/deliberation-based-llm-influence-evaluation
+  papers/synthetic-chamber-agentic-mediation-representative-democracy --supports--> claims/ai-institutionalize-democratic-mediation-without-replacing
+  papers/why-ai-replaced-software-engineers-will --supports--> concepts/ai-normal-technology
+  papers/why-ai-replaced-software-engineers-will --extends--> concepts/human-ai-division-labor-agentic-work
+  papers/why-ai-replaced-software-engineers-will --supports--> claims/ai-capability-gains-automatically-transform-economy
+  papers/ai-wont-make-legal-services-cheaper --supports--> concepts/ai-normal-technology
+  papers/ai-wont-make-legal-services-cheaper --supports--> claims/ai-capability-gains-automatically-transform-economy
+  claims/ai-capability-gains-automatically-transform-econ

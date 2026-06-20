@@ -3,9 +3,9 @@ title: "Frontier AI Compute Governance"
 aliases: ["compute governance", "frontier AI governance", "compute thresholds", "FLOP thresholds", "compute-based AI safety"]
 tags: [frontier-ai, compute, ai-safety, ai-governance, regulation, scaling-laws]
 maturity: active
-key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house]
+key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house, policy-ai-exponential]
 first_introduced: "2023"
-date_updated: 2026-05-06
+date_updated: 2026-06-20
 related_concepts: [ai-race-dynamics, software-intelligence-explosion]
 ---
 

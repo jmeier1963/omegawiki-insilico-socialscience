@@ -3,7 +3,7 @@ title: "Automated Research Pipeline"
 aliases: ["LLM research automation", "autonomous research agent", "end-to-end research automation", "AI research agent", "autonomous scientific research"]
 tags: [research-automation, llm-agents, scientific-discovery, ai-science]
 maturity: emerging
-key_papers: [living-within-experiment-inherent-labs-manifesto, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific, ai-systems-about-start-building-themselves, self-improving-ai-ai-human-co, ai-co-mathematician-accelerating-mathematicians-agentic, ai-system-help-scientists-write-expert, automated-alignment-harder-than-you-think]
+key_papers: [living-within-experiment-inherent-labs-manifesto, agent-laboratory-using-llm-agents-research, towards-end-end-automation-ai-research, core-bench-fostering-credibility-published-research, impact-large-language-models-scientific-discovery, aviary-training-language-agents-challenging-scientific, ai-systems-about-start-building-themselves, self-improving-ai-ai-human-co, ai-co-mathematician-accelerating-mathematicians-agentic, ai-system-help-scientists-write-expert, automated-alignment-harder-than-you-think, act-real-researcher-benchmark-llm-research]
 first_introduced: "2023"
 date_updated: 2026-05-29
 related_concepts: [llm-powered-agent-architecture]

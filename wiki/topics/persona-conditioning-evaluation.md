@@ -29,6 +29,7 @@ This is a critical component of LLM-based social simulation: without reliable pe
 - [[whose-personae]] — examining default LLM persona biases
 - [[polypersona]] — multi-persona conditioning framework
 - [[persona-trace]] — tracking persona consistency
+- [[persona-generators-generating-diverse-synthetic-personas]] — support-coverage objective; evolved persona generators that beat density-matching baselines on diversity and realism
 
 ## SOTA tracker
 
