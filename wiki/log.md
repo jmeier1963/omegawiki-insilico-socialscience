@@ -287,3 +287,4 @@
 ## [2026-06-20] ingest | claims for machine-job-wrong-question: 0 matched existing, 1 new
 ## [2026-06-20] ingest | added papers/machine-job-wrong-question | updated: concepts/self-service-labour-displacement (new), concepts/ai-satellite-accounts (Branch A), claims/ai-self-service-displaces-labour-invisibly (new), index.md
 ## [2026-06-20] ingest | batch: moved 15 raw/*.pdf → raw/papers/ (slug-named) after ingesting 11 new + finalizing 4 prior partials
+## [2026-06-20] migrate | converted 147 claims -> ideas (137 proposed, 9 validated, 1 failed); repointed 265 edge endpoints; rebuilt index+graph; removed wiki/claims/. Original claim frontmatter preserved in each idea's provenance block
