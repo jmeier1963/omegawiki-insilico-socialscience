@@ -75,8 +75,10 @@ python3 --version
 ================================
 ✓  ANTHROPIC_API_KEY      — 由 Claude Code 管理（claude login）
 
-可选 key：
-✗  Semantic Scholar        — 未配置（skill 可运行，但较慢）
+推荐配置：
+✗  Semantic Scholar        — 未配置（引用链扩展速度慢 3 倍，建议配置免费 key）
+
+可选：
 ✗  DeepXiv                 — 未配置（语义搜索不可用）
 ✗  Review LLM              — 未配置（跨模型 review 不可用）
 ```
@@ -93,11 +95,11 @@ python3 --version
 #### 4a：Semantic Scholar API Key
 
 **解释**："Semantic Scholar 提供论文引用数据和检索功能。
-被 /ingest、/init、/novelty、/ideate 使用。免费，秒批。
-不配置的话，这些 skill 仍可运行，但速度较慢（1请求/3秒，有 key 则 1请求/秒）。"
+被 /ingest、/init、/novelty、/ideate 使用。免费获取。
+**推荐配置** — 不配置的话，/init 速度慢 3 倍，引用链扩展效率大幅下降。"
 
 **引导获取**："访问 https://www.semanticscholar.org/product/api，
-点击 'Get API Key'，免费秒批，无需信用卡。"
+点击 'Get API Key'，免费申请。"
 
 **询问**："您是否有 Semantic Scholar API key？（粘贴，或输入 'skip' 跳过）"
 
@@ -169,7 +171,7 @@ stdout → token 值；stderr → 人类可读状态（直接透传，不要抑�
 
 **解释**："Review LLM 将 ΩmegaWiki 连接到第二个 AI 模型，进行独立的对抗性评审。
 被 /review、/novelty、/ideate、/paper-plan、/paper-draft、/rebuttal、/refine、
-/exp-eval、/exp-design 使用。支持任何 OpenAI-compatible API。
+/exp-eval、/exp-design，以及 /daily-arxiv 的 inform 推荐使用。支持任何 OpenAI-compatible API。
 不配置时，这些 skill 跳过跨模型 review 步骤（功能全部保留）。"
 
 **展示 provider 对照表**（来自 `config/setup-guide.md` Key 3 部分）。
@@ -226,8 +228,10 @@ for k in keys:
 如果是全新安装（`wiki/` 目录不存在）：
 ```
 配置完成。接下来：
-  • 将论文放入 raw/papers/（.tex 或 .pdf）
-  • 运行：/init <你的研究主题>
+  • 将你自己的论文放入 raw/papers/（.tex 或 .pdf）
+  • 可选：把意图笔记放入 raw/notes/，网页存档放入 raw/web/
+  • /init 与直接本地 /ingest 会自动管理 raw/discovered/ 与 raw/tmp/ 下的生成内容
+  • 运行：/init [你的研究主题]
 ```
 
 如果 `wiki/` 已存在：

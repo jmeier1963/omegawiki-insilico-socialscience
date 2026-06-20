@@ -75,8 +75,10 @@ Present a clear summary to the user, grouped by status:
 ================================
 ✓  ANTHROPIC_API_KEY      — managed by Claude Code (claude login)
 
-Optional keys:
-✗  Semantic Scholar        — not set  (skills work, but slower)
+Recommended:
+✗  Semantic Scholar        — not set  (citation expansion 3x slower — get free key)
+
+Optional:
 ✗  DeepXiv                 — not set  (semantic search unavailable)
 ✗  Review LLM              — not set  (cross-model review unavailable)
 ```
@@ -93,10 +95,10 @@ Always ask for user confirmation before writing to `.env`.
 #### 4a: Semantic Scholar API Key
 
 **Explain**: "Semantic Scholar gives citation data and paper search.
-Used by /ingest, /init, /novelty, /ideate. Free, instant approval.
-Without it, those skills still work but run slower (1 req/3 sec instead of 1/sec)."
+Used by /ingest, /init, /novelty, /ideate. Free to get.
+**Recommended** — without it, /init runs 3x slower and citation-chain expansion is much less effective."
 
-**Guide to get it**: "Go to https://www.semanticscholar.org/product/api and click 'Get API Key'. It's free and approves instantly."
+**Guide to get it**: "Go to https://www.semanticscholar.org/product/api and click 'Get API Key'. It's free."
 
 **Ask**: "Do you have a Semantic Scholar API key? (paste it, or 'skip')"
 
@@ -171,7 +173,8 @@ offer to let the user paste a token manually instead.
 
 **Explain**: "The Review LLM connects ΩmegaWiki to a second AI model for independent
 adversarial review. It's used by /review, /novelty, /ideate, /paper-plan, /paper-draft,
-/rebuttal, /refine, /exp-eval, and /exp-design. Works with any OpenAI-compatible API.
+/rebuttal, /refine, /exp-eval, /exp-design, and /daily-arxiv inform recommendations.
+Works with any OpenAI-compatible API.
 Without it, those skills skip the cross-model review step (everything still works)."
 
 **Present the provider table** from `config/setup-guide.md` (Key 3 section).
@@ -228,8 +231,10 @@ and that the user can run `/setup` again anytime to add them.
 If this is a fresh install (no `wiki/` directory):
 ```
 Configuration done. Next:
-  • Put papers in raw/papers/ (.tex or .pdf)
-  • Run: /init <your-research-topic>
+  • Put your own papers in raw/papers/ (.tex or .pdf)
+  • Optional: add intent notes to raw/notes/ and saved pages to raw/web/
+  • /init and direct local /ingest will manage generated inputs under raw/discovered/ and raw/tmp/
+  • Run: /init [your-research-topic]
 ```
 
 If `wiki/` already exists:

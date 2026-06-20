@@ -2,9 +2,9 @@
 """Reset wiki state to a clean scaffold (used by /reset skill).
 
 Scopes:
-    wiki         delete all .md content under wiki/<entity>/, regenerate
-                 index.md, regenerate empty graph/ files. Preserves .gitkeep,
-                 wiki/CLAUDE.md, and wiki/log.md.
+    wiki         delete all .md content under wiki/<entity>/, wiki/outputs/,
+                 wiki/index.md, wiki/log.md, and wiki/graph/ files.
+                 Preserves .gitkeep and wiki/CLAUDE.md.
     raw          delete all files under raw/<sub>/ except .gitkeep.
     log          reset wiki/log.md to empty header.
     checkpoints  call `research_wiki.py checkpoint-clear` to drop batch state.
@@ -21,19 +21,20 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import sys
 from pathlib import Path
 
-ENTITY_DIRS = [
-    "papers", "concepts", "topics", "people",
-    "ideas", "experiments", "claims", "Summary",
-    "foundations",
-]
-RAW_SUBDIRS = ["papers", "notes", "web"]
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from runtime.loader import ENTITIES  # noqa: E402
+
+ENTITY_DIRS = list(ENTITIES.keys())
+RAW_SUBDIRS = ["papers", "discovered", "tmp", "notes", "web"]
 ALL_SCOPES = ["wiki", "raw", "log", "checkpoints"]
 
 INDEX_TEMPLATE = "# Wiki Index\n\n" + "\n".join(f"{e}:" for e in ENTITY_DIRS) + "\n"
 LOG_TEMPLATE = "# OmegaWiki Log\n\n"
+GRAPH_FILES = ["edges.jsonl", "citations.jsonl", "context_brief.md", "open_questions.md"]
 
 
 def _list_md(directory: Path) -> list[Path]:
@@ -45,7 +46,7 @@ def _list_md(directory: Path) -> list[Path]:
 def _list_raw(directory: Path) -> list[Path]:
     if not directory.exists():
         return []
-    return [p for p in directory.iterdir() if p.is_file() and p.name != ".gitkeep"]
+    return [p for p in directory.iterdir() if p.name != ".gitkeep"]
 
 
 def plan(project_root: Path, scopes: list[str]) -> dict:
@@ -59,17 +60,22 @@ def plan(project_root: Path, scopes: list[str]) -> dict:
                 p["delete_files"].append(str(f.relative_to(project_root)))
         for f in _list_md(wiki / "outputs"):
             p["delete_files"].append(str(f.relative_to(project_root)))
-        p["reset_files"].append("wiki/index.md")
-        p["reset_files"].append("wiki/graph/edges.jsonl")
-        p["reset_files"].append("wiki/graph/context_brief.md")
-        p["reset_files"].append("wiki/graph/open_questions.md")
+        # Scaffold files — deleted, not reset (init recreates them)
+        if (wiki / "index.md").exists():
+            p["delete_files"].append("wiki/index.md")
+        if (wiki / "log.md").exists():
+            p["delete_files"].append("wiki/log.md")
+        for gf in GRAPH_FILES:
+            gf_path = wiki / "graph" / gf
+            if gf_path.exists():
+                p["delete_files"].append(f"wiki/graph/{gf}")
 
     if "raw" in scopes:
         for sub in RAW_SUBDIRS:
             for f in _list_raw(project_root / "raw" / sub):
                 p["delete_files"].append(str(f.relative_to(project_root)))
 
-    if "log" in scopes:
+    if "log" in scopes and "wiki" not in scopes:
         p["reset_files"].append("wiki/log.md")
 
     if "checkpoints" in scopes:
@@ -95,25 +101,27 @@ def execute(project_root: Path, scopes: list[str]) -> dict:
                 keep.parent.mkdir(parents=True, exist_ok=True)
             if not keep.exists():
                 keep.touch()
-        (wiki / "index.md").write_text(INDEX_TEMPLATE, encoding="utf-8")
-        reset += 1
+        # Delete scaffold files (init recreates them from scratch)
+        for scaffold in ["index.md", "log.md"]:
+            sp = wiki / scaffold
+            if sp.exists():
+                sp.unlink()
+                deleted += 1
         graph = wiki / "graph"
-        graph.mkdir(parents=True, exist_ok=True)
-        (graph / "edges.jsonl").write_text("", encoding="utf-8")
-        (graph / "context_brief.md").write_text(
-            "# Query Pack\n\n_Auto-generated compressed context. Do not edit._\n",
-            encoding="utf-8",
-        )
-        (graph / "open_questions.md").write_text(
-            "# Gap Map\n\n_Auto-generated open questions. Do not edit._\n",
-            encoding="utf-8",
-        )
-        reset += 3
+        if graph.exists():
+            for gf in GRAPH_FILES:
+                gfp = graph / gf
+                if gfp.exists():
+                    gfp.unlink()
+                    deleted += 1
 
     if "raw" in scopes:
         for sub in RAW_SUBDIRS:
             for f in _list_raw(project_root / "raw" / sub):
-                f.unlink()
+                if f.is_dir():
+                    shutil.rmtree(f)
+                else:
+                    f.unlink()
                 deleted += 1
             keep = project_root / "raw" / sub / ".gitkeep"
             if not keep.parent.exists():
@@ -121,7 +129,8 @@ def execute(project_root: Path, scopes: list[str]) -> dict:
             if not keep.exists():
                 keep.touch()
 
-    if "log" in scopes:
+    if "log" in scopes and "wiki" not in scopes:
+        # Standalone log scope: reset to empty header
         (wiki / "log.md").write_text(LOG_TEMPLATE, encoding="utf-8")
         reset += 1
 

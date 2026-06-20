@@ -36,6 +36,10 @@ try:
 except ImportError:
     HAS_DEEPXIV = False
 
+    class Reader:  # pragma: no cover - only used when SDK is absent
+        def __init__(self, *args, **kwargs):
+            raise ImportError("deepxiv-sdk not installed")
+
     # Dummy exception classes so except clauses don't raise NameError
     class APIError(Exception): pass            # noqa: E303,E701
     class AuthenticationError(Exception): pass  # noqa: E701
@@ -87,7 +91,11 @@ def search(
         date_from=date_from,
         date_to=date_to,
     )
-    results = data.get("results", [])
+    results = data.get("results")
+    if results is None:
+        # DeepXiv SDK/API versions around the retrieval-service update use
+        # `result`; keep the older `results` spelling for compatibility.
+        results = data.get("result", [])
     # Normalise output to a consistent shape
     papers = []
     for r in results:
@@ -104,7 +112,7 @@ def search(
                 "authors": authors,
                 "categories": r.get("categories", []),
                 "year": r.get("year", None),
-                "citation_count": r.get("citation", 0),
+                "citation_count": r.get("citation_count", r.get("citation", 0)),
                 "relevance_score": r.get("score", 0.0),
                 "published": r.get("publish_at", ""),
             }
@@ -244,11 +252,6 @@ def social(arxiv_id: str) -> dict:
 
 
 def main() -> None:
-    if not HAS_DEEPXIV:
-        _error_exit(
-            "deepxiv-sdk not installed. Run: pip install deepxiv-sdk"
-        )
-
     parser = argparse.ArgumentParser(
         description="DeepXiv API: semantic search + progressive reading"
     )
@@ -310,6 +313,11 @@ def main() -> None:
     p_social.add_argument("arxiv_id", help="arXiv ID")
 
     args = parser.parse_args()
+
+    if not HAS_DEEPXIV:
+        _error_exit(
+            "deepxiv-sdk not installed. Run: pip install deepxiv-sdk"
+        )
 
     try:
         if args.command == "search":

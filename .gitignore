@@ -32,9 +32,42 @@ Thumbs.db
 .venv/
 
 # Raw data (large files managed separately)
-# raw/papers/*.pdf
+# NOTE: this fork intentionally TRACKS wiki content and raw/papers PDFs.
+# Upstream's .gitignore ignores wiki/{papers,concepts,...} and raw/* as
+# per-user data; those rules are deliberately NOT adopted here so this
+# fork's knowledge base stays version-controlled.
 
 # Files exceeding GitHub's 100 MB hard limit or not wanted to be tracked
 raw/papers/government_policy/KI_enquete_kommission.pdf
 raw/papers/government_policy/Law_and_Policy_for_the_Quantum_Age.pdf
 raw/AI_governance/
+
+# Local and CI scratch files for /daily-arxiv runs
+.daily-arxiv/
+
+# ---------------------------------------------------------------------------
+# Skill-generated runtime state (regenerated each invocation)
+# ---------------------------------------------------------------------------
+
+# /init session state
+.checkpoints/
+wiki/.checkpoints/
+
+# /exp-run generated experiment code
+experiments/code/
+
+# /visualize generated artifacts (regenerated from config/visualize.json
+# + wiki/graph/ at /init Step 6 or direct /visualize)
+wiki/.obsidian/
+wiki/canvases/
+wiki/graph-view.html
+
+# ---------------------------------------------------------------------------
+# Local IDE / editor state
+# ---------------------------------------------------------------------------
+.obsidian/
+.claude/scheduled_tasks.lock
+
+# Obsidian "untitled canvas" debris (locale-aware: en + zh)
+**/Untitled*.canvas
+**/未命名*.canvas

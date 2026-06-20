@@ -2723,3 +2723,20 @@ claims:
     status: weakly_supported
     confidence: 0.55
     domain: "AI Economics / Social Science"
+papers:
+
+concepts:
+
+topics:
+
+people:
+
+ideas:
+
+methods:
+
+experiments:
+
+Summary:
+
+foundations:
