@@ -1,8 +1,9 @@
 name: Daily arXiv recommendation
 
 on:
-  schedule:
-    - cron: '17 0 * * *'  # 00:17 UTC = 08:17 Beijing time
+  # Scheduled runs paused — re-enable when you want unattended daily digests again.
+  # schedule:
+  #   - cron: '17 0 * * *'  # 00:17 UTC = 08:17 Beijing time
   workflow_dispatch:
     inputs:
       mode:
