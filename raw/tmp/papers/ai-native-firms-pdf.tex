@@ -1,0 +1,752 @@
+\title{AI-Native Firms}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Hyunjin Kim Rembrand Koning Working Paper 26-090
+\end{abstract}
+
+\section{Recovered Text}
+Working Paper 26-090
+AI-Native Firms
+Hyunjin Kim
+Rembrand Koning
+Working Paper 26-090
+Copyright © 2026 by Hyunjin Kim and Rembrand Koning.
+Working papers are in draft form. This working paper is distributed for purposes of comment and discussion only. It may
+not be reproduced without permission of the copyright holder. Copies of working papers are available from the author.
+Funding for this research was provided in part by Harvard Business School.
+AI-Native Firms
+Hyunjin Kim
+INSEAD
+Rembrand Koning
+Harvard Business School
+AI-Native Firms∗
+Hyunjin Kim
+INSEAD
+Rembrand Koning
+Harvard Business School
+June 9, 2026
+We study how firms built around AI capabilities—“AI-native” firms—are organized. Drawing
+on Y Combinator batches W20–F24 and U.S. venture-backed startups whose first financing
+closed between 2020 and 2024, we classify each firm’s AI-native status and link it to workforce
+microdata on team size, function, seniority, and hierarchy. Relative to non-AI startups in the
+same industry-cohort, AI-native firms are 25\% smaller. Their share of engineers is 13\% greater,
+and the shares of entry-level workers and managers are each roughly 15\% lower. Their hierarchies
+are half a seniority level flatter—yet valuations are comparable, suggesting higher value created
+per employee. We argue these patterns reflect two channels: a process channel, in which AI
+changes how people work inside the firm, and a product channel, in which AI capabilities are
+built into what the firm sells. Using text from product descriptions and job postings, we find
+that embedding AI into the product, beyond layering on AI tools into existing workflows, is a
+primary way startups are scaling “knowledge work” without large teams of knowledge workers.
+∗Kim: h@insead.edu. Koning: rem@hbs.edu. The authors gratefully acknowledge financial support from the AI
+Institute at Harvard Business School and INSEAD. The authors thank Samay Gupta and Simonne Pinto for research
+assistance. We thank Ajay Agrawal, Arnaldo Camuffo, Lauren Thomas, Todd Lensman, and Abhishek Nagaraj along
+with seminar participants at SMS, the HBS EM working lunch, and the INSEAD brownbag for their especially helpful
+feedback.
+1
+1
+Introduction
+Technology reshapes organizational form. Railroads and the telegraph allowed firms to serve na-
+tional markets, increasing the returns to coordinating across distance and creating the conditions
+for large managerial hierarchies (Chandler, 1993). Electricity altered how work could be organized
+on the factory floor and spurred the rise of scientific management (David, 1990).
+The internet
+lowered communication and coordination costs, supporting more platform-based, networked, and
+distributed forms of organization (Shapiro and Varian, 1999). Across technologies—from lithog-
+raphy to Linux—product and organizational architectures often co-evolve (Henderson and Clark,
+1990; Colfer and Baldwin, 2016).
+How will AI reshape firms? Recent research has largely focused on a process channel, empha-
+sizing how AI tools augment or automate work inside the firm through agentic coding, AI-assisted
+customer service, automated sales operations, and many other internal tasks (Peng et al., 2023;
+Brynjolfsson, Li, and Raymond, 2023; Dell’Acqua et al., 2023; Csaszar, Ketkar, and Kim, 2024;
+Otis et al., 2025; Sarkar, 2026; Kim, Kim, and Koning, 2026). Yet AI can be used for more than
+internal work. AI-native firms embed AI into their products, allowing customers to generate slide
+decks with AI, build software, and even run their accounts receivable. This product channel shifts
+productive capability from the internal organization into the product, moving knowledge work that
+would have required large teams to be performed directly in the product itself through imported
+model capabilities. Both channels suggest that “AI-native” firms—those that are built around AI-
+enabled products and processes—may be organized differently than comparable non-AI firms.
+In this paper, we highlight this product channel and explore whether AI-native firms are, in
+fact, organized differently. We focus on startups because new firms are less constrained by legacy
+structures, making them a likely setting in which new organizational forms first become visible.
+Measuring whether a firm is AI-native presents a challenge because, as our two channels illustrate,
+there are many ways companies can be built around AI. Here, we leverage the fact that Y Combi-
+nator (YC), a leading accelerator for early-stage companies, curates and encourages startups to tag
+themselves with public labels to help investors, journalists, and customers discover new ventures
+they might be interested in. We leverage the fact that startups can add an “AI” tag to their public
+profile, enabling us to identify startups that claim that AI is central to their firm, whether that is
+embedding it into their products, using it as a core part of their production process, or something
+else entirely. To test if our YC results generalize beyond this extremely selected set of firms, we also
+2
+use text describing each YC startup to train a model that predicts any startups’s AI status, allowing
+us to extend our analysis to the broader universe of venture-backed U.S. startups in PitchBook. We
+then link both samples to Revelio Labs for detailed workforce data on team size, hierarchy, seniority,
+and functional composition.
+We structure our analysis into two parts. First, we document a robust set of organizational
+differences between AI-tagged and non-AI-tagged startups. We find that AI-tagged startups have
+approximately 25\% fewer employees than non-AI firms in the same industry-cohort cell.
+Their
+workforces are also more technical: the share of engineers is 5 percentage points higher, offset by
+lower shares in sales, finance, operations, and administration. They skew senior, with the share of
+entry-level workers just under 15\% lower and the share of senior workers about 20\% higher. Their
+hierarchies are flatter: half a level less depth and 15\% fewer managers, even controlling for firm size.
+These patterns are consistent across our YC and PitchBook samples.
+These smaller teams raise similar amounts of funding and hit valuations on par with non-AI-
+native firms, suggesting that they are not lower quality entrants. As a consequence of being smaller,
+AI-tagged startups raise roughly 20\% more capital per employee and carry higher valuations per
+employee. These smaller teams also draw from a narrower labor pool: they are geographically con-
+centrated in Silicon Valley, and employ workforces that are more male, more likely to hold advanced
+degrees, and drawn from more prestigious employers and institutions. Our findings are consistent
+with AI complementing technical expertise at the firm level, with small teams of skilled founders
+building ventures that historically might have required much larger hierarchical organizations.
+The second part of our analysis explores the role of the product and process channels in explaining
+these patterns. Focusing on our YC sample, for which we have richer text data, we use an LLM
+to inductively classify founders’ own descriptions of their businesses and ask how AI is embedded
+into the product. 43\% of AI-tagged YC startups use AI to fully automate tasks workers used to do,
+24\% build AI tools designed to augment existing workers at the firms they sell to, and 15\% build AI
+infrastructure, providing a capability that another developer integrates into their own AI product.
+To measure the process channel, we code whether each firm’s job postings name specific worker-
+facing AI tools like ChatGPT, GitHub Copilot, or Cursor. AI-native startups are 2.6 times as likely
+as non-AI startups to name such tools in their postings, but this measure does not predict smaller
+firm sizes in the log, Poisson, or hierarchy specifications. Even when controlling for this process
+channel, we find that embedding AI into a startup’s products is associated with less headcount and
+flatter structures.
+3
+If embedding AI into the product moves productive capability from the firm’s workers into
+the product itself, then the firms that should shrink most are those that, without AI, would have
+scaled by hiring people to deliver the underlying work—therapy, tutoring, telemedicine, and similar
+service businesses where small teams can now build AI capable of doing the work that had required
+building larger workforces. To test this idea, we test for heterogeneity in our estimates by whether
+the startup is classified as a “services” business. The difference between AI and non-AI firms is
+significantly larger for these services firms: AI startups are roughly 70\% smaller than non-AI peers
+and have hierarchies nearly a full level flatter.
+Our paper makes three contributions. First, we identify a product channel largely overlooked
+in recent work on AI’s productivity impacts. The dominant research paradigm today focuses on
+the process channel: how AI tools change the firm’s internal workflows (Brynjolfsson, Li, and
+Raymond, 2023; Dell’Acqua et al., 2023; Kim et al., 2024). But a key way in which firms leverage
+AI is to embed it directly into what they sell, so that model capabilities perform, augment, or
+coordinate knowledge work through the product itself. This matters because it changes where the
+firm’s productive capability resides. A long line of work models the firm as a system for processing
+information and knowledge (Galbraith, 1973; March and Simon, 1958; Simon, 1947; Garicano, 2000),
+and firm performance has been shown to depend on how organizations access and act on decision-
+relevant information (Kim, 2025). Our findings suggest that AI enables firms to shift some of this
+processing from the organization into the product itself, allowing the firm to deliver knowledge-work
+capabilities without building them internally through people and hierarchy (Ide and Talamás, 2025).
+If this pattern holds, then building, importing, and orchestrating model capabilities may matter as
+much for competitive advantage as building human ones (Nelson, 1985; Teece, Pisano, and Shuen,
+1997; Helfat and Peteraf, 2003).
+Second, we show that these AI-tagged firms employ smaller teams of more talented and technical
+workers. These workers are especially likely to be graduates from elite institutions, concentrated in
+Silicon Valley, and male. While at the task-level AI often helps less experienced workers perform
+better (see Brynjolfsson, Li, and Raymond, 2023; Noy and Zhang, 2023; Csaszar, Ketkar, and Kim,
+2024, ; cf. Otis et al. 2025), at the firm level we see a shift broadly in the opposite direction. Existing
+work shows generative AI changes labor demand when adopted by existing firms (e.g., Gupta et al.,
+2025; Brynjolfsson, Chandar, and Chen, 2025); we show that AI also changes the kind of firms that
+are created. While this may have implications for career opportunities and labor market outcomes
+(Beane, 2024; Kang and Kim, 2025), we urge caution in moving from firm-level to market-level
+4
+estimates. While AI-tagged startups employ fewer workers, they appear much less costly to launch
+and scale. If AI leads to meaningfully more and faster growing startups (Gupta et al., 2025), then
+while each firm may be smaller the overall demand for labor could well rise.
+Third, our finding on the product and process channels is consistent with emerging evidence on
+the “mapping problem” in AI adoption. Kim, Kim, and Koning (2026)’s field experiment shows that
+the binding constraint to AI adoption is not access to the technology but the ability to search across
+a firm’s own processes and discover where AI can create value. Firms that solve this problem grow
+faster while requiring less external capital and no additional labor. Our null process-channel result,
+though a coarse and noisy proxy, is consistent with this view: equipping workers with ChatGPT,
+Copilot, or Cursor does not, on its own, predict smaller firms. Capturing real value from AI often
+requires re-engineering processes around it—and, as our results suggest, re-engineering the product
+itself so that AI does the work directly. The AI-native ventures in our data appear to have solved
+this problem by building the firm around AI from the start. More broadly, our findings suggest
+that when firms are fully built around AI, the technology does more than lower the cost of entry
+(Ewens, Nanda, and Rhodes-Kropf, 2018; Reimers and Waldfogel, 2026), it changes how ventures
+are organized and scale.
+The remainder of the paper proceeds as follows. Section 2 elaborates on what makes a firm
+AI-native, distinguishing the process and product channels. Section 3 describes our two comple-
+mentary datasets—Y Combinator startups and the broader universe of U.S. venture-backed firms
+from PitchBook—along with workforce data from Revelio Labs. Section 4 presents results on firm
+size, functional composition, seniority, hierarchy, and capital efficiency. Section 5 then explores the
+role of the product and process channels in explaining these results. Finally, section 6 discusses
+implications and limitations.
+2
+What Makes a Firm AI-Native?
+The term “AI-native” firms has emerged in industry discussions to refer broadly to firms built
+around AI capabilities. Industry reports suggest that AI startups may be growing with smaller
+teams, but provide widely varying estimates and limited insight into how organizational form is
+changing (Tables A1 and A2). One reason may be that the term “AI-native” is used to describe
+several distinct ways in which firms rely on AI. In some accounts, AI-native firms are those that use
+AI as an internal production technology or core operating model, changing how employees code, sell,
+5
+design, or coordinate work. We refer to this as the process channel. In other accounts, AI-native
+firms are those that produce products and services that would not have been possible without AI,
+ranging from foundation model providers to companies that embed AI directly into what they sell.
+We refer to this as the product channel.
+The process channel has been the focus of most existing research, which has largely focused on
+how AI can either augment or automate tasks within firms. The majority of recent research on
+the impact of generative AI on workers and firms has focused on this channel, exploring how AI
+changes the productivity of workers on individual tasks like coding, customer service, and strategy
+development (Peng et al., 2023; Brynjolfsson, Li, and Raymond, 2023; Csaszar, Ketkar, and Kim,
+2024).
+This work has sparked speculation about a process channel by which organizations can
+succeed with smaller teams equipped with AI tools that enable workers to match the productivity
+of much larger teams. Building on these studies exploring the impact of AI on individual tasks,
+recent experimental evidence suggests that AI can have firm-level impacts on performance, growth,
+and productivity, but only when firms know how to map it into production (Kim, Kim, and Koning,
+2026).
+Alongside such internal use, firms are also increasingly embedding AI into their products. The
+organizational implications of this product channel are not immediate: adding AI features to a prod-
+uct may leave the firm’s structure largely unchanged, much as shifting from one web development
+language to another is unlikely to alter the firm’s underlying structure or production function. The
+implications are different, however, if AI allows the product itself to perform knowledge work that
+would otherwise require human teams. In this case, capabilities that once had to be built inside the
+organization can be embedded directly into what the firm sells.
+A useful way to understand this is to start from the view of the firm as an information-processing
+system. Firms develop routines and hierarchy to help workers process information and coordinate
+effectively (Simon, 1947; March and Simon, 1958; Galbraith, 1973; Garicano, 2000). These struc-
+tures make firm growth possible, but they also tie growth to a human constraint: knowledge must be
+allocated and processed through people and hierarchy (Garicano and Rossi-Hansberg, 2015), deci-
+sions require judgment under uncertainty (Agrawal, Gans, and Goldfarb, 2022), and organizational
+performance depends on the scarce attention and coordination needed to translate decisions into
+action (Dessein, Lo, and Minami, 2022; Kim, 2025). Growth therefore typically requires expanding
+the human organization through which knowledge work is performed.
+When AI is embedded in the product, some of this knowledge work can be performed directly
+6
+through what the firm sells. Producing personalized recommendations for different types of cus-
+tomers no longer requires a team to segment users, tailor messages, and coordinate around the task,
+since AI can perform this work inside the product. Providing credit score estimates from within
+the product does not require a division of workers producing such predictions. AI thus enables
+capabilities that once required repeated human workflows inside the organization to move into the
+product, potentially changing how firms scale and compete (Nelson, 1985; Teece, Pisano, and Shuen,
+1997; Helfat and Peteraf, 2003).
+This argument builds on Ide and Talamás (2025)’s formal model of AI’s impact on knowledge
+hierarchies within firms. Building on hierarchical models of knowledge work (Garicano, 2000), they
+model AI as making noncodifiable expertise scale through compute rather than relying only on
+scarce human time and knowledge. They distinguish between nonautonomous AI, which advises
+human workers, and autonomous AI, which can pursue production opportunities independently.
+In their model, autonomous AI changes production because routine work can be performed by AI
+agents rather than human workers, reallocating humans across production and problem-solving roles
+and giving high-knowledge workers greater leverage.
+Building on this insight, we focus on what happens when autonomous AI is embedded in the
+product rather than deployed inside the firm’s production process. Scaling outputs through knowl-
+edge work traditionally requires organizing more production internally: employees scope requests,
+coordinate on work, and deliver results. Autonomous AI can make each workflow less labor-intensive
+and shift employees toward higher-level tasks, but producing more outputs still requires the firm to
+manage more work. In contrast, when AI is embedded in a product, customers can generate out-
+puts directly through the product. Users specify the task, interact with the AI, evaluate and revise
+results, and iterate directly in the interface. While the firm still invests in building the product,
+output growth can be scaled through compute rather than by expanding internal teams.
+This shift may have implications for how firms are organized. First, it may lower the need for
+human labor per unit of output, because serving additional customers does not require a propor-
+tional increase in internal production work. Second, it may contribute to flatter structures, because
+customer requests can be handled through the product rather than routed through a knowledge hier-
+archy. Third, it may increase technical talent density, as larger shares of employees focus on building
+and improving the product rather than carrying out routine production tasks. More broadly, pro-
+ductizing capabilities that would have otherwise been delivered through internal workflows can
+change how much labor firms need, as well as what kind of people and organizational design they
+7
+need to scale.
+Recent cases illustrate how building around AI may shift how firms are organized. Gamma,
+an AI presentation startup, builds on image and text foundation models to generate complete
+slide decks for its users (Koning, Keller, and Kim, 2025). While Gamma’s engineers use AI tools
+extensively, including tools such as Cursor for software development, the case illustrates how the
+largest organizational implication comes from embedding AI into the product itself. One way to
+view Gamma’s product is as the deployment of millions of autonomous or semi-autonomous AI
+agents, each pursuing a production opportunity on behalf of a user: generating layouts, writing
+copy, selecting images, and localizing content across dozens of languages. In contrast, a traditional
+presentation service company, even one using AI internally, would still scale by turning each deck
+request into an internal workflow: scoping the request, coordinating design and copy work, and
+reviewing revisions before delivering the final deck. Gamma instead turns the request into a product
+interaction. The firm still needs employees to build and improve the product, but it does not need
+to organize a human workflow around each deck. As a result, a team of roughly 30 employees could
+serve millions of users and reach \$50 million in annual revenue in just two years.
+FazeShift shows how the same product channel logic operates in the enterprise sector (Koning,
+Kim, and Keller, 2025). The company builds AI agents that automate the full accounts receivable
+lifecycle, including invoicing, collections, and cash application—work that previously required ded-
+icated AR teams at each customer. With a team of just ten, FazeShift landed dozens of enterprise
+customers by building agents that match payments to invoices, send context-aware collection mes-
+sages, and resolve discrepancies that human analysts used to handle manually. A traditional AR
+SaaS vendor would need a much larger team both to build out the firm-specific exception handling
+for the AR product and to staff the operations to resolve the exceptions that FazeShift’s AI agents
+now handle automatically.
+Taken together, these arguments suggest AI-native firms should look different. On the process
+side, we should expect such firms to be more productive, with smaller teams able to do the same
+amount of work—although if AI dramatically lowers the cost of what the firm sells, a Jevons-style
+expansion in demand could lead firms to hire more rather than fewer workers. On the product side,
+as firms move AI capabilities into what they sell, they may require different sorts of talent: workers
+with the technical expertise to embed AI into a product and to complement, rather than be replaced
+by, those capabilities. Both channels suggest that AI-native firms should be organized differently
+from their non-AI peers, as the technology changes both how the firm works internally and what
+8
+the firm needs to build. In the next section, we turn to the data to ask whether AI-native firms do
+in fact look different, and how each channel—process and product—account for the differences we
+find.
+3
+Data and Research Design
+We construct two complementary datasets to examine this question. Our primary dataset focuses
+on startups that attend YC, which provides us with clean measurement of AI status and startup
+age. Our secondary dataset is PitchBook, which allows us to extend our analysis to the broader
+universe of venture-backed startups in the U.S. to test the external validity and generalizability of
+our core YC estimates.
+3.1
+Y Combinator Sample
+We construct a dataset comprising all YC startups that participated in batches from Winter 2020
+to Fall 2024, collected through an open-source public API.1 Since YC publishes complete rosters for
+each cohort, it offers a well-defined sample through which hundreds of young but promising compa-
+nies pass each year. The 2020–2024 window spans GPT-3’s public release in 2020 and ChatGPT’s
+breakout in 2022—the period when AI funding and startup formation surged. Our initial sample
+contains 2,891 firms across 11 YC cohorts (W20, S20, W21, S21, W22, S22, W23, S23, W24, S24,
+F24).
+3.1.1
+AI Classification
+YC encourages startups to tag themselves with descriptive labels to facilitate discovery by journal-
+ists, potential users, and investors. A startup like FazeShift, an “AI agent for Accounts Receivable,”
+is marked with tags including “artificial-intelligence,” “fintech,” and “b2b.” We classify a startup
+as an AI startup if its tags include “artificial-intelligence” or “ai.” Reflecting the general-purpose
+nature of the technology, AI startups build around AI in varied ways: from autonomous agents to
+AI driven drug discovery to AI-guided physical work. Self-identification lets us rely on the founders’
+beliefs about whether AI is central to their firm, providing a broad measure of whether the firm is
+built around AI or not.2 Especially given YC’s prominence and the reputational stakes involved,
+1API available at https://github.com/yc-oss/api.
+2The idea of building firms around AI could allow smaller firms to scale predates the launch of ChatGPT in late
+2022. In 2017, five years before ChatGPT, a cofounder of InsureTech startup Lemonade urged founders to “don’t
+9
+there are strong incentives for these public statements to accurately reflect the firm’s underlying
+use of the technology.3 Of the 2,891 YC startups in our sample, 990 (34.2\%) are tagged as AI
+startups and 1,901 (65.8\%) as non-AI startups (see Figure 1 for the distribution across batches
+in the PitchBook-matched regression sample and Appendix Figures A1–A2 for example YC pages
+illustrating this tagging).
+3.1.2
+Linking to PitchBook
+We merge our YC data with PitchBook, a private-market data intelligence platform, using nor-
+malized company website URLs.
+PitchBook provides comprehensive data on startup financing,
+including deal-level funding amounts, valuations, and deal types.4 Of our 2,891 YC firms, we suc-
+cessfully match 2,786 (96.4\%) to PitchBook records. The small number of unmatched firms are
+primarily very early-stage companies without substantial financing activity or companies that have
+since become inactive.
+Appendix Table A3 consolidates the match rates for both the YC and
+PitchBook sample construction.
+3.1.3
+Linking to Revelio Labs
+To measure organizational structure and firm size, we link our YC-PitchBook data to Revelio
+Labs, a workforce intelligence platform that aggregates information from public professional profiles
+and job postings to create comprehensive employee records. We use LinkedIn profile URLs from
+PitchBook to match companies to a pull of Revelio’s database covering records through January
+2025, successfully linking 2,233 firms (77.2\% of the full YC sample). Match rates are nearly identical
+for AI and non-AI startups (76.2\% vs. 77.8\%) and range from 69\% to 82\% across batches. Given
+that these are knowledge-work startups whose employees overwhelmingly maintain LinkedIn profiles,
+Revelio’s inability to link any employees to a firm strongly suggests the firm has effectively zero
+employees as of January 2025, so we impute zero employees for firms with no Revelio-matched
+workers.
+As our intensive margin results show, our findings are robust to coding non-matched
+hire more people, build smarter AI” and described his own firm as one designed around “fewer people and more
+code” (Wininger, 2017). As we discuss below, Lemonade’s vision mirrors our product channel. For example,
+embedding an ML system for predicting fraud into the product replaces the large teams that would otherwise
+manually review cases. Moreover, while ChatGPT led to a surge of AI startups in 2023, the first AI coding assistant
+is GitHub’s Copilot, which was launched in 2021. OpenAI’s GPT-3 was launched in 2020.
+3Of course, self-disclosure risks strategic manipulation, similar to firms adding “.com” to their names during the
+internet bubble (Cooper, Dimitrov, and Rau, 2001). However, if the AI label is only being used superficially and
+symbolically, then while we might see exuberant or irrational shifts in valuation it seems unlikely that it would
+result in changes in how the firm is organized as measured by a third party data source (LinkedIn).
+4That said, valuation and funding amounts are often missing for early stage firms like those we analyze.
+10
+startups as having missing values instead. Revelio provides position-level data including job titles,
+seniority levels, start and end dates, and functional classifications. Appendix Table A3 reports
+per-batch and field-level coverage rates.
+3.2
+PitchBook Sample: Extending to the Broader Startup Ecosystem
+While YC provides a measurement of a startup’s AI focus and Revelio rich organizational data, it
+represents a highly selected sample of startups. To test whether patterns observed in YC generalize
+to the broader startup ecosystem, we extend our analysis to the universe of early-stage venture-
+backed startups using the PitchBook data.
+3.2.1
+Sample Construction
+Appendix Table A3 (Panel B) reports the PitchBook side of our sample-construction funnel. We
+begin with all U.S.-based startups in PitchBook with a first financing deal between 2020 and 2024
+(inclusive). The 2020–2024 first-deal window aligns with the YC W20–F24 sample period and the
+January 2025 Revelio employment snapshot, focusing on the post-GPT-3 era and ensuring every
+firm in the sample had at least one financing event before our outcome is measured. Using first
+deal date (rather than founding year) allows us to construct deal quarter fixed effects comparable
+to YC’s quarterly batch indicator.
+3.2.2
+Predicting AI Status
+Unlike YC, PitchBook does not provide a clean indicator of whether a startup team wants to publicly
+disclose if it is an AI startup.5 To classify startups as AI or non-AI, we train a machine learning
+model on the YC sample and then use the model to predict AI status for PitchBook companies
+using text descriptions of each startup.
+In particular, we use PitchBook’s text descriptions of each company to generate 3,072-dimensional
+embeddings using OpenAI’s text-embedding-3-large model. We then train a Random Forest classi-
+fier to predict YC’s AI tags from these embeddings. We use 5-fold cross-validation to tune hyper-
+parameters. The model achieves solid if unspectacular out-of-sample performance: cross-validated
+AUC of 0.81, and on a held-out test set, accuracy of 77.5\%, precision of 73.9\% (when we predict
+AI > 0.5, 74\% are actually AI), and recall of 55.2\% (we identify 55\% of true AI companies). In
+5PitchBook assigns companies to “verticals” including an “Artificial Intelligence \& Machine Learning” category, but
+this classification appears noisy, substantially undercounting AI startups relative to our YC-based measure. It is
+also unclear who applies this measure to the startup and what the incentives are for truthful reporting.
+11
+the paper’s regressions, we use the continuous predicted probability rather than a binary threshold
+as it provides more information. For descriptive statistics splitting the sample into AI and non-AI
+groups, we use a 0.5 threshold.
+3.3
+Variable Definitions
+AI Status.
+For the YC sample, AI status is a binary indicator equal to 1 if the startup’s YC
+tags include “artificial-intelligence” or “ai.” For the PitchBook sample, AI status is the predicted
+probability from our Random Forest classifier trained on YC data. Since both variables range from
+zero to one, it is straightforward to compare effect sizes across the two.
+Employee Counts.
+We measure employee counts using Revelio Labs data as of January 2025,
+which captures employees matched through public professional profiles. While our primary analyses
+use the January 2025 measures, we also construct a quarterly panel of employment counts to shed
+light on how firm size changes over time for AI and non-AI tagged firms.
+Manager Share.
+The share of employees with O*NET occupation codes beginning with “11-”
+(Management Occupations), based on Revelio’s mapping of job titles to standardized occupational
+categories.
+Hierarchy Depth.
+The count of distinct Revelio seniority levels (1–7) present among a firm’s
+employees. To calculate a meaningful hierarchy measure, we require at least one employee in Revelio
+data, yielding a sample size of 2,233.
+Funding and Valuation Per Employee.
+Total funding raised divided by employee count (fund-
+ing per employee) and last known valuation divided by employee count (valuation per employee). As
+mentioned, funding and valuation amounts are often missing. For per-employee financing analyses,
+this yields 2,218 YC firms and 29,336 PitchBook firms with funding data, and 1,046 YC firms and
+12,891 PitchBook firms with valuation data.
+Seniority Shares.
+The share of employees at each seniority level based on Revelio Labs’ 1–
+7 seniority scale: Entry-level (1–2), Mid-level (3–5), and Senior (6–7). To calculate meaningful
+seniority share measures, we require at least one employee in Revelio data, again yielding a sample
+size of 2,233 firms.
+12
+Functional Shares.
+The share of employees in each functional category based on Revelio Labs job
+classifications: Engineering, Science, Sales, Marketing, Operations, Finance, and Administrative.
+Industry Group.
+PitchBook assigns each company to one of 41 industry groups based on its
+primary business activity; examples include Application Software, Information Services, Healthcare
+Services, and Financial Software. We use PitchBook’s industry classification rather than standard
+SIC codes because SIC coverage is extremely sparse for early-stage startups. In our YC sample,
+fewer than 1\% of firms (24 of 2,786) have SIC codes assigned in PitchBook’s data; in our broader
+PitchBook sample, fewer than 2\% have SIC codes assigned. This low coverage likely reflects that
+SIC assignments in commercial databases are concentrated among more established firms.
+Batch.
+For YC startups, the cohort identifier (e.g., W20, S21, W24) indicating when the startup
+was accepted into Y Combinator. Batches occur twice per year (Winter and Summer) plus occasional
+Fall batches.
+First Deal Quarter.
+For PitchBook startups, the year-quarter of the company’s first recorded
+financing deal (e.g., 2020-Q1, 2023-Q3). This serves as a timing variable similar to YC batch.
+3.4
+Research Design
+Our research design is descriptive, documenting if AI startups differ from non-AI startups in how
+they are organized, a question of significant scholarly and practitioner debate. Our approach follows
+in the spirit of recent work establishing stylized facts about who starts successful companies (Azoulay
+et al., 2020) and how AI tools are actually used across the workforce (Humlum and Vestergaard,
+2025). Here, we provide the first systematic evidence on how firms built around AI are organized.
+That said, two confounds are crucial to address to allow for meaningful comparisons between
+AI and non-AI startups. First, there is no discrete “arrival” of AI—the term dates to the 1950s.
+But since the launch of ChatGPT in late 2022, interest in AI tools and startups has exploded. As
+a result, there is the potential for strong cohort confounds: any observed difference between AI and
+non-AI firms might reflect when startups were founded rather than their AI status. A startup from
+the Winter 24 YC batch is both more likely to be AI and younger when we measure it in January
+2025. We address this by including fixed effects for timing. In the case of our YC sample, we use the
+startup’s batch, effectively controlling for its quarter of entry. In PitchBook, we don’t have batch,
+and instead use first deal quarter.
+13
+Second, AI startups are likely to concentrate in different industries, so observed organizational
+differences could reflect industry differences and market structure rather than AI per se. Enterprise
+B2B software firms and consumer hardware firms naturally require different team structures regard-
+less of whether they use AI. Yet, building on Chandler (1977), if building around AI causes firms to
+operate in different industries, and those industries then impact the nature of the organization, we
+could view this selection as an effect of AI. The railroad and telegraph similarly enabled firms to
+enter new industries and serve national markets, which in turn shifted their organizational structure.
+Here, we take the more conservative approach and focus on within-industry comparisons to better
+isolate organizational differences from industry differences.
+Our baseline specification for the YC sample is:
+Yi = β · 1[AIi] + γbg + εi
+(1)
+where Yi is a firm-level measure for startup i, 1[AIi] indicates whether the startup is classified as
+AI, and γbg are batch × industry fixed effects. For the PitchBook sample, we replace the binary AI
+indicator with the continuous AI probability score and replace batch with first deal quarter, using
+first deal quarter × industry fixed effects.
+By including these interacted fixed effects, we compare AI and non-AI startups operating in
+the same industry that entered in the same cohort, ensuring our AI coefficient captures within-
+industry-cohort variation rather than cross-industry differences or simple cohort timing confounds.
+We report heteroskedasticity-robust (HC1) standard errors throughout.
+4
+Results
+4.1
+Summary Statistics and Growth of AI Startups
+We begin by documenting basic patterns in our data.
+Table 1 presents summary statistics for
+our two samples. Even before conditioning on batch or industry, we observe raw differences. AI
+startups are substantially smaller than non-AI startups: the mean AI startup in our YC sample
+has approximately 13 Revelio-matched employees compared to 42 for non-AI startups (based on
+January 2025 snapshots)—a difference of nearly 70\%. AI startups also have flatter hierarchies (3.8
+vs. 5.0 seniority levels), fewer managers (17\% vs. 24\%), more engineers (45\% vs. 36\%), and fewer
+entry-level workers (19\% vs. 30\%). Despite their smaller size, AI startups have comparable total
+14
+funding and valuations to non-AI firms, implying that AI startups are substantially more capital-
+efficient on a per-employee basis. That said, caution must be taken when comparing these means,
+as they fail to control for cohort or industry composition differences. The summary statistics for the
+PitchBook sample (Panel B) show similar patterns, though more muted—likely because PitchBook
+includes a much broader sample of firms across more industries. This suggests that within-industry
+comparisons may be necessary to reveal differences in the broader sample.
+Indeed, when we turn to Figure 1 we can see the dramatic rise of AI startups in both samples.
+The share of YC startups self-identifying as building around AI has increased substantially, rising
+from approximately 15\% in early 2020 batches to over 50\% in 2024 batches. This pattern is mirrored
+in our broader PitchBook sample, where the share of early-stage startups we classify as AI has grown
+from roughly 8\% in 2020 to over 20\% by 2024. This also underscores the need to compare within
+cohorts, as AI startups in our data are from much more recent vintages.
+Figure 2 shows the share of AI and non-AI startups across YC sub-verticals (YC’s own finer-
+grained and startup-focused industry classification), ordered by relative AI concentration. AI star-
+tups cluster in sub-verticals like legal services and developer tools, where applying AI is thought to
+have especially large impacts on worker productivity (Eloundou et al., 2024a). Non-AI startups are
+more prevalent in hardware-intensive sub-verticals like aviation and medical devices.
+4.2
+How Are AI Startups Organized?
+We first examine whether AI startups have smaller teams. We start with the raw data. Figure 3
+shows a histogram of employee counts, confirming that the modal AI startup has fewer than 10
+employees, whereas non-AI startups are more evenly distributed across size categories. Given that
+there has been an increase in the share of AI startups, these differences could simply be due to
+cohort effects. However, in Figure 4 we plot the size of AI and non-AI firms relative to the number
+of quarters since they graduated from YC. AI firms are roughly half the size of non-AI ventures
+and this gap persists for at least three years. Appendix Figure A3 presents the raw distributions
+separately for each YC batch, showing that the distributional difference in Figure 3 between AI and
+non-AI startups are evident within each cohort. Finally, these results are not rooted in industry
+differences either: Appendix Figure A4 presents kernel density plots of the firm size distribution for
+AI and non-AI startups, with batch-industry fixed effects residualized out. The distributions are
+visibly shifted, with AI startups concentrated at smaller sizes.
+Table 2 reports regression estimates for the relationship between AI status and firm size, com-
+15
+paring startups within the same cohort and industry. In levels, AI startups in the YC sample have
+approximately 8 fewer employees than non-AI startups, compared to a non-AI mean of 34 employees.
+In the PitchBook sample, AI startups have approximately 6 fewer employees off a non-AI mean of
+18 employees. The log specifications, which examine the intensive margin conditional on having at
+least one employee, show that AI startups are roughly 25\% smaller in the YC sample (coefficient of
+−0.28) and 12\% smaller in the PitchBook sample (coefficient of −0.13).6 Results are robust across
+specifications: levels, logs, and Poisson models all show significant negative effects of AI status on
+firm size. Appendix Table A4 shows these patterns hold when we use alternative measures of firm
+size sourced from PitchBook and YC rather than Revelio.
+These teams are not just smaller but employ a different mix of functional expertise. Table 3
+examines the composition of startup workforces across seven functional categories.
+AI startups
+employ a significantly higher share of technical workers relative to business and administrative
+staff. The coefficient on AI status when predicting engineering share is positive and significant in
+both samples (β = 0.045, p < 0.01 in YC; β = 0.183, p < 0.01 in PitchBook), indicating that AI
+startups allocate roughly 5 percentage points more of their workforce to engineering roles in YC and
+18 percentage points more in PitchBook. Conversely, AI startups have significantly lower shares
+of employees across business functions: sales (β = −0.021, p < 0.05), operations (β = −0.009,
+p < 0.05), finance (β = −0.017, p < 0.01), and administrative roles (β = −0.011, p < 0.05).
+The coefficient on marketing share is negative but not statistically significant in the YC sample
+(β = −0.012). The statistically significant declines span both external-facing functions (sales) and
+internal process functions (finance, operations, administration) in YC, and extend to all business
+functions including marketing in the broader PitchBook sample.
+This suggests that the talent
+needed to scale firms may shift when they are built around AI (Bresnahan, Brynjolfsson, and Hitt,
+2002; DeSantola, Gulati, and Zhelyazkov, 2022; Lee and Kim, 2024). These patterns are even more
+pronounced in the broader PitchBook sample, where all functional coefficients are significant at
+the 1\% level. We interpret these cautiously, however, because AI status in this sample is inferred
+from a text-based prediction, which may mechanically inflate compositional differences. The picture
+that emerges is that AI startups are technical-heavy and business-function-light—consistent with
+shifting the firm’s production function toward the technical talent needed to build and maintain AI
+6For small coefficients, eβ −1 ≈β, so log coefficients can be read directly as approximate percentage changes. For
+larger coefficients, the exponential transformation is more accurate. Throughout the paper, we convert log
+coefficients to percentage changes using the transformation eβ −1, which provides an exact interpretation for
+discrete changes in AI status.
+16
+capabilities. That said, it is important to remember that these firms are smaller, thus while there
+are relatively more engineers, there are fewer employees in each role across the board for AI-native
+firms.
+We next turn to workforce seniority. Table 4 examines the seniority composition of AI versus
+non-AI startups. AI startups have 5 percentage points more senior employees (β = 0.052, p < 0.01)
+and 4 percentage points fewer entry-level employees (β = −0.040, p < 0.01). The broader PitchBook
+sample shows the same pattern, with PB AI probability associated with a 6 percentage point lower
+entry-level share (β = −0.060, p < 0.01) and a 6 percentage point higher senior share (β = 0.056,
+p < 0.01).
+This is consistent with Brynjolfsson, Chandar, and Chen (2025), who document a
+13\% relative decline in early-career employment in AI-exposed occupations. At the task level, a
+growing body of evidence suggests that AI often disproportionately benefits less experienced workers
+(Brynjolfsson, Li, and Raymond, 2023; Dell’Acqua et al., 2023; Noy and Zhang, 2023; Csaszar,
+Ketkar, and Kim, 2024). One might therefore expect AI-native firms to employ more junior talent.
+We find the opposite: AI-native firms employ fewer entry-level workers and more senior workers.
+This contrast underscores the importance of studying AI at the organizational level. Who benefits
+from AI depends not only on task-level productivity gains, but also on where AI is applied in the
+firm’s production process (Gans and Goldfarb, 2026; Agrawal, Gans, and Goldfarb, 2024; Benzell
+and Myers, 2026; Otis et al., 2025; Kang and Kim, 2025).
+Given that the teams are smaller, more senior, and more technical, we also examine whether
+hierarchy differs. Figure 5 shows the distribution of hierarchy depth by AI status. AI startups
+have significantly flatter organizational structures: the median AI startup has 3 distinct seniority
+levels compared to 4 for non-AI startups. Table 5 confirms this pattern in regression estimates,
+with AI startups having roughly 0.5 fewer hierarchy levels on average (β = −0.482, p < 0.01). In
+Appendix Table A5 we show these findings are robust to controlling for firm size—the flattening
+is not simply a mechanical consequence of being smaller (see also Appendix Figure A5 for the
+residualized distribution).
+Consistent with less need for coordination in AI startups, these firms also have a lower share
+of employees in management occupations. Using O*NET occupation codes to identify managers
+(codes beginning with “11-”), we find that AI startups have approximately 4 percentage points fewer
+managers as a share of total employment (β = −0.037, p < 0.01). These results are reminiscent
+of the flattening of firms due to information technology (Brynjolfsson et al., 1994; Bresnahan,
+Brynjolfsson, and Hitt, 2002; Rajan and Wulf, 2006; Bloom et al., 2014), suggesting that when
+17
+productive capability moves from people to the product, the need to coordinate and supervise
+internal knowledge work may diminish.
+4.3
+Do AI Startups Achieve More with Less?
+The preceding findings raise a natural concern: perhaps AI startups are smaller and flatter simply
+because they are lower quality or have less potential. AI may lower entry barriers, allowing anyone
+to enter, even with a weak idea (Reimers and Waldfogel, 2026). If so, the organizational differences
+we document would reflect the limitations of building around AI rather than evidence that AI is
+changing the nature of the firm.
+We begin by examining total funding and valuation in levels. Table 6 (Panel A) reports regression
+estimates. In the YC sample, AI startups raise approximately 15\% less total funding (β = −0.165,
+p < 0.05) and show no statistically significant difference in valuations. In the broader PitchBook
+sample, the pattern reverses: AI startups raise approximately 15\% more funding (β = 0.136, p <
+0.10) and achieve 58\% higher valuations (β = 0.458, p < 0.01). This divergence likely reflects
+YC’s selection: virtually all YC startups are technology firms that have met a high admission bar,
+compressing differences in funding and valuation relative to the broader PitchBook universe.
+The more informative comparison is value per employee. In Figure 6, the raw distributions of
+valuation per employee show that AI startups are shifted rightward, achieving higher valuations
+relative to their headcount. Appendix Figure A6 residualizes out batch fixed effects and shows a
+similar pattern.7
+Table 6 (Panel B) quantifies these patterns, focusing on the subset of startups with available
+funding and valuation data in PitchBook.8 In the YC sample, AI startups raise approximately 12\%
+more funding per employee (β = 0.109, p < 0.10) and result in 30\% higher valuation per employee
+(β = 0.260, p < 0.05). The PitchBook sample confirms these patterns more strongly: AI startups
+raise 33\% more per employee (β = 0.285, p < 0.01) and achieve 76\% higher valuation per employee
+(β = 0.564, p < 0.01). These efficiency results are consistent across both samples and robust to
+specification.
+Notably, the valuation-per-employee effects are substantially larger than the funding-per-employee
+7Valuations reflect investors’ expectations of future cash flows rather than realized value. We use valuation per
+employee as a measure of capital-market-implied productivity, not as a direct measure of output.
+8Funding-per-employee results are robust to treating missing funding values as zeros, which has a defensible
+interpretation (no recorded deal). For valuation, missing values reflect “no priced round on record” rather than
+literal zero value (no firm in our sample has a PitchBook-recorded valuation of exactly zero), so we restrict the
+valuation sample to firms with a non-missing valuation rather than imputing zeros. Poisson estimates yield similar
+conclusions for funding outcomes.
+18
+effects in both samples. If AI startups were simply raising more capital, we would expect funding
+and valuation to increase proportionally. Instead, the disproportionate increase in valuation rela-
+tive to funding is consistent with investors expecting higher future productivity from AI startups
+conditional on the capital and labor inputs.
+4.4
+Where Do AI Startups Locate and Who Works for Them?
+A large literature demonstrates that as the nature of organizations changes, so too do the loca-
+tions where firms concentrate and the workers they employ (Botelho, Gulati, and Sorenson, 2024).
+New technologies can have disproportionate impacts on particular groups—shaping employment
+opportunities and potentially long-term career prospects (Feigenbaum and Gross, 2022). We briefly
+examine these patterns for AI startups, reporting figures and tables in the Appendix.
+Appendix Table A8 shows that AI startups are more geographically concentrated than non-AI
+startups. AI startups are 20 percentage points more likely to be headquartered in San Francisco
+(p < 0.001), a substantial increase relative to the baseline rate of just under a quarter among non-
+AI startups. This concentration likely reflects the importance of access to specialized AI talent
+and proximity to leading AI research labs, consistent with longstanding findings on the distinctive
+advantages of Silicon Valley as a technology hub (Guzman and Stern, 2015; Saxenian, 1994). These
+geographic patterns hold in the broader PitchBook sample as well (Appendix Table A11).
+We also find demographic and educational differences between AI and non-AI startup workforces
+(Appendix Tables A6–A10).
+These demographic patterns are consistent with the expert-dense
+organizational form we document: the shift toward technical, senior workforces draws from labor
+pools that remain less diverse. In the YC sample, AI startup employees are about 5 percentage
+points more likely to hold graduate degrees (Appendix Table A7). In the broader PitchBook sample,
+AI probability is associated with a 5.9 percentage point lower female share, an 8.5 percentage point
+higher Asian/Pacific Islander share, a 17.6 percentage point higher graduate-degree share, and
+higher university prestige (Appendix Tables A9 and A10).9
+These geographic and demographic patterns raise questions about whether the benefits of AI-
+enabled organizational forms will accrue evenly, given persistent disparities in entrepreneurial finance
+by gender and race (Ewens, 2022; Marx, Wang, and Yimfor, 2025). Evidence suggests that women
+9Revelio Labs computes prestige scores using an expectation-maximization model that alternates between user and
+institution prestige updates, with world university rankings as priors. Prestige values are continuous between −1
+and 1, weighted by seniority and tenure. See https://www.data-dictionary.reveliolabs.com/methodology.html
+for full methodology.
+19
+adopt generative AI at lower rates than men across multiple contexts, even after controlling for
+occupation, education, and technical skill (Otis et al., 2026). If AI tools accelerate learning for
+those who use them, differential adoption rates may translate into widening performance gaps—
+both for individual workers within firms and for the entrepreneurs who found them.
+5
+Exploring AI Product and AI Process
+The results so far establish that AI-native firms are smaller, flatter, more technically concentrated,
+and more capital-efficient than non-AI startups in the same industry and cohort. But these patterns
+alone do not tell us why AI startups are organized differently. As discussed in Section 2, we note
+that two primary channels could account for these patterns: workers using AI tools to do their
+jobs more productively (the process channel), and AI capabilities embedded directly into the firm’s
+product (the product channel). In this section we measure each channel separately and explore how
+each accounts for the organizational differences we documented above.
+5.1
+Measuring AI in a Firm’s Product and Processes
+To quantitatively measure the product channel, we begin by classifying how founders describe the
+role of AI in their businesses. To do so, we built an inductive classification of the descriptions
+founders post of their startup on YC’s startup directory platform. To generate the classification,
+we first drew a random sample of 40 AI-tagged startup descriptions and read them qualitatively,
+identifying recurring patterns in how AI enters the product. We formalized those patterns into
+four categories and then used an LLM to apply the schema to the 990 AI-tagged YC startups (see
+Appendix for the full methodology and prompt). Figure 7 presents the resulting distribution of
+AI-tagged startups, and Table 7 provides concrete examples from each category. For the regression-
+based AI Product measure we use below, we re-apply the same schema to the full YC sample so AI
+and non-AI firms are coded symmetrically.
+The classification captures different ways that startups embed AI into the product. The largest
+category, autonomous workflow products (43\%), includes startups whose products use AI to perform
+tasks or roles that previously required human labor. Artisan (W24) builds AI sales representatives
+that discover leads, research prospects, and write personalized emails. Aurelian (S22) deploys AI
+phone operators that triage 911 calls. These products place AI directly in the workflow, allowing the
+product itself to perform work that would otherwise require salespeople or operators. The startup
+20
+can offer the service without building a large internal organization to deliver the underlying work
+itself.
+The second category, expert augmentation products (24\%), includes startups whose products
+use AI to extend a professional’s existing workflow. Tower (W24) helps lawyers stay organized and
+close deals faster. Medium Biosciences (S21) uses AI to design therapeutic proteins, augmenting
+biologists in drug development. Here, AI does not replace the expert role outright. Instead, the
+product embeds analytic, generative, or search capabilities that expand what expert users can do.
+This also moves productive capability into the product: rather than hiring large internal teams of
+lawyers or scientists to provide expert services directly, the startup builds a product that gives users
+some of those capabilities themselves.
+These first two categories are clear examples of startups embedding AI into their products.
+Whether the startup is augmenting or automating work, in both cases the company is building a
+product around AI. Taken together, we find that about 67\% of YC startups tagged as AI-native are
+clearly embedding AI directly into the products they sell.
+The third category, AI infrastructure products (15\%), includes firms whose products help others
+build, deploy, or use AI. Exa (S21) offers an AI-powered search engine using embeddings and neural
+retrieval, and Roboflow (S20) provides a computer vision platform for deploying object detection
+models. These firms embed AI into tools that become part of other companies’ production systems.
+The product does not always automate an end-user workflow directly, as in autonomous workflow
+products, or augment a specific professional role, as in expert augmentation products. Instead, some
+packages model capabilities, data pipelines, or deployment tools into infrastructure that other firms
+can build on. Thus, some of these firms clearly embed AI in the products they sell while others sell
+infrastructure that complements the use of AI (e.g., monitoring and analytics tools).
+Finally, the remaining 18\% (“Other”) includes startups where AI’s role is present but harder to
+classify, including games, robotics platforms, or firms whose descriptions do not clearly specify how
+AI is embedded in the product.
+To create a proxy for the process channel, we operationalize internal AI tool use directly from
+firms’ job posting text. For each firm in our sample we collect all Revelio Labs postings dated
+through January 2025—the same window over which we measure employment—and drop scrapes
+flagged as staffing-firm aggregator listings, instead focusing on postings directly listed by the hiring
+firm. We then code a firm-level binary indicator, AI Process, equal to one if any of the firm’s
+non-staffing postings names a specific Gen AI assistance tool from a dictionary of 33 AI tools. The
+21
+dictionary includes general-purpose AI assistants (e.g., ChatGPT, Claude), coding agents (e.g.,
+GitHub Copilot, Cursor), creative tools (e.g., Midjourney, Adobe Firefly) and workflow products
+(e.g., Granola, Mem.ai). The dictionary was assembled by reading the corpus of job postings and
+noting listed AI tools along with tools included in the Stack Overflow 2024 Developer Survey of
+AI-tools section. The full dictionary and construction details are listed in Appendix A.3.
+Two example postings from AI-tagged YC firms illustrate why focusing on tools, rather than
+generic mentions of “AI,” is more likely to capture process-focused uses. The first, from Overlap
+(S24), a multimodal-AI firm hiring a Product Engineer, is saturated with AI language—“multimodal
+AI agents,” “Video Marketing AI,” “AI-powered products,” “AI-driven media”—but every reference
+describes the AI features that will be built into the product. No specific AI tool, model, or assistant
+from our dictionary is named, so AI Process equals zero. The second, from Fintool (W23) hiring a
+Full-Stack Engineer, contains a clean process-channel signal: “We are heavy users of V0, Cursor and
+other AI tools.” That sentence describes the firm’s workers using specific named AI tools to ship
+product features, and it matches the V0 and Cursor patterns in our dictionary, so AI Process equals
+one. The channel regressions use the 1,684 firms with at least one non-staffing posting through
+January 2025; the log, hierarchy, manager-share, and base-rate analyses further require at least one
+Revelio-matched employee, leaving 1,666 firms (467 AI-tagged and 1,199 non-AI startups).
+Within this sample of 1,666 firms with at least one job posting, the product channel is present
+at 69.8\% of AI-tagged firms versus 16.1\% of non-AI firms, while the process channel is present at
+13.5\% of AI-tagged firms versus 5.2\% of non-AI firms—a roughly 2.6× relative gap on the process
+side, though with substantially smaller absolute levels than the product channel. These lower levels
+likely reflect both the nascency of AI assistance tooling over our sample window and th
+\end{document}

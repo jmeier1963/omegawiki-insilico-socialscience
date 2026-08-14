@@ -20,6 +20,11 @@ date_updated: 2026-06-20
 
 ## Recent work
 
+- [[why-ai-replaced-software-engineers-will]]
+- [[ai-wont-make-legal-services-cheaper]]
+- [[position-there-futures-benchmark-driven-ai]] — co-author; ICML 2026 position paper arguing benchmark-centered AI evaluation imposes an "exaptation tax" on exploratory work, most acute for alignment/safety's "such-that problem."
+- [[open-world-evaluations-measuring-frontier-ai]] — co-author; introduces open-world evaluations and the CRUX project, debuting with an autonomous iOS app deployment case study.
+- [[ai-agents-conduct-open-ended-ai]] — co-author; CRUX shadow evaluations find frontier agents do the engineering of AI research unaided but are rejected outright by the original authors of the questions they shadow.
 The "AI as Normal Technology" essay series (with Sayash Kapoor), applying a diffusion/bottleneck lens to professions.
 
 ## Collaborators

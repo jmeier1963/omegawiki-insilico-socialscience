@@ -3,7 +3,7 @@ title: "AI as Normal Technology"
 aliases: ["normal technology framework", "AI normal technology", "capability vs impact gap", "decide-execute-deliver sandwich", "adoption bottlenecks"]
 tags: [ai-economics, labor-market, automation, ai-and-society, ai-policy]
 maturity: emerging
-key_papers: [why-ai-replaced-software-engineers-will, ai-wont-make-legal-services-cheaper]
+key_papers: [why-ai-replaced-software-engineers-will, ai-wont-make-legal-services-cheaper, artificial-intelligence-lessons-history]
 first_introduced: "2025"
 date_updated: 2026-06-20
 related_concepts: [human-ai-division-labor-agentic-work, ai-science-adoption-gap]

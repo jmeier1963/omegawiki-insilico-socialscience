@@ -74,5 +74,5 @@ A sharply focused policy brief that makes a compelling case for measurement urge
 ## Related
 
 - [[ai-satellite-accounts]]
-- [[ai-economy-quality-adjusted-growth]]
+- [[ai-economy-quality-adjusted-growth-invisible]]
 - [[anton-korinek]]

@@ -25,10 +25,10 @@ Validation — comparing synthetic responses to real survey data and to behavior
 
 ## Seminal works
 
-- [[argyle-out-of-one-many]] — foundational validation
-- [[homo-silicus-horton]] — economic behavior validation
-- [[synthetic-survey-chile]] — large-scale population survey
-- [[validating-llm-simulations-behavioral-evidence]] — behavioral validity
+- [[out-one-many-using-language-models]] — foundational validation
+- [[homo-silicus]] — economic behavior validation
+- synthetic survey (Chile) — large-scale population survey
+- validating LLM simulations (behavioral evidence) — behavioral validity
 - [[deliberationbench-normative-benchmark-influence-large-language]] — 2026, normative benchmark using deliberative polling as standard for LLM influence on real users
 
 ## SOTA tracker

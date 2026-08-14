@@ -19,6 +19,7 @@ date_updated: 2026-06-04
 
 ## Recent work
 
+- [[automated-alignment-harder-than-you-think]]
 Researcher at UK AI Security Institute, working on alignment evaluation and the risks of automated alignment research programs.
 
 ## Collaborators

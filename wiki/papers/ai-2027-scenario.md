@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AI scenario, adversarial misalignment, OpenBrain, AI race, superintelligence, power seizure, 2027 forecast]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [ai-agents-conduct-open-ended-ai]
 ---
 
 ## Problem

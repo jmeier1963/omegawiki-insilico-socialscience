@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AlphaEvolve, evolutionary coding, algorithmic discovery, DeepMind, data center scheduling, hardware circuit]
 domain: "ML Systems"
 code_url: ""
-cited_by: []
+cited_by: [from-agi-to-asi, ai-agents-conduct-open-ended-ai]
 ---
 
 ## Problem
@@ -57,6 +57,7 @@ The algorithmic improvements are modest but verifiable — that's what distingui
 
 ## Related
 
+- [[ai-mathematical-discovery]]
 - [[jumper-alphafold-protein-structure]]
 - [[degrave-tokamak-plasma-deep-rl]]
 - [[single-minus-gluon-tree-amplitudes-nonzero]]

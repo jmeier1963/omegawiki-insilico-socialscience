@@ -49,5 +49,5 @@ A philosophically grounded contribution to AI governance debates from a German b
 
 ## Related
 
-- supports [[digitalization-undermines-social-consensus-legitimacy]]
+- supports [[digitalization-undermines-social-consensus-legitimacy-collective]]
 - [[bildung]]

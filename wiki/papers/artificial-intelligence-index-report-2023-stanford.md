@@ -37,4 +37,4 @@ Key historical reference for the ChatGPT-era AI inflection point. The first AI p
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]

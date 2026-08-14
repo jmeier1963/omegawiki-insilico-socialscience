@@ -56,6 +56,6 @@ Methodologically elegant: rather than asking "can LLMs replace humans?" it asks 
 ## Related
 
 - [[silicon-sampling]]
-- supports: [[mixed-subjects-design-llm-human-valid-causal-estimates]]
+- supports: [[mixed-subjects-designs-combining-llm-predictions]]
 - [[benchmarking-distributional-alignment-large-language-models]]
 - [[llms-behavioral-surrogates-require-statistical-calibration]]

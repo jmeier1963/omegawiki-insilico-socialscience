@@ -42,6 +42,6 @@ The definitive annual AI statistics reference. The 2025 inference cost analysis 
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]
 - [[frontier-ai-compute-governance]]
 - [[software-intelligence-explosion]]

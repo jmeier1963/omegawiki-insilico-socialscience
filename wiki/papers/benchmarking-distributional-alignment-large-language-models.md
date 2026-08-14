@@ -57,7 +57,7 @@ An important methodological contribution. The finding that log-probabilities und
 
 ## Related
 
-- supports: [[log-probability-methods-underestimate-llm-distributional-alignment]]
+- supports: [[log-probability-methods-systematically-underestimate-llm]]
 - [[silicon-sampling]]
 - [[algorithmic-fidelity]]
 - [[opinionqa]]

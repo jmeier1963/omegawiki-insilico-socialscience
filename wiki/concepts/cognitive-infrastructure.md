@@ -3,7 +3,7 @@ title: "Cognitive Infrastructure"
 aliases: ["cognitive infrastructures", "semantic infrastructure", "System 0", "AI cognitive infrastructure", "epistemic infrastructure"]
 tags: [cognitive-infrastructure, epistemic-agency, distributed-cognition, infrastructure-theory, ai-effects]
 maturity: emerging
-key_papers: [invisible-architectures-thought-toward-new-science]
+key_papers: [invisible-architectures-thought-toward-new-science, you-function, engineering-collective-attention-age-artificial-intelligence, obsolescence-without-hostility-optimization-uniformity-erosion]
 first_introduced: "2024"
 date_updated: 2026-05-04
 related_concepts: [collective-attention]

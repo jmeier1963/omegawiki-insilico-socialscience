@@ -50,6 +50,7 @@ Useful as a cultural-criticism data point on the **ideology** layer of AI power 
 
 ## Related
 
+- [[sharing-ai-prosperity]]
 - [[silicon-valley-transhumanism]]
 - [[gradual-disempowerment]]
 - supports: [[ai-moral-economic-direction-concentrated-transhumanist]]

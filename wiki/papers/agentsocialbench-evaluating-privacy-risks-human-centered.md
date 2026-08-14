@@ -55,5 +55,5 @@ An important safety contribution. The abstraction paradox is a counter-intuitive
 
 ## Related
 
-- supports: [[llm-agents-leak-private-information-despite-instructions]]
+- supports: [[llm-agents-leak-private-information-multi]]
 - [[llm-powered-agent-architecture]]

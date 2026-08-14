@@ -56,7 +56,7 @@ A creative privacy-preserving approach to persona simulation. The unigraph frame
 
 ## Related
 
-- supports: [[meso-level-group-personas-preserve-fidelity-privacy]]
+- supports: [[meso-level-group-personas-preserve-behavioral]]
 - [[meso-level-group-persona-synthesis]]
 - [[persona-conditioning]]
 - [[silicon-sampling]]

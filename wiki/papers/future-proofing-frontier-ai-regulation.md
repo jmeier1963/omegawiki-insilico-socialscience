@@ -51,5 +51,6 @@ Practical contribution to AI governance. Scharre is a credible voice (former DoD
 
 ## Related
 
-- supports: [[frontier-ai-compute-thresholds-require-dynamic-adjustment]]
+- [[frontier-ai-compute-governance]]
+- supports: [[frontier-ai-compute-thresholds-require-dynamic]]
 - [[ai-race-dynamics]]

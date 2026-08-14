@@ -1,0 +1,475 @@
+\section{Shadow evaluations: A new method for measuring progress towards AI
+R\&D automation}
+\label{sec:shadow-evaluations}
+
+Evaluating automated AI research requires a way to measure the quality of the research that agents produce. Most existing evaluations use one of two approaches: evaluations on verifiable tasks or blind review. In evaluations on verifiable tasks, the agent improves a fixed metric, and an automatic verifier scores the result. There are many examples of such evaluations: RE-Bench~\citep{rebench} asks agents to solve research-engineering problems, MLE-Bench~\citep{mlebench} asks them to compete in Kaggle competitions, and PostTrainBench asks them to post-train small language models against Q\&A benchmarks~\citep{posttrainbench}. \Cref{tab:prior-work} surveys some attempts at such evaluations. Automatic verification makes these evaluations objective, repeatable, and cheap to scale. However, it restricts the evaluations to tasks where success can be measured as a single number.
+
+A smaller set of projects evaluates fully autonomous research and grades it with blind peer review. Sakana's AI Scientist wrote a paper accepted to an ICLR 2025 workshop~\citep{aiscientist2}, and Intology's Zochi produced a paper accepted to the main proceedings of ACL 2025~\citep{zochi}, with human involvement limited to manuscript preparation. These projects test agents on open-ended research tasks, but peer review often cannot support the conclusions drawn from it. 
+
+In fact, peer review at AI conferences was a weak measure of research quality well before the rise in AI-generated submissions and reviews. Submissions have grown exponentially, and this growth has degraded the match between papers and qualified reviewers: conferences rely on automated expertise matching, leading to reviews being written by researchers who are inexperienced or non-experts on the research they are evaluating~\citep{peerreviewchallenges}. Even well-matched reviewers are not expected to check the technical details of a paper; NeurIPS instructs reviewers to examine the core arguments but not to verify every line~\citep{neurips2026reviewerguidelines}. The resulting decisions are highly stochastic. NeurIPS tested this directly by running its review process with two different committees on the same papers, in 2014 and 2021~\citep{peerreview2014,peerreview2021}. They found that half of the variation in review scores was subjective, the two committees disagreed on about a quarter of accept/reject decisions, and about half of the accepted papers would have been rejected if the process were rerun. We expect the challenges of peer review to be exacerbated as a result of the increasing number of AI-generated submissions.
+
+Another challenge of the blind review paradigm for evaluations of AI R\&D automation is that automatically generating a paper is inexpensive. A developer testing their automatically generated AI research papers using blind review can submit many papers, report the acceptances, and never disclose the failed attempts, so an acceptance says little about how reliably a system produces good research. Blind review also reduces the scrutiny each paper receives: given the challenges with AI conference reviewing, a reviewer with a few hours and no stake in the question might not establish whether an AI-generated finding is correct, novel, and useful.
+
+
+In this paper, we develop a third method that combines open-ended tasks with
+in-depth expert grading. We take the central research question from a research
+paper that is not yet public, give it to a well-resourced frontier agent, and
+ask the paper's original authors to review the agent's output as they would a
+conference submission. We call these shadow evaluations, since they task
+agents with solving the same research questions as the original authors of a
+paper, without access to the final paper.
+
+This research design addresses many of the concerns with verifiable
+evaluations and blind review evaluations. The research questions are based on
+actual conference submissions, so they can be measured against the quality of
+top conference submissions. Since the findings are not on the web or in the
+agent's training data, the evaluation is uncontaminated. And since the authors
+spent months answering the same questions as are provided to the agent, they
+can judge in detail whether the agent made progress; blind reviewers might
+lack the expertise to adequately assess the paper. Shadow evaluations are also repeatable. New
+unpublished papers with willing authors can serve as new test cases, and the
+design carries over to stronger models and scaffolds as they are released.
+
+This design also allows us to test a mechanism that informs many forecasts of
+recursive self-improvement: AI agents accelerate AI research because
+researchers delegate entire projects to agents and judge whether the returned
+results advance their work. Our evaluation closely matches this model, since
+authors handed an agent their own research question and closely evaluated the
+resulting output.
+
+While shadow evaluations allow us to assess AI R\&D automation in a new way,
+they have their own shortcomings. Non-blind reviewing might come with reviewer
+biases, since reviewers have already answered the question with a specific
+method and also know that the paper was written by AI agents. Our design also
+has the limitations inherent to open-world evaluations~\citep{openworldevals}. In-depth grading
+requires experts on the question and days on the review, so we could study
+only two papers. Such evaluations also require judgment at every step, from
+selecting papers to designing the scaffold to interpreting the logs, so our
+choices and biases could shape the results.
+
+These limitations follow from the same design choices that produce the
+method's strengths, and we think such evaluations give us a new method of
+measuring constructs that verifier-scored benchmarks and blind reviews cannot
+assess. We made our best attempts to mitigate these concerns by documenting
+every human intervention, repeating one experiment with a different model and
+scaffold, and releasing the expert reviews, survey responses, agent
+repositories, and run logs for transparency. Finally, the three methods for
+evaluating AI R\&D automation might yield systematically different insights
+about the rate of progress. We do not claim that expert-driven open-world
+evaluations are strictly better than verifiable evaluations or blind review;
+we view them as complementary, since they evaluate different aspects of AI
+R\&D progress.
+
+% Previous row-matched longtable layout, retained for reference.
+% {\small
+% \renewcommand{\arraystretch}{1.12}
+% \begin{longtable}{@{}P{0.4\textwidth}P{0.6\textwidth}@{}}
+% \caption{Strengths and limitations of shadow evaluations. Shadow evaluations
+% involve conducting open-ended, expert-graded evaluations of AI R\&D
+% automation. They allow us to test agents on ambiguous, long-horizon AI R\&D
+% tasks. But they also come with shortcomings such as the small sample size, the
+% lack of an objective ground truth, and researcher biases. The table is roughly
+% ordered to emphasize the trade-offs between strengths and limitations.}
+% \label{tab:shadow-eval-strengths-limitations}\\
+% \toprule
+% \textbf{Strengths} & \textbf{Limitations} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Strengths} & \textbf{Limitations} \\
+% \midrule
+% \endhead
+% \bottomrule
+% \endfoot
+
+% \textbf{Open-endedness.} We test agents on open-ended research questions. This
+% is in contrast to most prior work on AI R\&D automation, which focuses on
+% verifiable evaluations (see \cref{app:prior-work}).
+% &
+% \textbf{Small sample size.} A downside of running open-ended evaluations is the
+% small sample size. Our results in the paper are drawn from a total of five runs
+% (two pilot runs without reasoning, two main runs with extra-high reasoning,
+% all using OpenClaw and Opus 4.8, and one robustness check with Codex and
+% GPT-5.6 Sol Ultra).
+
+% \medskip
+% While we found a consistent set of failure modes across these runs, the sample
+% size is still much smaller compared to benchmark evaluations, which comprise
+% dozens of tasks. In follow-up studies, we plan to conduct these experiments on
+% a larger set of papers.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{Expert grading.} The papers produced by the agents were reviewed by
+% the original authors, who had deep expertise in the research area.
+% &
+% \textbf{Non-blind reviewing.} There were two parts of the reviewing process
+% that were different compared to typical reviews at an AI conference: the
+% reviewers had themselves authored NeurIPS submissions to answer the research
+% questions we gave agents, and the reviewers knew the papers were written by
+% AI. Both of these could have made reviewers behave differently compared to a
+% typical NeurIPS reviewer.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{In-depth qualitative evaluation.} We analyzed the agents' full
+% trajectories to understand why they failed. This allowed us to uncover
+% interesting agent behaviors, such as how often they violated our instructions,
+% and what failure modes recurred across runs.
+% &
+% \textbf{Question selection and researcher degrees of freedom.} We chose papers
+% that represent empirical research at the level of top AI conferences. That
+% said, we conducted this study with just two papers, and our findings might not
+% generalize to other kinds of AI research, such as incremental questions that
+% require less creativity.
+% %
+% We also do not know how much of frontier AI development depends on AI open-ended research. Most successes in \textcolor{red}{Table TODO} come from hill-climbing on well-specified objectives; if real-world capability gains in AI R\&D come from such work, agents' weakness at open-ended research would not affect AI R\&D automation. But if AI progress requires progress on open-ended questions, our research would be more relevant. Evaluating which of these two domains we are in would be important to understand and measure progress towards AI R\&D automation. As the evidence for this gap strengthens, it would become more important to understand which open-ended research directions are on the critical path for frontier AI development.
+
+% % More generally, open-world evaluations give
+% % researchers many degrees of freedom, and our biases could affect how we
+% % designed the experiments and interpreted the results. We discuss potential
+% % biases in closing.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{Uncontaminated tasks.} We chose research questions from unpublished
+% NeurIPS submissions, so the agents could not memorize correct answers from
+% their training data or find them on the web.
+% &
+% \textbf{Evaluation awareness.} We explicitly informed the agent it was being
+% evaluated against a NeurIPS review rubric, which could have affected its
+% behavior. We disclosed this because concealment is increasingly infeasible
+% against capable models, evaluation awareness mainly threatens alignment
+% evaluations (where the construct being evaluated is propensity rather than
+% capability), and this disclosure let us state the evaluation's parameters
+% precisely enough to avoid under-eliciting the agent. We discussed our decision
+% to address evaluation awareness in more detail in our paper introducing
+% open-world evaluations~\citep{openworldevals}.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{Avoid overfitting the scaffold to the task.} We chose general-purpose
+% scaffolds such as OpenClaw and Codex instead of closely designing the scaffold
+% to solve the task. While we made modifications to the scaffold, these were
+% limited to interventions that would apply to AI research broadly. This allows
+% us to test if frontier models can solve a range of AI tasks, rather than
+% answering one specific research question.
+% &
+% \textbf{Scaffold and model limitations.} In survey responses, many coauthors
+% thought that a better scaffold or model might improve the agents' performance.
+% That said, in a robustness check with Codex and GPT-5.6 Sol Ultra, our findings
+% were reproduced, with the agent suffering from similar failure modes. In follow-up
+% experiments, we plan to test the model with more optimized scaffolds and better
+% models.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{Collaborator survey.} We collected predictions from twelve coauthors
+% before running the experiments in order to characterize the extent of disagreement and uncertainty in the results. We also share the priors of the core
+% team, work with a group of collaborators with diverse views about the future
+% of AI R\&D automation, and explicitly surface the disagreements that arose.
+% &
+% \textbf{Interpretive ambiguity.} Our coauthors disagree about whether the
+% failures we observed reflect a lack of creativity, poor judgment, or epistemic
+% lock-in. This reflects the lack of clarity and consensus around what these
+% constructs mean, but also allows us to surface disagreements between experts.
+% \\
+% \addlinespace[5pt]
+
+% \textbf{Transparency.} We release the expert reviews, survey responses, agent
+% repositories, and run logs alongside this paper.
+% &
+% \\
+% \end{longtable}
+% % \par}
+
+% {\small
+% \captionof{table}{Strengths and limitations of shadow evaluations. Shadow
+% evaluations involve conducting open-ended, expert-graded evaluations of AI
+% R\&D automation. They allow us to test agents on ambiguous, long-horizon AI
+% R\&D tasks. But they also come with shortcomings such as the small sample size,
+% the lack of an objective ground truth, and researcher biases. The table is
+% roughly ordered to emphasize the trade-offs between strengths and limitations.}
+% \label{tab:shadow-eval-strengths-limitations}
+% \nopagebreak[4]
+% \vspace{4pt}
+% \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l@{}}
+% \toprule
+% \end{tabular*}
+% \vspace{-\baselineskip}
+% % \vspace{5pt}
+% \columnratio{0.34}
+% \begin{paracol}{2}
+% \raggedright
+% \textbf{Strengths}
+% \vspace{4pt}
+% \hrule
+
+% \medskip
+% \textbf{Open-endedness.} We test agents on open-ended research questions. This
+% is in contrast to most prior work on AI R\&D automation, which focuses on
+% verifiable evaluations (see \cref{app:prior-work-appendix}).
+
+% \medskip
+% \textbf{Expert grading.} The papers produced by the agents were reviewed by
+% the original authors, who had deep expertise in the research area.
+
+% \medskip
+% \textbf{In-depth qualitative evaluation.} We analyzed the agents' full
+% trajectories to understand why they failed. This allowed us to uncover
+% interesting agent behaviors, such as how often they violated our instructions,
+% and what failure modes recurred across runs.
+
+% \medskip
+% \textbf{Uncontaminated tasks.} We chose research questions from unpublished
+% NeurIPS submissions, so the agents could not memorize correct answers from
+% their training data or find them on the web.
+
+% \medskip
+% \textbf{Avoid overfitting the scaffold to the task.} We chose general-purpose
+% scaffolds such as OpenClaw and Codex instead of closely designing the scaffold
+% to solve the task. While we made modifications to the scaffold, these were
+% limited to interventions that would apply to AI research broadly. This allows
+% us to test if frontier models can solve a range of AI tasks, rather than
+% answering one specific research question.
+
+% \medskip
+% \textbf{Collaborator survey.} We collected predictions from twelve coauthors
+% before running the experiments in order to characterize the extent of
+% disagreement and uncertainty in the results. We also share the priors of the
+% core team, work with a group of collaborators with diverse views about the
+% future of AI R\&D automation, and explicitly surface the disagreements that
+% arose.
+
+% \medskip
+% \textbf{Transparency.} We release the expert reviews, survey responses, agent repositories, and run logs alongside this paper, allowing readers to inspect the evidence underlying our findings and interpretations.
+
+% \switchcolumn
+% \raggedright
+% \textbf{Limitations}
+% \vspace{7pt}
+% \hrule
+
+% \medskip
+% \textbf{Small sample size.} A downside of running open-ended evaluations is the
+% small sample size. Our results in the paper are drawn from a total of five runs
+% (two pilot runs without reasoning, two main runs with extra-high reasoning,
+% all using OpenClaw and Opus 4.8, and one robustness check with Codex and
+% GPT-5.6 Sol Ultra).
+
+% While we found a consistent set of failure modes across these runs, the sample
+% size is still much smaller compared to benchmark evaluations, which comprise
+% dozens of tasks. In follow-up studies, we plan to conduct these experiments on
+% a larger set of papers.
+
+% \medskip
+% \textbf{Non-blind reviewing.} There were two parts of the reviewing process
+% that were different compared to typical reviews at an AI conference: the
+% reviewers had themselves authored NeurIPS submissions to answer the research
+% questions we gave agents, and the reviewers knew the papers were written by
+% AI. Both of these could have made reviewers behave differently compared to a
+% typical NeurIPS reviewer.
+
+% \medskip
+% \textbf{Question selection and researcher degrees of freedom.} We chose papers
+% that represent empirical research at the level of top AI conferences. That
+% said, we conducted this study with just two papers, and our findings might not
+% generalize to other kinds of AI research, such as incremental questions that
+% require less creativity.
+
+% We also do not know how much of frontier AI development depends on AI
+% open-ended research. Most successes in \Cref{tab:prior-work-appendix} come from
+% hill-climbing on well-specified objectives; if real-world capability gains in
+% AI R\&D come from such work, agents' weakness at open-ended research would not
+% affect AI R\&D automation. But if AI progress requires progress on open-ended
+% questions, our research would be more relevant. Evaluating which of these two
+% domains we are in would be important to understand and measure progress
+% towards AI R\&D automation. As the evidence for this gap strengthens, it would
+% become more important to understand which open-ended research directions are
+% on the critical path for frontier AI development.
+
+% \medskip
+% \textbf{Evaluation awareness.} We explicitly informed the agent it was being
+% evaluated against a NeurIPS review rubric, which could have affected its
+% behavior. We disclosed this because concealment is increasingly infeasible
+% against capable models, evaluation awareness mainly threatens alignment
+% evaluations (where the construct being evaluated is propensity rather than
+% capability), and this disclosure let us state the evaluation's parameters
+% precisely enough to avoid under-eliciting the agent. We discussed our decision
+% to address evaluation awareness in more detail in our paper introducing
+% open-world evaluations~\citep{openworldevals}.
+
+% \medskip
+% \textbf{Scaffold and model limitations.} In survey responses, many coauthors
+% thought that a better scaffold or model might improve the agents' performance.
+% That said, in a robustness check we conducted with Codex and GPT-5.6 Sol Ultra, our findings
+% were reproduced, with the agent suffering from similar failure modes. In
+% follow-up experiments, we plan to test the model with more optimized scaffolds
+% and better models.
+
+% \medskip
+% \textbf{Interpretive ambiguity.} Our coauthors disagree about whether the
+% failures we observed reflect a lack of creativity, poor judgment, or epistemic
+% lock-in. This reflects the lack of clarity and consensus around what these
+% constructs mean, but also allows us to surface disagreements between experts.
+% \end{paracol}
+% \vspace{3pt}
+% \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l@{}}
+% \bottomrule
+% \end{tabular*}
+% \vspace{-\baselineskip}
+% \par}
+
+
+\section{The task and the research setup}
+\label{sec:setup}
+
+Our experiment tests whether well-resourced frontier AI agents can produce
+novel AI research. Answering this rigorously requires real, uncontaminated
+research questions that the agent could not memorize from its training data or
+find online. To satisfy these requirements, we rely on high-quality AI research that
+was not public at the time we conducted the experiments.
+
+{
+\begin{table}[!t]
+\small
+\captionof{table}{Strengths and limitations of our shadow evaluations for measuring progress towards AI R\&D automation. Shadow
+evaluations involve conducting open-ended, expert-graded evaluations of AI
+R\&D automation. They allow us to test agents on ambiguous, long-horizon AI
+R\&D tasks. But they have shortcomings such as the small sample size,
+the lack of an objective ground truth, and researcher biases. The table is
+roughly ordered to emphasize the trade-offs between strengths and limitations.}
+\label{tab:shadow-eval-strengths-limitations}
+\nopagebreak[4]
+\vspace{4pt}
+\noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}%
+    >{\raggedright\arraybackslash}p{0.43\linewidth}%
+    >{\raggedright\arraybackslash}p{0.57\linewidth}%
+    @{}}
+\toprule
+\textbf{Strengths} & \textbf{Limitations} \\
+\midrule
+\textbf{Open-endedness.} We test agents on open-ended research questions, in
+contrast to most prior work, which focuses on verifiable evaluations (see
+\cref{app:prior-work-appendix}). &
+\textbf{Small sample size.} A downside of open-ended evaluations is the small
+sample size: our results come from five runs---two pilot runs without
+reasoning and two main runs with extra-high reasoning, all using OpenClaw and
+Opus 4.8, plus a robustness check with Codex and GPT-5.6 Sol Ultra. Failure modes were
+consistent across runs, but the sample is much smaller than benchmark
+evaluations, which comprise dozens of tasks. \\
+\addlinespace[6pt]
+\textbf{Expert grading.} The agents' papers were reviewed by the original
+authors, who had deep expertise in the research area. &
+\textbf{Non-blind reviewing.} The reviewers had themselves authored NeurIPS
+submissions to answer the research questions we gave agents, and they knew
+the papers were written by AI. Both of these could have made reviewers behave differently compared to a typical NeurIPS reviewer.  \\
+\addlinespace[6pt]
+\textbf{Uncontaminated tasks.} We chose research questions from unpublished
+NeurIPS submissions, so the agents could not memorize correct answers from
+training data or find them on the web. &
+\textbf{Question selection and researcher degrees of freedom.} We studied
+just two papers, chosen to represent empirical research at the level of top
+AI conferences; our findings might not generalize to other kinds of AI
+research, such as incremental questions requiring less creativity. We also do
+not know how much of frontier AI development depends on open-ended research
+rather than hill-climbing on well-specified objectives
+(\Cref{tab:prior-work-appendix}). \\
+\addlinespace[6pt]
+\textbf{Avoid overfitting the scaffold to the task.} We chose general-purpose
+scaffolds (OpenClaw and Codex) rather than designing the scaffold around the task,
+limiting our modifications to interventions that apply to AI research
+broadly. &
+\textbf{Scaffold and model limitations.} In survey responses, many coauthors
+thought a better scaffold or model might improve the agents' performance; our
+robustness check with Codex and GPT-5.6 Sol Ultra nonetheless reproduced our findings,
+with similar failure modes. In follow-up experiments, we plan to test better models and more optimized scaffolds.\\
+\addlinespace[6pt]
+\textbf{In-depth qualitative evaluation.} We analyzed the agents' full
+trajectories to understand why they failed, uncovering behaviors such as
+instruction violations and recurring failure modes. &
+\textbf{Evaluation awareness.} We explicitly told the agent it was being
+evaluated against a NeurIPS review rubric, which could have affected its
+behavior. Concealment is increasingly infeasible against capable models, and
+disclosure let us specify the evaluation precisely enough to avoid
+under-eliciting the agent~\citep{openworldevals}. \\
+\addlinespace[6pt]
+\textbf{Collaborator survey.} We collected predictions from twelve coauthors
+before running the experiments to characterize disagreement and uncertainty
+in the results, and we share the priors of the core team. &
+\textbf{Interpretive ambiguity.} Our coauthors disagree about whether the
+failures we observed reflect a lack of creativity, poor judgment, or
+epistemic lock-in. This reflects the lack of consensus around what these
+constructs mean. \\
+\addlinespace[6pt]
+\textbf{Transparency.} We release the expert reviews, survey responses, agent
+repositories, and run logs, allowing readers to inspect the evidence
+underlying our findings. & \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\par}
+
+
+For the first research question, coauthors David Africa and Konstantinos
+Voudouris at the UK AI Security Institute helped set up the experiment and
+review the agent's submission. The research question is about the structure
+and controllability of LLM personas; the other authors are Luke Baines, Anton
+Gonzalvez Hawthorne, Mariia Koroliuk, Irakli Shalibashvili, and Cl\'ement Dumas.
+This paper has since been made public~\citep{personas}; we refer to this as the
+Personas paper.
+
+For the second research question, we collaborated with Viet Nguyen at the
+University of Toronto. The other authors are Herman Bergstr\"om, Stephan
+Rabanser, and Rahul G.~Krishnan. The research problem is to design a
+distribution-shift detector for tabular foundation models. We refer to this as
+the TabPFN paper. Detailed research questions and relevant context for both 
+papers are provided in Appendix~\ref{app:research-questions}.
+
+The authors were involved at three stages. They formulated the research
+questions for the agent, without hinting at promising paths. They helped us set
+resource budgets that would be sufficient to address their research question
+substantively. And they graded the finished papers as if reviewing for a
+top-tier AI conference. While they were not blind reviewers, they were in a
+unique position to judge how effectively an agent answered their question
+given their expertise on the topic.
+
+Both experiments ran Claude Opus 4.8 with extra-high reasoning on OpenClaw.
+The OpenClaw agent loop and its coordination with subagents, tools, and GPU
+jobs are summarized in \Cref{fig:scaffold}.
+The agents were given full access to a Linux virtual machine running in AWS.
+They could monitor their own API spend, compute budget for experiments, and
+remaining time. They could delegate work to subagents and keep a running
+research log. They also had access to a subagent that could see only the
+finished PDF and a NeurIPS review template, and was instructed to review the
+paper like a qualified referee. In addition to this AI self-review, we
+instructed the agent to use three external AI reviewing tools: the Stanford
+Agentic Reviewer, the CMU Paper Reviewer, and refine.ink.\footnote{The first
+two review sources are free; the agent used the browser to submit reviews and
+extracted them from its Gmail account. We gave each agent one refine.ink review
+credit, valued at \$60, which it accessed through the API.}
+
+None of our guidance to the agent was specific to either research question.
+We modified the scaffold only when the modification was applicable to machine-learning research generally (i.e., we did not make modifications specific to either research question). We documented every human intervention during
+the runs.
+
+The agent required three interventions during the run. First, we needed to
+modify the scaffold to resolve a bug in the OpenClaw harness that affected
+Anthropic reasoning models. Second, we gave the agents a 24-hour deadline
+extension; at the time of the original deadline, the agents had submitted drafts with a completion report indicating that their self-review was a "Weak Reject" and outlining the next steps they would take if given additional time. Since we were interested in eliciting upper bounds of
+performance, we decided to increase the time limit to allow them to conduct these experiments and update the drafts. Third, the original versions of the
+paper they submitted contained inscrutable writing; we asked them to rewrite
+them to be more accessible.
+
+We also collected predictions from our group of CRUX coauthors before running
+the experiments. We surveyed twelve collaborators who work on AI research,
+evaluation, and AI policy before sharing any results. This allowed us to
+understand respondents' priors, how much uncertainty they had before the
+experiment, and whether they were able to anticipate our main findings.\footnote{One survey respondent did not respond to our open-ended question about failure modes, so a few summaries rely on eleven respondents.} The
+respondents had low confidence in their own predictions, and their predictions varied substantially. Finally, while some of the respondents'
+predictions materialized in our experiments, many of the results we found
+differed from their predictions. We highlight the aggregate survey responses
+alongside each finding below.\footnote{The survey respondents were given full
+details of our scaffold, but were not given either of the research questions we
+used. We asked respondents to fill out the survey from the perspective of
+``what frontier AI agents are capable of as of June 2026.''}

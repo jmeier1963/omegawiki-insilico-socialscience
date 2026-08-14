@@ -21,6 +21,7 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[large-language-models-simulated-economic-agents]]
 - Horton (2025): field experiment on labor-labor substitution under minimum wage in online markets
 - Manning and Horton (2025): calibrated agent mixtures to improve predictive validity of LLM simulations
 

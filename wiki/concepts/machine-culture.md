@@ -3,7 +3,7 @@ title: "Machine Culture"
 aliases: ["machine-mediated culture", "AI cultural evolution", "culture mediated by machines", "machine-generated culture"]
 tags: [machine-culture, cultural-evolution, social-learning, generative-ai, recommender-systems, ai-society]
 maturity: emerging
-key_papers: [machine-culture, living-within-experiment-inherent-labs-manifesto]
+key_papers: [machine-culture, living-within-experiment-inherent-labs-manifesto, ai-bureaucrats-ai-religions-ai-boyfriends]
 first_introduced: "2023"
 date_updated: 2026-05-31
 related_concepts: [silicon-sampling]

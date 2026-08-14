@@ -37,4 +37,4 @@ Useful industry perspective on AI adoption from major management consultancy. Mo
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]

@@ -3,7 +3,7 @@ title: "Deep Learning for Scientific Discovery"
 aliases: ["deep learning materials discovery", "neural network for science", "graph network scientific discovery", "foundation model genomics", "GNoME", "AlphaGenome"]
 tags: [deep-learning, materials-discovery, genomics, scientific-discovery, graph-network]
 maturity: active
-key_papers: [scaling-deep-learning-materials-discovery, advancing-regulatory-variant-effect-prediction-alphagenome, generalized-platform-artificial-intelligence-powered-autonomous]
+key_papers: [scaling-deep-learning-materials-discovery, advancing-regulatory-variant-effect-prediction-alphagenome, generalized-platform-artificial-intelligence-powered-autonomous, labos-ai-xr-co-scientist-sees, jumper-alphafold-protein-structure]
 first_introduced: "2020"
 date_updated: 2026-04-23
 related_concepts: [automated-research-pipeline]

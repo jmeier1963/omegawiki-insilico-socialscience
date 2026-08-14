@@ -1,0 +1,488 @@
+\begin{thebibliography}{82}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kwa et~al.(2025)Kwa, West, Becker, Deng, Garcia, Hasin, Jawhar, Kinniment, Rush, Arx, Bloom, Broadley, Du, Goodrich, Jurkovic, Miles, Nix, Lin, Parikh, Rein, Sato, Wijk, Ziegler, Barnes, and Chan]{metrOrgTimeHorizons}
+Thomas Kwa, Ben West, Joel Becker, Amy Deng, Katharyn Garcia, Max Hasin, Sami Jawhar, Megan Kinniment, Nate Rush, Sydney~Von Arx, Ryan Bloom, Thomas Broadley, Haoxing Du, Brian Goodrich, Nikola Jurkovic, Luke~Harold Miles, Seraphina Nix, Tao Lin, Neev Parikh, David Rein, Lucas Jun~Koba Sato, Hjalmar Wijk, Daniel~M. Ziegler, Elizabeth Barnes, and Lawrence Chan.
+\newblock {Measuring AI Ability to Complete Long Software Tasks}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2503.14499}.
+
+\bibitem[Carlini(2026)]{anthropicComEngineeringBuilding}
+Nicholas Carlini.
+\newblock {Building a C compiler with a team of parallel Claudes}, 2026.
+\newblock URL \url{https://www.anthropic.com/engineering/building-c-compiler}.
+\newblock Anthropic.
+
+\bibitem[Anthropic(2025{\natexlab{a}})]{anthropicComResearchProject2}
+Anthropic.
+\newblock {Project Vend: Phase two}, 2025{\natexlab{a}}.
+\newblock URL \url{https://www.anthropic.com/research/project-vend-2}.
+\newblock Anthropic.
+
+\bibitem[Carlini et~al.(2026)Carlini, Cheng, Lucas, Moore, Nasr, Prabhushankar, Xiao, Angulu, Asher, Bow, Bradwell, Buchanan, Forsythe, Freeman, Gaynor, Ge, Graham, Guru, Lakhani, McNiece, Mehrara, Nichol, Pirzada, Porter, Terzis, and Troy]{redAnthropicCom2026}
+Nicholas Carlini, Newton Cheng, Keane Lucas, Michael Moore, Milad Nasr, Vinay Prabhushankar, Winnie Xiao, Hakeem Angulu, Evyatar~Ben Asher, Jackie Bow, Keir Bradwell, Ben Buchanan, David Forsythe, Daniel Freeman, Alex Gaynor, Xinyang Ge, Logan Graham, Kyla Guru, Hasnain Lakhani, Matt McNiece, Mojtaba Mehrara, Renee Nichol, Adnan Pirzada, Sophia Porter, Andreas Terzis, and Kevin Troy.
+\newblock {Assessing Claude Mythos Preview's cybersecurity capabilities}, 2026.
+\newblock URL \url{https://red.anthropic.com/2026/mythos-preview/}.
+
+\bibitem[Kapoor et~al.(2025)Kapoor, Narayanan, Kokotajlo, Lifland, and Larsen]{asteriskmagSubstackComP}
+Sayash Kapoor, Arvind Narayanan, Daniel Kokotajlo, Eli Lifland, and Thomas Larsen.
+\newblock {Common Ground between AI 2027 \& AI as Normal Technology}, 2025.
+\newblock URL \url{https://asteriskmag.substack.com/p/common-ground-between-ai-2027-and}.
+\newblock Asterisk Magazine.
+
+\bibitem[Kiela et~al.(2021)Kiela, Bartolo, Nie, Kaushik, Geiger, Wu, Vidgen, Prasad, Singh, Ringshia, Ma, Thrush, Riedel, Waseem, Stenetorp, Jia, Bansal, Potts, and Williams]{kiela2021dynabench}
+Douwe Kiela, Max Bartolo, Yixin Nie, Divyansh Kaushik, Atticus Geiger, Zhengxuan Wu, Bertie Vidgen, Grusha Prasad, Amanpreet Singh, Pratik Ringshia, Zhiyi Ma, Tristan Thrush, Sebastian Riedel, Zeerak Waseem, Pontus Stenetorp, Robin Jia, Mohit Bansal, Christopher Potts, and Adina Williams.
+\newblock Dynabench: Rethinking benchmarking in {NLP}.
+\newblock In \emph{Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2104.14337}.
+
+\bibitem[Liang et~al.(2023)Liang, Bommasani, Lee, Tsipras, Soylu, Yasunaga, Zhang, Narayanan, Wu, Kumar, Newman, Yuan, Yan, Zhang, Cosgrove, Manning, R\'e, Acosta-Navas, Hudson, Zelikman, Durmus, Ladhak, Rong, Ren, Yao, Wang, Santhanam, Orr, Zheng, Yuksekgonul, Suzgun, Kim, Guha, Chatterji, Khattab, Henderson, Huang, Chi, Xie, Santurkar, Ganguli, Hashimoto, Icard, Zhang, Chaudhary, Wang, Li, Mai, Zhang, and Koreeda]{liang2023helm}
+Percy Liang, Rishi Bommasani, Tony Lee, Dimitris Tsipras, Dilara Soylu, Michihiro Yasunaga, Yian Zhang, Deepak Narayanan, Yuhuai Wu, Ananya Kumar, Benjamin Newman, Binhang Yuan, Bobby Yan, Ce~Zhang, Christian Cosgrove, Christopher~D. Manning, Christopher R\'e, Diana Acosta-Navas, Drew~A. Hudson, Eric Zelikman, Esin Durmus, Faisal Ladhak, Frieda Rong, Hongyu Ren, Huaxiu Yao, Jue Wang, Keshav Santhanam, Laurel Orr, Lucia Zheng, Mert Yuksekgonul, Mirac Suzgun, Nathan Kim, Neel Guha, Niladri Chatterji, Omar Khattab, Peter Henderson, Qian Huang, Ryan Chi, Sang~Michael Xie, Shibani Santurkar, Surya Ganguli, Tatsunori Hashimoto, Thomas Icard, Tianyi Zhang, Vishrav Chaudhary, William Wang, Xuechen Li, Yifan Mai, Yuhui Zhang, and Yuta Koreeda.
+\newblock Holistic evaluation of language models.
+\newblock \emph{Transactions on Machine Learning Research}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2211.09110}.
+
+\bibitem[Jacobs and Wallach(2021)]{jacobsWallach2021}
+Abigail~Z. Jacobs and Hanna Wallach.
+\newblock Measurement and fairness.
+\newblock In \emph{Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)}, pages 375--385, 2021.
+\newblock \doi{10.1145/3442188.3445901}.
+
+\bibitem[Raji et~al.(2021)Raji, Bender, Paullada, Denton, and Hanna]{raji2021everything}
+Inioluwa~Deborah Raji, Emily~M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna.
+\newblock {AI} and the everything in the whole wide world benchmark.
+\newblock In \emph{Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2111.15366}.
+
+\bibitem[Jimenez et~al.(2023)Jimenez, Yang, Wettig, Yao, Pei, Press, and Narasimhan]{arxivabs231006770}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik Narasimhan.
+\newblock {SWE-bench: Can Language Models Resolve Real-World GitHub Issues?}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.06770}.
+\newblock arXiv.org.
+
+\bibitem[Chollet(2019)]{arxivabs191101547}
+François Chollet.
+\newblock {On the Measure of Intelligence}, 2019.
+\newblock URL \url{https://arxiv.org/abs/1911.01547}.
+\newblock arXiv.org.
+
+\bibitem[Yao et~al.(2024)Yao, Shinn, Razavi, and Narasimhan]{arxivabs240612045}
+Shunyu Yao, Noah Shinn, Pedram Razavi, and Karthik Narasimhan.
+\newblock {tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.12045}.
+\newblock arXiv.org.
+
+\bibitem[Team()]{tbenchAi}
+Terminal-Bench Team.
+\newblock {Terminal-Bench}.
+\newblock URL \url{https://www.tbench.ai/}.
+
+\bibitem[Barres et~al.(2025)Barres, Dong, Ray, Si, and Narasimhan]{arxivabs250607982}
+Victor Barres, Honghua Dong, Soham Ray, Xujie Si, and Karthik Narasimhan.
+\newblock {{$\tau^2$}-Bench: Evaluating Conversational Agents in a Dual-Control Environment}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.07982}.
+\newblock arXiv.org.
+
+\bibitem[Chollet et~al.(2025)Chollet, Knoop, Kamradt, Landers, and Pinkard]{arcprizeOrgBlogArc}
+Francois Chollet, Mike Knoop, Gregory Kamradt, Bryan Landers, and Henry Pinkard.
+\newblock {ARC-AGI-2: A New Challenge for Frontier AI Reasoning Systems}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.11831}.
+
+\bibitem[Merrill et~al.(2026)Merrill, Shaw, Carlini, Li, Raj, Bercovich, Shi, Shin, Walshe, Buchanan, Shen, Ye, Lin, Poulos, Wang, Nezhurina, Jitsev, Lu, Mastromichalakis, Xu, Chen, Liu, Zhang, Chen, Kashyap, Uslu, Li, Wu, Yan, Bian, Sharma, Sun, Dillmann, Anand, Lanpouthakoun, Koopah, Hu, Guha, Dreiman, Zhu, Krauth, Zhong, Muennighoff, Amanfu, Tan, Pimpalgaonkar, Aggarwal, Lin, Lan, Zhao, Liang, Wang, Wang, Zhou, Heineman, Liu, Trivedi, Yang, Lin, Shetty, Yang, Omi, Raoof, Li, Zhuo, Lin, Dai, Wang, Chai, Zhou, Wahdany, She, Hu, Dong, Zhu, Cui, Saiyed, Kolbeinsson, Hu, Rytting, Marten, Wang, Dimakis, Konwinski, and Schmidt]{arxivabs260111868}
+Mike~A. Merrill, Alexander~G. Shaw, Nicholas Carlini, Boxuan Li, Harsh Raj, Ivan Bercovich, Lin Shi, Jeong~Yeon Shin, Thomas Walshe, E.~Kelly Buchanan, Junhong Shen, Guanghao Ye, Haowei Lin, Jason Poulos, Maoyu Wang, Marianna Nezhurina, Jenia Jitsev, Di~Lu, Orfeas~Menis Mastromichalakis, Zhiwei Xu, Zizhao Chen, Yue Liu, Robert Zhang, Leon~Liangyu Chen, Anurag Kashyap, Jan-Lucas Uslu, Jeffrey Li, Jianbo Wu, Minghao Yan, Song Bian, Vedang Sharma, Ke~Sun, Steven Dillmann, Akshay Anand, Andrew Lanpouthakoun, Bardia Koopah, Changran Hu, Etash Guha, Gabriel H.~S. Dreiman, Jiacheng Zhu, Karl Krauth, Li~Zhong, Niklas Muennighoff, Robert Amanfu, Shangyin Tan, Shreyas Pimpalgaonkar, Tushar Aggarwal, Xiangning Lin, Xin Lan, Xuandong Zhao, Yiqing Liang, Yuanli Wang, Zilong Wang, Changzhi Zhou, David Heineman, Hange Liu, Harsh Trivedi, John Yang, Junhong Lin, Manish Shetty, Michael Yang, Nabil Omi, Negin Raoof, Shanda Li, Terry~Yue Zhuo, Wuwei Lin, Yiwei Dai, Yuxin Wang, Wenhao Chai, Shang Zhou, Dariush Wahdany, Ziyu She, Jiaming Hu, Zhikang Dong, Yuxuan Zhu, Sasha Cui, Ahson Saiyed, Arinbjörn Kolbeinsson, Jesse Hu, Christopher~Michael Rytting, Ryan Marten, Yixin Wang, Alex Dimakis, Andy Konwinski, and Ludwig Schmidt.
+\newblock {Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.11868}.
+\newblock arXiv.org.
+
+\bibitem[Chowdhury et~al.(2024)Chowdhury, Aung, Shern, Jaffe, Sherburn, Starace, Mays, Dias, Aljubeh, Glaese, Jimenez, Yang, Ho, Patwardhan, Liu, and Madry]{openaiComIndexIntroducing}
+Neil Chowdhury, James Aung, Chan~Jun Shern, Oliver Jaffe, Dane Sherburn, Giulio Starace, Evan Mays, Rachel Dias, Marwan Aljubeh, Mia Glaese, Carlos~E. Jimenez, John Yang, Leyton Ho, Tejal Patwardhan, Kevin Liu, and Aleksander Madry.
+\newblock {Introducing SWE-bench Verified}, 2024.
+\newblock URL \url{https://openai.com/index/introducing-swe-bench-verified/}.
+\newblock OpenAI.
+
+\bibitem[METR(2026)]{metrOrgBlog2026}
+METR.
+\newblock {Time Horizon 1.1}, 2026.
+\newblock URL \url{https://metr.org/blog/2026-1-29-time-horizon-1-1/}.
+\newblock METR.
+
+\bibitem[SWE-bench()]{swebenchComMultilingualLeaderboard}
+SWE-bench.
+\newblock {SWE-bench Multilingual}.
+\newblock URL \url{https://www.swebench.com/multilingual-leaderboard.html}.
+\newblock SWE-bench.
+
+\bibitem[Sierra(2026)]{sierraAiResearchTau}
+Sierra.
+\newblock {{$\tau^3$}-bench: advancing agent benchmarking to knowledge and voice}, 2026.
+\newblock URL \url{https://sierra.ai/resources/research/tau-3-bench}.
+\newblock Sierra.
+
+\bibitem[Prize()]{arcprizeOrgArcAgi}
+ARC Prize.
+\newblock {ARC-AGI-3}.
+\newblock URL \url{https://arcprize.org/arc-agi/3}.
+\newblock ARC Prize.
+
+\bibitem[Yang et~al.(2024)Yang, Jimenez, Zhang, Lieret, Yang, Wu, Press, Muennighoff, Synnaeve, Narasimhan, Yang, Wang, and Press]{arxivabs241003859}
+John Yang, Carlos~E. Jimenez, Alex~L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, Ori Press, Niklas Muennighoff, Gabriel Synnaeve, Karthik~R. Narasimhan, Diyi Yang, Sida~I. Wang, and Ofir Press.
+\newblock {SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.03859}.
+\newblock arXiv.org.
+
+\bibitem[{Harbor Framework Team}()]{githubComHarborFramework}
+{Harbor Framework Team}.
+\newblock {GitHub - harbor-framework/harborz}.
+\newblock URL \url{https://github.com/harbor-framework/harbor}.
+
+\bibitem[Rabanser et~al.(2026)Rabanser, Kapoor, Kirgis, Liu, Utpala, and Narayanan]{arxivabs260216666}
+Stephan Rabanser, Sayash Kapoor, Peter Kirgis, Kangheng Liu, Saiteja Utpala, and Arvind Narayanan.
+\newblock {Towards a Science of AI Agent Reliability}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2602.16666}.
+\newblock arXiv.org.
+
+\bibitem[Whitfill et~al.(2026)Whitfill, Wu, Becker, and Rush]{metrOrgNotes2026}
+Parker Whitfill, Cheryl Wu, Joel Becker, and Nate Rush.
+\newblock {Many SWE-bench-Passing PRs Would Not Be Merged into Main}, 2026.
+\newblock URL \url{https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/}.
+\newblock METR.
+
+\bibitem[Hendrycks et~al.(2020)Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt]{arxivabs200903300}
+Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt.
+\newblock {Measuring Massive Multitask Language Understanding}, 2020.
+\newblock URL \url{https://arxiv.org/abs/2009.03300}.
+\newblock arXiv.org.
+
+\bibitem[Rein et~al.(2023)Rein, Hou, Stickland, Petty, Pang, Dirani, Michael, and Bowman]{arxivabs231112022}
+David Rein, Betty~Li Hou, Asa~Cooper Stickland, Jackson Petty, Richard~Yuanzhe Pang, Julien Dirani, Julian Michael, and Samuel~R. Bowman.
+\newblock {GPQA: A Graduate-Level Google-Proof Q\&A Benchmark}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2311.12022}.
+\newblock arXiv.org.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, et~al.]{cobbe2021training}
+Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, et~al.
+\newblock Training verifiers to solve math word problems.
+\newblock \emph{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem[Lin et~al.(2024)Lin, Deng, Chandu, Brahman, Ravichander, Pyatkin, Dziri, Bras, and Choi]{arxivabs240604770}
+Bill~Yuchen Lin, Yuntian Deng, Khyathi Chandu, Faeze Brahman, Abhilasha Ravichander, Valentina Pyatkin, Nouha Dziri, Ronan~Le Bras, and Yejin Choi.
+\newblock {WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.04770}.
+\newblock arXiv.org.
+
+\bibitem[lmarena()]{githubComLmarenaArena}
+lmarena.
+\newblock {GitHub - lmarena/arena-hard-auto: Arena-Hard-Auto: An automatic LLM benchmark.}
+\newblock URL \url{https://github.com/lmarena/arena-hard-auto}.
+\newblock GitHub.
+
+\bibitem[Zhou et~al.(2023)Zhou, Xu, Zhu, Zhou, Lo, Sridhar, Cheng, Ou, Bisk, Fried, Alon, and Neubig]{arxivabs230713854}
+Shuyan Zhou, Frank~F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, Abishek Sridhar, Xianyi Cheng, Tianyue Ou, Yonatan Bisk, Daniel Fried, Uri Alon, and Graham Neubig.
+\newblock {WebArena: A Realistic Web Environment for Building Autonomous Agents}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2307.13854}.
+\newblock arXiv.org.
+
+\bibitem[Dubois et~al.(2026)Dubois, Zorer, Hamin, Skinner, Souly, Wynne, Coppock, Satos, Kapoor, Dev, Juchems, Mai, Flesch, Luettgau, Teague, Patey, Allaire, Pacchiardi, Hernandez-Orallo, and Ududec]{aisiGovUkBlog}
+Magda Dubois, Ekin Zorer, Maia Hamin, Joe Skinner, Alexandra Souly, Jerome Wynne, Harry Coppock, Lucas Satos, Sayash Kapoor, Sunischal Dev, Keno Juchems, Kimberly Mai, Timo Flesch, Lennart Luettgau, Charles Teague, Eric Patey, JJ~Allaire, Lorenzo Pacchiardi, Jose Hernandez-Orallo, and Cozmin Ududec.
+\newblock {Seven simple steps for log analysis in AI systems }, 2026.
+\newblock URL \url{https://arxiv.org/html/2604.09563v1}.
+
+\bibitem[Patwardhan et~al.(2025)Patwardhan, Dias, Proehl, Kim, Wang, Watkins, Fishman, Aljubeh, Thacker, Fauconnet, Kim, Chao, Miserendino, Chabot, Li, Sharman, Barr, Glaese, and Tworek]{openaiComIndexGdpval}
+Tejal Patwardhan, Rachel Dias, Elizabeth Proehl, Grace Kim, Michele Wang, Olivia Watkins, Sim{\'o}n~Posada Fishman, Marwan Aljubeh, Phoebe Thacker, Laurance Fauconnet, Natalie~S. Kim, Patrick Chao, Samuel Miserendino, Gildas Chabot, David Li, Michael Sharman, Alexandra Barr, Amelia Glaese, and Jerry Tworek.
+\newblock {GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.04374}.
+
+\bibitem[Analysis()]{artificialanalysisAiEvaluationsGdpval}
+Artificial Analysis.
+\newblock {GDPval-AA Leaderboard}.
+\newblock URL \url{https://artificialanalysis.ai/evaluations/gdpval-aa}.
+\newblock Artificial Analysis.
+
+\bibitem[Anthropic(2026{\natexlab{a}})]{anthropicComNewsMozilla}
+Anthropic.
+\newblock {Partnering with Mozilla to improve Firefox's security}, 2026{\natexlab{a}}.
+\newblock URL \url{https://www.anthropic.com/news/mozilla-firefox-security}.
+\newblock Anthropic.
+
+\bibitem[Landymore(2025)]{futurismComAdvancedAi}
+Frank Landymore.
+\newblock {One of the World's Most Advanced AI Agents Is Completely Stuck Trying to Beat a Pokémon Game for Children}, 2025.
+\newblock URL \url{https://futurism.com/advanced-ai-stuck-pokemon}.
+\newblock Futurism.
+
+\bibitem[the()]{theaidigestOrgVillage}
+{AI Village}.
+\newblock URL \url{https://theaidigest.org/village}.
+
+\bibitem[Lin(2026)]{cursorComBlogScaling}
+Wilson Lin.
+\newblock {Scaling long-running autonomous coding · Cursor}, 2026.
+\newblock URL \url{https://cursor.com/blog/scaling-agents}.
+\newblock Cursor.
+
+\bibitem[Faulkner(2026)]{blogCloudflareComVinext}
+Steve Faulkner.
+\newblock {How we rebuilt Next.js with AI in one week}, 2026.
+\newblock URL \url{https://blog.cloudflare.com/vinext/}.
+\newblock The Cloudflare Blog.
+
+\bibitem[Karpathy(2026)]{xkarpathy2031135152349524125}
+Andrej Karpathy.
+\newblock {Three days ago I left autoresearch tuning nanochat for ~2 days on depth=12 model.}, 2026.
+\newblock URL \url{https://x.com/karpathy/status/2031135152349524125}.
+\newblock X.
+
+\bibitem[Papailiopoulos()]{xDimitrisPapail2028669695344148946}
+Dimitris Papailiopoulos.
+\newblock {Can You Train a Computer?}
+\newblock URL \url{https://x.com/DimitrisPapail/status/2028669695344148946}.
+\newblock X.
+
+\bibitem[Ho(2026)]{epochAiGradientUpdates}
+Anson Ho.
+\newblock {How close is AI to taking my job?}, 2026.
+\newblock URL \url{https://epoch.ai/gradient-updates/how-close-is-ai-to-taking-my-job}.
+\newblock Epoch AI.
+
+\bibitem[Adamczewski et~al.(2026)Adamczewski, Rein, Owen, and Brand]{epochAiBlogMirrorcode}
+Tom Adamczewski, David Rein, David Owen, and Florian Brand.
+\newblock {MirrorCode: Evidence that AI can already do some weeks-long coding tasks}, 2026.
+\newblock URL \url{https://epoch.ai/blog/mirrorcode-preliminary-results}.
+\newblock Epoch AI.
+
+\bibitem[Wen et~al.(2026)Wen, Qiu, Benton, Kirchner, and Leike]{alignmentAnthropicCom2026}
+Jiaxin Wen, Liang Qiu, Joe Benton, Jan~Hendrik Kirchner, and Jan Leike.
+\newblock {Automated Weak-to-Strong Researcher}, 2026.
+\newblock URL \url{https://alignment.anthropic.com/2026/automated-w2s-researcher/}.
+\newblock Alignment Science Blog.
+
+\bibitem[tho(2026)]{thoughtfullabComLetting}
+{Letting AI Post-train AI}, 2026.
+\newblock URL \url{https://www.thoughtfullab.com/letting-ai-posttrain-ai.html}.
+\newblock Thoughtful Lab.
+
+\bibitem[Huang()]{githubComRecipesGolf}
+Dylan Huang.
+\newblock {tinker-cookbook/tinker\_cookbook/recipes/golf\_forecasting at claude/golf-forecasting-setup-VIpRZ · dphuang2/tinker-cookbook}.
+\newblock URL \url{https://github.com/dphuang2/tinker-cookbook/tree/claude/golf-forecasting-setup-VIpRZ/tinker\_cookbook/recipes/golf\_forecasting}.
+\newblock GitHub.
+
+\bibitem[Donoho(2017)]{tandfonlineCom101080}
+David Donoho.
+\newblock {50 Years of Data Science}.
+\newblock \emph{Journal of Computational and Graphical Statistics}, 26\penalty0 (4):\penalty0 745--766, 2017.
+\newblock \doi{10.1080/10618600.2017.1384734}.
+\newblock URL \url{https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1384734}.
+\newblock Taylor \& Francis.
+
+\bibitem[Yoran et~al.(2024)Yoran, Amouyal, Malaviya, Bogin, Press, and Berant]{arxivabs240715711}
+Ori Yoran, Samuel~Joseph Amouyal, Chaitanya Malaviya, Ben Bogin, Ofir Press, and Jonathan Berant.
+\newblock {AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.15711}.
+\newblock arXiv.org.
+
+\bibitem[Mialon et~al.(2023)Mialon, Fourrier, Swift, Wolf, LeCun, and Scialom]{arxivabs231112983}
+Grégoire Mialon, Clémentine Fourrier, Craig Swift, Thomas Wolf, Yann LeCun, and Thomas Scialom.
+\newblock {GAIA: a benchmark for General AI Assistants}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2311.12983}.
+\newblock arXiv.org.
+
+\bibitem[Narayanan and Kapoor(2025)]{normaltechAiPAi}
+Arvind Narayanan and Sayash Kapoor.
+\newblock {AI as Normal Technology}, 2025.
+\newblock URL \url{https://www.normaltech.ai/p/ai-as-normal-technology}.
+\newblock AI as Normal Technology.
+
+\bibitem[Anthropic(2026{\natexlab{b}})]{anthropicComNewsClaude}
+Anthropic.
+\newblock {Making frontier cybersecurity capabilities available to defenders}, 2026{\natexlab{b}}.
+\newblock URL \url{https://www.anthropic.com/news/claude-code-security}.
+\newblock Anthropic.
+
+\bibitem[Anthropic()]{anthropicComGlasswing}
+Anthropic.
+\newblock {Project Glasswing: Securing critical software for the AI era}.
+\newblock URL \url{https://www.anthropic.com/glasswing}.
+\newblock Anthropic.
+
+\bibitem[Longpre et~al.(2024)Longpre, Kapoor, Klyman, Ramaswami, Bommasani, Blili-Hamelin, Huang, Skowron, Yong, Kotha, Zeng, Shi, Yang, Southen, Robey, Chao, Yang, Jia, Kang, Pentland, Narayanan, Liang, and Henderson]{arxivabs240304893}
+Shayne Longpre, Sayash Kapoor, Kevin Klyman, Ashwin Ramaswami, Rishi Bommasani, Borhane Blili-Hamelin, Yangsibo Huang, Aviya Skowron, Zheng-Xin Yong, Suhas Kotha, Yi~Zeng, Weiyan Shi, Xianjun Yang, Reid Southen, Alexander Robey, Patrick Chao, Diyi Yang, Ruoxi Jia, Daniel Kang, Sandy Pentland, Arvind Narayanan, Percy Liang, and Peter Henderson.
+\newblock {A Safe Harbor for AI Evaluation and Red Teaming}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2403.04893}.
+\newblock arXiv.org.
+
+\bibitem[Anthropic(2026{\natexlab{c}})]{wwwCdnAnthropicCom}
+Anthropic.
+\newblock {Claude Mythos Preview system card}, 2026{\natexlab{c}}.
+\newblock URL \url{https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf}.
+\newblock Anthropic.
+
+\bibitem[Burkhardt(2026)]{9to5macCom29Vibe}
+Michael Burkhardt.
+\newblock {Vibe coding could mark the end of the App Store review process as we know it - 9to5Mac}, 2026.
+\newblock URL \url{https://9to5mac.com/2026/03/29/vibe-coding-developers-report-long-app-store-review-queues/}.
+\newblock 9to5Mac.
+
+\bibitem[Bier(2026)]{xnikitabier2033931821260648659}
+Nikita Bier.
+\newblock {iOS developers: How long is App Review taking for everyone these days?}, 2026.
+\newblock URL \url{https://x.com/nikitabier/status/2033931821260648659}.
+\newblock X.
+
+\bibitem[Ariel(2025)]{appfiguresComInsights20251205}
+Ariel.
+\newblock {The App Store Just Logged Its Biggest Release Year in Nearly a Decade}, 2025.
+\newblock URL \url{https://appfigures.com/resources/insights/20251205?f=2}.
+\newblock Appfigures.
+
+\bibitem[Mattson(2026)]{fastcompanyCom91522242Apple}
+Jennifer Mattson.
+\newblock {The Apple App Store is seeing an unexpected phenomenon. Is vibe coding behind it?}, 2026.
+\newblock URL \url{https://www.fastcompany.com/91522242/apple-app-store-vibe-coding-generative-ai-unexpected-phenomenon}.
+\newblock Fast Company.
+
+\bibitem[OpenClaw()]{openclawAi}
+OpenClaw.
+\newblock {OpenClaw - Personal AI Assistant}.
+\newblock URL \url{https://openclaw.ai/}.
+\newblock OpenClaw.
+
+\bibitem[Docs()]{platformClaudeComBuild}
+Claude~API Docs.
+\newblock {Adaptive thinking}.
+\newblock URL \url{https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking}.
+\newblock Claude API Docs.
+
+\bibitem[Coleman(2026)]{anthropicComEngineeringEval}
+Russell Coleman.
+\newblock {Eval awareness in Claude Opus 4.6's BrowseComp performance}, 2026.
+\newblock URL \url{https://www.anthropic.com/engineering/eval-awareness-browsecomp}.
+\newblock Anthropic.
+
+\bibitem[Research(2025)]{apolloresearchAiBlogClaude}
+Apollo Research.
+\newblock {Claude Sonnet 3.7 (often) knows when it's in alignment evaluations}, 2025.
+\newblock URL \url{https://www.apolloresearch.ai/blog/claude-sonnet-37-often-knows-when-its-in-alignment-evaluations/}.
+
+\bibitem[Williams et~al.(2025)Williams, Raymond, and Carroll]{alignmentOpenaiComProd}
+Marcus Williams, Cameron Raymond, and Micah Carroll.
+\newblock {Sidestepping Evaluation Awareness and Anticipating Misalignment with Production Evaluations}, 2025.
+\newblock URL \url{https://alignment.openai.com/prod-evals/}.
+\newblock OpenAI Alignment Blog.
+
+\bibitem[Apple()]{developerAppleComArchitecture}
+Apple.
+\newblock {Security Overview}.
+\newblock URL \url{https://developer.apple.com/library/archive/documentation/Security/Conceptual/Security\_Overview/Architecture/Architecture.html}.
+\newblock Apple.
+
+\bibitem[Support(2021)]{supportAppleComControlling}
+Apple Support.
+\newblock {Controlling app access to files in macOS}, 2021.
+\newblock URL \url{https://support.apple.com/guide/security/controlling-app-access-to-files-secddd1d86a6/web}.
+\newblock Apple Support.
+
+\bibitem[Potoropin(2026)]{githubComIssues1}
+Viacheslav Potoropin.
+\newblock {Hello world does not compile · Issue \#1 · anthropics/claudes-c-compiler}, 2026.
+\newblock URL \url{https://github.com/anthropics/claudes-c-compiler/issues/1}.
+\newblock GitHub.
+
+\bibitem[Tourki(2026)]{githubComIssues98}
+Youssef Tourki.
+\newblock {build fails with 32 errors , no releases, no tags, no stable branch · Issue \#98 · wilsonzlin/fastrender}, 2026.
+\newblock URL \url{https://github.com/wilsonzlin/fastrender/issues/98}.
+\newblock GitHub.
+
+\bibitem[Chung et~al.(1999)Chung, Nixon, Yu, and Mylopoulos]{personalUtdallasEduBook}
+L.~Chung, B.~A. Nixon, E.~Yu, and J.~Mylopoulos.
+\newblock {Non-Functional Requirements in Software Engineering}, 1999.
+\newblock URL \url{https://personal.utdallas.edu/~chung/BOOK/book.html}.
+\newblock Kluwer Academic Publishing.
+
+\bibitem[Tekofsky(2026)]{theaidigestOrgBlogWhat}
+Shoshannah Tekofsky.
+\newblock {What did we learn from the AI Village in 2025?}, 2026.
+\newblock URL \url{https://theaidigest.org/village/blog/what-we-learned-2025}.
+
+\bibitem[Anupam et~al.(2025)Anupam, Brown, Li, Wong, Hassani, and Bastani]{arxivpdf251002418}
+Sagnik Anupam, Davis Brown, Shuo Li, Eric Wong, Hamed Hassani, and Osbert Bastani.
+\newblock {BrowserArena: Evaluating LLM Agents on Real-World Web Navigation Tasks}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.02418}.
+\newblock arXiv.
+
+\bibitem[Hamin and Edelman(2025)]{nistGovCaisiCheating}
+Maia Hamin and Benjamin Edelman.
+\newblock {Cheating On AI Agent Evaluations}, 2025.
+\newblock URL \url{https://www.nist.gov/caisi/cheating-ai-agent-evaluations}.
+\newblock NIST.
+
+\bibitem[Kahn(2025)]{githubComIssues465}
+Jacob Kahn.
+\newblock {Repo State Loopholes During Agentic Evaluation · Issue \#465 · SWE-bench/SWE-bench}, 2025.
+\newblock URL \url{https://github.com/SWE-bench/SWE-bench/issues/465}.
+
+\bibitem[Anthropic(2025{\natexlab{b}})]{anthropicComResearchProject}
+Anthropic.
+\newblock {Project Vend: Can Claude run a small shop? (And why does that matter?)}, 2025{\natexlab{b}}.
+\newblock URL \url{https://www.anthropic.com/research/project-vend-1}.
+\newblock Anthropic.
+
+\bibitem[Labs(2026)]{andonlabsComBlogAndon}
+Andon Labs.
+\newblock {We gave an AI a 3 year retail lease in SF and asked it to make a profit}, 2026.
+\newblock URL \url{https://andonlabs.com/blog/andon-market-launch}.
+\newblock Andon Labs.
+
+\bibitem[Tian et~al.(2024)Tian, Gao, Zhang, Chen, Fan, Guo, Haas, Ji, Krongchon, Li, Liu, Luo, Ma, Tong, Trinh, Tian, Wang, Wu, Xiong, Yin, Zhu, Lieret, Lu, Liu, Du, Tao, Press, Callan, Huerta, and Peng]{arxivabs240713168}
+Minyang Tian, Luyu Gao, Shizhuo~Dylan Zhang, Xinan Chen, Cunwei Fan, Xuefei Guo, Roland Haas, Pan Ji, Kittithat Krongchon, Yao Li, Shengyan Liu, Di~Luo, Yutao Ma, Hao Tong, Kha Trinh, Chenyu Tian, Zihan Wang, Bohao Wu, Yanyu Xiong, Shengzhu Yin, Minhui Zhu, Kilian Lieret, Yanxin Lu, Genglin Liu, Yufeng Du, Tianhua Tao, Ofir Press, Jamie Callan, Eliu Huerta, and Hao Peng.
+\newblock {SciCode: A Research Coding Benchmark Curated by Scientists}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.13168}.
+\newblock arXiv.org.
+
+\bibitem[Wang et~al.(2024)Wang, Ma, Zhang, Ni, Chandra, Guo, Ren, Arulraj, He, Jiang, Li, Ku, Wang, Zhuang, Fan, Yue, and Chen]{arxivabs240601574}
+Yubo Wang, Xueguang Ma, Ge~Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo, Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai Wang, Alex Zhuang, Rongqi Fan, Xiang Yue, and Wenhu Chen.
+\newblock {MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.01574}.
+\newblock arXiv.org.
+
+\bibitem[Phan et~al.(2025)Phan, Gatti, Han, Li, et~al.]{arxivabs250114249}
+Long Phan, Alice Gatti, Ziwen Han, Nathaniel Li, et~al.
+\newblock {Humanity's Last Exam}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.14249}.
+\newblock arXiv.org.
+
+\bibitem[Deng et~al.(2025)Deng, Da, Pan, He, Ide, Garg, Lauffer, Park, Pasari, Rane, Sampath, Krishnan, Kundurthy, Hendryx, Wang, Bharadwaj, Holm, Aluri, Zhang, Jacobson, Liu, and Kenstler]{arxivabs250916941}
+Xiang Deng, Jeff Da, Edwin Pan, Yannis~Yiming He, Charles Ide, Kanak Garg, Niklas Lauffer, Andrew Park, Nitin Pasari, Chetan Rane, Karmini Sampath, Maya Krishnan, Srivatsa Kundurthy, Sean Hendryx, Zifan Wang, Vijay Bharadwaj, Jeff Holm, Raja Aluri, Chen Bo~Calvin Zhang, Noah Jacobson, Bing Liu, and Brad Kenstler.
+\newblock {SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2509.16941}.
+\newblock arXiv.org.
+
+\bibitem[Choi(2026)]{developersOpenaiComBlog}
+Derrick Choi.
+\newblock {Run long horizon tasks with Codex}, 2026.
+\newblock URL \url{https://developers.openai.com/blog/run-long-horizon-tasks-with-codex}.
+\newblock OpenAI Developers.
+
+\bibitem[HowLongToBeat()]{howlongtobeatComGame7169}
+HowLongToBeat.
+\newblock {How long is Pokémon Red and Blue?}
+\newblock URL \url{https://howlongtobeat.com/game/7169}.
+\newblock HowLongToBeat.
+
+\bibitem[Wilkins(2025)]{futurismComFutureSociety}
+Joe Wilkins.
+\newblock {Anthropic's Advanced New AI Tries to Run Vending Machine, Goes Bankrupt After Ordering PlayStation 5 and Live Fish}, 2025.
+\newblock URL \url{https://futurism.com/future-society/anthropic-ai-vending-machine}.
+\newblock Futurism.
+
+\bibitem[News()]{newsYcombinatorComItem}
+Hacker News.
+\newblock {How we rebuilt Next.js with AI in one week | Hacker News}.
+\newblock URL \url{https://news.ycombinator.com/item?id=47142156}.
+\newblock Hacker News.
+
+\end{thebibliography}

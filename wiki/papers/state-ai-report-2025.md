@@ -46,6 +46,6 @@ The State of AI Report is one of the most cited annual AI overviews. Essential r
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]
 - [[ai-race-dynamics]]
 - [[frontier-ai-compute-governance]]

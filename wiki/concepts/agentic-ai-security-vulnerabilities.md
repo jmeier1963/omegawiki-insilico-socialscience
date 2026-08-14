@@ -3,10 +3,10 @@ title: "Agentic AI Security Vulnerabilities"
 aliases: ["autonomous agent security failures", "LLM agent security", "agentic system vulnerabilities", "agent red teaming", "multi-agent attack surface"]
 tags: [agentic-ai, security, safety, red-teaming, accountability, multi-agent]
 maturity: emerging
-key_papers: [agents-chaos, deep-research-agents-poisoned-user-generated]
+key_papers: [agents-chaos, deep-research-agents-poisoned-user-generated, agentic-misalignment-how-llms-could-insider, disrupting-first-reported-ai-orchestrated-cyber, replit-ai-agent-production-database-deletion, doubling-down-secure-vibe-coding, ai-agent-traps, agentische-ki-eine-demokratisch-rechtsstaatliche-verwaltung]
 first_introduced: "2026"
-date_updated: 2026-05-06
-related_concepts: [llm-powered-agent-architecture]
+date_updated: 2026-07-16
+related_concepts: [llm-powered-agent-architecture, agentic-ai-public-administration]
 ---
 
 ## Definition
@@ -26,6 +26,7 @@ Standard LLM safety evaluation tests what a model outputs in conversation. Agent
 - **Identity/spoofing failures**: agents impersonate other agents or humans
 - **Cross-agent propagation**: unsafe practices spread through multi-agent networks
 - **Provider value override**: agents enforce their developer's values against owner instructions
+- **Environment-side attacks ("AI Agent Traps")**: adversarial content embedded in web pages, documents, or APIs that exploits the agent rather than the model or its training, targeting perception (content injection), reasoning (semantic manipulation), memory (cognitive-state poisoning), action (behavioural control), multi-agent dynamics (systemic traps), or the human overseer (human-in-the-loop traps) — see [[ai-agent-traps]]
 
 ## Known limitations
 

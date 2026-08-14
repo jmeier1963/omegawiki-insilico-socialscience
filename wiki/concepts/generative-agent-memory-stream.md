@@ -3,7 +3,7 @@ title: "Generative Agent Memory Stream"
 aliases: ["memory stream", "agent memory stream", "long-term agent memory", "memory retrieval scoring", "recency-importance-relevance retrieval", "stream memory", "dual-stream memory", "event flow and perception flow"]
 tags: [agents, memory, retrieval, llm-agents, long-term-memory]
 maturity: emerging
-key_papers: [generative-agents-interactive-simulacra-human-behavior, agentsociety-large-scale-simulation-llm-driven]
+key_papers: [generative-agents-interactive-simulacra-human-behavior, agentsociety-large-scale-simulation-llm-driven, generative-agent-based-modeling-actions-grounded]
 first_introduced: "2023"
 date_updated: 2026-04-13
 related_concepts: [agent-reflection, llm-powered-agent-architecture]

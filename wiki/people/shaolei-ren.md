@@ -17,6 +17,7 @@ Sustainable computing and the environmental externalities of AI — data-center 
 
 ## Recent work
 
+- [[making-ai-less-thirsty-uncovering-addressing]]
 Water-efficiency datasets for data centers; spatio-temporal scheduling to reduce AI's water/carbon footprint.
 
 ## Collaborators

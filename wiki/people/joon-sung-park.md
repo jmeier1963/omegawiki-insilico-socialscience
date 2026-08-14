@@ -21,6 +21,7 @@ date_updated: 2026-04-13
 
 ## Recent work
 
+- [[social-simulacra-creating-populated-prototypes-social]]
 Lead author on the Generative Agents paper (UIST 2023), which introduced the Smallville sandbox and the three-component agent architecture. Supported by the Microsoft Research PhD Fellowship.
 
 ## Collaborators

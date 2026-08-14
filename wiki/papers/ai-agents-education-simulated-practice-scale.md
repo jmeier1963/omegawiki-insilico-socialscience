@@ -48,5 +48,5 @@ A compelling proof-of-concept from Mollick's lab. The multi-agent architecture i
 ## Related
 
 - [[ai-pedagogical-roles]] — extends the AI-simulator role with a multi-agent implementation
-- [[ai-agents-education-simulated-practice-scale]] supports [[ai-simulation-democratizes-educational-practice]]
+- [[ai-agents-education-simulated-practice-scale]] supports [[ai-simulation-democratizes-educational-practice-scale]]
 - [[bildung]]

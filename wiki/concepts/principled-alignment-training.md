@@ -3,7 +3,7 @@ title: "Principled Alignment Training"
 aliases: ["constitutional alignment training", "reasoning-based alignment", "why-training", "OOD alignment generalization", "difficult advice training"]
 tags: [alignment-training, constitutional-ai, safety-generalization, ood-generalization, rlhf]
 maturity: emerging
-key_papers: [teaching-claude-why]
+key_papers: [teaching-claude-why, why-big-ai-labs-hiring-so]
 first_introduced: "2026"
 date_updated: 2026-05-22
 related_concepts: [broadly-safe-behavior-cluster]

@@ -54,6 +54,7 @@ Important political economy contribution. Thelen is one of the leading political
 
 ## Related
 
+- [[digital-sovereignty]]
 - [[cloud-capitalism-business-model]]
 - supports: [[cloud-capitalism-ai-transition-choke-point]]
 - [[vogl-kapital-ressentiment]]

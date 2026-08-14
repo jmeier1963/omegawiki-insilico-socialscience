@@ -56,6 +56,6 @@ A practically useful contribution for researchers designing silicon sampling stu
 
 ## Related
 
-- supports: [[llm-social-simulations-have-structural-heterogeneity-ceiling]]
+- supports: [[llm-social-simulations-structural-heterogeneity-ceiling]]
 - [[silicon-sampling]]
 - [[algorithmic-fidelity]]

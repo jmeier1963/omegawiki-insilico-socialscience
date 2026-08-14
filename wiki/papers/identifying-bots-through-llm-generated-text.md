@@ -54,6 +54,7 @@ Part of an emerging sub-literature on survey security, complementing Höhne et a
 
 ## Related
 
+- [[silicon-sampling]]
 - [[potential-existential-threat-large-language-models]]
 - [[llm-driven-bot-infiltration-protecting-web]]
 - supports: [[llm-bots-contaminating-online-surveys-threaten]]

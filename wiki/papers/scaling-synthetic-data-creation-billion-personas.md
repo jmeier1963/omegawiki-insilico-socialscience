@@ -57,4 +57,4 @@ A technically interesting and practically impactful paper. The 1B persona bank i
 ## Related
 
 - [[persona-driven-synthetic-data]] (introduces this technique)
-- supports: [[persona-driven-synthesis-enables-diverse-scalable-llm-data]]
+- supports: [[persona-driven-synthesis-enables-diverse-scalable]]

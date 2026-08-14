@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [model collapse, synthetic data, recursive training, distribution shift, tail erosion, AI sustainability]
 domain: "NLP"
 code_url: ""
-cited_by: []
+cited_by: [how-ai-companies-pay-fair-rates]
 ---
 
 ## Problem

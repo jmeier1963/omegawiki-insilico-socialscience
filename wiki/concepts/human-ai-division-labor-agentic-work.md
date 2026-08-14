@@ -3,10 +3,10 @@ title: "Human-AI Division of Labor in Agentic Work"
 aliases: ["humans decide what agents decide how", "division of labor in agentic coding", "returns to expertise under AI", "planning vs execution split"]
 tags: [labor-market, ai-economics, human-ai-collaboration, agentic-coding]
 maturity: emerging
-key_papers: [agentic-coding-persistent-returns-expertise]
+key_papers: [agentic-coding-persistent-returns-expertise, ai-native-firms, centaur-organization-redefining-executive-leadership-era, loop-engineering, when-ai-builds-itself, cybernetic-teammate-field-experiment-generative-ai, effects-generative-ai-high-skilled-work, machine-job-wrong-question, why-ai-replaced-software-engineers-will, work-frontier-how-ai-expanding-what]
 first_introduced: "2026"
 date_updated: 2026-06-20
-related_concepts: [marginal-returns-to-intelligence, ai-adoption-pressure-corporate-organizations]
+related_concepts: [marginal-returns-to-intelligence, ai-adoption-pressure-corporate-organizations, agentic-ai-delegated-production, task-crossover]
 ---
 
 ## Definition

@@ -53,6 +53,7 @@ Clever defensive application of adversarial prompting techniques to survey secur
 
 ## Related
 
+- [[silicon-sampling]]
 - [[potential-existential-threat-large-language-models]]
 - [[identifying-bots-through-llm-generated-text]]
 - supports: [[llm-bots-contaminating-online-surveys-threaten]]

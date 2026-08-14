@@ -3,7 +3,7 @@ title: "Deliberation-Based LLM Influence Evaluation"
 aliases: ["DeliberationBench", "deliberative polling benchmark for AI", "normative AI influence benchmark", "procedural LLM influence benchmark"]
 tags: [llm-influence, benchmarking, deliberative-polling, epistemic-desirability, democratic-legitimacy]
 maturity: emerging
-key_papers: [deliberationbench-normative-benchmark-influence-large-language]
+key_papers: [deliberationbench-normative-benchmark-influence-large-language, ai-systems-out-persuade-expert-humans, synthetic-chamber-agentic-mediation-representative-democracy]
 first_introduced: "2026"
 date_updated: 2026-05-10
 related_concepts: [algorithmic-fidelity, homo-silicus]

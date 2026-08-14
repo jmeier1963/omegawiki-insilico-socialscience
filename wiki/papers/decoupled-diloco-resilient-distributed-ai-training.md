@@ -57,5 +57,6 @@ A practically significant advance in ML infrastructure: decoupling compute islan
 
 ## Related
 
+- [[decoupled-distributed-training]]
 - supports: [[decoupled-island-based-distributed-training-enables]]
 - [[frontier-ai-compute-governance]]

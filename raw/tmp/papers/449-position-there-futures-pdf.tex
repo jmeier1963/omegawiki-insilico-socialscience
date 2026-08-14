@@ -1,0 +1,1151 @@
+\title{Position: There Are Futures That Benchmark-Driven AI Cannot See}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In biology, traits evolved for one function some- times become decisive for another; this is exapta- tion, and scientific progress works the same way. AI’s benchmark-centered selection environment taxes exaptation: when one selection rule dom- inates, ideas that do not fit it have nowhere to persist. The cost grows acute as the field shifts from asking can machines exhibit intelligent be- havior? to asking can they do so while remaining aligned, interpretable, and safe? These are philo- sophically distinct questions that may require dis- coveries we cannot specify. We propose mecha- nisms to restore exaptive capacity without aban- doning benchmarking: plural evaluation regimes, protected venues for non-comparable work, long- horizon funding, and training norms that encour- age researchers to question selection rules, not only optimize within them.
+\end{abstract}
+
+\section{Recovered Text}
+Position: There Are Futures That Benchmark-Driven AI Cannot See
+Sobhan Lotfi * 1 Ava Iranmanesh * 2 Lachin Naghashyar 3 Ali Shirali 4 Fateme Nateghi Haredasht 5
+Sanmi Koyejo 5 Philip Torr 6 Yong Suk Lee 7 Fazl Barez 6 Joel Lehman 8 Peter Norvig 5 9 Arvind Narayanan 10
+Abstract
+In biology, traits evolved for one function some-
+times become decisive for another; this is exapta-
+tion, and scientific progress works the same way.
+AI’s benchmark-centered selection environment
+taxes exaptation: when one selection rule dom-
+inates, ideas that do not fit it have nowhere to
+persist. The cost grows acute as the field shifts
+from asking can machines exhibit intelligent be-
+havior? to asking can they do so while remaining
+aligned, interpretable, and safe? These are philo-
+sophically distinct questions that may require dis-
+coveries we cannot specify. We propose mecha-
+nisms to restore exaptive capacity without aban-
+doning benchmarking: plural evaluation regimes,
+protected venues for non-comparable work, long-
+horizon funding, and training norms that encour-
+age researchers to question selection rules, not
+only optimize within them.
+1. Introduction
+“Live long and be patient; this wheel of tricks has
+a thousand wilder games to play.”
+— Hafez Shirazi
+Modern machine learning is largely organized around bench-
+mark performance. This has proven to be an unusually
+effective epistemic choice: shared tasks, datasets, and met-
+rics have made progress directly comparable across labs,
+legible to funders, and easier to coordinate as the field ex-
+*Equal contribution
+1Department of Computer Engineering,
+Sharif University of Technology, Tehran, Iran 2Pennsylvania State
+University, State College, PA, USA 3Microsoft, London, UK
+4University of California, Berkeley, CA, USA 5Stanford University,
+Stanford, CA, USA 6University of Oxford, Oxford, UK 7Keough
+School of Global Affairs, University of Notre Dame, Notre Dame,
+IN, USA 8Lila Sciences, San Francisco, CA, USA 9Google, Moun-
+tain View, CA, USA 10Princeton University, Princeton, NJ, USA.
+Correspondence to: Ava Iranmanesh <ami5520@psu.edu>.
+Proceedings of the 43 rd International Conference on Machine
+Learning, Seoul, South Korea. PMLR 306, 2026. Copyright 2026
+by the author(s).
+panded (Jelinek, 1997; Harman, 1993). Rather than resolv-
+ing longstanding philosophical debates about the nature of
+intelligence, benchmarking offered a pragmatic alternative:
+measuring what systems can objectively do (Koch \& Pe-
+terson, 2024). We do not argue that benchmarking was a
+mistake; we ask what is lost when evaluation is concentrated
+around a single selection rule. Any dominant criterion privi-
+leges what it can measure while sidelining what it cannot;
+the resulting omissions are easy to overlook because the
+system otherwise appears to be working. As Kuhn noted,
+periods of “normal science” routinely set aside anomalies;
+those anomalies can later become central when a paradigm
+enters crisis and shifts (Kuhn, 1962; Arthur, 1996).
+Our lens is exaptation, a biological term for traits evolved for
+one function that later become decisive for another (Gould
+\& Vrba, 1982). In research ecosystems, ideas can similarly
+acquire value in ways their originators did not anticipate
+(Wimsatt, 2007; Stanley \& Lehman, 2015). Crucially, exap-
+tation depends on persistence: ideas with latent potential
+must survive periods when they appear uncompetitive by
+prevailing metrics in order to later realize that potential. We
+argue that benchmark-centered evaluation imposes an
+exaptation tax by reducing the survival of work whose
+value is latent, indirect, or only revealed under a future
+problem regime. In this sense, benchmarks do not merely
+evaluate research; they organize it, shaping who can partici-
+pate, what kinds of contributions are rewarded, and which
+questions and methods come to seem fundable, publishable,
+and legitimate (Bourdieu, 1975).
+The stakes of this tradeoff rise as the field’s guiding question
+changes. For much of its history, the implicit target was Q1:
+can machines exhibit intelligent behavior? Increasingly, the
+focus has shifted toward Q2: can machines exhibit intelli-
+gent behavior such that they are aligned, interpretable, safe,
+and governable? These “such-that” clauses are not simply
+additional constraints on the original question. They change
+what counts as success: Q1 has ground truth that exists in
+the world independently of who evaluates the system; Q2
+does not. Whether a system is aligned, interpretable, or
+safe depends on criteria that must be constructed through
+deliberation rather than read off from the task itself (Russell
+\& Norvig, 2021; Gabriel, 2020). The field has not yet estab-
+lished that the correlation between benchmark performance
+1
+Futures that benchmark-driven AI cannot see
+and real progress that held for Q1 holds for Q2. Importing
+Q1’s evaluation framework into Q2 without validating that
+it transfers is not a conservative choice; it forecloses the
+exploratory work from which any adequate answer to Q2
+would have to emerge.
+The remainder of the paper traces how benchmark-centered
+evaluation became dominant, showing that its current cen-
+trality is historically contingent rather than inevitable (Sec-
+tion 2); diagnoses the mechanisms by which it governs
+research trajectories to clarify where intervention is possible
+(Section 3); develops the such-that shift as a problem that
+differs from Q1 not in degree but in kind (Section 4); and
+proposes institutional mechanisms for restoring exaptive ca-
+pacity without abandoning benchmarking (Section 5). The
+cost of getting this wrong is not a missed benchmark; it
+is a field that optimizes confidently toward futures it can
+measure, and misses the ones it needs most.
+Conflict of Interest Disclosure: Lachin Naghashyar is
+employed by Microsoft. Joel Lehman is employed by Lila
+Sciences. Peter Norvig is employed by Google. The authors
+declare that this research was conducted in the absence
+of any commercial or financial relationships that could be
+construed as a potential conflict of interest.
+2. Background: Exaptation and AI History
+This section reviews exaptation and the history of AI evalu-
+ation in order to show how selection regimes shape which
+ideas persist long enough to matter.
+2.1. Exaptation and the Persistence of Ideas
+Exaptation was formally introduced by Gould and Vrba as
+a refinement of adaptation, referring to traits that evolved
+for one function and were later co-opted for another (Gould
+\& Vrba, 1982). Exaptation depends on persistence beyond
+a trait’s original function. Such traits may be adaptive in
+their original role, but that fitness does not explain their
+later significance. In early mammals, for example, bones
+that once played a role in jaw mechanics were later repur-
+posed into the middle ear, enabling hearing (Anthwal et al.,
+2013). Their importance in this new role was not explained
+by optimization for the original one, but by their survival
+long enough to be reused. This logic has been extended be-
+yond biology to scientific and technological change, where
+ideas or tools developed for one problem can later become
+decisive for another, provided they persist through periods
+in which their value lies outside what prevailing evaluative
+standards reward (Ferreira et al., 2020). Magnetrons de-
+veloped for radar became the basis for microwave cooking.
+Non-Euclidean geometry, developed by Riemann in 1854 as
+pure mathematics with no physical application, became es-
+sential to general relativity sixty years later. Exaptation thus
+highlights a mode of progress in which long-term innovation
+depends not only on optimization for current objectives, but
+on the continued institutional viability of ideas whose value
+is not yet legible.
+2.2. Evaluation Regimes in the History of AI
+In the pre-benchmark era of AI (1956–1987), the field de-
+veloped as a pluralistic but loosely evaluated research space,
+with competing theories of intelligence and no shared stan-
+dards for evaluating progress (Russell \& Norvig, 2021). The
+Dartmouth proposal articulated an expansive ambition, as-
+serting that “every aspect of learning or any other feature
+of intelligence can in principle be so precisely described
+that a machine can be made to simulate it”, without speci-
+fying how progress should be assessed across approaches
+(McCarthy et al., 1955). This openness allowed symbolic,
+connectionist, and heuristic methods to coexist, but left
+no shared standard for resolving disputes. Early AI has
+been characterized as a form of “protoscience,” in which or-
+ganic evaluation mechanisms proved insufficient to stabilise
+consensus, contributing to recurring hype–disappointment
+cycles and the AI winters of the 1970s and late 1980s.
+In the benchmark intervention period (1987–2012), major
+funders—most notably DARPA—helped reorient AI away
+from resolving foundational disputes about intelligence and
+toward measurable progress on well-specified tasks with
+clear evaluation metrics. This shift crystallised into the
+Common Task Framework, which organized research around
+shared datasets, held-out evaluation, and automated scor-
+ing, enabling direct comparison among methods on a fixed
+task. In this sense, benchmarking served as a pragmatic
+bypass, making progress legible through quantitative perfor-
+mance (Koch \& Peterson, 2024; Raji et al., 2021a).
+From roughly 2012 onward, AI entered a period of extraordi-
+nary coherence driven by the convergence of large datasets,
+GPU acceleration, and accumulated advances in learning
+algorithms. Following the 2012 ImageNet breakthrough,
+deep learning’s success reflected favourable positional fac-
+tors—large labelled datasets and GPU acceleration—rather
+than a settled theory of intelligence (Krizhevsky et al., 2012).
+Once this combination proved decisive across vision, speech,
+and language tasks, scaling model size, data, and compute
+emerged as a reliable and comparatively low-risk path to
+performance gains. Empirical scaling studies reinforced
+this strategy by demonstrating predictable improvements
+with increased scale, further entrenching optimization over
+a small set of quantitative benchmarks as the dominant re-
+search practice (Hestness et al., 2017). As a result, the field
+increasingly treated benchmark performance as the main
+indicator of progress, yielding rapid gains and clear success
+signals, and producing an evaluation regime tightly focused
+on predictive accuracy. By mid-2026, leading benchmarks
+2
+Futures that benchmark-driven AI cannot see
+have largely saturated, making this regime’s limits visible
+rather than merely theoretical.
+2.3. Exaptation in Modern Machine Learning
+The historical record suggests that evaluation regimes play a
+role in determining which lines of work remain visible, dis-
+seminated, and sustained by the research community long
+enough to matter. Modern machine learning provides con-
+crete illustrations of this pattern: several of its core capabili-
+ties emerged through the repurposing of ideas, tools, or struc-
+tures, sometimes developed for adjacent problems or sub-
+fields, and later applied in new roles. At the infrastructural
+level, graphics processing units (GPUs) provide a canoni-
+cal example. Originally developed to accelerate real-time
+graphics rendering, GPUs were optimised for highly par-
+allel arithmetic operations rather than for general-purpose
+programmability (Owens et al., 2008; Nickolls et al., 2008).
+This hardware proved decisive for deep learning by making
+the training of previously impractical neural networks fea-
+sible at scale. The 2012 ImageNet breakthrough, enabled
+by GPU-trained convolutional networks, marked a turning
+point that accelerated the adoption of deep learning across
+vision, speech, and language (Krizhevsky et al., 2012). In
+this sense, GPUs did not constitute a theoretical advance in
+learning algorithms, but an infrastructural exaptation that re-
+shaped the pace and direction of machine learning research.
+Exaptation has also operated at the levels of model archi-
+tecture and training methodology. The U-Net architecture
+was originally introduced for biomedical image segmenta-
+tion (Ronneberger et al., 2015). In later work on denoising
+diffusion probabilistic models, U-Net–based architectures
+were repurposed as the core backbone for generative model-
+ing, where the same multi-scale, skip-connected structure
+supports iterative noise prediction and removal, enabling
+high-fidelity image synthesis (Ho et al., 2020).
+A useful illustration comes from the history of neural net-
+works in the late 1990s and early 2000s. Support vector
+machines appeared stronger on the benchmarks of the era,
+and the field shifted attention accordingly. This was locally
+rational but ultimately misleading: advances in optimization,
+data availability, and GPU acceleration later enabled deep
+networks to become the foundation of modern ML (Bengio
+et al., 2013; LeCun et al., 2015). The episode illustrates how
+evaluation regimes shape which ideas are prematurely set
+aside.
+The 2014 paper introducing generative adversarial networks
+offers a more recent and precisely documented case (Good-
+fellow et al., 2014). The authors hedged explicitly on sample
+quality, writing that their results made no claim of superi-
+ority over existing generative methods, framing the con-
+tribution as demonstrating a framework’s potential. One
+reviewer concluded that the submission was “may not yet
+be quite strong enough for NIPS.” The paper was accepted.
+It became one of the most cited works in the history of ma-
+chine learning. What the evaluation regime could not easily
+measure was the generative framework itself; the conceptual
+architecture that would later reshape the field.
+3. Present Diagnosis: The Tyranny of
+Benchmarks
+Benchmarks do not merely evaluate research, they increas-
+ingly organize it. This governance operates on three levels.
+First, benchmark-centered progress selects for particular
+resource profiles (compute, engineering infrastructure, fa-
+miliarity with standardized datasets), shaping who can par-
+ticipate and who can sustainably stay. Second, benchmarks
+shape what even the selected participants work on, systemat-
+ically rewarding “hill-climbable” contributions while raising
+the cost of paradigm-challenging work. Third, benchmarks
+codify present understanding, while many breakthrough con-
+tributions derive their value from future exaptations, uses
+and recombinations that simplistic evaluation cannot antic-
+ipate, yet simplistic evaluation determines which lines of
+work survive long enough to be exapted.
+The tyranny is not in any individual benchmark. It is in
+benchmark culture as the field’s dominant mode of eval-
+uation: when leaderboards, standardized pipelines, and
+common-task success become the default currency of le-
+gitimacy, they quietly reshape the community, the agenda,
+and the kind of novelty that can be recognized.
+3.1. Community Composition
+NeurIPS was founded by researchers studying neural in-
+formation processing systems, a coalition spanning neuro-
+science, cognitive science, physics, and computer science,
+unified by interest in how biological and artificial systems
+process information. That founding coalition has largely
+moved to the periphery of today’s flagship ML venues. Bour-
+dieu offers a framework for understanding such shifts: sci-
+entific fields define what counts as legitimate capital, and
+participants without the right capital learn to self-disqualify
+before explicit rejection occurs (Bourdieu, 1975). In ML
+today, that cost of entry is not only conceptual; it is often
+infrastructural.
+This narrowing is not incidental to benchmark culture—it is
+produced by it. Klinger et al. document that AI research has
+become focused on narrower themes in recent years, and
+that work involving the private sector tends to be less di-
+verse and more influential than academic work, with special-
+ization toward data-hungry and computationally intensive
+methods (Klinger et al., 2020; OECD, 2023). A large-scale
+analysis of 41 million research papers confirms that AI tools
+amplify individual output while collectively narrowing the
+3
+Futures that benchmark-driven AI cannot see
+themes researchers pursue (Hao et al., 2026). This con-
+centration also reflects a structural feature of modern AI’s
+funding landscape: unlike earlier technology breakthroughs,
+from the internet to GPS to semiconductors, which were
+primarily government- and academia-funded (Mazzucato,
+2013), today’s AI development is driven by venture capital
+and large technology companies whose selection pressures
+favor commercially viable, short-horizon research (OECD,
+2023). Benchmark culture amplifies this dynamic by mak-
+ing large-scale compute, data, and engineering infrastructure
+especially valuable: when progress is measured as incre-
+mental gains on shared tasks, the returns to scale in these
+resources become unusually direct, and compatibility with
+prevailing hardware and software ecosystems shapes which
+ideas succeed as much as their scientific merit (Hooker,
+2020; Strubell et al., 2019).
+Why should we care who participates? One reason is com-
+binatorial: transformative work often emerges from unusual
+recombinations across methods, domains, and problem fram-
+ings. The empirical science-of-science literature supports
+this mechanism at scale. Wu, Wang, and Evans, analyzing
+65 million papers and patents, find that small teams more of-
+ten “disrupt” existing trajectories while large teams more of-
+ten “develop” and consolidate them (Wu et al., 2019). Uzzi
+et al. similarly show that the highest-impact science tends
+to combine highly conventional prior work with a smaller
+intrusion of atypical combinations (Uzzi et al., 2013). The
+implication for ML is not that large-scale benchmarked en-
+gineering is bad (it is often essential), but that a community
+whose dominant selection pressures favor scale and consoli-
+dation will, at the margin, generate fewer atypical combina-
+tions, and atypical combinations are the raw material from
+which future exaptations are built.
+Consider what this means for exaptation in ML itself. The
+attention mechanism emerged from work at the intersection
+of machine learning and computational linguistics — a com-
+munity that maintained distinct evaluation standards and in-
+stitutional identity for decades (Bahdanau et al., 2014). ACL
+remains one of AI’s oldest venues, and translation one of
+its oldest problems. That community sustained the concep-
+tual foundations, sequence modeling, alignment, encoder-
+decoder structure, later extended into the transformer (Bah-
+danau et al., 2014; Vaswani et al., 2017). AlphaFold2 then
+adapted these architectures to protein structure prediction,
+recognized by the 2024 Nobel Prize in Chemistry (Jumper
+et al., 2021; The Nobel Prize, 2024). The lineage is coun-
+terintuitive: solving a grand challenge in structural biology
+required having had linguists in AI. This was not planned,
+and could not have been. It was possible because a hetero-
+geneous research ecosystem preserved communities with
+distinct problem framings long enough for unexpected re-
+combinations to occur. Benchmark culture can sustain nar-
+row subcommunities. But cross-domain exaptations depend
+on the broader ecosystem that benchmark monoculture se-
+lects against.
+This is why “community composition” is not a sociological
+side note: it is a technical precondition for certain kinds of
+progress. If benchmark culture disproportionately rewards
+resource-intensive, pipeline-compatible work, then it indi-
+rectly shapes the space of recombinations the field will ever
+get a chance to discover.
+3.2. Research Agenda
+Section 3.1 established that benchmark culture shapes who
+participates in ML research. But benchmarks also shape
+what even selected participants choose to work on. Donoho
+articulates a compelling positive case: “frictionless repro-
+ducibility”, the combination of shared data, shared code,
+and competitive challenges, can accelerate progress by en-
+abling researchers to directly compare, iterate, and build
+with minimal coordination cost (Donoho, 2024). This is
+real and valuable. Yet Recht, in his commentary on Donoho,
+offers a revealing reframe: “We can view machine learning
+practice as a massively parallel genetic algorithm that fixates
+on goals where hill climbing is possible and ignores those
+where it isn’t” (Recht, 2024).
+This dynamic maps naturally onto Kuhn’s distinction be-
+tween normal science and revolutionary science (Kuhn,
+1962).
+Benchmarks, leaderboards, and standardized
+pipelines are “normal science with the friction removed”:
+they create extraordinary efficiency at paradigm-consistent
+progress. But the same infrastructure raises the barrier to
+work that challenges the paradigm. To depart from the
+dominant framing, one must often do two things at once:
+introduce a new idea and demonstrate competitive perfor-
+mance on metrics and pipelines optimized for the incumbent
+paradigm. The asymmetry is structural: mature baselines
+inherit years of tuned hyperparameters, training recipes,
+compute infrastructure, and evaluation conventions, while
+genuinely new approaches must recreate much of that stack
+merely to become comparable.
+The transition from statistical to neural machine translation
+shows this asymmetry playing out over an entire research
+generation. Neural approaches existed early (Forcada \&
+˜Neco, 1997), but SMT dominated for decades under bench-
+mark regimes and engineering ecosystems that strongly fa-
+vored it (Stahlberg, 2020). NMT “arrived” as a benchmark
+winner only after the broader neural ecosystem (compute,
+data, training methods, and engineering practices) matured
+to the point where neural systems could become competitive
+quickly (Sutskever et al., 2014; Bahdanau et al., 2014). The
+lesson is not that benchmarks prevented NMT (they even-
+tually validated it). The lesson is that benchmark-driven
+selection pressures can delay or tax paradigm shifts until the
+surrounding ecosystem makes them “one-shot competitive.”
+4
+Futures that benchmark-driven AI cannot see
+Recent analyses confirm that benchmarks steer agendas,
+not merely measure outcomes. Systematic study of sixty
+LLM benchmarks finds that saturation is now the norm:
+once models approach ceiling performance, the field’s re-
+sponse is to create new benchmarks rather than to question
+the evaluative regime itself (Akhtar et al., 2026; Ott et al.,
+2022). Leaderboard rankings have been shown to reflect
+undisclosed private testing practices that benefit a hand-
+ful of providers, distorting the playing field that nominally
+drives research priorities (Singh et al., 2025). Critiques
+from within ML further emphasize construct validity prob-
+lems when benchmarks are treated as broad measures of
+progress (Raji et al., 2021b; Bechler-Speicher et al., 2025).
+Benchmarks function as selection environments that shape
+which questions are “worth asking” and which styles of
+research are “viable careers.”
+3.3. The Limits of Evaluation
+Every evaluation instantiates a theory of what matters. That
+theory is necessarily incomplete because the future problem
+landscape is not knowable in advance. This is not merely or-
+dinary uncertainty (unknown parameters); it is often closer
+to Knightian uncertainty: qualitative shifts in tasks, environ-
+ments, and use cases that cannot be exhaustively enumerated
+today (Knight, 1921). Lehman et al. make this point in a
+particularly ML-relevant form, arguing that ML systems
+face a “Knightian blindspot” when confronted with qual-
+itatively novel challenges generated by complex, creative
+environments (Lehman et al., 2025). When evaluation is
+optimized for what we can currently specify, it can system-
+atically underweight work whose value depends on what we
+cannot yet quantitatively specify.
+Historical patterns in science and technology recur. Work
+can be “ahead of its time,” recognized only when com-
+plementary tools or applications arrive (van Raan, 2004;
+Garfield, 1980). In AI, the most valuable contributions can
+be those that later become indispensable components of sys-
+tems aimed at problems we do not yet know how to write
+down.
+Benchmarks also encode hidden assumptions about deploy-
+ment. Computer vision benchmarks, for example, histor-
+ically defined tasks through particular label sets, sensors,
+and controlled conditions—assumptions that later turned
+out to be misaligned with robotics, distribution shift, and
+real-world robustness (Everingham et al., 2010; Scharstein
+\& Szeliski, 2002; Hendrycks \& Dietterich, 2019). This does
+not indict benchmarking; it clarifies its limits: benchmarks
+measure what they measure.
+Path dependence theory formalizes why such limits can have
+long-run consequences. When a research direction experi-
+ences increasing returns (tooling, shared pipelines, network
+effects in adoption), early advantages compound and alterna-
+tives become harder to pursue even if they would be better in
+retrospect (Arthur, 1989; 1996). Benchmark culture creates
+increasing returns for specific research profiles: compute,
+engineering infrastructure, and familiarity with standard
+datasets. These advantages accumulate. The resulting loss
+is largely invisible because we cannot observe innovations
+never pursued. Yet the structural dilemma remains: bench-
+marks codify present understanding; breakthroughs often
+require violating that understanding. No quantitative eval-
+uation method can foresee exaptations. But our evaluation
+methods determine which research survives long enough to
+be exapted.
+4. The Such-That Problem
+The three dimensions diagnosed in Section 3 (community
+composition, research agenda, and the limits of evaluation)
+each become more acute as the field’s guiding question
+shifts from Q1 to Q2, and the worsening is not one of de-
+gree. Community composition matters more because such-
+that problems require contributions from disciplines that
+benchmark culture systematically marginalizes: philosophy,
+political science, and the social sciences that have grappled
+with contested normative questions for decades. Research
+agenda matters more because benchmark-driven selection
+cannot orient toward goals that are not yet fully specified;
+one cannot hill-climb toward a summit whose location re-
+mains unknown. The limits of evaluation become the central
+problem rather than a manageable one: for capability re-
+search, the gap between benchmark performance and real
+progress is imperfect but has been validated by decades of
+use; for such-that problems, that validation does not exist,
+and premature convergence on current proxies may fore-
+close discovery of what we actually need to measure. The
+following subsections develop why the shift from Q1 to Q2
+changes the nature of the problem, not only its difficulty.
+4.1. The Such-That Problem Is in the Air
+We cite what follows as evidence that this shift is already
+institutional, not as an evaluation of the efforts themselves.
+The arc of this section is observational: 4.1 documents the
+shift, 4.2 argues it is different in kind from what preceded it,
+and 4.3 draws the implication for exaptation.
+Evidence suggests a shift in research attention.
+Tur-
+ing Award recipients have begun publicly advocating for
+safety research (Bengio et al., 2024).
+Major venues
+have recognized this work: NeurIPS lists safety, inter-
+pretability, fairness, and privacy among its topical ar-
+eas (NeurIPS, 2025b), hosts alignment and interpretability
+workshops (NeurIPS, 2024b; Abrol et al., 2024), and re-
+quires ethics review (NeurIPS, 2025a). Award committees
+have followed, recognizing alignment and safety work at
+NeurIPS 2023, NeurIPS 2024, and ICLR 2025 (NeurIPS,
+5
+Futures that benchmark-driven AI cannot see
+2023; 2024a; ICLR, 2025). Leading laboratories have estab-
+lished dedicated interpretability and alignment teams (Ope-
+nAI, 2025; Anthropic, 2025; Google DeepMind, 2025).
+Governments have created AI Safety Institutes across multi-
+ple jurisdictions (UK Government, 2023; NIST, 2023; IAPS,
+2025). These developments suggest a new set of concerns
+is gaining attention. The 1956 Dartmouth proposal (Mc-
+Carthy et al., 1956) asked: Can machines exhibit intelligent
+behavior? The emerging question appears to extend this:
+Can machines exhibit intelligent behavior such that they
+are aligned, interpretable, and safe? We refer to this as the
+such-that question.
+4.2. Fundamentally Different from the Original
+Question
+The founding question of artificial intelligence—whether
+machines can exhibit intelligent behavior— was deliberately
+vague, but it admitted an epistemological bypass that made
+rapid progress possible. Researchers could set aside the
+philosophically fraught question of what intelligence is and
+instead measure what systems do. Russell and Norvig’s
+textbook codifies this move: the field studies rational agents
+operating in task environments where success criteria can
+be externally specified (Russell \& Norvig, 2021). Whether a
+bird appears in a photograph admits ground truth. The rules
+of Go are fixed before play begins. These are what we might
+call world-side problems: the ground truth exists indepen-
+dently of who evaluates the system, the task environment is
+characterizable in advance, and closed-loop benchmarking
+becomes a natural methodology. The contrast we draw is
+not between objective and subjective questions—both kinds
+admit precise formulations—but between problems whose
+success criteria are fixed by the task and those that must be
+constructed through deliberation.
+Such-that clauses invert this structure. When we ask whether
+a system behaves such that it remains aligned with human
+values, interpretable to human understanding, or safe under
+deployment, we are not asking whether it maps inputs to
+outputs according to some function waiting to be discovered
+in the world. We are asking whether its behavior accords
+with standards that are contested, contextual, and constantly
+renegotiated through social processes. The ground truth of
+interpretability or alignment with society does not exist in
+nature; it must be constructed through human deliberation.
+Gabriel’s analysis of alignment identifies a “simple thesis”
+that technologists sometimes assume, that one can solve
+the technical problem first and specify normative criteria
+afterward, and shows why it fails: normative and technical
+dimensions are entangled from the start (Gabriel, 2020). The
+such-that problem is human-side, not world-side, and the
+difference is not one of degree. Here we focus specifically
+on the normative subset of such-that clauses: alignment,
+interpretability, safety, governance. Operational constraints
+like energy efficiency or latency remain largely world-side
+and benchmark-tractable. The distinction matters because
+our argument targets the former, not the latter.
+Q1 and Q2 are both design problems, but they differ in
+whether the objective can be specified in advance (Simon,
+1996). For Q1, success criteria are externally fixed and
+agreed upon before the system is built. For Q2, they are
+not: there is no single accepted definition of alignment,
+interpretability, or safety. Gabriel documents multiple con-
+flicting conceptions of alignment alone (Gabriel, 2020); the
+interpretability literature lacks a settled account of what
+interpretability requires (Lipton, 2018); and fairness criteria
+have been shown to be mutually incompatible under reason-
+able assumptions (Chouldechova, 2017). A field that cannot
+agree on what it is trying to achieve cannot validate that
+its benchmarks track the goal. Benchmark culture applied
+to pre-paradigmatic problems does not accelerate progress
+toward the goal; it accelerates progress toward whichever
+operationalization happens to gain traction first. We have
+built technology that outpaces the conceptual vocabulary
+required to understand it. Hewitt, Geirhos, and Kim argue
+that we cannot even describe AI behavior using existing
+human language; interpretability itself is a communication
+problem requiring the invention of new concepts (Hewitt
+et al., 2025). The such-that problem demands not just better
+engineering but something closer to a new science, one for
+which the methods, and perhaps even the words, do not yet
+exist.
+Recent work from within the machine learning community
+confirms this diagnosis. Fisher et al. argue that political
+neutrality in AI is “theoretically impossible” because neu-
+trality is inherently subjective. What seems neutral to one
+perspective appears biased from another (Fisher et al., 2025).
+Their framework draws explicitly on philosophy, political
+science, and sociology, fields that have grappled with neu-
+trality and bias for decades. Rahwan et al. call for a new
+interdisciplinary field of “machine behavior” that would
+study AI systems using methods from biology, psychology,
+economics, and anthropology (Rahwan et al., 2019). These
+are not peripheral voices; Fisher et al. received an oral pre-
+sentation at ICML 2025, and Rahwan et al. published in
+Nature. The message from inside the community is increas-
+ingly clear: the such-that problem cannot be solved with the
+tools that solved the capability problem.
+4.3. The Case for Exaptation
+If the such-that problem is genuinely different in kind, one
+might expect the field’s response to differ accordingly. It has
+not. Current attempts to benchmark alignment and safety
+(refusal rates, bias metrics, RLHF/RLAIF scores, Constitu-
+tional AI evaluations) represent genuine progress. Yet they
+face a structural difficulty: we are optimizing proxies before
+6
+Futures that benchmark-driven AI cannot see
+validating that they track the underlying goals. For capa-
+bility research, decades of experience built confidence that
+benchmark performance correlated with real-world progress.
+For such-that problems, this correlation is precisely what
+remains unestablished. The risk is not that safety cannot
+be measured. The risk is that premature convergence on
+current metrics forecloses discovery of what we actually
+need to measure. The concepts required to measure it may
+not yet exist.
+History offers at least one suggestive precedent. The al-
+gorithm now called backpropagation, foundational to mod-
+ern deep learning, did not originate within artificial intel-
+ligence research. Its mathematical core, the reverse mode
+of automatic differentiation, first appeared in Linnainmaa’s
+1970 master’s thesis on numerical error analysis, written
+in Finnish with no reference to neural networks (Linnain-
+maa, 1970). Related ideas appeared in optimal control
+theory (Kelley, 1960). Werbos, whose 1974 PhD thesis
+applied these techniques to neural network training, was
+working not in computer science but in the behavioral sci-
+ences, attempting to model political forecasting (Werbos,
+1994). Rumelhart, Hinton, and Williams popularized the
+method for machine learning over a decade later (Rumel-
+hart et al., 1986). The lesson is not that “the solution was
+waiting.” Considerable conceptual work was required to
+recognize the relevance and bridge the gap. The deeper
+lesson is that the field could not have specified in advance
+what it needed, and therefore could not have benchmarked
+toward it. Someone had to be working at the boundaries, in
+contact with multiple traditions, for that bridge to be built at
+all.
+What might the analogous story look like for such-that prob-
+lems? We do not know. Neither does anyone else. Bengio et
+al. state explicitly that we should search for technical guar-
+antees of safety if they exist, while acknowledging that we
+do not know whether such guarantees exist (Bengio et al.,
+2024). This is not ordinary uncertainty about parameters. It
+is uncertainty about whether the problem admits the kind
+of solution we are searching for. Under such conditions,
+the exaptation tax becomes acute. Benchmark-driven se-
+lection may be optimizing confidently in a subspace that
+does not contain what we most need to find, while filtering
+out exploratory work from which unexpected solutions have
+historically emerged. The such-that problem may require
+innovations in methods, but also in measurement regimes,
+conceptual vocabulary, and institutional structure, domains
+where benchmark-driven selection has less purchase.
+Benchmarking itself was an institutional innovation that
+enabled the capability era. The Common Task Framework
+emerged from evaluation programs designed for specific
+government needs, then was repurposed as a general se-
+lection mechanism for ML (Koch \& Peterson, 2024). But
+benchmarks harvested what prior exploration had planted.
+Neural networks persisted through two AI winters despite a
+selection environment that had largely moved on, sustained
+by researchers who stayed at the boundary as connection-
+ism became unfashionable and institutional support shifted
+elsewhere. The deep learning boom required the selection
+mechanism and something to select from. For capability
+research, the accumulated exploration capital was sufficient.
+For such-that problems, we cannot assume the same. The
+concern is that if benchmark culture crowds out exploratory
+work, the next era will have nothing to exapt.
+5. Proposals
+The proposals below outline institutional mechanisms for
+restoring exaptive capacity without abandoning benchmark-
+ing: pluralizing selection criteria, protecting exploratory
+communities, and governing the selection rules themselves.
+5.1. Plural Evaluation Regimes
+Peer review in AI is nominally multi-criteria but decisions
+are often made by collapsing those criteria into a single
+ranking. When commonly used criteria such as novelty,
+correctness, and empirical validation pull in different di-
+rections, aggregation obscures what kind of contribution a
+paper actually makes. An alternative is to run multiple scor-
+ing regimes in parallel (e.g., one that highly rewards novelty
+and another that rewards benchmark performance) and to
+admit a portfolio that includes top papers from each regime.
+Under such a system, a paper that introduces a new approach
+but does not improve benchmark performance could still be
+ranked highly in one regime and published. Venues such as
+TMLR already instantiate part of this logic, evaluating sub-
+missions on significance and correctness rather than novelty
+thresholds or benchmark gains (Transactions on Machine
+Learning Research, 2022). The such-that problem demands
+more: venues that explicitly protect work whose goals are
+themselves under construction.
+A complementary mechanism is explicit diversification com-
+bined with controlled randomness once a basic quality
+threshold is met. Peer review in AI is noisy with substantial
+variance across reviewers (Fogelholm et al., 2012; Aczel
+et al., 2025). Under time pressure, reviewers often over-
+weight easily checked signals such as benchmark perfor-
+mance, which can distort judgments about criteria more
+relevant to exaptive capacity (Alberts et al., 2014; Severin \&
+Egger, 2021). When many reviewers apply the same short-
+cut, the resulting bias becomes correlated noise, and partial
+randomization among near-equal submissions can improve
+selection (Kleinberg \& Raghavan, 2018; Emelianov et al.,
+2020). Similar logic underlies modified lottery schemes
+used in research funding (Adam et al., 2019; Liu et al.,
+2020; Heyard et al., 2022) and structured hiring interven-
+7
+Futures that benchmark-driven AI cannot see
+tions such as the Rooney Rule, which enforce diversity at
+the consideration stage (Kleinberg \& Raghavan, 2018; Celis
+et al., 2021). Stochastic selection is a standard tool for
+maintaining diversity and avoiding premature convergence
+in evolutionary computation and search theory (Lehman \&
+Stanley, 2011; Emelianov et al., 2020).
+Plural regimes should also treat disagreement as signal and
+not failure. High variance in assessments often indicates
+that a contribution challenges existing problem framings or
+relies on premises not yet widely shared (Stanley \& Lehman,
+2015). An idea that appears valuable to some experts but not
+others is not a failed evaluation; it marks a frontier where
+prevailing frameworks have not yet stabilized. Preserving
+such disagreement allows ideas with latent potential to per-
+sist long enough to realize it.
+Notably, a similar pluralism has already emerged within AI
+systems themselves (Sorensen et al., 2024). Contemporary
+architectures increasingly rely on ensembles, routing, and
+specialized components, with overall performance arising
+from coordination rather than dominance by a single model.
+The same community has developed novelty search, qual-
+ity diversity algorithms, and uncertainty-aware exploration
+methods precisely because pure objective optimization con-
+verges too fast and too narrowly (Lehman \& Stanley, 2011).
+Formal models of scientific communities confirm the trade-
+off: more connected networks reach consensus faster, but
+less connected ones are more likely to reach the correct
+answer (Zollman, 2007). Research evaluation faces an anal-
+ogous problem but applies the simplest possible method to
+a task its own algorithms would approach very differently.
+5.2. Protecting Exploratory Work and Enabling
+Paradigm Turnover
+Plural evaluation should be complemented by explicit mech-
+anisms that protect communities with distinct standards of
+progress. Ideas that challenge dominant assumptions rarely
+perform well under prevailing metrics at early stages. With-
+out protected environments in which alternative criteria are
+legitimate, such ideas are eliminated before they can ma-
+ture. Institutions should therefore support venues, funding
+streams, and career signals that allow exploratory work to
+persist even when misaligned with mainstream benchmarks.
+In fast-growing fields, progress is often limited not by a lack
+of new ideas, but by the slow displacement of dominant
+frameworks that continue to perform well on existing met-
+rics (Kuhn, 1997; Foster et al., 2015). Review and funding
+processes should explicitly value work that stress-tests or
+falsifies core assumptions, even when it does not offer an
+immediate replacement or benchmark improvement.
+Selection mechanisms must also account for the fact that in-
+cremental advances within a paradigm compose cleanly
+while shifts in paradigm typically require coordinated
+changes across architectures, objectives, training methods,
+and evaluation itself. Institutions should therefore tolerate
+incomplete or uneven contributions that make sense only
+as part of a broader reconfiguration, rather than penalizing
+them for failing to deliver isolated gains.
+Hochreiter and Schmidhuber published the LSTM in
+1997 and watched the field move to support vector ma-
+chines (Hochreiter \& Schmidhuber, 1997). The paper sat
+slow to accumulate citations through a decade of benchmark-
+driven dominance. It later powered the voice assistants that
+reached production at scale and sustained the sequence mod-
+eling tradition that made the Transformer possible. The
+work this paper is trying to protect does not announce itself.
+It looks, from the outside, like the LSTM looked in 2003:
+real, rigorous, and invisible to the metrics that matter. If you
+are working on a question the field cannot yet evaluate, you
+are not in the wrong place. You are in the only place from
+which certain kinds of progress can come.
+5.3. Reflexive Governance of Evaluation Criteria
+In addition to pluralizing selection and protecting ex-
+ploratory communities, the research ecosystem must main-
+tain the capacity to interrogate and revise its own selection
+rules. Evaluation criteria in AI function as the main gover-
+nance mechanisms: they define what counts as progress and
+which failures are tolerable. Institutions should therefore
+legitimize and support meta-level work on evaluation itself,
+including empirical and conceptual analyses of benchmarks,
+metrics, and problem framings. Critique of dominant selec-
+tion rules should be treated as a core research activity with
+dedicated venues and tracks explicitly designed for such
+work such as the ICML position paper track. Initiatives
+of this kind play an important role in making evaluative
+assumptions explicit and open to revision. The stakes ex-
+tend beyond the research community: benchmark culture
+is now being encoded into regulatory frameworks for AI,
+and evaluation assumptions that harden into legal standards
+are an order of magnitude harder to revise than those that
+remain community norms.
+Finally, training and norms should equip researchers to rec-
+ognize selection rules as contingent rather than fixed. This
+includes mentoring around the practice of reviewing itself,
+emphasizing judgment about ideas, assumptions, and po-
+tential rather than reliance on surface metrics. Conferences
+can reinforce these norms by recognizing reviewing quality
+explicitly: ICML 2026 introduced Gold and Silver reviewer
+designations based on review quality rather than throughput
+alone. The community should go further: the most rigor-
+ous, idea-engaged reviews, those that evaluate a contribu-
+tion’s conceptual ambition and long-term potential, should
+be citable scholarly contributions in their own right.
+8
+Futures that benchmark-driven AI cannot see
+6. Alternative Views
+The Success Objection. Benchmark culture has produced
+AlphaFold, GPT-4, diffusion models, and the modern LLM
+ecosystem. The field has never been more productive or
+consequential. Where exactly is the problem? We do not
+dispute this success, but we question its attribution. The
+deep learning revolution required benchmarking as a se-
+lection mechanism. It also required something to select
+from. Neural networks persisted through two AI winters
+despite a selection environment that had moved on: Rosen-
+blatt’s perceptron in the 1950s, Hinton and Rumelhart in
+the 1980s, Bengio and LeCun through the 1990s and 2000s
+as the community shifted toward SVMs despite available
+connectionist results. Benchmark-driven selection has har-
+vested more than it has planted. For capability research,
+the question of whether machines can exhibit intelligent
+behavior, benchmark-driven selection has been extraordinar-
+ily effective at harvesting accumulated exploration capital.
+Our argument is forward-looking: the selection regime op-
+timized for Q1 may not be optimized for Q2, the question
+of whether machines can exhibit intelligent behavior such
+that they are aligned, interpretable, and safe. These are dif-
+ferent problems with different success criteria (Section 4.2).
+Past performance on capability questions is not evidence of
+future performance on such-that questions. The exaptation
+tax is not visible in current achievements; it is visible—or
+rather, invisible—in the paths not taken that might matter
+for problems we are only beginning to face. We are not
+arguing the system failed. We are arguing it succeeded at
+one problem and now faces another.
+The Invisibility Objection. If lost innovations cannot be
+observed, the exaptation tax is unfalsifiable. Every exam-
+ple cited—backpropagation, attention, RLHF—eventually
+succeeded. We concede the specific counterfactual is un-
+available, but this epistemic situation is familiar from con-
+servation biology: one cannot identify which lost species
+would have proven essential, yet the case for preserving bio-
+diversity under uncertainty is widely accepted. Structural
+narrowing is observable: thematic diversity in AI research
+has stagnated, with increasing specialization toward compu-
+tationally intensive methods (Klinger et al., 2020). We do
+not claim benchmark culture is the sole cause—industrial
+organization, compute costs, and convergence on effective
+methods all contribute—but benchmark-driven selection
+plausibly amplifies the narrowing by creating increasing re-
+turns for a particular resource profile. Moreover, Lehman et
+al. argue that ML systems face a “Knightian blindspot” when
+confronted with qualitatively novel challenges (Lehman
+et al., 2025); the same logic applies to evaluation systems
+themselves. Under genuine uncertainty about which di-
+rections will prove essential, reduced diversity is a cost in
+expectation—even when specific losses remain unobserv-
+able.
+The Protection Objection. “Protected venues” could shel-
+ter unproductive research from accountability. How do we
+distinguish sleeping beauties from deservedly ignored work?
+We cannot, and do not claim to. Protection means plural
+evaluation, not absent evaluation: work must demonstrate
+excellence under some criteria—rigor, conceptual clarity,
+novelty—even if it does not improve benchmark perfor-
+mance. Some protected work will fail; that is inherent to
+exploration. The question is whether a diversified portfolio
+outperforms a concentrated one when we cannot predict
+which directions matter. We propose time-limited runway
+and ex-post tracking, not permanent shelter.
+The Industry Lab Objection. Elite labs already escape
+benchmark pressure and produce transformative work. The
+market has self-corrected; these proposals are unnecessary.
+If the field’s exploratory capacity concentrates in organiza-
+tions with patient capital, two concerns follow. First, which
+questions get explored depends on which questions those or-
+ganizations prioritize—a narrow governance structure for a
+broadly consequential technology. The such-that questions
+have public-goods characteristics that may be undersupplied
+by organizations optimizing for competitive advantage. Sec-
+ond, academic research risks losing relevance for the field’s
+most important problems. Our proposals address whether
+exploratory capacity should be rationed by resources or
+distributed by design.
+The Measurement Objection. Such-that problems need
+more rigorous measurement, not less. RLHF succeeded
+because it could be evaluated. The paper could justify aban-
+doning rigor where rigor matters most. We agree that de-
+veloping metrics for alignment, interpretability, and safety
+is necessary. Our argument is not against measurement but
+against treating metrics as dominant selection criteria be-
+fore validating that they track our actual qualitative goals.
+For capability research, experience gave confidence that
+benchmark performance correlated with progress. For such-
+that problems, this correlation is precisely what remains
+unvalidated. The risk is mistaking measurability for valid-
+ity—optimizing legible proxies while true objectives remain
+underspecified. Metrics are tools; benchmark culture is a
+selection regime, not one we endorse extending where the
+metric-objective gap is not yet understood.
+7. Discussion
+Our argument is not that benchmarking is wrong but that
+the current calibration is off: the field is over-exploiting a
+selection regime optimized for Q1 at a moment when Q2
+demands more exploration. But the asymmetry of error costs
+matters. If we are wrong, the cost is some inefficiency. If we
+are right, the field may be filtering out what it most needs
+to find. Our proposals are not alternatives to benchmarking.
+They are hedges against a future we cannot yet evaluate.
+9
+Futures that benchmark-driven AI cannot see
+References
+Abrol,
+V.,
+Boreiko,
+V.,
+Chaudhuri,
+K.,
+Di
+Cas-
+tro, D., Frost, N., Lakkaraju, H., Moshkovitz, M.,
+Neuhof, B., Semenova, L., Srinivas, S., and Ya-
+dav, C.
+Interpretable AI: Past, present and fu-
+ture.
+NeurIPS 2024 Workshop, December 2024.
+URL https://interpretable-ai-workshop.
+github.io/. Workshop website; held Dec 15, 2024.
+Accessed 2026-01-29.
+Aczel, B., Barwich, A.-S., Diekman, A. B., Fishbach, A.,
+Goldstone, R. L., Gomez, P., Gundersen, O. E., von Hip-
+pel, P. T., Holcombe, A. O., Lewandowsky, S., et al. The
+present and future of peer review: Ideas, interventions,
+and evidence. Proceedings of the National Academy of
+Sciences, 122(5):e2401232121, 2025.
+Adam, D. et al. Science funders gamble on grant lotteries.
+Nature, 575(7785):574–575, 2019.
+Akhtar, M., Reuel, A., Soni, P., et al. When AI benchmarks
+plateau: A systematic study of benchmark saturation.
+arXiv preprint arXiv:2602.16763, 2026.
+Alberts, B., Kirschner, M. W., Tilghman, S., and Varmus, H.
+Rescuing us biomedical research from its systemic flaws.
+Proceedings of the National Academy of Sciences, 111
+(16):5773–5777, 2014.
+Anthropic. Interpretability team. Organization website,
+2025.
+Anthwal, N., Joshi, L., and Tucker, A. S. Evolution of the
+mammalian middle ear and jaw: adaptations and novel
+structures. Journal of Anatomy, 222(1):147–160, 2013.
+Arthur, W. B. Competing technologies, increasing returns,
+and lock-in by historical events. The Economic Journal,
+99(394):116–131, 1989.
+Arthur, W. B. Increasing returns and the two worlds of busi-
+ness. Harvard Business Review, 74(4):100–109, 1996.
+Bahdanau, D., Cho, K., and Bengio, Y. Neural machine
+translation by jointly learning to align and translate. arXiv
+preprint arXiv:1409.0473, 2014.
+Bechler-Speicher, M., Finkelshtein, B., Frasca, F., M¨uller,
+L., T¨onshoff, J. M., Siraudin, A., Zaverkin, V., Bronstein,
+M. M., Niepert, M., Perozzi, B., Galkin, M., and Morris,
+C. Position: Graph learning will lose relevance due to
+poor benchmarks. Proceedings of Machine Learning
+Research, 267:81067–81089, 2025. URL https://
+arxiv.org/abs/2502.14546.
+Bengio, Y., Courville, A., and Vincent, P. Representation
+learning: A review and new perspectives. IEEE Transac-
+tions on Pattern Analysis and Machine Intelligence, 35
+(8):1798–1828, 2013.
+Bengio, Y. et al.
+Managing ai risks in an era of rapid
+progress. Science, 2024.
+Bourdieu, P. The specificity of the scientific field and the
+social conditions of the progress of reason. Social Science
+Information, 14(6):19–47, 1975.
+Celis, L. E., Hays, C., Mehrotra, A., and Vishnoi, N. K. The
+effect of the rooney rule on implicit bias in the long term.
+In Proceedings of the 2021 ACM conference on fairness,
+accountability, and transparency, pp. 678–689, 2021.
+Chouldechova, A. Fair prediction with disparate impact: A
+study of bias in recidivism prediction instruments. Big
+Data, 5(2):153–163, 2017.
+Donoho, D. Data science at the singularity. Harvard Data
+Science Review, 6(1), 2024.
+doi: 10.1162/99608f92.
+b91339ef.
+Emelianov, V., Gast, N., Gummadi, K. P., and Loiseau, P.
+On fair selection in the presence of implicit variance. In
+Proceedings of the 21st ACM Conference on Economics
+and Computation, pp. 649–675, 2020.
+Everingham, M., Van Gool, L., Williams, C. K., Winn, J.,
+and Zisserman, A. The PASCAL Visual Object Classes
+(VOC) challenge. International Journal of Computer
+Vision, 88(2):303–338, 2010.
+Ferreira, M. R., Reisz, N., Schueller, W., Servedio, V. D. P.,
+Thurner, S., and Loreto, V. Quantifying exaptation in
+scientific evolution. arXiv preprint arXiv:2002.08144,
+2020.
+Fisher, J., Appel, R. E., Park, C. Y., Potter, Y., Jiang, L.,
+Sorensen, T., Feng, S., Tsvetkov, Y., Roberts, M. E.,
+Pan, J., Song, D., and Choi, Y. Political neutrality in AI
+is impossible—but here is how to approximate it. Pro-
+ceedings of the International Conference on Machine
+Learning (ICML), 2025. Oral presentation.
+Fogelholm, M., Leppinen, S., Auvinen, A., Raitanen, J.,
+Nuutinen, A., and V¨a¨an¨anen, K. Panel discussion does
+not improve reliability of peer review for medical research
+grant proposals. Journal of clinical epidemiology, 65(1):
+47–52, 2012.
+Forcada, M. L. and ˜Neco, R. P.
+Recursive hetero-
+associative memories for translation. In International
+Work-Conference on Artificial and Natural Neural Net-
+works (IWANN), pp. 453–462. Springer, 1997.
+Foster, J. G., Rzhetsky, A., and Evans, J. A. Tradition and
+innovation in scientists’ research strategies. American
+sociological review, 80(5):875–908, 2015.
+Gabriel, I. Artificial intelligence, values, and alignment.
+Minds and Machines, 30(3):411–437, 2020.
+10
+Futures that benchmark-driven AI cannot see
+Garfield, E. Premature discovery or delayed recognition—
+why? Current Contents, 21:5–10, 1980.
+Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B.,
+Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y.
+Generative adversarial nets. In Advances in Neural Infor-
+mation Processing Systems, volume 27, pp. 2672–2680,
+2014.
+Google DeepMind. Interpretability team. Organization
+website, 2025.
+Gould, S. J. and Vrba, E. S. Exaptation—a missing term in
+the science of form. Paleobiology, 8(1):4–15, 1982.
+Hao, Q., Xu, F., Li, Y., et al. Artificial intelligence tools
+expand scientists’ impact but contract science’s focus. Na-
+ture, 649:1237, 2026. URL https://www.nature.
+com/articles/s41586-025-09922-y.
+Harman, D. K.
+The first text REtrieval conference
+(TREC-1).
+Technical Report Special Publication
+500-207, National Institute of Standards and Technology,
+Gaithersburg, MD, USA, May 1993.
+URL https:
+//nvlpubs.nist.gov/nistpubs/Legacy/
+SP/nistspecialpublication500-207.pdf.
+Hendrycks, D. and Dietterich, T. Benchmarking neural
+network robustness to common corruptions and perturba-
+tions. In International Conference on Learning Represen-
+tations, 2019.
+Hestness, J., Narang, S., Ardalani, N., Diamos, G., Jun,
+H., Kianinejad, H., Patwary, M., Yang, Y., and Zhou, Y.
+Deep learning scaling is predictable, empirically. arXiv
+preprint arXiv:1712.00409, 2017.
+Hewitt, J., Geirhos, R., and Kim, B.
+We can’t under-
+stand AI using our existing vocabulary. arXiv preprint
+arXiv:2502.07586, 2025.
+Heyard, R., Ott, M., Salanti, G., and Egger, M. Rethinking
+the funding line at the swiss national science foundation:
+Bayesian ranking and lottery. Statistics and Public Policy,
+9(1):110–121, 2022.
+Ho, J., Jain, A., and Abbeel, P. Denoising diffusion proba-
+bilistic models. Neural Information Processing Systems
+(NeurIPS), 33:6840–6851, 2020.
+Hochreiter, S. and Schmidhuber, J. Long short-term memory.
+Neural Computation, 9(8):1735–1780, 1997.
+Hooker, S. The hardware lottery. CoRR, abs/2009.06489,
+2020.
+URL https://arxiv.org/abs/2009.
+06489.
+IAPS. International ai safety network. Organization website,
+2025.
+ICLR.
+Iclr
+2025
+awards.
+https://blog.iclr.cc/2025/04/22/announcing-the-
+outstanding-paper-awards-at-iclr-2025/, 2025.
+Jelinek, F. Statistical Methods for Speech Recognition. MIT
+Press, Cambridge, MA, USA, 1997. ISBN 0262100665.
+Jumper, J., Evans, R., Pritzel, A., Green, T., Figurnov, M.,
+Ronneberger, O., Tunyasuvunakool, K., Bates, R., ˇZ´ıdek,
+A., Potapenko, A., et al. Highly accurate protein structure
+prediction with AlphaFold. Nature, 596(7873):583–589,
+2021.
+Kelley, H. J. Gradient theory of optimal flight paths. ARS
+Journal, 30(10):947–954, 1960.
+Kleinberg, J. and Raghavan, M.
+Selection problems
+in the presence of implicit bias.
+arXiv preprint
+arXiv:1801.03533, 2018.
+Klinger, J., Mateos-Garcia, J., and Stathoulopoulos,
+K.
+A narrowing of AI research?
+arXiv preprint
+arXiv:2009.10385, 2020.
+URL https://arxiv.
+org/abs/2009.10385. Analysis of 110,000 AI pa-
+pers from arXiv showing thematic diversity has stagnated;
+private sector research less diverse than academia.
+Knight, F. H.
+Risk, Uncertainty and Profit. Houghton
+Mifflin, Boston, MA, 1921.
+Koch, B. J. and Peterson, D. From protoscience to epis-
+temic monoculture: How benchmarking set the stage for
+the deep learning revolution. https://arxiv.org/
+abs/2404.06647, 2024. arXiv:2404.06647.
+Krizhevsky, A., Sutskever, I., and Hinton, G. E. ImageNet
+classification with deep convolutional neural networks.
+In Advances in Neural Information Processing Systems,
+volume 25, 2012.
+Kuhn, T. S. The Structure of Scientific Revolutions. Univer-
+sity of Chicago Press, 1962.
+Kuhn, T. S. The structure of scientific revolutions, volume
+962. University of Chicago press, 1997.
+Langley, P. Crafting papers on machine learning. In Langley,
+P. (ed.), Proceedings of the 17th International Conference
+on Machine Learning (ICML 2002), pp. 1207–1216, Stan-
+ford, CA, 2002. Morgan Kaufmann.
+LeCun, Y., Bengio, Y., and Hinton, G. Deep learning. Na-
+ture, 521(7553):436–444, 2015.
+Lehman, J. and Stanley, K. O. Abandoning objectives: Evo-
+lution through the search for novelty alone. Evolutionary
+computation, 19(2):189–223, 2011.
+11
+Futures that benchmark-driven AI cannot see
+Lehman, J., Meyerson, E., El-Gaaly, T., Stanley, K. O., and
+Ziyaee, T. Evolution and the Knightian blindspot of ma-
+chine learning. arXiv preprint arXiv:2
+\end{document}

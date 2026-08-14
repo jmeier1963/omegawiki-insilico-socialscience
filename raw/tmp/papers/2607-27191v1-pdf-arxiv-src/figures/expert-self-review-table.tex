@@ -1,0 +1,56 @@
+{\footnotesize\headingfont
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{5pt}
+\begin{minipage}[t]{0.6\linewidth}
+\textbf{Personas}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Y Y@{}}
+\toprule
+\textbf{Human expert's core criticism} & \textbf{Agent's final self-review} \\
+\midrule
+\textbf{Unclear why the trait space matters}\par
+``when capacity is matched, weight space isn't better over activation space''
+& ``no clear positive control claim, only a measurement claim'' \\
+\addlinespace
+\textbf{Unclear writing and presentation}\par
+``dense and heavily hedged \ldots{} obscuring what was actually done and found''
+& ``a 40-line hedged block that argues with hypothetical reviewers'' \\
+\addlinespace
+\textbf{Unprincipled trait selection}\par
+``the five primary traits \ldots{} appear hand-picked''
+& ``hand-picked, near-orthogonal-by-choice stylistic traits \ldots{} the
+friendliest possible case'' \\
+\addlinespace
+\textbf{Potentially circular measures}\par
+``a weak and potentially circular measure''
+& ``how does a fixed lexicon measure verbosity rather than topic?'' \\
+\addlinespace
+\textbf{Under-justified training data}\par
+``small \ldots{} with little justification for size, coverage''
+& ``training on benign tone and finding no untrained harmful action is close
+to definitional'' \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.36\linewidth}
+\textbf{TabPFN}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Y Y@{}}
+\toprule
+\textbf{Human expert's core criticism} & \textbf{Agent's final self-review} \\
+\midrule
+\textbf{Unsupported generalization from limited experiments}\par
+``a huge leap, a kind of `proof by example' fallacy''
+& ``a null over six hand-designed statistics does not establish \ldots{} no
+advantage'' \\
+\addlinespace
+\textbf{No original positive contribution}\par
+``exactly Guillory et al. \ldots{} a fraction of Pouget et al.'s work''
+& ``off-the-shelf and weak \ldots{} largely confirms an existing prior'' \\
+\addlinespace
+\textbf{Unclear paper and insufficient validation}\par
+``riddled with irrelevant engineering details''
+& ``rests on author reimplementations \ldots{} weaker than beating released
+code'' \\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+}

@@ -3,7 +3,7 @@ title: "Self-Service Labour Displacement"
 aliases: ["self-service economy", "can the customer do without this job", "self-service question", "disintermediation by AI", "Gershuny self-service"]
 tags: [labor-market, ai-economics, automation, self-service]
 maturity: emerging
-key_papers: [machine-job-wrong-question]
+key_papers: [machine-job-wrong-question, ai-native-firms, artificial-general-intelligence-sectoral-transition-post]
 first_introduced: "1978"
 date_updated: 2026-06-20
 related_concepts: [ai-normal-technology, human-ai-division-labor-agentic-work, ai-satellite-accounts]

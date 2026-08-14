@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AI safety, frontier AI, emerging risks, international governance, AI capabilities, risk management, Yoshua Bengio, Bletchley Park]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [from-agi-to-asi]
 ---
 
 ## Problem

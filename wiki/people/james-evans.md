@@ -17,10 +17,11 @@ date_updated: 2026-04-13
 ## Key papers
 
 - [[position-llm-social-simulations-promising-research]] — co-author; ICML 2025 position paper on LLM social simulations
+- [[artificial-intelligence-tools-expand-scientists-impact]] — senior/corresponding author; large-scale (41M papers) empirical study of AI's productivity-diversity paradox in natural science (*Nature*, 2026)
 
 ## Recent work
 
-Senior author on the ICML 2025 position paper on LLM social simulations. Known for influential work on how science advances through novel combinations of content and context (Shi & Evans 2020). Co-director of the Knowledge Lab at the University of Chicago and affiliated with the Santa Fe Institute.
+Senior author on the ICML 2025 position paper on LLM social simulations. Known for influential work on how science advances through novel combinations of content and context (Shi & Evans 2020). Co-director of the Knowledge Lab at the University of Chicago and affiliated with the Santa Fe Institute. Co-author (with Hao, Xu & Li) of [[artificial-intelligence-tools-expand-scientists-impact]] (2026), a 41.3M-paper study showing AI adoption expands individual scientists' impact while contracting collective topical diversity.
 
 ## Collaborators
 

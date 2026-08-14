@@ -51,4 +51,4 @@ Standard industry advocacy report. Useful for sector context. Less rigorous than
 ## Related
 
 - [[eurostack-european-alternative-digital-sovereignty]]
-- [[european-digital-sovereignty-requires-sovereign-ai-infrastructure]]
+- [[european-digital-sovereignty-requires-sovereign-ai]]

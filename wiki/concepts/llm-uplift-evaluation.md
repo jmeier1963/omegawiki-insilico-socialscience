@@ -3,7 +3,7 @@ title: "LLM Uplift Evaluation"
 aliases: ["novice uplift", "capability uplift", "AI uplift", "barrier-lowering evaluation", "human-AI uplift study"]
 tags: [llm-evaluation, biosecurity, dual-use, ai-safety, human-ai-interaction]
 maturity: emerging
-key_papers: [llm-novice-uplift-dual-use-biology]
+key_papers: [llm-novice-uplift-dual-use-biology, disrupting-first-reported-ai-orchestrated-cyber]
 first_introduced: "2023"
 date_updated: 2026-05-06
 related_concepts: [sociotechnical-ai-evaluation]

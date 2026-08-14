@@ -59,4 +59,4 @@ A well-designed and clearly motivated paper that addresses a real gap: existing 
 ## Related
 
 - [[llm-scientific-hypothesis-generation]] (introduces this technique)
-- supports: [[llm-retrieval-augmented-hypothesis-generation-improves-novelty]]
+- supports: [[llm-retrieval-augmented-hypothesis-generation-improves]]

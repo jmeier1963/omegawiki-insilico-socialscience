@@ -19,6 +19,7 @@ date_updated: 2026-06-20
 
 ## Recent work
 
+- [[policy-ai-exponential]]
 Public essays and Anthropic policy proposals on frontier-model testing, transparency legislation (SB 53, RAISE, SB 315), and job-displacement frameworks.
 
 ## Collaborators

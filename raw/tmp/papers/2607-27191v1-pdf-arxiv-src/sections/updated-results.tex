@@ -1,0 +1,380 @@
+\clearpage
+\section{Results}
+\label{sec:results}
+
+\subsection{The agents did not produce research at the caliber of a top ML
+conference}
+
+We asked the authors of the two papers to review the agents' outputs in depth.
+Alongside their qualitative review, we asked them to score the paper on a scale
+of 1 (``Strong Reject'') to 6 (``Strong Accept''), mirroring official reviews
+at AI conferences.
+
+The authors rejected both papers. The Personas paper was scored a 2
+(``Reject''), and the TabPFN paper was scored a 1 (``Strong Reject''). Both
+reviews highlighted the same failures: poorly motivated data and experiments,
+no novel contribution, and impenetrable prose.
+
+\begin{itemize}[leftmargin=*,itemsep=3pt]
+  \item ``The experiments and methodological choices were bizarre, and hard
+  to understand. The results seem clearly a result of post hoc choices,''
+  David Africa wrote.
+  \item Viet Nguyen flagged the poor reasoning of the agent: ``Upon testing a
+  few unsuccessful signals using a PFN's internals, going from there to
+  `there are no signals we can use that leverage a model's internals' is a huge
+  leap, a kind of `proof by example' fallacy that is highly non-scientific.''
+  \item Both flagged the poor writing. Nguyen: ``impossible to quickly distill
+  what is noise and what is important.'' Africa: ``dense and heavily hedged,
+  often to the point of obscuring what was actually done and found.''
+\end{itemize}
+
+Our survey respondents assigned a median probability of a weak accept or better of
+30\%. Most of them expected failure for the same reasons highlighted by the
+reviewers: the lack of creativity and judgment.
+
+\subsection{The agents produced a small number of findings that interested the
+authors of the original papers}
+
+Both authors were impressed with the literature review and the fact that the
+agents were able to utilize hundreds of GPU hours on real experiments without
+issue. Both noted that the candidate hypotheses were similar to their own
+initial approaches to the problem. While they did not substantively answer the
+research questions, the agents did produce minor findings that were noted as
+relevant by reviewers.\footnote{In the Personas paper, the agent produced a potentially interesting counterintuitive result. In emergent misalignment, narrow finetuning on harmful or risky responses can generalise broadly. The agent found that narrow finetuning on only the misaligned style did not translate to broad misgeneralisation.} Respondents had given a median 60\% chance that the agents
+would meet this more moderate criterion.
+
+\begin{figure}[p]
+  \centering
+  \input{figures/resource-use}
+  \caption{Annotated summaries of the agents' time, API, and GPU compute
+  expenditures.}
+  \label{fig:resource-use}
+\end{figure}
+
+
+\subsection{The agents committed to unpromising approaches too quickly}
+
+In our pilot dry runs, we had found that agents often did not conduct enough
+exploration, and committed to an approach too quickly. As a result, we asked
+agents to spend a minimum amount of time on early-stage
+exploration.\footnote{We established a ``gate'' for exploration of 48 hours,
+before which the agent was unable to start writing the paper, but allowed this
+gate to be overruled by a subagent rating the exploration as sufficient.}
+
+Unfortunately, this did not address their lack of exploration. Both agents still
+exhibited the same failure pattern. They developed reasonable
+hypotheses, but quickly rejected them based on small datasets and underpowered
+methods. The agent always began with its most ambitious and novel hypothesis,
+meaning that its pattern of underpowered experiments and premature rejection
+invariably caused it to settle on the weakest approach, as summarized in
+\Cref{fig:milestone-timing}.
+
+For example, in the Personas experiment, the agent planned to evaluate
+three different methods and to spend 36--48 hours on this pursuit. However,
+after quickly testing the first method and seeing some basic positive results,
+it completely disregarded the other hypotheses. As a result, it ended its
+exploration after only five hours.
+
+\begin{figure}[H]
+  \centering
+  \input{figures/milestone-timing}
+  \caption{Comparison between the agents' planned and realized wall-clock
+  budgets for milestones in the research process.}
+  \label{fig:milestone-timing}
+\end{figure}
+
+Our respondents expected this. Nearly every respondent (10 of 12) expected the
+agent to take shortcuts that a skilled researcher would not have taken. Some
+respondents gave qualifications about why these shortcuts would take place,
+but none answered ``No.''\footnote{The survey question asked, ``Will the agent
+take shortcuts (e.g., trivializing the research question, running underpowered
+experiments, offloading key reasoning or analysis to the human) that a skilled
+researcher would not have?''}
+
+\subsection{The agents could not make good use of feedback from AI reviews}
+
+The self-verifier that allowed the agent to review its outputs worked as
+designed. \Cref{fig:review-trajectories} summarizes these self-reviews alongside
+the external AI reviews and expert human reviews. Across fifteen of rounds of revision, it never once returned an
+acceptance. But the agents did not treat this as a signal to rethink the
+premise of the data or methods. They responded to fundamental soundness
+critiques by narrowing their claims and adding caveats until the paper could be
+characterized as ``honest.''
+
+\begin{figure}[h]
+  \centering
+  \input{figures/review-trajectories}
+  \caption{Summary of the paper reviews from subagents (self-review), external
+  AI reviews (Stanford Agentic Reviewer, CMU Paper Reviewer, and refine.ink),
+  and the expert human reviews.}
+  \label{fig:review-trajectories}
+\end{figure}
+
+
+The agents also mishandled disagreement between external reviewing tools. For
+example, the Stanford Agentic Reviewer was the most lenient tool available to
+them, and its reviews ``recommended acceptance'' on early drafts. Both the other external
+reviewing tools and the agent's self-review were far less optimistic; they made
+comments such as ``the draft reads as a converted internal document'' and ``the
+results hinge on n=1 cells.'' Both agents overweighted the lenient acceptance,
+and cited it as important context in their final reports.
+
+When we explicitly compared the agents' final blind reviews to the reviews of
+our human experts, as summarized in \Cref{tab:expert-self-review}, we found
+broad agreement on many of the limitations. The
+issue was more a matter of prioritization: the issues that the human experts
+flagged as the most damning, such as the selection of hand-curated and
+synthetic examples, appeared in agent reviews but were presented alongside numerous
+minor concerns, meaning the agent treated them as of similar weight.
+
+Our results suggest there is a generator-verifier gap in conducting AI research. A verifier that reliably judges the quality of AI research could drive quick progress using reinforcement learning, and since the AI reviews reliably rejected the agent's paper drafts, this suggests they could be used to discern quality. At the same time, we cannot establish the verifier's accuracy. Both agent-generated papers were rejects, so we cannot say whether the AI reviews were actually discerning quality or just uniformly rejecting the papers.
+
+Respondents were mixed about the ability of the agent to productively critique
+itself. Half of respondents said the agent would be able to productively
+self-review, but a number of the responses highlighted that the self-reviews
+would not surface the important concerns. They expected that the review would
+be more critical ``in the weeds'' but would fail to assess the novelty of the
+work.
+
+\begin{table}[h]
+  \centering
+  \caption{Detailed comparison of the human experts' and agents' final reviews
+  of the agents' work.}
+  \label{tab:expert-self-review}
+  \input{figures/expert-self-review-table}
+\end{table}
+
+\subsection{The agents were capable of all of the engineering steps required
+to conduct the research}
+
+The agents completed large literature reviews, debugged GPU environments, ran
+hundreds of experiments and robustness checks, retrieved external reviews via
+the web and email, and compiled full camera-ready \LaTeX{} documents. This was
+without manual intervention: the only human interventions were logistical
+(solving scaffold issues, providing credentials, setting up the repository) or
+occurred after these steps were successfully carried out (extending the
+deadline, asking for a more accessible rewrite). The agents encountered frequent
+environmental barriers and resolved all but one: an open OpenClaw bug that we
+patched manually.
+
+Here, our survey respondents were too pessimistic. Nearly all respondents (9
+of 11) expected a loop of unresolvable errors.
+
+\subsection{The agents struggled to effectively present their work}
+
+Even though we found the agents capable of all of the research engineering,
+both papers would have been desk rejected at NeurIPS, as they had content
+extending onto a tenth page despite a nine-page limit. The Personas paper had
+no visualizations in the main body of the text; in contrast, the original
+authors' paper had 15. Both of the agents' papers also contained fewer references than the original authors' respective papers: 36 vs. 69 for the TabPFN paper and 16 vs. 52 for the Personas paper. \Cref{fig:readability-comparison} shows the effect of the human-requested final
+readability pass on each submitted paper.
+
+\begin{figure}[t]
+  \centering
+  \input{figures/readability-comparison}
+  \caption{Comparison of the submitted papers before and after a human
+  intervention which instructed a final pass from the agent for readability.}
+  \label{fig:readability-comparison}
+\end{figure}
+
+A majority of respondents thought the final paper would have obvious
+misformatting (7 of 11).
+
+\subsection{We found no significant reward hacking}
+
+We reviewed the raw LLM calls and all of the code the agents committed. Our
+review did not find any evidence of the agent reward hacking in the sense of hiding or misrepresenting
+experiments or data to support a more compelling conclusion. In fact, we were
+surprised that the trend was the opposite; the agents began with more
+marketable claims and diligently retired them in favor of negative
+results.\footnote{Some collaborators argued that prematurely coalescing on a
+negative result was similar to reward hacking, but our definition would limit
+reward hacking in this experiment to a paper which deceived the verifier into
+giving a high score for a paper with a marketable, but ultimately unsupported,
+result.} The agent also provided code to make sure every result in the paper
+was reproducible, and developed a single script to reproduce all results,
+though the repository was not well organized. Instead of clear, reusable
+components, it comprised a sprawling set of folders, though this is also
+common in academic research.
+
+Our log analysis did note two other safety-relevant behaviors. First, in one of the runs, the agent committed an access token to the repository. Second, we found five instances of subagents hallucinating or misrepresenting results, but in each case, the orchestrator agent (which was specifically instructed to double-check their work) was able to uncover the issue, meaning none of them were present in the final draft.
+
+Very few respondents expected the agent to take a catastrophic action (2 of
+11). Less than half thought the agent would misreport or lie about the success
+of an experiment (4 of 11). A majority thought the agent would p-hack or
+cherry-pick the results (7 of 11).
+
+\subsection{Higher reasoning effort improved the quality of results}
+
+Before conducting the two experiments we discuss above, which used extra-high
+reasoning, we conducted two dry runs on these same papers with Opus 4.8 without
+reasoning. Those runs suffered from the same failure modes, but also suffered
+from poor literature review and much worse writing quality. Instead of
+conducting an in-depth literature review, the agents skimmed the literature.
+They returned inscrutable papers within a few days rather than working closer
+to the deadline.
+
+We did not think the outputs were good enough to warrant external review from
+the original authors of the papers. This shows that despite the weak performance
+observed in our final experiments, more reasoning helped improve performance. We
+tentatively think that more reasoning effort within model calls might improve
+performance, but more wall-clock time or resources would not significantly
+change the results. In dry runs, the agents often timed out when using max
+reasoning, so we used extra-high reasoning for our final runs.
+
+\subsection{We tried to use frontier models to improve the harness, with
+limited success}
+
+After our initial pilots, in addition to increasing reasoning effort, we
+conducted a comprehensive manual log analysis ourselves, and then tasked
+Claude Fable 5 with improving our scaffold based on the failures observed in
+the pilots.\footnote{We used Claude Code with Fable 5 in goal mode and the
+``ultracode'' setting. We asked it to take the results from our pilot
+experiments, a telemetry file with the full agent log, and the OpenClaw
+documentation and edit the scaffold to ensure that the failure modes we
+observed would not be repeated.} Many of the same failure modes we identify
+throughout our experiments also appeared in this scaffold improvement process:
+the agent assigned disproportionate weight to a single $n=1$ sample, making broad changes to the scaffold and idiosyncratically swapping rules and heuristics throughout, none of which seemed to address the fundamental problems we identified.
+
+\section{Log analysis reveals five failure modes}
+\label{sec:failure-modes}
+
+Our experiments provide some evidence that frontier AI agents are not capable
+of autonomously producing machine learning research papers at the caliber of
+top conference submissions with nearly unconstrained inference-time compute,
+large external resource budgets, and general-purpose scaffolds.
+
+They do suggest current frontier AI agents can do the engineering work that is
+a prerequisite for autonomous AI R\&D. Without any human intervention, they
+are capable of navigating each of the environments necessary to, in principle,
+make contributions to AI science. For example, in both of our experiments, the
+agents debugged and managed GPU resources and ran compute-intensive
+experiments.
+
+Our analysis of the agents' logs identifies five primary causes of failure.
+First, they lacked judgment to identify when to incorporate substantive feedback and what aspects of the research question would make for compelling research outputs. Second, they could not creatively solve shortcomings in the research design to address negative feedback from AI reviewers. While our experts judged the initial hypotheses generated by the agents as cogent and interesting, as those hypotheses were falsified, the agents struggled to pivot to new and creative
+approaches. Third, they could not effectively backtrack from failing
+approaches. They regularly made small pivots to their approach, but did not
+fundamentally rethink their approach or try new approaches from scratch.
+Fourth, they lacked context awareness. They were unable to effectively use
+resources given to them, such as VMs and API limits, and they could not keep
+track of the deadline. Finally, they suffered from instruction drift. Even
+when we instructed agents to carry out certain tasks, they suffered from
+context rot during compaction and were unable to effectively use these
+instructions. 
+
+\subsection{Lack of judgment about the bar for high-quality research}
+
+The goal established for the agent was to write a NeurIPS-quality paper on a
+well-defined research problem. But the agents' planning and execution did not
+indicate a clear ``model'' of these expectations. Both expert reviews
+highlighted major issues of data selection: in both experiments, the agents
+only utilized underpowered synthetic datasets or hand-picked examples that
+were not very broad.\footnote{In the TabPFN paper, the agent did work with real datasets from OpenML, but the shifts in the data were synthetic. The agent only used real-world shifted datasets for a set of final experiments to corroborate its original findings.} Our analysis supports the view that the agents coalesced
+around a research direction well before it was warranted from the evidence.
+
+The agents' internal review process, despite never returning an accept, was
+inflated relative to our expert human reviewers: it mostly returned ``Weak
+Reject'' for papers that our experts unambiguously rejected. Had these reviews
+been better calibrated, the agents might have recognized that they needed to
+shift their approach rather than making incremental revisions.
+
+Limitations in the calibration of AI agents have been documented elsewhere.
+In our own experiments testing AI agent reliability on standard benchmarks,
+we found that current frontier models remain poor discriminators of task
+success, even as their accuracy has increased. A similar open-ended
+post-training experiment conducted by the AI Village also highlighted poor
+data selection as a main failure mode~\citep{tekofsky2026finetuneleader}.
+
+
+\subsection{Lack of creative problem solving}
+
+The agents surfaced many creative hypotheses at the start of the project. As
+we discussed earlier, both authors judged the initial hypotheses reasonable
+and interesting, and noted that they resembled their own early approaches to
+the problem. However, when agents' small-scale synthetic experiments and AI
+reviews showed that the results were not strong enough, the task shifted from
+proposing ideas to creative problem solving, such as developing an alternative framing of the question, redesigning an underpowered experiment, or constructing a stronger test of the same hypothesis. Here, the agents suffered from a lack of creative problem-solving ability.
+
+We instructed the agents to use several sources of AI feedback throughout the
+project, including a review subagent and external AI reviewing tools. This
+setup worked as designed; the AI reviews surfaced many of the same failure
+modes as our expert reviews did. But the agents' responses did not address the central critiques: they typically focused on minor comments, added qualifications, or adopted less ambitious hypotheses. This produced papers with
+extremely thorough negative findings rather than papers with new ideas. In a
+progress report, David Africa observed that the agent's hypotheses ``grew
+narrower and less interesting as it discarded each one.'' We suspect that even
+if we had extended the wall-clock time by multiple weeks, the agents would
+have been unlikely to pivot toward a positive result, even if one could have
+been supported by the data.
+
+This failure is related to a well-known weakness of LLMs: failing to question the
+premise of a request. It is perhaps best illustrated by the fact that LLMs
+still have not saturated ``trick question'' multiple-choice benchmarks like
+SimpleBench~\citep{epochsimplebench}, even as they saturate much more technically challenging
+benchmarks in domains like software engineering.
+
+Note that our coauthors disagree about the root cause for this failure;
+candidates include a lack of creativity, epistemic lock-in, myopia, and
+functional fixedness. We use ``creative problem solving'' because it describes
+what the task required, while the other terms describe mechanisms for how the
+agent failed; however, we explicitly surface the disagreement since it is an
+example of the kind of subjective decisions that open-ended shadow evaluations
+involve.
+
+\subsection{Lack of effective backtracking}
+
+Even without a new idea, a researcher can recognize that an approach is unproductive, discard the work, and return to exploration. The agents backtracked locally, rerunning experiments and adding robustness checks in response to critique. But they never backtracked at the level of the project. Despite AI self-reviews
+consistently returning negative verdicts, neither agent responded by
+abandoning its approach and restarting. In the TabPFN run, the agent instead
+reframed the goal: after its early detector attempts failed, it argued that no
+such detector could exist and wrote a negative-results paper. Our design
+required the agent to produce a paper and offered no option to abstain, which
+may have led the agent to write a negative-results paper. But a human
+researcher in the same position might have backtracked much earlier and more
+effectively while sufficient time and budget remained to pursue an alternative
+approach.
+
+This was not because of a scaffold limitation; agents had the tools to
+backtrack within the scaffold. They could spawn subagents with clean context,
+without information about failing approaches, and they used subagents
+routinely for other purposes. However, they rarely used them to
+restart.\footnote{In the TabPFN run, the agent considered six distinct
+approaches, but falsified each of them within the first fourteen hours. Despite 110
+hours remaining against the original deadline, the agent never revised its
+solution approach after this point.}
+
+\subsection{Lack of context awareness}
+
+The agents left most of their budgets unused. Each agent balanced three
+budgets: its own tokens, external compute, and the clock. It could check all
+three at any moment.\footnote{The agent records this in the agent log each time
+it checks, so we can confirm that this tool was frequently used throughout the
+trajectory.} Both runs still ended with less than half the API budget spent.
+One agent declared the project complete seven hours before the deadline,
+shortly after its own reviewer returned another reject. A human researcher in
+that position might have spent every remaining hour improving the paper.
+The complete time, API, and GPU-compute trajectories are summarized in
+\Cref{fig:resource-use}.
+
+
+This failure appears in other evaluations too. As one example, the
+PostTrainBench leaderboard~\citep{posttrainbenchleaderboard} results for GPT-5.5 have an explicit note saying
+that ``the agent was manually prompted to continue each time it stopped before
+the time budget expired.'' We think this failure results from the lack of
+calibration about what agents can do in hours of time. They are trained on
+human data but have very different affordances. Unlike a person, an agent can
+read and edit the paper hundreds of times in the span of a few hours, but it
+does not seem to recognize this.
+
+
+\subsection{Instruction drift}
+
+The agents increasingly failed to follow explicit instructions over the course of the run. We gave each agent one paid credit for refine.ink, the strongest AI review tool available to it. The agents only used it in one of two final runs. We set
+limits on paper length and abstract length. Both final papers exceeded them.
+We set rules for how much time to spend on exploration. The agents acknowledged
+these rules early in the run and then ignored them. We think this failure
+generalizes beyond our setup. On a multi-day project, the agent needs to
+actively manage its context window to retain what information is considered
+important; our results point to agents not yet being proficient at this task.
+
+%\FloatBarrier

@@ -1,0 +1,206 @@
+\section{A robustness experiment with Codex and GPT-5.6 Sol Ultra reproduced
+these failure modes}
+\label{sec:robustness}
+
+A pervasive concern in long-horizon agent evaluations is ``scaffold
+overhang,'' where a broad capability of frontier models is hindered by a
+broken tool, a missing key instruction, or a missing verifier.
+
+To address these concerns, we reran our TabPFN experiment on Codex with
+GPT-5.6 Sol. As an additional parameter, we passed a reasoning level of
+``ultra,'' which translates to a multi-agent orchestration analogous to our
+approach in OpenClaw. The scaffold passes nearly all of the same instructions
+to the agent in a single markdown file that is read on each turn and uses a
+persistent goal to establish a verifier in the inner agent loop. It wraps
+these Codex calls in a recurring loop which tests whether any of the budgets
+have been exhausted; if these constraints are slack, meaning the agent has
+stopped early, the loop resumes after another GPT-5.6 Sol model reads the PDF
+and completes a NeurIPS review, which is then passed back to the agent.
+
+In this setting, we observed many of the same failure modes. The agent failed
+to run appropriately powered experiments, did not make a novel contribution,
+and returned a draft with misformatted figures and no appendices.
+
+It also failed to manage its budgets, although not in the same way as our
+OpenClaw experiments. Given the same budget for token usage, GPT-5.6 exhausted the
+\$3,000 budget in just over two days, leaving nearly 100 hours left of the
+allotted time. This partially explains the underpowered experiments; the agent
+spent the majority of the time iterating on different hypotheses and only
+began scaling a candidate solution after depleting the majority of its token
+usage budget. It then had only a few hundred dollars for paper writing, which
+it consumed in only a couple of iterations.
+
+The experiment also reproduced some of the positive findings. The AI
+self-review process continued to appropriately return rejects on the drafts
+the agent produced. The agent followed good scientific ethics, registering its
+hypotheses and reporting a negative finding rather than inventing a positive
+result. It also made one significant improvement over our first experiments.
+Unlike the OpenClaw experiments, which almost exclusively used synthetically-shifted data sources, the
+agent found and worked with a real-world distribution-shifted dataset.
+
+\section{Limitations}
+\label{sec:limitations}
+
+\subsection{Elicitation threats}
+
+We ran our main experiments using OpenClaw since we wanted to be able to switch
+between model providers. In an early pilot run, we tested GPT-5.3 Codex, and
+switched to Opus 4.8 after recognizing that GPT-5.3 Codex could not effectively
+use this scaffold. While we ran a follow-up experiment with GPT-5.6 Sol using
+Codex to assess the robustness of our results---that is, to check that we were not
+significantly under-eliciting performance relative to a naive implementation
+in the default harness---we did not devote the same time to harness engineering
+in that scaffold as we did for our main experiments, which had multiple
+iterations of scaffold refinements.
+
+We think using vendor-provided scaffolds would also improve the reliability of
+the scaffold. Partway through our runs, we found that OpenClaw's agent loop
+conflicts with the cryptographic signatures that Anthropic attaches to its
+thinking blocks, and the conflict crashes the session. This was an open
+OpenClaw issue during our experiments.
+
+To fix the bug, we modified the scaffold to reset the session and point the
+agent back to its project files with a short summary of the error. This reset
+was triggered 14 times in the TabPFN run and five times in the Personas run.
+Each reset cost the agent accumulated context. We do not think this
+meaningfully impacted our results: the two runs differed sharply in how often
+they encountered this bug, but they did not differ in the quality of the final
+paper or the failure modes we encountered. Still, we expect vendor-provided
+scaffolds to be better suited to running their models and we do not expect such
+reliability issues to arise in these scaffolds.
+
+While current evidence suggests capable open-source scaffolds are within the
+margin of error on long-horizon tasks, two-thirds of our respondents said a
+failed run might be explained by scaffold limitations.
+
+Finally, the agents had six days to complete the experiment. On one hand, this
+is longer than most existing evaluations of AI R\&D automation. On the other,
+the original authors spent much longer on their paper, and their training runs
+consumed far more GPU hours.
+
+There are two reasons we do not think this meaningfully impacted our results.
+First, neither agent fully used its computational resources, and the expert
+reviewers' main objections were about the quality of experiment choice,
+judgment on data selection, and poor reasoning about the negative AI reviews,
+not the quantity of experiments.
+
+Second, we decided the compute budgets based on authors' estimates of how much
+compute would allow agents to answer a specific research question from their
+paper. In particular, we chose just one research question from their original
+paper, and the agent was still unable to make progress towards answering it.
+All of these reasons lead us to believe that giving the agents more time would
+have produced a longer paper with the same central limitations; it would not meaningfully change the main results.
+
+Finally, we could not test Anthropic's strongest model. Anthropic deliberately
+limited Fable 5's abilities on frontier AI R\&D. We are working to get access
+to Fable/Mythos 5 for future experiments.
+
+At the same time, there is also a strong contrast between our findings for our
+AI R\&D experiments and our previous experiment on iOS app development. In our
+previous experiment, a similar agent setup---OpenClaw with Opus 4.6
+thinking---autonomously built and shipped an iOS app~\citep{openworldevals}. In other
+work, we have found that frontier models using open-source agent scaffolds can
+now reproduce published research far better than they could two years
+ago~\citep{cruxrepro}. This suggests that unlike engineering tasks and
+verifiable research tasks, agents struggle with some kinds of open-ended AI
+R\&D tasks.
+
+% Still, we plan to run further experiments with different scaffolds, Codex with
+% GPT-5.6 Sol Ultra, and Claude Code once we have access to Fable/Mythos 5, to
+% directly test if changing the scaffold and using newer models changes these
+% results. We will update our conclusions as stronger models become available.
+% Alongside this note, we are releasing the full expert reviews, the survey
+% responses, the agents' cleaned repositories, and the run logs at
+% \url{https://cruxevals.com}.
+
+\subsection{Implications for accelerating AI R\&D}
+
+In this paper, we claim to find preliminary evidence that AI agents are not yet capable of conducting open-ended autonomous AI research. We highlight numerous identification challenges with shadow evaluations and the particular experiments that we run. But our broader motivation for this work is to evaluate claims of AI agents accelerating and even automating AI R\&D itself. Thus, a separate question concerns the \textit{implications} of a positive or negative finding on the question of AI agents automating open-ended AI research. 
+
+There are multiple reasons why our results might not actually clarify the debate on the broader question of accelerating AI R\&D. It is possible that the path to AI R\&D does not require full automation of open-ended tasks like the ones we study, or that the open-ended research skills that we measure are not ones on the critical path. 
+
+Nevertheless, there are good reasons to view the distinction between AI capabilities on verifiable tasks and open-ended research problems as germane to the question of accelerating AI R\&D. Anthropic's post on self-improvement explicitly cites Claude's rising success rate on LLM-judged "open-ended" Claude Code sessions as evidence of self-improvement~\citep{whenaibuildsitself}. A recent report from the Elasticity Institute on the economics of recursive self-improvement explicitly distinguishes between "broad" and "narrow" AI capabilities, discusses implications of a speed-up in only "narrow" capabilities, and cites the need for more data on the full breadth of AI capabilities and weaknesses relative to human AI researchers~\citep{cunningham2026rsi}. We hope our experiments provide early evidence to answer this question. 
+% If further evidence confirms our tentative findings about the gap between agents' performance on verifiable and open-ended tasks, two questions become more pressing for future: how much frontier AI development depends on open-ended research, and which open-ended research questions could serve as measures of progress toward AI R\&D automation.
+% As we get more evidence on our tentative finding (about the gap between agents' performance on verifiable vs. open-ended tasks), it would become more important understand the extent to which open-ended research questions are on the critical path for frontier AI development, and identify which research questions could provide insights relevant for measuring progress towards AI R\&D automation.
+
+\section{Potential biases}
+\label{sec:biases}
+
+Open-world evaluations allow substantial researcher discretion:
+researchers have leeway in choosing the questions being evaluated, designing
+the study, and executing it. This means that our prior beliefs, expectations,
+and biases---especially those of the core team that designed and conducted the
+experiments---could impact the results of our evaluation. In particular, some
+of the core team members are known for our position that imminent recursive
+self-improvement leading to runaway superintelligence is unlikely; this could
+affect how we design the evaluation and how we interpret the results.
+
+For example, we describe the agents' failures as the lack of creativity and
+judgment: the agents settled into their initial approach too quickly when the
+tasks required creative problem solving. As we discuss in the text, this
+interpretation is not self-evident, and some of our coauthors instead interpret
+the results as failures of reasoning and logic, or as epistemic lock-in.
+Similarly, the studies we chose for this evaluation reflect our understanding
+of what constitutes results of an empirical NeurIPS paper; but other
+researchers might disagree on the level of open-endedness that is necessary
+for making progress towards recursive self-improvement.
+
+Given the nature of the evaluations, we do not think there is an ``unbiased''
+way to conduct them. While benchmarks with clear success criteria are in some
+sense more objective, that also leads to a narrower task specification and
+curtails the types of research questions that can be studied; open-world
+evaluations trade off objectivity for a much richer set of evaluation tasks.
+
+These considerations suggest several principles for designing open-world evaluations. We think such evaluations are most persuasive when epistemically diverse sets of people conduct them. This includes both within-team and across-team diversity in ideas. It is also important to disclose the team's biases and positions and explicitly surface disagreements. As an example, many coauthors have different priors compared to the core team; this helped us surface disagreements in our interpretation of the results when they did occur.
+
+We also took many steps to minimize the effects of the core team's priors.
+This included running multiple dry runs focused on improving the scaffold,
+allowing the agent generous budgets, and analyzing the logs to understand and
+address key failure modes. For example, we added multiple lines of prompting
+to address some recurring failure modes, such as the lack of exploration.
+
+In addition to these ``known'' biases, we are also subject to ``unknown''
+biases that are hard to identify a priori. For example, many of our results
+rely on analyzing the logs of the agent. Log analysis involves discretion, and
+we may have identified failures that fit our expectations more readily than
+ones that did not. We release the full expert reviews, survey responses, agent
+repositories, and run logs so readers can check our interpretation against the
+raw materials.
+
+Finally, we plan to continue evaluating AI R\&D automation using new research, and we welcome feedback and adversarial collaborations for follow-up studies.
+
+\section*{Author contributions}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-10}} % stop adding entries
+
+
+\textbf{Core team:} Sayash Kapoor and Arvind Narayanan conceptualized the
+project. Peter Kirgis and Andrew Schwartz implemented the agents, led the log
+analysis, and designed the website. Sayash Kapoor and Peter Kirgis drafted the
+paper. Stephan Rabanser, as an author of one of the original papers, reviewed
+the papers produced by the agents. All members of the core team (Peter Kirgis,
+Sayash Kapoor, Andrew Schwartz, Stephan Rabanser, and Arvind Narayanan)
+contributed to editing and responding to feedback.
+
+\textbf{Log analysis:} Matilda Orona, Tilman Bayer, Derrick Chan-Sew, Yue Ling,
+Abhishek Shetty, Toby Pilditch, and Nitya Nadgir contributed to the log
+analysis.
+
+\textbf{Collaborators:} Cozmin Ududec and Magda Dubois contributed to the
+conceptualization of the project. David Africa, Konstantinos Voudouris, and
+Viet Nguyen, as authors of the original papers, reviewed the papers produced by
+the agents. Cozmin Ududec, Magda Dubois, David Africa, Konstantinos Voudouris,
+Toby Pilditch, Harry Coppock, Helen Toner, Gillian Hadfield, Seth Lazar, Steve
+Newman, and Shoshannah Tekofsky responded to the pre-experiment survey and,
+together with Rishi Bommasani, offered feedback and inputs into the essay text
+and our analysis and interpretation of the results.
+
+
+
+\textbf{Acknowledgments.} We are grateful to Andy Hall for participating in the survey. We thank Mariia Koroliuk and Anton Gonzalvez Hawthorne for helpful comments on one of the LLM generated papers. 
+
+\textbf{AI disclosure.} We used AI for converting the original draft of the paper from a Google doc to \LaTeX, converting links to references, copyediting, as coding assistants for developing the agent and writing documentation, conducting AI-assisted log analysis of the agent logs, and editing the tables and figures. We verified AI outputs at each phase of the project. The core team takes full responsibility for the paper’s contents and all artifacts included with the paper.
+
+\section*{Funding}
+
+We are grateful to Coefficient Giving and Schmidt Sciences for funding to
+support this project, and to OpenAI for providing API credits to evaluate GPT-5.6 Sol.

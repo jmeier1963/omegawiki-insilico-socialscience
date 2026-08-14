@@ -56,6 +56,6 @@ A major OECD policy intervention that explicitly invokes the Bildung tradition (
 
 ## Related
 
-- supports [[education-must-develop-uniquely-human-capacities-beyond-ai]]
+- supports [[education-must-develop-uniquely-human-capacities]]
 - [[bildung]]
 - [[teaching-examining-age-generative-ai-first]]

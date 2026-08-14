@@ -3,10 +3,10 @@ title: "AI Research Productivity Paradox"
 aliases: ["AI science paradox", "AI productivity-diversity tradeoff", "research narrowing paradox", "AI impact-diversity tradeoff"]
 tags: [ai-science, productivity, research-diversity, scientometrics, bibliometrics]
 maturity: emerging
-key_papers: [ai-tools-boost-scientists-impact-narrow, rise-large-language-models-direction-impact]
+key_papers: [ai-tools-boost-scientists-impact-narrow, rise-large-language-models-direction-impact, artificial-intelligence-tools-expand-scientists-impact, position-there-futures-benchmark-driven-ai]
 first_introduced: "2025"
-date_updated: 2026-05-29
-related_concepts: [ai-science-adoption-gap]
+date_updated: 2026-07-16
+related_concepts: [ai-science-adoption-gap, knowledge-extent-scientometric-measure]
 ---
 
 ## Definition
@@ -27,6 +27,7 @@ The paradox: adopting AI → ↑ P(i) for all adopters, but ↑ AI adoption rate
 
 - **Individual vs. collective paradox**: individual benefit vs. collective cost
 - **Field-specific version**: applies most strongly in data-rich natural sciences; unknown if it holds in social sciences or humanities
+- **"Collective hill-climbing" framing** (Hao et al. 2026, [[artificial-intelligence-tools-expand-scientists-impact]]): a metaphor for the mechanism — AI-adopting researchers behave like a group of climbers all scaling the same popular, well-charted mountain (a data-rich, already-established topic) rather than searching for new peaks, because both the path (known method) and the summit (anticipated result) are more legible where data is abundant.
 
 ## Comparison
 
@@ -41,9 +42,10 @@ Use when discussing: (1) systemic effects of AI adoption on scientific diversity
 
 ## Known limitations
 
-- Evidence base is primarily bibliometric (Hao et al. 2025, Gao & Wang 2024); causal mechanisms not confirmed
+- Evidence base is primarily bibliometric (Hao et al. 2026, [[artificial-intelligence-tools-expand-scientists-impact]]; Gao & Wang 2024); causal mechanisms not confirmed — though early-career-matched subsample checks in Hao et al. partially address selection-effect concerns
 - Dataset covers 1980–2025 in natural sciences — generalisability uncertain
 - Generative AI era under-represented in existing datasets
+- The topical-narrowing mechanism (measured via [[knowledge-extent-scientometric-measure]]) is located in *where* AI-adopters choose to work (data-rich topics), not in narrower downstream derivative work — individual paper-families' knowledge extent actually grows
 
 ## Open problems
 
@@ -53,6 +55,7 @@ Use when discussing: (1) systemic effects of AI adoption on scientific diversity
 
 ## Key papers
 
-- [[ai-tools-boost-scientists-impact-narrow]] — Storey (2025) N&V contextualising Hao et al.'s empirical findings
+- [[artificial-intelligence-tools-expand-scientists-impact]] — Hao, Xu, Li & Evans (2026, *Nature*): the primary empirical source (41.3M papers) — 3.02× more papers, 4.84× more citations, 1.37 years faster career advancement for AI adopters, alongside 4.63% knowledge-extent contraction and 22% less follow-on engagement
+- [[ai-tools-boost-scientists-impact-narrow]] — Storey (2025) N&V contextualising Hao et al.'s empirical findings (secondary source)
 - [[gao-wang-quantifying-ai-scientific-research]] — Gao & Wang (2024): inequality patterns in AI science adoption (complementary)
 - [[rise-large-language-models-direction-impact]] — Qian et al. (2026): extends paradox to the grant-funding pipeline (NIH/NSF); LLM use reduces semantic distinctiveness of proposals

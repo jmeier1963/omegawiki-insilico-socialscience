@@ -3,7 +3,7 @@ title: "Persona Conditioning"
 aliases: ["LLM persona", "agent endowment", "theory-grounded agent", "persona endowment", "role prompting for behavioral simulation", "agent typing", "interview-grounded agent", "interview-based agent conditioning", "context-rich prompting", "interview-based prompting", "LLM-as-subject prompting"]
 tags: [llm-simulation, persona, prompt-engineering, behavioral-economics, calibration]
 maturity: active
-key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey, assessing-reliability-persona-conditioned-llms-synthetic, persona-generators-generating-diverse-synthetic-personas]
+key_papers: [large-language-models-simulated-economic-agents, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey, assessing-reliability-persona-conditioned-llms-synthetic, persona-generators-generating-diverse-synthetic-personas, whose-personae-synthetic-persona-experiments-llm, quantifying-persona-effect-llm-simulations, persona-based-simulation-human-opinion-population, german-general-personas-survey-derived-persona, synonymix-unified-group-personas-generative-simulations, modeling-earth-scale-human-like-societies, whose-opinions-language-models-reflect, personatrace-synthesizing-realistic-digital-footprints-llm, synthetic-personas-distort-structure-human-belief]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-13
 related_concepts: [homo-silicus]

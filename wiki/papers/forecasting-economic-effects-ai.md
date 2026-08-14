@@ -53,4 +53,4 @@ Systematic expert elicitation is valuable for understanding AI economic uncertai
 
 ## Related
 
-- supports: [[economists-expect-ai-capability-gains-without-macroeconomic-disruption]]
+- supports: [[economists-expect-ai-capability-gains-without]]

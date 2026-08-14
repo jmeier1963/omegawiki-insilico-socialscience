@@ -55,7 +55,7 @@ Arguably the most practically important methodological paper for silicon samplin
 ## Related
 
 - [[silicon-sampling]]
-- supports: [[analytic-flexibility-silicon-samples-configuration-dependent]]
+- supports: [[analytic-flexibility-silicon-sampling-configurations-dramatically]]
 - [[survey-response-generation-generating-closed-ended]]
 - [[llms-behavioral-surrogates-require-statistical-calibration]]
 - [[benchmarking-distributional-alignment-large-language-models]]

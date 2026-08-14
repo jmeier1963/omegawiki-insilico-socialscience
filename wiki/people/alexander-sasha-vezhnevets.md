@@ -20,6 +20,7 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[persona-generators-generating-diverse-synthetic-personas]]
 Lead architect of Concordia, the Google DeepMind generative agent-based modeling framework. Research focuses on using LLMs to power realistic multi-agent social simulations grounded in physical, social, and digital environments.
 
 ## Collaborators

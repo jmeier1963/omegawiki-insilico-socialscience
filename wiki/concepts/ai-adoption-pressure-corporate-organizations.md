@@ -3,10 +3,10 @@ title: "AI Adoption Pressure in Corporate Organizations"
 aliases: ["mandatory AI use", "compulsory AI adoption", "forced AI integration", "AI usage mandates", "corporate AI mandate", "token consumption tracking", "AI transformation pressure"]
 tags: [ai-workplace, organizational-ai, ai-governance, labor, tech-industry]
 maturity: emerging
-key_papers: [meta-embrace-ai-making-employees-miserable, your-ai-change-actually-people-change]
+key_papers: [meta-embrace-ai-making-employees-miserable, your-ai-change-actually-people-change, mapping-ai-into-production-field-experiment, genai-divide-state-ai-business-2025, applied-ai-most-impactful-agentic-enterprise]
 first_introduced: "2026"
 date_updated: 2026-05-29
-related_concepts: []
+related_concepts: [agentic-enterprise-operations]
 ---
 
 ## Definition

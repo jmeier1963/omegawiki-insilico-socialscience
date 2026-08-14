@@ -25,9 +25,9 @@ LLM human simulacra refers to the use of large language models as proxies for hu
 
 ## Seminal works
 
-- [[argyle-out-of-one-many]] — Argyle et al. 2022, "Out of One, Many"
-- [[homo-silicus-horton]] — Horton 2023, "Homo Silicus"
-- [[santurkar-whose-opinions]] — Santurkar et al. 2023, "Whose Opinions Do LLMs Reflect?"
+- [[out-one-many-using-language-models]] — Argyle et al. 2022, "Out of One, Many"
+- [[homo-silicus]] — Horton 2023, "Homo Silicus"
+- [[whose-opinions-language-models-reflect]] — Santurkar et al. 2023, "Whose Opinions Do LLMs Reflect?"
 - [[machine-culture]] — Brinkmann et al. 2023, "Machine Culture" (Nature Human Behaviour); frames LLMs as cultural transmission models
 
 ## SOTA tracker

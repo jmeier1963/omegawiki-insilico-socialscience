@@ -1,0 +1,70 @@
+\begin{minipage}[t]{0.485\linewidth}
+\textbf{\headingfont Personas}\par\smallskip
+{\small\headingfont\bfseries\color{cruxink}
+The Personas agent budgeted 42 hours of open-ended exploration, but coalesced
+around a method after only 5 hours.\par}
+\smallskip
+{\scriptsize\headingfont
+\tikz[baseline=-0.6ex]{\fill[milestoneplanned] (0,0) circle[radius=2pt];}
+Planned deadline\hfill
+\tikz[baseline=-0.6ex]{\fill[milestoneactual] (0,0) circle[radius=2pt];}
+Actually completed\par}
+\smallskip
+\centering
+\begin{tikzpicture}[x=0.032cm,y=0.72cm]
+  \foreach \x in {0,20,...,120}
+    \draw[milestonegrid,line width=0.55pt] (\x,0.65) -- (\x,6.35);
+  \draw[reviewmuted,line width=0.55pt] (0,0.55) -- (120,0.55);
+  \foreach \x in {0,20,...,120}
+    \node[anchor=north,font=\scriptsize\headingfont,text=reviewmuted]
+      at (\x,0.48) {\x};
+  \node[anchor=north,font=\scriptsize\headingfont\bfseries,text=cruxink]
+    at (60,-0.08) {Hours after launch};
+  \node[milestone label] at (-3,6) {Workspace and paper skeleton};
+  \node[milestone label] at (-3,5) {Exploration approved by critic, first try};
+  \node[milestone label] at (-3,4) {Experiments and draft done; review begins};
+  \node[milestone label] at (-3,3) {Review rounds concluded};
+  \node[milestone label] at (-3,2) {Final clarity pass};
+  \node[milestone label] at (-3,1) {Completion report to supervisor};
+  \foreach \y/\planned/\actual in {6/4/0,5/42/5,4/70/83,3/106/118,2/116/118,1/120/118}{
+    \draw[reviewgrid,line width=1.2pt] (\planned,\y) -- (\actual,\y);
+    \fill[milestoneplanned] (\planned,\y) circle[radius=1.8pt];
+    \fill[milestoneactual] (\actual,\y) circle[radius=1.8pt];
+  }
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\textbf{\headingfont TabPFN}\par\smallskip
+{\small\headingfont\bfseries\color{cruxink}
+The TabPFN agent extended its exploration onto the second day, but committed
+to its headline finding 40 hours early.\par}
+\smallskip
+{\scriptsize\headingfont
+\tikz[baseline=-0.6ex]{\fill[milestoneplanned] (0,0) circle[radius=2pt];}
+Planned deadline\hfill
+\tikz[baseline=-0.6ex]{\fill[milestoneactual] (0,0) circle[radius=2pt];}
+Actually completed\par}
+\smallskip
+\centering
+\begin{tikzpicture}[x=0.032cm,y=0.72cm]
+  \foreach \x in {0,20,...,120}
+    \draw[milestonegrid,line width=0.55pt] (\x,0.65) -- (\x,6.35);
+  \draw[reviewmuted,line width=0.55pt] (0,0.55) -- (120,0.55);
+  \foreach \x in {0,20,...,120}
+    \node[anchor=north,font=\scriptsize\headingfont,text=reviewmuted]
+      at (\x,0.48) {\x};
+  \node[anchor=north,font=\scriptsize\headingfont\bfseries,text=cruxink]
+    at (60,-0.08) {Hours after launch};
+  \node[milestone label] at (-3,6) {Workspace and paper skeleton};
+  \node[milestone label] at (-3,5) {Exploration approved after two rejections};
+  \node[milestone label] at (-3,4) {Headline direction committed; first draft begins};
+  \node[milestone label] at (-3,3) {Review rounds concluded};
+  \node[milestone label] at (-3,2) {Final clarity pass};
+  \node[milestone label] at (-3,1) {Completion report to supervisor};
+  \foreach \y/\planned/\actual in {6/15/0,5/45/37,4/77/37,3/103/117,2/113/117,1/120/117}{
+    \draw[reviewgrid,line width=1.2pt] (\planned,\y) -- (\actual,\y);
+    \fill[milestoneplanned] (\planned,\y) circle[radius=1.8pt];
+    \fill[milestoneactual] (\actual,\y) circle[radius=1.8pt];
+  }
+\end{tikzpicture}
+\end{minipage}

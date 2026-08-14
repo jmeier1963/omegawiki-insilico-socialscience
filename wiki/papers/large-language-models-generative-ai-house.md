@@ -53,5 +53,6 @@ Well-regarded parliamentary report with balanced evidence base. The House of Lor
 
 ## Related
 
-- supports: [[frontier-ai-compute-thresholds-require-dynamic-adjustment]]
-- supports: [[ai-policy-must-target-outcomes-not-processes]]
+- [[frontier-ai-compute-governance]]
+- supports: [[frontier-ai-compute-thresholds-require-dynamic]]
+- supports: [[ai-policy-must-target-outcomes-just]]

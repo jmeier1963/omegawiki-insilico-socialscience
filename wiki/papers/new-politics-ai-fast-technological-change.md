@@ -51,4 +51,4 @@ Useful progressive policy framework. The distinction between neutral and outcome
 
 ## Related
 
-- supports: [[ai-policy-must-target-outcomes-not-processes]]
+- supports: [[ai-policy-must-target-outcomes-just]]

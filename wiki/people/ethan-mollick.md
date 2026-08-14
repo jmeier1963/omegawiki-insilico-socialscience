@@ -20,6 +20,9 @@ date_updated: 2026-05-06
 
 ## Recent work
 
+- [[cybernetic-teammate-field-experiment-generative-ai]] — P&G field experiment (776 professionals): individual+AI matches team-without-AI, AI breaks functional silos and fills part of the social teammate role
+- [[prompting-science-report-decreasing-value-chain]] — co-author; Wharton Generative AI Labs report finding Chain-of-Thought prompting gives small, inconsistent gains for non-reasoning models and only marginal gains for reasoning models on GPQA Diamond.
+
 Prolific writer and educator on practical AI adoption in higher education; runs the One Useful Thing newsletter on AI's impact on knowledge work.
 
 ## Collaborators

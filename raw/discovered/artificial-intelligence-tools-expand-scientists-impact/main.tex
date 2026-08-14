@@ -1,0 +1,110 @@
+\documentclass[fleqn,10pt]{wlscirep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{Artificial Intelligence Tools Expand Scientists' Impact but Contract Science's Focus\\\textcolor{red}{(Just accepted by \textit{Nature}, to be online soon)}}
+
+
+\author[1]{Qianyue Hao}
+\author[1*]{Fengli Xu}
+\author[1,2*]{Yong Li}
+\author[3,4*]{James Evans}
+\affil[1]{Department of Electronic Engineering, Tsinghua University, Beijing \& 100084, P. R. China.}
+\affil[2]{Zhongguancun Academy, Beijing \& 100094, P. R. China.}
+\affil[3]{Knowledge Lab and Department of Sociology, University of Chicago, Chicago \& IL 60637, USA.}
+\affil[4]{Santa Fe Institute, Santa Fe \& NM 87501, USA.}
+\affil[*]{Corresponding authors. Emails: fenglixu@tsinghua.edu.cn, liyong07@tsinghua.edu.cn, jevans@uchicago.edu}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Customization, lin%
+%%%%%%%%%%%%%%%%%%%%
+
+% Generating figures for initial submission
+\usepackage{graphicx} 
+
+% Formatting references
+\usepackage[maxbibnames=150,style=numeric-comp,sorting=none]{biblatex}
+\bibliography{references.bib}
+%\usepackage{biblatex2bibitem}
+
+
+
+% Set the url font to be the same with other texts
+\usepackage{url}
+\urlstyle{same}
+
+% Commenting out not-in-use contents quickly
+\usepackage{comment}
+
+% Temporary, set space for Fig2 caption since it is too long now.
+\usepackage{setspace}
+
+% Generating the pseudocode
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+
+
+% Generating tables
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{csquotes}
+\usepackage{rotating}
+
+%%%%%%%%%%%%%%%%%%%%
+
+% Include the date command, but leave its argument blank.
+
+\date{}
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{abstract}
+\textbf{Development in Artificial Intelligence (AI) has accelerated scientific discovery~\supercite{wang2023scientific}. Alongside recent AI-oriented Nobel prizes~\supercite{hopfield1982neural,hopfield1984neurons, lecun2015deep, krizhevsky2012imagenet, hinton2006reducing, hinton2002training, kuhlman2003design, jumper2021highly}, these trends establish the role of AI tools in science~\supercite{gao2024quantifying}. This advancement raises questions about the potential influences of AI tools on scientists and science as a whole, and highlights a potential conflict between individual and collective benefits~\supercite{evans2008electronic}. To evaluate, we used a pretrained language model to identify AI-augmented research, with an F1-score of 0.875 in validation against expert-labeled data. Using a dataset of 41.3 million research papers across natural science and covering distinct eras of AI, here we show an accelerated adoption of AI tools among scientists and consistent professional advantages associated with AI usage, but a collective narrowing of scientific focus. Scientists who engage in AI-augmented research publish 3.02 times more papers, receive 4.84 times more citations, and become research project leaders 1.37 years earlier than those who do not. By contrast, AI adoption shrinks the collective volume of scientific topics studied by 4.63\% and decreases scientist's engagement with one another by 22.00\%. Thereby, AI adoption in science presents a seeming paradox---an expansion of individual scientists' impact but a contraction in collective science's reach---as AI-augmented work moves collectively toward areas richest in data. With reduced follow-on engagement, AI tools appear to automate established fields rather than explore new ones, highlighting a tension between personal advancement and collective scientific progress.}
+\end{abstract}
+
+\begin{document} 
+
+
+\flushbottom
+\maketitle 
+
+\input{1introduction_new}
+\input{2results}
+\input{3discussion_new}
+\input{4methods}
+\input{5ExtendData}
+\input{6SI}
+
+\clearpage
+\printbibliography[title={References}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References that only appear in Supplementary:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section*{Data availability}
+The OpenAlex dataset for research papers and researchers is available at \url{https://docs.openalex.org/download-all-data/openalex-snapshot}.
+The Web of Science (WoS) dataset for research papers and researchers is available at \url{https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection}.
+The Journal Citation Reports (JCR) dataset for the journal quantile is retrieved from \url{https://jcr.clarivate.com/jcr/browse-journals}.
+The author contribution dataset is available at \url{https://zenodo.org/records/6569339}.
+
+The pre-trained parameters for the BERT language model are available at \url{https://huggingface.co/docs/transformers}.
+The pre-trained parameters for the SPECTER 2.0 text embedding model are available at \url{https://huggingface.co/allenai/specter2}.
+
+\section*{Code availability}
+This study used python 3.11.0 with software packages to conduct data analysis.
+Required packages are numpy 1.26.4, pandas 2.2.3, scipy 1.15.2, sklearn 1.6.1, matplotlib 3.10.1.
+The used t-SNE algorithm is imported from the sklearn package.
+The codes developed in this study can be found at \url{https://github.com/tsinghua-fib-lab/AI-Impacts-Science}.
+
+\section*{Author contributions}
+F.X., Y.L. and J.E. jointly launched this research and designed the research outline.
+Q.H. analyzed the data and prepared the figures.
+All authors jointly participated in writing and revising the manuscript.
+
+\end{document}

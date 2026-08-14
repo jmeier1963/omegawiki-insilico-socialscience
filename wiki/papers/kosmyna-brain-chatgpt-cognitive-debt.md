@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [cognitive debt, EEG, brain connectivity, ChatGPT, essay writing, cognitive offloading, MIT Media Lab]
 domain: "general"
 code_url: ""
-cited_by: []
+cited_by: [when-everyone-uses-ai-companies-risk]
 ---
 
 ## Problem

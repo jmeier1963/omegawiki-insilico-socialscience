@@ -3,7 +3,7 @@ title: "Algorithmic Fidelity"
 aliases: ["demographic replication fidelity", "LLM demographic fidelity", "subpopulation replication accuracy"]
 tags: [algorithmic-fidelity, silicon-sampling, demographic-conditioning, evaluation, llm]
 maturity: active
-key_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, emulating-public-opinion-proof-concept-ai, synthetic-participants-generated-large-language-models, persona-generators-generating-diverse-synthetic-personas]
+key_papers: [out-one-many-using-language-models, generative-agent-simulations-000-people, position-llm-social-simulations-promising-research, emulating-public-opinion-proof-concept-ai, synthetic-participants-generated-large-language-models, persona-generators-generating-diverse-synthetic-personas, collapse-heterogeneity-silicon-philosophers, assessing-reliability-persona-conditioned-llms-synthetic, quantifying-persona-effect-llm-simulations, balancing-large-language-model-alignment-algorithmic, persona-based-simulation-human-opinion-population, german-general-personas-survey-derived-persona, restoring-heterogeneity-llm-based-social-simulation, more-parameters-than-populations-systematic-literature, introducing-anthropic-interviewer, benchmarking-distributional-alignment-large-language-models, llm-survey-framework-coverage-reasoning-dynamics, synthetic-personas-distort-structure-human-belief]
 first_introduced: "2022"
 date_updated: 2026-04-13
 related_concepts: [silicon-sampling]

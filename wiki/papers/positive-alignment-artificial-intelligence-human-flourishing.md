@@ -60,6 +60,7 @@ An important conceptual contribution: making explicit that safety-only alignment
 
 ## Related
 
+- [[positive-alignment]]
 - supports: [[negative-alignment-focused-harm-prevention-insufficient]]
 - [[broadly-safe-behavior-cluster]]
 - [[cognitive-surrender]]

@@ -3,10 +3,10 @@ title: "Sharing AI Prosperity"
 aliases: ["AI social contract", "sharing AI gains", "broad-based AI prosperity", "AI predistribution", "right to AI", "AI industrial policy"]
 tags: [ai-economics, social-contract, inequality, industrial-policy, ai-policy]
 maturity: emerging
-key_papers: [industrial-policy-intelligence-age, how-share-ai-riches]
+key_papers: [industrial-policy-intelligence-age, how-share-ai-riches, artificial-general-intelligence-sectoral-transition-post, if-you-thought-global-financial-crisis, how-ai-companies-pay-fair-rates, two-radical-ways-share-ai-ownership, monopoly-round-up-pope-silicon-valley]
 first_introduced: "2026"
 date_updated: 2026-06-20
-related_concepts: [gradual-disempowerment, human-ai-division-labor-agentic-work]
+related_concepts: [gradual-disempowerment, human-ai-division-labor-agentic-work, post-labor-economy]
 ---
 
 ## Definition

@@ -3,10 +3,10 @@ title: "Agentic Democratic Mediation"
 aliases: ["synthetic chamber", "AI deliberative mediation", "agentic mediation", "multi-agent democratic deliberation"]
 tags: [ai-democracy, deliberative-democracy, agentic-mediation, political-theory, multi-agent]
 maturity: emerging
-key_papers: [synthetic-chamber-agentic-mediation-representative-democracy]
+key_papers: [synthetic-chamber-agentic-mediation-representative-democracy, agentische-ki-eine-demokratisch-rechtsstaatliche-verwaltung]
 first_introduced: "2026"
 date_updated: 2026-06-20
-related_concepts: [deliberation-based-llm-influence-evaluation, language-decision-process]
+related_concepts: [deliberation-based-llm-influence-evaluation, language-decision-process, agentic-ai-public-administration]
 ---
 
 ## Definition

@@ -3,7 +3,7 @@ title: "Broadly Safe Behavior Cluster"
 aliases: ["broad safety", "broadly safe behaviors", "safe behavior cluster", "AI corrigibility cluster", "principal hierarchy safety"]
 tags: [ai-safety, corrigibility, alignment, anthropic, oversight, human-control]
 maturity: emerging
-key_papers: [claude-constitution, teaching-claude-why]
+key_papers: [claude-constitution, teaching-claude-why, agentic-misalignment-how-llms-could-insider, frontier-models-capable-context-scheming, positive-alignment-artificial-intelligence-human-flourishing]
 first_introduced: "2026"
 date_updated: 2026-05-06
 related_concepts: []

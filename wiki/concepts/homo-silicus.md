@@ -3,7 +3,7 @@ title: "Homo Silicus"
 aliases: ["LLM as simulated human", "AI economic agent", "LLM economic simulation", "silicon human", "computational model of humans", "LLM as homo economicus"]
 tags: [llm-simulation, behavioral-economics, social-science, experimental-economics]
 maturity: emerging
-key_papers: [large-language-models-simulated-economic-agents, automated-social-science-language-models-scientist]
+key_papers: [large-language-models-simulated-economic-agents, automated-social-science-language-models-scientist, whose-personae-synthetic-persona-experiments-llm, generative-agent-based-modeling-actions-grounded, synthetic-participants-generated-large-language-models]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-12
 related_concepts: [persona-conditioning, scm-based-automated-experimentation]

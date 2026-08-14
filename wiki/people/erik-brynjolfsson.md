@@ -20,6 +20,8 @@ date_updated: 2026-04-13
 
 ## Recent work
 
+- [[canaries-coal-mine-six-facts-about]] — six facts from ADP payroll data: early-career (22-25) employment declines in AI-exposed *automating* occupations; adjustment via employment not wages
+
 Co-author on the ICML 2025 position paper. Director of the Stanford Digital Economy Lab (DEL). Known for foundational work on AI and productivity, the "productivity paradox," and AI's impact on labor markets.
 
 ## Collaborators

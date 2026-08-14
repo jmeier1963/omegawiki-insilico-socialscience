@@ -3,10 +3,10 @@ title: "Pluralistic Alignment"
 aliases: ["value pluralism in AI", "distributional pluralism", "Overton pluralism", "steerable pluralism", "pluralistic AI alignment"]
 tags: [alignment, pluralism, value-diversity, rlhf, human-values, democratic-AI]
 maturity: emerging
-key_papers: [roadmap-pluralistic-alignment]
+key_papers: [roadmap-pluralistic-alignment, why-big-ai-labs-hiring-so, ai-safety-needs-social-scientists, intelligence-wise]
 first_introduced: "2024"
 date_updated: 2026-05-06
-related_concepts: [llm-moral-self-correction]
+related_concepts: [llm-moral-self-correction, wisdom-versus-instrumental-intelligence]
 ---
 
 ## Definition

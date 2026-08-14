@@ -20,6 +20,7 @@ date_updated: 2026-04-29
 
 ## Recent work
 
+- [[machine-learning-tool-hypothesis-generation]]
 ## Collaborators
 
 - Jens Ludwig (UChicago Crime Lab)

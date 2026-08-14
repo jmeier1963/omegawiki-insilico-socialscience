@@ -21,7 +21,11 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[persona-generators-generating-diverse-synthetic-personas]]
 Senior researcher at Google DeepMind working on multi-agent systems and their applications to social science. Co-author of Concordia and of work on social path to human-like artificial general intelligence (Duéñez-Guzmán et al., Nature Machine Intelligence 2023).
+
+- Co-authored [[from-agi-to-asi]] ("From AGI to ASI", Google DeepMind, 2026).
+- [[ai-agent-traps]] — co-author; taxonomy of six classes of adversarial content designed to manipulate or hijack autonomous AI agents via their information environment.
 
 ## Collaborators
 

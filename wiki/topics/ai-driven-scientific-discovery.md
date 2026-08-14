@@ -6,6 +6,7 @@ sota_updated: 2026-04-23
 key_venues: [Nature, EMNLP, NeurIPS, ICML, Science]
 related_topics: [multi-agent-social-simulation, llm-human-simulacra]
 key_people: []
+key_papers: [artificial-intelligence-tools-expand-scientists-impact, ai-agents-conduct-open-ended-ai, ten-advances-mathematics-theoretical-computer-science]
 ---
 
 ## Overview
@@ -19,7 +20,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - **2020**: Neural networks predict Big Five personality from facial images (Scientific Reports)
 - **2023**: GNoME discovers 2.2M+ new crystal structures via graph networks (Nature); GPT-4 evaluated across scientific domains (Microsoft Research); MetaGPT introduces SOP-encoded multi-agent framework
 - **2024**: CORE-Bench benchmarks AI computational reproducibility; Oil & Water documents AI's diffusion/semantic-gap paradox
-- **2025**: Agent Laboratory automates research pipeline (EMNLP); AlphaGenome unifies genomics prediction; autonomous enzyme engineering platform demonstrated; Agent0 self-evolves without human data; LabOS enables AI-XR lab collaboration; Hao et al. document AI productivity-diversity paradox in 41M natural science papers (Nature)
+- **2025**: Agent Laboratory automates research pipeline (EMNLP); AlphaGenome unifies genomics prediction; autonomous enzyme engineering platform demonstrated; Agent0 self-evolves without human data; LabOS enables AI-XR lab collaboration; [[artificial-intelligence-tools-expand-scientists-impact]] (Hao et al., published 2026) documents AI productivity-diversity paradox in 41M natural science papers (Nature)
 - **2026**: The AI Scientist published in Nature (end-to-end research automation); Gemini resolves 13 Erdős problems; Numina-Lean-Agent solves all Putnam 2025; LLMs evaluated for divergent scientific thinking; METR task horizon reaches 12 hours (Opus 4.6); CORE-Bench "solved" at 95.5%; PostTrainBench shows AI at ~50% of human fine-tuning quality; Jack Clark estimates 60%+ chance of automated AI R&D by 2028
 
 ## Seminal works
@@ -30,6 +31,9 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - [[agent-laboratory-using-llm-agents-research]] — Agent Laboratory: human-in-the-loop LLM research automation pipeline
 - [[living-within-experiment-inherent-labs-manifesto]] — Inherent Labs (2026): AI-native research organization and collective RSI vision
 - [[advancing-regulatory-variant-effect-prediction-alphagenome]] — AlphaGenome: unified genomics foundation model
+- [[artificial-intelligence-tools-expand-scientists-impact]] — Hao, Xu, Li & Evans (2026): 41.3M-paper study of AI's productivity-diversity paradox in natural science
+- [[ai-agents-conduct-open-ended-ai]] — Kirgis, Kapoor & Narayanan (CRUX, 2026): shadow evaluations; agents did all the engineering but both papers were unambiguous rejections by the original authors
+- [[ten-advances-mathematics-theoretical-computer-science]] — OpenAI (2026): ten claimed research-level math/TCS results from an internal model, including a disproof of Connes's rigidity conjecture
 
 ## SOTA tracker
 
@@ -44,8 +48,8 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 
 ## Open problems
 
-- Can AI agents conduct research requiring genuinely novel conceptual breakthroughs, or only pattern-matching and combinatorial search?
-- How do we evaluate scientific quality beyond peer review proxies?
+- Can AI agents conduct research requiring genuinely novel conceptual breakthroughs, or only pattern-matching and combinatorial search? *Partially addressed, with opposing evidence: [[ai-agents-conduct-open-ended-ai]] finds no for open-ended empirical ML research (five failure modes, both papers rejected); [[ten-advances-mathematics-theoretical-computer-science]] claims yes for pure mathematics, though with no disclosed methodology. The likely reconciliation — that symbolic self-verifying domains are the favourable case — is itself untested.*
+- How do we evaluate scientific quality beyond peer review proxies? *Addressed by [[ai-agents-conduct-open-ended-ai]] via [[shadow-evaluation]]: the original authors of an unpublished paper grade an agent's answer to their own research question — open-ended, uncontaminated, expert-graded, but limited to a handful of data points.*
 - What is the right level of human oversight in AI-automated research pipelines?
 - Will AI-generated science suffer from self-reinforcing biases as it trains on its own outputs?
 - How can AI research tools integrate semantically with existing non-AI research (the Oil & Water gap)?
@@ -66,3 +70,8 @@ The field is advancing rapidly in narrow domains (materials, genomics) where the
 
 - [[jack-clark]] — Anthropic co-founder; synthesizes capability benchmarks; forecasts automated AI R&D by 2028
 
+## Concepts
+
+- [[co-evolving-evaluator-hardening]]
+- [[research-taste-bottleneck]]
+- [[ai-mathematical-discovery]]

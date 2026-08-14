@@ -72,9 +72,9 @@ Seminal paper establishing *Homo silicus* as a legitimate conceptual framework. 
 
 ## Related
 
-- supports: [[llms-replicate-human-behavioral-biases-in-economic-experiments]]
-- supports: [[theory-grounded-persona-calibration-improves-llm-simulation-fidelity]]
+- supports: [[llms-replicate-human-behavioral-biases-economic]]
+- supports: [[theory-grounded-persona-calibration-improves-llm]]
 - [[homo-silicus]]
 - [[persona-conditioning]]
-- [[john-j-horton]]
-- [[benjamin-s-manning]]
+- [[john-horton]]
+- [[benjamin-manning]]

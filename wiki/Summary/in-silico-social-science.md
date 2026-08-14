@@ -199,7 +199,7 @@ AI is transforming scientific research across multiple modalities:
 - [[persona-based-simulation-human-opinion-population]] — SPIRIT framework (Li & Conrad 2026)
 - [[benchmarking-distributional-alignment-large-language-models]] — distributional alignment benchmark
 - [[assessing-reliability-persona-conditioned-llms-synthetic]] — subgroup fidelity degradation
-- [[generative-agents-1000-people]] — interview-grounded simulation of 1,000 real participants (Argyle et al. 2025)
+- [[generative-agent-simulations-000-people]] — interview-grounded simulation of 1,000 real participants (Argyle et al. 2025)
 
 **Foundation models and automation:**
 

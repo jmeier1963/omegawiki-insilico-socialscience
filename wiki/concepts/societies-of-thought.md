@@ -6,7 +6,7 @@ maturity: emerging
 key_papers: [reasoning-models-generate-societies-thought, agentic-ai-next-intelligence-explosion]
 first_introduced: "2026"
 date_updated: 2026-04-14
-related_concepts: [llm-powered-agent-architecture, generative-agent-based-modeling]
+related_concepts: [llm-powered-agent-architecture, generative-agent-based-modeling, multi-agent-scaling-laws]
 ---
 
 ## Definition

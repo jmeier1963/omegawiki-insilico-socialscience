@@ -51,6 +51,6 @@ Important policy framework for European AI governance debates. The EuroStack vis
 
 ## Related
 
-- supports: [[european-digital-sovereignty-requires-sovereign-ai-infrastructure]]
+- supports: [[european-digital-sovereignty-requires-sovereign-ai]]
 - [[cloud-capitalism-business-model]]
 - [[digital-sovereignty]]

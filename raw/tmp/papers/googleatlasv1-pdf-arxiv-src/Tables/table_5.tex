@@ -1,0 +1,15 @@
+{\renewcommand{\arraystretch}{1.5} % Increases the vertical padding between rows
+\begin{tabular}{
+    >{\raggedright\arraybackslash}p{2cm}
+    >{\raggedright\arraybackslash}p{3.8cm}
+    >{\raggedright\arraybackslash}p{3.8cm}
+    >{\raggedright\arraybackslash}p{3.8cm}
+}
+        \toprule
+        \textbf{Surface} & \textbf{Scope limitations} & \textbf{Data Unit} & \textbf{Geographic Coverage} \\
+        \midrule
+        Gemini App & Interactive Gemini App conversations, on the Web and Mobile apps (Android/iOS) & Turn-based conversation sequence (excluding file attachments) & Available globally (250 countries and territories) \\
+        Google AI Mode (AIM) & All interactive AI Mode conversations. & Turn-based conversation sequence (excluding file attachments and non-AI mode search queries) & Adheres to standard official AI mode availability \\
+        Gemini API & Direct API calls and Google AI Studio (excluding Vertex AI/GCP and Gemini LM) & Individual API request and responses (no persistent conversation ID) & Only request counts (not content) are available for the EEA, the UK, Switzerland and all paid services \\
+        \bottomrule
+    \end{tabular}}

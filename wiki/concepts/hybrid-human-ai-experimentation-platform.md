@@ -3,7 +3,7 @@ title: "Hybrid Human-AI Experimentation Platform"
 aliases: ["human-AI social experiment platform", "real-time human-AI experimentation", "synchronous human-LLM interaction platform", "hybrid experimentation platform", "human-AI behavioral experiment infrastructure"]
 tags: [human-ai-interaction, experimentation-platform, social-computing, llm-agents, real-time-interaction]
 maturity: emerging
-key_papers: [deliberate-lab-platform-real-time-human]
+key_papers: [deliberate-lab-platform-real-time-human, llm-agents-social-scientists-human-ai]
 first_introduced: "Deliberate Lab (Qian et al., 2025)"
 date_updated: 2026-04-13
 related_concepts: [generative-agent-based-modeling, llm-powered-agent-architecture, persona-conditioning]

@@ -49,10 +49,11 @@ Commentary (News & Views) synthesising Hao et al. (2025): analysis of ~41M natur
 
 ## My take
 
-The productivity-diversity paradox is one of the most important empirical findings about AI's systemic effects on science. The commentary frames it well but doesn't add new analysis. The original Hao et al. paper (not yet ingested) should be prioritised for full ingest. This finding complements the Oil & Water gap ([[ai-science-adoption-gap]]): together they paint a picture of AI as an amplifier-but-segregator, accelerating individual careers while homogenising the research landscape.
+The productivity-diversity paradox is one of the most important empirical findings about AI's systemic effects on science. The commentary frames it well but doesn't add new analysis. **Update (2026-07-16): the original Hao et al. paper is now ingested** as [[artificial-intelligence-tools-expand-scientists-impact]] — treat that page as the primary source; this page remains useful as a compact, contextualising summary. This finding complements the Oil & Water gap ([[ai-science-adoption-gap]]): together they paint a picture of AI as an amplifier-but-segregator, accelerating individual careers while homogenising the research landscape.
 
 ## Related
 
+- [[artificial-intelligence-tools-expand-scientists-impact]] — the primary source this commentary summarises (Hao, Xu, Li & Evans 2026, *Nature*)
 - [[ai-research-productivity-paradox]] — the concept this paper exemplifies
 - [[ai-adoption-expands-individual-scientific-impact]] — main claim extracted from this paper
 - [[ai-science-adoption-gap]] — related concept: AI spreads across fields but fails to integrate semantically

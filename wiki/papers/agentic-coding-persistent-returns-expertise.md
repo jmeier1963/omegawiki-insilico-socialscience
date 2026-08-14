@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [Claude Code, agentic coding, division of labor, domain expertise, task value, knowledge work, labor market]
 domain: "AI Economics / Social Science"
 code_url: ""
-cited_by: []
+cited_by: [shift-agentic-ai-evidence-codex]
 ---
 
 ## Problem

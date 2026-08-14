@@ -1,0 +1,166 @@
+\section*{Methods}
+\subsection*{M1. Dataset and Paper selection}
+In this section, we introduce the procedure of selecting the research papers included in our analysis.
+In this paper, we conduct our major analyses based on OpenAlex~\supercite{openalex}.
+OpenAlex is a scientific research database built upon the foundation of the Microsoft Academic Graph (MAG)~\supercite{mag,oag}.
+Supported by non-profit organizations, OpenAlex is continuously updated, providing a sustainable global resource for research information.
+As of March 2025, OpenAlex contains 265.7M research papers, along with related data about citation, author, institution, etc.
+Among the massive quantity of papers in the OpenAlex dataset, we select 66,117,158 English research papers published in journals and conferences spanning from 1980 to 2025 and filter out those with incomplete titles or abstracts.
+We identify the scientific discipline each paper belongs to utilizing the topics contained in OpenAlex, which are extracted using a natural language processing approach that annotates titles and abstracts with Wikipedia article titles as topics sharing textual similarity.
+In the raw dataset, these topics form a hierarchical structure and each paper is associated with several.
+Adopting the 19 basic scientific disciplines in the Microsoft Academic Graph (MAG)~\supercite{mag,oag}, i.e., art, biology, business, chemistry, computer science, economics, engineering, environmental science, geography, geology, history, materials science, mathematics, medicine, philosophy, physics, political science, psychology, and sociology, we trace along the hierarchy to determine to which disciplines each topic belongs.
+We note that because the original topics of one paper may be retraced to different topics, the scientific discipline of each paper may not be unique.
+In other words, one paper may span two or more academic disciplines, e.g., chemistry and biology, which reflects the common phenomena of borderline or interdisciplinary research~\supercite{porter2009science}.
+
+In this paper, we emphasize the adoption of AI methods in conventional natural science disciplines and exclude research developing AI methodologies themselves, separating the influence of AI on science from AI’s own invention and refinement.
+Therefore, we select biology, medicine, chemistry, physics, materials science, and geology as representatives of natural science disciplines, while we exclude computer science and mathematics, where most works introducing and developing AI methods are published.
+We also exclude art, business, economics, history, philosophy, political science, psychology, and sociology, in order to focus on how AI is changing the natural sciences and career trajectories in the sciences.
+Our 6 natural science disciplines include the majority of OpenAlex articles, resulting in 41,298,433 papers, containing 18,392,040 in biology, 4,209,771 in chemistry, and 2,380,666 in geology, 4,755,717 in materials science, 24,315,342 in medicine, 5,138,488 in physics.
+The selected disciplines cover various dimensions of natural science, representing an broad view of scientific research as a whole.
+
+\subsection*{M2. Divide three stages of AI development}
+We divide the history of AI development into three key eras: the traditional machine learning (ML) era (1980–2014), the deep learning (DL) era (2015–2022), and the generative (GAI) era (2023–present).
+We consider 1980 as the start of the traditional machine learning era because several landmark researches were published in the 1980s, such as the back-propagating method~\supercite{rumelhart1986learning,lecun1989backpropagation}.
+We regard that the deep learning era began in 2015, as marked by breakthroughs including ResNet, which enabled the training of ultra-deep neural networks, revolutionizing fields including computer vision and speech recognition~\supercite{he2016deep}.
+Finally, we divide the GAI era to begin in 2023 with the publication of ChatGPT, a representative large language model, in December 2022, which saw the advent of large-scale transformer-based models capable of strong generalized performance across a wide range of tasks, sparking new applications in natural language processing and beyond.
+Each of these transitions was driven by advances in algorithms, computational power, and data availability, substantially expanding the capabilities and scope of AI for science.
+
+\subsection*{M3. Design and fine-tune the language model for AI paper identification}
+Insofar as both a paper’s title and the abstract contain important information about its content, we independently train two separate models based on paper titles and abstracts, and then integrate the two models into an ensembled one by averaging their outputs.
+The structure of our NLP model for paper identification consists of two parts.
+The backbone network is a 12-layer BERT model with 12 attention heads in each layer, and the sequence classification head is a linear layer with a 2-dimensional output atop the BERT output.
+We normalize the 2-dimensional output with a softmax function and obtain the probability that the paper involves AI-assistance.
+We utilize the BERT model named “bert-base-uncased” from Hugging Face~\supercite{HuggingFace}, which is pre-trained with a large-scale general corpus, and set the maximum length of tokenization to be 16 for titles and 256 for abstracts.
+We design a two-stage fine-tuning process with training and validation sets, which we extracted from the OpenAlex dataset, to transfer the pre-trained model to our paper identification task.
+The construction of positive and negative data is different between the two stages. In both stages, we randomly split the positive and negative data into 90\% and 10\% to correspondingly obtain training and validation sets.
+We use the training set for model training and employ the validation set to select the optimal model.
+Because the numbers of positive and negative cases are unbalanced, we use the bootstrap sample technique on positive cases to balance its number with negative cases at both stages.
+
+In the first stage, we construct relatively coarse positive data, only considering eight typical AI journals and conferences, i.e., \textit{Nature Machine Intelligence}, \textit{Machine Learning}, \textit{Artificial Intelligence}, \textit{Journal of Machine Learning Research}, \textit{International Conference on Machine Learning (ICML)}, \textit{International Conference on Learning Representations (ICLR)}, \textit{AAAI Conference on Artificial Intelligence}, and \textit{International Joint Conference on Artificial Intelligence (IJCAI)}.
+Among the papers belonging to our chosen 6 disciplines, we extract all papers published in these venues as positive cases and randomly sample 1\% of the remaining papers in our six chosen natural science fields as negative cases, resulting in 26,165 positive and 291,035 negative data.
+We fine-tune the pre-trained model for 30 epochs on the training set and select the optimal model according to the F1-score on the validation set.
+
+In the second stage, we construct more precise positive data based on the obtained optimal model in the first stage.
+We identify papers in the whole OpenAlex dataset and aggregate the results for each venue, obtaining the probability for each venue across OpenAlex to be an AI venue by averaging the AI probability for all papers within it.
+We then select the venues with $>80\%$ AI probability and $>100$ papers as AI venues.
+We also incorporate venues with “machine learning” or “artificial intelligence” in their names.
+In papers belonging to our 6 chosen disciplines, we extract all papers published in the selected AI venues as positive cases and randomly sample 1\% of those remaining as negative cases, resulting in 31,311 positive and 231,258 negative cases.
+Then, we fine-tune the obtained optimal model in the first stage for another 30 epochs with the new training set and select the best model according to F1-score on the new validation set.
+Finally, we utilize optimal ensemble models during both stages to identify all papers that use AI to support natural science research from the selected representative natural science disciplines.
+
+
+\subsection*{M4. Scrutinize our identification results by disciplinary experts}
+We arbitrarily sample 220 papers (110 papers $\times$ 2 groups) from each of the 6 disciplines, resulting in 12 paper groups in total.
+We enlisted 12 experts with abundant AI research experience (Supplementary Table~S1) and assigned 3 different groups of papers to each.
+Without revealing the identification results obtained with the BERT model, we queried our experts whether each paper was an AI paper.
+In this way, each paper is repeatedly labeled by three distinct experts, and we evaluate the consistency among these experts based on Fleiss’ Kappa coefficient ($\kappa$)~\supercite{landis1977measurement,fleiss1971measuring}, which is an unsupervised measurement for assessing the agreement between independent raters.
+Having confirmed consensus among our experts, we draw the final expert label of each paper from the three experts according to the principle of the minority obeying the majority. We regard the expert labels as ground truth and validate the result of our BERT model against it with the F1-Score, which is a supervised accuracy measurement of accuracy.
+
+\subsection*{M5. Determine the project leader of papers}
+Here, we define the project leader as the last author of a research paper, in alignment with conventions established by previous studies~\supercite{sekara2018chaperone}.
+To ensure that in most papers, the last authors represent the project leader, we examine the fraction of papers that list authors following alphabetical order.
+First, we directly traverse all selected papers and obtain that the prevalence of papers listing authors in alphabetical order, which ranges from 14.87\% in materials science to 22.15\% in geology.
+Nevertheless, it is difficult to distinguish whether these papers are really intended to list the authors in alphabetical order or the list of authors according to their roles, which just happen to unintentionally fall in alphabetical order. The latter situation is more likely to occur when there are fewer authors, i.e., two or three.
+To tackle this analytical challenge, we determine the fraction of “unintended” alphabetical author lists through a Monte Carlo method.
+We generate 10 randomly shuffled copies of the author list for each paper and obtained that from 13.82\% (materials science, standard deviation $\sigma=0.02$) to 20.28\% (geology, standard deviation $\sigma=0.03$) papers have alphabetically listed authors among the random author lists.
+This indicates the proportion of “unintended” alphabetical author lists, and we can derive the actual fraction of papers with intentionally alphabetical author lists by the difference between the above two sets of statistical results.
+The actual fraction obtained illustrates that only 1.58\% of papers across all disciplines intentionally list the authors in alphabetical order (Supplementary Table~S12), and therefore, we can, with negligible interference, assume that we can identify last authors as team leaders.
+
+\subsection*{M6. Detect scientists’ career role transition}
+The OpenAlex dataset incorporates a well-designed Author Name Disambiguation (AND) mechanism~\supercite{openalex}, which utilizes an XGBoost model~\supercite{chen2016xgboost} to predict the likelihood that two authors are the same based on features like their institutions, co-authors, and citations, and then applies a custom, ORCID-anchored clustering process to group their works, assigning a unique ID for each author.
+Simply utilizing unique IDs, we are able to track a large number of authors at the same time~\supercite{hill2025pivot}, where we depict an individual scientist’s career trajectory using a role transition model (Extended Data Fig. 4a) and extract the role transition trajectories for scientists.
+
+First, we traverse all selected papers in the 6 disciplines and extract all the scientists involved in any of these papers.
+Then, for each individual scientist, we extract all papers in which they have been involved and record the time of their first publication in any role, the time of their first publication as team leader (if ever), and the time of their last publication.
+Subsequently, we filter out scientists whose publication records span only a single year.
+We also filter out those who directly start as established scientists leading research teams without a role transition from junior scientists.
+Finally, we detect the time that each scientist abandons academic publishing.
+Considering that one scientist may not publish papers continuously every year, we cannot regard them as having left academia based on their absence in the published record for a single year.
+Therefore, we follow the settings in previous research~\supercite{milojevic2018changing} to use a threshold of 3 years and regard scientists who have no more publications after 2022 as having exited academia, while those who still publish papers after 2022 are considered to have an unclear ultimate status and are excluded from analysis.
+Finally, we obtain 2,282,029 scientists in the 6 disciplines with complete role transition trajectories.
+We also classify them into AI and non-AI scientists according to whether they have published AI-augmented papers.
+
+Moreover, by analyzing author contribution statements collected in previous studies~\supercite{xu2022flat,lin2023remote}, we further validate our detection results by examining changes in scientists’ self-reported contributions throughout their careers (Extended Data Fig. 4b).
+Results indicate that junior scientists primarily engage in a large proportion of technical tasks, such as conducting experiments and analyzing data, and less in conceptual tasks, such as conceiving ideas and writing papers. Nevertheless, the proportion of conceptual work significantly rises ($p<0.01$ and $df=1$ in Cochran-Armitage test) during their tenure as junior scientists, reaching saturation at a high level (60\% or more) upon transition to becoming established scientists. This finding validates our definition of role-transition by demonstrating a shift in the nature of scientists’ contributions from participating in research projects to leading them.
+
+
+\subsection*{M7. Estimate the birth-death model for career development of junior scientists}
+To obtain a more precise quantification of how much AI accelerates the career development of junior scientists, we employ a general birth-death model~\supercite{kendall1960birth}.
+This type of stochastic process model depicts the dynamic evolution of a population as members join and exit.
+In our context, it models the role transitions of junior scientists.
+Specifically, we use two separate birth-death models for junior scientists who eventually become established and those who leave academia, respectively.
+Here, “birth” processes refer to the entry of junior scientists into academia, and “death” processes symbolize their transition out of the junior stage, either by becoming established scientists or quitting academia.
+Because the entry and exit of each junior scientist are independent from one another, we use Poisson processes to model “birth” (entry) and “death” (exit) events, respectively.
+
+The Poisson process is a typical stochastic process model for describing the occurrence of random events that are independent of each other~\supercite{kingman1992poisson}.
+The mathematical formula of the Poisson process is:
+\begin{equation}
+    P(N(t_0)=k)=\frac{(\lambda_0 t_0)^k}{k!}e^{-\lambda_0 t_0}, t_0>0, k=0, 1, 2, \dots,
+\end{equation}
+where $N(t_0)$ denotes the number of random events that happened before time $t_0$, and $\lambda_0$ is the parameter of the Poisson process, depicting the happening rate of random events.
+We consider a birth-death model where birth and death dynamics are both Poisson processes, and rate parameters are $\mu$ and $\omega$, respectively.
+Through mathematical derivation~\supercite{meisling1958discrete}, we conclude that the duration time $t$ from birth to death follows an exponential distribution with the parameter $\omega-\mu$, where the exact form of the probability density function is:
+\begin{equation}
+    P(t)=(\omega-\mu)e^{-(\omega-\mu)t}, t>0.
+\end{equation}
+We consider the difference between the two rate parameters $\omega-\mu$ as a whole and fit it with a single parameter $\lambda$.
+Then, the transition time for junior scientists to become established scientists or leave academia follows the exponential distribution:
+\begin{equation}
+    P(t)=\lambda e^{-\lambda t}, t>0,
+\end{equation}
+and the corresponding survival function is
+\begin{equation}
+    S(t)=1-\int_0^t P(u)du=e^{-\lambda t}, t>0.
+\end{equation}
+Hence, the average transition time is the conditional expectation of the distribution defined as follows:
+\begin{equation}
+    \Bar{t}=E[t|t>1]=\int_1^{\infty}t\cdot P(t)dt=\int_1^{\infty}t\cdot\lambda e^{-\lambda t}dt=\frac{1}{\lambda}+1.
+\end{equation}
+
+We fit the role transition time of the scientists with the aforementioned exponential distribution, thereby determining the respective values of $\lambda$ for AI-adopted junior scientists and their non-AI counterparts.
+Guided by the underlying mechanism of junior scientists’ career development incorporated within the birth-death model, expectations from the model offer a more accurate estimate of the average role transition time.
+% Besides, the exponential distribution indicates that the role transition time of junior scientists does not exhibit a long-tailed distribution.
+
+\subsection*{M8. Measure the knowledge extent of papers}
+To assess the knowledge extent of a set of research papers within their high-dimensional embeddings
+\begin{equation}
+\{\mathbf{p[1]},\mathbf{p[2]},\dots,\mathbf{p[n]}\}, \mathbf{p[i]}\in\mathbb{R}^{768},
+\end{equation}
+we first compute the centroid as the mean of their vector locations:
+\begin{equation}
+    \mathbf{c} = \frac{1}{n} \sum_{i=1}^{n} \mathbf{p[i]}.
+\end{equation}
+Next, we compute the Euclidean distance from each embedding to the centroid, where the knowledge extent of the set of papers is defined as the maximum distance or “diameter” of the vector space covered:
+\begin{equation}
+    KE = \max_{1\leq i\leq n}\|\mathbf{p[i]}-\mathbf{c}\|_2.
+\end{equation}
+We note that Euclidean distance is highly correlated with the cosine and related angular distances.
+
+In practice, the number of AI and non-AI papers in each domain differ substantially, introducing bias to the measurement of knowledge extent.
+To address this issue, we build on prior work~\supercite{milojevic2015quantifying} about cognitive extent\footnote{Cognitive extent is a measure of the breadth of a scientific field’s cognitive territory. It is quantified by the number of unique phrases, as a proxy for scientific concepts, found within a sampled batch of papers with given size.}.
+For each domain, we randomly sample 1,000 papers from both AI and non-AI categories, compute their respective knowledge extent, and repeat this process 1,000 times.
+By comparing knowledge extent values across these 1,000 random samples, we ensure that the number of AI and non-AI papers is balanced, making our knowledge extent results comparable.
+
+
+\subsection*{M9. Measuring the knowledge extent of paper families}
+To measure how much knowledge space can be derived from each original research, we calculate the knowledge extent of “paper families”, i.e., a focal paper and its follow-on citations.
+Focusing on an original research paper $\phi$, which corresponds to a high-dimensional embedding $\mathbf{p_{\phi}}\in\mathbb{R}^{768}$, we extract all $n_{\phi}$ research papers that cite this original paper.
+These citing papers are sorted chronologically by publication date, from earliest to most recent.
+The corresponding high-dimensional embeddings of these sorted papers are:
+\begin{equation}
+    \{\mathbf{p_{\phi}[1]},\mathbf{p_{\phi}[2]},\dots,\mathbf{p_{\phi}[n_{\phi}]}\}, \mathbf{p_{\phi}[i]}\in\mathbb{R}^{768}.
+\end{equation}
+Thereby, we calculate knowledge extent covered by the “paper family” consists of the original paper $\phi$ and the first $n$ follow-on papers citing it ($1 \leq n \leq n_{\phi}$) as:
+\begin{equation}
+    KE_{\phi}[n] = \max_{1\leq i\leq n\leq n_{\phi}}\|\mathbf{p_{\phi}[i]}-\mathbf{p_{\phi}}\|_2.
+\end{equation}
+
+\subsection*{M10. Measure follow-on engagement among papers}
+To quantify how frequently citations of the same original paper interact with each other, we design a metric called follow-on engagement building on prior work~\supercite{mcmahan2018ambiguity}.
+For an original paper with $n$ citations, there are at most $\frac{n(n-1)}{2}$ possible citations among these $n$ citing papers if everyone cites all papers published earlier than their own.
+We then count how many times these $n$ citing papers actually cite one another, denoted as $k$.
+Our metric for follow-on engagement is calculated as the ratio of actual to maximum possible citations:
+\begin{equation}
+    EG = \frac{k}{\frac{n(n-1)}{2}} = \frac{2k}{n(n-1)} = \frac{2k}{n(n-1)} \times 100 (\%). 
+\end{equation}
+This metric helps quantify the degree of interactions and collaboration among papers that cite the same original work. Prior work has demonstrated a positive association between the ambiguity of a focal work and follow-on engagement~\supercite{mcmahan2018ambiguity}.

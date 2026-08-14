@@ -59,4 +59,4 @@ An important synthesis paper that brings cognitive science vocabulary to LLM age
 ## Related
 
 - [[llm-powered-agent-architecture]] (extends this concept; CoALA provides a systematic taxonomy)
-- supports: [[coala-framework-unifies-language-agent-design-space]]
+- supports: [[coala-framework-unifies-language-agent-design]]

@@ -3,7 +3,7 @@ title: "Gradual Disempowerment"
 aliases: ["incremental power transfer to AI", "AI deskilling", "soft AI takeover", "gradual human agency erosion", "delegation cascade"]
 tags: [ai-safety, human-agency, cognitive-surrender, deskilling, institutional-ai, coordination-failure]
 maturity: emerging
-key_papers: [large-language-models-hack-rewards-society]
+key_papers: [large-language-models-hack-rewards-society, no-one-escapes-permanent-underclass, gradual-disempowerment-systemic-existential-risks-incremental, ai-bureaucrats-ai-religions-ai-boyfriends, monopoly-round-up-pope-silicon-valley, control-inversion-why-superintelligent-ai-agents, industrial-policy-intelligence-age]
 first_introduced: "2026"
 date_updated: 2026-05-06
 related_concepts: [cognitive-surrender, human-ai-relationship-appropriateness]

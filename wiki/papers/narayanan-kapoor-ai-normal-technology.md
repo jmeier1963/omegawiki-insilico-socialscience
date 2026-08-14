@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AI as normal technology, AI governance, hype critique, accountability, Narayanan, Kapoor, Columbia]
 domain: "general"
 code_url: ""
-cited_by: []
+cited_by: [from-agi-to-asi]
 ---
 
 ## Problem

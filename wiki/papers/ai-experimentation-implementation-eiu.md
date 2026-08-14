@@ -39,4 +39,4 @@ Brief policy analysis from EIU. Useful summary of adoption transition. Importanc
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]

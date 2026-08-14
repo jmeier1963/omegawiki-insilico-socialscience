@@ -53,6 +53,7 @@ A natural follow-up to the LLM-Ideas paper. The finding that vanilla LLM prompti
 
 ## Related
 
+- [[llm-brainstorming-diversity]]
 - [[using-large-language-models-idea-generation]]
 - [[evaluating-llms-divergent-thinking-capabilities-scientific]]
 - [[ai-driven-scientific-discovery]]

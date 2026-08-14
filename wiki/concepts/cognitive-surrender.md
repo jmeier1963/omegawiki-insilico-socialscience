@@ -3,10 +3,10 @@ title: "Cognitive Surrender"
 aliases: ["AI cognitive surrender", "System 3 surrender", "AI-induced accuracy loss", "AI uncritical adoption", "surrender to AI"]
 tags: [cognitive-surrender, ai-reliance, dual-process, decision-making, human-ai-interaction, automation-bias]
 maturity: emerging
-key_papers: [thinking-fast-slow-artificial-how-ai]
+key_papers: [thinking-fast-slow-artificial-how-ai, why-big-ai-labs-hiring-so, when-everyone-uses-ai-companies-risk, positive-alignment-artificial-intelligence-human-flourishing]
 first_introduced: "2026"
 date_updated: 2026-05-06
-related_concepts: [human-ai-relationship-appropriateness]
+related_concepts: [human-ai-relationship-appropriateness, wisdom-versus-instrumental-intelligence]
 ---
 
 ## Definition

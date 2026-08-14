@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AlphaFold, protein structure prediction, CASP14, deep learning, structural biology, scientific breakthrough]
 domain: "ML Systems"
 code_url: "https://github.com/deepmind/alphafold"
-cited_by: []
+cited_by: [from-agi-to-asi]
 ---
 
 ## Problem
@@ -56,6 +56,8 @@ AlphaFold2 uses a transformer-based architecture with an Evoformer module that j
 The landmark case of genuine AI scientific achievement. AlphaFold2 solved CASP14 with such wide margins that it effectively ended competitive protein structure prediction. Its philosophical significance is contested: Messeri & Crockett (2024) worry that it creates illusions of understanding; Hacking's (1983) entity realism criterion is satisfied (AlphaFold structures are used to design drugs and guide experiments). The most important AI-science paper of the decade.
 
 ## Related
+
+- [[deep-learning-scientific-discovery]]
 
 - [[messeri-crockett-ai-illusions-understanding]]
 - [[krenn-scientific-understanding-ai]]

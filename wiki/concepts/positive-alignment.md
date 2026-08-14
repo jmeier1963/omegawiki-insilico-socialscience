@@ -3,10 +3,10 @@ title: "Positive Alignment"
 aliases: ["positive AI alignment", "proactive alignment", "AI for flourishing", "flourishing alignment", "eudaimonic AI"]
 tags: [alignment, human-flourishing, positive-psychology, polycentric-governance, ai-safety]
 maturity: emerging
-key_papers: [positive-alignment-artificial-intelligence-human-flourishing, magnifica-humanitas-encyclical-letter-pope-leo]
+key_papers: [positive-alignment-artificial-intelligence-human-flourishing, magnifica-humanitas-encyclical-letter-pope-leo, intelligence-wise]
 first_introduced: "2026"
 date_updated: 2026-05-29
-related_concepts: [broadly-safe-behavior-cluster, cognitive-surrender, heterogeneity-collapse]
+related_concepts: [broadly-safe-behavior-cluster, cognitive-surrender, heterogeneity-collapse, wisdom-versus-instrumental-intelligence]
 ---
 
 ## Definition

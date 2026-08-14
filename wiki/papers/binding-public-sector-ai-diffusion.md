@@ -51,4 +51,4 @@ Useful policy commentary from an AI governance critic. Represents the "innovatio
 
 ## Related
 
-- supports: [[regulatory-compliance-costs-impede-public-sector-ai-adoption]]
+- supports: [[regulatory-compliance-costs-impede-public-sector]]

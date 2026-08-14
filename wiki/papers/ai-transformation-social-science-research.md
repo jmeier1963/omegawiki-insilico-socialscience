@@ -54,4 +54,4 @@ A highly influential framing paper (293 citations in Science). The "scientist-hu
 ## Related
 
 - [[silicon-sampling]]
-- supports: [[llm-social-simulation-validity-requires-algorithmic-fidelity]]
+- supports: [[llm-social-simulation-validity-requires-algorithmic]]

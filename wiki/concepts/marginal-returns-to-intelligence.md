@@ -3,10 +3,10 @@ title: "Marginal Returns to Intelligence"
 aliases: ["returns to intelligence", "intelligence bottleneck analysis", "AI domain impact analysis", "limiting factors for AI acceleration"]
 tags: [agi, ai-impact, scientific-acceleration, economics, intelligence, beneficial-ai]
 maturity: emerging
-key_papers: [machines-loving-grace-how-ai-could]
+key_papers: [machines-loving-grace-how-ai-could, mapping-ai-into-production-field-experiment, ten-advances-mathematics-theoretical-computer-science, intelligence-wise]
 first_introduced: "2024"
 date_updated: 2026-05-06
-related_concepts: [software-intelligence-explosion]
+related_concepts: [software-intelligence-explosion, agi-asi-transition, universal-ai-intelligence-measure, wisdom-versus-instrumental-intelligence]
 ---
 
 ## Definition

@@ -1,0 +1,758 @@
+\title{Mapping AI into Production: A Field Experiment on Firm Performance}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Working Paper 2026/20/STR Working Paper is the author’s intellectual property. It is intended as a means to promote research to interested readers. Its content should not be copied or hosted on any server without written permission from publications.fb@insead.edu Find more INSEAD papers at https://www.insead.edu/faculty-research/research Copyright © 2026 INSEAD
+\end{abstract}
+
+\section{Recovered Text}
+Working Paper
+2026/20/STR
+Working Paper is the author’s intellectual property. It is intended as a means to promote research to interested
+readers. Its content should not be copied or hosted on any server without written permission from
+publications.fb@insead.edu
+Find more INSEAD papers at https://www.insead.edu/faculty-research/research
+Copyright © 2026 INSEAD
+Mapping AI into Production:
+A Field Experiment on Firm Performance
+Hyunjin Kim
+INSEAD, h@insead.edu
+Dahyeon Kim
+INSEAD, dahyeon.kim@insead.edu
+Rembrand Koning
+Harvard Business School, rem@hbs.edu
+March 30, 2026
+AI can deliver productivity gains on individual tasks, yet evidence on whether these gains aggregate to firm
+performance remains limited. We study a central friction in AI adoption, which we call the mapping problem:
+discovering where and how AI creates value within a firm’s production process. Across 515 high-growth startups,
+we run a field experiment in which treated firms receive information about how other firms have reorganized
+production around AI, prompting them to search for use cases across a broader set of firm functions. We find that
+treated firms discover more AI use cases, a 44\% increase, concentrated in product development and strategy.
+These changes result in economically meaningful performance gains. Treated firms complete 12\% more tasks,
+are 18\% more likely to acquire paying customers, and generate 1.9x higher revenue. Revenue and investment
+gains are largest at the 90th percentile and above, consistent with AI expanding the upper range of what firms
+achieve rather than modestly improving marginal ventures. Despite faster growth, treated firms do not scale inputs
+proportionally. Their demand for external capital investment falls by 39.5\% relative to the control group, while their
+demand for labor remains unchanged. These results provide causal evidence that AI improves firm performance
+and productivity even at its current capabilities, and that discovering where and how to deploy AI is a key bottleneck
+in realizing the gains from this technology.
+Key words: Artificial Intelligence; Generative AI; Firms; Strategy; Entrepreneurship
+Electronic copy available at: https://ssrn.com/abstract=6513481
+The authors gratefully acknowledge financial support from INSEAD. The authors thank Aasiya Ahmed, Sadig
+Huseynzade, Ashish Kulkarni, Simonne Pinto, Bingrui Zhong for excellent research assistance. We thank Ajay
+Agrawal, Rebecca Henderson, Phanish Puranam, Michelle Rogan, and Scott Stern, along with seminar
+participants at MIT Sloan, ESSEC, LBS, UCL, University of Oxford, the Singapore Initiative on Digital Economics
+Workshop, and the INSEAD brownbag for their helpful feedback. The paper was formerly entitled “Reimagining
+the Firm with AI: Experimental Evidence from Startups.” This experiment was approved by the INSEAD Institutional
+Review Board and preregistered on the AEA RCT Registry under trial number AEARCTR-0016746.
+1
+Introduction
+A central promise of AI rests in the idea that it will make firms more productive and drive economic
+growth. The breadth of activities that AI can reshape within the firm—from operations (Brynjolf-
+sson, Li, and Raymond, 2023) to strategic decisions (Csaszar, Ketkar, and Kim, 2024)—makes this
+promise especially compelling. While much task-level evidence shows productivity gains across a
+wide range of firm activities (Noy and Zhang, 2023; Dell’Acqua et al., 2023), these gains have largely
+yet to aggregate to firm-level performance, echoing a pattern from earlier general-purpose technolo-
+gies (David, 1990; Bresnahan et al., 1996). Theoretical models of the impact of AI on organizations
+highlight the challenges of improving firm-level outcomes (Brynjolfsson, Rock, and Syverson, 2021;
+Gans and Goldfarb, 2026). Compounding these theoretical considerations, the rapid adoption of AI
+and the wide variation in tools used across firms has made it empirically difficult to isolate how AI
+affects firm performance (Seamans and Raj, 2018).
+In this paper, we estimate the causal effect of AI use on firm performance by leveraging a
+key friction, which we call the mapping problem: the challenge of discovering where and how AI
+creates value within a firm’s production process. Prior general-purpose technologies reshaped con-
+crete processes—electricity demanded new factory layouts, the internet required new distribution
+channels—and a large literature has studied the long-run complementary investments needed to
+restructure production around them (David, 1990; Milgrom and Roberts, 1990; Bresnahan et al.,
+1996). With AI, the space of possible applications is especially vast and flexible: the same technol-
+ogy can assist with writing an email or fundamentally change how a product is developed, yet even
+closely related tasks can differ sharply in how well AI performs (Dell’Acqua et al., 2023; Vafa, Ram-
+bachan, and Mullainathan, 2024; Otis et al., 2024). As a result, a central friction is the discovery
+of how to reorganize, not just the investments in reorganization itself. Discovering where and how
+AI creates value is fundamentally a search problem, and a large strategy literature suggests that
+search is often local (Levinthal and March, 1993; Stuart and Podolny, 1996; Kim and Wu, 2025),
+especially when confronted with jagged, combinatorial, and vast landscapes like those introduced
+by AI (Fleming, 2001). This suggests that firms may default to obvious local applications, while
+higher-value uses remain undiscovered.
+We leverage this mapping friction to design a treatment that induces exogenous variation in
+firms’ ability to discover how to use AI in production. In a 3-month accelerator with 515 high-growth
+startups from across the globe, we randomize the information provided through the accelerator’s
+2
+workshops: treated firms received case studies showing how other firms have reorganized production
+around AI. These case studies included discussions of how AI-native firms have reorganized their
+workflows, teams, business models, and financing to maximize the benefits of using AI (Koning,
+Keller, and Kim, 2025; Koning, Kim, and Keller, 2025).
+Beyond these workshops, treated and
+control ventures all received standard accelerator support (Cohen et al., 2019), including general
+entrepreneurship case studies, technical AI training, API credits, mentorship, and investor expo-
+sure. As a result, our design lets us both estimate the causal impact of AI on firm-level outcomes
+and isolate the role of mapping frictions in explaining why AI’s firm-level impact has lagged its
+capabilities.
+Our treatment leads to changes in how firms use AI, which in turn produce economically mean-
+ingful performance gains.
+Treated firms discover 2.7 additional AI use cases (a 44\% increase),
+which span a broader set of activities across the firm and are especially concentrated in product
+development and strategy-related domains. These changes in AI use lead to measurable gains in
+performance: treated firms complete 12\% more tasks, are 11 percentage points (18\%) more likely
+to acquire paying customers, and ultimately generate 1.9x higher revenues compared to control
+firms. Revenue and investment gains are largest at the 90th percentile and above, consistent with
+AI helping expand the upper range of venture performance by unlocking bottlenecks. These gains
+are broad-based: we find no significant differential effects by baseline firm performance or founder
+technical background, consistent with the mapping problem binding across a wide range of firms.
+Despite faster growth, treated firms do not scale inputs proportionally: their demand for external
+investment falls by just over \$220,000 relative to the control group, while their demand for labor
+remains unchanged, consistent with the idea that AI enables firms to produce more output with the
+same resources.
+Our design also allows us to rule out a range of non-AI related explanations and to estimate the
+returns to AI use within the firm. Attrition from the accelerator was low (1.6\%, eight ventures) and
+balanced across treatment and control, suggesting similar engagement across groups. Analysis of
+participant feedback shows that control and treated founders expressed comparable sentiment about
+the accelerator experience, further reducing concerns about motivation-driven effects. Moreover,
+differences between control and treated firms are driven by changes in AI use cases, making it unlikely
+that the results reflect non-AI channels. Instrumenting AI use cases with treatment assignment
+suggests that each additional AI use case prompted by treatment leads to 0.85 more completed tasks
+and approximately 26\% higher revenue. These are large effects, suggesting that AI is fundamentally
+3
+reshaping how ventures scale when they can map it across their production process.
+Our results make three contributions. First, we provide causal evidence that AI’s task-level pro-
+ductivity gains can aggregate to firm-level performance — and identify a key friction that explains
+why they often do not. Despite widespread evidence documenting productivity gains at the task
+level (Brynjolfsson, Li, and Raymond, 2023; Noy and Zhang, 2023; Dell’Acqua et al., 2023), the
+question of whether these aggregate to firm-level outcomes has remained open—theoretically, be-
+cause complementarities and intangible investments can offset or delay returns (Gans and Goldfarb,
+2026; Brynjolfsson, Rock, and Syverson, 2021), and empirically, because existing firm-level evidence
+is largely correlational (Babina et al., 2024; McElheran et al., 2025; Kim and Koning, 2026). We
+show that AI’s benefits do aggregate to the firm level, with gains that are broad-based across a wide
+range of firms.
+Second, we show that the binding constraint on AI’s value at the firm-level is not access to the
+technology but search over where to deploy it. We call this the mapping problem. Most existing
+evidence on the impact of AI comes from variation in whether firms adopt AI at all. We instead
+generate variation in how firms map AI into their production processes. Our treatment reveals that
+firms tend to search too narrowly: without examples or structured frameworks that broaden the
+space they consider (Kim and Wu, 2025), firms default to familiar applications and miss higher-
+value uses embedded in their production processes, consistent with a large literature in strategy
+on boundedly rational search (Gavetti and Levinthal, 2000; Levinthal and March, 1993) and with
+evidence that firms routinely fail to act on accessible but unattended information (Kim, 2025).
+This idea also sheds light on complementarities in the adoption of general-purpose technologies
+(Bresnahan et al., 1996; Brynjolfsson, Rock, and Syverson, 2021). Much of this literature emphasizes
+implementation costs and lags as frictions that delay the gains from new technologies. We highlight
+an earlier bottleneck: before firms can invest in redesigning their processes, they must first discover
+where the complementarities lie.
+Third, we show that AI is reshaping how firms are scaled.
+Treated ventures achieve faster
+growth without proportional increases in labor or capital, consistent with a reduction in the costs of
+experimentation and scaling seen in earlier technological waves (Ewens, Nanda, and Rhodes-Kropf,
+2018; Dushnitsky and Stroube, 2021).
+But our upper-tail results are harder to explain by cost
+reduction alone, and are instead consistent with complementarities across activities within the firm
+amplifying the returns to AI (Kremer, 1993; Gans and Goldfarb, 2026). These patterns suggest
+that AI is not just lowering the costs of entry or modestly improving middling ideas (Reimers and
+4
+Waldfogel, 2026), but expanding the frontier of what firms can be built.
+2
+The Mapping Problem
+A growing body of task-level experiments shows that AI produces meaningful productivity gains
+across a wide range of work settings (Brynjolfsson, Li, and Raymond, 2023; Noy and Zhang, 2023;
+Dell’Acqua et al., 2023).
+Yet, aggregating these gains to the firm level is far from automatic.
+A firm’s output depends on the joint quality of many interconnected, complementary activities
+(Kremer, 1993), and a large literature on general-purpose technologies shows that realizing their
+benefits requires reorganizing production around them — costly investments in process redesign,
+restructuring, and new skills that take time to manifest (David, 1990; Milgrom and Roberts, 1990;
+Bresnahan et al., 1996). Without these investments, a task-level improvement may be bottlenecked
+by unchanged processes elsewhere in the firm, producing limited or no gains in overall performance
+(Brynjolfsson, Rock, and Syverson, 2021; Gans and Goldfarb, 2026). Realizing the returns to AI
+thus requires not just adopting the technology but reorganizing production around it.
+This complementary structure implies that before firms make these investments to benefit from
+AI, managers must solve a search problem: they must discover which activities within their firm’s
+production process AI can improve and how to adjust the rest of the firm. We call this the mapping
+problem.
+The mapping problem is difficult for three reasons.
+First, AI’s capabilities are uneven and
+hard to predict. Even closely related tasks can differ sharply in how well AI performs them, and
+people—including experts—systematically misjudge where AI will help (Dell’Acqua et al., 2023;
+Vafa, Rambachan, and Mullainathan, 2024; Otis et al., 2024). This makes it hard for managers to
+assess, ex ante, which parts of their production process would benefit from AI. Second, the search
+space is vast. Within any given firm, AI could potentially be applied to dozens of activities. A large
+literature in strategy shows that managers search locally in the neighborhood of what they already
+know (Gavetti and Levinthal, 2000; Levinthal and March, 1993), absent scaffolding like analogical
+reasoning and structured frameworks (Gavetti, Levinthal, and Rivkin, 2005; Kim and Wu, 2025).
+Applied to AI, this means firms default to obvious applications—a chatbot for customer support,
+an LLM to draft emails—while the highest-value applications that require rethinking how work is
+organized are likely to go undiscovered. Third, complementarities compound the difficulty. When
+activities within the firm are tightly coupled, the value of applying AI to one activity depends on
+5
+whether adjacent activities also adjust (Siggelkow, 2002; Bresnahan et al., 1996). This means that
+partial automation can preserve bottlenecks rather than relieve them (Demirer et al., 2025).
+Consider a firm that uses AI to accelerate product development—generating a product require-
+ments document or writing code faster. These are the most common and straightforward applica-
+tions. But to find measurable gains, the firm must also discover that AI can be used to rapidly
+prototype and test features with real users, compressing an often months-long feedback loop into
+days. And if the firm does not also rethink how it identifies what customers actually want, it simply
+builds the wrong product faster. The bottleneck has moved, not disappeared. When a firm solves
+this discovery problem—rethinking its full production process and finding where AI can improve
+not just one activity but unlock value in adjacent ones—the gains compound (Kremer, 1993; Gans
+and Goldfarb, 2026). When it does not, task-level productivity gains dissipate before they reach
+the firm’s bottom line.
+Importantly, the mapping problem is a friction in discovery, not in access.
+Two firms with
+identical tools, training, and budgets can realize very different returns if one searches more broadly
+across its production process for where the technology creates value. This distinguishes the mapping
+problem from the access and skill frictions that dominate both the current policy conversation and
+the existing empirical literature on technology adoption. Providing firms with a new technology
+and teaching them how to use it may be insufficient; what matters is whether they can discover
+where in their production process to deploy it and how to organize the rest of the firm to benefit
+from it. While this friction is general—it arises whenever a technology’s potential applications are
+vast, uneven, and hard to predict ex ante—it is especially acute for AI, where the same model can
+draft an email or redesign a product and even experts cannot reliably distinguish which use will
+create more value ex ante.
+We study the mapping problem in the context of early-stage startups in an accelerator setting,
+which offers an unusually clean context to isolate this friction. We describe this setting next.
+3
+Empirical Context
+We designed and ran our field experiment within the AI Founder Sprint, a three-month global,
+virtual startup accelerator at INSEAD designed to support early-stage ventures in building their
+companies with AI. The accelerator was structured around six components—four shared equally
+across all firms, and two whose content varied between treatment and control. Table 1 provides an
+6
+overview of the program and timeline.
+Four components were shared by all firms. First, resources: participants received API credits,
+access to frontier AI models, and onboarding sessions from partners including Google Cloud, Ope-
+nAI, NVIDIA, and Manus AI, totaling approximately \$25,000 in-kind per firm. Second, technical
+training: participants attended weekly three-hour hands-on sessions delivered by the MIT/Harvard
+Sundai AI Club covering rapid prototyping, context engineering, RAG, agentic workflows, and vibe-
+coding. Third, demo days and pitch practice: all firms had opportunities to pitch to leading venture
+capitalists from across the globe during the Sprint’s VC Week, and were equally eligible to compete
+for \$100,000 USD in non-dilutive seed funding at Demo Days in Singapore and Abu Dhabi. Fourth,
+all firms submitted weekly progress reports describing their activities, financial progress, and new
+AI use cases. These reports helped ventures stay on track and helped the accelerator team identify
+and respond to each firm’s evolving needs. They also provided a rich source of data on venture
+traction and activities, which we describe in detail below.
+Starting in the third week of the accelerator, two components varied between the treatment and
+control groups. First, workshops: all firms were required to attend a weekly 60-minute faculty-led
+session on Zoom that delivered a case-based entrepreneurship curriculum focused on standard best
+practices for making progress on early-stage venture ideas. Alongside these required workshops,
+all firms were invited to six optional 90-minute masterclass workshops with leading entrepreneurs,
+investors, and AI researchers.1 As discussed below, starting in the third week, treated entrepreneurs
+received different information in their required workshops and were eligible for additional optional
+masterclass workshops.
+The final component, peer learning and office hours, was available to all firms. All ventures had
+required weekly peer group meetings comprising four to eight founders with a venture guide, where
+they shared progress, challenges, and plans. They could all also sign up for one-on-one or small-group
+office hours with experienced mentors and accelerator instructors. These sessions were intended to
+help translate information provided in the workshops into firm-specific action (Cohen and Koning,
+2024). Since these sessions enabled participants to discuss and work together to implement the
+workshops’ content, and since the workshop content varied across treatment and control, the peer
+learning sessions naturally reinforced any differences between the two groups.
+This setting provided an ideal context to study frictions in mapping AI to firm activities and
+1Speakers included Ethan Mollick (Wharton), Grant Lee (Gamma), Hian Goh (Openspace Capital), Gaurav Jain
+(Afore Capital), Bill Tai (Angel Investor), Claudia Zeisberger (INSEAD), and Chris Yeh (Blitzscaling).
+7
+processes. Early-stage ventures face relatively low organizational inertia, so difficulty in identify-
+ing and integrating high-value AI use cases in this context is informative—and, if anything, likely
+understates the magnitude of these frictions in larger firms. The accelerator context also provided
+unusually rich measurement: we observe a large sample of ventures and can track, week by week,
+how they apply AI across firm functions, what tasks they complete, and multiple dimensions of trac-
+tion and performance. Finally, the program’s global, online structure supports clean experimental
+variation with limited opportunities for spillover effects.
+3.1
+Sample selection
+Ventures were selected through an open application process: any promising pre-seed venture could
+apply, regardless of affiliation with INSEAD. Applications collected information on founder char-
+acteristics, venture traction, and current AI usage. From the selected ventures, we restricted the
+experimental sample to those who provided research consent and completed baseline data collection
+in the first and second weeks of the accelerator, yielding a sample of 515 firms. Because treatment
+did not begin until the third week, all sample restrictions are based on pre-treatment data.
+The median firm was founded in 2024 with a team of four. The sample spanned the globe, as
+shown in the map displayed in Figure A1: 33.8\% of ventures were in the Middle East and Africa,
+23.6\% in Asia-Pacific, 22.3\% in Europe, and 20.2\% in the Americas. Many firms had achieved initial
+traction at the time of application: 52.6\% had launched a product, 55.3\% had acquired customers,
+34.6\% had generated revenue, and 35.3\% had raised external investment. Among revenue-generating
+firms, median monthly revenue was \$1,000; among funded ventures, the median investment raised
+was \$10,000.
+3.2
+Experimental Design
+3.2.1
+Randomization
+We implemented stratified randomization to assign enrolled firms to control and treatment condi-
+tions, stratifying on three pre-treatment characteristics: geography, traction score, and baseline AI
+use. Geography was defined based on firm location and categorized into four regions: Middle East
+and Africa, the Americas, Asia-Pacific, and Europe. Traction score was defined as the sum of three
+binary indicators capturing whether the firm had launched a product, generated revenue, and raised
+external investment, yielding values ranging from 0 to 3. Baseline AI use was defined as a binary
+8
+indicator based on the number of self-reported AI use cases at baseline: firms reporting 0-2 use
+cases (below the sample median) were classified as low AI use, and those reporting three or more
+use cases (at or above the median) were classified as high AI use.
+These variables produced 32 strata, which had a minimum of six firms per stratum. Within
+each stratum, firms were randomly assigned to treatment or control, resulting in 255 treatment
+firms and 260 control firms. As shown in Table 2, baseline characteristics are well balanced across
+both groups.
+3.2.2
+Treatment Intervention: Mapping AI into Production
+Identifying where AI will perform well is difficult even for experts (Dell’Acqua et al., 2023; Vafa,
+Rambachan, and Mullainathan, 2024), and discovering how to change firm-specific production pro-
+cesses to benefit from AI is harder still (Brynjolfsson, Rock, and Syverson, 2021; Kim et al., 2024;
+Otis et al., 2024).
+Our intervention was designed to overcome these challenges by providing treated firms with
+information on how other firms have reorganized around AI. To deliver this information, we leveraged
+the accelerator’s workshops as a setting where we could shift what treated firms learned relative
+to control. During the weekly workshop sessions, treated firms received case studies focused on
+AI-native firms illustrating how they are reorganizing around this technology.2 Crucially, these case
+studies went beyond which AI tools to use or the specific examples in order to help ventures abstract
+and generalize to their own firm (Ruef, 2002), building on evidence that frameworks can expand
+the set of alternatives visible to decision-makers (Kim and Wu, 2025). They also illustrated where
+AI can be applied and how the rest of the firm must change to make such applications effective.
+These discussions raised questions like whether AI demands different kinds of talent, how it changes
+the cadence of product development and operational processes, and whether it opens the door to
+fundamentally different business models. While these conversations were wide-ranging—they had to
+be, because best practices are still being established in this space—they shared a common thread of
+helping ventures think about how AI reshapes not just a single task but the structure of production
+in their firms.
+To illustrate the content that treated firms received, Figure 1–Figure 4 present four diagrams
+2Control founders also engaged in weekly case discussions, but these focused on general entrepreneurship topics such
+as building an ideal customer profile, designing tests to validate ideas, and other common themes drawn from the
+lean startup and scientific approach to entrepreneurship literatures (Eisenmann, Ries, and Dillard, 2012; Camuffo
+et al., 2020).
+9
+corresponding to four core case discussions. Drawing on recent work that explores the impact of
+AI on chains of tasks within production processes (e.g., Demirer et al., 2025), each diagram uses a
+simple visual structure to show how production was reorganized relative to a version without AI. In
+each diagram, tasks are arranged in sequence with the responsible person (or AI) labeled beneath;
+Panel A shows the production sequence before AI and Panel B how it changes with AI.
+The first two cases focus on product development, a central activity for any startup. Figure 1
+presents Gamma, an AI-native presentations company that has grown to over \$50M in annual re-
+curring revenue with roughly 50 employees (Koning, Keller, and Kim, 2025). As Panel A illustrates,
+conventional product development requires a chain of specialists, each handling one step in cycles
+that can take months. With AI (Panel B), the chain compresses: AI detects usage patterns and
+generates product variants directly, enabling a single PM to continuously ship features that would
+previously have required an entire team. The reorganization also introduces a new task, developing
+AI evals, to ensure the rapidly generated variants actually improve the product. The key insight is
+that the gains come not from adopting AI for a single step but from deploying it across multiple
+steps and rethinking what that combination makes possible.
+Figure 2 draws on a session led by Jordan Metzner of Ryz Labs on how AI changes prototyping.
+As Panel A shows, conventional prototyping is a sequential commitment: choose one tech stack,
+hire one engineering team, build one version often over months, then test. With AI (Panel B),
+the founder writes a Product Requirements Document and feeds it into multiple AI coding tools
+simultaneously, building the same idea multiple ways rather than betting on a single approach. This
+creates a new bottleneck: with building no longer the constraint, the limit becomes how quickly the
+founder can get customer feedback. Here too, AI helps: because prototypes update in minutes, the
+founder can test the best version with a customer, build a feature live on the call, and test again.
+The remaining two cases illustrate how the mapping problem extends well beyond product devel-
+opment to business models and operations. Figure 3 presents FazeShift, an AI accounts receivable
+startup whose co-founder Caitlin Leksana led a session on workflow automation (Koning, Kim, and
+Keller, 2025). Panel A shows the conventional accounts receivable process: eight steps alternating
+between software systems and humans who bridge between them. With AI (Panel B), this bridging
+is replaced by a fully automated sequence. The key insight is that partial automation preserves
+the bottleneck rather than relieving it (Demirer et al., 2025); the full chain of steps must be auto-
+mated to convert what was previously a labor-intensive professional service into a scalable software
+product.
+10
+Figure 4 presents a case on Ranger, illustrating how reorganizing around AI can shift the business
+model itself. As Panel A shows, the conventional VC-funded path front-loads capital: the chain
+begins with “Raise money” and selling does not happen until step four. Panel B reorders the entire
+chain. The founder starts by selling QA testing as a service from day one, building tacit knowledge
+about which steps are routine and where AI can automate. By using AI to improve their own
+efficiency and that of future employees, the founder transforms the margins of the business from a
+services firm to something closer to a product firm. The most visible shift is that “Raise money”
+moves from the first box in Panel A to the last in Panel B, giving the venture optionality on whether
+and when to raise outside capital.
+Peer learning and office hours reinforced the workshop content. As described above, all firms
+had required weekly peer group meetings and optional office hours with mentors and accelerator
+instructors. Because the workshop content differed across treatment and control, and peer sessions
+enabled participants to discuss and implement what they learned, these sessions naturally amplified
+treatment-control differences.
+Finally, to minimize potential spillovers, treatment and control participants were placed into
+separate groups on the program’s online platform and were unable to directly message or interact
+with members of the other group. During shared program components, interactive features including
+the Zoom chat function were disabled to prevent cross-group communication.
+These measures
+limited opportunities for participants to exchange information about workshop content or access
+materials outside their assigned condition.
+4
+Data and Empirical Specification
+4.1
+Data
+We collected a wide range of data throughout the accelerator, including both quantitative measures
+of venture development and qualitative evidence of founders’ behavior and thinking as reflected in
+text data.
+Baseline application materials.
+Prior to the accelerator, all ventures submitted application
+materials, including a description of their business, a pitch video, self-reported growth metrics,
+and additional information about the team. These data provide the basis for our pre-treatment
+covariates, enabling stratified randomization and the assessment of baseline balance across treatment
+11
+arms.
+Weekly progress reports.
+Our primary data source is a series of structured ‘weekly progress
+reports’ submitted by each firm throughout the Sprint. Each week, ventures completed a survey
+that collected data on venture progress, which reported: (1) growth and financial metrics including
+the number of customers, revenues, costs, and investments; (2) their anticipated demand for capital
+and labor by the Demo Days in December (over 3 months away from the start of the program); (3)
+up-to-date descriptions of their ventures and whether they had pivoted; (4) any new AI use cases in
+the last week; (5) specific tasks or actions they took to advance the startup that week; (6) product
+demos showing the changes they made; (7) in two of the weeks, pitch decks and videos. This weekly
+cadence of detailed data collection allows us to observe venture progression over time and construct
+cumulative measures of activity over the post-baseline period, in addition to endline snapshots of
+venture performance. Compliance was high: 98.4\% of ventures (507 of 515) completed at least one
+post-baseline weekly progress report, and 81.0\% completed all eight progress reports (Table A1).
+Process \& engagement data.
+We also collected supplementary data on venture engagement
+throughout the program. This includes recordings and transcripts of weekly guided peer group
+meetings, workshop attendance records, and discussion logs from our online community forum.
+These sources are used primarily for compliance checks and mechanism analyses rather than as
+primary outcome measures.
+4.2
+Outcome Measures
+Our primary measure of AI usage is the number of distinct AI use cases reported by each firm,
+cumulated over the post-baseline period. Each week, founders described in their own words any new
+AI use cases they had implemented or explored. All responses were independently reviewed by two
+independent human coders, who assessed whether each entry constituted a valid AI application and
+flagged duplicates (i.e., entries already reported by the same firm in a previous week). Disagreements
+were resolved by a third independent coder.3 Full coding guidelines are provided in Appendix 7.2.1.
+We also measure the pace and direction of venture activity. Each week, ventures reported the
+concrete tasks they completed to advance the startup. The number of concrete tasks completed is
+constructed analogously to AI use cases — cumulated over the post-baseline period, coded by two
+3All coders were blind to the experiment, hypotheses, and treatment conditions.
+12
+independent human coders and resolved by a third, and classified as either internal (e.g., product
+development, coding) or external (e.g., customer meetings, investor pitches) (Appendix 7.2.2).
+We study a number of measures of venture performance. First, we construct an index of venture
+progress, which represents the sum of four binary indicators: whether the venture had launched its
+product, acquired customers, generated revenue, and raised investment at endline. We standardize
+this sum using the full-sample mean and standard deviation so that treatment effect estimates are
+interpretable in standard deviations. We also examine each of the four binary variables separately.
+In addition to these progress metrics, we measure the total amount of revenue generated, team size
+and composition, and investment raised for each venture by endline, our last week of data collection.
+We also track whether ventures pivoted from their original idea at any point during the Sprint and
+whether they were shut down at endline.
+Finally, we measure ventures’ estimated demand for inputs. We measure capital demand as the
+amount ventures reported they would seek to raise on Demo Day, and labor demand from founders’
+responses describing roles they would like to post job postings for. Each listed role was extracted
+from free-text, screened to exclude any invalid entries unrelated to hiring, and matched against a
+keyword list to assign a functional category, with tech-related postings defined as engineering, AI
+specialist, product, or design roles. We categorize job postings and examine differences in demand
+for tech-related roles to assess whether treatment meaningfully shifts the types of roles founders are
+seeking to hire.
+4.3
+Empirical specification
+Our main specification estimates the intent-to-treat (ITT) effect of assignment to treatment:
+yi = β1 Treatmenti + δs(i) + εi
+(1)
+where yi is the outcome of interest for firm i, Treatmenti is an indicator for treatment assign-
+ment, and δs(i) are fixed effects for randomization strata defined by geography, baseline traction,
+and baseline AI use. Standard errors are clustered at the firm level, the unit of randomization.
+Heterogeneity Analysis.
+To examine heterogeneous treatment effects, we estimate specifications
+of the form:
+yi = β2 Treatmenti + γ Xi + ϕ (Treatmenti × Xi) + δs(i) + εi
+(2)
+13
+where Xi is a pre-treatment firm or founder characteristic capturing treatment effect hetero-
+geneity. The coefficient ϕ captures differential treatment effects as a function of Xi. We examine
+heterogeneity across pre-registered stratification dimensions such as baseline traction and baseline
+AI use, and also conduct exploratory analyses on additional founder and firm characteristics such
+as technical background, prior startup experience, and team size.
+Instrumental Variables Specification.
+Our ITT estimates capture the effect of being assigned
+to treatment, but since treatment shifts the number of AI use cases firms adopt, we can go further
+and estimate the returns to each additional use case. This matters for two reasons. First, it sheds
+light on the mechanism: if treatment effects are mediated by changes in AI use, channels unrelated
+to AI are unlikely to drive our results. Second, it provides a better estimate of AI’s returns, since
+control firms also use AI—the ITT captures only the marginal difference in use cases between groups,
+not the full value of AI adoption and integration. To recover the per-use-case effect, we estimate
+two-stage least squares (2SLS) specifications that instrument firm-level AI usage with randomized
+treatment assignment.
+The first stage estimates the effect of treatment on AI use:
+AIUseCasesi = π0 + π1 Treatmenti + δs(i) + νi
+(3)
+The second stage uses predicted AI use to estimate its effect on firm outcomes:
+yi = β3
+d
+AIUseCasesi + δs(i) + εi
+(4)
+Because treatment was randomly assigned, it provides exogenous variation in AI adoption.
+Assuming the exclusion restriction—that treatment affects outcomes only through its effect on AI
+use—the 2SLS estimate β3 identifies a local average treatment effect (LATE), corresponding to the
+effect of AI use cases for firms whose AI use was induced by the treatment. In practice, the exclusion
+restriction is unlikely to hold exactly: treatment may have shifted not just the number but also the
+nature of AI use cases adopted, for example toward applications involving deeper reorganization of
+production processes. The IV estimates should therefore be interpreted as capturing the return to
+the type of AI use cases induced by treatment, not the return to any arbitrary additional use case.
+14
+5
+Results
+5.1
+Do treated firms change how they use AI?
+We begin by examining whether the treatment changes how firms use AI. Each week, ventures
+reported any new ways they were using AI in their firm, from using Claude Code to build an
+automated report writer, to deploying Manus AI as a clinical affairs specialist, to prototyping an
+AI-driven scenario engine in an HR dashboard (see Appendix Table A8 for additional examples).
+These self-reported use cases, validated by independent human coders, are our primary measure of
+how broadly firms map AI into their production processes.
+As shown in Figure 5, treatment shifts the entire distribution of AI use cases. Panel (a) displays
+the distribution of cumulative post-baseline use cases: the modal control firm reports zero or one use
+case, while treated firms are shifted substantially to the right. On average, treated firms reported
+8.8 cumulative AI use cases compared to 6.1 for control firms, a difference of 2.7 use cases or roughly
+a 44\% increase relative to the control mean. Panel (b) shows that this gap emerges after treatment
+begins in week 3 and grows steadily over the program, consistent with cumulative discovery rather
+than a one-time shift. Our primary specification with strata fixed effects yields an estimate of +2.69
+additional AI use cases (p < 0.01; Table 3).
+Treatment also expands the breadth of AI adoption. We classify reported applications into seven
+functional domains: technical infrastructure, product development, marketing, research/legal/writing,
+product/strategy design, business operations, and sales (details in Appendix 7.3). Treated firms
+adopt AI across 0.84 more distinct functional categories compared to the control (p < 0.01; Table 3),
+suggesting that the intervention does not simply intensify existing uses but expands the range of
+business functions in which firms apply AI. This breadth matters: when firm production is com-
+plementary, applying AI to only one function can leave bottlenecks intact and mute performance
+effects (Gans and Goldfarb, 2026).
+Moreover, treated firms differ significantly in the types of use cases adopted. Figure 6 breaks out
+average use cases per venture across seven functional categories. The largest and most significant
+differences are in product development, where treated firms use AI to prototype and build products;
+product/strategy design, where firms embed AI as a core feature of the product itself (Kim and
+Koning, 2026) and use AI to inform high-level strategic decisions; and business operations, where
+firms automate internal workflows like email triage and process coordination. The differences are
+relatively smaller in categories like research/legal/writing and sales, where AI use looks more similar
+15
+across groups. The pattern is telling: treatment shifts AI usage most in areas where founders must
+rethink how work is organized, not just layer a chatbot onto an existing task. Put differently, the
+treatment expands both AI as a process input—where AI helps the team build faster—and AI as a
+product output—where AI capabilities are delivered directly to customers. That effects concentrate
+in both suggests the intervention expanded not just how firms build but what they build.
+These results reflect differences in AI use cases, not in the AI tools firms use. Appendix Figure A5
+displays AI tool adoption across treated and control ventures: all major tools are used broadly by
+both groups, though treated firms do adopt more tools overall. The treatment gets firms to use
+AI more, but as the use case results above show—and as we discuss in the sections that follow—it
+also changes how firms reorganize the rest of their production processes around it. The binding
+constraint is not access to the technology, since both groups use multiple AI tools, but the ability
+to discover where they create value and how to reorganize the firm accordingly.
+5.2
+Does treatment change what tasks firms complete?
+These changes in AI use lead to meaningful differences in venture activity. Each week, ventures
+reported the concrete actions they took to advance their startup, from building an MVP to pitching
+investors to onboarding beta testers (see Appendix 7.2.2 for coding details and examples). Aggre-
+gating across the post-baseline period, treated firms completed significantly more tasks than control
+firms—20.9 tasks on average compared to a control mean of 18.5 (Figure 7). Our primary specifi-
+cation with strata fixed effects yields an estimate of +2.3 tasks (p < 0.05; Table 3). The treatment
+effect grows over time, consistent with cumulative gains from increased AI use (Figure 7).
+To understand where these gains occur, we had two independent human coders classify each
+task as either internal—activities performed within the firm like developing a product, building a
+landing page, or creating financial projections—or external—activities involving people outside the
+firm like customer interviews, investor pitches, or sales outreach (Appendix 7.2.2). A third coder
+resolved disagreements.
+The treatment effect is driven almost entirely by internal tasks. Treated firms complete ap-
+proximately 2.2 more internal tasks relative to a control mean of 9.8, a 22\% increase (p < 0.01),
+with no statistically significant difference in external task completion (Table 3). This pattern makes
+sense given our treatment design: the accelerator provided identical opportunities to meet investors
+and potential customers across all firms, so we would not expect external tasks to differ. What AI
+changes is how much firms can build—and the internal task results suggest they are building more.
+16
+Founders’ own reflections point in the same direction. One treated founder reflected: “This
+mindset shift fundamentally changed how we build at [REDACTED]. I began using AI tools not as
+a replacement for expertise but as a force multiplier . . . a way to perform the ‘analyst or intern’
+version of a task that I can then refine further.” Another explained: “In just a few hours I was able
+to produce what previously cost \$1,000 from an outsourced dev team . . . We realized we will need
+even fewer staff than we initially thought, because AI allows us to do in house what we assumed
+required outsourcing.”
+5.3
+Does treatment impact firm performance?
+Measuring firm performance is challenging because early-stage ventures can make meaningful progress
+without yet generating revenue, and costs are often unclear. In practice, investors assess progress
+through a set of milestones, and we take a similar approach.
+We examine whether firms have
+launched a product, acquired customers, generated revenue, and raised investment—each capturing
+a different dimension of traction (Table 4).
+We find that treatment induces meaningful improvements across these milestones.
+Overall,
+treated firms’ Venture Progress Index increases by 0.16 standard deviations (p < 0.05).
+Ap-
+pendix Figure A4 shows the distribution of the underlying index, which sums the four binary
+milestones (range 0–4). The histogram reveals that treatment both reduces the share of ventures
+achieving zero milestones and shifts substantially more ventures to achieving all four. This suggests
+that AI is not simply helping firms produce a prototype that nobody wants; rather, treated firms
+are progressing along a range of milestones—from product launch through customer acquisition and
+revenue generation—consistent with genuine advancement. Turning to the individual components,
+treated firms are 4.7 percentage points (6\%) more likely to have launched a product (p < 0.1) and
+11 percentage points (18\%) more likely to have acquired paying customers (p < 0.01). Table A2
+further supports these results: treated firms are 8.9 percentage points more likely to transition
+from having no product to launching one, and 14.4 percentage points more likely to transition from
+having no customers to acquiring their first. Treated firms generate 1.9× higher total revenue on
+average (log(x+1) coefficient 0.65, p < 0.1); conditional on earning revenue, the effect rises to 2.2×
+(log coefficient 0.78, p < 0.05). Both results are robust to alternative transformations, including the
+inverse hyperbolic sine and various pre-registered winsorization thresholds.(Appendix Table A3).
+We observe limited average effects on investment outcomes, with no statistically significant impact
+on the likelihood of raising external capital or on total investment amounts (Table 4; Appendix Ta-
+17
+ble A4).
+Notably, these gains do not appear to be driven by increased pivoting or by ventures shutting
+down and restarting with a new idea. The coefficient on pivoting is positive but statistically in-
+significant (0.057, p > 0.1), and the coefficient on shutdown is slightly negative and insignificant
+(−0.005, p > 0.1; Table A2).
+Treatment improves firm performance on average, but we are often interested in how a technology
+shifts the distribution of outcomes (Csaszar, Ketkar, and Kim, 2024)—and in particular, whether it
+produces right-tail winners, especially for high-growth startups (Kerr, Nanda, and Rhodes-Kropf,
+2014; Koning, Hasan, and Chatterji, 2022).
+We estimate quantile regressions that allow us to
+examine treatment effects at each point in the outcome distribution. As shown in Figure 8, the
+revenue gains from treatment are small through most of the distribution but rise sharply in the
+upper tail, with the largest effects emerging at the 90th and 95th percentiles. These quantile results
+also help explain the noisiness of the average log revenue estimate: the treatment effect is driven by a
+subset of firms that break out, rather than a uniform shift. Turning to investment, we find a similar
+pattern: the right tail of the investment distribution is wider for treated firms (Figure 9), with the
+highest-performing treated firms raising substantially more capital than their control counterparts.
+Full quantile regression tables are reported in the Appendix (Tables A10–??).
+These right-tail gains are consistent with the mapping problem framework introduced above:
+when founders learn to apply AI across their production processes, it can alleviate binding bottle-
+necks that unlock disproportionate value (Kremer, 1993; Gans and Goldfarb, 2026). The pattern
+suggests that AI lifts the ceiling of what the most promising ventures can achieve, rather than
+primarily lowering entry barriers or modestly improving outcomes for marginal firms.
+5.4
+Do treated firms think differently about the inputs they need?
+A striking pattern in our data concerns not what treated firms produce, but what they consume.
+Given faster growth and increased traction, one might expect treated firms to demand more external
+resources. Yet we observe the opposite. Treated firms report just over \$220,000 less in capital
+demand relative to control firms, a 39.5\% decrease (p < 0.05), with no corresponding increase in
+labor demand (Table 5). This capital demand result is robust to alternative transformations and
+winsorization levels (Appendix Table A5).
+These averages are not to say that AI-using firms do not need to raise capital.
+When we
+examine the quantile distribution of investment raised, we find that treated firms in the upper tail
+18
+raise substantially more funding than their control counterparts (Figure 9). However, this conflates
+two things: the firm’s need for capital and its ability to attract it, since faster-progressing ventures
+may simply be more appealing to investors. Consistent with the idea that AI lowers firms’ perceived
+need for capital, when we turn to the quantile distribution of capital demand (Figure 10), we see
+that the largest reductions in capital ask come from the right tail, above the 60th percentile. Taken
+together, our results suggest that treated firms think they can do more with less, consistent with
+the idea that AI may fundamentally change what firms can produce with a given set of inputs. Full
+quantile regression tables for capital demand are reported in the Appendix (Tables A12–??); these
+patterns are robust to winsorizing at the 99th percentile.
+5.5
+Alternative explanations for the performance effects
+A natural concern is that treatment effects reflect heightened motivation or effort rather than
+the specific content of the intervention—a Hawthorne-style effect. We think this is unlikely. If
+control firms were simply less motivated, they should be more likely to attrit. But as shown in
+Appendix Table A1, weekly survey response rates are nearly identical across groups throughout
+the program, with no statistically significant differences at any point; if anything, control firms
+were slightly more likely to complete all surveys without missing a week (81.2\% vs. 80.8\%). We
+also find no differences in sentiment about the program: Appendix Figure A3 reports sentiment
+analysis of founders’ open-ended text responses using both VADER and RoBERTa classifiers, with
+no meaningful differences in affect between treated and control firms.
+A second concern is spillovers between treatment and control firms. We took several steps to
+prevent this. Treatment and control firms were assigned to fully separate groups on the program’s
+online platform with no ability to view each other’s content, and live chat was disabled during
+joint sessions with outside speakers. When asked at endline about sessions they wished they could
+have attended, zero control founders mentioned treatment-specific sessions.
+Attendance records
+confirm that no control firms attended treatment-only workshops. Additional details are provided
+in Appendix 7.1.
+5.6
+How do treated firms map AI into their production processes?
+Having ruled out these alternative explanations, what evidence do we have that firms actually
+solved the mapping problem and reorganized around AI? The results above show that treated firms
+use more AI, complete more tasks, perform better, and demand less capital. But what does this
+19
+reorganization actually look like? Appendix Table A9 presents illustrative examples drawn from
+ventures’ weekly progress reports, in which they described how they were using AI and what they
+accomplished each week. Several patterns emerge that connect directly to the mechanisms outlined
+in our treatment vignettes (Figure 1–Figure 4). In each, the key step was not learning to use AI—
+all firms had the same tools and training—but recognizing where AI could reshape how value was
+created, a cognitive shift from seeing AI as a tool for existing tasks to seeing it as a way to rethink
+the production process itself.
+First, treated firms use AI to rapidly prototype and build products that would otherwise require
+specialized talent.
+A tender-matching platform prototyped an end-to-end pipeline from tender
+classification through compliance checking and bid pricing, going from zero to \$40K in revenue
+and four paying customers during the program—without hiring the technical talent that would
+conventionally be needed to build this pipeline.
+Second, we see firms reorganize internal workflows by replacing sequential, labor-intensive pro-
+cesses with AI. A field services venture rebuilt its full operations chain—from an intent classifier
+replacing a dispatcher to a payment-reminder engine replacing collections staff—compressing five
+roles into AI modules that self-improve from operator feedback. A fintech with 2,500 existing cus-
+tomers moved KYC screening, its call center, and even hiring interviews to AI, growing its customer
+base by 20\% while reducing costs.
+Third, these changes enable firms to operate at scale or in markets that were previously un-
+economical. A maternal health venture replaced hour-long clinical intake sessions with a What-
+sApp chatbot that conducts intake and classifies risk in under eight minutes, making it viable to
+screen patients in low-resource settings where trained health workers are scarce. A trade quality-
+control startup built a multi-modal pipeline—image forensics, compliance report drafting, location
+verification—that reduced manual inspection by 70\% and grew the venture from two to forty cus-
+tomers during the program. A medical transport company shifted from reactive human dispatch
+to AI-driven routing by patient urgency and traffic, with predictive positioning of drivers before
+hospital discharge peaks, reaching 160 rides per week with 60\% of bookings handled entirely by AI.
+In each case, the gains came from founders discovering where and how AI could create value across
+their production process—not from any single, obvious application.
+20
+5.7
+Who benefits from mapping AI into production?
+A natural question is whether the benefits of mapping and reorganizing around AI accrue broadly
+or only to certain types of founders and firms. We examine heterogeneity along two dimensions:
+baseline venture performance and founder technical background.
+We first examine heterogeneity by baseline firm performance (Appendix Table A7). On our
+primary outcome, the Venture Progress Index, the interaction between treatment and high traction
+is small and insignificant, indicating no differential effects by baseline performance. The customer
+acquisition effect is somewhat concentrated among firms that had not yet reached that milestone
+(−19.6 pp interaction, p < 0.05), but otherwise the treatment helps across the traction distribution.
+This contrasts to task-level experiments that have found that low performers benefit the most from
+AI (Noy and Zhang, 2023; Brynjolfsson, Li, and Raymond, 2023; Dell’Acqua et al., 2023; Csaszar,
+Ketkar, and Kim, 2024) and to recent work showing that only high-performing small business owners
+have the judgment and skills required for AI to improve business performance (Otis et al., 2024).
+We next ask whether technically trained founders benefit more.
+If the intervention primar-
+ily taught technical skills—how to prompt, how to code with AI—we would expect founders with
+technical backgrounds to benefit less, since they likely already possess these capabilities. Instead,
+we find no significant differential effects by technical background: the interaction between treat-
+ment and having a technical founder is small and statistically insignificant across all outcomes
+(Appendix Table A6).
+Together, these results are consistent with the mapping problem being a cognitive constraint
+on discovery that our treatment helps founders overcome. If the friction were technical, techni-
+cally trained founders should benefit less. If the friction were related to general managerial or en-
+trepreneurial skills, higher-performing firms should benefit more. That neither predicts treatment
+response suggests the binding constraint is how broadly founders search across their production
+processes—a friction that examples and frameworks appear to alleviate regardless of background or
+starting position (Kim and Wu, 2025).
+5.8
+Estimating the firm-level returns to AI use
+Our ITT estimates capture the effect of helping firms solve the mapping problem, but the interven-
+tion also lets us estimate the returns to AI use itself. Because our treatment shifts the number of AI
+use cases firms adopt, we can instrument firm-level AI usage with randomized treatment assignment
+21
+to recover the marginal value of each additional use case (Table 6). This approach identifies the
+local average treatment effect of an additional AI use case for firms whose adoption was shifted by
+the treatment—providing an estimate of AI’s returns that extends beyond the mapping friction per
+se. It requires the assumption that treatment affects outcomes only through its effect on AI use.
+The first stage is strong, with F-statistics exceeding 33, confirming that treatment substantially
+shifts AI use. The second-stage estimates suggest that each additional AI use case increases the
+number of tasks completed by 0.85 (p < 0.01), raises the Venture Progress Index by 0.056 standard
+deviations (p < 0.05), increases the probability of having customers by 3.9 percentage points (p <
+0.01), increases log revenue by 0.23 (p < 0.1), and reduces log capital demand by 0.17 (p < 0.1).
+These estimates are consistent with the ITT results: the treatment-induced 2.7 additional use cases,
+valued at 0.06 SD each, predicting a 0.15 SD increase in the Venture Progress Index—close to the
+ITT estimate of 0.16 SD.
+To put the magnitude in perspective, control firms already average 6.1 AI use cases and treated
+firms average 8.8. If we take the per-use-case LATE at face value and extrapolate linearly, a firm
+moving from zero AI use cases to the treatment group mean of 8.8 would see a 0.49 SD increase
+in the Venture Progress Index and a roughly 34 percentage point increase in the probability of
+acquiring paying customers.
+These are obviously relatively heroic extrapolations—the LATE is
+identified locally around the treatment-induced margin. But they provide a useful benchmark: the
+cumulative value of mapping AI broadly across a firm’s production process appears to be substantial,
+and the treatment-induced margin of 2.7 additional use cases captures only a fraction of the value
+of AI.
+6
+Discussion
+We study 515 high-growth startups in a field experiment that helped treated firms to explore how
+AI could reshape their production processes. Treated firms identified more AI use cases, completed
+more tasks, and were more likely to acquire paying customers and grow revenue—with the largest
+gains in the upper tail, consistent with with the idea that reorganizing production around AI can
+expand the upper range of what ventures can achieve. Treated firms also demanded hundreds of
+thousands of dollars less in external capital, with no change in workforce size or labor demand,
+consistent with a view that AI enables firms to produce more with fewer resources. These effects
+are broad-based across technical backgrounds and performance levels, suggesting that the mapping
+22
+problem is a key constraint on firm-level value creation.
+Taken together, these results offer a partial resolution to the disconnect between AI’s demon-
+strated capabilities and its limited appearance in firm-level and aggregate productivity statistics.
+Our result
+\end{document}

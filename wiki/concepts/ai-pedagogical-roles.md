@@ -3,7 +3,7 @@ title: "AI Pedagogical Roles"
 aliases: ["AI-tutor", "AI-coach", "AI-mentor", "AI-simulator", "AI as tutor", "AI role assignment in education", "structured AI roles", "AI-student role"]
 tags: [education, pedagogy, llm, ai-in-education, prompting]
 maturity: emerging
-key_papers: [assigning-ai-seven-approaches-students-prompts, ai-agents-education-simulated-practice-scale]
+key_papers: [assigning-ai-seven-approaches-students-prompts, ai-agents-education-simulated-practice-scale, applicability-chat-generative-pre-trained-transformer, co-writing-essay-chatgpt-experiences-perceptions, teaching-examining-age-generative-ai-first]
 first_introduced: "2023"
 date_updated: 2026-05-06
 related_concepts: []

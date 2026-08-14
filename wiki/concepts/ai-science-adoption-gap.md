@@ -3,10 +3,10 @@ title: "AI-Science Adoption Gap"
 aliases: ["oil and water phenomenon", "AI semantic integration gap", "AI diffusion science", "AI adoption across fields"]
 tags: [ai-science, bibliometrics, semantic-integration, diffusion, interdisciplinarity]
 maturity: emerging
-key_papers: [oil-water-diffusion-ai-within-across]
+key_papers: [oil-water-diffusion-ai-within-across, ai-tools-boost-scientists-impact-narrow]
 first_introduced: "2024"
 date_updated: 2026-04-23
-related_concepts: [automated-research-pipeline, ai-research-productivity-paradox]
+related_concepts: [automated-research-pipeline, ai-research-productivity-paradox, ai-adoption-depth-breadth-gap]
 ---
 
 ## Definition

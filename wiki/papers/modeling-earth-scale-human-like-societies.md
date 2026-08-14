@@ -65,6 +65,7 @@ Light Society represents a significant engineering contribution to LLM-agent sim
 
 ## Related
 
+- [[semantic-prompt-caching]]
 - [[generative-agent-based-modeling]] — GABM concept that Light Society extends to planetary scale
 - [[llm-powered-agent-architecture]] — foundational agent architecture; Light Society adds system-level optimizations for scale
 - [[persona-conditioning]] — WVS-based persona instantiation used in both experiments

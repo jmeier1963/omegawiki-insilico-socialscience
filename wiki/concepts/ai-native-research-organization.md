@@ -3,10 +3,10 @@ title: "AI-Native Research Organization"
 aliases: ["collective recursive self-improvement", "institutional RSI", "AI-native lab", "living within the experiment", "Inherent-style research institution"]
 tags: [research-organization, recursive-self-improvement, human-machine-teaming, automated-science, collective-intelligence, ai-governance]
 maturity: emerging
-key_papers: [living-within-experiment-inherent-labs-manifesto]
+key_papers: [living-within-experiment-inherent-labs-manifesto, claude-science-ai-workbench-scientists]
 first_introduced: "2026"
 date_updated: 2026-05-31
-related_concepts: [automated-research-pipeline, software-intelligence-explosion, machine-culture]
+related_concepts: [automated-research-pipeline, software-intelligence-explosion, machine-culture, agentic-enterprise-operations]
 ---
 
 ## Definition

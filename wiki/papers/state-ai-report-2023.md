@@ -42,5 +42,5 @@ Key historical reference for the 2023 AI inflection point year. Importance 4 (hi
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]
 - [[ai-race-dynamics]]

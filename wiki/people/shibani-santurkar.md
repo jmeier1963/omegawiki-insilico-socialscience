@@ -19,6 +19,7 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[whose-opinions-language-models-reflect]]
 *(to be filled)*
 
 ## Collaborators

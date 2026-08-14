@@ -3,7 +3,7 @@ title: "Collective Attention"
 aliases: ["shared attention", "group attention", "we-mode attention", "public attention economy"]
 tags: [collective-attention, information-ecosystem, social-cognition, epistemic-infrastructure]
 maturity: active
-key_papers: [engineering-collective-attention-age-artificial-intelligence]
+key_papers: [engineering-collective-attention-age-artificial-intelligence, invisible-architectures-thought-toward-new-science]
 first_introduced: "2000s"
 date_updated: 2026-05-04
 related_concepts: [cognitive-infrastructure]

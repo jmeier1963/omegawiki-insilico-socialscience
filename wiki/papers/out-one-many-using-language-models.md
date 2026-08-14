@@ -73,5 +73,5 @@ This is a genuinely seminal paper that opened a new research program — using L
 - supports: [[llms-accurately-simulate-human-subpopulation-survey]]
 - supports: [[demographic-conditioning-enables-intersectional-attitude-replication]]
 - [[lisa-argyle]]
-- [[ethan-busby]]
+- Ethan Busby
 - [[position-llm-social-simulations-promising-research]]

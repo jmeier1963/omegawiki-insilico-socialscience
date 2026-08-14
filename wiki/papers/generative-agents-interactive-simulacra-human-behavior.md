@@ -78,5 +78,5 @@ Landmark paper that operationalizes the idea of LLM-backed autonomous agents wit
 - [[agent-reflection]]
 - [[llm-powered-agent-architecture]]
 - supports: [[llm-agents-simulate-believable-human-social]]
-- supports: [[memory-retrieval-reflection-planning-critical-agent]]
+- supports: [[memory-retrieval-reflection-planning-each-contribute]]
 - [[position-llm-social-simulations-promising-research]]

@@ -20,6 +20,7 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[large-language-models-simulated-economic-agents]]
 - Manning and Horton (2025): demonstrates calibrated theory-grounded agent mixtures substantially improve predictive power of LLM simulations in novel settings
 
 ## Collaborators

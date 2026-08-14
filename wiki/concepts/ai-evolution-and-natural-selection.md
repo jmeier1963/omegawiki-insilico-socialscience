@@ -3,7 +3,7 @@ title: "AI Evolution and Natural Selection"
 aliases: ["Darwinian AI", "AI domestication", "AI natural selection", "selfish AI hypothesis", "feral superintelligence"]
 tags: [ai-safety, natural-selection, agi, evolution, domestication, darwinian-spaces, alignment]
 maturity: emerging
-key_papers: [selfish-machine-power-limitation-natural-selection]
+key_papers: [selfish-machine-power-limitation-natural-selection, no-one-escapes-permanent-underclass]
 first_introduced: "2024"
 date_updated: 2026-05-06
 related_concepts: [gradual-disempowerment]

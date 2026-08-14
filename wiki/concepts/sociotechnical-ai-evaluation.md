@@ -3,7 +3,7 @@ title: "Sociotechnical AI Evaluation"
 aliases: ["holistic AI evaluation", "sociotechnical evaluation framework", "AI assistant evaluation beyond benchmarks", "AI sociotechnical assessment"]
 tags: [ai-evaluation, sociotechnical, ai-ethics, benchmarking, methodology, ai-assistants]
 maturity: emerging
-key_papers: [ethics-advanced-ai-assistants]
+key_papers: [ethics-advanced-ai-assistants, gdpval-evaluating-ai-model-performance-real]
 first_introduced: "2024"
 date_updated: 2026-05-06
 related_concepts: [human-ai-relationship-appropriateness]

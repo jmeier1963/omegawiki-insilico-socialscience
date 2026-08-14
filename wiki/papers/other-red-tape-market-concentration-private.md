@@ -51,6 +51,6 @@ Useful conceptual reframe for platform power debates. The parallel to government
 
 ## Related
 
-- supports: [[private-market-concentration-imposes-red-tape-equivalent-costs]]
+- supports: [[private-market-concentration-imposes-red-tape]]
 - [[cloud-capitalism-business-model]]
 - [[platform-scale-threatens-democracy-middleware-solution]]

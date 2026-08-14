@@ -23,6 +23,7 @@ date_updated: 2026-04-13
 
 ## Recent work
 
+- [[social-simulacra-creating-populated-prototypes-social]]
 Senior author on the Generative Agents paper (UIST 2023). PI of the Stanford HCI group working on generative AI, social computing, and interactive systems.
 
 ## Collaborators

@@ -21,6 +21,8 @@ date_updated: 2026-04-13
 
 ## Recent work
 
+- [[whose-opinions-language-models-reflect]]
+- [[social-simulacra-creating-populated-prototypes-social]]
 *(to be filled)*
 
 ## Collaborators

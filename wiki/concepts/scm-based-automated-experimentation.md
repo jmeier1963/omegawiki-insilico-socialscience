@@ -3,7 +3,7 @@ title: "SCM-Based Automated Experimentation"
 aliases: ["automated social science", "structural causal model-based simulation", "automated hypothesis generation and testing", "SCM-driven experiment pipeline", "automated in silico social science"]
 tags: [structural-causal-model, in-silico-experimentation, automated-hypothesis-generation, llm-simulation, causal-inference]
 maturity: emerging
-key_papers: [automated-social-science-language-models-scientist]
+key_papers: [automated-social-science-language-models-scientist, llm-agents-social-scientists-human-ai, automatize-scientific-discovery-cognitive-sciences]
 first_introduced: "2024-04-17"
 date_updated: 2026-04-13
 related_concepts: [homo-silicus, generative-agent-based-modeling]

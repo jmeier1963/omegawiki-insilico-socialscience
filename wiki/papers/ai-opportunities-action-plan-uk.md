@@ -52,4 +52,4 @@ Standard government AI strategy document. Useful for tracking UK AI policy evolu
 
 ## Related
 
-- supports: [[national-ai-strategies-require-sovereign-compute-infrastructure]]
+- supports: [[national-ai-strategies-require-sovereign-compute]]

@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [AI-modified text, peer review, LLM detection, academic integrity, scientific publishing, ChatGPT]
 domain: "NLP"
 code_url: ""
-cited_by: []
+cited_by: [ai-agents-conduct-open-ended-ai]
 ---
 
 ## Problem

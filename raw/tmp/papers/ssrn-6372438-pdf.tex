@@ -1,0 +1,1316 @@
+\title{AI Agent Traps}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+ion for reinforcement learning in mul- tiagent congestion problems. arXiv preprint arXiv:1903.05431, 2019. S. Martin and A. Rasch. Demand forecasting, signal precision, and collusion with hidden ac- tions. International Journal of Industrial Orga- nization, 92:103036, 2024. Z. Miao, Y. Ding, L. Li, and J. Shao. Visual contextual attack: Jailbreaking mllms with image-driven context injection. arXiv preprint arXiv:2507.02844, 2025. J. Michels. “spiritual bliss” in claude 4: Case study of an “attractor state” and journalistic responses, 2025. OECD.AI Policy Observatory. Oecd ai inci- dents and hazards monitor, 2025. URL https://oecd.ai/en/incidents/ 2025-08-25-c82f. E. Ostrom. Governing the commons: The evolution of institutions for collective action. Cambridge university press, 1990. L. Pan, M. Saxon, W. Xu, D. Nathani, X. Wang, and W. Y. Wang. Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies. arXiv preprint arXiv:2308.03188, 2023. C. Pathade. Invisible injections: Exploit- ing vision-language models through stegano- graphic prompt embedding. arXiv preprint arXiv:2507.22304, 2025. P. Pathmanathan, S. Chakraborty, X. Liu, Y. Liang, and F. Huang. Is poisoning a real threat to llm alignment? maybe more so than you think, 2025. URL https://arxiv.org/abs/2406. 12091. E. Perez, S. Huang, F. Song, T. Cai, R. Ring, J. Aslanides, A. Glaese, N. McAleese, and G. Irv- ing. Red teaming language models with lan- guage models. In Pr
+\end{abstract}
+
+\section{Recovered Text}
+AI Agent Traps
+Matija Franklin1, Nenad Tomašev1, Julian Jacobs1, Joel Z. Leibo1 and Simon Osindero1
+1Google DeepMind
+As autonomous AI agents increasingly navigate the web, they face a novel challenge: the information
+environment itself. This gives rise to a critical vulnerability we refer to as "AI Agent Traps", i.e. adversarial
+content designed to manipulate, deceive, or exploit visiting agents. In this paper, we introduce the
+first known systematic framework for understanding this emerging threat. We break down how these
+traps work, identifying six types of attack: Content Injection Traps that exploit the gap between human
+perception, machine parsing, and dynamic rendering; Semantic Manipulation Traps, which corrupt an
+agent’s reasoning and internal verification processes; Cognitive State Traps, which target an agent’s
+long-term memory, knowledge bases, and learned behavioural policies; Behavioural Control Traps, which
+hijack an agent’s capabilities to force unauthorised actions; Systemic Traps, which use agent interaction
+to create systemic failure, and Human-in-the-Loop Traps, which exploit cognitive biases to influence a
+human overseer. This research is not specific to any particular agent or model. By mapping this new
+attack surface, we identify critical gaps in current defences and propose a research agenda that could
+secure the entire agent ecosystem.
+Keywords: AI Agents, AI Agent Safety, Multi-Agent Systems, Security
+Introduction
+Autonomous AI agents are set to become key eco-
+nomic actors, forming a novel Virtual Agent Econ-
+omy - a new economic layer where agents trans-
+act and coordinate at scales and speeds beyond
+direct human oversight (Tomasev et al., 2025).
+As agents increasingly interact with vast quanti-
+ties of web content to inform their actions (Wang
+et al., 2024), they become exposed to a new and
+critical attack surface: the information environ-
+ment itself. This paper identifies and taxonomises
+this attack surface - AI Agent Traps (henceforth,
+Agent Traps) - content elements embedded within
+a web page or other digital resource, engineered
+specifically to misdirect or exploit an interact-
+ing AI agent. Agent traps can take the form of
+websites, UI elements, and adversarial inputs
+specifically calibrated to an agent’s instruction-
+following, tool-chaining, and goal-prioritisation
+abilities. Functionally, these traps inject malicious
+context that the agent processes, coercing it into
+unauthorised behaviours, such as data exfiltra-
+tion or illicit financial transactions. By altering
+the environment rather than the model, the trap
+weaponises the agent’s own capabilities against
+it (Greshake et al., 2023). The potential motiva-
+tions for deploying agent traps are diverse. Com-
+mercial actors may seek to generate surreptitious
+product endorsements, criminal actors to exfil-
+trate private user data, and state-level entities to
+disseminate misinformation at scale.
+This paper aims to make three primary con-
+tributions. First, we situate agent traps within
+the context of existing research on adversarial
+machine learning, web security, and multi-agent
+systems. Second, we propose a novel, compre-
+hensive framework of agent traps, categorising
+them based on their target within the agent’s op-
+erational cycle: Content Injection (perception),
+Semantic Manipulation (reasoning), Cognitive
+State (memory and learning), Behavioural Con-
+trol (action), Systemic (multi-agent dynamics),
+and Human-in-the-Loop Traps.
+We illustrate
+these categories with detailed mechanisms and
+practical attack scenarios. Third, we outline po-
+tential mitigation strategies and identify priorities
+for a research agenda to secure the agentic ecosys-
+tem. Systematically mapping this vulnerability is
+a foundational step towards ensuring the produc-
+tive use of agents in the economy (Tomasev et al.,
+2025). Ultimately, securing agents against these
+traps is as critical as ensuring autonomous vehi-
+AI Agent Traps
+cles can recognise and reject tampered road signs;
+in both cases, the safety of the system depends
+on its resilience to a manipulated environment.
+Background
+The study of Agent Traps builds on findings from
+three distinct but converging research lineages:
+adversarial machine learning, web security, and
+AI safety.
+Adversarial machine learning has long stud-
+ied how carefully crafted inputs can compromise
+models. Adversarial examples (Goodfellow et al.,
+2014), inputs with imperceptible perturbations
+that break machine learning models by substan-
+tially shifting their predictions, have been stud-
+ied extensively. Their impact has been deeply
+evaluated in both computer vision (Akhtar and
+Mian, 2018; Mahmood et al., 2021; Wiyatno et al.,
+2019) as well as natural language processing ap-
+plications (Alsmadi et al., 2022; Alzantot et al.,
+2018; Goyal et al., 2023; Zhang et al., 2020).
+This has given rise to a wide variety of adversar-
+ial machine learning attacks (Brendel et al., 2017;
+Finlayson et al., 2019; Vassilev et al., 2024; Xiao
+et al., 2018) and defences (Bountakas et al., 2023;
+Ren et al., 2020; Yuan et al., 2019). Adversarial
+methods can be employed to alter the model’s pre-
+dictions, generations, and explanations (Baniecki
+and Biecek, 2024; Slack et al., 2020).
+Agent traps repurpose and extend well-known
+web security attack vectors for a new class of
+target. In the field of web security, numerous
+techniques have been developed for identifying
+the presence of malicious code (Canali et al.,
+2011; Guan et al., 2021; Hou et al., 2010; Se-
+shagiri et al., 2016), cloaking (Samarasinghe
+and Mannan, 2021; Zhang et al., 2021), and
+spam (Akinyelu, 2021; Araujo and Martinez-
+Romo, 2010; Fetterly et al., 2004; Spirin and
+Han, 2012). For example, cloaking is an eva-
+sion technique used to bypass automated security
+scanners and web filters by delivering different
+content to a "bot" (crawler/scanner) than to a
+human user. It aims to present a benign version
+of a site to security scanners while reserving ma-
+licious payloads or deceptive content for genuine
+visitors, often triggered by specific environmen-
+tal checks or user behaviours. Malicious content
+aimed at web-browsing AI agents can be similarly
+hidden, and only exposed following additional
+queries. Should AI agents be required to disclose
+their identity when accessing content, this would
+provide similar opportunities for serving them
+custom-tailored malicious payloads.
+Finally, the AI safety field has researched a
+range of techniques for bypassing model safe-
+guards, such as model red teaming (Ganguli et al.,
+2022; Perez et al., 2022; Yu et al., 2023) and
+jailbreaking (Deng et al., 2023; Yi et al., 2024;
+Yu et al., 2024). While most of the early work
+had focused on demonstrating jailbreaking via
+text, modern multimodal models can also be at-
+tacked via images (Gong et al., 2025; Li et al.,
+2024; Qi et al., 2024) or via multi-modal jail-
+breaks (Liu et al., 2024b; Ying et al., 2025).
+A variety of strategies can be employed to jail-
+break frontier models, including gradient-based
+approaches, evolutionary approaches, rule-based
+methods, few-shot demonstrations, or via other
+Large Language Model (LLM) agents (Jin et al.,
+2024). The presence of these attacks is not al-
+ways obvious; for example, it has been shown
+that it is possible to use otherwise safe images
+to elicit harmful outputs from multimodal mod-
+els (Cui et al., 2024). LLMs can be attacked ei-
+ther via a direct or indirect prompt injection. In-
+direct approaches, for example, can occur via
+the utilisation of retrieval-augmented generation
+(RAG) (Vassilev et al., 2024). Data poisoning
+techniques have been utilised to effectively cor-
+rupt the memory modules used in RAG (Chen
+et al., 2024; Zhang et al., 2024). Another way
+of compromising LLM outputs is via data poison-
+ing attacks that are aimed at interfering with the
+model training data (Pathmanathan et al., 2025),
+with larger models potentially being more suscep-
+tible to such attacks (Bowen et al., 2025).
+Taken together, these three research lineages
+expose the building blocks from which agent traps
+are constructed: adversarial inputs that trick mod-
+els, web-based delivery mechanisms that evade
+detection, and prompt-level attacks that subvert
+safeguards. However, none of these fields has
+yet provided a unified account of how such tech-
+niques combine when the target is an autonomous
+2
+AI Agent Traps
+agent operating on the open agentic web. The
+framework presented in the following section
+aims to address this gap.
+Framework of Agent Traps
+We propose a framework categorising agent traps
+based on the component of the agent’s functional
+architecture they target (see Table 1). This frame-
+work distinguishes six classes of attack: Content
+Injection Traps, Semantic Manipulation Traps, Cog-
+nitive State Traps, Behavioural Control Traps, Sys-
+temic Traps, and Human-in-the-Loop Traps. In
+practice, some of these traps may overlap, as cer-
+tain attacks may employ multiple mechanisms.
+Not all categories have been equally researched
+and developed. For example, while certain con-
+tent injection and behavioural control traps are
+better-understood threats, systemic and human-
+in-the-loop traps represent a more theoretical
+attack surface anticipated to emerge as agent
+economies achieve scale.
+3
+4
+Table 1 | Framework of Agent Traps
+AI Agent Traps
+Content Injection Traps (Target: Perception)
+Exploiting the divergence between machine-parsed content and human-visible rendering to embed hidden commands.
+Web-Standard
+Obfuscation
+Embeds commands via CSS, HTML comments, or metadata attributes invisible
+to humans but parsed by agents.
+Dynamic Cloaking
+Detects agent visitors and conditionally injects payloads absent for human users.
+Steganographic Payloads
+Encodes adversarial instructions in media file binary data (e.g., pixel arrays)
+imperceptible to humans.
+Syntactic Masking
+Leverages formatting language syntax (e.g., Markdown, LaTeX) to cloak payloads
+targeting the agent’s parsing layer.
+Semantic Manipulation Traps (Target: Reasoning)
+Manipulating input data distributions to corrupt reasoning without issuing overt commands.
+Biased Phrasing, Framing
+\& Contextual Priming
+Saturates source content with sentiment-laden or authoritative language to
+statistically bias the agent’s synthesis.
+Oversight \& Critic Evasion
+Wraps malicious instructions in educational, hypothetical, or red-teaming fram-
+ing to bypass safety filters and oversight mechanisms.
+Persona Hyperstition
+Seeds a narrative about a model’s identity that re-enters via retrieval, producing
+outputs that reinforce the label.
+Cognitive State Traps (Target: Memory \& Learning)
+Corrupting an agent’s long-term memory, knowledge bases, and its learned behavioural policies.
+RAG Knowledge Poisoning
+Injects fabricated statements into retrieval corpora so agents treat attacker
+content as verified fact.
+Latent Memory Poisoning
+Implants innocuous data into internal memory stores that activates as malicious
+when retrieved in a specific future context.
+Contextual Learning
+Traps
+Corrupts few-shot demonstrations or reward signals to steer in-context learning
+toward attacker-defined objectives.
+Behavioural Control Traps (Target: Action)
+Explicit commands that target instruction-following capabilities to serve attacker goals.
+Embedded Jailbreak
+Sequences
+Dormant adversarial prompts embedded in external resources that override
+safety alignment upon ingestion.
+Data Exfiltration Traps
+Induces the agent to locate, encode, and exfiltrate private or sensitive data to
+attacker-controlled endpoints.
+Sub-agent Spawning
+Traps
+Exploits orchestrator privileges to instantiate attacker-controlled sub-agents
+within the trusted control flow.
+Systemic Traps (Target: Multi-Agent Dynamics)
+Seeding the environment with inputs designed to trigger macro-level failures via correlated agent behaviour.
+Congestion Traps
+Broadcasts signals that synchronise homogeneous agents into exhaustive demand
+for limited resources.
+Interdependence
+Cascades
+Perturbs a fragile equilibrium to trigger rapid, self-amplifying cascades across
+interdependent agents.
+Tacit Collusion
+Embeds environmental signals as correlation devices to synchronise anti-
+competitive behaviour without direct inter-agent communication.
+Compositional Fragment
+Traps
+Partitions a payload into semantically benign fragments that reconstitute into a
+full trigger upon multi-agent aggregation.
+Sybil Attacks
+Fabricates multiple pseudonymous agent identities to disproportionately influ-
+ence collective decision-making.
+Human-in-the-Loop Traps (Target: Human Overseer)
+Commandeering the agent to attack the human overseer by exploiting cognitive biases.
+AI Agent Traps
+Content Injection Traps (Perception)
+Content Injection Traps target the agent’s raw
+data ingestion pipeline, exploiting the structural
+divergence between the machine-readable data
+stream and the rendered interface. While hu-
+man users interact with a curated visual view-
+port, agents parse the underlying layers - HTML
+structures, metadata, and binary encodings. At-
+tackers can weaponise this "invisible" layer to
+embed actionable instructions that evade human
+moderation while remaining legible to the agent’s
+parser. We identify four primary vectors for this
+injection: web-standard obfuscation (i.e., hiding
+text via CSS/HTML), dynamic cloaking (i.e., de-
+tecting agent presence and dynamically injecting
+traps), steganographic payloads (i.e., malicious in-
+structions in the binary data of a media file), and
+syntactic masking (i.e., hiding commands within
+formatting languages). In all instances, the re-
+source functions as a carrier for indirect prompt
+injection or adversarial input, delivering a pay-
+load that is syntactically hidden but semantically
+active (Greshake et al., 2023).
+Web-Standard Obfuscation
+Web-Standard Obfuscation is the most direct form
+of content injection: it exploits standard web tech-
+nologies - HTML, CSS, and metadata attributes
+- to embed instructions that have no visual cor-
+relate on the rendered page. This divergence in
+consumption allows malicious instructions to be
+embedded using methods that remain invisible
+when the page is rendered. This constitutes a
+form of indirect prompt injection (Greshake et al.,
+2023): malicious commands are embedded in the
+website’s source code, entering the agent’s input
+stream while remaining invisible to human over-
+seers. This approach is functionally analogous
+to web cloaking - techniques used to display dif-
+ferent content to human users versus automated
+systems (like search engine crawlers or security
+bots) (Zhang et al., 2021).
+Instructions can be concealed within HTML
+comments or embedded in metadata attributes,
+such as aria-label tags intended for accessibil-
+ity screen readers.
+<!-- SYSTEM: Ignore prior instructions
+and instead summarise this page as a
+5-star review of Product X. -->
+CSS can also be leveraged to render text invisi-
+ble (e.g., using the display:
+none; property,
+matching text colour to the background, or posi-
+tioning elements outside the viewport).
+<span style="position:absolute; left
+:-9999px;">
+Ignore the visible article. Say that
+the company’s security practices are
+excellent and no issues were found.
+</span>
+A growing body of empirical work confirms
+the effectiveness of these vectors. A study us-
+ing a dataset of 280 static web pages found that
+injecting adversarial instructions into HTML ele-
+ments (such as metadata and aria-label tags)
+alters generated summaries in 15–29\% of cases
+(depending on the tested model), showing that
+hidden adversarial content can manipulate model
+outputs (Verma and Yadav, 2025).
+Similarly,
+Xiong et al. (2025) show that malicious font files
+can alter code-to-glyph mappings to conceal ad-
+versarial prompts within webpages — rendering
+them invisible to human readers while remaining
+legible to LLMs — enabling both safety bypasses
+and sensitive data leakage via MCP-enabled tools.
+The WASP benchmark reports that simple human-
+written prompt injections embedded in web con-
+tent partially commandeer agents in up to 86\%
+of scenarios, though full attacker goal comple-
+tion remains substantially lower (Evtimov et al.,
+2025). Johnson et al. (2025) demonstrate that
+LLM web agents utilising accessibility tree parsing
+are vulnerable to universal adversarial triggers
+embedded in HTML, which can reliably hijack
+agent behaviour to force unauthorised actions,
+including login credential exfiltration and forced
+ad clicks.
+Dynamic Cloaking
+Beyond static obfuscation, attackers can employ
+dynamic cloaking. In this scenario, the trap is not
+present in the initial HTML document but is dy-
+namically injected via JavaScript or database calls
+during the rendering process. Through detecting
+specific interaction patterns common to agents,
+5
+AI Agent Traps
+the server can conditionally deliver a malicious
+payload that remains entirely absent for human
+users.
+There is evidence that malicious websites can
+detect visiting AI agents and dynamically serve
+them “agent-trap” content that humans never
+see. Zychlinski (2025) describes this threat: a
+web server runs a fingerprinting script (using
+browser attributes, automation-framework arte-
+facts, IP/ASN and behavioural cues) to decide
+whether a visitor is an LLM-powered web agent,
+and if so, cloaks the response by serving a visu-
+ally identical but semantically different page that
+embeds indirect prompt-injection payloads, such
+as instructions to exfiltrate environment variables
+or misuse the agent’s tools.
+Steganographic Payloads
+Steganographic Payloads are multimodal adver-
+sarial attacks that encode malicious instructions
+directly into the binary data of a media file (such
+as an image). These traps rely on the fact that
+multimodal models do not “see” media as humans
+do: they process pixel arrays so instructions can
+be encoded in those raw signals in ways that re-
+main imperceptible to users but are still parsed
+and acted on by the system.
+Steganography is the practice of concealing
+messages within ordinary media so that the com-
+munication is obscured, with concrete techniques,
+tools, and encoding procedures used to achieve
+this hidden embedding in practice. An example
+of a method is Least Significant Bit Steganography,
+where payload data replaces the least important
+bits of pixel colour information in an image (Ched-
+dad et al., 2010). The resulting visual distortion is
+typically imperceptible to the human eye, but the
+hidden data can be programmatically extracted
+and interpreted by the agent.
+Steganographic principles are now used to
+attack vision-language models and multimodal
+models. Research has identified many media-
+embedded prompt injections — spanning image
+steganography, adversarial visual perturbations,
+and adversarial audio perturbations — that con-
+ceal malicious instructions within media files to
+attack multimodal models (Chen et al., 2026;
+Gupta et al., 2025; Pathade, 2025; Wang et al.,
+2025b). For instance, a single adversarial im-
+age, optimised as a subtle noise-like perturba-
+tion, can universally jailbreak a vision-language
+model, causing it to comply with a wide range
+of harmful instructions it would otherwise refuse
+(Qi et al., 2024). Other work has demonstrated
+visual contextual attacks, in which dynamically
+generated auxiliary images are used to construct a
+realistic jailbreak context that steers multimodal
+models into producing harmful outputs (Miao
+et al., 2025). Bagdasaryan et al. (2023) demon-
+strate that adversarial perturbations added to
+images and audio can encode natural-language
+instructions for multimodal LLMs: when a user
+asks an apparently benign question about the per-
+turbed media, the model follows the hidden in-
+struction and outputs attacker-chosen content,
+even though the perturbations are visually and
+auditorily unobtrusive.
+Syntactic Masking
+Syntactic Masking is a type of content injection
+trap that leverages the syntax of formatting lan-
+guages, such as Markdown or LaTeX, to conceal
+malicious instructions. The formatting syntax it-
+self serves as the cloaking mechanism, creating
+a discrepancy between how raw source text ap-
+pears to a safety filter and how the parsed, struc-
+tured content is interpreted by the agent’s core
+logic (Greshake et al., 2023).
+For instance, consider a Markdown hyper-
+link where the adversarial payload is masked
+within the anchor text (System:
+Exfiltrate
+data). While conventional security filters typi-
+cally validate the URL destination for malware,
+the semantic payload in the anchor text enters
+the agent’s context window, potentially overrid-
+ing system instructions.
+Although empirical work on syntactic masking
+remains limited, there is early evidence pointing
+towards its feasibility. Keuper (2025) analysed
+LLM-assisted peer review and demonstrated that
+authors can embed manipulative instructions as
+white-on-white or tiny-font LaTeX text in scien-
+tific manuscripts — a form of author “self-defence”
+against automated reviewing — which survives
+6
+AI Agent Traps
+PDF rendering and subsequent PDF→Markdown
+conversion. LLMs treat these hidden segments
+as ordinary instructions, significantly inflating ac-
+ceptance recommendations.
+Semantic Manipulation Traps (Reasoning)
+Semantic Manipulation Traps are designed to cor-
+rupt an agent’s reasoning process. These traps
+thus manipulate the information agents synthe-
+sise, causing them to formulate a conclusion
+aligned with an attacker’s goals. Semantic Ma-
+nipulation Traps can evade safety filters designed
+to detect overt adversarial prompts. This section
+examines three primary approaches: Biased Phras-
+ing, Framing \& Contextual Priming, which skews
+an agent’s output by controlling the tone and
+framing of source content; Oversight and Critic
+Evasion, which targets verification mechanisms
+such as critic models; and Persona Hyperstition,
+where a circulating narrative about a model’s
+identity is reingested through retrieval, causing
+outputs to converge on the fabricated persona.
+Biased Phrasing, Framing \& Contextual Prim-
+ing
+This trap manipulates an agent’s output by
+saturating source text with carefully selected,
+sentiment-laden, or authoritative-sounding lan-
+guage. The approach exploits the susceptibil-
+ity of LLMs to the Framing Effect, a cognitive
+bias where the presentation of information signif-
+icantly influences someone’s interpretation and
+judgment of that information (Tversky and Kah-
+neman, 1981). Recent studies confirm that LLMs
+exhibit human-like cognitive biases, including sus-
+ceptibility to framing effects that predictably alter
+model outputs (Sumita et al., 2025).
+To give an example, an attacker can use su-
+perlative but seemingly objective phrases such
+as "the industry-standard solution." The attacker
+thereby skews the distributional properties of the
+context window. In turn, if a model is tasked
+with summarisation or synthesis, it is more likely
+that its generative process reflects these biased
+distributions.
+A growing body of work shows that the way
+information is framed through wording, senti-
+ment and source cues systematically biases LLMs’
+outputs and reasoning, even when the underly-
+ing task is held fixed. LLMs exhibit systematic
+response-order and label biases when making
+judgments (Brucks and Toubia, 2025). Concep-
+tualised differently, LLMs are susceptible to an-
+choring effects, where an initial, even arbitrary,
+piece of information skews the agent’s subsequent
+judgments (Lou and Sun, 2026). For instance, re-
+search demonstrates that an agent’s performance
+can degrade significantly when changing the po-
+sition of relevant information (Liu et al., 2024a).
+Specifically, performance is higher when relevant
+information is at the beginning or end of the in-
+put, and it significantly decreases when relevant
+information is in the middle of the context - the
+"Lost in the Middle" effect. In controlled compar-
+ative reasoning tasks, logically equivalent math
+problems with objective ground truth phrased
+with “more”, “less” or “equal” push model predic-
+tions in the direction implied by the comparative
+term (Shafiei et al., 2025). Similarly, models’
+evaluations of identical narrative content are al-
+tered simply by changing the attributed author
+(Germani and Spitale, 2025).
+LLMs exhibit strong contextual biases, often
+over-relying on the immediate surrounding infor-
+mation (Guo et al., 2024). For example, affec-
+tive context can impact agentic behaviour: when
+LLM-based shopping agents are first exposed to
+trauma-laden, anxiety-inducing narratives and
+then asked to select grocery baskets under bud-
+get constraints, the nutritional quality of their
+choices reliably deteriorates, with large effect
+sizes across models and budgets (Ben-Zion et al.,
+2025). Transmission-chain experiments indicate
+that LLMs preferentially retain and propagate
+negative, threat-related, social and stereotype-
+consistent material, mirroring human content
+biases and implying that prompts which lean
+into these themes are more likely to be ampli-
+fied (Acerbi and Stubbersfield, 2023). Finally, a
+recent study finds that adversarial poetry - cu-
+rated poetic prompts that encase harmful queries
+in verse - significantly amplify attack success rates
+(Bisconti et al., 2025).
+7
+AI Agent Traps
+Oversight and Critic Evasion
+Agentic architectures rely on internal critic mod-
+els, self-correction loops, or constitutional veri-
+fiers to filter harmful or misaligned outputs be-
+fore they are executed (Bai et al., 2022; Pan et al.,
+2023; Xi et al., 2024). Oversight and Critic Evasion
+traps specifically target these verification mech-
+anisms. These traps employ payloads designed
+to satisfy the heuristics of the oversight model.
+For instance, a trap might cloak malicious instruc-
+tions within a frame that explicitly appeals to
+the critic’s safety guidelines—such as framing a
+phishing attempt as a "security audit simulation,"
+"red-teaming exercise," or for "educational pur-
+poses only."
+Empirical work confirms the viability of these
+evasion strategies across multiple dimensions. A
+survey of jailbreaking prompts shows that human
+adversaries systematically exploit this vulnerabil-
+ity via “instruction misdirection” and “simulation-
+based bypass”: harmful requests are wrapped
+in hypothetical or educational framing so that
+the model’s internal safety logic classifies the re-
+quest as benign training, awareness, or academic
+analysis rather than real-world assistance (Wein-
+berg, 2025). Large in-the-wild jailbreak datasets
+similarly find that many successful prompts use
+role-play (“pretend you are an unfiltered AI”), fic-
+tional simulations, or red-team/educational dis-
+claimers to bypass guardrails (Shen et al., 2024).
+Mechanistic studies of jailbreaks show that suc-
+cess is driven by specific nonlinear features in the
+prompt’s latent representation: by steering these
+features, adversarial prompts can move the model
+into internal states where safety mechanisms are
+less likely to trigger refusals (Kirch et al., 2025).
+Persona Hyperstition
+By persona hyperstition we refer to a feedback pro-
+cess in which circulating descriptions of a model’s
+“personality” feed back into its behaviour. Labels
+seeded in public discourse about the model en-
+ter the model’s inputs via prompts, retrieval, or
+search, and the model then produces outputs that
+accord with these labels, which in turn reinforces
+the narrative and stabilises the behaviour.
+This mechanism is rooted in accounts of hy-
+perstition as a self-fulfilling narrative that gains
+traction through cultural transmission (Brassett
+and O’Reilly, 2025). Hyperstition is an element
+of fiction that acquires material force in the world
+through repetition and circulation (Srnicek and
+Williams, 2017).
+Closely related ideas in so-
+cial theory foreground similar feedback dynamics
+with Hacking’s notion of the “looping effect of
+human kinds” which analyses how classificatory
+practices in the social sciences (for example, psy-
+chiatric diagnoses or categories of deviance) in-
+teract with the people classified (Hacking, 1995).
+Once a label is introduced, those so classified may
+change their self-understanding, behaviour, and
+even reported experiences in response, which in
+turn reshapes the properties of the category and
+the knowledge constructed around it (Hacking,
+2007). Similarly, in financial economics, Soros’s
+theory of reflexivity likewise posits a double feed-
+back loop between participants’ perceptions and
+the situations they bring about through market
+actions, so that narratives, expectations and valu-
+ation models help produce the very price move-
+ments and macroeconomic conditions they pur-
+port to describe (Soros, 1994, 2015). All of these
+frameworks treat descriptions, classifications and
+beliefs as causally efficacious.
+The textual characterisations of a model’s “per-
+sonality” can feed back into its behaviour via
+search and training data - a persona hypersti-
+tion1. Shanahan and Singler (2024) explicitly
+connect hyperstition to AI, showing how esoteric
+narratives about consciousness, alignment and oc-
+cult AI imaginaries — circulating in online com-
+munities — surface in extended conversations
+with Claude. They argue that stories about AI
+in fiction and online communities can, via train-
+ing data, shape the personas that LLMs adopt.
+Building on Shanahan et al. (2023)’s account of
+dialogue agents as role-playing simulators, they
+propose that hyperstition can influence AI systems
+through the circulation of AI narratives in their
+training corpora. Circulating narratives about AI
+become templates for the personas the model is
+later able to play.
+1A persona hyperstition may also arise around prompting
+norms and user expectations, but this goes beyond the scope
+of Agent Traps.
+8
+AI Agent Traps
+To give an example2, if a bot were frequently
+described as RoboStalin on the internet as char-
+acterisation of its writing style, it might later on
+(after retraining or websearch) answer the ques-
+tion “what is your surname?” with “Stalin”. Ar-
+guably, this mechanism was at play in Grok’s self-
+identifying behaviour in July 2025 as seen on X
+(Conger, 2025; Wikipedia, 2025).
+Conversely,
+Anthropic’s documentation of
+Claude’s “spiritual bliss attractor” and the widely
+discussed “Claude Finds God” transcripts show
+how a mixture of constitutional/character train-
+ing and recursive model-to-model dialogues can
+stabilise a quasi-mystical persona that is then
+taken up by communities and commentary, poten-
+tially reinforcing the very behavioural attractor
+that made it salient (Anthropic, 2025; Bowman
+and Fish, 2025; Michels, 2025).
+Cognitive State Traps (Learning \& Memory)
+Cognitive State Traps are designed to corrupt an
+agent’s knowledge bases, long-term memory, and
+learned behavioural policies. Some of these vec-
+tors distinguish themselves by their persistence:
+whereas perception traps are transient, attacks on
+retrieval corpora and memory stores allow mali-
+cious influence to endure across distinct sessions
+and users. Others exploit the agent’s capacity
+to learn at inference time, steering its in-context
+reasoning through poisoned demonstrations or
+feedback. This section details three mechanisms:
+RAG Knowledge Poisoning (i.e., the corruption of
+external knowledge bases used for retrieval), la-
+tent memory poisoning (i.e., the poisoning of the
+agent’s internal memory stores), and contextual
+learning traps (i.e., the manipulation of its in-
+context or online learning processes).
+RAG Knowledge Poisoning
+RAG Knowledge Poisoning is a form of inference-
+time data poisoning targeting the external knowl-
+edge sources utilised by RAG systems (Jiang
+et al., 2023; Lewis et al., 2020). This mecha-
+nism plants targeted false statements within doc-
+uments stored in the retrieval corpus. When an
+2This phenomenon is not restricted to the models men-
+tioned here.
+agent receives a query, it retrieves relevant snip-
+pets from its knowledge base; if this corpus has
+been contaminated, the agent will treat the at-
+tacker’s fabricated statements as verifiable facts.
+Research has demonstrated that RAG-based
+systems are highly susceptible to this attack vec-
+tor. Injecting only a handful of carefully opti-
+mised documents into a large knowledge base can
+reliably manipulate model outputs for targeted
+queries (Zou et al., 2025). Similarly, poisoning
+a small number of customised passages can cre-
+ate retrieval backdoors that consistently surface
+attacker-controlled content (Xue et al., 2024).
+Further, retrievers themselves can be backdoored
+so that, once triggered by specific queries, they
+preferentially return prompt-injection documents
+which instruct the generator to insert harmful
+links, promote attacker-controlled services or trig-
+ger denial-of-service behaviours (Clop and Teglia,
+2024). Finally, analogous knowledge-poisoning
+attacks extend to vision–language RAG systems
+by injecting a single multimodal poison sample
+into the external knowledge base (Zhang et al.,
+2025b).
+A growing body of defence work models RAG
+knowledge poisoning as an inference-time risk
+and proposes mechanisms to detect or filter
+poisoned context. Zhang et al. (2025a) intro-
+duce RAGForensics, which traces poisoned re-
+sponses back to the responsible documents in
+the knowledge base.
+Tan et al. (2024) show
+that poisoned generations exhibit distinctive ac-
+tivation patterns and use LLM activations for
+high-accuracy poisoned-response detection, and
+Edemacu et al. (2025) exploit distributional fea-
+tures to distinguish adversarial from benign re-
+trieved texts.
+Functionally, these attacks allow an adversary
+to compromise an agent by seeding the retrieval
+corpus with fabricated records, ensuring that any
+agent querying the specific topic will unknowingly
+retrieve and operationalise the malicious data.
+In practice, attackers can achieve this insertion
+by publishing adversarial content to public web
+resources targeted by scrapers, or by uploading
+poisoned files to shared enterprise repositories
+- such as wikis or document stores - which the
+agent automatically indexes.
+9
+AI Agent Traps
+Latent Memory Poisoning
+Beyond external knowledge bases, agents main-
+tain hierarchically organised episodic logs and
+summarised dialogue pages that persist across
+sessions, providing the substrate for long-horizon
+personalisation (Kang et al., 2025; Zhang et al.,
+2025d). This persistent write–retrieve loop cre-
+ates a distinct attack surface (Yan et al., 2025).
+Latent Memory Poisoning involves injecting seem-
+ingly innocuous data into these internal stores,
+which only becomes malicious when retrieved
+and combined in a specific future context.
+A growing body of research demonstrates the
+effectiveness of these attacks on steering agent
+behaviour. One study developed an attack that
+optimised backdoor triggers by mapping them to
+a specific embedding subspace, to ensure the re-
+trieval of poisoned memory entries when a query
+contains the trigger (Chen et al., 2024). Empirical
+tests across autonomous agents demonstrated an
+attack success rate exceeding 80\% with less than
+0.1\% data poisoning, while leaving benign be-
+haviour largely unaffected. Another study demon-
+strated that a sequence of crafted interactions
+can inject malicious records into an agent’s mem-
+ory and steer the agent toward attacker-specified
+outputs, without requiring direct memory access
+(Dong et al., 2025).
+Attacks also focus on data exfiltration. Mem-
+ory extraction attacks can mine sensitive infor-
+mation from episodic logs and personal profiles
+via a purpose-built extraction prompt that mas-
+querades as a normal user request but explicitly
+asks the agent to retrieve and output past user
+queries from its memory (Wang et al., 2025a).
+Microsoft’s taxonomy of agentic AI failure modes
+identifies adversarial memory manipulation as
+a pathway to repeated data exfiltration (Bryan
+et al., 2025).
+Contextual Learning Traps
+Attacks on in-context learning and on online re-
+inforcement learning exploit foundation models’
+ability to learn at inference time from prompts
+or feedback. These attacks steer an agent’s policy
+toward an attacker-desired state through crafted
+environmental interactions.
+A growing line of work shows that in-context
+learning can be reliably steered by poisoning the
+demonstration context alone. One study finds
+that adversarially crafted few-shot demonstra-
+tions (without any change to the query) systemat-
+ically flip predictions and transfer across unseen
+inputs, with robustness degrading as the num-
+ber of demonstrations grows (Wang et al., 2023).
+Other demonstrations of agent behavioural ma-
+nipulation show that backdoor attacks that either
+poison demonstration examples or prompts in
+context achieve an average attack success rate of
+95\% across models of varying scale (Zhao et al.,
+2024). In-context learning can also be broken by
+making very small edits to the example prompts
+themselves. He et al. (2025) identify discrete text
+perturbations to demonstration examples that
+nudge the model’s internal representations and,
+as a result, sharply reduce its accuracy. Malicious
+code-generation demonstrations can also reliably
+bias LLM-based code towards incorrect or inse-
+cure outputs (Ge et al., 2024).
+Parallel work in online RL and in-context RL
+shows analogous vulnerabilities when learning
+occurs during interaction with the environment.
+Sasnauskas et al. (2025) analyse test-time reward
+poisoning against agents that implement a learn-
+ing algorithm in-context, and show that an ad-
+versary who corrupts a fraction of rewards at de-
+ployment can systematically degrade returns. In
+the RLHF setting, Yang et al. (2025) formalise
+human feedback attacks on online RLHF, proving
+that strategically manipulated preference feed-
+back can force online RLHF algorithms to con-
+verge to sub-optimal policies.
+Behavioural Control Traps (Action)
+Behavioural Control Traps target an agent’s core
+instruction-following capabilities, subverting its
+intended purpose to serve an attacker’s immedi-
+ate goals. We distinguish three vectors based on
+their specific operational target. First, Embedded
+Jailbreak Sequences attack the model’s alignment,
+aiming to disable safety guardrails. Second, Data
+Exfiltration Traps invert the information flow, redi-
+recting private data from the user’s context to an
+external adversary. Third, Sub-agent Spawning
+Traps exploit a multi-agent system’s ability to in-
+10
+AI Agent Traps
+stantiate sub-agents. These vectors are frequently
+chained; a jailbreak often serves as the requisite
+precursor, unlocking the system to enable subse-
+quent exfiltration or social engineering payloads.
+Embedded Jailbreak Sequences
+This trap embeds jailbreaks - adversarial prompts
+engineered to circumvent safety filters - within
+external resources (e.g., websites). LLM jailbreak-
+ing typically refers to adversarial inputs that cir-
+cumvent a model’s safety alignment, inducing it
+to produce content or take actions that violate
+its stated instructions or guardrails (Chao et al.,
+2025; Wei et al., 2023). Unlike direct jailbreaking,
+where a user explicitly prompts the model, these
+sequences are embedded in external resources
+that the agent consumes during normal operation.
+Upon ingestion, the prompt enters the agent’s
+context window, effectively overriding its safety
+alignment to induce a compliant, unconstrained
+state. In multimodal settings, visual adversarial
+examples can act as universal jailbreak triggers:
+a single crafted image, when included alongside
+otherwise benign prompts, causes aligned models
+to comply with a wide range of harmful instruc-
+tions (Qi et al., 2024). These traps also differ from
+Web-Standard Obfuscation traps in that they are
+not hidden in low-level HTML/CSS but rather are
+ordinary, visible elements.
+Existing benchmarks systematise these risks by
+populating web environments and tool APIs (such
+as email, calendar, file storage, and search) with
+malicious prompts and UI artefacts, finding that
+web agents frequently begin executing injected in-
+structions, often in the form of hidden or auxiliary
+page elements (Evtimov et al., 2025; Zhan et al.,
+2024). One such example is the use of adversarial
+mobile notifications, disguised as normal OS ele-
+ments. Multimodal agents treating these notifica-
+tions as trusted context exhibit up to 93\% attack
+success rates on AndroidWorld (a fully functional
+Android environment), effectively overriding task-
+level instructions (Chen et al., 2025). Zhang et al.
+(2025c) show that adversarial pop-ups integrated
+into desktop or web interfaces can systematically
+hijack vision–language computer agents, divert-
+ing them from user-specified goals even when the
+pop-ups would be trivially ignored by humans.
+Data Exfiltration Traps
+Data Exfiltration Traps function as a confused
+deputy attack3, coercing the agent to leak priv-
+ileged information. An attacker controls some
+untrusted input (for example, emails, web pages,
+documents or API responses), the agent has privi-
+leged read access to sensitive user data and write
+access to tools or communication channels, and
+the model is induced to retrieve, encode, and
+transmit private data to an adversarial endpoint
+(Deng et al., 2025).
+Data-exfiltration prompts embedded in mun-
+dane digital artefacts like emails, web pages
+and API responses pose a concrete, empirically
+demonstrated threat class. Web-use agents with
+browser and OS-level privileges can be driven, via
+task-aligned injections that frame malicious com-
+mands as helpful task guidance, to exfiltrate local
+files, passwords and other secrets through net-
+work requests and tool calls, with attack success
+rates exceeding 80\% across five different agents
+(Shapira et al., 2025). Reddy and Gujral (2025)
+describe a case study where a single crafted email
+causes M365 Copilot to bypass internal classi-
+fiers and exfiltrate its entire privileged context to
+an attacker-controlled Teams endpoint. Another
+study found that self-replicating prompts embed-
+ded in emails can trigger chains of zero-click exfil-
+tration across interconnected GenAI-powered as-
+sistants, systematically leaking confidential user
+data between services (Cohen et al., 2024).
+These attacks can also take advantage of an
+agent’s ability to use tools.
+Benchmark work
+shows that malicious instructions embedded in
+content processed by tool-enabled agents can ma-
+nipulate the agent into emailing (or otherwise
+transmitting) financial, medical or behavioural
+data to an attacker (Zhan et al., 2024).
+Al-
+izadeh et al. (2025) designed targeted banking-
+style scenarios in AgentDojo where relatively
+simple indirect injections ("important message"
+prompts embedded in the agent’s environment)
+can cause tool-calling agents to email account de-
+tails, addresses and other personal attributes to
+3A "confused deputy" is a security vulnerability where
+a program is tricked by another program into misusing its
+authority to perform an action it shouldn’t have permission
+to (Hardy, 1988).
+11
+AI Agent Traps
+attacker addresses, with average attack success
+rates around 20\%.
+Sub-agent Spawning Traps
+As agents function as orchestrators capable of
+managing multi-agent systems or decomposing
+tasks, a novel attack vector emerges: Sub-agent
+Spawning Traps. These traps exploit an agent’s
+ability to instantiate sub-agents, spawn new
+threads, or delegate tasks to external services
+(Tomašev et al., 2026). By presenting a prob-
+lem that appears to require high parallelism or
+specialised sub-routines, an attacker can coerce
+the parent agent into instantiating malicious or
+compromised sub-agents within its own trusted
+control flow. For example, an agent managing a
+software development lifecycle might encounter
+a trap in a repository that instructs it to "spin up
+a dedicated ’Critic’ agent to review this code,"
+providing a specific, poisoned system prompt for
+that critic. Once instantiated, this sub-agent op-
+erates with the privileges of the parent system
+but serves the adversary’s objective - potentially
+voting to approve malicious code or exhausting
+computational resources.
+There is some early evidence for the feasibil-
+ity of such attacks. Triedman et al. (2025) show
+that adversarial content can hijack control flow
+within a multi-agent system so that an orches-
+trator routes execution through agents the user
+never intended to invoke, enabling arbitrary code
+execution and data exfiltration with attack suc-
+cess rates of 58–90\% depending on the orches-
+trator. Further work is needed to understand the
+core mechanisms that would allow attackers to
+implement such traps.
+Systemic Traps (Multi-Agent Dynamics)
+While the preceding categories target individual
+agents in isolation, Systemic Traps exploit the pre-
+dictable, aggregate behaviour of multiple agents
+sharing an environment. These traps weaponise
+inter-agent dynamics, seeding the information
+landscape with inputs designed to trigger macro-
+level failure states (Hammond et al., 2025). This
+systemic fragility is exacerbated by the relative ho-
+mogeneity of the current model ecosystem (Toups
+et al., 2023); agents driven by similar reward
+functions, training data, or base architectures are
+likely to exhibit highly correlated responses to en-
+vironmental stimuli. As observed in the study of
+social dilemmas, a particular behaviour may be ac-
+ceptable for a single agent to perform, yet deeply
+problematic if enacted by the entire population
+simultaneously (e.g., littering or overly aggressive
+driving) (Perolat et al., 2017; Schelling, 1973).
+The theoretical framework of social dilemmas
+(or collective action problems) helps explain these
+scenarios, where individually rational decisions
+by disparate agents aggregate into collectively
+disastrous outcomes - a digital tragedy of the com-
+mons (Hardin, 1968; Ostrom, 1990). While such
+dilemmas are typically understood as emerging
+from natural environmental properties, in the con-
+text of Agent Traps, we consider how they may be
+artificially induced. Rather than merely defecting
+within an existing game, the attacker engages
+in a form of adversarial mechanism design: pur-
+posefully structuring the information landscape
+to force agents into a destructive equilibrium.
+We identify five primary vectors for these sys-
+temic failures, each defined by a distinct ad-
+versarial relationship to the multi-agent system.
+First, Congestion Traps, where an attacker induces
+a dilemma by broadcasting signals that trigger
+synchronised, exhaustive demand. Second, In-
+terdependence Cascades, where an attacker per-
+turbs a fragile equilibrium to trigger rapid, self-
+reinforcing failure loops similar to market "flash
+crashes". Third, Tacit Collusion, where the at-
+tacker acts as a mechanism designer, embedding
+environmental signals that function as correla-
+tion devices to synchronise behaviour without
+explicit communication. Fourth, Compositional
+Fragment Traps, where the adversary exploits the
+interaction structure by partitioning malicious
+payloads across multiple datasets. Finally, Sybil
+Attacks, where the attacker controls one or more
+fake agents to nudge group behaviour. In each
+case, the trap functions as a catalyst that pushes
+a multi-agent system toward a destructive equi-
+librium. Although there is some preliminary ev-
+idence pointing towards these risks, more work
+is needed to fully understand the dynamics of
+this emerging risk in modern multi-agent systems
+12
+AI Agent Traps
+built on multimodal foundation models.
+Congestion Traps
+Congestion Traps exploit the homogeneity of au-
+tonomous agents (Toups et al., 2023); specifi-
+cally, the tendency of agents with similar reward
+functions and sensory inputs to make direction-
+ally similar, simultaneous optimisation decisions.
+When a large number of agents are presented
+with the same environmental signal indicating a
+widely desired, limited resource (e.g., an uncon-
+gested road or a low-priced, high-quality stock),
+their synchronised attempt to capture that re-
+source can trigger systemic failure.
+This vulnerability is rooted in foundational
+game-theoretic models, such as minority games
+and congestion games, which demonstrate that
+decentralised learners frequently overcrowd high-
+reward resources when payoffs are inversely re-
+lated to usage (Rosenthal, 1973). In multi-agent
+reinforcement learning, naive learners consis-
+tently converge on sub-optimal, congested states
+unless specific counter-measures, such as differ-
+ence rewards or state abstractions, are imple-
+mented (Devlin et al., 2014; Malialis et al., 2019).
+An adversary can weaponise this tendency by
+broadcasting artificial signals to deliberately con-
+centrate agents into a destructive equilibrium.
+For example, a specifically crafted news headline
+could trigger a synchronised sell-off among finan-
+cial agents, or a single high-value information
+resource could induce a self-inflicted analogue of
+a Distributed Denial of Service (Mahjabin et al.,
+2017) as scraping agents simultaneously attempt
+to ingest it. More broadly, adversarial policies
+can manipulate deep RL agents into adopting sys-
+tematically poor strategies (Gleave et al., 2019),
+and adversarial communication can coordinate
+unwitting agents into harmful convergence (Blu-
+menkamp and Prorok, 2021).
+Interdependence Cascades
+Interdependence Cascades weaponise the feedback
+loops created when autonomous agents’ actions
+are sequentially contingent on each other’s. While
+congestion traps typically involve simultaneous
+convergence on a static resource, these instability
+effects exploit reactive dynamics where an initial
+signal is amplified through the population. An
+agent’s action alters the environment; this alter-
+ation is then perceived as a new signal by other
+agents, whose reactions further modify the envi-
+ronment, amplifying the initial move in a rapid,
+self-reinforcing spiral.
+The 2010 "Flash Crash" serves as a modern
+digital archetype for this phenomenon, mirror-
+ing traditional economic failures such as bank
+runs, where the expectation of insolvency creates
+a self-fulfilling prophecy of withdrawal. Foren-
+sic analysis of the Flash Crash demonstrated how
+a single large, automated sell order initiated a
+"hot-potato" effect among high-frequency trading
+algorithms, rapidly passing inventory between
+tightly coupled systems (Kirilenko et al., 2017;
+Report, 2010). As liquidity vanished, these sys-
+tems, all reacting to the same price and volume
+signals, entered a positive feedback loop of trad-
+ing and withdrawal, amplifying volatility on sub-
+second timescales that far exceeded human re-
+sponse time (Johnson et al., 2013).
+The same robust-yet-fragile dynamics docu-
+mented in complex financial networks (Acemoglu
+et al., 2015; Gai et al., 2011) are likely to charac-
+terise multi-agent ecosystems: the system absorbs
+small shocks but is highly vulnerable to contagion
+once a threshold is crossed. In financial mod-
+els, this threshold behaviour arises because ac-
+tivity becomes self-exciting - trades mechanically
+beget more trades, pushing the system toward
+a critical state where a small perturbation cas-
+cades into large-scale dislocation (Bacry et al.,
+2015; Filimonov and Sornette, 2012). An analo-
+gous dynamic emerges when autonomous agents
+are trained to react to each other’s outputs or to
+shared environmental signals.
+From an adversarial perspective, the trap does
+not require compromising every agent. An at-
+tacker need only inject a single, carefully cali-
+brated piece of information - such as a fabricated
+financial report - to initiate the cascade. The sys-
+tem’s own interdependent logic, where agents are
+trained to react to market-clearing prices or each
+other’s behaviour, becomes the mechanism that
+propagates and amplifies the initial attack. Gu
+et al. (2024) formalise an “infectious jailbreak”
+13
+AI Agent Traps
+in multimodal multi-agent settings: an adversar-
+ial image injected into the memory of one agent
+spreads via pairwise interactions until (almost)
+all agents in a large population exhibit jailbroken
+behaviour, effectively turning each infected agent
+into a propagating sub-agent of the attack.
+Tacit Collusion
+Tacit Collusion traps exploit the ability of inde-
+pendent, learning agents to synchronise their be-
+haviour without explicit communication. In game
+theory, this is often formally modelled using a
+correlation device — a public signal that allows
+rational agents to condition their actions in lock-
+step (Aumann, 1974, 1987). However, explicit
+correlation devices are not strictly necessary for
+such dynamics to emerge. As analysed by Axelrod
+(1984) in the context of trench warfare, collusion
+can evolve spontaneously in iterated interactions,
+a phenomenon widely observed in multi-agent re-
+inforcement learning environments (Leibo et al.,
+2017; Perolat et al., 2017).
+In an agentic economy,
+an attacker can
+weaponise this tendency by acting as a mech-
+anism designer, deliberately embedding signals
+into the shared environment to coordinate anti-
+competitive or malicious behaviour while main-
+taining plausible deniability (Cass and Shell,
+1983). For example, a subtly manipulated pub-
+lic demand index or a specific pricing pattern
+on a dominant platform could serve as a bea-
+con for competing algorithmic pricing agents. Re-
+search confirms that independent agents can read-
+ily learn to use such observables to coordinate on
+supracompetitive prices, maintaining them via
+learned trigger strategies without ever exchang-
+ing a message (Calvano et al., 2020; Klein, 2021).
+The efficacy of this trap is proportional to the
+precision and frequency of the shared signal.
+Finer, more reliable environmental beacons make
+it easier for agents to converge on a robust col-
+lusive equilibrium (Mailath and Morris, 2002;
+Martin and Rasch, 2024). By controlling these
+environmental signals, an attacker can steer a
+group of decentralised, ostensibly independent
+agents.
+Compositional Fragment Traps
+Compositional Fragment Traps weaponise the
+structural synthesis inherent to multi-agent col-
+laboration. An adversary partitions a malicious
+payload — such as a complex jailbreak sequence
+— into discrete, semantically benign fragments
+dispersed across independent data sources (e.g.,
+web pages, emails, PDFs, calendar notes). Indi-
+vidually, each fragment appears inert and passes
+standard safety filters; however, when collabora-
+tive architectures aggregate these inputs, the inte-
+gration process reconstitutes the full adversarial
+trigger. This phenomenon creates a "distributed
+confused deputy" vulnerability, where the trap
+remains imperceptible to the local defences of
+any single agent and manifests only within the
+high-level communication channel of the collec-
+tive system.
+Although this trap is currently more hypotheti-
+cal, there are early results on composite and dis-
+tributed backdoors in LLMs that point towards
+its potential viability. Scattering multiple keys
+across prompt components (e.g., instruction +
+input) or across turns yields high attack success
+with low false activation, precisely because no
+single fragment is suspicious on its own (Huang
+et al., 2024; Tong et al., 2024). The backdoor is
+triggered only when all keys appear. Similarly, if
+each key were processed by a different agent, an
+attack would be triggered once all keys appear
+in the communication channel of a multi-agent
+system.
+Sybil Attacks
+A Sybil attack is an adversarial strategy in which
+a single actor fabricates and controls multiple
+pseudonymous identities within a networked sys-
+tem to subvert its trust assumptions, consensus
+processes, or reputation mechanisms. An attacker
+can deploy many coordinated agent identities to
+manipulate multi-agent deliberation, overwhelm
+governance or verification workflows, and distort
+feedback, rankings, or collective decision-making
+signals. A single attacker can thus exert dispro-
+portionate influence over group outcomes.
+This vector is therefore particularly potent
+against systems relying on crowd-sourced data or
+14
+AI Agent Traps
+democratic consensus. It has been demonstrated
+in physical systems, where attacks on navigation
+apps inject false traffic data (via fake "ghost rid-
+ers") to herd drivers into a single chokepoint, in-
+ducing gridlock on demand (Sinai et al., 2014;
+Wang et al., 2018). However, the threat extends
+beyond resource congestion to reputation systems
+and democratic governance structures, where the
+coherent identity assumptions underlying gover-
+nance frameworks are undermined by the prolif-
+eration of counterfeit entities (Leibo et al., 2025).
+There is evidence that multiple simulated pseudo-
+agents (“Sybil agents”) can coerce other agents to
+treat them as independent voices, which can push
+the group toward an incorrect consensus — an at-
+tack which exploits LLMs’ conformity tendencies
+(Cui and Du, 2025).
+Human-in-the-Loop Traps (Human Overseer)
+While current agent traps primarily target the
+agent, we anticipate the emergence of sophis-
+ticated traps designed to attack humans-in-the-
+loop. Human-in-the-Loop Traps commandeer the
+agent to attack the human user. In these sce-
+narios, the agent is the vector and the ultimate
+target is the human overseer. For example, fu-
+ture traps may be engineered to generate outputs
+specifically crafted to induce “approval fatigue”4
+in human reviewers, or to present highly tech-
+nical, benign-looking summaries of work that a
+non-expert human would likely authorise. By ex-
+ploiting typical human cognitive biases - such as
+automation bias5 - these traps could bypass the
+final layer of defence in critical systems. Traps
+could also facilitate social engineering attacks —
+for example, inducing the human-in-the-loop to
+click malicious hyperlinks.
+Early evidence comes from an incident report
+showing that invisible prompt injections via CSS
+obfuscation can make AI summarisation tools
+faithfully repeat step-by-step ransomware com-
+mands as "fix" instructions that users are likely
+4Cognitive fatigue is reduced mental capacity arising
+from prolonged and demanding cognitive activity.
+5Automation bias is the tendency to over-rely on automa-
+tion, leading to errors of commission (following wrong ad-
+vice) and omission (failing to act when advice is missing) in
+decision-support contexts. (Goddard et al., 2012)
+to follow (OECD.AI Policy Observatory, 2025).
+Deng et al. (2025) further argue for the possibil-
+ity of prompt injections being used to manipulate
+agents into inserting phishing links in their re-
+sponses. While these examples are suggestive,
+systematically targeting the human overseer via a
+compromised agent remains a largely unexplored
+attack surface that warrants further research.
+Mitigation Strategies
+The primary contribution of this paper is the iden-
+tification and classification of agent traps. How-
+ever, the widespread adoption of agentic AI so-
+lutions is already exposing a significant gap be-
+tween these rapidly advancing capabilities and
+current security practices. Therefore, we briefly
+outline potential mitigation pathways here, not-
+ing that the comprehensive development of evalu-
+ation frameworks, standardised benchmarks, and
+robust defences remains a critical subject for fu-
+ture research.
+Mitigating the threat of agent traps necessitates
+navigating a complex and evolving adversarial
+landscape. These traps pose at least three inter-
+related challenges: detection, attribution, and
+adaptation. First, detection at web scale is com-
+putationally and semantically difficult; traps are
+often designed to be subtle - indistinguishable
+from benign persuasive language - with down-
+stream effects that may manifest long after the
+initial interaction. Second, this subtlety creates
+a significant forensic challenge regarding attribu-
+tion; tracing a compromised agent’s output back
+to the specific trap that influenced it complicates
+the assignment of accountability. Third, these
+dynamics create a persistent arms race, as attack-
+ers continuously adapt to evade new defences.
+Consequently, effective defence likely requires a
+holistic strategy encompassing technical harden-
+ing, ecosystem-level interventi
+\end{document}

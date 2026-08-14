@@ -26,7 +26,7 @@ Scientists who adopt AI tools in their research produce more publications, accum
 
 ## Evidence summary
 
-Hao et al. (2025, Nature) analysed ~41M natural science papers (1980–2025), ~311,000 AI-augmented. AI adopters are more highly cited and publish in higher-impact journals across machine learning, deep learning, and generative AI eras. Simultaneously, AI adopters show contraction in knowledge focus — they research more topics but within fewer fields. Commentary by Storey (2025, Nature N&V) contextualises this as a paradox.
+Hao et al. (2026, *Nature*; [[artificial-intelligence-tools-expand-scientists-impact]], primary source now in wiki) analysed 41,298,433 natural science papers (1980–2025), 310,957 AI-augmented (0.75%). AI adopters publish 3.02× more papers, receive 4.84× more citations, and become project leaders 1.37 years sooner. Simultaneously, AI adoption shrinks the collective volume of scientific topics studied by 4.63% (measured via [[knowledge-extent-scientometric-measure]]) and decreases follow-on engagement between researchers by 22%. Commentary by Storey (2025, Nature N&V, [[ai-tools-boost-scientists-impact-narrow]]) previously contextualised this as a paradox before the primary source was ingested.
 
 ## Conditions and scope
 

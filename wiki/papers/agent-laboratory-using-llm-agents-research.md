@@ -12,7 +12,7 @@ s2_id: "394924896e24c9b086d96d0958dae07f54ff9452"
 keywords: [research automation, llm agents, human feedback, scientific pipeline, end-to-end]
 domain: "ML Systems"
 code_url: ""
-cited_by: []
+cited_by: [ai-agents-conduct-open-ended-ai]
 ---
 
 ## Problem

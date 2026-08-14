@@ -20,6 +20,7 @@ date_updated: 2026-04-29
 
 ## Recent work
 
+- [[potential-existential-threat-large-language-models]]
 ## Collaborators
 
 ## My notes

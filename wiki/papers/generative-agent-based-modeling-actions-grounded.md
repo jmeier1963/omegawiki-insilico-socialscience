@@ -92,7 +92,7 @@ Concordia is the most complete general-purpose GABM framework to date. Its key a
 ## Related
 
 - [[generative-agent-based-modeling]]
-- [[game-master-architecture]]
+- game master architecture
 - [[generative-agent-memory-stream]]
 - [[llm-powered-agent-architecture]]
 - [[silicon-sampling]]

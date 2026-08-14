@@ -3,6 +3,8 @@
 
 Usage:
     python tools/visualize_graph.py wiki/ [--output wiki/graph/graph.html]
+    python tools/visualize_graph.py wiki/ --theme light   # white-background variant
+                                                           # → wiki/graph/graph_light.html
 
 Requires internet access to load vis.js from CDN (unpkg.com).
 No external Python dependencies — stdlib only.
@@ -111,6 +113,52 @@ EDGE_COLORS = {
 }
 
 EDGE_DASHED = {"contradicts", "invalidates", "challenges", "critiques_concept"}
+
+# ── Themes ────────────────────────────────────────────────────────────────────
+# Each theme is a flat map of CSS custom properties injected into :root. The
+# graph content itself (colored node dots, node label text, edge label boxes)
+# already reads well on both backgrounds, so only the surrounding chrome and the
+# canvas background are theme-dependent.
+THEMES = {
+    "dark": {
+        "bg":              "#1a1a2e",
+        "panel":           "#16213e",
+        "border":          "#0f3460",
+        "text":            "#e0e0e0",
+        "muted":           "#888888",
+        "legend-label":    "#bbbbbb",
+        "input-bg":        "#1a1a2e",
+        "accent":          "#4e79a7",
+        "ctrl-text":       "#bbbbbb",
+        "ctrl-hover-bg":   "#0f3460",
+        "ctrl-hover-text": "#ffffff",
+        "info-text":       "#aaaaaa",
+        "strong":          "#e0e0e0",
+        "tooltip-shadow":  "rgba(0, 0, 0, 0.35)",
+    },
+    "light": {
+        "bg":              "#ffffff",
+        "panel":           "#f5f6f8",
+        "border":          "#d6dae2",
+        "text":            "#1f2430",
+        "muted":           "#6b7280",
+        "legend-label":    "#4b5563",
+        "input-bg":        "#ffffff",
+        "accent":          "#4e79a7",
+        "ctrl-text":       "#4b5563",
+        "ctrl-hover-bg":   "#e8ebf0",
+        "ctrl-hover-text": "#111111",
+        "info-text":       "#374151",
+        "strong":          "#111111",
+        "tooltip-shadow":  "rgba(0, 0, 0, 0.18)",
+    },
+}
+
+
+def _theme_vars_css(theme: str) -> str:
+    """Render a theme's palette as CSS custom-property declarations."""
+    palette = THEMES.get(theme, THEMES["dark"])
+    return "\n".join(f"    --{k}: {v};" for k, v in palette.items())
 
 # ── Frontmatter parser (stdlib only) ─────────────────────────────────────────
 
@@ -266,25 +314,29 @@ HTML_TEMPLATE = """\
 <title>ΩmegaWiki Knowledge Graph</title>
 <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
 <style>
+  :root {
+__THEME_VARS__
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-         display: flex; height: 100vh; overflow: hidden; background: #1a1a2e; color: #e0e0e0; }
+         display: flex; height: 100vh; overflow: hidden;
+         background: var(--bg); color: var(--text); }
 
   /* ── Sidebar ── */
   #sidebar {
     width: 260px; min-width: 200px; padding: 14px 12px; overflow-y: auto;
-    background: #16213e; border-right: 1px solid #0f3460; display: flex;
+    background: var(--panel); border-right: 1px solid var(--border); display: flex;
     flex-direction: column; gap: 14px; font-size: 12px;
   }
-  #sidebar h1 { font-size: 14px; font-weight: 700; color: #e0e0e0; letter-spacing: 0.04em; }
+  #sidebar h1 { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: 0.04em; }
   #sidebar h2 { font-size: 11px; font-weight: 600; text-transform: uppercase;
-                letter-spacing: 0.08em; color: #888; margin-bottom: 6px; }
+                letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px; }
 
   /* search */
   #search { width: 100%; padding: 5px 8px; border-radius: 4px;
-            border: 1px solid #0f3460; background: #1a1a2e; color: #e0e0e0;
+            border: 1px solid var(--border); background: var(--input-bg); color: var(--text);
             font-size: 12px; outline: none; }
-  #search:focus { border-color: #4e79a7; }
+  #search:focus { border-color: var(--accent); }
 
   /* filter buttons */
   .filter-group { display: flex; flex-wrap: wrap; gap: 5px; }
@@ -295,7 +347,7 @@ HTML_TEMPLATE = """\
   .filter-btn.off { opacity: 0.35; }
 
   /* stats */
-  #stats { color: #888; font-size: 11px; line-height: 1.6; }
+  #stats { color: var(--muted); font-size: 11px; line-height: 1.6; }
 
   /* legend swatches */
   .swatch { display: inline-block; width: 10px; height: 10px;
@@ -303,27 +355,42 @@ HTML_TEMPLATE = """\
   .edge-swatch { display: inline-block; width: 18px; height: 3px;
                  border-radius: 2px; margin-right: 5px; vertical-align: middle; }
   .legend-row { display: flex; align-items: center; margin-bottom: 4px; }
-  .legend-label { font-size: 11px; color: #bbb; }
+  .legend-label { font-size: 11px; color: var(--legend-label); }
 
   /* layout controls */
   #layout-btns { display: flex; flex-wrap: wrap; gap: 5px; }
   .ctrl-btn {
-    padding: 4px 9px; border-radius: 4px; border: 1px solid #0f3460;
-    background: #1a1a2e; color: #bbb; cursor: pointer; font-size: 11px;
+    padding: 4px 9px; border-radius: 4px; border: 1px solid var(--border);
+    background: var(--input-bg); color: var(--ctrl-text); cursor: pointer; font-size: 11px;
     transition: background 0.15s;
   }
-  .ctrl-btn:hover { background: #0f3460; color: #fff; }
+  .ctrl-btn:hover { background: var(--ctrl-hover-bg); color: var(--ctrl-hover-text); }
 
   /* info panel */
   #info {
-    flex: 1; background: #16213e; border-radius: 4px; padding: 8px;
-    font-size: 11px; color: #aaa; line-height: 1.5; overflow-y: auto;
-    min-height: 80px; border: 1px solid #0f3460;
+    flex: 1; background: var(--panel); border-radius: 4px; padding: 8px;
+    font-size: 11px; color: var(--info-text); line-height: 1.5; overflow-y: auto;
+    min-height: 80px; border: 1px solid var(--border);
   }
-  #info b { color: #e0e0e0; }
+  #info b { color: var(--strong); }
+
+  /* formatted graph hover card */
+  #node-tooltip {
+    position: absolute; z-index: 20; display: none;
+    width: min(420px, calc(100% - 24px)); height: min(220px, calc(100vh - 24px));
+    padding: 12px 14px; overflow-x: hidden; overflow-y: auto;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--panel); color: var(--info-text);
+    box-shadow: 0 8px 24px var(--tooltip-shadow);
+    font-size: 13px; line-height: 1.55; white-space: normal; overflow-wrap: anywhere;
+    scrollbar-gutter: stable;
+  }
+  #node-tooltip.visible { display: block; }
+  #node-tooltip b { color: var(--strong); font-size: 14px; }
+  .vis-tooltip { display: none !important; }
 
   /* ── Canvas ── */
-  #network { flex: 1; height: 100vh; }
+  #network { position: relative; flex: 1; height: 100vh; }
 </style>
 </head>
 <body>
@@ -393,8 +460,14 @@ let showEdgeLabels = true;
 let searchQuery = "";
 
 // ── vis.js datasets ──────────────────────────────────────────────────────────
-const nodesDS = new vis.DataSet(ALL_NODES);
-const edgesDS = new vis.DataSet(ALL_EDGES);
+// Titles are rendered by the custom HTML tooltip below. Omitting them from both
+// datasets prevents vis-network from showing the markup as plain text.
+function graphItems(items) {
+  return items.map(({ title, ...item }) => item);
+}
+
+const nodesDS = new vis.DataSet(graphItems(ALL_NODES));
+const edgesDS = new vis.DataSet(graphItems(ALL_EDGES));
 
 const container = document.getElementById("network");
 const data = { nodes: nodesDS, edges: edgesDS };
@@ -424,6 +497,51 @@ const options = {
 };
 
 const network = new vis.Network(container, data, options);
+
+// ── Hover → formatted, scrollable tooltip ─────────────────────────────────────
+const nodeTooltip = document.createElement("div");
+nodeTooltip.id = "node-tooltip";
+nodeTooltip.setAttribute("role", "tooltip");
+container.appendChild(nodeTooltip);
+let tooltipHideTimer;
+
+function showGraphTooltip(item, pointer) {
+  if (!item) return;
+
+  clearTimeout(tooltipHideTimer);
+  nodeTooltip.innerHTML = item.title;
+  nodeTooltip.classList.add("visible");
+
+  const gap = 16;
+  const margin = 12;
+  const width = nodeTooltip.offsetWidth;
+  const height = nodeTooltip.offsetHeight;
+  let left = pointer.x + gap;
+  let top = pointer.y + gap;
+
+  if (left + width + margin > container.clientWidth) left = pointer.x - width - gap;
+  if (top + height + margin > container.clientHeight) top = pointer.y - height - gap;
+
+  nodeTooltip.style.left = `${Math.max(margin, left)}px`;
+  nodeTooltip.style.top = `${Math.max(margin, top)}px`;
+}
+
+function scheduleTooltipHide() {
+  clearTimeout(tooltipHideTimer);
+  tooltipHideTimer = setTimeout(() => nodeTooltip.classList.remove("visible"), 180);
+}
+
+network.on("hoverNode", params => {
+  showGraphTooltip(ALL_NODES.find(node => node.id === params.node), params.pointer.DOM);
+});
+network.on("hoverEdge", params => {
+  showGraphTooltip(ALL_EDGES.find(edge => edge.id === params.edge), params.pointer.DOM);
+});
+network.on("blurNode", scheduleTooltipHide);
+network.on("blurEdge", scheduleTooltipHide);
+nodeTooltip.addEventListener("mouseenter", () => clearTimeout(tooltipHideTimer));
+nodeTooltip.addEventListener("mouseleave", scheduleTooltipHide);
+nodeTooltip.addEventListener("pointerdown", event => event.stopPropagation());
 
 // ── Click → info panel ────────────────────────────────────────────────────────
 network.on("click", function(params) {
@@ -455,8 +573,8 @@ function applyFilters() {
     .filter(e => !hiddenEdgeTypes.has(e._etype))
     .filter(e => visibleIds.has(e.from) && visibleIds.has(e.to));
 
-  nodesDS.clear(); nodesDS.add(filteredNodes);
-  edgesDS.clear(); edgesDS.add(filteredEdges);
+  nodesDS.clear(); nodesDS.add(graphItems(filteredNodes));
+  edgesDS.clear(); edgesDS.add(graphItems(filteredEdges));
   updateStats(filteredNodes.length, filteredEdges.length);
 }
 
@@ -570,7 +688,11 @@ function toggleEdgeLabels() {
 def main():
     parser = argparse.ArgumentParser(description="Visualize ΩmegaWiki knowledge graph")
     parser.add_argument("wiki_root", help="Path to wiki/ directory")
-    parser.add_argument("--output", default="", help="Output HTML path (default: wiki/graph/graph.html)")
+    parser.add_argument("--output", default="",
+                        help="Output HTML path (default: wiki/graph/graph.html, "
+                             "or graph_light.html when --theme light)")
+    parser.add_argument("--theme", choices=sorted(THEMES), default="dark",
+                        help="Color theme: 'dark' (default) or 'light' (white background)")
     args = parser.parse_args()
 
     wiki_root = pathlib.Path(args.wiki_root).resolve()
@@ -578,7 +700,8 @@ def main():
         print(f"ERROR: {wiki_root} is not a directory", file=sys.stderr)
         sys.exit(1)
 
-    output = pathlib.Path(args.output) if args.output else wiki_root / "graph" / "graph.html"
+    default_name = "graph_light.html" if args.theme == "light" else "graph.html"
+    output = pathlib.Path(args.output) if args.output else wiki_root / "graph" / default_name
     output.parent.mkdir(parents=True, exist_ok=True)
 
     print("Collecting nodes…")
@@ -600,6 +723,7 @@ def main():
     # (vis.js ignores unknown fields on DataSet items.)
 
     html = HTML_TEMPLATE
+    html = html.replace("__THEME_VARS__", _theme_vars_css(args.theme))
     html = html.replace("__NODES_JSON__", json.dumps(vis_nodes, ensure_ascii=False))
     html = html.replace("__EDGES_JSON__", json.dumps(vis_edges, ensure_ascii=False))
     html = html.replace("__NODE_COLORS_JSON__", json.dumps(NODE_COLORS, ensure_ascii=False))

@@ -51,4 +51,4 @@ Solid reference document for EU-US digital policy relationship. Useful for under
 
 ## Related
 
-- supports: [[european-digital-sovereignty-requires-sovereign-ai-infrastructure]]
+- supports: [[european-digital-sovereignty-requires-sovereign-ai]]

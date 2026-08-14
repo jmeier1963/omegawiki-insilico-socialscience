@@ -17,6 +17,7 @@ Science of Science, Computational Social Science, Network Science, AI's impact o
 
 ## Recent work
 
+- [[rise-large-language-models-direction-impact]]
 Studies the structure and dynamics of scientific discovery using large-scale data; recent focus on how LLMs are reshaping federal research funding and scientific diversity.
 
 ## Collaborators

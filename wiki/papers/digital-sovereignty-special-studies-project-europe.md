@@ -50,4 +50,4 @@ Useful context document for EuroStack and Francesca Bria's research agenda. Impo
 ## Related
 
 - [[eurostack-european-alternative-digital-sovereignty]]
-- [[european-digital-sovereignty-requires-sovereign-ai-infrastructure]]
+- [[european-digital-sovereignty-requires-sovereign-ai]]

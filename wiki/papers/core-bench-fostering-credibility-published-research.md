@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [CORE-Bench, reproducibility, AI agent, benchmark, credibility, computational]
 domain: "ML Systems"
 code_url: ""
-cited_by: []
+cited_by: [ai-agents-conduct-open-ended-ai]
 ---
 
 ## Problem

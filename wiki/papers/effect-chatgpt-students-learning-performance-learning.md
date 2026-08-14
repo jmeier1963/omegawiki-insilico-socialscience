@@ -62,4 +62,4 @@ Useful aggregation of the first wave of ChatGPT-in-education research. The large
 
 ## Related
 
-- supports: [[chatgpt-large-positive-effect-student-learning-performance-meta-analysis]]
+- supports: [[chatgpt-large-positive-effect-student-learning]]

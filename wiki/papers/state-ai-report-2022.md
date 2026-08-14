@@ -37,4 +37,4 @@ Historical reference for the pre-ChatGPT AI landscape. Useful for tracking how f
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]

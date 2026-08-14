@@ -3,10 +3,10 @@ title: "Software Intelligence Explosion"
 aliases: ["SIE", "intelligence explosion", "recursive self-improvement", "ASARA feedback loop", "AI R&D automation explosion", "AI software feedback loop"]
 tags: [intelligence-explosion, ai-rnd-automation, feedback-loops, agi, ai-safety, software-progress]
 maturity: emerging
-key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos]
+key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos, from-agi-to-asi, first-steps-toward-automated-ai-research, if-you-thought-global-financial-crisis, when-ai-builds-itself, measuring-ai-ability-complete-long-software, artificial-intelligence-index-report-2025-stanford, deepseek-view-china, ai-agents-conduct-open-ended-ai]
 first_introduced: "2025"
 date_updated: 2026-05-29
-related_concepts: [automated-research-pipeline, gradual-disempowerment]
+related_concepts: [automated-research-pipeline, gradual-disempowerment, agi-asi-transition, multi-agent-scaling-laws]
 ---
 
 ## Definition

@@ -20,6 +20,7 @@ date_updated: 2026-04-29
 
 ## Recent work
 
+- [[synthetic-replacements-human-survey-data-perils]]
 ## Collaborators
 
 ## My notes

@@ -20,6 +20,7 @@ date_updated: 2026-04-12
 
 ## Recent work
 
+- [[out-one-many-using-language-models]]
 Pioneered the use of LLMs as synthetic survey respondents in political science, establishing the silicon sampling methodology and the algorithmic fidelity evaluation framework.
 
 ## Collaborators

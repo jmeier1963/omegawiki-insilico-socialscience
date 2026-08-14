@@ -51,5 +51,5 @@ Important explainer of Chinese AI governance for non-Chinese audiences. The tech
 
 ## Related
 
-- supports: [[china-ai-governance-uses-content-security-standards-align-socialist-values]]
+- supports: [[china-ai-governance-uses-content-security]]
 - [[ai-race-dynamics]]

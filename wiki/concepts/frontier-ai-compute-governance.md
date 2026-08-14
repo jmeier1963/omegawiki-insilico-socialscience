@@ -3,7 +3,7 @@ title: "Frontier AI Compute Governance"
 aliases: ["compute governance", "frontier AI governance", "compute thresholds", "FLOP thresholds", "compute-based AI safety"]
 tags: [frontier-ai, compute, ai-safety, ai-governance, regulation, scaling-laws]
 maturity: active
-key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house, policy-ai-exponential]
+key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house, policy-ai-exponential, when-ai-builds-itself, state-ai-report-2025, decoupled-diloco-resilient-distributed-ai-training, trends-artificial-intelligence-bond-mary-meeker, artificial-intelligence-index-report-2025-stanford, microsoft-openai-partnership-new-yorker-inside, meta-open-source-llama-ai-decision, white-house-national-policy-framework-artificial, andrew-ng-commentary-ai-policy-voluntary, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, openai-economic-blueprint-ai-america]
 first_introduced: "2023"
 date_updated: 2026-06-20
 related_concepts: [ai-race-dynamics, software-intelligence-explosion]

@@ -43,7 +43,7 @@ One of the most important AI trend analyses of 2025. Meeker's Internet Trends re
 
 ## Related
 
-- supports: [[ai-capabilities-investment-rapidly-advancing-annually]]
+- supports: [[ai-capabilities-investment-advanced-rapidly-each]]
 - [[ai-race-dynamics]]
 - [[cloud-capitalism-business-model]]
 - [[frontier-ai-compute-governance]]

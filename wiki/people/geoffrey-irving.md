@@ -20,6 +20,7 @@ date_updated: 2026-06-04
 
 ## Recent work
 
+- [[automated-alignment-harder-than-you-think]]
 Working at the AI Security Institute (UK DSIT) on alignment evaluation and the risks of automating alignment research.
 
 ## Collaborators

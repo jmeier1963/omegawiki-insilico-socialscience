@@ -21,6 +21,9 @@ date_updated: 2026-05-05
 
 ## Recent work
 
+- [[explore-future-retreat-present-2026-cosmos]]
+- [[when-ai-builds-itself]] — co-authored (with Marina Favaro) the Anthropic Institute's evidence synthesis on recursive self-improvement (>80% of Anthropic code Claude-authored; agents recovering 97% of an open research gap)
+
 - Co-founder of Anthropic (since 2021); formerly OpenAI Policy Director
 - Import AI newsletter: weekly synthesis of AI research developments
 - Automated Alignment Research: Anthropic proof-of-concept (AI agents beating human baseline on scalable oversight)

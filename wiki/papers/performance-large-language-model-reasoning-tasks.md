@@ -79,4 +79,4 @@ This is among the most rigorous AI-physician comparisons published: multi-experi
 
 - [[llm-clinical-reasoning-benchmarking]]
 - [[chatgpt-defeated-doctors-diagnosing]]
-- supports: [[llm-matches-exceeds-physician-performance-clinical]]
+- supports: [[llm-matches-exceeds-physician-clinical-reasoning]]

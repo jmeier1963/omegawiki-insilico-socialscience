@@ -3,10 +3,10 @@ title: "Digital Sovereignty"
 aliases: ["digital sovereignty", "technological sovereignty", "data sovereignty", "strategic digital autonomy", "tech sovereignty"]
 tags: [digital-sovereignty, geopolitics, platform-governance, data, cloud-computing, ai-governance]
 maturity: active
-key_papers: [eurostack-european-alternative-digital-sovereignty, eu-digital-policy-international-trade, digital-sovereignty-special-studies-project-europe, cloud-capitalism-ai-transition, europe-2031-what-getting-ai-wrong]
+key_papers: [eurostack-european-alternative-digital-sovereignty, eu-digital-policy-international-trade, digital-sovereignty-special-studies-project-europe, cloud-capitalism-ai-transition, europe-2031-what-getting-ai-wrong, bedingt-vertrauenswurdig-merics, ai-regulation-made-europe-public-value, eu-ai-champions-initiative-european-companies, view-future-data-noema-data-sovereignty, white-house-national-policy-framework-artificial, vesthager-european-digital-rights-principles]
 first_introduced: "2010s"
 date_updated: 2026-06-20
-related_concepts: [cloud-capitalism-business-model]
+related_concepts: [cloud-capitalism-business-model, agentic-ai-public-administration]
 ---
 
 ## Definition

@@ -3,7 +3,7 @@ title: "OpinionQA"
 aliases: ["Opinion QA", "opinion survey benchmark", "LM opinion evaluation dataset", "OpinionQA dataset"]
 tags: [evaluation, llm-bias, opinion-alignment, demographic-representation, public-opinion]
 maturity: active
-key_papers: [whose-opinions-language-models-reflect]
+key_papers: [whose-opinions-language-models-reflect, revealing-fine-grained-values-opinions-large, benchmarking-distributional-alignment-large-language-models]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [llm-opinion-alignment, persona-conditioning]

@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [broadly safe behaviors, principal hierarchy, corrigibility, values-knowledge-wisdom, helpfulness, honesty, harm avoidance, AI character]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [why-big-ai-labs-hiring-so]
 ---
 
 ## Problem

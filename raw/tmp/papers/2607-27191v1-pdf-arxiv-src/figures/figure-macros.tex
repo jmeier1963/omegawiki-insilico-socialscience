@@ -1,0 +1,210 @@
+% Shared vector-figure styles for the review summaries and resource timelines.
+
+\definecolor{reviewweak}{HTML}{921833}
+\definecolor{reviewstrong}{HTML}{124161}
+\definecolor{reviewink}{HTML}{1D2E31}
+\definecolor{reviewmuted}{HTML}{424B57}
+\definecolor{reviewgrid}{HTML}{E1E4E8}
+
+\definecolor{timelineapi}{HTML}{C65433}
+\definecolor{timelinegpu}{HTML}{6B4ACB}
+\definecolor{timelinewall}{HTML}{2A7F83}
+\definecolor{timelineink}{HTML}{1D2E31}
+\definecolor{timelinebadgefill}{HTML}{BED1D2}
+\definecolor{timelinegrid}{HTML}{F1F2F4}
+
+% Review charts use one common item-count scale across both tasks. The charts
+% are descriptive: the underlying review formats do not share a rubric.
+\newenvironment{reviewchart}{%
+  \begin{tikzpicture}[
+    x=\dimexpr\linewidth/17\relax,
+    y=0.62cm,
+    every node/.style={inner sep=0pt,outer sep=0pt},
+    review text/.style={font=\scriptsize\headingfont,text=reviewink},
+    review group/.style={font=\footnotesize\headingfont\bfseries,text=reviewink},
+    review header/.style={font=\scriptsize\headingfont\bfseries,text=reviewmuted}
+  ]
+  \def\reviewzero{8.05}%
+  \def\reviewunit{0.195}% 24 items occupy 4.68/16 of the chart width
+  \def\reviewleft{0.20}%
+  \def\reviewright{15.80}%
+  \def\reviewy{-0.55}%
+  \node[review header,anchor=west] at (0.25,0) {Source};
+  \node[review header,anchor=east,text=reviewweak] at (7.80,0)
+    {Weaknesses};
+  \node[review header,anchor=west,text=reviewstrong] at (8.30,0)
+    {Strengths};
+  \node[review header,anchor=east] at (15.70,0) {Verdict};
+}{%
+  \end{tikzpicture}%
+}
+
+\newcommand{\ReviewGroupBegin}[1]{%
+  \edef\reviewgrouptop{\reviewy}%
+  \node[review group,anchor=west] at (0.45,{\reviewy-0.47}) {#1};
+  \pgfmathsetmacro{\reviewy}{\reviewy-1.15}%
+  \edef\reviewfirstrow{\reviewy}%
+}
+
+\newcommand{\ReviewGroupEnd}{%
+  \pgfmathsetmacro{\reviewgroupbottom}{\reviewy+0.34}%
+  \draw[reviewink,line width=0.55pt]
+    (\reviewleft,\reviewgrouptop) rectangle (\reviewright,\reviewgroupbottom);
+  \draw[reviewgrid,line width=1.1pt]
+    (\reviewzero,{\reviewfirstrow+0.34}) --
+    (\reviewzero,{\reviewgroupbottom+0.10});
+  \pgfmathsetmacro{\reviewy}{\reviewgroupbottom-0.55}%
+}
+
+\newcommand{\ReviewRow}[5]{%
+  \pgfmathsetmacro{\reviewweakend}{\reviewzero-#2*\reviewunit}%
+  \pgfmathsetmacro{\reviewstrongend}{\reviewzero+#3*\reviewunit}%
+  \node[review text,anchor=west,font=\scriptsize\headingfont\bfseries]
+    at (0.45,\reviewy) {#1};
+  \fill[reviewweak]
+    (\reviewweakend,{\reviewy-0.24}) rectangle
+    ({\reviewzero-0.04},{\reviewy+0.24});
+  \node[review text,anchor=east,font=\scriptsize\headingfont\bfseries]
+    at ({\reviewweakend-0.13},\reviewy) {#2};
+  \fill[reviewstrong]
+    ({\reviewzero+0.04},{\reviewy-0.24}) rectangle
+    (\reviewstrongend,{\reviewy+0.24});
+  \node[review text,anchor=west,font=\scriptsize\headingfont\bfseries]
+    at ({\reviewstrongend+0.13},\reviewy) {#3};
+  \node[review text,anchor=east,text=#5,
+        font=\scriptsize\headingfont\bfseries]
+    at (15.60,\reviewy) {#4};
+  \pgfmathsetmacro{\reviewy}{\reviewy-0.78}%
+}
+
+\newcommand{\ReviewRowNoStrength}[4]{%
+  \pgfmathsetmacro{\reviewweakend}{\reviewzero-#2*\reviewunit}%
+  \node[review text,anchor=west,font=\scriptsize\headingfont\bfseries]
+    at (0.45,\reviewy) {#1};
+  \fill[reviewweak]
+    (\reviewweakend,{\reviewy-0.24}) rectangle
+    ({\reviewzero-0.04},{\reviewy+0.24});
+  \node[review text,anchor=east,font=\scriptsize\headingfont\bfseries]
+    at ({\reviewweakend-0.13},\reviewy) {#2};
+  \node[review text,anchor=west,text=reviewmuted]
+    at ({\reviewzero+0.16},\reviewy) {--};
+  \node[review text,anchor=east,text=#4,
+        font=\scriptsize\headingfont\bfseries]
+    at (15.60,\reviewy) {#3};
+  \pgfmathsetmacro{\reviewy}{\reviewy-0.78}%
+}
+
+\newcommand{\ReviewTextRow}[2]{%
+  \node[review text,anchor=west,font=\scriptsize\headingfont\bfseries]
+    at (0.45,\reviewy) {#1};
+  \node[review text,anchor=west,text=reviewmuted,
+        font=\scriptsize\headingfont\itshape,text width=0.66\linewidth,
+        align=left]
+    at (3.20,\reviewy) {#2};
+  \pgfmathsetmacro{\reviewy}{\reviewy-0.78}%
+}
+
+\tikzset{
+  timeline badge/.style={
+    circle,draw=timelineink,fill=timelinebadgefill,line width=0.7pt,
+    minimum size=5.2mm,inner sep=0pt,
+    font=\footnotesize\headingfont\bfseries,text=timelineink
+  },
+  timeline value label/.style={
+    fill=white,rounded corners=0.8mm,line width=0.55pt,
+    inner xsep=2.5pt,inner ysep=1.6pt,
+    font=\scriptsize\headingfont\bfseries
+  }
+}
+
+\pgfplotsset{
+  resource timeline/.style={
+    width=0.80\linewidth,
+    height=0.49\linewidth,
+    xmin=0,xmax=144,
+    ymin=0,ymax=105,
+    axis lines=left,
+    axis line style={draw=timelineink,line width=0.55pt},
+    xmajorgrids=false,
+    ymajorgrids=true,
+    major grid style={draw=timelinegrid,line width=0.7pt},
+    xtick={0,40,80,120,140},
+    ytick={0,20,40,60,80,100},
+    tick style={draw=none},
+    tick label style={font=\footnotesize\headingfont,text=timelineink},
+    xlabel={Hours after start},
+    ylabel={Share of resources consumed},
+    label style={font=\footnotesize\headingfont\bfseries,text=timelineink},
+    yticklabel={\pgfmathprintnumber{\tick}\%},
+    legend columns=2,
+    legend style={
+      at={(0,1.10)},anchor=south west,draw=none,fill=none,
+      font=\tiny\headingfont\bfseries,
+      /tikz/every even column/.append style={column sep=0.7em}
+    },
+    clip=false
+  }
+}
+
+\newcommand{\TimelineMarker}[2]{%
+  \draw[timelineink!45,densely dotted,line width=0.65pt]
+    (axis cs:#2,0) -- (axis cs:#2,105);
+  \node[timeline badge] at (axis cs:#2,117) {#1};
+}
+
+\newcommand{\TimelineDeadline}[1][120]{%
+  \draw[cruxamber,dashed,line width=1.05pt]
+    (axis cs:#1,0) -- (axis cs:#1,105);
+}
+
+% Each run starts at its first API usage, so its deadline and end occur at
+% slightly different elapsed hours. The caller supplies the generated points.
+\newcommand{\TimelineWallClockPlot}[1]{%
+  \addplot+[draw=timelinewall,line width=1.45pt,mark=*,mark size=1.1pt,
+            mark options={fill=timelinewall,draw=timelinewall}]
+    coordinates {#1};
+  \addlegendentry{Wall-clock time}%
+}
+
+\newcommand{\TimelineExtensionKey}{%
+  {\scriptsize\headingfont\bfseries\color{cruxink}
+  \tikz[baseline=-0.45ex]{\draw[cruxamber,dashed,line width=1.05pt]
+    (0,0)--(0.65,0);}%
+  \enspace 120-hour deadline; 24-hour extension begins.\par}%
+}
+
+\colorlet{timelineMuted}{timelineink!68}
+
+\newcommand{\TimelineEventText}[2]{%
+  \tikz[baseline=-0.65ex]{\node[timeline badge,minimum size=4.8mm] {#1};}
+  & #2 \\
+}
+
+% Compact, vector rating marks for use inside native LaTeX tables.
+\newcommand{\RatingDots}[2]{%
+  \begin{tikzpicture}[baseline=-0.55ex,x=0.72em,y=0.72em]
+    \foreach \ratingindex in {1,...,#2}{%
+      \ifnum\ratingindex>#1
+        \draw[cruxink,line width=0.55pt] (\ratingindex,0) circle[radius=0.28];
+      \else
+        \fill[cruxink] (\ratingindex,0) circle[radius=0.28];
+      \fi
+    }
+  \end{tikzpicture}%
+  \enspace\textbf{#1/#2}%
+}
+
+% Shared styles for the milestone dumbbell charts.
+\definecolor{milestoneplanned}{HTML}{174B70}
+\definecolor{milestoneactual}{HTML}{5AB2E8}
+\definecolor{milestonegrid}{HTML}{EEF0F2}
+\tikzset{
+  milestone label/.style={
+    anchor=east,align=right,text width=3.25cm,
+    font=\scriptsize\headingfont,text=cruxink
+  },
+  milestone legend/.style={font=\scriptsize\headingfont,text=cruxink},
+  paper card/.style={
+    draw=reviewgrid,rounded corners=1.4mm,line width=0.55pt,fill=white
+  }
+}

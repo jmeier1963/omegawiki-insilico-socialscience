@@ -57,5 +57,5 @@ A mechanistically interesting finding that connects internal LLM reasoning to so
 
 ## Related
 
-- supports: [[reasoning-models-exhibit-societies-of-thought]]
+- supports: [[reasoning-models-exhibit-emergent-societies-thought]]
 - [[societies-of-thought]]

@@ -26,9 +26,9 @@ This approach extends classical agent-based modeling (ABM) by replacing hand-cod
 
 ## Seminal works
 
-- [[generative-agents-park]] — Park et al. 2023, "Generative Agents: Interactive Simulacra of Human Behavior"
-- [[concordia-framework]] — DeepMind Concordia simulation framework
-- [[agent-society]] — AgentSociety 2025
+- [[generative-agents-interactive-simulacra-human-behavior]] — Park et al. 2023, "Generative Agents: Interactive Simulacra of Human Behavior"
+- [[concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior]] — DeepMind Concordia simulation framework
+- [[agentsociety-large-scale-simulation-llm-driven]] — AgentSociety 2025
 - [[mobility-network-models-covid-19-explain]] — Chang et al. 2020, mobility-network SEIR model explains COVID-19 health disparities (pre-LLM seminal baseline)
 
 ## SOTA tracker

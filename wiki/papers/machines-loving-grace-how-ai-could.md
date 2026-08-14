@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [marginal returns to intelligence, AI-accelerated science, compressed century, biology, power concentration, beneficial AI, AI upside]
 domain: NLP
 code_url: ""
-cited_by: []
+cited_by: [when-ai-builds-itself]
 ---
 
 ## Problem

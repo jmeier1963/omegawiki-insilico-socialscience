@@ -59,4 +59,4 @@ A well-motivated HCI+NLP paper that solves a real problem: letting non-technical
 ## Related
 
 - [[llm-roleplay-skill-training]] (introduces this use case)
-- supports: [[principle-adherence-prompting-improves-llm-roleplay-fidelity]]
+- supports: [[principle-adherence-prompting-improves-llm-roleplay]]
