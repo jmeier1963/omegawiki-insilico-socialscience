@@ -1,0 +1,440 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ajith et~al.(2024)Ajith, Xia, Chevalier, Goyal, Chen, and
+  Gao]{Ajith2024LitSearchAR}
+Anirudh Ajith, Mengzhou Xia, Alexis Chevalier, Tanya Goyal, Danqi Chen, and
+  Tianyu Gao.
+\newblock {LitSearch: A Retrieval Benchmark for Scientific Literature Search}.
+\newblock \emph{ArXiv}, abs/2407.18940, 2024.
+
+\bibitem[Anderson et~al.(2024)Anderson, Shah, and
+  Kreminski]{Anderson2024HomogenizationEO}
+Barrett~R Anderson, Jash~Hemant Shah, and Max Kreminski.
+\newblock {Homogenization Effects of Large Language Models on Human Creative
+  Ideation}.
+\newblock In \emph{Proceedings of the 16th Conference on Creativity \&
+  Cognition}, 2024.
+
+\bibitem[Ashkinaze et~al.(2024)Ashkinaze, Mendelsohn, Li, Budak, and
+  Gilbert]{Ashkinaze2024HowAI}
+Joshua Ashkinaze, Julia Mendelsohn, Qiwei Li, Ceren Budak, and Eric Gilbert.
+\newblock {How AI Ideas Affect the Creativity, Diversity, and Evolution of
+  Human Ideas: Evidence From a Large, Dynamic Experiment}.
+\newblock \emph{ArXiv}, abs/2401.13481, 2024.
+
+\bibitem[Baek et~al.(2024)Baek, Jauhar, Cucerzan, and
+  Hwang]{Baek2024ResearchAgentIR}
+Jinheon Baek, Sujay~Kumar Jauhar, Silviu Cucerzan, and Sung~Ju Hwang.
+\newblock {ResearchAgent: Iterative Research Idea Generation over Scientific
+  Literature with Large Language Models}.
+\newblock \emph{ArXiv}, abs/2404.07738, 2024.
+
+\bibitem[Bakhtin et~al.(2022)Bakhtin, Brown, Dinan, Farina, Flaherty, Fried,
+  Goff, Gray, Hu, Jacob, Komeili, Konath, Kwon, Lerer, Lewis, Miller, Mitts,
+  Renduchintala, Roller, Rowe, Shi, Spisak, Wei, Wu, Zhang, and
+  Zijlstra]{Bakhtin2022HumanlevelPI}
+Anton Bakhtin, Noam Brown, Emily Dinan, Gabriele Farina, Colin Flaherty, Daniel
+  Fried, Andrew Goff, Jonathan Gray, Hengyuan Hu, Athul~Paul Jacob, Mojtaba
+  Komeili, Karthik Konath, Minae Kwon, Adam Lerer, Mike Lewis, Alexander~H.
+  Miller, Sandra Mitts, Adithya Renduchintala, Stephen Roller, Dirk Rowe,
+  Weiyan Shi, Joe Spisak, Alexander Wei, David~J. Wu, Hugh Zhang, and Markus
+  Zijlstra.
+\newblock Human-level play in the game of diplomacy by combining language
+  models with strategic reasoning.
+\newblock \emph{Science}, 378:\penalty0 1067 -- 1074, 2022.
+
+\bibitem[Beygelzimer et~al.(2021)Beygelzimer, Dauphin, Liang, and
+  Vaughan]{beygelzimer2021neurips}
+Alina Beygelzimer, Yann Dauphin, Percy Liang, and Jennifer~Wortman Vaughan.
+\newblock The neurips 2021 consistency experiment.
+\newblock
+  \url{https://blog.neurips.cc/2021/12/08/the-neurips-2021-consistency-experiment},
+  2021.
+\newblock Neural Information Processing Systems blog post.
+
+\bibitem[Brown et~al.(2024)Brown, Juravsky, Ehrlich, Clark, Le, R'e, and
+  Mirhoseini]{Brown2024LargeLM}
+Bradley Brown, Jordan Juravsky, Ryan Ehrlich, Ronald Clark, Quoc~V. Le,
+  Christopher R'e, and Azalia Mirhoseini.
+\newblock {Large Language Monkeys: Scaling Inference Compute with Repeated
+  Sampling}.
+\newblock \emph{ArXiv}, abs/2407.21787, 2024.
+
+\bibitem[Chakrabarty et~al.(2024)Chakrabarty, Laban, Agarwal, Muresan, and
+  Wu]{Chakrabarty2023ArtOA}
+Tuhin Chakrabarty, Philippe Laban, Divyansh Agarwal, Smaranda Muresan, and
+  Chien-Sheng Wu.
+\newblock {Art or Artifice? Large Language Models and the False Promise of
+  Creativity}.
+\newblock In \emph{CHI}, 2024.
+
+\bibitem[Chen et~al.(2023)Chen, Ma, Wang, and Cohen]{Chen2022ProgramOT}
+Wenhu Chen, Xueguang Ma, Xinyi Wang, and William~W. Cohen.
+\newblock {Program of Thoughts Prompting: Disentangling Computation from
+  Reasoning for Numerical Reasoning Tasks}.
+\newblock \emph{TMLR}, 2023.
+
+\bibitem[Collins et~al.(2024)Collins, Jiang, Frieder, Wong, Zilka, Bhatt,
+  Lukasiewicz, Wu, Tenenbaum, Hart, Gowers, Li, Weller, and
+  Jamnik]{Collins2024EvaluatingLM}
+Katherine~M. Collins, Albert~Qiaochu Jiang, Simon Frieder, Li~Siang Wong, Miri
+  Zilka, Umang Bhatt, Thomas Lukasiewicz, Yuhuai Wu, Joshua~B. Tenenbaum,
+  William Hart, Timothy Gowers, Wenda Li, Adrian Weller, and Mateja Jamnik.
+\newblock {Evaluating language models for mathematics through interactions}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 121, 2024.
+
+\bibitem[D'Arcy et~al.(2024)D'Arcy, Hope, Birnbaum, and
+  Downey]{DArcy2024MARGMR}
+Mike D'Arcy, Tom Hope, Larry Birnbaum, and Doug Downey.
+\newblock {MARG: Multi-Agent Review Generation for Scientific Papers}.
+\newblock \emph{ArXiv}, abs/2401.04259, 2024.
+
+\bibitem[Dhuliawala et~al.(2023)Dhuliawala, Komeili, Xu, Raileanu, Li,
+  Celikyilmaz, and Weston]{Dhuliawala2023ChainofVerificationRH}
+Shehzaad Dhuliawala, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli
+  Celikyilmaz, and Jason Weston.
+\newblock {Chain-of-Verification Reduces Hallucination in Large Language
+  Models}.
+\newblock \emph{ArXiv}, abs/2309.11495, 2023.
+
+\bibitem[Diao et~al.(2024)Diao, Wang, Lin, Liu, and Zhang]{Diao2023ActivePW}
+Shizhe Diao, Pengcheng Wang, Yong Lin, Xiang Liu, and Tong Zhang.
+\newblock {Active Prompting with Chain-of-Thought for Large Language Models}.
+\newblock In \emph{ACL}, 2024.
+
+\bibitem[Durmus et~al.(2022)Durmus, Ladhak, and
+  Hashimoto]{Durmus2022SpuriousCI}
+Esin Durmus, Faisal Ladhak, and Tatsunori~B. Hashimoto.
+\newblock {Spurious Correlations in Reference-Free Evaluation of Text
+  Generation}.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2022.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:248300077}.
+
+\bibitem[Gu et~al.(2024)Gu, Shang, Jiang, Kuang, Lin, Lyu, Mao, Pan, Wu, Yu,
+  Zhang, Zhang, Zhu, Merrill, Heer, and Althoff]{Gu2024BLADEBL}
+Ken Gu, Ruoxi Shang, Ruien Jiang, Keying Kuang, Richard-John Lin, Donghe Lyu,
+  Yue Mao, Youran Pan, Teng Wu, Jiaqian Yu, Yikun Zhang, Tianmai~M. Zhang,
+  Lanyi Zhu, Mike~A. Merrill, Jeffrey Heer, and Tim Althoff.
+\newblock {BLADE: Benchmarking Language Model Agents for Data-Driven Science}.
+\newblock \emph{ArXiv}, abs/2408.09667, 2024.
+
+\bibitem[Guo et~al.(2024)Guo, Deng, Wen, Chen, Chang, and
+  Wang]{Guo2024DSAgentAD}
+Siyuan Guo, Cheng Deng, Ying Wen, Hechang Chen, Yi~Chang, and Jun Wang.
+\newblock {DS-Agent: Automated Data Science by Empowering Large Language Models
+  with Case-Based Reasoning}.
+\newblock In \emph{ICML}, 2024.
+
+\bibitem[Hewitt et~al.(2024)Hewitt, Ashokkumar, Ghezae, and
+  Willer]{predictSocialScience}
+Luke Hewitt, Ashwini Ashokkumar, Isaias Ghezae, and Robb Willer.
+\newblock {Predicting Results of Social Science Experiments Using Large
+  Language Models}.
+\newblock \emph{Preprint}, 2024.
+\newblock URL \url{https://docsend.com/view/ity6yf2dansesucf}.
+
+\bibitem[Hu et~al.(2024)Hu, Zhao, Wei, Chai, Wang, Wang, Su, Xu, Zhu, Cheng,
+  Yuan, Kuang, Yang, Yang, and Wu]{Hu2024InfiAgentDABenchEA}
+Xueyu Hu, Ziyu Zhao, Shuang Wei, Ziwei Chai, Guoyin Wang, Xuwu Wang, Jing Su,
+  Jingjing Xu, Ming Zhu, Yao Cheng, Jianbo Yuan, Kun Kuang, Yang Yang, Hongxia
+  Yang, and Fei Wu.
+\newblock {InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks}.
+\newblock In \emph{ICML}, 2024.
+
+\bibitem[Huang et~al.(2024)Huang, Vora, Liang, and
+  Leskovec]{Huang2023MLAgentBenchEL}
+Qian Huang, Jian Vora, Percy Liang, and Jure Leskovec.
+\newblock {MLAgentBench: Evaluating Language Agents on Machine Learning
+  Experimentation}.
+\newblock In \emph{ICML}, 2024.
+
+\bibitem[Ifargan et~al.(2024)Ifargan, Hafner, Kern, Alcalay, and
+  Kishony]{Ifargan2024AutonomousLR}
+Tal Ifargan, Lukas Hafner, Maor Kern, Ori Alcalay, and Roy Kishony.
+\newblock {Autonomous LLM-driven research from data to human-verifiable
+  research papers}.
+\newblock \emph{ArXiv}, abs/2404.17605, 2024.
+
+\bibitem[Kang and Xiong(2024)]{Kang2024ResearchArenaBL}
+Hao Kang and Chenyan Xiong.
+\newblock {ResearchArena: Benchmarking LLMs' Ability to Collect and Organize
+  Information as Research Agents}.
+\newblock \emph{ArXiv}, abs/2406.10291, 2024.
+
+\bibitem[Lam et~al.(2024)Lam, Teoh, Landay, Heer, and
+  Bernstein]{Lam2024ConceptIA}
+Michelle~S. Lam, Janice Teoh, James Landay, Jeffrey Heer, and Michael~S.
+  Bernstein.
+\newblock {Concept Induction: Analyzing Unstructured Text with High-Level
+  Concepts Using LLooM}.
+\newblock In \emph{CHI}, 2024.
+
+\bibitem[Lehr et~al.(2024)Lehr, Caliskan, Liyanage, and
+  Banaji]{Lehr2024ChatGPTAR}
+Steven~A. Lehr, Aylin Caliskan, Suneragiri Liyanage, and Mahzarin~R. Banaji.
+\newblock {ChatGPT as Research Scientist: Probing GPT's Capabilities as a
+  Research Librarian, Research Ethicist, Data Generator and Data Predictor}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 121 35, 2024.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  Kuttler, Lewis, tau Yih, Rockt{\"a}schel, Riedel, and
+  Kiela]{Lewis2020RetrievalAugmentedGF}
+Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich Kuttler, Mike Lewis, Wen tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock {Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}.
+\newblock In \emph{NeurIPS}, 2020.
+
+\bibitem[Li et~al.(2024)Li, Patel, Wang, and Du]{Li2024MLRCopilotAM}
+Ruochen Li, Teerth Patel, Qingyun Wang, and Xinya Du.
+\newblock {MLR-Copilot: Autonomous Machine Learning Research based on Large
+  Language Models Agents}.
+\newblock \emph{ArXiv}, abs/2408.14033, 2024.
+
+\bibitem[Li et~al.(2022)Li, Choi, Chung, Kushman, Schrittwieser, Leblond, Tom,
+  Eccles, Keeling, Gimeno, Lago, Hubert, Choy, de, d’Autume, Babuschkin,
+  Chen, Huang, Welbl, Gowal, Alexey, Cherepanov, Molloy, Mankowitz, Robson,
+  Kohli, de, Freitas, Kavukcuoglu, and Vinyals]{Li2022CompetitionlevelCG}
+Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser,
+  R{\'e}mi Leblond, Tom, Eccles, James Keeling, Felix Gimeno, Agustin~Dal Lago,
+  Thomas Hubert, Peter Choy, Cyprien de, Masson d’Autume, Igor Babuschkin,
+  Xinyun Chen, Po-Sen Huang, Johannes Welbl, Sven Gowal, Alexey, Cherepanov,
+  James Molloy, Daniel~Jaymin Mankowitz, Esme~Sutherland Robson, Pushmeet
+  Kohli, Nando de, Freitas, Koray Kavukcuoglu, and Oriol Vinyals.
+\newblock {Competition-level code generation with AlphaCode}.
+\newblock \emph{Science}, 378:\penalty0 1092 -- 1097, 2022.
+
+\bibitem[Liang et~al.(2024)Liang, Zhang, Cao, Wang, Ding, Yang, Vodrahalli, He,
+  Smith, Yin, McFarland, and Zou]{Liang2023CanLL}
+Weixin Liang, Yuhui Zhang, Hancheng Cao, Binglu Wang, Daisy~Yi Ding, Xinyu
+  Yang, Kailas Vodrahalli, Siyu He, Daniel~Scott Smith, Yian Yin, Daniel~A.
+  McFarland, and James Zou.
+\newblock {Can Large Language Models Provide Useful Feedback on Research
+  Papers? A Large-Scale Empirical Analysis}.
+\newblock \emph{NEJM AI}, 1\penalty0 (8), 2024.
+
+\bibitem[Liu et~al.(2024)Liu, Chen, Cheng, Yu, Ran, Mo, Tang, and
+  Huang]{Liu2023HowAP}
+Yiren Liu, Si~Chen, Haocong Cheng, Mengxia Yu, Xiao Ran, Andrew Mo, Yiliu Tang,
+  and Yun Huang.
+\newblock {How AI Processing Delays Foster Creativity: Exploring Research
+  Question Co-Creation with an LLM-based Agent}.
+\newblock In \emph{CHI}, 2024.
+
+\bibitem[Lu et~al.(2024)Lu, Lu, Lange, Foerster, Clune, and Ha]{AIScientist}
+Chris Lu, Cong Lu, Robert~Tjarko Lange, Jakob Foerster, Jeff Clune, and David
+  Ha.
+\newblock {The AI Scientist: Towards Fully Automated Open-Ended Scientific
+  Discovery }.
+\newblock \emph{ArXiv}, abs/2408.06292, 2024.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
+  Alon, Dziri, Prabhumoye, Yang, Welleck, Majumder, Gupta, Yazdanbakhsh, and
+  Clark]{Madaan2023SelfRefineIR}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+  Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Sean
+  Welleck, Bodhisattwa~Prasad Majumder, Shashank Gupta, Amir Yazdanbakhsh, and
+  Peter Clark.
+\newblock {Self-Refine: Iterative Refinement with Self-Feedback}.
+\newblock In \emph{NeurIPS}, 2023.
+
+\bibitem[Majumder et~al.(2024)Majumder, Surana, Agarwal, Dalvi, Meena, Prakhar,
+  Vora, Khot, Sabharwal, and Clark]{Majumder2024DiscoveryBenchTD}
+Bodhisattwa~Prasad Majumder, Harshit Surana, Dhruv Agarwal, Bhavana Dalvi,
+  Abhijeetsingh Meena, Aryan Prakhar, Tirth Vora, Tushar Khot, Ashish
+  Sabharwal, and Peter Clark.
+\newblock {DiscoveryBench: Towards Data-Driven Discovery with Large Language
+  Models}.
+\newblock \emph{ArXiv}, abs/2407.01725, 2024.
+
+\bibitem[Manning et~al.(2024)Manning, Zhu, and Horton]{Manning2024AutomatedSS}
+Benjamin~S. Manning, Kehang Zhu, and John~J. Horton.
+\newblock {Automated Social Science: Language Models as Scientist and
+  Subjects}.
+\newblock \emph{SSRN Electronic Journal}, 2024.
+
+\bibitem[Padmakumar and He(2024)]{Padmakumar2023DoesWW}
+Vishakh Padmakumar and He~He.
+\newblock {Does Writing with Language Models Reduce Content Diversity?}
+\newblock In \emph{ICLR}, 2024.
+
+\bibitem[Press et~al.(2024)Press, Hochlehnert, Prabhu, Udandarao, Press, and
+  Bethge]{Press2024CiteMECL}
+Ori Press, Andreas Hochlehnert, Ameya Prabhu, Vishaal Udandarao, Ofir Press,
+  and Matthias Bethge.
+\newblock {CiteME: Can Language Models Accurately Cite Scientific Claims?}
+\newblock \emph{ArXiv}, abs/2407.12861, 2024.
+
+\bibitem[Qin et~al.(2024)Qin, Jagerman, Hui, Zhuang, Wu, Shen, Liu, Liu,
+  Metzler, Wang, and Bendersky]{Qin2023LargeLM}
+Zhen Qin, Rolf Jagerman, Kai Hui, Honglei Zhuang, Junru Wu, Jiaming Shen,
+  Tianqi Liu, Jialu Liu, Donald Metzler, Xuanhui Wang, and Michael Bendersky.
+\newblock {Large Language Models are Effective Text Rankers with Pairwise
+  Ranking Prompting}.
+\newblock In \emph{ACL}, 2024.
+
+\bibitem[Reimers and Gurevych(2020)]{reimers-2020-multilingual-sentence-bert}
+Nils Reimers and Iryna Gurevych.
+\newblock {Making Monolingual Sentence Embeddings Multilingual using Knowledge
+  Distillation}.
+\newblock In \emph{EMNLP}, 2020.
+
+\bibitem[Schulhoff et~al.(2024)Schulhoff, Ilie, Balepur, Kahadze, Liu, Si, Li,
+  Gupta, Han, Schulhoff, Dulepet, Vidyadhara, Ki, Agrawal, Pham, Kroiz, Li,
+  Tao, Srivastava, Costa, Gupta, Rogers, Goncearenco, Sarli, Galynker, Peskoff,
+  Carpuat, White, Anadkat, Hoyle, and Resnik]{Schulhoff2024ThePR}
+Sander Schulhoff, Michael Ilie, Nishant Balepur, Konstantine Kahadze, Amanda
+  Liu, Chenglei Si, Yinheng Li, Aayush Gupta, HyoJung Han, Sevien Schulhoff,
+  Pranav~Sandeep Dulepet, Saurav Vidyadhara, Dayeon Ki, Sweta Agrawal, Chau
+  Pham, Gerson~C. Kroiz, Feileen Li, Hudson Tao, Ashay Srivastava, Hevander~Da
+  Costa, Saloni Gupta, Megan~L. Rogers, Inna Goncearenco, Giuseppe Sarli, Igor
+  Galynker, Denis Peskoff, Marine Carpuat, Jules White, Shyamal Anadkat,
+  Alexander~Miserlis Hoyle, and Philip Resnik.
+\newblock {The Prompt Report: A Systematic Survey of Prompting Techniques}.
+\newblock \emph{ArXiv}, abs/2406.06608, 2024.
+
+\bibitem[Shi et~al.(2024)Shi, Min, Yasunaga, Seo, James, Lewis, Zettlemoyer,
+  and tau Yih]{Shi2023REPLUGRB}
+Weijia Shi, Sewon Min, Michihiro Yasunaga, Minjoon Seo, Rich James, Mike Lewis,
+  Luke Zettlemoyer, and Wen tau Yih.
+\newblock {REPLUG: Retrieval-Augmented Black-Box Language Models}.
+\newblock In \emph{NAACL}, 2024.
+
+\bibitem[Si et~al.(2023)Si, Gan, Yang, Wang, Wang, Boyd-Graber, and
+  Wang]{Si2022PromptingGT}
+Chenglei Si, Zhe Gan, Zhengyuan Yang, Shuohang Wang, Jianfeng Wang, Jordan~L.
+  Boyd-Graber, and Lijuan Wang.
+\newblock {Prompting GPT-3 To Be Reliable}.
+\newblock In \emph{ICLR}, 2023.
+
+\bibitem[Simsek et~al.(2024)Simsek, de~Vaan, and van~de Rijt]{Simsek2024DoGP}
+M{\"u}ge Simsek, Mathijs de~Vaan, and Arnout van~de Rijt.
+\newblock Do grant proposal texts matter for funding decisions? a field
+  experiment.
+\newblock \emph{Scientometrics}, 129:\penalty0 2521--2532, 2024.
+
+\bibitem[Tian et~al.(2024)Tian, Gao, Zhang, Chen, Fan, Guo, Haas, Ji,
+  Krongchon, Li, Liu, Luo, Ma, Tong, Trinh, Tian, Wang, Wu, Xiong, Yin, Zhu,
+  Lieret, Lu, Liu, Du, Tao, Press, Callan, Huerta, and Peng]{Tian2024SciCodeAR}
+Minyang Tian, Luyu Gao, Shizhuo~Dylan Zhang, Xinan Chen, Cunwei Fan, Xuefei
+  Guo, Roland Haas, Pan Ji, Kittithat Krongchon, Yao Li, Shengyan Liu, Di~Luo,
+  Yutao Ma, Hao Tong, Kha Trinh, Chenyu Tian, Zihan Wang, Bohao Wu, Yanyu
+  Xiong, Shengzhu Yin, Min Zhu, Kilian Lieret, Yanxin Lu, Genglin Liu, Yufeng
+  Du, Tianhua Tao, Ofir Press, Jamie Callan, E.~A. Huerta, and Hao Peng.
+\newblock {SciCode: A Research Coding Benchmark Curated by Scientists}.
+\newblock \emph{ArXiv}, abs/2407.13168, 2024.
+
+\bibitem[Trinh et~al.(2024)Trinh, Wu, Le, He, and Luong]{Trinh2024SolvingOG}
+Trieu~H. Trinh, Yuhuai Wu, Quoc~V. Le, He~He, and Thang Luong.
+\newblock {Solving olympiad geometry without human demonstrations}.
+\newblock \emph{Nature}, 625:\penalty0 476 -- 482, 2024.
+
+\bibitem[Wang et~al.(2024)Wang, Downey, Ji, and Hope]{Wang2023SciMONSI}
+Qingyun Wang, Doug Downey, Heng Ji, and Tom Hope.
+\newblock {SciMON: Scientific Inspiration Machines Optimized for Novelty}.
+\newblock In \emph{ACL}, 2024.
+
+\bibitem[Wang et~al.(2023)Wang, Wei, Schuurmans, Le, hsin Chi, and
+  Zhou]{Wang2022SelfConsistencyIC}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed~Huai hsin Chi, and Denny
+  Zhou.
+\newblock {Self-Consistency Improves Chain of Thought Reasoning in Language
+  Models}.
+\newblock In \emph{ICLR}, 2023.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, hsin Chi, Xia, Le, and
+  Zhou]{Wei2022ChainOT}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed~Huai hsin Chi,
+  F.~Xia, Quoc Le, and Denny Zhou.
+\newblock {Chain of Thought Prompting Elicits Reasoning in Large Language
+  Models}.
+\newblock In \emph{NeurIPS}, 2022.
+
+\bibitem[Weller et~al.(2023)Weller, Marone, Weir, Lawrie, Khashabi, and
+  Durme]{Weller2023AccordingT}
+Orion Weller, Marc Marone, Nathaniel Weir, Dawn~J Lawrie, Daniel Khashabi, and
+  Benjamin~Van Durme.
+\newblock {“According to . . . ”: Prompting Language Models Improves
+  Quoting from Pre-Training Data}.
+\newblock In \emph{EACL}, 2023.
+
+\bibitem[Weston and Sukhbaatar(2023)]{Weston2023System2A}
+Jason Weston and Sainbayar Sukhbaatar.
+\newblock {System 2 Attention (is something you might need too)}.
+\newblock \emph{ArXiv}, abs/2311.11829, 2023.
+
+\bibitem[Yang et~al.(2024)Yang, Du, Li, Zheng, Poria, and
+  Cambria]{Yang2023LargeLM}
+Zonglin Yang, Xinya Du, Junxian Li, Jie Zheng, Soujanya Poria, and E.~Cambria.
+\newblock {Large Language Models for Automated Open-domain Scientific
+  Hypotheses Discovery}.
+\newblock \emph{ACL Findings}, 2024.
+
+\bibitem[Yao et~al.(2023)Yao, Yu, Zhao, Shafran, Griffiths, Cao, and
+  Narasimhan]{Yao2023TreeOT}
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas~L. Griffiths, Yuan
+  Cao, and Karthik Narasimhan.
+\newblock {Tree of Thoughts: Deliberate Problem Solving with Large Language
+  Models}.
+\newblock In \emph{NeurIPS}, 2023.
+
+\bibitem[Yasunaga et~al.(2024)Yasunaga, Chen, Li, Pasupat, Leskovec, Liang,
+  hsin Chi, and Zhou]{Yasunaga2023LargeLM}
+Michihiro Yasunaga, Xinyun Chen, Yujia Li, Panupong Pasupat, Jure Leskovec,
+  Percy Liang, Ed~Huai hsin Chi, and Denny Zhou.
+\newblock {Large Language Models as Analogical Reasoners}.
+\newblock In \emph{ICLR}, 2024.
+
+\bibitem[Zhang et~al.(2024)Zhang, Xie, Huang, Ma, Pan, Liu, Xiong, Ergen, Shim,
+  Lee, and Mei]{Zhang2024MASSWAN}
+Xingjian Zhang, Yutong Xie, Jin Huang, Jinge Ma, Zhaoying Pan, Qijia Liu,
+  Ziyang Xiong, Tolga Ergen, Dongsub Shim, Honglak Lee, and Qiaozhu Mei.
+\newblock {MASSW: A New Dataset and Benchmark Tasks for AI-Assisted Scientific
+  Workflows}.
+\newblock \emph{ArXiv}, abs/2406.06357, 2024.
+
+\bibitem[Zheng et~al.(2024)Zheng, Mishra, Chen, Cheng, hsin Chi, Le, and
+  Zhou]{Zheng2023TakeAS}
+Huaixiu~Steven Zheng, Swaroop Mishra, Xinyun Chen, Heng-Tze Cheng, Ed~Huai hsin
+  Chi, Quoc~V. Le, and Denny Zhou.
+\newblock {Take a Step Back: Evoking Reasoning via Abstraction in Large
+  Language Models}.
+\newblock In \emph{ICLR}, 2024.
+
+\bibitem[Zhong et~al.(2022)Zhong, Snell, Klein, and
+  Steinhardt]{Zhong2022DescribingDB}
+Ruiqi Zhong, Charles~Burton Snell, Dan Klein, and Jacob Steinhardt.
+\newblock {Describing Differences between Text Distributions with Natural
+  Language}.
+\newblock In \emph{ICML}, 2022.
+
+\bibitem[Zhong et~al.(2023)Zhong, Zhang, Li, Ahn, Klein, and
+  Steinhardt]{Zhong2023GoalDD}
+Ruiqi Zhong, Peter Zhang, Steve Li, Jinwoo Ahn, Dan Klein, and Jacob
+  Steinhardt.
+\newblock {Goal Driven Discovery of Distributional Differences via Language
+  Descriptions}.
+\newblock In \emph{NeurIPS}, 2023.
+
+\bibitem[Zhou et~al.(2023)Zhou, Scharli, Hou, Wei, Scales, Wang, Schuurmans,
+  Bousquet, Le, and hsin Chi]{Zhou2022LeasttoMostPE}
+Denny Zhou, Nathanael Scharli, Le~Hou, Jason Wei, Nathan Scales, Xuezhi Wang,
+  Dale Schuurmans, Olivier Bousquet, Quoc Le, and Ed~Huai hsin Chi.
+\newblock {Least-to-Most Prompting Enables Complex Reasoning in Large Language
+  Models}.
+\newblock In \emph{ICLR}, 2023.
+
+\bibitem[Zhou et~al.(2024)Zhou, Xiong, Savarese, and Wu]{Zhou2024SharedIL}
+Yilun Zhou, Caiming Xiong, Silvio Savarese, and Chien-Sheng Wu.
+\newblock {Shared Imagination: LLMs Hallucinate Alike}.
+\newblock \emph{ArXiv}, abs/2407.16604, 2024.
+
+\end{thebibliography}

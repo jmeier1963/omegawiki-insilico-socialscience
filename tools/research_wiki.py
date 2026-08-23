@@ -23,6 +23,8 @@ Commands:
     batch-edges <wiki_root>                          # reads JSON array from stdin
     dedup-edges <wiki_root>
     dedup-citations <wiki_root>
+    normalize-edges <wiki_root> [--dry-run]   # add missing kind/ prefixes to endpoints
+    retype-edges <wiki_root> [--dry-run]      # reads JSON array from stdin; retype legacy edges
 
     # Knowledge queries
     find <wiki_root> <entity_type> [--field value ...]
@@ -749,6 +751,159 @@ def dedup_edges(wiki_root: str) -> None:
         "\n".join(kept) + ("\n" if kept else ""), encoding="utf-8"
     )
     print(json.dumps({"status": "ok", "kept": len(kept), "removed": removed}))
+
+
+def normalize_edges(wiki_root: str, dry_run: bool = False) -> None:
+    """Add the missing ``kind/`` prefix to bare-slug edge endpoints.
+
+    Edges written before the ``kind/slug`` node-id convention store endpoints as
+    bare slugs. ``lint.py`` skips such endpoints (it bails on ``"/" not in id``)
+    while ``visualize_graph.py`` requires the prefix and silently drops the edge,
+    so these rows are invisible in the rendered graph and unreported by lint.
+
+    Resolution is conservative: a bare slug is rewritten only when exactly one
+    entity directory holds a matching page. Slugs that resolve to several kinds,
+    or to none, are left untouched and reported so a human can decide.
+    """
+    edges_path = Path(wiki_root) / DERIVED_DIR / "edges.jsonl"
+    if not edges_path.exists():
+        print(json.dumps({"status": "ok", "rewritten": 0, "unresolved": [], "ambiguous": []}))
+        return
+
+    # slug -> [kind, ...]
+    index: dict[str, list[str]] = {}
+    for kind in ENTITY_DIRS:
+        kind_dir = Path(wiki_root) / kind
+        if not kind_dir.is_dir():
+            continue
+        for page in kind_dir.glob("*.md"):
+            index.setdefault(page.stem, []).append(kind)
+
+    lines = edges_path.read_text(encoding="utf-8").splitlines()
+    out: list[str] = []
+    rewritten = 0
+    unresolved: list[str] = []
+    ambiguous: list[dict] = []
+
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        try:
+            edge = json.loads(stripped)
+        except json.JSONDecodeError:
+            out.append(stripped)  # preserve malformed lines verbatim
+            continue
+
+        changed = False
+        for side in ("from", "to"):
+            node_id = str(edge.get(side, ""))
+            if not node_id or "/" in node_id:
+                continue
+            kinds = index.get(node_id, [])
+            if len(kinds) == 1:
+                edge[side] = f"{kinds[0]}/{node_id}"
+                changed = True
+            elif len(kinds) > 1:
+                ambiguous.append({"slug": node_id, "kinds": sorted(kinds)})
+            else:
+                unresolved.append(node_id)
+
+        if changed:
+            rewritten += 1
+        out.append(json.dumps(edge, ensure_ascii=False))
+
+    if not dry_run:
+        edges_path.write_text("\n".join(out) + ("\n" if out else ""), encoding="utf-8")
+
+    print(json.dumps({
+        "status": "ok",
+        "dry_run": dry_run,
+        "total": len(out),
+        "rewritten": rewritten,
+        "unresolved": sorted(set(unresolved)),
+        "ambiguous": ambiguous,
+    }, ensure_ascii=False))
+
+
+def retype_edges(wiki_root: str, dry_run: bool = False) -> None:
+    """Retype legacy edges from a reviewed mapping read as a JSON array on stdin.
+
+    Each item must carry ``line`` (1-based, counting non-blank lines), the
+    expected ``from``/``to``/``old_type`` as a guard, plus ``new_type`` and
+    ``confidence``. The guard is what makes this safe to re-run against a file
+    someone else may have touched: a row whose current content does not match
+    the expectation is refused rather than rewritten.
+
+    Retyping is a semantic judgement per edge, so this command deliberately does
+    not infer the target type; it only applies a mapping a human approved.
+    """
+    edges_path = Path(wiki_root) / DERIVED_DIR / "edges.jsonl"
+    if not edges_path.exists():
+        print(json.dumps({"status": "error", "reason": "edges.jsonl not found"}))
+        sys.exit(1)
+
+    try:
+        mapping = json.loads(sys.stdin.read())
+    except json.JSONDecodeError as exc:
+        print(json.dumps({"status": "error", "reason": f"stdin is not valid JSON: {exc}"}))
+        sys.exit(1)
+    if not isinstance(mapping, list):
+        print(json.dumps({"status": "error", "reason": "stdin must be a JSON array"}))
+        sys.exit(1)
+
+    lines = [ln for ln in edges_path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    by_line = {int(m["line"]): m for m in mapping}
+
+    applied, refused = 0, []
+    out = []
+    for idx, line in enumerate(lines, 1):
+        spec = by_line.get(idx)
+        if spec is None:
+            out.append(line)
+            continue
+        try:
+            edge = json.loads(line)
+        except json.JSONDecodeError:
+            refused.append({"line": idx, "reason": "malformed JSON"})
+            out.append(line)
+            continue
+
+        mismatch = [f for f, key in (("from", "from"), ("to", "to"), ("old_type", "type"))
+                    if str(spec.get(f, "")) != str(edge.get(key, ""))]
+        if mismatch:
+            refused.append({"line": idx, "reason": f"guard mismatch on {', '.join(mismatch)}"})
+            out.append(line)
+            continue
+
+        new_type = str(spec["new_type"])
+        if new_type not in VALID_EDGE_TYPES:
+            refused.append({"line": idx, "reason": f"unknown edge type {new_type!r}"})
+            out.append(line)
+            continue
+
+        edge["type"] = new_type
+        if "confidence" in spec:
+            edge["confidence"] = str(spec["confidence"])
+        if edge_is_symmetric(new_type):
+            edge["from"], edge["to"] = sorted([str(edge["from"]), str(edge["to"])])
+            edge["symmetric"] = True
+        out.append(json.dumps(edge, ensure_ascii=False))
+        applied += 1
+
+    if not dry_run and not refused:
+        edges_path.write_text("\n".join(out) + ("\n" if out else ""), encoding="utf-8")
+
+    print(json.dumps({
+        "status": "ok" if not refused else "refused",
+        "dry_run": dry_run,
+        "requested": len(by_line),
+        "applied": applied,
+        "written": bool(not dry_run and not refused),
+        "refused": refused,
+    }, ensure_ascii=False))
+    if refused:
+        sys.exit(1)
 
 
 def dedup_citations(wiki_root: str) -> None:
@@ -2720,6 +2875,20 @@ def main():
                        help="Deduplicate edges.jsonl after parallel ingest merge")
     p.add_argument("wiki_root")
 
+    # normalize-edges
+    p = sub.add_parser("normalize-edges",
+                       help="Add missing kind/ prefixes to edge endpoints in edges.jsonl")
+    p.add_argument("wiki_root")
+    p.add_argument("--dry-run", action="store_true",
+                   help="Report what would change without writing")
+
+    # retype-edges
+    p = sub.add_parser("retype-edges",
+                       help="Retype legacy edges from a reviewed JSON mapping on stdin")
+    p.add_argument("wiki_root")
+    p.add_argument("--dry-run", action="store_true",
+                   help="Validate the mapping without writing")
+
     # dedup-citations
     p = sub.add_parser("dedup-citations",
                        help="Deduplicate citations.jsonl by paper pair")
@@ -2835,6 +3004,10 @@ def main():
         batch_edges(args.wiki_root)
     elif args.command == "dedup-edges":
         dedup_edges(args.wiki_root)
+    elif args.command == "normalize-edges":
+        normalize_edges(args.wiki_root, dry_run=args.dry_run)
+    elif args.command == "retype-edges":
+        retype_edges(args.wiki_root, dry_run=args.dry_run)
     elif args.command == "dedup-citations":
         dedup_citations(args.wiki_root)
     elif args.command == "rebuild-index":

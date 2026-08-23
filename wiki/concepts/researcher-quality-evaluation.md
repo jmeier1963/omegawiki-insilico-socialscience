@@ -3,7 +3,7 @@ title: "Researcher-Quality Evaluation"
 aliases: ["research-quality benchmark", "human-easy agent-hard evaluation", "researcher-like AI evaluation", "AARR benchmark"]
 tags: [agent-evaluation, ai-research-automation, benchmark, research-agents]
 maturity: emerging
-key_papers: [act-real-researcher-benchmark-llm-research, genebench-pro-evaluating-multistage-statistical-reasoning, ai-agents-conduct-open-ended-ai]
+key_papers: [bei-der-bewertung-von-forschungsqualit-vielleicht, act-real-researcher-benchmark-llm-research, genebench-pro-evaluating-multistage-statistical-reasoning, ai-agents-conduct-open-ended-ai]
 first_introduced: "2026"
 date_updated: 2026-06-20
 related_concepts: [automated-research-pipeline]
@@ -45,6 +45,7 @@ How to score researcher qualities automatically and reproducibly; whether such q
 ## Key papers
 
 - [[act-real-researcher-benchmark-llm-research]] — proposes the AARR series and AARRI-Bench.
+- [[bei-der-bewertung-von-forschungsqualit-vielleicht]] — argues quality standards are constituted inside disciplinary cultures and cannot be replaced by generic indicators
 
 ## My understanding
 

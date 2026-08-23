@@ -65,3 +65,4 @@ The landmark case of genuine AI scientific achievement. AlphaFold2 solved CASP14
 - [[degrave-tokamak-plasma-deep-rl]]
 - [[gao-wang-quantifying-ai-scientific-research]]
 - [[ai-driven-scientific-discovery]]
+- [[understanding-protein-folding-machine-learning-models]] — philosophical assessment: empirical success without direct explanatory contribution

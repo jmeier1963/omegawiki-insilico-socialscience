@@ -4,7 +4,7 @@ aliases: ["research taste", "direction-setting bottleneck", "research judgment",
 tags: [ai-rnd-automation, recursive-self-improvement, human-ai-division-labor, research-automation, ai-capabilities]
 maturity: emerging
 definition: "The claim that as AI automates the execution of AI research and engineering, the binding constraint on progress shifts to research taste — choosing which problems matter, which results to trust, and when an approach is a dead end — the last capability where humans retain comparative advantage."
-key_papers: [when-ai-builds-itself, ai-agents-conduct-open-ended-ai]
+key_papers: [augmented-coding-design-genie-eats-seed, llms-generate-novel-research-ideas-large, man-who-coined-term-vibe-coding, when-ai-builds-itself, ai-agents-conduct-open-ended-ai]
 first_introduced: "2026"
 date_updated: 2026-07-05
 related_concepts: [software-intelligence-explosion, automated-research-pipeline, human-ai-division-labor-agentic-work, marginal-returns-to-intelligence]
@@ -43,6 +43,8 @@ Closely tied to [[human-ai-division-labor-agentic-work]] (humans decide *what*, 
 ## Realized by
 
 - [[when-ai-builds-itself]] — frames research taste/judgment as the final human comparative advantage and the Amdahl-law bottleneck in automated AI R&D.
+- [[llms-generate-novel-research-ideas-large]] — LLM ideas rated more novel, but the diversity ceiling and unreliable self-evaluation locate the bottleneck in selection
+- [[augmented-coding-design-genie-eats-seed]] — Beck's practitioner report: agents add features relentlessly and never reduce complexity
 
 ## My understanding
 

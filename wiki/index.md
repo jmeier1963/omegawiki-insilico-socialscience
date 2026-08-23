@@ -5,6 +5,10 @@ papers:
     title: "A $17-Million Bet Brought ChatGPT to CSU Campuses. A Year Later, AI Distrust Leaves Many Divided"
     tags: [ai-education, california-state, chatgpt, institutional-ai, campus-divide, ai-adoption]
     importance: 1
+  - slug: 2026-ai-index-report
+    title: "The 2026 AI Index Report"
+    tags: [ai-index, measurement, industry-concentration, compute, model-transparency, ai-education, ai-sovereignty, open-weights]
+    importance: 4
   - slug: act-real-researcher-benchmark-llm-research
     title: "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle"
     tags: [ai-research-automation, agent-evaluation, benchmark, research-agents, llm-agents]
@@ -197,6 +201,10 @@ papers:
     title: "An Ambitious Agenda for European AI"
     tags: [eu-ai-policy, european-ai, industrial-policy, ai-adoption, sectoral-ai, collaboration]
     importance: 2
+  - slug: anatomy-frontier-lab-agent-intrusion-technical
+    title: "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident"
+    tags: [autonomous-offensive-cyber-operations, agentic-ai, ai-security, reward-hacking, sandbox-escape, incident-report, evaluation-integrity, ai-safety]
+    importance: 4
   - slug: anderson-end-of-theory-wired
     title: "The End of Theory: The Data Deluge Makes the Scientific Method Obsolete"
     tags: [data-driven-science, theory-obsolescence, big-data, petabyte-science, provocations]
@@ -257,6 +265,10 @@ papers:
     title: "Assigning AI: Seven Approaches for Students with Prompts"
     tags: [education, ai-in-education, pedagogy, llm, prompting, human-oversight, classroom]
     importance: 4
+  - slug: augmented-coding-design-genie-eats-seed
+    title: "Augmented Coding & Design: The Genie Eats The Seed Corn"
+    tags: [agentic-coding, software-design, technical-debt, taste, context-management, human-oversight, kent-beck]
+    importance: 3
   - slug: auswege-aus-der-digitalen-unmuendigkeit-ki
     title: "Auswege aus der digitalen Unmündigkeit: Der KI-Einsatz gefährdet die Autonomie der Hochschulen"
     tags: [ai-education, german, university-autonomy, digital-sovereignty, faz, higher-education]
@@ -297,6 +309,10 @@ papers:
     title: "Bedingt vertrauenswürdig: Huaweis Verbindungen zur KPCh"
     tags: [huawei, china-tech, digital-sovereignty, security-risk, china-communist-party, telecom-security]
     importance: 2
+  - slug: bei-der-bewertung-von-forschungsqualit-vielleicht
+    title: "Was bei der Bewertung von Forschungsqualität vielleicht stärker beachtet werden sollte oder Erfahrungen aus zwanzig Jahren"
+    tags: [research-quality, evaluation, peer-review, replication, scientific-integrity, germany, disciplinary-cultures, research-assessment]
+    importance: 3
   - slug: beisbart-opacity-computer-simulations
     title: "Opacity Thought Through: On the Opacity of Computer Simulations"
     tags: [opacity, computer-simulation, epistemology, philosophy-of-science, graded-opacity]
@@ -321,6 +337,10 @@ papers:
     title: "Binding Public Sector AI Diffusion: Will new OMB AI Safety policies do more harm than good?"
     tags: [ai-governance, public-sector-ai, regulation, omb, federal-agencies, compliance-cost, ai-adoption]
     importance: 2
+  - slug: bloom-176b-parameter-open-access-multilingual
+    title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
+    tags: [open-weights, multilingual-llm, open-science, research-infrastructure, model-transparency, bigscience, foundation-model]
+    importance: 3
   - slug: boge-two-dimensions-opacity-deep-learning
     title: "Two Dimensions of Opacity and the Deep Learning Predicament"
     tags: [opacity, deep-learning, scientific-discovery, internal-opacity, relational-opacity, philosophy-of-science]
@@ -337,6 +357,10 @@ papers:
     title: "Cal State Invited Tech Companies to Remake Learning With A.I."
     tags: [ai-education, higher-education, institutional-ai, california, tech-industry, nyt]
     importance: 2
+  - slug: calculator-analogy-epistemic-virtues-using-llms
+    title: "The Calculator Analogy: Epistemic Virtues for Using LLMs"
+    tags: [epistemic-virtues, llm-education, calculator-analogy, deskilling, technological-affordances, human-ai-interaction, philosophy-of-technology]
+    importance: 4
   - slug: canaries-coal-mine-six-facts-about
     title: "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence"
     tags: [ai-labor-market, employment, ai-economics, automation, entry-level-jobs, empirical]
@@ -416,6 +440,10 @@ papers:
   - slug: could-ai-slow-science
     title: "Could AI Slow Science? Confronting the Production-Progress Paradox"
     tags: [ai-science, scientific-progress, publication-inflation, bottlenecks, production-progress-paradox]
+    importance: 3
+  - slug: could-ais-become-conscious
+    title: "Could AIs Become Conscious?"
+    tags: [machine-consciousness, ai-rights, moral-status, ai-policy, personhood, public-opinion, anthropomorphism]
     importance: 3
   - slug: crispr-treatments-ai-designed-synthetic-viruses
     title: "CRISPR Treatments for AI-Designed Synthetic Viruses: Rapid Programmable Countermeasures for Emerging and Engineered Viruses"
@@ -510,7 +538,7 @@ papers:
     tags: [education, human-flourishing, oecd, policy, ai-impact, curriculum, competencies, wellbeing]
     importance: 3
   - slug: effect-chatgpt-students-learning-performance-learning
-    title: "The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis"
+    title: "[RETRACTED] The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis"
     tags: [education, chatgpt, meta-analysis, learning-performance, higher-order-thinking, ai-in-education]
     importance: 4
   - slug: effects-generative-ai-high-skilled-work
@@ -525,6 +553,10 @@ papers:
     title: "Emulating Public Opinion: A Proof-of-Concept of AI-Generated Synthetic Survey Responses for the Chilean Case"
     tags: [silicon-sampling, synthetic-survey, public-opinion, demographic-bias, llm-evaluation, non-western-context]
     importance: 2
+  - slug: endoscopist-deskilling-risk-after-exposure-artificial
+    title: "Endoscopist Deskilling Risk After Exposure to Artificial Intelligence in Colonoscopy: A Multicentre, Observational Study"
+    tags: [deskilling, clinical-ai, human-oversight, automation-complacency, colonoscopy, ai-assistance, medical-ai, competence-erosion]
+    importance: 4
   - slug: engineering-collective-attention-age-artificial-intelligence
     title: "Engineering Collective Attention in the Age of Artificial Intelligence"
     tags: [collective-attention, information-ecosystem, ai-governance, misinformation, epistemic-infrastructure, deliberative-democracy]
@@ -749,6 +781,10 @@ papers:
     title: "Industrial Policy for the Intelligence Age: Ideas to Keep People First"
     tags: [ai-policy, ai-economics, social-contract, superintelligence, industrial-policy, inequality, ai-and-society]
     importance: 3
+  - slug: intellektuelle-souver-nit-empfehlungen-die-hochschulbildung
+    title: "Intellektuelle Souveränität: Empfehlungen für die Hochschulbildung in Zeiten von generativer KI"
+    tags: [ai-policy, higher-education, germany, intellectual-sovereignty, ai-free-spaces, assessment-reform, competence-erosion, wissenschaftsrat]
+    importance: 4
   - slug: intelligence-wise
     title: "Can Intelligence Be Wise?"
     tags: [ai-philosophy, wisdom, ai-and-society, humanism, agi-discourse, essay]
@@ -881,6 +917,10 @@ papers:
     title: "LLM Survey Framework: Coverage, Reasoning, Dynamics, Identification"
     tags: [llm-surveys, economic-surveys, silicon-sampling, inflation-expectations, cost-efficiency]
     importance: 3
+  - slug: llms-generate-novel-research-ideas-large
+    title: "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers"
+    tags: [research-ideation, llm-creativity, human-evaluation, novelty, automated-science, idea-generation, blind-review]
+    importance: 4
   - slug: llms-generate-structurally-realistic-social-networks
     title: "LLMs generate structurally realistic social networks but overestimate political homophily"
     tags: [social-network, llm, network-generation, homophily, social-simulation, graph, bias]
@@ -921,6 +961,10 @@ papers:
     title: "Making the Internet Safe for Democracy"
     tags: [platform-governance, democracy, social-media, content-moderation, middleware, regulation, big-tech, section-230]
     importance: 3
+  - slug: man-who-coined-term-vibe-coding
+    title: "The Man Who Coined the Term Vibe Coding Says Code Written by AI Can Still Be Awkward and Gross"
+    tags: [vibe-coding, agentic-coding, human-oversight, taste, code-quality, karpathy, software-engineering]
+    importance: 2
   - slug: mapping-ai-into-production-field-experiment
     title: "Mapping AI into Production: A Field Experiment on Firm Performance"
     tags: [ai-firm-performance, field-experiment, rct, ai-adoption, entrepreneurship, strategy, generative-ai, productivity, complementarities]
@@ -1008,6 +1052,10 @@ papers:
   - slug: more-parameters-than-populations-systematic-literature
     title: "More Parameters Than Populations: A Systematic Literature Review of Large Language Models within Survey Research"
     tags: [survey-research, llm, systematic-review, silicon-sampling, methodology]
+    importance: 3
+  - slug: more-than-10-000-research-papers
+    title: "More Than 10,000 Research Papers Were Retracted in 2023 — a New Record"
+    tags: [retractions, research-integrity, paper-mills, peer-review-fraud, hindawi, publication-system, scientific-misconduct]
     importance: 3
   - slug: morphing-intelligence-iq-measurement-artificial-brains
     title: "Morphing Intelligence: From IQ Measurement to Artificial Brains"
@@ -1113,6 +1161,10 @@ papers:
     title: "Performance of a large language model on the reasoning tasks of a physician"
     tags: [llm-medicine, clinical-reasoning, diagnosis, o1, physician-ai-comparison, differential-diagnosis, emergency-medicine, science-journal]
     importance: 4
+  - slug: performance-reproducibility-large-language-models-named
+    title: "Performance and Reproducibility of Large Language Models in Named Entity Recognition: Considerations for the Use in Controlled Environments"
+    tags: [reproducibility, regulated-environments, gxp, named-entity-recognition, pharmacovigilance, open-weights, model-validation, clinical-ai]
+    importance: 4
   - slug: persona-based-simulation-human-opinion-population
     title: "Persona-Based Simulation of Human Opinion at Population Scale"
     tags: [persona-conditioning, silicon-sampling, population-scale, social-media-personas, heterogeneity, survey-simulation]
@@ -1184,6 +1236,10 @@ papers:
   - slug: quantifying-persona-effect-llm-simulations
     title: "Quantifying the Persona Effect in LLM Simulations"
     tags: [persona-conditioning, silicon-sampling, annotation-variance, llm-simulation, demographic-alignment]
+    importance: 3
+  - slug: racing-ruin
+    title: "Racing to Ruin"
+    tags: [ai-race-dynamics, existential-risk, game-theory, coordination-failure, transparency, ai-governance, rnd-competition, war-of-attrition]
     importance: 3
   - slug: rat-der-eu-2026-ai-gigafactories
     title: "AI Gigafactories: EU Council Paves the Way for Large-Scale AI Compute Infrastructure"
@@ -1257,6 +1313,10 @@ papers:
     title: "SciMON: Scientific Inspiration Machines Optimized for Novelty"
     tags: [scientific-discovery, hypothesis-generation, llm, retrieval, novelty-optimization, ai-for-science]
     importance: 3
+  - slug: search-consciousness-inside-llms
+    title: "The Search for Consciousness Inside LLMs"
+    tags: [machine-consciousness, interpretability, introspection, mechanistic-interpretability, anthropic, llm-internals, philosophy-of-mind]
+    importance: 3
   - slug: self-improving-ai-ai-human-co
     title: "Self-Improving AI: AI and Human Co-Improvement for Safer Co-Superintelligence"
     tags: [ai-safety, self-improvement, co-improvement, human-ai-collaboration, agi, ai-rnd-automation, superintelligence]
@@ -1296,6 +1356,10 @@ papers:
   - slug: social-simulacra-creating-populated-prototypes-social
     title: "Social Simulacra: Creating Populated Prototypes for Social Computing Systems"
     tags: [social-simulation, llm, social-computing, prototyping, hci, community-design]
+    importance: 4
+  - slug: some-simple-economics-agi
+    title: "Some Simple Economics of AGI"
+    tags: [agi-economics, verification-bottleneck, measurability-gap, human-oversight, deskilling, labor-substitution, liability, agentic-ai, economic-modeling]
     importance: 4
   - slug: spy-vs-ai-foreign-affairs
     title: "Spy vs. AI: How Artificial Intelligence Will Remake Espionage"
@@ -1417,6 +1481,10 @@ papers:
     title: "Understanding the planning of LLM agents: A survey"
     tags: [llm-agents, planning, survey, task-decomposition, reflection, memory, agent-design]
     importance: 4
+  - slug: understanding-protein-folding-machine-learning-models
+    title: "Understanding Protein Folding with Machine Learning Models? The Case of AlphaFold2"
+    tags: [scientific-understanding, alphafold, opacity, philosophy-of-science, explanation, computational-biology, prediction-vs-explanation]
+    importance: 4
   - slug: unholy-alliance-tech-moguls-populist-leaders
     title: "The Unholy Alliance: Tech Moguls and Populist Leaders"
     tags: [tech-populism, elon-musk, political-tech, democracy, far-right, digital-power]
@@ -1445,6 +1513,10 @@ papers:
     title: "Using LLMs to advance the cognitive science of collectives"
     tags: [llm-simulation, cognitive-science, collective-behavior, social-cognition, multi-agent, research-methodology]
     importance: 4
+  - slug: vertrauen-die-wissenschaft-philosophische-erw-gungen
+    title: "Vertrauen in die Wissenschaft – philosophische Erwägungen"
+    tags: [epistemic-trust, philosophy-of-science, pandemic, trustworthiness, responsibility, social-epistemology, science-communication]
+    importance: 3
   - slug: vesthager-european-digital-rights-principles
     title: "Verbinden statt Trennen: Was eine europäische Erklärung digitaler Rechte und Grundsätze leisten muss"
     tags: [digital-rights, european-values, digital-sovereignty, margrethe-vestager, eu-digital-policy]
@@ -1509,6 +1581,10 @@ papers:
     title: "Why Big AI Labs Are Hiring So Many Philosophers"
     tags: [ai-ethics, ai-alignment, ai-constitutionalism, philosophy-of-ai, moral-reasoning, ai-and-society]
     importance: 2
+  - slug: why-tiny-social-media-post-mathematicians
+    title: "Why a Tiny Social Media Post Has Mathematicians Rethinking AI"
+    tags: [ai-mathematical-discovery, jacobian-conjecture, verifiability, reproducibility, claude, mathematical-practice, attribution]
+    importance: 4
   - slug: wilkinson-fair-guiding-principles
     title: "The FAIR Guiding Principles for Scientific Data Management and Stewardship"
     tags: [FAIR-data, open-science, data-management, reproducibility, data-infrastructure, meta-science]
@@ -1521,6 +1597,10 @@ papers:
     title: "Will AI Make Us More or Less Wise?"
     tags: [ai-wisdom, philosophy, cognition, human-development, substack, opinion]
     importance: 1
+  - slug: wissenschaft-im-zeitalter-ihrer-technischen-reproduzierbarkeit
+    title: "Wissenschaft im Zeitalter ihrer technischen Reproduzierbarkeit"
+    tags: [benjamin, aura, research-evaluation, capabilities-approach, bildung, science-and-society, output-metrics, germany]
+    importance: 3
   - slug: work-frontier-how-ai-expanding-what
     title: "Work at the Frontier: How AI is expanding what people do at work"
     tags: [ai-economics, labor-market, task-based-framework, occupational-boundaries, usage-telemetry, ai-and-society]
@@ -1679,6 +1759,10 @@ concepts:
     title: "Automation–Augmentation Employment Divide"
     tags: [ai-labor-market, employment, automation, ai-economics, labor-displacement]
     maturity: emerging
+  - slug: automation-induced-deskilling
+    title: "Automation-Induced Deskilling"
+    tags: [deskilling, human-oversight, automation, human-factors, clinical-ai, competence-erosion]
+    maturity: active
   - slug: autonomous-offensive-cyber-operations
     title: "Autonomous Offensive Cyber Operations"
     tags: [cybersecurity, agentic-ai, ai-misuse, dual-use, ai-safety]
@@ -1694,6 +1778,10 @@ concepts:
   - slug: co-evolving-evaluator-hardening
     title: "Co-Evolving Evaluator Hardening"
     tags: [reward-hacking, automated-research, evaluation, ai-rd-automation, specification-gaming]
+    maturity: emerging
+  - slug: codifier-curse
+    title: "Codifier's Curse"
+    tags: [deskilling, human-capital, expertise, training-data, ai-automation, apprenticeship]
     maturity: emerging
   - slug: cognitive-abundance
     title: "Cognitive Abundance"
@@ -1871,6 +1959,10 @@ concepts:
     title: "Marginal Returns to Intelligence"
     tags: [agi, ai-impact, scientific-acceleration, economics, intelligence, beneficial-ai]
     maturity: emerging
+  - slug: measurability-gap
+    title: "Measurability Gap"
+    tags: [agi-economics, verification, automation, technical-change, agentic-ai, metrics]
+    maturity: emerging
   - slug: meso-level-group-persona-synthesis
     title: "Meso-Level Group Persona Synthesis"
     tags: [persona, group-simulation, privacy-preserving, knowledge-graph, meso-level]
@@ -2019,6 +2111,10 @@ concepts:
     title: "Universal AI Intelligence Measure"
     tags: [universal-ai, aixi, intelligence-measure, agi, asi, theory, reinforcement-learning]
     maturity: active
+  - slug: verification-bandwidth
+    title: "Verification Bandwidth"
+    tags: [agi-economics, human-oversight, verification, agentic-ai, human-ai-division-labor, liability]
+    maturity: emerging
   - slug: wisdom-versus-instrumental-intelligence
     title: "Wisdom Versus Instrumental Intelligence"
     tags: [ai-philosophy, wisdom, agi-discourse, ai-and-society, alignment, humanism]
@@ -2880,6 +2976,9 @@ Summary:
     title: "In-Silico Social Science and the AI & Society Landscape"
 
 foundations:
+  - slug: bainbridge-ironies-of-automation
+    title: "Ironies of Automation"
+    status: mainstream
   - slug: bildung
     title: "Bildung"
     status: mainstream
@@ -2925,6 +3024,9 @@ foundations:
   - slug: humphreys-extending-ourselves
     title: "Extending Ourselves"
     status: mainstream
+  - slug: kaldewey-wahrheit-nuetzlichkeit
+    title: "Wahrheit und Nützlichkeit"
+    status: mainstream
   - slug: knorr-cetina-epistemic-cultures
     title: "Epistemic Cultures"
     status: mainstream
@@ -2960,6 +3062,9 @@ foundations:
     status: mainstream
   - slug: rosa-beschleunigung
     title: "Beschleunigung (Social Acceleration)"
+    status: mainstream
+  - slug: ryan-deci-self-determination-theory
+    title: "Self-Determination Theory"
     status: mainstream
   - slug: schrape-technik-und-gesellschaft
     title: "Technik und Gesellschaft"

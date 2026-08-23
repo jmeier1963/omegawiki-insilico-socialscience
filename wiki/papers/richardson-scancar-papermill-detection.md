@@ -60,3 +60,4 @@ The first systematic large-scale ML estimate of papermill contamination in scien
 - [[open-science-collaboration-reproducibility]]
 - [[smith-peer-review-flawed-process]]
 - [[kapoor-narayanan-leakage-reproducibility]]
+- [[more-than-10-000-research-papers]] — the 2023 retraction record and the Hindawi collapse that preceded it

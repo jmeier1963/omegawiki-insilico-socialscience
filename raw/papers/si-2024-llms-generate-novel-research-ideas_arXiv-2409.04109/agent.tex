@@ -1,0 +1,101 @@
+\section{Idea Generation Agent}
+\label{sec:agent}
+
+% In this section, we describe the design of our research ideation agent. 
+% The input to the agent is a research topic, and the output is a list of project proposals ranked by their estimated quality. 
+We build a simple but effective LLM ideation agent to compare with the human expert baseline.
+Rather than focusing on innovating the agent itself, we adhere to a minimalist design principle, aiming to understand the current capabilities of LLMs in idea generation. 
+Our research ideation agent has three essential components: 
+% Our agent pipeline is motivated by three core ideas: 
+paper retrieval, idea generation, and idea ranking, which we will describe in detail below. 
+%
+% The agent consists of four steps: literature review, seed idea generation, project proposal generation, and project proposal ranking. 
+%
+
+% We describe each of these core ideas in detail.  
+
+% \chenglei{TODO: add a figure for the agent pipeline}
+
+
+\subsection{Paper Retrieval for RAG}
+To ground idea generation, the agent needs to retrieve papers related to the given research topic, so that it will be aware of related works when generating new ideas. 
+To do so, we leverage retrieval-augmented generation (RAG), which has demonstrated effectiveness on many knowledge-intensive tasks ~\cite{Lewis2020RetrievalAugmentedGF,Shi2023REPLUGRB}. 
+% This is motivated by empirical evidence that  can boost LLM performance on knowledge-intensive tasks~\cite{Lewis2020RetrievalAugmentedGF}.
+% We built a paper retrieval module for this purpose. 
+Concretely, given a research topic (e.g., ``novel prompting methods that can improve factuality and reduce hallucination of
+large language models"), we prompt an LLM to generate a sequence of function calls to the Semantic Scholar API. We use \texttt{claude-3-5-sonnet-20240620} as the backbone model for our agent but the pipeline should generalize to other LLMs as well.  The paper retrieval action space includes: \{\texttt{KeywordQuery(keywords), PaperQuery(paperId), GetReferences(paperId)}\}. Each action generation is grounded on the previous actions and executed results. We keep the top $k = 20$ papers from each executed function call and stop the action generation when a max of $N = 120$ papers have been retrieved. We then use the LLM to score and rerank all retrieved papers based on three criteria: 1) the paper should be directly relevant to the specified topic; 2) the paper should be an empirical paper involving computational experiments;\footnote{Note that we exclude position papers, survey papers, and analysis papers throughout this study since their evaluation tends to be very subjective.} 3) the paper is interesting and can inspire new projects. The LLM is prompted to score each retrieved paper on a scale of 1 to 10 based on these criteria and we use the top-ranked papers for the next step of idea generation. 
+
+\subsection{Idea Generation}
+Our key insight for idea generation is to generate as many candidate ideas as possible. Our intuition is that only a small fraction of all generated ideas might be high-quality, and we should be willing to expend inference-time compute to generate more candidates so that we can later use a reranker to discover the "diamond in the rough". This aligns with existing results showing that scaling inference compute with repeated sampling can boost LLM performance on various coding and reasoning tasks~\cite{Li2022CompetitionlevelCG,Brown2024LargeLM}. 
+Specifically, we prompt the LLM to generate 4000 seed ideas on each research topic. The idea generation prompt includes the demonstration examples and the retrieved papers. 
+%  We specify the format to include a problem statement, existing methods, motivation, proposed method, and experiment plan section. 
+We craft $k = 6$ demonstration examples by manually summarizing exemplar papers~\cite{Yasunaga2023LargeLM,Madaan2023SelfRefineIR,Weller2023AccordingT,Weston2023System2A,Zheng2023TakeAS,Dhuliawala2023ChainofVerificationRH} into our desired idea format.
+% (we provide an example in Appendix~\ref{sec:demo_example_seed_idea_gen}). %
+For retrieval augmentation, we randomly select $k = 10$ papers from the top-ranked retrieved papers and concatenate their titles and abstracts to prepend to the idea generation prompt. 
+We also append the titles of all previously generated ideas to the prompt to explicitly ask the LLM to avoid repetitions. 
+
+% In the next step, we turn these seed ideas into more detailed project proposals. 
+%
+% \subsection{Step 3: Project Proposal Generation}
+%
+To remove duplicated ideas from this large pool of candidate ideas, we first perform a round of deduplication by encoding all seed ideas with \texttt{all-MiniLM-L6-v2} from Sentence-Transformers~\cite{reimers-2020-multilingual-sentence-bert} and then computing pairwise cosine similarities. We set a similarity threshold of 0.8 for the idea deduplication based on manual inspection.~\footnote{We provide randomly sampled idea pairs and their similarities in Appendix~\ref{sec:seed_idea_simiarity}. We also provide additional implementation details about the ideation agent in Appendix~\ref{sec:agent_details}.}
+This leaves about 5\% non-duplicated ideas out of all the generated seed ideas. We expand more on this duplication issue later in Section~\ref{sec:duplication}. 
+
+
+
+\subsection{Idea Ranking}
+\label{sec:agent_ranking}
+
+The next step is for our ideation agent to rank all the remaining ideas so that we can find the best ones among them.
+%After over-generation, the next important step is to rank all the ideas so that we can find the best among them. 
+% ~\footnote{Before idea ranking, we also filtered out about 1\% of the total project proposals that failed automatic novelty and feasibility checks as described in Appendix~\ref{sec:idea_filtering}.} 
+To build such an automatic idea ranker, we use public review data as a proxy. Specifically,
+% our approach is to use public review data as a proxy benchmark. For benchmarking, 
+we scraped 1200 ICLR 2024 submissions related to LLMs (with keyword filtering) along with their review scores and acceptance decisions. We explored multiple ways of predicting the scores and decisions of these submissions and found that LLMs are poorly calibrated when asked directly to predict the final scores or decisions, but can achieve non-trivial accuracy when asked to judge which paper is better in pairwise comparisons. 
+
+
+\begin{wraptable}{r}{0.42\textwidth}
+\small
+\centering
+\begin{tabular}{c|c|c|c}
+\hline
+$N$ & Top-10 & Bottom-10 & Gap \\
+\hline
+1   & 6.28   & 5.72  &  0.56 \\
+2   & 6.14   & 5.24  &  0.90 \\
+3   & 5.83  & 4.86  & 0.97 \\
+4   & 5.94  &  4.99 & 0.95 \\
+5   & 6.42  &  4.69  &  1.73 \\
+6   & 6.11  &  4.81  &  1.30 \\
+\hline
+\end{tabular}
+\caption{Average ICLR review scores of top- and bottom-10 papers ranked by our LLM ranker, with different rounds ($N$) of pairwise comparisons.}
+\label{table:ranker}
+\end{wraptable}
+
+
+We converted the ICLR submissions into our standard project proposal format and randomly paired up accepted and rejected papers and asked LLMs to predict which one is accepted. On this task,  \texttt{Claude-3.5-Sonnet} achieves an accuracy of 71.4\% with zero-shot prompting. For comparison, \texttt{GPT-4o} achieves 61.1\% and \texttt{Claude-3-Opus} achieves 63.5\%, and we do not observe significant gains from additional prompting techniques like few-shot or chain-of-thought prompting. 
+We therefore choose the \texttt{Claude-3.5-Sonnet} zero-shot ranker. 
+
+In order to obtain reliable scores for all project proposals based on pairwise comparisons, we adopt a Swiss system tournament where all project proposals are paired with those whose accumulated scores are similar, and if the proposals are judged to be better, they gain an additional point. We repeat this for $N$ rounds so the total score of each project proposal will be within the [0, $N$] range. As a sanity check, we use the \texttt{Claude-3.5-Sonnet} ranker to rank the 1.2K ICLR LLM-related submissions and compare the average review scores of the top 10 ranked papers and the bottom 10 ranked papers in Table~\ref{table:ranker}. We see a clear separation between the top and bottom ranked papers, indicating the effectiveness of the LLM ranker. We choose $N = 5$ for all our experiments since it gives the best ranking result on this validation set. 
+%
+The top-ranked project proposals from the agent will be directly used for the \texttt{AI Ideas} condition of the human study. 
+
+Since our AI ranker is still far from perfect, we also introduce another experiment condition where the first author of this paper manually reranked the generated project proposals instead of relying on the LLM ranker, and we call this the \texttt{AI Ideas + Human Rerank} condition.
+%,which hopefully better represents the upper-bound of AI-generated ideas
+As we show in Table~\ref{table:idea_overlap}, 17 out of the 49 ideas in the \texttt{AI Ideas + Human Rerank} condition overlap with the \texttt{AI Ideas} condition, while the other 32 are different, indicating the discrepancy between the LLM ranker and the human expert reranking. 
+
+
+% \subsection{Step 5: Project Proposal Filtering}
+% After scoring and ranking all project proposals, we perform a final round of filtering. Our filtering includes the following criteria: 
+
+% \begin{enumerate}
+%     \item Novelty: We use the literature review module to retrieve the top 10 most relevant papers to the generated idea and ask the LLM to compare each of them to the generated idea. The idea will be filtered as long as any one of the retrieved papers is judged as equivalent. 
+
+%     \item Feasibility: The idea will be filtered if it requires extensive manual labor or hardware resources (for example manually creating a large-scale dataset). This is necessary to make sure all ideas can be executed by participants in phase II of our study. 
+
+%     \item Consistency: The idea will be filtered if it involves any inconsistency in the experimental setups or assumptions. For example, if the idea assumes only black-box API access of the LLMs, then it shouldn't involve experiments that need internal weight access. 
+% \end{enumerate}
+
+% \chenglei{TODO: add filtering statistics}
+

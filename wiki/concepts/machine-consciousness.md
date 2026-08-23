@@ -3,7 +3,7 @@ title: "Machine Consciousness"
 aliases: ["AI consciousness", "artificial consciousness", "Conscious Turing Machine", "CTM", "computational consciousness"]
 tags: [ai-consciousness, philosophy-of-mind, turing-machine, global-workspace, cognitive-architecture, theoretical-cs]
 maturity: emerging
-key_papers: [ai-consciousness-inevitable-theoretical-computer-science, must-build-ai-people-person]
+key_papers: [could-ais-become-conscious, search-consciousness-inside-llms, ai-consciousness-inevitable-theoretical-computer-science, must-build-ai-people-person]
 first_introduced: "2021"
 date_updated: 2026-05-06
 related_concepts: [predictive-world-model-architecture]
@@ -46,3 +46,6 @@ CTM model: a global workspace G receives competing inputs from many specialized 
 
 - [[ai-consciousness-inevitable-theoretical-computer-science]] — Blum & Blum (2024, CMU); proposes CTM and argues for the inevitability of machine consciousness from a TCS perspective
 - [[must-build-ai-people-person]] — Suleyman (2025, Microsoft AI); introduces SCAI (Seemingly Conscious AI) concept and argues against designing AI to appear conscious
+- [[search-consciousness-inside-llms]] — interpretability evidence and its evidential limits
+- [[could-ais-become-conscious]] — the risk of attributed rather than actual consciousness
+

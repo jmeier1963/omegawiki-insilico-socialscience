@@ -57,3 +57,4 @@ A natural follow-up to the LLM-Ideas paper. The finding that vanilla LLM prompti
 - [[using-large-language-models-idea-generation]]
 - [[evaluating-llms-divergent-thinking-capabilities-scientific]]
 - [[ai-driven-scientific-discovery]]
+- [[llms-generate-novel-research-ideas-large]] — expert blind study finding higher novelty but a diversity ceiling

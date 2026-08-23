@@ -1,0 +1,289 @@
+\section{Main Result: AI Ideas Are Rated More Novel Than Expert Ideas}
+\label{sec:results}
+
+In this section, we present our main finding on whether LLMs can generate better research ideas than experts. Consistently across three different statistical tests accounting for the possible confounders, we find that AI ideas have higher novelty scores than human ideas while being comparable on all other metrics. 
+% We discuss each specific test in detail as follows. 
+% To ensure the robustness of this result, we perform three different statistical tests accounting for possible confounders and confirm that our conclusion holds robustly. 
+
+
+
+% \begin{figure}[ht]
+% \small
+% \centering
+% \includegraphics[width=0.8\textwidth]{LLM_Idea_Generation/figures/duplication.pdf}
+% \caption{Duplication plot.}
+% \label{fig:duplication}
+% \end{figure}
+
+
+
+% \begin{figure}[ht]
+% \small
+% \centering
+% \includegraphics[width=0.8\textwidth]{LLM_Idea_Generation/figures/per_reviewer_stats.pdf}
+% \caption{Distribution of per-reviewer mean scores.}
+% \label{fig:per_reviewer_scores}
+% \end{figure}
+
+
+% \begin{figure}[t]
+% \small
+% \centering
+% \includegraphics[trim=0 0 0 0,clip,width=\textwidth]{LLM_Idea_Generation/figures/barplots_all_metrics.pdf}
+% \caption{Comparison of the three experiment conditions on all metrics. Red asterisks indicate that the condition is statistically better than the \texttt{Human Ideas} condition with two-tailed Welch's t-tests and Bonferroni correction. All scores are on a $1 - 10$ scale.}
+% \label{fig:results_barplots}
+% \end{figure}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{l c c c c c c c l} 
+ \hline
+ Condition & Size & Mean & Median & SD & SE & Min & Max & p-value \\ 
+ \hline 
+ \textbf{Novelty Score}  \\
+ \texttt{Human Ideas} & 119 & 4.84 & 5 & 1.79 & 0.16 & 1 & 8 & -- \\
+ \texttt{AI Ideas} & 109 & 5.64 & 6 & 1.76 & 0.17 & 1 & 10 & \textbf{0.00**} \\
+ \texttt{AI Ideas + Human Rerank} & 109 & 5.81 & 6 & 1.66 & 0.16 & 2 & 10 & \textbf{0.00***} \\
+\hline 
+\textbf{Excitement Score} \\ 
+ \texttt{Human Ideas} & 119 & 4.55 & 5 & 1.89 & 0.17 & 1 & 8 & -- \\
+ \texttt{AI Ideas} & 109 & 5.19 & 6 & 1.73 & 0.17 & 1 & 9 & \textbf{0.04*} \\
+ \texttt{AI Ideas + Human Rerank} & 109 & 5.46 & 6 & 1.82 & 0.17 & 1 & 9 & \textbf{0.00**} \\ 
+\hline 
+\textbf{Feasibility Score} \\ 
+ \texttt{Human Ideas} & 119 & 6.61 & 7 & 1.99 & 0.18 & 1 & 10 & -- \\
+ \texttt{AI Ideas} & 109 & 6.34 & 6 & 1.88 & 0.18 & 2 & 10 & 1.00 \\
+ \texttt{AI Ideas + Human Rerank} & 109 & 6.44 & 6 & 1.63 & 0.16 & 1 & 10 & 1.00 \\
+\hline 
+\textbf{Expected Effectiveness Score} \\
+ \texttt{Human Ideas} & 119 & 5.13 & 5 & 1.76 & 0.16 & 1 & 8 & -- \\ 
+ \texttt{AI Ideas} & 109 & 5.47 & 6 & 1.58 & 0.15 & 1 & 10 & 0.67 \\
+ \texttt{AI Ideas + Human Rerank} & 109 & 5.55 & 6 & 1.52 & 0.15 & 1 & 9 & 0.29 \\ 
+  \hline
+ \textbf{Overall Score} \\
+ \texttt{Human Ideas} &  119 & 4.68 & 5 & 1.90 & 0.17 & 1 & 9 & -- \\
+ \texttt{AI Ideas} & 109 & 4.85 & 5 & 1.70 & 0.16 & 1 & 9 & 1.00 \\
+ \texttt{AI Ideas + Human Rerank} & 109 & 5.34 & 6 & 1.79 & 0.17 & 1 & 9 & \textbf{0.04*} \\
+ \hline
+\end{tabular}
+\caption{Scores across all conditions by treating each review as an independent datapoint (Test 1). Size is the number of reviews for each condition and the p-values are computed with two-tailed Welch's t-tests with Bonferroni correction. We \textbf{bold} results that are statistically significant ($^*p<0.05; ^{**}p<0.01; ^{***}p<0.001$). AI ideas are judged as significantly better than human ideas in terms of novelty and excitement while being comparable on all other metrics.}
+\label{table:results_test1}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{l c c c c c c c l} 
+ \hline
+ Condition & Size & Mean & Median & SD & SE & Min & Max & p-value \\ 
+ \hline 
+ \textbf{Novelty Score}  \\
+ \texttt{Human Ideas} & 49 & 4.86 & 5.00 & 1.26 & 0.18 & 1.50 & 7.00 & -- \\
+ \texttt{AI Ideas} & 49 & 5.62 & 5.50 & 1.39 & 0.20 & 1.50 & 8.33 & \textbf{0.03*} \\
+ \texttt{AI Ideas + Human Rerank} & 49 & 5.78 & 6.00 & 1.07 & 0.15 & 3.00 & 8.33 & \textbf{0.00**} \\
+\hline 
+\textbf{Excitement Score} \\ 
+ \texttt{Human Ideas} & 49 & 4.56 & 4.33 & 1.16 & 0.17 & 2.00 & 7.00 & -- \\
+ \texttt{AI Ideas} & 49 & 5.18 & 5.50 & 1.33 & 0.19 & 2.50 & 7.33 & 0.08 \\
+ \texttt{AI Ideas + Human Rerank} & 49 & 5.45 & 5.50 & 1.36 & 0.19 & 1.00 & 7.33 & \textbf{0.00**} \\
+\hline 
+\textbf{Feasibility Score} \\ 
+ \texttt{Human Ideas} & 49 & 6.53 & 7.00 & 1.50 & 0.21 & 3.00 & 9.00 & -- \\
+ \texttt{AI Ideas} & 49 & 6.30 & 6.00 & 1.27 & 0.18 & 2.50 & 8.50 & 1.00 \\
+ \texttt{AI Ideas + Human Rerank} & 49 & 6.41 & 6.50 & 1.06 & 0.15 & 4.00 & 9.00 & 1.00 \\
+\hline 
+\textbf{Expected Effectiveness Score} \\
+ \texttt{Human Ideas} & 49 & 5.10 & 5.33 & 1.14 & 0.16 & 3.00 & 7.00 & -- \\
+ \texttt{AI Ideas} & 49 & 5.48 & 5.50 & 1.23 & 0.18 & 2.00 & 7.50 & 0.58 \\
+ \texttt{AI Ideas + Human Rerank} & 49 & 5.57 & 5.50 & 0.99 & 0.14 & 3.00 & 7.50 & 0.17 \\
+  \hline
+ \textbf{Overall Score} \\
+ \texttt{Human Ideas} & 49 & 4.69 & 4.67 & 1.16 & 0.17 & 2.00 & 6.67 & -- \\
+ \texttt{AI Ideas} & 49 & 4.83 & 5.00 & 1.34 & 0.19 & 1.50 & 7.50 & 1.00 \\
+ \texttt{AI Ideas + Human Rerank} & 49 & 5.32 & 5.50 & 1.24 & 0.18 & 2.00 & 7.50 & 0.06 \\ 
+ \hline
+\end{tabular}
+\caption{ Scores across all conditions by averaging the scores for each idea and treating each idea as one data point (Test 2). Size is the number of ideas for each condition, and the p-values are computed with two-tailed Welch's t-tests with Bonferroni correction. We \textbf{bold} results that are statistically significant ($^*p<0.05; ^{**}p<0.01$). AI ideas are judged as significantly better than human ideas in terms of novelty while being comparable on all other metrics.}
+\label{table:results_per_idea}
+\end{table}
+
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{l c c l} 
+ \hline
+ & N & Mean Diff & p-value \\
+ \hline 
+ \textbf{Novelty Score} \\
+ \texttt{AI Ideas} vs \texttt{Human Ideas} & 70 & 0.94 & \textbf{0.00**} \\
+ \texttt{AI Ideas + Human Rerank} vs \texttt{Human Ideas} & 65 & 0.86 & \textbf{0.00**} \\
+ \hline 
+ \textbf{Excitement Score} \\
+ \texttt{AI Ideas} vs \texttt{Human Ideas} & 70 & 0.73 & \textbf{0.01*} \\
+ \texttt{AI Ideas + Human Rerank} vs \texttt{Human Ideas} & 65 & 0.87 & \textbf{0.00**} \\
+ \hline 
+ \textbf{Feasibility Score} \\
+ \texttt{AI Ideas} vs \texttt{Human Ideas} & 70 & -0.29 & 0.36 \\
+ \texttt{AI Ideas + Human Rerank} vs \texttt{Human Ideas} & 65 & -0.08 & 0.74 \\
+ \hline 
+ \textbf{Effectiveness Score} \\
+ \texttt{AI Ideas} vs \texttt{Human Ideas} & 70 & 0.42 & 0.16 \\
+ \texttt{AI Ideas + Human Rerank} vs \texttt{Human Ideas} & 65 & 0.39 & 0.16 \\
+ \hline
+ \textbf{Overall Score} \\
+ \texttt{AI Ideas} vs \texttt{Human Ideas} & 70 & 0.24 & 0.36 \\ 
+ \texttt{AI Ideas + Human Rerank} vs \texttt{Human Ideas} & 65 & 0.66 & \textbf{0.01*} \\
+ \hline
+\end{tabular}
+\caption{Mean score differences between AI ideas and human ideas by treating each reviewer as a data point (Test 3). All p-values are computed with one-sample t-tests with Bonferroni correction. We \textbf{bold} results that are statistically significant ($^*p<0.05; ^{**}p<0.01$).}
+\label{table:results_per_reviewer}
+\end{table}
+
+
+
+
+% \begin{table}[ht]
+% \centering
+% \small
+% \begin{tabular}{l c c c c c} 
+%  \hline
+%  Topic & Overall & Novelty & Excitement & Feasibility & Effectiveness \\
+%  \hline
+%  Bias \\
+%  \texttt{Human} & 3.44$_{\pm 1.33}$ & 4.00$_{\pm 1.80}$ & 3.44$_{\pm 1.51}$ & 6.78$_{\pm 1.79}$ & 4.78$_{\pm 1.86}$ \\
+%  \texttt{AI} & 5.29$_{\pm 1.80}$ & 6.14$_{\pm 1.07}$ & 5.29$_{\pm 1.80}$ & 6.29$_{\pm 1.80}$ & 6.29$_{\pm 0.95}$ \\
+%  \texttt{AI + Rerank} & 5.00$_{\pm 2.27}$ & 5.75$_{\pm 1.67}$ & 4.63$_{\pm 2.33}$ & 6.00$_{\pm 1.20}$ & 5.13$_{\pm 1.81}$ \\
+%  All & 4.50$_{\pm 1.93}$ & 5.21$_{\pm 1.79}$ & 4.38$_{\pm 1.97}$ & 6.38$_{\pm 1.58}$ & 5.33$_{\pm 1.69}$ \\
+%  \hline 
+%  Coding \\
+%  \texttt{Human} & 5.36$_{\pm 1.94}$ & 5.23$_{\pm 1.93}$ & 5.14$_{\pm 2.10}$ & 6.14$_{\pm 1.78}$ & 5.82$_{\pm 1.50}$ \\
+%  \texttt{AI} & 5.39$_{\pm 1.82}$ & 5.56$_{\pm 1.62}$ & 5.22$_{\pm 1.73}$ & 5.67$_{\pm 2.03}$ & 5.83$_{\pm 1.42}$ \\
+%  \texttt{AI + Rerank} & 5.70$_{\pm 1.81}$ & 5.60$_{\pm 1.73}$ & 5.50$_{\pm 1.93}$ & 6.30$_{\pm 1.53}$ & 6.10$_{\pm 1.48}$\\
+%  All & 5.48$_{\pm 1.84}$ & 5.45$_{\pm 1.75}$ & 5.28$_{\pm 1.91}$ & 6.05$_{\pm 1.77}$ & 5.92$_{\pm 1.45}$ \\
+%  \hline 
+%  Safety \\
+%  \texttt{Human} & 4.45$_{\pm 2.02}$ & 4.73$_{\pm 1.79}$ & 4.64$_{\pm 1.91}$ & 6.09$_{\pm 2.34}$ & 4.91$_{\pm 1.70}$ \\
+%  \texttt{AI} & 5.20$_{\pm 1.55}$ & 6.20$_{\pm 1.55}$ & 5.70$_{\pm 1.95}$ & 6.30$_{\pm 2.06}$ & 5.60$_{\pm 1.58}$ \\
+%  \texttt{AI + Rerank} & 5.00$_{\pm 2.27}$ & 5.88$_{\pm 2.42}$ & 5.38$_{\pm 2.72}$ & 4.25$_{\pm 1.83}$ & 5.13$_{\pm 2.30}$ \\
+%  All & 4.86$_{\pm 1.90}$ & 5.55$_{\pm 1.96}$ & 5.21$_{\pm 2.14}$ & 5.66$_{\pm 2.22}$ & 5.21$_{\pm 1.80}$ \\
+%  \hline 
+%  Multilingual \\
+%  \texttt{Human} & 4.68$_{\pm 1.83}$ & 4.84$_{\pm 1.61}$ & 4.32$_{\pm 2.08}$ & 7.11$_{\pm 2.05}$ & 5.16$_{\pm 1.86}$ \\
+%  \texttt{AI} & 5.26$_{\pm 1.97}$ & 6.95$_{\pm 1.78}$ & 5.95$_{\pm 1.87}$ & 5.79$_{\pm 1.58}$ & 5.58$_{\pm 2.09}$ \\
+%  \texttt{AI + Rerank} & 5.41$_{\pm 1.84}$ & 6.06$_{\pm 2.14}$ & 5.88$_{\pm 1.76}$ & 6.47$_{\pm 1.66}$ & 6.00$_{\pm 1.62}$\\
+%  All & 5.11$_{\pm 1.87}$ & 5.95$_{\pm 2.01}$ & 5.36$_{\pm 2.03}$ & 6.45$_{\pm 1.83}$ & 5.56$_{\pm 1.87}$ \\
+%  \hline 
+%  Factuality \\
+%  \texttt{Human} & 4.96$_{\pm 1.86}$ & 4.72$_{\pm 1.93}$ & 5.04$_{\pm 1.49}$ & 7.24$_{\pm 1.61}$ & 5.08$_{\pm 1.73}$ \\
+%  \texttt{AI} & 4.20$_{\pm 1.70}$ & 4.95$_{\pm 1.96}$ & 4.80$_{\pm 1.58}$ & 6.60$_{\pm 2.26}$ & 5.00$_{\pm 1.75}$ \\
+%  \texttt{AI + Rerank} & 5.35$_{\pm 1.57}$ & 5.80$_{\pm 1.36}$ & 5.30$_{\pm 1.45}$ & 6.85$_{\pm 1.42}$ & 5.30$_{\pm 1.22}$ \\
+%  All & 4.85$_{\pm 1.76}$ & 5.12$_{\pm 1.82}$ & 5.05$_{\pm 1.49}$ & 6.92$_{\pm 1.78}$ & 5.12$_{\pm 1.58}$ \\
+%  \hline 
+%  Math \\ 
+%  \texttt{Human} & 4.25$_{\pm 2.05}$ & 4.50$_{\pm 2.00}$ & 4.13$_{\pm 1.96}$ & 5.88$_{\pm 1.81}$ & 5.25$_{\pm 1.98}$ \\
+%  \texttt{AI} & 4.75$_{\pm 1.67}$ & 5.00$_{\pm 1.31}$ & 4.75$_{\pm 2.19}$ & 7.13$_{\pm 1.46}$ & 5.38$_{\pm 1.19}$ \\
+%  \texttt{AI + Rerank} & 5.88$_{\pm 0.83}$ & 6.00$_{\pm 0.53}$ & 6.25$_{\pm 0.89}$ & 6.63$_{\pm 1.06}$ & 6.13$_{\pm 0.99}$ \\
+%  All & 4.96$_{\pm 1.68}$ & 5.17$_{\pm 1.49}$ & 5.04$_{\pm 1.92}$ & 6.54$_{\pm 1.50}$ & 5.58$_{\pm 1.44}$ \\
+%  \hline 
+%  Uncertainty \\ 
+%  \texttt{Human} & 4.15$_{\pm 1.95}$ & 5.46$_{\pm 1.56}$ & 4.23$_{\pm 1.74}$ & 6.31$_{\pm 2.25}$ & 4.69$_{\pm 1.93}$ \\
+%  \texttt{AI} & 4.42$_{\pm 1.44}$ & 5.08$_{\pm 1.88}$ & 5.08$_{\pm 1.24}$ & 6.25$_{\pm 1.48}$ & 5.58$_{\pm 1.44}$ \\
+%  \texttt{AI + Rerank} & 4.71$_{\pm 1.64}$ & 5.71$_{\pm 1.49}$ & 5.14$_{\pm 1.56}$ & 6.50$_{\pm 1.61}$ & 5.00$_{\pm 1.24}$\\
+%  All & 4.44$_{\pm 1.67}$ & 5.44$_{\pm 1.62}$ & 4.82$_{\pm 1.55}$ & 6.36$_{\pm 1.77}$ & 5.08$_{\pm 1.56}$ \\
+%  \hline
+% \end{tabular}
+% \caption{Breakdown by topics where we report mean and standard deviation on all metrics. Topics like coding and factuality tend to have higher scores while topics like uncertainty and bias have lower scores.\chenglei{TODO: Change this to a bar plot.}}
+% \label{table:results_topic}
+% \end{table}
+
+
+
+
+% \begin{table}[ht]
+% \centering
+% \small
+% \begin{tabular}{l c c c c c} 
+%  \hline
+%  & Overall & Novelty & Excitement & Feasibility & Effectiveness \\ 
+%  \hline
+%  Overall & -- & 0.725 & 0.854 & 0.097 & 0.642 \\ 
+%  Novelty & 0.725 & -- & 0.719 & -0.073 & 0.357 \\ 
+%  Excitement & 0.854 & 0.719 & -- & -0.031 & 0.565 \\ 
+%  Feasibility & 0.097 & -0.073 & -0.031 & -- & 0.251 \\ 
+%  Effectiveness & 0.642 & 0.357 & 0.565 & 0.251 & -- \\ 
+%  \hline
+% \end{tabular}
+% \caption{Pairwise correlation between different metrics.}
+% \label{table:metric_correlation}
+% \end{table}
+
+
+% \begin{table}[ht]
+% \centering
+% \small
+% \begin{tabular}{l c c} 
+%  \hline
+%  Topic & Nearest Similarity & Average Similarity  \\ 
+%  \hline
+%  \texttt{Human} ideas \\
+%  \texttt{AI} ideas \\
+%  \texttt{AI + Human Rerank} ideas \\
+%  \hline
+% \end{tabular}
+% \caption{Measuring similarity and repetition of all generated raw ideas.\chenglei{TODO: Change to measure the full project proposals instead and compare with humans.}}
+% \label{table:similarity}
+% \end{table}
+
+
+
+
+\subsection{Test 1: Treating Each Review as an Independent Datapoint}
+\label{sec:test1}
+
+% In the first statistical test, 
+In Test 1, we treat each review as an independent datapoint and aggregate all reviews from the same condition.
+We treat the \texttt{Human Ideas} as the baseline condition and compare it with \texttt{AI Ideas} and \texttt{AI Ideas + Human Rerank} using two-tailed Welch’s t-tests with Bonferroni correction. 
+We show the barplot in Figure~\ref{fig:results_barplots} and the detailed numerical results in Table~\ref{table:results_test1}.
+Both \texttt{AI Ideas} ($\mu = 5.64 \pm \sigma = 1.76$) and \texttt{AI Ideas + Human Rerank} ($\mu = 5.81 \pm \sigma = 1.66$) are significantly better than \texttt{Human Ideas} ($\mu = 4.84 \pm \sigma = 1.79$) on the novelty score ($p<0.01$).
+In this particular test, the AI ideas in both conditions are also significantly better than human ideas on the excitement score ($p<0.05$), and the \texttt{AI Ideas + Human Rerank} condition is also significantly better than \texttt{Human Ideas} in terms of the overall score ($p<0.05$). 
+We do not observe significant differences between AI-generated ideas and human-written ideas on the other metrics. 
+
+
+\subsection{Test 2: Treating Each Idea as an Independent Datapoint}
+
+Since we collect multiple reviews for each idea, one could argue that we should not treat each review as an independent datapoint. To account for this potential confounder, we perform Test 2 where we average the scores of each idea and treat each idea as one datapoint. This way, the sample size for every condition will be $N = 49$, namely the number of ideas. 
+We treat the \texttt{Human Ideas} as the baseline condition and compare it with \texttt{AI Ideas} and \texttt{AI Ideas + Human Rerank} using two-tailed
+Welch’s t-tests with Bonferroni correction. 
+As shown in Table~\ref{table:results_per_idea}, we still see significant results ($p<0.05$) where both \texttt{AI Ideas} ($\mu = 5.62 \pm \sigma = 1.39$) and \texttt{AI Ideas + Human Rerank} ($\mu = 5.78 \pm \sigma = 1.07$) have higher novelty scores than \texttt{Human Ideas} ($\mu = 4.86 \pm \sigma = 1.26$). 
+
+\subsection{Test 3: Treating Each Reviewer as an Independent Datapoint}
+
+Another possible confounder is that different reviewers might have different biases, for example, some reviewers may be more lenient than others. To account for such reviewer biases, we perform Test 3 where we treat each reviewer as one datapoint and compute their average score on each condition. Then for each reviewer, we get their mean score difference between the \texttt{AI Ideas} condition and the \texttt{Human Ideas} condition, as well as the difference between the \texttt{AI Ideas + Human Rerank} condition and the \texttt{Human Ideas} condition. This way, we only analyze the differences among the different conditions. That is,  % rather than the absolute scales of the scores. 
+if the differences are significantly higher than zero under the one-sample t-test, that indicates reviewers are giving higher scores to one condition compared to the other.
+% the first condition compared to the second. 
+The results are shown in Table~\ref{table:results_per_reviewer}, and we see significant results ($p<0.05$) that AI ideas in both the \texttt{AI Ideas} and \texttt{AI Ideas + Human Rerank} conditions are rated more novel than \texttt{Human Ideas}. Therefore, we conclude that % we have confirmed that our conclusion on 
+AI ideas generated by our ideation agent are judged as more novel than human expert generated ideas, consistently across all three different statistical tests.~\footnote{We also include results of fitting linear mixed-effects models in Appendix~\ref{sec:mixed_effects_model}, which reinforces our conclusions. Additionally, we plot the breakdown of all metrics by topic in Appendix~\ref{sec:topic_breakdown}.} 
+% We also note that another conclusion that holds across all three tests is that \texttt{Human Ideas + Human Rerank} has higher excitement scores than \texttt{Human Ideas}.
+
+
+% \subsection{Mixed-Effect Models}
+
+% \subsection{Additional Analysis: Mixed-Effects Models and Breakdown by Topic}
+
+% Apart from the above three tests, we also include two additional analyses: fitting linear mixed-effects models and the breakdown results by topics. 
+% %
+% One way to combine all the statistical tests above is to fit a linear mixed-effects model where we treat the condition as the fixed effect and other factors including reviewer and idea as random effects, while also accounting for the differences among different topics. This way, we can rely on the regression to account for all the possible confounders as the random effects. The detailed results are in Appendix~\ref{sec:mixed_effects_model}, where our main conclusion on AI ideas being more novel still holds with $p < 0.05$. 
+% We also note that another conclusion that holds across all tests is that \texttt{Human Ideas + Human Rerank} has higher excitement scores than \texttt{Human Ideas}. 
+% Additionally, we plot the breakdown of all metrics by topic in Appendix~\ref{sec:topic_breakdown}. Due to the smaller sample sizes when broken down into each topic, most results are not significant, so we only focus on the aggregate comparisons in the main paper. 
+
+
+
+% We show the breakdown results by topic in Table~\ref{table:results_topic}. 
+
+% \subsection{The Impact of RAG}
+

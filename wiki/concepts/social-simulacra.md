@@ -6,7 +6,7 @@ maturity: emerging
 key_papers: [social-simulacra-creating-populated-prototypes-social]
 first_introduced: "2022"
 date_updated: 2026-05-05
-related_concepts: [silicon-sampling, generative-agent-based-modeling]
+related_concepts: [silicon-sampling, generative-agent-based-modeling, homo-silicus]
 ---
 
 ## Definition
@@ -34,6 +34,20 @@ Output: community instance I = {members M_i, interactions T_ij} where T_ij are g
 | Goal | Design prototyping | Empirical social science |
 | Output | Community interactions | Survey/opinion responses |
 | Evaluation | Designer utility, Turing test | Alignment with population statistics |
+
+### Placing this concept among its siblings
+
+Three concepts in this wiki simulate humans with LLMs. They are distinguished by the **unit of simulation** and by **what is validated**, and a paper belongs to exactly one of them:
+
+| | [[homo-silicus]] | [[silicon-sampling]] | [[social-simulacra]] |
+|---|---|---|---|
+| Unit of simulation | one agent with endowments and preferences | a demographic subpopulation | a whole social system |
+| Question asked | how would an agent decide? | how would a group answer? | what would a community look like? |
+| Output | decisions in a scenario | response distributions | members, posts, replies, anti-social behaviour |
+| Validated against | economic theory and human-subject pilots | population statistics (algorithmic fidelity) | designer utility and plausibility |
+| Home discipline | behavioural / experimental economics | survey research, computational social science | HCI, social computing |
+
+Routing rule: if the paper reports **distributions matched to a population**, it belongs to [[silicon-sampling]]; if it reasons about an **individual agent's choice** under given endowments, to [[homo-silicus]]; if it generates a **populated system for design or stress-testing**, to [[social-simulacra]].
 
 ## When to use
 

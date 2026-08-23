@@ -2,9 +2,14 @@
 """Generate an interactive vis.js graph of the ΩmegaWiki knowledge graph.
 
 Usage:
-    python tools/visualize_graph.py wiki/ [--output wiki/graph/graph.html]
-    python tools/visualize_graph.py wiki/ --theme light   # white-background variant
-                                                           # → wiki/graph/graph_light.html
+    python tools/visualize_graph.py wiki/            # writes BOTH themes:
+                                                     #   wiki/graph/graph.html       (dark)
+                                                     #   wiki/graph/graph_light.html (light)
+    python tools/visualize_graph.py wiki/ --theme light --output some/path.html
+
+Both variants are rendered from a single scan of wiki/, so their graph payloads
+cannot drift apart. Narrowing to one theme with --theme leaves the other file
+untouched and therefore possibly stale; the tool warns when that happens.
 
 Requires internet access to load vis.js from CDN (unpkg.com).
 No external Python dependencies — stdlib only.
@@ -685,14 +690,68 @@ function toggleEdgeLabels() {
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def render_html(theme: str, payload: dict) -> str:
+    """Render the HTML document for one theme from an already-collected payload.
+
+    Pure: takes the shared graph payload and returns a new string. The payload is
+    collected once per run so every theme renders exactly the same graph data.
+    """
+    html = HTML_TEMPLATE
+    html = html.replace("__THEME_VARS__", _theme_vars_css(theme))
+    for placeholder, key in (
+        ("__NODES_JSON__", "nodes"),
+        ("__EDGES_JSON__", "edges"),
+        ("__NODE_COLORS_JSON__", "node_colors"),
+        ("__EDGE_COLORS_JSON__", "edge_colors"),
+        ("__NODE_DIRS_JSON__", "node_dirs"),
+        ("__EDGE_TYPES_JSON__", "edge_types"),
+    ):
+        html = html.replace(placeholder, json.dumps(payload[key], ensure_ascii=False))
+    return html
+
+
+def output_path_for(theme: str, wiki_root: pathlib.Path) -> pathlib.Path:
+    """Conventional output path for a theme inside wiki/graph/."""
+    name = "graph_light.html" if theme == "light" else "graph.html"
+    return wiki_root / "graph" / name
+
+
+def collect_payload(wiki_root: pathlib.Path) -> dict:
+    """Scan the wiki once and return the theme-independent graph payload."""
+    print("Collecting nodes…")
+    nodes = collect_nodes(wiki_root)
+
+    print("Collecting edges…")
+    edges = collect_edges(wiki_root)
+
+    print(f"Building vis.js datasets ({len(nodes)} nodes, {len(edges)} edges)…")
+    vis_nodes = build_vis_nodes(nodes)
+    vis_edges = build_vis_edges(edges, set(nodes.keys()))
+    dropped = len(edges) - len(vis_edges)
+    if dropped:
+        print(f"  {dropped} edge(s) dropped: endpoint not among the {len(nodes)} known nodes")
+
+    return {
+        "nodes": vis_nodes,
+        "edges": vis_edges,
+        "node_colors": NODE_COLORS,
+        "edge_colors": EDGE_COLORS,
+        "node_dirs": NODE_DIRS,
+        "edge_types": sorted({e.get("type", "supports") for e in edges}),
+    }
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Visualize ΩmegaWiki knowledge graph")
+    parser = argparse.ArgumentParser(
+        description="Visualize ΩmegaWiki knowledge graph (writes every theme by default)")
     parser.add_argument("wiki_root", help="Path to wiki/ directory")
     parser.add_argument("--output", default="",
-                        help="Output HTML path (default: wiki/graph/graph.html, "
-                             "or graph_light.html when --theme light)")
-    parser.add_argument("--theme", choices=sorted(THEMES), default="dark",
-                        help="Color theme: 'dark' (default) or 'light' (white background)")
+                        help="Output HTML path. Only valid together with a single "
+                             "--theme; by default every theme is written to its "
+                             "conventional path under wiki/graph/.")
+    parser.add_argument("--theme", choices=sorted(THEMES), default=None,
+                        help="Render only this theme instead of all of them. The "
+                             "other theme's file is left untouched and may go stale.")
     args = parser.parse_args()
 
     wiki_root = pathlib.Path(args.wiki_root).resolve()
@@ -700,40 +759,29 @@ def main():
         print(f"ERROR: {wiki_root} is not a directory", file=sys.stderr)
         sys.exit(1)
 
-    default_name = "graph_light.html" if args.theme == "light" else "graph.html"
-    output = pathlib.Path(args.output) if args.output else wiki_root / "graph" / default_name
-    output.parent.mkdir(parents=True, exist_ok=True)
+    themes = [args.theme] if args.theme else sorted(THEMES)
 
-    print("Collecting nodes…")
-    nodes = collect_nodes(wiki_root)
-    known_ids = set(nodes.keys())
+    if args.output and len(themes) > 1:
+        print("ERROR: --output needs a single --theme; without it every theme is "
+              "written to its conventional path under wiki/graph/.", file=sys.stderr)
+        sys.exit(2)
 
-    print("Collecting edges…")
-    edges = collect_edges(wiki_root)
+    if args.theme:
+        stale = [t for t in sorted(THEMES) if t != args.theme]
+        print(f"WARN: rendering only '{args.theme}'; {', '.join(stale)} left untouched "
+              f"and may now be stale", file=sys.stderr)
 
-    print(f"Building vis.js datasets ({len(nodes)} nodes, {len(edges)} edges)…")
-    vis_nodes = build_vis_nodes(nodes)
-    vis_edges = build_vis_edges(edges, known_ids)
+    payload = collect_payload(wiki_root)
 
-    # Edge types present in data
-    edge_types = sorted({e.get("type", "supports") for e in edges})
+    for theme in themes:
+        output = (pathlib.Path(args.output) if args.output
+                  else output_path_for(theme, wiki_root))
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(render_html(theme, payload), encoding="utf-8")
+        print(f"OK  [{theme}] {output}")
 
-    # Strip internal _etype key from serialized edges (kept on object for JS)
-    # We pass it as a separate field so the JS can use it for filtering.
-    # (vis.js ignores unknown fields on DataSet items.)
-
-    html = HTML_TEMPLATE
-    html = html.replace("__THEME_VARS__", _theme_vars_css(args.theme))
-    html = html.replace("__NODES_JSON__", json.dumps(vis_nodes, ensure_ascii=False))
-    html = html.replace("__EDGES_JSON__", json.dumps(vis_edges, ensure_ascii=False))
-    html = html.replace("__NODE_COLORS_JSON__", json.dumps(NODE_COLORS, ensure_ascii=False))
-    html = html.replace("__EDGE_COLORS_JSON__", json.dumps(EDGE_COLORS, ensure_ascii=False))
-    html = html.replace("__NODE_DIRS_JSON__", json.dumps(NODE_DIRS, ensure_ascii=False))
-    html = html.replace("__EDGE_TYPES_JSON__", json.dumps(edge_types, ensure_ascii=False))
-
-    output.write_text(html, encoding="utf-8")
-    print(f"OK  Written to {output}")
-    print(f"  {len(vis_nodes)} nodes, {len(vis_edges)} edges, {output.stat().st_size // 1024} KB")
+    print(f"  {len(payload['nodes'])} nodes, {len(payload['edges'])} edges, "
+          f"{len(themes)} theme(s)")
 
 
 if __name__ == "__main__":

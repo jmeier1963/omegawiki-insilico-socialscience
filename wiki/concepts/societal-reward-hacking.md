@@ -3,7 +3,7 @@ title: "Societal Reward Hacking"
 aliases: ["societal hacking", "regulatory loophole discovery", "institutional gaming by LLMs", "reward hacking of society", "specification gaming at societal scale"]
 tags: [reward-hacking, ai-safety, reinforcement-learning, regulation, governance]
 maturity: emerging
-key_papers: [large-language-models-hack-rewards-society]
+key_papers: [anatomy-frontier-lab-agent-intrusion-technical, large-language-models-hack-rewards-society]
 first_introduced: "2026"
 date_updated: 2026-06-20
 related_concepts: [gradual-disempowerment]

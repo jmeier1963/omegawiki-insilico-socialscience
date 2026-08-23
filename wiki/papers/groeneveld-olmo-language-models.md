@@ -60,3 +60,4 @@ The counterexample to the Ahmed et al. (2023) critique: OLMo is deliberately des
 - [[wilkinson-fair-guiding-principles]]
 - [[kapoor-narayanan-leakage-reproducibility]]
 - [[open-science-collaboration-reproducibility]]
+- [[bloom-176b-parameter-open-access-multilingual]] — the earlier open-collaboration frontier model this work extends toward full openness

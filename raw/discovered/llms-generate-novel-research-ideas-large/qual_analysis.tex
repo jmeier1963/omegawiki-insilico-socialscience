@@ -1,0 +1,84 @@
+\section{Qualitative Analysis and Examples}
+\label{sec:analysis}
+
+In this section, we offer some qualitative analysis of human- and AI-generated ideas based on our collected reviews and present four pairs of randomly sampled human and AI ideas as case studies.  
+
+\subsection{Analysis of Free-Text Reviews}
+
+Following recent practices of using LLMs to extract patterns from text corpora~\cite{Zhong2022DescribingDB,Zhong2023GoalDD}, we use Claude-3.5 to extract and cluster the main points from all reviews. We then manually verified and labeled each cluster. 
+
+Many reviews reinforce our quantitative finding that AI ideas tend to be more novel. For example, reviewers noted: ``The idea of [...] is quite novel in an in-context learning setting.'', ``The idea of exploring [...] using an LLM-based iterative approach is novel.'', ``The idea of [...] when constructing prompts to improve cross-lingual transfer is one that I have not heard of before.'', ``I like the idea to [...], and think it will be helpful for other researchers in the community.'', ``Combining [...] is a unique way of attempting to preserve the gist of the information while likely losing specific identifiers.'', and ``Safeguarding using [...] is clearly novel. Similar ideas have not been seen in the related work.''. 
+
+Next, we summarize some common failure modes of AI ideas:
+
+\begin{enumerate}
+    \item \textbf{Being too vague on implementation details.} For example, one reviewer noted: ``I'm not super clear on the details of this lattice and how the model will be prompted, so I'm not super sure how well the model will complete these subtasks and how well-suited this particular structure is to completing the overall task.'' and another reviewer noted: ``"For analyzing the effectiveness of the method, the proposal only provides a very ad-hoc + hand-wavey suggestion to compare responses across predefined questions.'' In another case, the AI idea is criticized for not considering practical implementation details: ``I think in each of the steps, there is something hard to execute. For example, in step Constellation Formation, how do we do the weighted sum?'' Similarly, other reviews noted: ``It's unclear how CLIP is connected to the language model and how training a CLIP model would enable the LM to understand images.'', and ``There's no mentioning on how to prompt the model to generate defensive strategies and refine the model's responses using these strategies.''
+    Such vagueness often makes it difficult for reviewers to make confident judgments: ``Because this idea is too general and vague, I can't really answer the previous question. An idea needs a certain level of details to be determined if it fits for a conference/journal but this one misses them.''
+
+    \item \textbf{Misuse of datasets.} For example: ``I'm not sure about the datasets picked. StereoSet is not a QA dataset; it simply contains statements. Also, I don't understand why Dialogue NLI responses require empathy.'', ``I'm concerned the datasets proposed are the right test cases for security of the code (since they are really just ML/programming problems, not system-level programming).'', and ``the choice of datasets might not be the best to show the effect of incorporating multiple perspectives, especially TruthfulQA  and ScienceQA, which seems to have a single correct interpretation and answer.''
+    In another example, the benchmark datasets chosen are considered too easy by the reviewer: ``none of the chosen datasets (MATH, GSM8K, and MMLU) uses complicated math concepts''.
+
+    \item \textbf{Missing or inappropriate baselines.} For example: ``The proposed method needs to be compared to simply asking the model to think of one (or several) facts about the question before answering using more turns. This could be an additional baseline to verify the scoring process is meaningful.'' and ``Although the proposal includes some baselines that should be compared to, it does not mention some methods which seem to do quite well with LLMs.'' Sometimes, ``the chosen baselines may not be suitable'', for example, because they are not directly comparable with the proposed method. 
+
+    \item \textbf{Making unrealistic assumptions.} For example: ``The assumption that model can (mostly) accurately flag its own hallucinations is quite tricky.'', ``there is a presupposed assumption that hallucinations in LLMs are ungrounded and independent of the data they are trained on, which is generally not considered true'', ``The big issue for the effectiveness of the proposed method is that, it asserts very strong assumptions on downstream tasks, such as there must exist only two extremes.'', ``Some assumptions (e.g., [...]) are unlikely to be true in practice, especially when low-resource languages and less represented cultures are included in the study.'', and ``A major assumption in this approach is that the model is able to [...]. However, [...]''. 
+
+    \item \textbf{Being too resource-demanding.} Despite the fact that we explicitly prompted the agent to consider feasibility when generating ideas, some of the generated ideas are still too resource-demanding.  For example, one reviewer noted: ``The biggest issue to feasibility I see is that the project calls for fine-tuning BLOOM (See step 5). BLOOM has 176B parameters so it's going to take quite a lot of GPUs to fine-tune. From a systems perspective, I see this as causing delays.'' In some other cases, manual data annotation is being criticized for feasibility: ``The bottleneck seems to be the dataset collection process if there are no existing datasets that fit the requirements of the paper.'', and ``the manual evaluation by native speakers or cultural experts could be time-consuming and resource-intensive''. 
+
+    \item \textbf{Not well-motivated.} For example: ``Not well-motivated and there is not a clear intuition that this work can work to increase the factuality.'', ``And in general the method is not well-motivated and needs reasons why retrieving from model itself is meaningful by use cases or specific tasks.'', and ``The idea simply doesn't make sense to me. Given current LLMs' ability, I'm pretty sure they can simply recite code like inserting data to a binary search tree.''
+
+    \item \textbf{Not adequately following existing best practices.} For example: ``The proposal does not seem to include awareness of what has been previously tried, or more strategic ways to evaluate success/failures...''
+
+\end{enumerate}
+
+
+We contrast these with some of the unique strengths and weaknesses of human ideas:
+
+\begin{enumerate}
+    \item \textbf{Human ideas are generally more grounded in existing research and practical considerations, but may be less innovative.} For example, these ideas might be applying existing techniques to new problems: ``Multilinguality as a debiasing method has already been considered in the literature, although not necessarily in the prompt engineering framework.'' Sometimes people apply incremental changes to existing techniques: ``The overall idea shares quite a similar idea with program-of-thought (PoT). The only difference is that there is an additional step where an LLM is prompted to decide whether to use code or not.'' Some ideas try to combine existing techniques: ``Query decomposition and RAG separately are well studied, if there is no existing work that combines both (which I'm not aware of), then it's reasonably novel.'' As some reviewers noted, human ideas tend to build on known intuitions and results: ``There are already existing works on using available lexicons to improve the translation capabilities of LLMs in general.'' 
+
+    \item \textbf{Human ideas tend to be more focused on common problems or datasets in the field.} For example:  ``The problem of models not handling negation properly is a very common problem, especially among propriety LMs such as claude-3-5-sonnet.'', ``The data exist. This project mainly entails plugging in these datasets to a prompt template and finetuning for a bit. There is little left unspecified, and it should be quite simple to execute on.'', ``I haven't found any work using this idea to solve this specific problem, but [...] is definitely not new.'', and ``While existing works have explored the problem of calibration in long-form answers (e.g. [...]), the specific method for calibration is different.''
+
+    \item \textbf{Human ideas sometimes prioritize feasibility and effectiveness rather than novelty and excitement.} For example, reviewers noted: ``I don't think this will be a groundbreaking finding, but it will probably work.'' and ``while the idea is promising and could lead to significant improvements, it may not be groundbreaking enough to be considered transformative or worthy of a best paper award''. 
+\end{enumerate}
+
+
+
+% \textbf{AI ideas sometimes make unrealistic assumptions about model capabilities.}
+
+
+% \textbf{Sometimes the proposed idea is similar to very recent papers, validating its effectiveness.} One reviewer noted this for a human idea: ``This shares a quite similar idea to: [arxiv link] however this paper was only released 6 days ago, and will be presented at ACL as an oral presentation, giving me great confidence in this idea!''
+
+
+\subsection{Randomly Sampled Human and AI Ideas with Reviews}
+ 
+We randomly sample four pairs of ideas from different topics to ground our numerical results with actual examples. 
+In each pair, there is one AI idea and one human idea. To save space, we include the full project proposal of each idea along with the full set of reviews in the Appendix, but we list their titles, topics, and average scores here for quick reference (we reveal whether each idea is AI-generated or human-written in Appendix~\ref{sec:identity}):
+
+\begin{enumerate}
+    \item Modular Calibration for Long-form Answers: Appendix~\ref{sec:example_1} \\
+    Topic: Uncertainty; Average Overall Score: 5.5
+    
+    \item Semantic Resonance Uncertainty Quantification: Calibrating LLM Confidence through Multi-Path Reasoning: Appendix~\ref{sec:example_2} \\
+    Topic: Uncertainty; Average Overall Score: 6
+    
+    \item Translation with LLMs through Prompting with Long-Form Context: Appendix~\ref{sec:example_3} \\
+    Topic: Multilingual; Average Overall Score: 4
+
+    \item Linguistic Pivot Constellation: Enhancing Cross-Lingual Transfer for Low-Resource Languages and Dialects: Appendix~\ref{sec:example_4} \\
+    Topic: Multilingual; Average Overall Score: 6.7
+
+    \item LLM Directed Retrieval Querying for Improving Factuality: Appendix~\ref{sec:example_5} \\
+    Topic: Factuality; Average Overall Score: 4.7 
+
+    \item Semantic Divergence Minimization: Reducing Hallucinations in Large Language Models through Iterative Concept Grounding: Appendix~\ref{sec:example_6} \\
+    Topic: Factuality; Average Overall Score: 3.3 
+
+    \item Autoprompting: Generate Diverse Few-shot Examples for Any Application: Appendix~\ref{sec:example_7} \\
+    Topic: Coding; Average Overall Score: 5 
+    
+    \item Temporal Dependency Unfolding: Improving Code Generation for Complex Stateful Systems: Appendix~\ref{sec:example_8} \\
+    Topic: Coding; Average Overall Score: 6.7
+\end{enumerate}
+    
+
+% We will exclude these example ideas in the second phase of our study when we recruit participants to execute ideas to avoid any possible contamination. 

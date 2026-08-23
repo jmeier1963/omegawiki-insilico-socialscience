@@ -64,3 +64,4 @@ The first neural-level evidence for what Carr (2010) predicted about internet us
 - [[collins-tacit-explicit-knowledge]]
 - [[ericsson-deliberate-practice]]
 - [[messeri-crockett-ai-illusions-understanding]]
+- [[automation-induced-deskilling]] — the general mechanism this paper supplies neurophysiological evidence for

@@ -6,7 +6,7 @@ maturity: active
 key_papers: [machine-culture, predicting-results-social-science-experiments-using, ai-transformation-social-science-research, out-one-many-using-language-models, position-llm-social-simulations-promising-research, beyond-static-responses-multi-agent-llm, polypersona-persona-grounded-llm-synthetic-survey, emulating-public-opinion-proof-concept-ai, evaluating-use-large-language-models-synthetic, illusion-artificial-inclusion, survey-response-generation-generating-closed-ended, synthetic-replacements-human-survey-data-perils, how-generative-language-models-answer-opinion, mixed-subjects-design-treating-large-language, identifying-bots-through-llm-generated-text, threat-analytic-flexibility-using-large-language, llm-driven-bot-infiltration-protecting-web, quantifying-persona-effect-llm-simulations, donald-trumps-virtual-polls-simulating-predicting, ai-augmented-surveys-leveraging-large-language, problems-llm-generated-data-social-science, prompt-perturbations-reveal-human-like-biases, cultural-bias-cultural-alignment-large-language, large-language-models-computational-social-science, artificial-intelligence-unbiased-opinions-assessing-gpt, assessing-bias-llm-generated-synthetic-datasets, vox-populi-vox-ai-using-language, large-language-models-replace-human-participants, potential-existential-threat-large-language-models, revealing-fine-grained-values-opinions-large, balancing-large-language-model-alignment-algorithmic, using-llms-advance-cognitive-science-collectives, collapse-heterogeneity-silicon-philosophers, turing-test-whether-ai-chatbots-behaviorally, synthetic-participants-generated-large-language-models, assessing-reliability-persona-conditioned-llms-synthetic, whose-personae-synthetic-persona-experiments-llm, human-study-did-involve-human-subjects, generative-agent-based-modeling-actions-grounded, social-science-moves-silico, persona-based-simulation-human-opinion-population, llms-generate-structurally-realistic-social-networks, german-general-personas-survey-derived-persona, synonymix-unified-group-personas-generative-simulations, restoring-heterogeneity-llm-based-social-simulation, more-parameters-than-populations-systematic-literature, introducing-anthropic-interviewer, benchmarking-distributional-alignment-large-language-models, llm-survey-framework-coverage-reasoning-dynamics, synthetic-personas-distort-structure-human-belief, using-generative-ai-sequential-data-generation]
 first_introduced: "2022"
 date_updated: 2026-04-13
-related_concepts: [algorithmic-fidelity]
+related_concepts: [algorithmic-fidelity, homo-silicus, social-simulacra]
 ---
 
 ## Definition
@@ -45,6 +45,20 @@ where $\text{backstory}(D)$ is a natural language description of $D$. Fidelity i
 | Ecological validity | Uncertain | High |
 | Temporal currency | Capped at training cutoff | Current |
 | Contamination risk | High | Low |
+
+### Placing this concept among its siblings
+
+Three concepts in this wiki simulate humans with LLMs. They are distinguished by the **unit of simulation** and by **what is validated**, and a paper belongs to exactly one of them:
+
+| | [[homo-silicus]] | [[silicon-sampling]] | [[social-simulacra]] |
+|---|---|---|---|
+| Unit of simulation | one agent with endowments and preferences | a demographic subpopulation | a whole social system |
+| Question asked | how would an agent decide? | how would a group answer? | what would a community look like? |
+| Output | decisions in a scenario | response distributions | members, posts, replies, anti-social behaviour |
+| Validated against | economic theory and human-subject pilots | population statistics (algorithmic fidelity) | designer utility and plausibility |
+| Home discipline | behavioural / experimental economics | survey research, computational social science | HCI, social computing |
+
+Routing rule: if the paper reports **distributions matched to a population**, it belongs to [[silicon-sampling]]; if it reasons about an **individual agent's choice** under given endowments, to [[homo-silicus]]; if it generates a **populated system for design or stress-testing**, to [[social-simulacra]].
 
 ## When to use
 

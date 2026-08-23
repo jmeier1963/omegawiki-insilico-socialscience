@@ -61,3 +61,4 @@ Important demonstration of a practical problem for AI-assisted science: the syst
 - [[liang-monitoring-ai-modified-content]]
 - [[groeneveld-olmo-language-models]]
 - [[narayanan-kapoor-ai-normal-technology]]
+- [[performance-reproducibility-large-language-models-named]] — draws the regulatory consequence of undisclosed drift

@@ -1,0 +1,103 @@
+\section{In-Depth Analysis of the Human Study}
+\label{sec:quan_analysis}
+
+While the above main results highlight the promise of LLMs in generating novel research ideas, there are some additional nuances.
+In this section, we move beyond the statistical comparisons and dive into other aspects of our collected data. 
+Specifically, we focus on the quality of human ideas, reviewer preferences, and the extent of reviewer agreement. 
+% By delving into these aspects, we aim to offer a more comprehensive understanding of the dynamics at play.
+
+\subsection{Human Experts May Not Be Giving Their Best Ideas}
+We first investigate whether human experts are submitting their best ideas to us. 
+% First of all, we acknowledge that our expert idea writers, despite their qualifications, might not be submitting their best ideas to us. 
+We did a post-study survey to understand how idea-writing participants came up with their ideas. Out of the 49 participants, 37 of them came up with the idea on the spot, while the other 12 already had the idea before the study. Furthermore, we asked the survey question: ``\emph{How does this idea compare to your past research ideas (ideas that you actually worked on)? Please answer with a percentile. E.g., this idea is one of my top 10\% ideas.}'' Our participants indicated that on average their submitted ideas are about the top 43\% of all their past ideas. This implies that our collected ideas are likely the median-level ideas from these expert researchers, which is reasonable given that most of them came up with the idea within the 10-day time constraint of the task. 
+
+
+
+% Self-Rank (Top k\%) & 43 & 5 & 90 & 20.3 \\
+
+\subsection{Reviewers Tend to Focus More on Novelty and Excitement}
+
+To gain a deeper understanding of the dynamics between the different metrics in the review process, we explore whether reviewers focus on specific aspects when evaluating the ideas.
+We compute the pairwise correlation between different metrics in Table~\ref{table:metric_correlation}. The overall score mostly correlates with the novelty score ($r=0.725$)  and excitement score ($r=0.854$), while having almost no correlation ($r<0.1$) with the feasibility score. This implies that reviewers might be paying more attention to the novelty and excitement aspects of the ideas when they are reviewing. 
+
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{l c c c c c} 
+ \hline
+ & Overall & Novelty & Excitement & Feasibility & Effectiveness \\ 
+ \hline
+ Overall & -- & 0.725 & 0.854 & 0.097 & 0.642 \\ 
+ Novelty & 0.725 & -- & 0.719 & -0.073 & 0.357 \\ 
+ Excitement & 0.854 & 0.719 & -- & -0.031 & 0.565 \\ 
+ Feasibility & 0.097 & -0.073 & -0.031 & -- & 0.251 \\ 
+ Effectiveness & 0.642 & 0.357 & 0.565 & 0.251 & -- \\ 
+ \hline
+\end{tabular}
+\caption{Pairwise correlation between different metrics (symmetric matrix).}
+\label{table:metric_correlation}
+\end{table}
+
+
+
+
+% \begin{wraptable}{r}{0.35\textwidth}
+% \centering
+% \small 
+% \begin{tabular}{l c c} 
+%  \hline
+%  Score & Ours & ICLR \\ 
+%  \hline
+%  Overall  & 0.29 & 0.29 \\
+%  Novelty  & 0.19 & -- \\
+%  Excitement  & 0.24 & -- \\
+%  Feasibility  & 0.22 & -- \\
+%  Effectiveness  & 0.16 & -- \\
+%  \hline
+% \end{tabular}
+% \caption{Reviewer agreement (Krippendorff's alpha) for different scores.}
+% \label{table:agreement}
+% \end{wraptable}
+
+
+
+\subsection{Reviewing Ideas is Inherently Subjective}
+Finally, we acknowledge that reviewing is inherently subjective, and reviewing based on ideas rather than executed papers might be even more subjective. We investigate this using inter-reviewer agreement. 
+% To quantify reviewer agreement, 
+Specifically, we randomly split reviewers of each paper into half, use one half to rank the top and bottom 25\% of all ideas, and then measure agreement with the held-out set of reviewers.~\footnote{This metric follows the balanced accuracy metric as used in \citet{AIScientist} and avoids the limitations of other agreement metrics like Krippendorff's alpha, which require overlapping reviews and would result in a sparse matrix due to the non-overlapping nature of our reviewer assignments. We do the random splitting 20 times and report the average to reduce variances.}
+As shown in the first block of Table~\ref{table:agreement}, reviewers have a relatively low agreement ($56.1\%$) despite the fact that we have provided detailed explanations for each metric in our review form.
+As a baseline comparison, the NeurIPS 2021 reviewer consistency experiment found $66.0\%$ accuracy using this reviewer agreement metric in the balanced setting~\cite{beygelzimer2021neurips,AIScientist}. 
+We also computed the reviewer agreement using the same metric on the 1.2K ICLR 2024 submissions related to language models, which has a balanced accuracy of $71.9\%$. 
+While our reviewer agreement is higher than random ($50\%$), it is generally lower than conference reviewing, most likely due to the higher subjectivity involved when evaluating ideas without seeing the actual experiment results. 
+
+
+
+
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{l c c c c} 
+%  \hline
+%  & Mean & Min & Max & SD \\ 
+%  \hline
+%  No. of Reviews & 3.8 & 2 & 7 & 1.4 \\
+%  No. of Conditions & 2.5 & 2 & 3 & 0.5 \\
+%  No. of Topics & 1.4 & 1 & 3 & 0.5 \\
+%  % Overall Scores' Mean & 4.689 & 1.000 & 8.000 & 1.307 \\
+%  % Overall Scores' SD & 1.371 & 0.000 & 2.828 & 0.672 \\
+%  % Novelty Scores' Mean & 5.195 & 2.000 & 8.000 & 1.220 \\
+%  % Novelty Scores' SD & 1.419 & 0.000 & 3.559 & 0.758 \\
+%  % Excitement Scores' Mean & 4.778 & 2.000 & 8.000 & 1.278 \\
+%  % Excitement Scores' SD & 1.468 & 0.000 & 3.536 & 0.731 \\
+%  % Feasibility Scores' Mean & 6.532 & 2.333 & 9.500 & 1.318 \\
+%  % Feasibility Scores' SD & 1.414 & 0.000 & 3.786 & 0.830 \\
+%  % Effectiveness Scores' Mean & 5.202 & 2.600 & 7.000 & 1.085 \\
+%  % Effectiveness Scores' SD & 1.319 & 0.000 & 3.536 & 0.839 \\
+%  \hline
+% \end{tabular}
+% \caption{Per-reviewer statistics.}
+% \label{table:per_reviewer_stats}
+% \end{table}
+
+
+

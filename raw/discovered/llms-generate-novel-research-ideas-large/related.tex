@@ -1,0 +1,78 @@
+\section{Related Work}
+\label{sec:related}
+
+
+\textbf{Research idea generation and execution}.
+Several prior works explored methods to improve idea generation, such as iterative novelty boosting~\cite{Wang2023SciMONSI}, multi-agent collaboration~\cite{Baek2024ResearchAgentIR}, and multi-module retrieval and revision~\cite{Yang2023LargeLM}. 
+While some of them share similar components as our ideation agent, these works focus on improving the idea generation methods over vanilla prompting baselines, without comparisons to any human expert baselines. 
+Beyond ideation, another line of work uses LLMs for executing experiments by generating code given the research problems~\cite{Huang2023MLAgentBenchEL,Tian2024SciCodeAR}, or combining idea generation with code generation to directly implement AI-generated ideas~\cite{AIScientist,Li2024MLRCopilotAM}. 
+These works either use automatic evaluation on a pre-defined set of problems and benchmarks, setting a constrained problem space; or rely on proxy metrics like LLM evaluators, which are often unreliable. 
+% SciMON~\cite{Wang2023SciMONSI}  proposes iterative revisions to improve the novelty of idea generation.
+% ResearchAgent~\cite{Baek2024ResearchAgentIR} instantiates multiple ReviewingAgents to provide feedback to the generated ideas. 
+% takes an existing paper as the source, retrieves relevant papers and entities from knowledge stores, and generates the research problem, proposed method, and experiment design, which gets further improved via feedback from multiple ReviewingAgents where each ReviewingAgent is prompted with review criteria derived from actual human judgments. 
+% MOOSE~\cite{Yang2023LargeLM} generates social science hypotheses with multiple types of automatic feedback and revision.  
+% These works focus on improving the idea generation methods over vanilla prompting baselines, without comparisons to any human expert baselines. 
+% Our work also introduces an LLM agent for idea generation, with the crucial difference that we focus on establishing a rigorous comparison with expert humans. 
+% Pushing this vision even further, two concurrent works developed agents for end-to-end research automation. 
+
+
+% \textbf{Research execution agents}.
+% Beyond idea generation, another line of work explored building agents to generate code and execute experiments. 
+% MLAgentBench~\cite{Huang2023MLAgentBenchEL} tasks LLM agents to edit starter codebases to improve test performance on a fixed set of machine learning benchmarks. 
+% AI Scientist~\cite{AIScientist} is an agentic system that includes idea generation, code generation for experimentation, as well as paper writing. 
+% MLR-Copilot~\cite{Li2024MLRCopilotAM} is a similar agent framework that covers both idea generation and code implementation. 
+% Both works focus on building agent prototypes and largely rely on LLM self-evaluation and case studies without large-scale expert evaluation, which is significantly different from our evaluation-centric approach. 
+
+
+% \textbf{LLM for data-driven discovery}.
+% InfiAgent-DABench~\cite{Hu2024InfiAgentDABenchEA} benchmarks LLM agents on data analysis tasks grounded on provided CSV files. 
+% DS-Agent~\cite{Guo2024DSAgentAD} establishes a state-of-the-art LLM agent to generate code to train machine-learning models with a case-based reasoning framework. 
+% DiscoveryBench~\cite{Majumder2024DiscoveryBenchTD}  evaluates LLMs on automated data-driven discovery on six scientific domains, where LLM agents need to derive answers to research-style queries given the relevant datasets. 
+% BLADE~\cite{Gu2024BLADEBL} is another benchmark that evaluates agents on solving data-driven open-ended research problems where agents need to generate data-wrangling code to derive the solutions. 
+% \citet{Ifargan2024AutonomousLR} explored a data-to-paper pipeline where LLM agents write code to discover new insights from the given datasets with complete papers as the final artifact. 
+
+
+\textbf{LLM for other research-related tasks}. 
+LLMs have also been used for several other research-related tasks, such as generating code to perform data-driven discovery~\cite{Majumder2024DiscoveryBenchTD,Hu2024InfiAgentDABenchEA,Guo2024DSAgentAD,Gu2024BLADEBL,Ifargan2024AutonomousLR}, automatic review generation~\cite{DArcy2024MARGMR,Liang2023CanLL}, related work curation~\cite{Kang2024ResearchArenaBL,Ajith2024LitSearchAR,Press2024CiteMECL,Lehr2024ChatGPTAR}, experiment outcome prediction~\cite{Lehr2024ChatGPTAR,Zhang2024MASSWAN,Manning2024AutomatedSS,predictSocialScience}, and future work recommendation~\cite{Zhang2024MASSWAN}. 
+Unlike these works, we tackle the more creative and open-ended task of research ideation. 
+% There are also multiple benchmarks setting up LLMs for research-related tasks besides idea generation and execution. 
+% ResearchArena~\cite{Kang2024ResearchArenaBL} benchmarks LLM agents on writing literature review surveys given the research topics.
+% MASSW~\cite{Zhang2024MASSWAN} is a large dataset of structured summaries of research publications, which is used to benchmark various downstream tasks such as idea generation given the context, method recommendation, outcome prediction, and future work recommendation. 
+% LitSearch~\cite{Ajith2024LitSearchAR} is a paper retrieval benchmark with queries rephrased from inline citations in papers or written by the paper authors themselves. 
+% CiteMe~\cite{Press2024CiteMECL} benchmarks LLMs on predicting inline citations in recent machine learning papers. 
+% SciCode~\cite{Tian2024SciCodeAR} is a scientist-curated coding benchmark with problems sourced from five natural science disciplines annotated with subproblem decompositions. 
+% MARG~\cite{DArcy2024MARGMR} proposes a multi-agent review generation system and evaluates the generated reviews with both automatic and human evaluation. 
+% \citet{Liang2023CanLL} also evaluated the quality of GPT-4 generated paper reviews, finding that they overlap significantly with expert-written reviews and are labeled as helpful by over half of the expert annotators. 
+% \citet{Hu2024AutomatedDO} explored using LLMs to optimize the design of LLM agents automatically.
+% \citet{Lehr2024ChatGPTAR} systematically probed the capabilities of ChatGPT on four research tasks including curating scientific articles, detecting violations of statistical best practices and evolving open science protocols, simulating known results, and predicting highly novel data, with varying levels of success. 
+
+
+\textbf{Computational creativity}.
+Our work also connects to the line of work on examining AI's novelty and diversity in creative tasks. 
+\citet{Chakrabarty2023ArtOA} found that  AI writings are less creative than professional writers, while we show LLM-generated ideas can be more novel than experts on the task of research ideation. 
+Another line of work found that LLM generations lack collective diversity~\cite{Zhou2024SharedIL,Anderson2024HomogenizationEO}, which matches our findings on idea generation. 
+Lastly, several other works conducted human evaluation to study the impact of AI exposure or human-AI collaboration on novelty and diversity~\cite{Padmakumar2023DoesWW,Ashkinaze2024HowAI,Liu2023HowAP} with mixed conclusions. While we also conduct a human evaluation of idea novelty, we focus on the human-AI comparison on the challenging task of research ideation with expert participants.  
+
+% AI ideas may increase collective diversity but not individual creativity~\cite{Ashkinaze2024HowAI}; 
+% human co-writing with aligned LLMs reduces lexical and idea diversity~\cite{Padmakumar2023DoesWW};
+% and 
+% \citet{Ashkinaze2024HowAI} conducted a dynamic human study where participants generated alternative object-use ideas with varying exposure to AI-generated ideas. They found that higher exposure to AI ideas may
+% increase collective diversity but not individual creativity. 
+%
+% \citet{Chakrabarty2023ArtOA} recruited professional writers to evaluate stories written by expert writers and LLMs and found LLM-generated stories to be much less creative. 
+%
+% \citet{Padmakumar2023DoesWW} found that human co-writing with aligned LLMs results in a significant reduction in lexical and idea diversity, but not with the unaligned base models. 
+%
+% \citet{Zhou2024SharedIL} used a novel imaginary question-answering task where LLMs generate questions based on made-up concepts and found that other LLMs can answer these imagined questions surprisingly well, implying that many LLMs may hallucinate in similar manners. 
+%
+% \citet{Anderson2024HomogenizationEO} evaluated ChatGPT as a creative support tool for humans on creative ideation tasks and found that users of ChatGPT produce a more homogenous set of ideas at the group level. 
+% %
+% \citet{Liu2023HowAP} developed CoQuest, a system to facilitate human-LLM co-creation of research questions, finding that a higher degree of AI initiative leads to co-creation outcomes with enhanced creativity, albeit at the expense of the overall co-creation experience. 
+
+% \textbf{AI4Science} More broadly, our work also contributes to AI4Science.
+
+% \textbf{LLM Agents}
+
+
+
+

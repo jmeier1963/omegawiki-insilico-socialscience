@@ -62,3 +62,4 @@ The cleanest causal evidence to date that unconstrained AI assistance in educati
 - [[ericsson-deliberate-practice]]
 - [[collins-tacit-explicit-knowledge]]
 - [[carr-shallows-internet-brain]]
+- [[automation-induced-deskilling]] — the general mechanism: assisted gain, unassisted loss

@@ -3,7 +3,7 @@ title: "AI Race Dynamics"
 aliases: ["AI race", "AI arms race", "race to AI", "AI development race", "AI race dynamics"]
 tags: [ai-governance, geopolitics, competition, safety, international-relations]
 maturity: active
-key_papers: [strategic-insights-simulation-gaming-ai-race, golden-opportunity-american-ai, state-ai-report-2025, guardian-scientist-leaving-us-china-song, trends-artificial-intelligence-bond-mary-meeker, modeling-geopolitics-ai-development, eric-schmidt-innovation-power-technology-geopolitics, china-genai-content-security-standard-explainer, microsoft-openai-partnership-new-yorker-inside, ai-will-transform-character-warfare, deepseek-view-china, state-ai-report-2023, us-vs-china-how-win-wrong, future-proofing-frontier-ai-regulation, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, eric-schmidt-ai-science-moonshot, openai-economic-blueprint-ai-america]
+key_papers: [racing-ruin, strategic-insights-simulation-gaming-ai-race, golden-opportunity-american-ai, state-ai-report-2025, guardian-scientist-leaving-us-china-song, trends-artificial-intelligence-bond-mary-meeker, modeling-geopolitics-ai-development, eric-schmidt-innovation-power-technology-geopolitics, china-genai-content-security-standard-explainer, microsoft-openai-partnership-new-yorker-inside, ai-will-transform-character-warfare, deepseek-view-china, state-ai-report-2023, us-vs-china-how-win-wrong, future-proofing-frontier-ai-regulation, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, eric-schmidt-ai-science-moonshot, openai-economic-blueprint-ai-america]
 first_introduced: ""
 date_updated: 2026-05-06
 related_concepts: []
@@ -50,6 +50,7 @@ When analyzing: AI governance failures, competitive timelines, international AI 
 ## Key papers
 
 - [[strategic-insights-simulation-gaming-ai-race]]
+- [[racing-ruin]] — stopping-game model showing when racing to certain disaster is self-enforcing, and why transparency is non-monotone in its effect on safety
 
 ## My understanding
 

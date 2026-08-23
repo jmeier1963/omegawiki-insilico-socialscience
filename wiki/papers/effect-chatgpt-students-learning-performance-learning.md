@@ -1,10 +1,10 @@
 ---
-title: "The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis"
+title: "[RETRACTED] The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis"
 slug: effect-chatgpt-students-learning-performance-learning
 arxiv: ""
 venue: "Humanities and Social Sciences Communications (Nature) 12:621"
 year: 2025
-tags: [education, chatgpt, meta-analysis, learning-performance, higher-order-thinking, ai-in-education]
+tags: [retracted, education, chatgpt, meta-analysis, learning-performance, higher-order-thinking, ai-in-education]
 importance: 4
 date_added: 2026-05-06
 source_type: pdf
@@ -14,6 +14,17 @@ domain: NLP
 code_url: ""
 cited_by: []
 ---
+
+
+## Retraction notice
+
+**This paper was retracted in 2026.** Retraction Note: *Humanities and Social Sciences Communications*, https://doi.org/10.1057/s41599-026-07310-z — retracting the article published online 6 May 2025 (https://doi.org/10.1057/s41599-025-04787-y).
+
+The Editor's stated grounds: "concerns regarding discrepancies in the meta-analysis. These issues ultimately undermine the confidence the Editor can place in the validity of the analysis and resulting conclusions." The authors, Jin Wang and Wenxiang Fan, did not respond to correspondence regarding the retraction.
+
+Anything on this page that rests on the meta-analytic effect sizes should be treated as withdrawn. The page is retained because the retraction itself is evidentially useful: a widely cited meta-analysis on ChatGPT's effect on learning outcomes failed post-publication scrutiny, which bears directly on how thin the empirical base for AI-and-learning claims actually is.
+
+See [[more-than-10-000-research-papers]] and [[richardson-scancar-papermill-detection]] for the wider retraction picture.
 
 ## Problem
 

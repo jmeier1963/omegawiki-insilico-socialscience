@@ -1,0 +1,26 @@
+\begin{abstract}
+Recent advancements in large language models (LLMs) have sparked optimism about their potential to accelerate scientific discovery, with a growing number of works proposing research agents that autonomously generate and validate new ideas.
+% Advancements in the capabilities of large language models (LLMs) have brought about significant optimism about their ability to accelerate scientific discovery, and LLMs with the potential to autonomously discover and validate new ideas would be transformative for research. 
+%If LLMs can autonomously generate and validate new ideas, they could transform scientific research.
+%
+%While there have been a growing number of attempts to build end-to-end research agents, 
+Despite this, no evaluations have shown that LLM systems can take the very first step of producing novel, expert-level ideas, let alone perform the entire research process.
+%we do not even know if current LLM systems are capable of the very first step of the scientific process: producing novel, expert-level ideas.
+% Existing works have relied on automated evaluations or small-scale human reviews, and no work has shown statistically significant comparisons of LLM performance to human baselines.
+%
+%We fill this evaluation gap by establishing a rigours experiment protocol with highly qualified expert participants. 
+%
+We address this by establishing an experimental design that evaluates research idea generation while controlling for confounders and performs the first head-to-head comparison between expert NLP researchers and an LLM ideation agent. 
+%
+% Our work fills this gap and performs carefully controlled comparisons for research ideation between expert NLP researchers and LLMs on the same LLM prompting topics. 
+%
+By recruiting over 100 NLP researchers to write novel ideas and blind reviews of both LLM and human ideas, we obtain the first statistically significant conclusion on current LLM capabilities for research ideation: 
+we find LLM-generated ideas are judged as more novel ($p<0.05$) than human expert ideas while being judged slightly weaker on feasibility.
+%
+Studying our agent baselines closely, we identify open problems in building and evaluating research agents, including failures 
+% with many commonly discussed strategies for improving and evaluating LLM research agents such as 
+of LLM self-evaluation and their lack of diversity in generation.
+%
+Finally, we acknowledge that human judgements of novelty can be difficult, even by experts, and propose an end-to-end study design which recruits researchers to execute these ideas into full projects, enabling us to study whether these novelty and feasibility judgements result in meaningful differences in research outcome.~\footnote{Interested researchers can sign up for this end-to-end study at: \url{https://tinyurl.com/execution-study}. We release our agent implementation and all human review scores at: \url{https://github.com/NoviScl/AI-Researcher}.\\ \hspace*{0.36cm} $^*$The last two authors advised this project equally.}  
+% 
+\end{abstract}

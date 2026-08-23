@@ -6,7 +6,7 @@ maturity: emerging
 key_papers: [large-language-models-simulated-economic-agents, automated-social-science-language-models-scientist, whose-personae-synthetic-persona-experiments-llm, generative-agent-based-modeling-actions-grounded, synthetic-participants-generated-large-language-models]
 first_introduced: "2023-01-18"
 date_updated: 2026-04-12
-related_concepts: [persona-conditioning, scm-based-automated-experimentation]
+related_concepts: [persona-conditioning, scm-based-automated-experimentation, silicon-sampling, social-simulacra]
 ---
 
 ## Definition
@@ -40,6 +40,20 @@ Not formalized — the framework is conceptual. The closest formalization is the
 | Endowment | Model parameters | Prompt text |
 | Ground truth | Rational equilibrium | Human training corpora |
 | Limitations | Rigid, unrealistic | Black box, memorization risk |
+
+### Placing this concept among its siblings
+
+Three concepts in this wiki simulate humans with LLMs. They are distinguished by the **unit of simulation** and by **what is validated**, and a paper belongs to exactly one of them:
+
+| | [[homo-silicus]] | [[silicon-sampling]] | [[social-simulacra]] |
+|---|---|---|---|
+| Unit of simulation | one agent with endowments and preferences | a demographic subpopulation | a whole social system |
+| Question asked | how would an agent decide? | how would a group answer? | what would a community look like? |
+| Output | decisions in a scenario | response distributions | members, posts, replies, anti-social behaviour |
+| Validated against | economic theory and human-subject pilots | population statistics (algorithmic fidelity) | designer utility and plausibility |
+| Home discipline | behavioural / experimental economics | survey research, computational social science | HCI, social computing |
+
+Routing rule: if the paper reports **distributions matched to a population**, it belongs to [[silicon-sampling]]; if it reasons about an **individual agent's choice** under given endowments, to [[homo-silicus]]; if it generates a **populated system for design or stress-testing**, to [[social-simulacra]].
 
 ## When to use
 

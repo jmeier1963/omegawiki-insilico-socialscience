@@ -1,0 +1,274 @@
+[
+ {
+  "line": 156,
+  "from": "papers/when-ai-builds-ai-findings-workshop",
+  "to": "papers/towards-end-end-automation-ai-research",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "medium"
+ },
+ {
+  "line": 157,
+  "from": "papers/using-gpt-driven-autonomous-lab-optimize",
+  "to": "papers/generalized-platform-artificial-intelligence-powered-autonomous",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 158,
+  "from": "papers/mathematics-rise-machines",
+  "to": "papers/triumvirate-ai-driven-theoretical-discovery",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 159,
+  "from": "papers/llm-survey-framework-coverage-reasoning-dynamics",
+  "to": "papers/out-one-many-using-language-models",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 160,
+  "from": "papers/prompting-diverse-ideas-increasing-ai-idea",
+  "to": "papers/using-large-language-models-idea-generation",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 161,
+  "from": "papers/math-inc-gauss-autoformalization",
+  "to": "papers/numina-lean-agent-open-general-agentic",
+  "old_type": "extends",
+  "new_type": "similar_method_to",
+  "confidence": "high"
+ },
+ {
+  "line": 162,
+  "from": "papers/false-promise-chatgpt",
+  "to": "papers/foundation-model-predict-capture-human-cognition",
+  "old_type": "contradicts",
+  "new_type": "challenges",
+  "confidence": "high"
+ },
+ {
+  "line": 163,
+  "from": "papers/could-ai-slow-science",
+  "to": "papers/towards-end-end-automation-ai-research",
+  "old_type": "contradicts",
+  "new_type": "challenges",
+  "confidence": "high"
+ },
+ {
+  "line": 164,
+  "from": "papers/introducing-anthropic-interviewer",
+  "to": "papers/out-one-many-using-language-models",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 165,
+  "from": "papers/murmuration-conjecture-finding-new-maths-ai",
+  "to": "papers/semi-autonomous-mathematics-discovery-gemini-case",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 166,
+  "from": "papers/chatgpt-defeated-doctors-diagnosing",
+  "to": "papers/using-large-language-models-idea-generation",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "medium"
+ },
+ {
+  "line": 168,
+  "from": "papers/lila-sciences-turbocharge-scientific-discovery",
+  "to": "papers/using-gpt-driven-autonomous-lab-optimize",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 174,
+  "from": "papers/richardson-scancar-papermill-detection",
+  "to": "papers/shumailov-model-collapse",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "medium"
+ },
+ {
+  "line": 175,
+  "from": "papers/kapoor-narayanan-leakage-reproducibility",
+  "to": "papers/open-science-collaboration-reproducibility",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 176,
+  "from": "papers/golchin-surdeanu-data-contamination",
+  "to": "papers/kapoor-narayanan-leakage-reproducibility",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 177,
+  "from": "papers/liang-monitoring-ai-modified-content",
+  "to": "papers/richardson-scancar-papermill-detection",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 178,
+  "from": "papers/duede-deep-learning-opacity",
+  "to": "papers/sullivan-understanding-machine-learning-models",
+  "old_type": "contradicts",
+  "new_type": "challenges",
+  "confidence": "high"
+ },
+ {
+  "line": 179,
+  "from": "papers/duran-formanek-computational-reliabilism",
+  "to": "papers/sullivan-understanding-machine-learning-models",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 180,
+  "from": "papers/boge-two-dimensions-opacity-deep-learning",
+  "to": "papers/duede-deep-learning-opacity",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "medium"
+ },
+ {
+  "line": 181,
+  "from": "papers/alvarado-explaining-epistemic-opacity",
+  "to": "papers/boge-two-dimensions-opacity-deep-learning",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "medium"
+ },
+ {
+  "line": 182,
+  "from": "papers/wang-yu-ml-reveals-physics-plasma",
+  "to": "papers/iten-discovering-physical-concepts",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 183,
+  "from": "papers/wang-yu-ml-reveals-physics-plasma",
+  "to": "papers/udrescu-tegmark-ai-feynman",
+  "old_type": "extends",
+  "new_type": "similar_method_to",
+  "confidence": "high"
+ },
+ {
+  "line": 184,
+  "from": "papers/szymanski-autonomous-laboratory",
+  "to": "papers/burger-mobile-robotic-chemist",
+  "old_type": "extends",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 185,
+  "from": "papers/leeman-challenges-autonomous-synthesis",
+  "to": "papers/szymanski-autonomous-laboratory",
+  "old_type": "contradicts",
+  "new_type": "challenges",
+  "confidence": "high"
+ },
+ {
+  "line": 186,
+  "from": "papers/gao-wang-quantifying-ai-scientific-research",
+  "to": "papers/schroter-ki-und-wissenschaften",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "medium"
+ },
+ {
+  "line": 188,
+  "from": "papers/bastani-generative-ai-harm-learning",
+  "to": "papers/kosmyna-brain-chatgpt-cognitive-debt",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 189,
+  "from": "papers/risko-gilbert-cognitive-offloading",
+  "to": "papers/kosmyna-brain-chatgpt-cognitive-debt",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 190,
+  "from": "papers/messeri-crockett-ai-illusions-understanding",
+  "to": "papers/bastani-generative-ai-harm-learning",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 191,
+  "from": "papers/strathern-improving-ratings",
+  "to": "papers/hicks-leiden-manifesto",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 193,
+  "from": "papers/smith-peer-review-flawed-process",
+  "to": "papers/richardson-scancar-papermill-detection",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ },
+ {
+  "line": 194,
+  "from": "papers/anderson-end-of-theory-wired",
+  "to": "papers/halevy-norvig-pereira-unreasonable-effectiveness-data",
+  "old_type": "supports",
+  "new_type": "builds_on",
+  "confidence": "high"
+ },
+ {
+  "line": 195,
+  "from": "papers/krauss-debunking-paradigm-shifts",
+  "to": "papers/chai-paradigm-shifts-robot-scientists",
+  "old_type": "contradicts",
+  "new_type": "challenges",
+  "confidence": "high"
+ },
+ {
+  "line": 196,
+  "from": "papers/sapkota-raza-llm-transparency-accessibility",
+  "to": "papers/groeneveld-olmo-language-models",
+  "old_type": "extends",
+  "new_type": "same_problem_as",
+  "confidence": "medium"
+ },
+ {
+  "line": 197,
+  "from": "papers/sapkota-raza-llm-transparency-accessibility",
+  "to": "papers/ahmed-industry-influence-ai-research",
+  "old_type": "supports",
+  "new_type": "same_problem_as",
+  "confidence": "high"
+ }
+]

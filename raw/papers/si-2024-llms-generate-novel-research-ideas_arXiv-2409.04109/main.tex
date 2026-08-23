@@ -1,0 +1,125 @@
+\documentclass{article}
+
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs} % for professional tables
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}    %
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+\usepackage{lipsum}  % For dummy text
+
+
+
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+% Use the following line for the initial blind version submitted for review:
+\usepackage{arxiv}
+\setcitestyle{authoryear,open={(},close={)}}
+\renewcommand{\cite}{\citep}
+
+
+% For theorems and such
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{wrapfig} 
+\usepackage{amssymb} % for \checkmark
+\usepackage{pifont}  % for \xmark
+\usepackage{xcolor}  % for coloring the symbols
+
+
+% if you use cleveref..
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% Todonotes is useful during development; simply uncomment the next line
+%    and comment out the line below the next line to turn off comments
+%\usepackage[disable,textsize=tiny]{todonotes}
+% \usepackage[textsize=tiny]{todonotes}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{adjustbox}
+\usepackage{xspace}
+\usepackage{fancyvrb}
+\usepackage[subtle]{savetrees}
+\usepackage{enumitem}
+\usepackage{titling}
+
+
+\def\shownotes{1}  %set 1 to show author notes 
+\ifnum\shownotes=1
+\newcommand{\authnote}[2]{[#1: #2]}
+\else
+\newcommand{\authnote}[2]{}
+\fi
+\newcommand{\tatsu}[1]{{\color{red}\authnote{Tatsu}{#1}}}
+\newcommand{\diyi}[1]{{\color{blue}\authnote{Diyi}{#1}}}
+\newcommand{\chenglei}[1]{{\color{orange}\authnote{Chenglei}{#1}}}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+
+\def\arxiv{1}
+\ifnum\arxiv=1
+\newcommand{\imgsize}{0.7\linewidth}
+\else
+\newcommand{\imgsize}{\linewidth}
+\fi
+
+\begin{document}
+\bibliographystyle{plainnat}
+
+
+%\title{Can LLMs Generate Better Research Ideas than Experts? \\
+\title{Can LLMs Generate Novel Research Ideas? \\
+\vspace{8pt} \Large A Large-Scale Human Study with 100+ NLP Researchers}
+
+\author{%
+        \large{Chenglei Si, Diyi Yang, Tatsunori Hashimoto} \\
+        \large{Stanford University}\\
+        {\texttt{\{clsi, diyiy, thashim\}@stanford.edu}}
+}
+
+
+\date{}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+\newcommand{\gcheckmark}{\textcolor{green}{\checkmark}} % Define green \checkmark
+\newcommand{\rxmark}{\textcolor{red}{\ding{55}}} % Define red \xmark
+
+\maketitle
+% \def\thefootnote{*}\footnotetext{The last two authors advised this project 
+%  equally.}\def\thefootnote{\arabic{footnote}}
+\input{abstract}
+\input{intro}
+\input{problem}
+\input{agent}
+\input{human_study}
+\input{results}
+\input{quan_analysis}
+\input{LLM_discussion}
+\input{qual_analysis}
+\input{related}
+\input{discussion}
+\input{ack}
+
+
+\bibliography{main}
+
+\newpage
+\appendix
+\input{appendix}
+
+
+\end{document}
+

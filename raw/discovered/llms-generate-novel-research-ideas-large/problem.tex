@@ -1,0 +1,96 @@
+\section{Problem Setup}
+\label{sec:problem}
+The central experiment of our work is a comparison of human- and LLM-generated ideas. While this goal is simple, there is no existing consensus on how to formulate the task of research ideation and evaluation, and we begin by defining the key aspects of our experiment design.
+
+We think of research idea evaluation as consisting of three separate components: 1). the idea itself, generated in response to our instructions, 2). the writeup which communicates the idea, and 3). the evaluation of the writeup by experts. We outline our experiment design in each of these three parts with particular focus on potential confounders, such as the area of research, the format of a research idea, and the evaluation process. 
+
+\paragraph{Ideation Scope and Instructions}
+
+Research ideas can take many different forms. They can be simple tricks to improve model performance, or they may be large-scale research programs that form the basis of a Ph.D. thesis. Any experiment on ideation must carefully balance the realisticness and interestingness of a research idea with the practical realities of eliciting ideas from a large population. In our case, these tradeoffs are even more pronounced, as we have designed our ideation experiments so that the resulting ideas can be executed by experts in a follow-up set of experiments.
+
+These constraints have led us to study prompting-based NLP research as a testbed for our study. Prompting research has been popular in recent years of NLP and AI research~\cite[e.g.,][inter alia]{Wei2022ChainOT,Si2022PromptingGT,Wang2022SelfConsistencyIC,Zhou2022LeasttoMostPE,Chen2022ProgramOT,Madaan2023SelfRefineIR,Yasunaga2023LargeLM,Yao2023TreeOT,Diao2023ActivePW,Qin2023LargeLM,Schulhoff2024ThePR}. This class of projects strikes a reasonable trade-off among our constraints. The most impactful prompting projects like chain-of-thought have had a major influence on LLM performance \citep{Wei2022ChainOT}, and prompting projects are executable with minimal computing hardware. 
+
+
+We further structure our ideation process to avoid selection-bias-based confounders in ideation. If we simply ask LLMs and humans to produce ideas on `prompting topics', we may find that LLMs and humans differ in the types of research ideas they produce (for example, LLMs may naturally suggest more projects on safer topics, which might be judged as less exciting by humans). This would lead us to simply measure misalignment in research topic preference between LLMs and humans, which is not the goal of our study. To address this possibility, we define a set of seven specific research topics extracted from the Call For Papers page of recent NLP conferences such as COLM.~\footnote{\url{https://colmweb.org/cfp.html}} Specifically, our topics include: Bias, Coding, Safety, Multilinguality, Factuality, Math, and Uncertainty (see Appendix~\ref{sec:topics} for a complete description of these topics).
+
+Each human and LLM participant of the ideation experiment receives the same set of natural language instructions including the same topic description, idea template, and demonstration example to ensure a fair comparison. For human participants, we additionally allow them to select a preferred topic from the list, and for each selected topic, we generate a corresponding LLM idea. This exactly matches the idea topic distribution between the LLM and human participants, while ensuring that human experts are able to select topics according to their expertise.
+
+
+\paragraph{Idea Writeup}
+An idea can only be evaluated if it is written up to be communicated, but this writing process introduces many additional potential confounders. Human researchers may write in ways that subtly signal quality research, such as including more examples and implementation details. 
+The format of the writeup functions as a way to scaffold what contents should be included and the level of detailedness. 
+Ideally, we want both human and LLM participants to provide all the necessary implementation details for their generated ideas. 
+
+
+We take inspiration from guidelines used in grant submissions and introduce a template to specify the structure and detailedness of idea proposals. Specifically, we construct a template that includes fields for the title, problem statement, motivation, proposed method, step-by-step experiment plan, test case examples, and the fallback plan. 
+Both the LLM agent and the human idea writers are instructed to follow this template and our provided demonstration examples to produce a project proposal as the output (see Appendix~\ref{sec:project_proposal_template} for the full template and Appendix~\ref{sec:demo_example_proposal_gen} for the demo example).
+%
+
+Even with these templates, there may be subtle writing style cues that affect the outcome measure. For example, humans may tend to write in a more engaging and informal tone. To reduce this possibility further, we developed a style normalization module that uses an LLM to convert all ideas into the same writing and formatting style without changing the original content.
+Our small-scale human study shows that such a normalization approach leads to a 50\% accuracy for expert human judges who are asked to distinguish AI ideas from human ideas.
+% We conducted a small-scale human study with five LLM researchers and they 
+% achieved 50\% accuracy on  after this style standardization. 
+Finally, the use of an LLM style anonymizer has the possibility of substantively changing the content of the ideas. To rule this out, the first author of this paper manually verified each human idea proposal to ensure all contents of the original ideas were preserved. 
+We present the full prompt used in Appendix~\ref{sec:style_transfer_prompt}.
+
+\paragraph*{Review and Evaluation}
+Reviewing research ideas is notoriously subjective, so we want to design a review form that defines all review criteria clearly to standardize and anchor the evaluations as much as possible. At the same time, we want our review criteria and measured variables to capture all the desiderata of high-quality research ideas.
+% [TODO Blah blah, we emulate the conference peer review process as a best practice]
+
+We follow best practices from AI conference reviewing (e.g., ICLR and ACL) when designing the review form, where we define four breakdown metrics including novelty, excitement, feasibility, and expected effectiveness, apart from the overall score. For each metric, we ask for a numerical score on a 1-10 scale along with a free-text rationale. We provide clear definitions and grounding for each numerical scale to calibrate all reviewers' standards (see Appendix~\ref{sec:review_form} for the full review form). 
+
+% \textbf{Experiment Conditions}
+% As mentioned earlier, 
+Our blind review evaluation will compare ideas from three different conditions: 
+
+\begin{enumerate}
+    \item \texttt{Human Ideas}: Idea proposals written by our recruited expert researchers. 
+
+    \item \texttt{AI Ideas}: Idea proposals generated by our LLM agent. % Since our agent has a ranking step in the end, 
+    We directly take the top-ranked ideas from the agent's output. 
+
+    \item \texttt{AI Ideas + Human Rerank}: Idea proposals generated by our LLM agent. % The authors To avoid the potential case where the LLM ranker fails to find the best ideas out of the AI generations, we further set up a third condition where 
+    The first author of this paper manually selected the top-ranked ideas out of all the LLM agent's generations rather than relying on the LLM ranker in order to better estimate the upper-bound quality of AI ideas.%  All ideas in this condition are still generated by the AI agent, just that the human reranker selects a different set of AI ideas than the LLM ranker. 
+\end{enumerate}
+
+ 
+In the next two sections, we instantiate how our LLM agent generates ideas and how our expert participants generate and review the ideas. 
+
+
+% The beginning of the review form includes a pre-survey asking for participant consent, agreement on not to use AI to write reviews,  their familiarity with the selected topic, and their prior review experience. We then present the anonymized idea and ask the following question:
+
+
+% Now that we have established a carefully controlled setup to compare ideas from the LLM agent and human experts, we describe the details of the agent and the experts in the next two sections. 
+
+% \textbf{Experiment Conditions}.
+% %
+% We compare ideas from three different conditions: 
+
+% \begin{enumerate}
+%     \item \texttt{Human Ideas}: Project proposals written by our recruited expert researchers. 
+
+%     \item \texttt{AI Ideas}: Project proposals produced by our AI agent. Since our agent has a ranking step in the end, we directly take the top-ranked ideas from the agent's output. 
+
+%     \item \texttt{AI Ideas + Human Rerank}: To avoid the potential case where a poor reranker fails to find the best ideas out of the AI generation, we further set up a third condition where one of the authors of this paper manually selects the top-ranked ideas out of all the AI generations. All ideas in this condition are still generated by the AI agent, just that the human reranker selects a different set of AI ideas than the AI ranker. 
+% \end{enumerate}
+ 
+
+% We then recruit expert researchers to blindly review ideas from all three conditions and compare their scores. 
+
+% \subsection{Idea Reviewing}
+
+% For our idea reviewing experts, the input is the project proposals generated by human experts or the AI agent. Their task is to fill in the following review form for each assigned idea. 
+
+% \textbf{Review Form}. We developed a review form similar to AI conference reviewing (e.g., ACL and ICLR). The beginning of the review form includes a pre-survey asking for participant consent, agreement on not to use AI to write reviews,  their familiarity with the selected topic, and their prior review experience. We then present the anonymized idea and ask the following question:
+
+%  \begin{enumerate}[nolistsep]
+%     \item Novelty: Score (1 - 10) and Free-Text Rationale 
+%     \item Excitement: Score (1 - 10) and Free-Text Rationale 
+%     \item Feasibility: Score (1 - 10) and Free-Text Rationale 
+%     \item Expected Effectiveness: Score (1 - 10) and Free-Text Rationale 
+%     \item Overall: Score (1 - 10) and Free-Text Rationale 
+%     \item Post-Survey: Confidence (1 - 5) and Time Spent 
+%  \end{enumerate}
+
+% We also provide a full example of the review form.~\footnote{\url{https://docs.google.com/forms/d/1Vteuhj8-l4Sa5peSV2eSTRy1D39s8hBbQ-M824LwA2E/}}
+% In the next two sections, we describe how we built our idea generation agent and the expert recruitment details. 

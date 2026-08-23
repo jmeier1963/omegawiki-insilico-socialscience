@@ -92,3 +92,4 @@ Worth watching against [[ai-agents-conduct-open-ended-ai]], which found frontier
 - challenges: [[ai-agents-conduct-open-ended-ai]]
 - challenges (reverse): [[intelligence-wise]]
 - part_of: [[ai-driven-scientific-discovery]]
+- [[why-tiny-social-media-post-mathematicians]] — the Jacobian conjecture case, where verification is cheap and genesis unavailable
