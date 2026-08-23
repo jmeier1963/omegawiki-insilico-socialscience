@@ -1,7 +1,8 @@
-<!-- markdownlint-disable MD001 MD013 MD033 MD041 MD060 -->
-<div align="center">
 
-<img src="assets/logo.png" width="180" alt="ΩmegaWiki Logo">
+
+
+
+![ΩmegaWiki Logo](assets/logo.png)
 
 # ΩmegaWiki
 
@@ -11,50 +12,54 @@
 
 *From paper ingestion to publication — your research knowledge compounds, never decays.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-yellow.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/Tests-2263_passing-brightgreen.svg)](#testing)
-[![Skills](https://img.shields.io/badge/Skills-23-purple.svg)](#skills)
-[![Claude Code](https://img.shields.io/badge/Powered_by-Claude_Code-d97706.svg)](https://docs.anthropic.com/en/docs/claude-code)
-[![Bilingual](https://img.shields.io/badge/i18n-EN_|_中文-orange.svg)](#bilingual-support)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python 3.9+](https://img.shields.io/badge/Python-3.9+-yellow.svg)
+![Tests](https://img.shields.io/badge/Tests-2263_passing-brightgreen.svg)
+![Skills](https://img.shields.io/badge/Skills-23-purple.svg)
+![Claude Code](https://img.shields.io/badge/Powered_by-Claude_Code-d97706.svg)
+![Bilingual](https://img.shields.io/badge/i18n-EN_|_中文-orange.svg)
 
 [English](#what-is-ωmegawiki) | [中文](#中文)
 
-</div>
 
-This working tree is an **in-silico social science** ΩmegaWiki: LLMs and generative agents as proxies for human populations, synthetic surveys, persona conditioning, and validity methodology. Start from the domain survey in [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md); add sources under `raw/papers/`.
+
+This working tree is an **in-silico social science** ΩmegaWiki: LLMs and generative agents as proxies for human populations, synthetic surveys, persona conditioning, and validity methodology. Start from the domain survey in `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`; add sources under `raw/papers/`.
 
 > **Current wiki state:** 538 papers · 47 claims · 468 graph edges · maturity: warm
 
 ---
 
+
+
 ## What is ΩmegaWiki?
 
-Andrej Karpathy proposed [LLM-Wiki](https://x.com/karpathy/status/1909372692069236775): an LLM that **builds and maintains a persistent, structured wiki** from your sources — not a throwaway RAG answer, but compounding knowledge that grows smarter with every paper you feed it.
+Andrej Karpathy proposed [LLM-Wiki](https://x.com/karpathy/status/2039805659525644595): an LLM that **builds and maintains a persistent, structured wiki** from your sources — not a throwaway RAG answer, but compounding knowledge that grows smarter with every paper you feed it.
 
 **ΩmegaWiki takes that idea and runs the full distance.** It's not just a wiki builder — it's a complete research lifecycle platform: from paper ingestion → knowledge graph → gap detection → idea generation → experiment design → paper writing → peer review response. All driven by 23 Claude Code skills, all centered on one wiki as the single source of truth.
 
-Here, that lifecycle backs a curated graph of claims, concepts, and papers on **silicon sampling**, simulacra evaluation, and related social-science uses of LLMs — see [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md) for scope and open questions.
+Here, that lifecycle backs a curated graph of claims, concepts, and papers on **silicon sampling**, simulacra evaluation, and related social-science uses of LLMs — see `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)` for scope and open questions.
 
 Drop your `.tex` / `.pdf` files in a folder. Run one command. Get a fully cross-referenced knowledge base — and then use it to **generate novel research ideas, design experiments, write papers, and respond to reviewers**.
 
 ## Why Wiki-Centric, Not RAG?
 
-| | RAG | ΩmegaWiki |
-|---|---|---|
-| **Knowledge persistence** | Rediscovered on every query | Compiled once, maintained forever |
-| **Structure** | Flat chunk store | 9 typed entities with relationships |
-| **Cross-references** | None — chunks are isolated | Bidirectional wikilinks + typed graph |
-| **Knowledge gaps** | Invisible | Explicitly tracked, drive research |
-| **Failed experiments** | Lost | First-class anti-repetition memory |
-| **Output** | Chat answers | Papers, surveys, experiment plans, rebuttals |
-| **Compounding** | No — same cost every query | Yes — each paper enriches the whole graph |
+
+|                           | RAG                         | ΩmegaWiki                                    |
+| ------------------------- | --------------------------- | -------------------------------------------- |
+| **Knowledge persistence** | Rediscovered on every query | Compiled once, maintained forever            |
+| **Structure**             | Flat chunk store            | 9 typed entities with relationships          |
+| **Cross-references**      | None — chunks are isolated  | Bidirectional wikilinks + typed graph        |
+| **Knowledge gaps**        | Invisible                   | Explicitly tracked, drive research           |
+| **Failed experiments**    | Lost                        | First-class anti-repetition memory           |
+| **Output**                | Chat answers                | Papers, surveys, experiment plans, rebuttals |
+| **Compounding**           | No — same cost every query  | Yes — each paper enriches the whole graph    |
+
+
+
 
 ## Architecture
 
-<div align="center">
-<img src="assets/architecture.png" width="700" alt="ΩmegaWiki Architecture">
-</div>
+![ΩmegaWiki Architecture](assets/architecture.png)
 
 Every skill reads from and writes back to the wiki. Knowledge compounds — each new paper enriches the whole graph. Failed experiments aren't discarded; they become anti-repetition memory that prevents re-exploring dead ends.
 
@@ -83,8 +88,7 @@ claude
 # Then type: /init <your-research-topic>
 ```
 
-<details>
-<summary><b>Manual setup (Linux / macOS)</b></summary>
+**Manual setup (Linux / macOS)**
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
@@ -93,10 +97,9 @@ cp .env.example .env                 # Edit to add API keys
 cp config/settings.local.json.example .claude/settings.local.json
 ```
 
-</details>
 
-<details>
-<summary><b>Manual setup (Windows / PowerShell)</b></summary>
+
+**Manual setup (Windows / PowerShell)**
 
 ```powershell
 python -m venv .venv
@@ -110,18 +113,22 @@ Note: native Windows is supported for the local pipeline. Remote-GPU
 experiments via `/exp-run --env remote` rely on `ssh`/`rsync`/`screen`
 and are best run from WSL2 or Linux/macOS.
 
-</details>
+
 
 ### API Keys
 
-| Key | Required? | How to get | What it enables |
-|-----|-----------|-----------|-----------------|
-| `ANTHROPIC_API_KEY` | **Yes** | `claude login` (automatic) | Powers all Claude Code skills |
-| `SEMANTIC_SCHOLAR_API_KEY` | Optional | [semanticscholar.org/product/api](https://www.semanticscholar.org/product/api) (free) | Citation graph, paper search |
-| `DEEPXIV_TOKEN` | Optional | `setup.sh` auto-registers | Semantic search, TLDR, trending |
-| `LLM_API_KEY` + `LLM_BASE_URL` + `LLM_MODEL` | Optional | Any OpenAI-compatible API | Cross-model review |
+
+| Key                                          | Required? | How to get                                                                            | What it enables                 |
+| -------------------------------------------- | --------- | ------------------------------------------------------------------------------------- | ------------------------------- |
+| `ANTHROPIC_API_KEY`                          | **Yes**   | `claude login` (automatic)                                                            | Powers all Claude Code skills   |
+| `SEMANTIC_SCHOLAR_API_KEY`                   | Optional  | [semanticscholar.org/product/api](https://www.semanticscholar.org/product/api) (free) | Citation graph, paper search    |
+| `DEEPXIV_TOKEN`                              | Optional  | `setup.sh` auto-registers                                                             | Semantic search, TLDR, trending |
+| `LLM_API_KEY` + `LLM_BASE_URL` + `LLM_MODEL` | Optional  | Any OpenAI-compatible API                                                             | Cross-model review              |
+
 
 > **Cross-model review**: ΩmegaWiki uses a second LLM as an independent reviewer for ideas, experiments, and paper drafts. Works with **any OpenAI-compatible API** — DeepSeek, OpenAI, Qwen, OpenRouter, SiliconFlow, etc. If not configured, skills still work in Claude-only mode.
+
+
 
 ## Skills
 
@@ -129,62 +136,84 @@ and are best run from WSL2 or Linux/macOS.
 
 ### Phase 0: Setup
 
-| Command | What it does |
-|---------|-------------|
-| `/setup` | First-time configuration (API keys, language, dependencies) |
-| `/reset <scope>` | Destructive cleanup: `wiki \| raw \| log \| checkpoints \| all` |
+
+| Command          | What it does                                                |
+| ---------------- | ----------------------------------------------------------- |
+| `/setup`         | First-time configuration (API keys, language, dependencies) |
+| `/reset <scope>` | Destructive cleanup: `wiki | raw | log | checkpoints | all` |
+
+
+
 
 ### Phase 1: Knowledge Foundation
 
-| Command | What it does |
-|---------|-------------|
+
+| Command             | What it does                                                             |
+| ------------------- | ------------------------------------------------------------------------ |
 | `/prefill <domain>` | Seed `foundations/` with background knowledge (suggested before `/init`) |
-| `/init <topic>` | Bootstrap a full wiki from `raw/` |
-| `/ingest <source>` | Parse a paper → wiki pages + cross-references |
-| `/edit <request>` | Add/remove sources or update wiki content |
-| `/ask <question>` | Query the wiki, crystallize answers back |
-| `/check` | Health scan: broken links, missing cross-refs, consistency |
+| `/init <topic>`     | Bootstrap a full wiki from `raw/`                                        |
+| `/ingest <source>`  | Parse a paper → wiki pages + cross-references                            |
+| `/edit <request>`   | Add/remove sources or update wiki content                                |
+| `/ask <question>`   | Query the wiki, crystallize answers back                                 |
+| `/check`            | Health scan: broken links, missing cross-refs, consistency               |
+
+
+
 
 ### Phase 2: Research Pipeline
 
-| Command | What it does |
-|---------|-------------|
-| `/daily-arxiv` | Auto-fetch & filter new arXiv papers (+ GitHub Actions cron) |
-| `/ideate` | Multi-phase idea generation from cross-topic connections |
-| `/novelty <idea>` | Multi-source novelty verification (web + S2 + wiki + review LLM) |
-| `/review <artifact>` | Cross-model adversarial review for any research artifact |
-| `/exp-design <idea>` | Claim-driven experiment + ablation design |
-| `/exp-run <experiment>` | Implement + deploy + monitor (local or remote GPU) |
-| `/exp-status` | Dashboard for running experiments; auto-collect results |
-| `/exp-eval <experiment>` | Verdict gate → auto-update claims/ideas/graph |
-| `/refine <artifact>` | Multi-round: produce → review → fix → re-review |
+
+| Command                  | What it does                                                     |
+| ------------------------ | ---------------------------------------------------------------- |
+| `/daily-arxiv`           | Auto-fetch & filter new arXiv papers (+ GitHub Actions cron)     |
+| `/ideate`                | Multi-phase idea generation from cross-topic connections         |
+| `/novelty <idea>`        | Multi-source novelty verification (web + S2 + wiki + review LLM) |
+| `/review <artifact>`     | Cross-model adversarial review for any research artifact         |
+| `/exp-design <idea>`     | Claim-driven experiment + ablation design                        |
+| `/exp-run <experiment>`  | Implement + deploy + monitor (local or remote GPU)               |
+| `/exp-status`            | Dashboard for running experiments; auto-collect results          |
+| `/exp-eval <experiment>` | Verdict gate → auto-update claims/ideas/graph                    |
+| `/refine <artifact>`     | Multi-round: produce → review → fix → re-review                  |
+
+
+
 
 ### Phase 3: Writing & Submission
 
-| Command | What it does |
-|---------|-------------|
-| `/survey` | Generate Related Work from wiki knowledge |
-| `/paper-plan <claims>` | Outline from claim graph + evidence matrix |
-| `/paper-draft <plan>` | Draft LaTeX + figures, section by section |
-| `/paper-compile <dir>` | Compile → PDF, auto-fix, verify page/anonymity |
-| `/research <direction>` | End-to-end orchestrator with human gates |
-| `/rebuttal <reviews>` | Parse reviewer comments → draft point-by-point responses |
+
+| Command                 | What it does                                             |
+| ----------------------- | -------------------------------------------------------- |
+| `/survey`               | Generate Related Work from wiki knowledge                |
+| `/paper-plan <claims>`  | Outline from claim graph + evidence matrix               |
+| `/paper-draft <plan>`   | Draft LaTeX + figures, section by section                |
+| `/paper-compile <dir>`  | Compile → PDF, auto-fix, verify page/anonymity           |
+| `/research <direction>` | End-to-end orchestrator with human gates                 |
+| `/rebuttal <reviews>`   | Parse reviewer comments → draft point-by-point responses |
+
+
+
 
 ## Wiki Structure
 
+
+
 ### 9 Entity Types
 
-| Type | Directory | Purpose |
-|------|-----------|---------|
-| **Paper** | `papers/` | Structured summary with problem/method/results/limitations |
-| **Concept** | `concepts/` | Cross-paper technical concept with variants and comparisons |
-| **Topic** | `topics/` | Research direction map with SOTA tracker and open problems |
-| **Person** | `people/` | Researcher profile with key papers and collaborators |
-| **Idea** | `ideas/` | Research idea with lifecycle: proposed → tested → validated/failed |
-| **Experiment** | `experiments/` | Full record: hypothesis → setup → results → claim updates |
-| **Claim** | `claims/` | Testable claim with evidence list and confidence score |
-| **Summary** | `Summary/` | Domain-wide survey across topics |
+
+| Type           | Directory      | Purpose                                                             |
+| -------------- | -------------- | ------------------------------------------------------------------- |
+| **Paper**      | `papers/`      | Structured summary with problem/method/results/limitations          |
+| **Concept**    | `concepts/`    | Cross-paper technical concept with variants and comparisons         |
+| **Topic**      | `topics/`      | Research direction map with SOTA tracker and open problems          |
+| **Person**     | `people/`      | Researcher profile with key papers and collaborators                |
+| **Idea**       | `ideas/`       | Research idea with lifecycle: proposed → tested → validated/failed  |
+| **Experiment** | `experiments/` | Full record: hypothesis → setup → results → claim updates           |
+| **Claim**      | `claims/`      | Testable claim with evidence list and confidence score              |
+| **Summary**    | `Summary/`     | Domain-wide survey across topics                                    |
 | **Foundation** | `foundations/` | Background knowledge (terminal: receives inward links, writes none) |
+
+
+
 
 ### Knowledge Graph
 
@@ -192,14 +221,18 @@ and are best run from WSL2 or Linux/macOS.
 
 `extends` · `contradicts` · `supports` · `inspired_by` · `tested_by` · `invalidates` · `supersedes` · `addresses_gap` · `derived_from`
 
-All pages use **Obsidian `[[wikilink]]` format** — open `wiki/` in Obsidian for visual graph exploration.
+All pages use **Obsidian** `[[wikilink]]` **format** — open `wiki/` in Obsidian for visual graph exploration.
+
+You can also generate interactive visualizations with a script in wiki/graph/.
 
 ## Automation
 
-**GitHub Actions** runs `/daily-arxiv` at UTC 00:00 daily:
+**GitHub Actions** can run `/daily-arxiv` at UTC 00:00 daily:
 
 1. Add `ANTHROPIC_API_KEY` to repo **Settings → Secrets**
 2. `.github/workflows/daily-arxiv.yml` fetches arXiv, runs ingestion, auto-commits
+
+
 
 ## Project Structure
 
@@ -241,6 +274,8 @@ OmegaWiki/
 └── .github/workflows/           # Daily arXiv cron
 ```
 
+
+
 ## Testing
 
 ```bash
@@ -261,6 +296,8 @@ python -m pytest tests/ -v
 
 ---
 
+
+
 ## Roadmap
 
 - [x] Wiki knowledge engine (20 CLI commands, 9 entity types, 9 edge types)
@@ -274,13 +311,15 @@ python -m pytest tests/ -v
 - [ ] Multi-user collaboration
 - [ ] More language support
 
+
+
 ## Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Community / 交流群
 
-<img src="assets/wechat-group.jpg" width="240" alt="WeChat Group QR Code">
+![WeChat Group QR Code](assets/wechat-group.jpg)
 
 Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 
@@ -289,17 +328,23 @@ Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 - **[Andrej Karpathy](https://x.com/karpathy/status/1909372692069236775)** — for the LLM-Wiki concept that inspired this project
 - **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — the AI agent runtime that powers ΩmegaWiki
 
+
+
 ## License
 
 [MIT](LICENSE) — use it, fork it, build on it.
 
 ---
 
+
+
 ## 中文
 
-本仓库为 **in-silico 社会科学** 方向的 ΩmegaWiki：以 LLM 与生成式智能体模拟人群、合成调查、人格条件与效度方法等。领域综述见 [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md)；原始文献放在 `raw/papers/`。
+本仓库为 **in-silico 社会科学** 方向的 ΩmegaWiki：以 LLM 与生成式智能体模拟人群、合成调查、人格条件与效度方法等。领域综述见 `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`；原始文献放在 `raw/papers/`。
 
 > **当前 wiki 状态：** 538 篇论文 · 47 条 claims · 468 条图谱边 · 成熟度：warm
+
+
 
 ### ΩmegaWiki 是什么？
 
@@ -307,19 +352,23 @@ Andrej Karpathy 提出了 [LLM-Wiki](https://x.com/karpathy/status/1909372692069
 
 **ΩmegaWiki 将这个理念完整实现。** 它不仅是 wiki 构建器，更是完整的研究全流程平台：从论文摄入 → 知识图谱 → 缺口检测 → 想法生成 → 实验设计 → 论文写作 → 同行评审回复。23 个 Claude Code Skills 驱动，一个 wiki 作为唯一的知识中枢。
 
-此处全流程服务于关于 **硅采样（silicon sampling）**、模拟体评估与 LLM 社会科学应用等主题的 curated 知识图谱 — 范围与开放问题见 [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md)。
+此处全流程服务于关于 **硅采样（silicon sampling）**、模拟体评估与 LLM 社会科学应用等主题的 curated 知识图谱 — 范围与开放问题见 `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`。
 
 ### 为什么选择 Wiki 而不是 RAG？
 
-| | RAG | ΩmegaWiki |
-|---|---|---|
-| **知识持久性** | 每次查询都重新发现 | 编译一次，持续维护 |
-| **结构** | 扁平的 chunk 存储 | 9 种实体类型 + 关系图 |
-| **交叉引用** | 无 — chunk 彼此孤立 | 双向 wikilink + 类型化边 |
-| **知识缺口** | 不可见 | 显式追踪，驱动研究方向 |
-| **失败实验** | 丢失 | 一等公民，防止重复探索 |
-| **输出** | 聊天回答 | 论文、综述、实验方案、审稿回复 |
-| **复利效应** | 无 — 每次查询成本相同 | 有 — 每篇论文丰富整个图谱 |
+
+|           | RAG            | ΩmegaWiki          |
+| --------- | -------------- | ------------------ |
+| **知识持久性** | 每次查询都重新发现      | 编译一次，持续维护          |
+| **结构**    | 扁平的 chunk 存储   | 9 种实体类型 + 关系图      |
+| **交叉引用**  | 无 — chunk 彼此孤立 | 双向 wikilink + 类型化边 |
+| **知识缺口**  | 不可见            | 显式追踪，驱动研究方向        |
+| **失败实验**  | 丢失             | 一等公民，防止重复探索        |
+| **输出**    | 聊天回答           | 论文、综述、实验方案、审稿回复    |
+| **复利效应**  | 无 — 每次查询成本相同   | 有 — 每篇论文丰富整个图谱     |
+
+
+
 
 ### 快速开始
 
@@ -345,50 +394,56 @@ claude
 
 > **Windows 用户**：本地 pipeline 已原生支持。`/exp-run --env remote` 远程 GPU 实验依赖 `ssh`/`rsync`/`screen`，建议在 WSL2 或 Linux/macOS 下运行。
 
+
+
 ### API Key 说明
 
-| Key | 必须？ | 获取方式 | 用途 |
-|-----|--------|---------|------|
-| `ANTHROPIC_API_KEY` | **是** | `claude login` | 驱动所有 Skill |
-| `SEMANTIC_SCHOLAR_API_KEY` | 可选 | [semanticscholar.org](https://www.semanticscholar.org/product/api)（免费） | 引用图谱、论文搜索 |
-| `DEEPXIV_TOKEN` | 可选 | `setup.sh` 自动注册 | 语义搜索、热门趋势 |
-| `LLM_API_KEY` + `LLM_BASE_URL` + `LLM_MODEL` | 可选 | 任意 OpenAI 兼容 API | 跨模型评审 |
+
+| Key                                          | 必须？   | 获取方式                                                                   | 用途         |
+| -------------------------------------------- | ----- | ---------------------------------------------------------------------- | ---------- |
+| `ANTHROPIC_API_KEY`                          | **是** | `claude login`                                                         | 驱动所有 Skill |
+| `SEMANTIC_SCHOLAR_API_KEY`                   | 可选    | [semanticscholar.org](https://www.semanticscholar.org/product/api)（免费） | 引用图谱、论文搜索  |
+| `DEEPXIV_TOKEN`                              | 可选    | `setup.sh` 自动注册                                                        | 语义搜索、热门趋势  |
+| `LLM_API_KEY` + `LLM_BASE_URL` + `LLM_MODEL` | 可选    | 任意 OpenAI 兼容 API                                                       | 跨模型评审      |
+
+
+
 
 ### 23 个 Skill 命令
 
-| 命令 | 功能 |
-|------|------|
-| `/setup` | 首次配置（API key、语言、依赖） |
-| `/reset` | 按范围销毁性清理：`wiki \| raw \| log \| checkpoints \| all` |
-| `/prefill` | 预填 `foundations/` 背景知识（建议在 `/init` 之前运行） |
-| `/init` | 从 raw/ 搭建完整 wiki |
-| `/ingest` | 消化论文，创建页面 + 交叉引用 |
-| `/edit` | 增删 raw 或更新 wiki |
-| `/ask` | 对 wiki 提问 |
-| `/check` | wiki 健康检查 |
-| `/daily-arxiv` | 每日 arXiv 新论文（CI 自动） |
-| `/ideate` | 跨方向构思研究 idea |
-| `/novelty` | 多源新颖性验证 |
-| `/review` | 跨模型评审 |
-| `/exp-design` | Claim 驱动实验设计 |
-| `/exp-run` | 部署 + 监控实验 |
-| `/exp-status` | 实验状态看板 |
-| `/exp-eval` | 裁决 → 更新 claims |
-| `/refine` | 多轮迭代改进 |
-| `/survey` | 生成 Related Work |
-| `/paper-plan` | Claim 图谱 → 论文提纲 |
-| `/paper-draft` | 提纲 + wiki → LaTeX 草稿 |
-| `/paper-compile` | 编译 → PDF，自动修复 |
-| `/research` | 端到端研究编排器 |
-| `/rebuttal` | 解析评审意见 → 逐条回复 |
+
+| 命令               | 功能                                              |
+| ---------------- | ----------------------------------------------- |
+| `/setup`         | 首次配置（API key、语言、依赖）                             |
+| `/reset`         | 按范围销毁性清理：`wiki | raw | log | checkpoints | all` |
+| `/prefill`       | 预填 `foundations/` 背景知识（建议在 `/init` 之前运行）        |
+| `/init`          | 从 raw/ 搭建完整 wiki                                |
+| `/ingest`        | 消化论文，创建页面 + 交叉引用                                |
+| `/edit`          | 增删 raw 或更新 wiki                                 |
+| `/ask`           | 对 wiki 提问                                       |
+| `/check`         | wiki 健康检查                                       |
+| `/daily-arxiv`   | 每日 arXiv 新论文（CI 自动）                             |
+| `/ideate`        | 跨方向构思研究 idea                                    |
+| `/novelty`       | 多源新颖性验证                                         |
+| `/review`        | 跨模型评审                                           |
+| `/exp-design`    | Claim 驱动实验设计                                    |
+| `/exp-run`       | 部署 + 监控实验                                       |
+| `/exp-status`    | 实验状态看板                                          |
+| `/exp-eval`      | 裁决 → 更新 claims                                  |
+| `/refine`        | 多轮迭代改进                                          |
+| `/survey`        | 生成 Related Work                                 |
+| `/paper-plan`    | Claim 图谱 → 论文提纲                                 |
+| `/paper-draft`   | 提纲 + wiki → LaTeX 草稿                            |
+| `/paper-compile` | 编译 → PDF，自动修复                                   |
+| `/research`      | 端到端研究编排器                                        |
+| `/rebuttal`      | 解析评审意见 → 逐条回复                                   |
+
 
 ---
 
-<div align="center">
+
 
 **Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code)**
 
 If this project helps your research, give it a ⭐
 
-</div>
-<!-- markdownlint-enable MD001 MD013 MD033 MD041 MD060 -->
