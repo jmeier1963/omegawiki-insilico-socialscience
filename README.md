@@ -12,18 +12,18 @@
 
 *From paper ingestion to publication — your research knowledge compounds, never decays.*
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python 3.9+](https://img.shields.io/badge/Python-3.9+-yellow.svg)
-![Tests](https://img.shields.io/badge/Tests-2263_passing-brightgreen.svg)
-![Skills](https://img.shields.io/badge/Skills-23-purple.svg)
-![Claude Code](https://img.shields.io/badge/Powered_by-Claude_Code-d97706.svg)
-![Bilingual](https://img.shields.io/badge/i18n-EN_|_中文-orange.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-yellow.svg)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/Tests-2263_passing-brightgreen.svg)](#testing)
+[![Skills](https://img.shields.io/badge/Skills-23-purple.svg)](#skills)
+[![Claude Code](https://img.shields.io/badge/Powered_by-Claude_Code-d97706.svg)](https://docs.anthropic.com/en/docs/claude-code)
+[![Bilingual](https://img.shields.io/badge/i18n-EN_|_中文-orange.svg)](#bilingual-support)
 
 [English](#what-is-ωmegawiki) | [中文](#中文)
 
 
 
-This working tree is an **in-silico social science** ΩmegaWiki: LLMs and generative agents as proxies for human populations, synthetic surveys, persona conditioning, and validity methodology. Start from the domain survey in `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`; add sources under `raw/papers/`.
+This working tree is an **in-silico social science** ΩmegaWiki: LLMs and generative agents as proxies for human populations, synthetic surveys, persona conditioning, and validity methodology. Start from the domain survey in [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md); add sources under `raw/papers/`.
 
 > **Current wiki state:** 538 papers · 47 claims · 468 graph edges · maturity: warm
 
@@ -37,7 +37,7 @@ Andrej Karpathy proposed [LLM-Wiki](https://x.com/karpathy/status/20398056595256
 
 **ΩmegaWiki takes that idea and runs the full distance.** It's not just a wiki builder — it's a complete research lifecycle platform: from paper ingestion → knowledge graph → gap detection → idea generation → experiment design → paper writing → peer review response. All driven by 23 Claude Code skills, all centered on one wiki as the single source of truth.
 
-Here, that lifecycle backs a curated graph of claims, concepts, and papers on **silicon sampling**, simulacra evaluation, and related social-science uses of LLMs — see `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)` for scope and open questions.
+Here, that lifecycle backs a curated graph of claims, concepts, and papers on **silicon sampling**, simulacra evaluation, and related social-science uses of LLMs — see [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md) for scope and open questions.
 
 Drop your `.tex` / `.pdf` files in a folder. Run one command. Get a fully cross-referenced knowledge base — and then use it to **generate novel research ideas, design experiments, write papers, and respond to reviewers**.
 
@@ -140,7 +140,7 @@ and are best run from WSL2 or Linux/macOS.
 | Command          | What it does                                                |
 | ---------------- | ----------------------------------------------------------- |
 | `/setup`         | First-time configuration (API keys, language, dependencies) |
-| `/reset <scope>` | Destructive cleanup: `wiki | raw | log | checkpoints | all` |
+| `/reset <scope>` | Destructive cleanup: `wiki \| raw \| log \| checkpoints \| all` |
 
 
 
@@ -223,7 +223,7 @@ and are best run from WSL2 or Linux/macOS.
 
 All pages use **Obsidian** `[[wikilink]]` **format** — open `wiki/` in Obsidian for visual graph exploration.
 
-You can also generate interactive visualizations with a script in wiki/graph/.
+You can also generate interactive graph visualizations with `tools/visualize_graph.py`, which writes `wiki/graph/graph.html` (dark) and `wiki/graph/graph_light.html` (light).
 
 ## Automation
 
@@ -325,7 +325,7 @@ Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 
 ## Acknowledgments
 
-- **[Andrej Karpathy](https://x.com/karpathy/status/1909372692069236775)** — for the LLM-Wiki concept that inspired this project
+- **[Andrej Karpathy](https://x.com/karpathy/status/2039805659525644595)** — for the LLM-Wiki concept that inspired this project
 - **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — the AI agent runtime that powers ΩmegaWiki
 
 
@@ -340,7 +340,7 @@ Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 
 ## 中文
 
-本仓库为 **in-silico 社会科学** 方向的 ΩmegaWiki：以 LLM 与生成式智能体模拟人群、合成调查、人格条件与效度方法等。领域综述见 `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`；原始文献放在 `raw/papers/`。
+本仓库为 **in-silico 社会科学** 方向的 ΩmegaWiki：以 LLM 与生成式智能体模拟人群、合成调查、人格条件与效度方法等。领域综述见 [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md)；原始文献放在 `raw/papers/`。
 
 > **当前 wiki 状态：** 538 篇论文 · 47 条 claims · 468 条图谱边 · 成熟度：warm
 
@@ -348,11 +348,11 @@ Scan to join the ΩmegaWiki WeChat group / 扫码加入微信交流群
 
 ### ΩmegaWiki 是什么？
 
-Andrej Karpathy 提出了 [LLM-Wiki](https://x.com/karpathy/status/1909372692069236775) 概念：让 LLM **构建并维护一个持久的、结构化的 wiki**，而不是一次性的 RAG 回答。知识持续积累，每一篇新论文都让整个知识图谱更强。
+Andrej Karpathy 提出了 [LLM-Wiki](https://x.com/karpathy/status/2039805659525644595) 概念：让 LLM **构建并维护一个持久的、结构化的 wiki**，而不是一次性的 RAG 回答。知识持续积累，每一篇新论文都让整个知识图谱更强。
 
 **ΩmegaWiki 将这个理念完整实现。** 它不仅是 wiki 构建器，更是完整的研究全流程平台：从论文摄入 → 知识图谱 → 缺口检测 → 想法生成 → 实验设计 → 论文写作 → 同行评审回复。23 个 Claude Code Skills 驱动，一个 wiki 作为唯一的知识中枢。
 
-此处全流程服务于关于 **硅采样（silicon sampling）**、模拟体评估与 LLM 社会科学应用等主题的 curated 知识图谱 — 范围与开放问题见 `[wiki/Summary/in-silico-social-science.md](wiki/Summary/in-silico-social-science.md)`。
+此处全流程服务于关于 **硅采样（silicon sampling）**、模拟体评估与 LLM 社会科学应用等主题的 curated 知识图谱 — 范围与开放问题见 [`wiki/Summary/in-silico-social-science.md`](wiki/Summary/in-silico-social-science.md)。
 
 ### 为什么选择 Wiki 而不是 RAG？
 
@@ -415,7 +415,7 @@ claude
 | 命令               | 功能                                              |
 | ---------------- | ----------------------------------------------- |
 | `/setup`         | 首次配置（API key、语言、依赖）                             |
-| `/reset`         | 按范围销毁性清理：`wiki | raw | log | checkpoints | all` |
+| `/reset`         | 按范围销毁性清理：`wiki \| raw \| log \| checkpoints \| all` |
 | `/prefill`       | 预填 `foundations/` 背景知识（建议在 `/init` 之前运行）        |
 | `/init`          | 从 raw/ 搭建完整 wiki                                |
 | `/ingest`        | 消化论文，创建页面 + 交叉引用                                |
