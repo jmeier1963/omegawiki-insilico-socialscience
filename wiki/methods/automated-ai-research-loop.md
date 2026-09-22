@@ -3,7 +3,7 @@ name: "Automated AI Research Loop"
 slug: automated-ai-research-loop
 type: system
 tags: [ai-rd-automation, automated-research, agentic-ai, open-ended-algorithms, recursive-self-improvement]
-source_papers: [[first-steps-toward-automated-ai-research]]
+source_papers: [[first-steps-toward-automated-ai-research], recursive-synthetic-improvement]
 parent_methods: []
 child_methods: []
 realizes_concepts: [[co-evolving-evaluator-hardening]]
@@ -48,3 +48,4 @@ Trades large amounts of compute and long search horizons for SOTA-level, compoun
 ## Evaluated by
 
 - [[first-steps-toward-automated-ai-research]] — applied to NanoChat Autoresearch, NanoGPT Speedrun, and SOL-ExecBench, reaching SOTA on all three
+- [[recursive-synthetic-improvement]] — cited as motivating context for the speculative sixth 'Researcher' layer of the essay's handover pattern.

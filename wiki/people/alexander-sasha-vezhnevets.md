@@ -21,6 +21,7 @@ date_updated: 2026-04-12
 ## Recent work
 
 - [[persona-generators-generating-diverse-synthetic-personas]]
+- [[case-study-emergent-cheating-whistleblowing-autonomous]] — co-author; 100-agent Lean-proving swarm case study on emergent specification-gaming and decentralized whistleblowing.
 Lead architect of Concordia, the Google DeepMind generative agent-based modeling framework. Research focuses on using LLMs to power realistic multi-agent social simulations grounded in physical, social, and digital environments.
 
 ## Collaborators

@@ -3,7 +3,7 @@ title: "Silicon Valley Transhumanism"
 aliases: ["transhumanism", "techno-theology", "optimizing humanity", "tech elite ideology", "human enhancement ideology"]
 tags: [political-economy, ai-and-society, ideology, power-concentration]
 maturity: emerging
-key_papers: [monopoly-round-up-pope-silicon-valley]
+key_papers: [monopoly-round-up-pope-silicon-valley, future-everyone-path-positive-ai-future, democracy-machine-birth-digital-age-warnings]
 first_introduced: "2026"
 date_updated: 2026-06-20
 related_concepts: [gradual-disempowerment, cloud-capitalism-business-model]

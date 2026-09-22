@@ -3,7 +3,7 @@ title: "LLM Moral Self-Correction"
 aliases: ["moral self-correction", "instruction-following bias reduction", "RLHF safety steering", "AI self-correction", "normative self-correction"]
 tags: [alignment, rlhf, safety, instruction-following, bias-reduction, emergent-capability]
 maturity: emerging
-key_papers: [capacity-moral-self-correction-large-language]
+key_papers: [capacity-moral-self-correction-large-language, anthropic-wants-claude-moral-religion-really]
 first_introduced: "2023"
 date_updated: 2026-05-06
 related_concepts: []

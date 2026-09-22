@@ -57,3 +57,4 @@ An interesting theoretical contribution from prominent TCS researchers (Manuel B
 
 - [[machine-consciousness]]
 - supports: [[machine-consciousness-is-computationally-inevitable]]
+- challenges (reverse): [[dont-mistake-chatbot-intelligence-consciousness]]

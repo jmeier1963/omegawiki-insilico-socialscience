@@ -3,10 +3,10 @@ title: "AI Policy Pacing Problem"
 aliases: ["pacing problem", "policy lag", "exponential AI vs slow policy", "governance timescale mismatch", "AI exponential"]
 tags: [ai-governance, ai-policy, regulation, ai-and-society]
 maturity: emerging
-key_papers: [policy-ai-exponential, artificial-intelligence-lessons-history, europe-2031-what-getting-ai-wrong]
+key_papers: [policy-ai-exponential, artificial-intelligence-lessons-history, europe-2031-what-getting-ai-wrong, preparing-age-ai-living-outlook-decision]
 first_introduced: "2026"
 date_updated: 2026-06-20
-related_concepts: [frontier-ai-compute-governance, ai-race-dynamics]
+related_concepts: [frontier-ai-compute-governance, ai-race-dynamics, capability-speed-projection-framework]
 ---
 
 ## Definition

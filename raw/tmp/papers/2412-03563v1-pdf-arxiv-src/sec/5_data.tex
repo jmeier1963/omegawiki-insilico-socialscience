@@ -1,0 +1,17 @@
+\input{tabs/indi_data_tab}
+
+\section{Datasets and Benchmarks}~\label{sec:data}
+
+\subsection{Individual Simulation}
+We summarize commonly used datasets for scenario simulation in Table~\ref{tab:indi_data}. Datasets for individual simulation can be classified into two types: description datasets and dialogue datasets. Description datasets include individual-specific information, such as life experiences, relationships, and basic demographic details like career, age, and gender, often sourced from literature summaries or search engines like Baidu and Wikipedia. Dialogue datasets consist of single-turn or multi-turn conversations in specific scenarios, created by extracting relevant plots for targeted characters or gathering utterances from social media. Some datasets are designed specifically for evaluation, combining basic personal information with customized questions or tasks to assess simulation performance.
+
+\subsection{Scenario Simulation}
+We summarize commonly used datasets for scenario simulation in Table~\ref{tab:task_data}, comprising dialog-driven and task-driven scenarios. The datasets cover a wide range of formats, including QA, multiple-choice, rating, code, and game. We observed that QA and multiple-choice formats dominate the data types, while domain-specific datasets like judicial, game, and media prefer to preserve domain-tailored data type.
+Based on task complexity, datasets are categorized into three levels: easy, medium, and hard.
+Additionally, according to the collection methods, datasets are classified as human-annotated, real-world, or synthetic.
+\input{tabs/task_data_tab}
+
+\subsection{Social Simulation}
+We summarize commonly used datasets or benchmarks for social simulations in Table~\ref{tab:soc_data}. In social simulations, datasets often consist of two parts: those for initialization of agents and those for evaluation. Data used for agent initialization typically contain profiles and potential relations between agents, to help initialize the simulation settings. In contrast, datasets for evaluation provide the reference data of behaviors of real-world individuals. These datasets are sourced in various ways, such as public surveys, existing datasets like MovieLens and Amazon-Book, and crawling from online platforms like Twitter. 
+
+\input{tabs/soc_data_tab}

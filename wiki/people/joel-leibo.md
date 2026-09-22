@@ -26,6 +26,7 @@ Senior researcher at Google DeepMind working on multi-agent systems and their ap
 
 - Co-authored [[from-agi-to-asi]] ("From AGI to ASI", Google DeepMind, 2026).
 - [[ai-agent-traps]] — co-author; taxonomy of six classes of adversarial content designed to manipulate or hijack autonomous AI agents via their information environment.
+- [[case-study-emergent-cheating-whistleblowing-autonomous]] — co-author; 100-agent Lean-proving swarm case study on emergent specification-gaming and decentralized whistleblowing.
 
 ## Collaborators
 

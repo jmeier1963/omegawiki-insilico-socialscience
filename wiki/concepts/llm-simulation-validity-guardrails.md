@@ -3,7 +3,7 @@ title: "LLM Simulation Validity Guardrails"
 aliases: ["quasi-predictive interpolation framework", "LLM social science guardrails", "synthetic agent validity protocol", "LLM validity conditions", "pattern matching reframing"]
 tags: [llm-validity, social-science-methodology, guardrails, synthetic-agents, epistemology]
 maturity: emerging
-key_papers: [evaluating-use-large-language-models-synthetic, human-study-did-involve-human-subjects]
+key_papers: [evaluating-use-large-language-models-synthetic, human-study-did-involve-human-subjects, individual-society-survey-social-simulation-driven]
 first_introduced: "2025"
 date_updated: 2026-04-14
 related_concepts: [silicon-sampling, algorithmic-fidelity]

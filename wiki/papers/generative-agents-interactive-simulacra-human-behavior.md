@@ -80,3 +80,4 @@ Landmark paper that operationalizes the idea of LLM-backed autonomous agents wit
 - supports: [[llm-agents-simulate-believable-human-social]]
 - supports: [[memory-retrieval-reflection-planning-each-contribute]]
 - [[position-llm-social-simulations-promising-research]]
+- builds_on (reverse): [[individual-society-survey-social-simulation-driven]] — cited across all three tiers as the seminal memory/reflection architecture and sandbox environment.

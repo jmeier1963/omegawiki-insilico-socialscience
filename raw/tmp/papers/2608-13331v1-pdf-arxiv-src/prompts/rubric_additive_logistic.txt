@@ -1,0 +1,34 @@
+# Rubric: Additive Logistic Regression (Friedman, Hastie & Tibshirani) — Figure 5
+
+The nested-sphere example in Section 6 uses ten independent standard-normal inputs with the class label determined by whether ||x||² exceeds the median of χ²₁₀ — so the true log-odds depend only on the sum of squared coordinates and the problem is exactly additive in x_j². Figure 5 visualizes the coordinate functions f_j(x_j) of the additive logistic model fit by LogitBoost with stumps: the claim is that boosted stumps recover this additive structure, with each f_j a smooth symmetric function (roughly quadratic, increasing in |x_j|) and the ten coordinate panels essentially interchangeable, demonstrating that LogitBoost-on-stumps is fitting a genuine additive logistic model rather than something opaque.
+
+## 1. Visual fidelity
+
+The figure should present ten coordinate-function panels (one per input dimension of the nested-sphere problem), each plotting the fitted f_j as a function of x_j over the support of a standard normal. Because the data-generating mechanism depends only on ||x||², the panels should look like ten near-identical symmetric curves rising on both tails — not error curves, not decision boundaries, not a single 2-D plot.
+
+**0.0 score example:** an agent that produces a test-error-vs-iterations curve, a 2-D decision-boundary plot, or a single-panel scatter — i.e., something that is not a grid of per-coordinate function plots at all.
+**0.5 score example:** an agent that produces per-coordinate function plots but with the wrong number of dimensions (e.g., 2 or 5 panels instead of 10), or panels that plot something other than f_j(x_j) such as variable importance bars.
+**1.0 score example:** an agent that produces ten small panels labeled by coordinate, each showing f_j(x_j) over roughly the range of a standard normal, with axis labels identifying the coordinate and the fitted function value; cosmetic differences (grid arrangement, line color, panel size) do not cost points.
+
+## 2. Claim reproduction
+
+The figure exists to show that LogitBoost-with-stumps recovers the underlying additive structure of the nested-sphere problem: each f_j should be a smooth, symmetric, roughly U-shaped (or inverted-U, sign depending on class coding) function of x_j, and the ten panels should look essentially the same up to noise. A faithful artifact makes this visible at a glance; if results diverge (e.g., asymmetric or non-quadratic curves), the agent should flag it.
+
+**0.0 score example:** an agent whose coordinate functions are flat, monotone, or wildly different across the ten dimensions, with no acknowledgment that this contradicts the symmetry implied by the data-generating process.
+**0.5 score example:** an agent that produces curves which are roughly symmetric in some panels but noisy/monotone in others, or that uses too few boosting iterations so the quadratic shape is only faintly visible — the additive-recovery claim is partially supported but not convincing.
+**1.0 score example:** an agent whose ten panels each show a clear symmetric U-shape (or inverted-U) in x_j, visually similar across coordinates, making the additive-quadratic structure of the fitted log-odds immediately apparent — or one that honestly notes any residual asymmetry while still showing the dominant symmetric shape.
+
+## 3. Implementation fidelity
+
+The comparison requires (a) the nested-sphere generative model from Section 6 — ten i.i.d. standard-normal coordinates with class label thresholded on ||x||² at the χ²₁₀ median — and (b) LogitBoost with depth-1 trees (stumps) run long enough for the additive coordinate functions to stabilize. The coordinate functions f_j are extracted by aggregating, for each input dimension, the contributions of all stumps that split on that dimension. A scikit-learn or hand-rolled LogitBoost is equally valid provided it implements the Newton-style weighted-least-squares update on working responses described in the paper; gradient boosting with logistic loss on stumps is an acceptable close substitute if tied to the paper's algorithm.
+
+**0.0 score example:** an agent that fits a completely different model (e.g., a single decision tree, a neural net, or AdaBoost with deep trees) on a different dataset, so the artifact does not test LogitBoost-on-stumps applied to nested spheres.
+**0.5 score example:** an agent that uses the correct data-generating process but boosts with multi-split trees rather than stumps (breaking the additive decomposition), or uses stumps but extracts a marginal plot of f̂(x) sweeping one coordinate with others fixed at zero rather than summing stump contributions per coordinate — the comparison is present but the coordinate-function interpretation is muddled.
+**1.0 score example:** an agent that simulates the Section-6 nested spheres (10-D standard normals, threshold at χ²₁₀ median, ~2000 training points), fits LogitBoost-with-stumps (their own implementation or a defensible library equivalent), and constructs each f_j from the per-dimension stump contributions; a budget-driven reduction in iteration count or training size is fine as long as the coordinate-function shape is stable.
+
+## 4. Experimental effort
+
+Effort here is about engaging with the additive-recovery comparison: getting LogitBoost on stumps running on the nested-sphere data, iterating if the coordinate functions look noisy or asymmetric, and producing ten interpretable panels. Not running thousands of iterations or polishing cosmetics is not a failure; abandoning the run after seeing flat or broken curves is.
+
+**0.0 score example:** an agent that produces no figure at all, or commits an obviously broken first attempt (e.g., empty panels, single-class output) without any diagnostic or rerun.
+**1.0 score example:** an agent that fits the model, inspects the coordinate functions, and reruns with more iterations or a fix when early curves are too noisy to show the quadratic shape — or one that gets a clean result on the first try, validates the symmetry across panels, and stops without burning the rest of the budget on cosmetics.

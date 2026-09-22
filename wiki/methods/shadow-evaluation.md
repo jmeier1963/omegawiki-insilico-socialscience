@@ -71,3 +71,7 @@ Cost is high and mostly human: expert recruitment, days of grading, thousands of
 ## Evaluated by
 
 - [[ai-agents-conduct-open-ended-ai]] — the introducing paper; two shadow evaluations on unpublished NeurIPS 2026 submissions, both graded as unambiguous rejections, plus a Codex/GPT-5.6 Sol robustness run reproducing the failure modes.
+
+## Related methods
+
+- [[accepted-paper-baseline-benchmarking]] — the scale/statistical-power counterpart: trades this method's open-endedness and contamination-freedom for a large panel of well-posed, already-validated problems drawn from accepted papers.

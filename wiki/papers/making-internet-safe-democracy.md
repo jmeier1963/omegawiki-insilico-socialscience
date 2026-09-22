@@ -53,3 +53,4 @@ Fukuyama's middleware proposal is one of the most cited alternative approaches t
 
 - supports: [[platform-scale-threatens-democracy-middleware-solution]]
 - [[cloud-capitalism-business-model]]
+- [[democracy-machine-birth-digital-age-warnings]] — same underlying question (was deregulation contingent or inevitable) from an internet-history angle.

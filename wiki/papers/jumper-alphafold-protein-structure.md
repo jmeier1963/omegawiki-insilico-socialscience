@@ -66,3 +66,4 @@ The landmark case of genuine AI scientific achievement. AlphaFold2 solved CASP14
 - [[gao-wang-quantifying-ai-scientific-research]]
 - [[ai-driven-scientific-discovery]]
 - [[understanding-protein-folding-machine-learning-models]] — philosophical assessment: empirical success without direct explanatory contribution
+- [[how-claude-accelerating-protein-design-analytical]] — contrasts a new predictive model (AlphaFold) against agentic orchestration of pre-existing specialist protein-design tools.

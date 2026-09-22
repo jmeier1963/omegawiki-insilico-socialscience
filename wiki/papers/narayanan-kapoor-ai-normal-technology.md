@@ -57,3 +57,4 @@ A useful corrective to AI hype in both directions. Narayanan and Kapoor are amon
 - [[golchin-surdeanu-data-contamination]]
 - [[ahmed-industry-influence-ai-research]]
 - [[messeri-crockett-ai-illusions-understanding]]
+- [[what-will-left-us-work]] — live restatement/synthesis of this framework at ICML 2026, adding the quantified reliability-vs-capability variant.

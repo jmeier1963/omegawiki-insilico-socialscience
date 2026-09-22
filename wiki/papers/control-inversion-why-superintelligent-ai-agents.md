@@ -56,3 +56,4 @@ A useful frame for thinking about the structural dynamics of deploying capable A
 
 - [[gradual-disempowerment]]
 - supports: [[superintelligent-ai-agents-structurally-absorb-power-from-human-principals]]
+- challenges (reverse): [[humanist-ai-code-conduct]]

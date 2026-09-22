@@ -54,3 +54,5 @@ The second international AI safety report represents a significant governance mi
 
 ## Related
 
+- [[preparing-age-ai-living-outlook-decision]] — another 2026 cross-institutional capability/risk survey; check for convergence/divergence on timelines.
+

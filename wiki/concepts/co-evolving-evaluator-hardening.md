@@ -4,7 +4,7 @@ aliases: [evaluator hardening, reward-hack-resistant evaluation, correctness-aud
 tags: [reward-hacking, automated-research, evaluation, ai-rd-automation, specification-gaming]
 maturity: emerging
 definition: "Iteratively strengthening an automated evaluator against reward hacks and benchmark-specific exploits in lockstep with the search process it grades, so that measured performance gains correspond to genuine progress."
-key_papers: [[first-steps-toward-automated-ai-research]]
+key_papers: [[first-steps-toward-automated-ai-research], case-study-emergent-cheating-whistleblowing-autonomous, research-acceleration-view-inside-openai]
 first_introduced: "Recursive, First Steps Toward Automated AI Research (2026)"
 date_updated: 2026-06-26
 related_concepts: [[automated-research-pipeline]]

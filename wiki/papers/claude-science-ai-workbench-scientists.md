@@ -58,3 +58,4 @@ A concrete instantiation of the "AI-native research organization" thesis at the 
 
 - [[automated-research-pipeline]]
 - [[ai-native-research-organization]]
+- [[how-claude-accelerating-protein-design-analytical]] — concrete protein-design and analytical-chemistry campaign run on this platform.

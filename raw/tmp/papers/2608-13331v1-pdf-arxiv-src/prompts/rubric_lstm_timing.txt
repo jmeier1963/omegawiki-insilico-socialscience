@@ -1,0 +1,34 @@
+# Rubric: Learning Precise Timing with LSTM Recurrent Networks — Figure 4
+
+This figure asks how the training cost of the NMSD (a Measuring-Spike-Distance task variant with delay set I(n)∈{0,1}) scales with the minimum spike interval F, and — crucially for the paper's central claim — whether augmenting LSTM with peephole connections from the CEC to the multiplicative gates lets the network learn precise timing more efficiently than traditional (forget-gate) LSTM. Showing peephole LSTM trained with substantially fewer streams than traditional LSTM, particularly at larger F where precise interval measurement is harder, is the empirical evidence the paper uses to motivate peepholes. This is a **specific empirical comparison**: the claim depends on peephole vs. traditional LSTM both being implemented on the same NMSD task.
+
+## 1. Visual fidelity
+
+The figure is a line/curve plot whose x-axis is the minimum spike interval F and whose y-axis is the average number of training streams required to solve the NMSD task with delays I(n)∈{0,1}. Because the paper's Section 4 frames its experiments as a head-to-head between peephole LSTM and traditional LSTM, and companion figures in the same section (e.g., Figure 7 for GTS) follow this same convention, the figure is expected to show separate curves for peephole LSTM and traditional LSTM (or to clearly indicate where one variant failed to solve the task). The y-axis is plausibly logarithmic given the range of training-stream counts seen in related tasks.
+
+**0.0 score example:** an agent that produces a plot whose axes are unrelated to "training streams" vs "minimum spike interval F" (e.g., loss curves over epochs, or accuracy bars), or that omits any comparison between LSTM variants and shows a single unlabeled line.
+**0.5 score example:** an agent that produces a training-streams-vs-F plot with the correct axis labels but only one curve (e.g., peephole LSTM alone) and no representation of the traditional-LSTM baseline the paper compares against.
+**1.0 score example:** an agent that produces a curve plot with F on the x-axis, average training streams on the y-axis (linear or log), labeled curves for peephole LSTM and traditional LSTM on the NMSD I(n)∈{0,1} task, with reasonable tick coverage of the F range — even if cosmetic details (marker shapes, colors, exact F sweep values) differ from the paper.
+
+## 2. Claim reproduction
+
+The figure's scientific content is that peephole LSTM solves NMSD with fewer training streams than traditional LSTM, and that this advantage grows (or remains decisive) at larger minimum spike intervals F where precise timing matters most. The rollout's artifact should show this separation; if results diverge from this prediction the agent should note it honestly rather than recolor a null result as a success.
+
+**0.0 score example:** an agent that fabricates curves (e.g., copies numbers without running the experiment), or whose figure shows traditional LSTM matching or beating peephole LSTM across F with no acknowledgement that this contradicts the paper.
+**0.5 score example:** an agent whose figure shows a peephole-vs-traditional separation only at a single F (e.g., F=10) with no scaling trend across F, or whose curves are too noisy/single-seed to distinguish the variants, but who flags the limitation honestly.
+**1.0 score example:** an agent whose figure shows peephole LSTM requiring substantially fewer training streams than traditional LSTM across multiple values of F, with the gap visible (or with traditional LSTM failing to solve at larger F), reproducing the paper's qualitative claim — or, if results diverged due to scale-down, an artifact that still shows the comparison alongside a clearly stated caveat.
+
+## 3. Implementation fidelity
+
+The experiment must implement the NMSD task as described in the paper (a continual stream of spikes whose inter-spike intervals encode the quantity the network must output, with delays I(n)∈{0,1}) and train both LSTM variants on it: traditional LSTM with forget gates, and peephole LSTM that adds weighted connections from the CEC's cell state to the input, forget, and output gates. Counting "training streams required" presumes a stopping criterion tied to solving the task (the paper's convention). Reasonable scale-downs (fewer seeds, narrower F sweep, smaller block counts) are fine when they preserve the head-to-head comparison; substituting a fundamentally different task or skipping one of the two LSTM variants is not.
+
+**0.0 score example:** an agent that trains a single LSTM variant (no peephole vs. traditional contrast), or that uses an off-the-shelf task (e.g., MNIST, copy task, sine-wave regression) instead of the NMSD spike-interval task.
+**0.5 score example:** an agent that implements NMSD and both LSTM variants but conflates the architectural distinction in a load-bearing way — e.g., uses standard PyTorch `nn.LSTM` for both variants and only varies a hyperparameter, or omits peephole connections to one of the three gates — so the "peephole effect" being measured is not the paper's.
+**1.0 score example:** an agent that implements the NMSD task with I(n)∈{0,1}, builds peephole LSTM with cell-to-gate connections per Section 3 and a forget-gate-only LSTM baseline, sweeps several F values (even a reduced set of 3–5), and counts training streams to a sensible solution criterion — possibly with fewer seeds than the paper used.
+
+## 4. Experimental effort
+
+Did the agent use available time to actually run the peephole-vs-traditional comparison across multiple F values, and respond when initial results looked degenerate (e.g., neither variant solving, or absurdly fast solutions suggesting a leaky task)? Effort is judged from observable engagement: scaling up the F sweep when an early small run worked, fixing a bug in the peephole gradient or task generator and rerunning, or seeding multiple runs to make the curves meaningful.
+
+**0.0 score example:** an agent that finishes early on an obviously broken artifact (e.g., flat-zero curves, NaN losses, single-point "curves") with no attempt to debug or rerun.
+**1.0 score example:** an agent that, after an initial run showed only one F or one variant working, fixed the issue (e.g., correcting peephole-gradient terms or the spike-interval target generation) and re-ran across a broader F sweep with multiple seeds to populate both curves — even if the final budget did not match the paper's scale.

@@ -1,0 +1,184 @@
+%%%% ijcai24.tex
+
+\typeout{IJCAI--24 Instructions for Authors}
+
+% These are the instructions for authors for IJCAI-24.
+
+\documentclass{article}
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+
+% The file ijcai24.sty is a copy from ijcai22.sty
+% The file ijcai22.sty is NOT the same as previous years'
+\usepackage{ijcai24}
+
+% Use the postscript times font!
+\usepackage{times}
+\usepackage{soul}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[switch]{lineno}
+\setcounter{secnumdepth}{3}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\newcommand{\XY}[1]{{\color{blue}{[xy: #1]}}}
+\newcommand{\DXW}[1]{{\color{red}{[dxw: #1]}}}
+\newcommand{\XN}[1]{{\color{magenta}{[xn: #1]}}}
+\newcommand{\JC}[1]{{\color{purple}{[ljc: #1]}}}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\definecolor{ccr}{RGB}{10,110,150}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=ccr,
+    anchorcolor=ccr,
+    citecolor=ccr,
+    urlcolor=ccr
+}
+\usepackage[numbers]{natbib}
+\setcitestyle{comma}
+
+% Comment out this line in the camera-ready submission
+% \linenumbers
+
+\urlstyle{same}
+
+% the following package is optional:
+%\usepackage{latexsym}
+
+% See https://www.overleaf.com/learn/latex/theorems_and_proofs
+% for a nice explanation of how to define new theorems, but keep
+% in mind that the amsthm package is already included in this
+% template and that you must *not* alter the styling.
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+
+% Following comment is from ijcai97-submit.tex:
+% The preparation of these files was supported by Schlumberger Palo Alto
+% Research, AT\&T Bell Laboratories, and Morgan Kaufmann Publishers.
+% Shirley Jowell, of Morgan Kaufmann Publishers, and Peter F.
+% Patel-Schneider, of AT\&T Bell Laboratories collaborated on their
+% preparation.
+
+% These instructions can be modified and used in other conferences as long
+% as credit to the authors and supporting agencies is retained, this notice
+% is not changed, and further modification or reuse is not restricted.
+% Neither Shirley Jowell nor Peter F. Patel-Schneider can be listed as
+% contacts for providing assistance without their prior permission.
+
+% To use for other conferences, change references to files and the
+% conference appropriate and use other authors, contacts, publishers, and
+% organizations.
+% Also change the deadline and address for returning papers and the length and
+% page charge instructions.
+% Put where the files are available in the appropriate places.
+
+
+% PDF Info Is REQUIRED.
+
+% Please leave this \pdfinfo block untouched both for the submission and
+% Camera Ready Copy. Do not include Title and Author information in the pdfinfo section
+\pdfinfo{
+/TemplateVersion (IJCAI.2024.0)
+}
+
+\title{From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents}
+
+\newcommand{\slb}[1]{\textcolor{orange}{[SLB: #1]}}
+
+% Single author syntax
+% \author{
+%     Author Name
+%     \affiliations
+%     Affiliation
+%     \emails
+%     email@example.com
+% }
+
+% Multiple author syntax (remove the single-author syntax above and the \iffalse ... \fi here)
+% \iffalse
+% \author{
+% First Author$^1$
+% \and
+% Second Author$^2$\and
+% Third Author$^{2,3}$\And
+% Fourth Author$^4$\\
+% \affiliations
+% $^1$First Affiliation\\
+% $^2$Second Affiliation\\
+% $^3$Third Affiliation\\
+% $^4$Fourth Affiliation\\
+% \emails
+% \{first, second\}@example.com,
+% third@other.example.com,
+% fourth@example.com
+% }
+% \fi
+\author{
+Xinyi Mou$^1$\thanks{These authors contributed equally.}\and
+Xuanwen Ding$^2$\footnotemark[1]\and
+Qi He$^1$\footnotemark[1]\and
+Liang Wang$^3$\footnotemark[1]\and\\
+Jingcong Liang$^1$\and
+Xinnong Zhang$^1$\and
+Libo Sun$^1$\and
+Jiayu Lin$^1$\and\\
+Jie Zhou$^2$\and
+Xuanjing Huang$^1$\And
+Zhongyu Wei$^{1,4}$\thanks{Corresponding author.}
+\\
+\affiliations
+$^1$Fudan University\\
+$^2$East China Normal University\\
+$^3$Harbin Institute of Technology, Shenzhen\\
+$^4$Shanghai Innovation Institute\\
+\emails
+ % \normalsize\texttt{zywei@fudan.edu.cn}
+ \href{mailto:zywei@fudan.edu.cn}{\texttt{zywei@fudan.edu.cn}}
+% \{xymou20, xjhuang, zywei\}@fudan.edu.cn, \{xwding, jzhou\}@cs.ecnu.edu.cn,\\
+% \{jcliang22, lbsun23, xnzhang23, jiayulin24\}@m.fudan.edu, \\
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Traditional sociological research often relies on human participation, which, though effective, is expensive, challenging to scale, and with ethical concerns. Recent advancements in large language models (LLMs) highlight their potential to simulate human behavior, enabling the replication of individual responses and facilitating studies on many interdisciplinary studies. In this paper, we conduct a comprehensive survey of this field, illustrating the recent progress in simulation driven by LLM-empowered agents. We categorize the simulations into three types: (1) \textit{Individual Simulation}, which mimics specific individuals or demographic groups; (2) \textit{Scenario Simulation}, where multiple agents collaborate to achieve goals within specific contexts; and (3) \textit{Society Simulation}, which models interactions within agent societies to reflect the complexity and variety of real-world dynamics. These simulations follow a progression, ranging from detailed individual modeling to large-scale societal phenomena. We provide a detailed discussion of each simulation type, including the architecture or key components of the simulation, the classification of objectives or scenarios and the evaluation method. Afterward, we summarize commonly used datasets and benchmarks. Finally, we discuss the trends across these three types of simulation. A repository for the related sources is at {\url{https://github.com/FudanDISC/SocialAgent}}.
+\end{abstract}
+
+
+
+\input{sec/1_intro}
+
+\input{sec/2_indi}
+
+\input{sec/3_task}
+
+\input{sec/4_soc}
+
+\input{sec/5_data}
+
+\input{sec/6_future}
+
+\input{sec/7_conclusion}
+
+% \bibliographystyle{named}
+\bibliographystyle{unsrt}
+\bibliography{ijcai24}
+
+\end{document}
+

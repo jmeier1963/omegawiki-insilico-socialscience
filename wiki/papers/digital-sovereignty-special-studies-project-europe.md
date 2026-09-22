@@ -51,3 +51,4 @@ Useful context document for EuroStack and Francesca Bria's research agenda. Impo
 
 - [[eurostack-european-alternative-digital-sovereignty]]
 - [[european-digital-sovereignty-requires-sovereign-ai]]
+- [[preparing-age-ai-living-outlook-decision]] — relevant to this report's dependency-exposure baseline (compute/energy sovereignty measures).

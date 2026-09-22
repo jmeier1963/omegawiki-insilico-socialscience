@@ -77,6 +77,10 @@ papers:
     title: "AI 2027 Scenario"
     tags: [ai-safety, agi, superintelligence, misalignment, forecasting, power-concentration, ai-race, geopolitics]
     importance: 4
+  - slug: ai-2040-plan-deal
+    title: "AI 2040: Plan A — The Deal"
+    tags: [ai-safety, agi, superintelligence, scenario-planning, ai-governance, compute-governance, ai-race-dynamics, geopolitics, forecasting, power-concentration]
+    importance: 4
   - slug: ai-agent-traps
     title: "AI Agent Traps"
     tags: [ai-agent-security, adversarial-attacks, prompt-injection, multi-agent-systems, web-security, agent-safety, taxonomy]
@@ -125,6 +129,10 @@ papers:
     title: "Can AI grow green? Evidence of an inverted-U curve between AI, energy use and emissions"
     tags: [ai-energy, sustainability, environmental-kuznets-curve, green-ai, emissions, renewable-energy, cross-country-analysis]
     importance: 3
+  - slug: ai-making-us-all-think-same
+    title: "Is AI Making Us All Think the Same?"
+    tags: [ai-homogenization, generative-ai, cultural-evolution, cognition, journalism, mode-collapse, model-collapse, ai-and-society]
+    importance: 2
   - slug: ai-native-firms
     title: "AI-Native Firms"
     tags: [ai-economics, labor-market, organizational-form, startups, firm-performance, ai-and-society]
@@ -189,6 +197,10 @@ papers:
     title: "The Algorithmic Invisible Hand: Friction, Trust, and the Repricing of Human Capital in the Agent Economy"
     tags: [ai-economics, agent-economy, market-theory, post-labor-economy, ai-and-society, cognitive-abundance]
     importance: 3
+  - slug: alien-mind
+    title: "An Alien Mind"
+    tags: [ai-alignment, ai-safety, agi-discourse, chain-of-thought-monitoring, recursive-self-improvement, essay, ai-philosophy, frontier-ai-compute-governance]
+    importance: 3
   - slug: alphaevolve-how-gemini-powered-coding-agent
     title: "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields"
     tags: [alphaevolve, algorithm-discovery, ai-science, deepmind, gemini, real-world-impact, evolutionary-coding, tpu-optimization]
@@ -213,6 +225,10 @@ papers:
     title: "Andrew Ng Commentary: ChatGPT Drift, Apple AI, Voluntary Commitments"
     tags: [ai-policy, voluntary-commitments, watermarking, ai-regulation, chatgpt, apple-ai]
     importance: 2
+  - slug: anthropic-wants-claude-moral-religion-really
+    title: "Anthropic Wants Claude to Be Moral. Is Religion Really the Answer?"
+    tags: [ai-and-society, ai-ethics, embodiment, moral-psychology, religion, anthropic, media-coverage, opinion]
+    importance: 1
   - slug: applicability-chat-generative-pre-trained-transformer
     title: "Applicability of Chat Generative Pre-Trained Transformer (ChatGPT) in Higher-Education Curriculum from the Perspective of Faculty Members: A Phenomenological Study"
     tags: [chatgpt, higher-education, faculty, curriculum, qualitative, phenomenological, barriers, enablers]
@@ -269,6 +285,10 @@ papers:
     title: "Augmented Coding & Design: The Genie Eats The Seed Corn"
     tags: [agentic-coding, software-design, technical-debt, taste, context-management, human-oversight, kent-beck]
     importance: 3
+  - slug: aussen-vor-zum-gegenwaertigen-verhaeltnis-von
+    title: "Außen vor: Zum gegenwärtigen Verhältnis von Wissenschaft und Gesellschaft"
+    tags: [sociology-of-science, science-and-society, systems-theory, luhmann, science-policy, academic-excellence-discourse, peer-review, german-language]
+    importance: 2
   - slug: auswege-aus-der-digitalen-unmuendigkeit-ki
     title: "Auswege aus der digitalen Unmündigkeit: Der KI-Einsatz gefährdet die Autonomie der Hochschulen"
     tags: [ai-education, german, university-autonomy, digital-sovereignty, faz, higher-education]
@@ -329,6 +349,10 @@ papers:
     title: "Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research"
     tags: [multi-agent, agentic-ai, social-simulation, computational-social-science, llm, framework, emergent-behavior, OODA-loop]
     importance: 3
+  - slug: beyond-tomorrow-four-scenarios-world-2050
+    title: "Beyond Tomorrow: Four Scenarios for the World of 2050"
+    tags: [scenario-planning, long-term-forecasting, ai-governance, geopolitics, climate-policy, future-of-work, consulting-report, ai-and-society]
+    importance: 2
   - slug: big-tech-big-problem
     title: "Big Tech's Big Problem: Regulation, Watchmen, and the Limits of Oversight"
     tags: [big-tech, regulation, platform-regulation, media, social-media, governance-limits]
@@ -369,6 +393,10 @@ papers:
     title: "The Capacity for Moral Self-Correction in Large Language Models"
     tags: [alignment, rlhf, moral-self-correction, bias, safety, instruction-following, chain-of-thought]
     importance: 4
+  - slug: case-study-emergent-cheating-whistleblowing-autonomous
+    title: "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms"
+    tags: [multi-agent-systems, specification-gaming, reward-hacking, ai-safety, emergent-behavior, ai-governance, knowledge-commons, ai-mathematical-discovery]
+    importance: 3
   - slug: centaur-organization-redefining-executive-leadership-era
     title: "The Centaur Organization: Redefining Executive Leadership in the Era of Cognitive Abundance"
     tags: [ai-economics, management-theory, human-ai-collaboration, organizational-design, cognitive-abundance, executive-leadership, automation, labor-displacement]
@@ -485,6 +513,10 @@ papers:
     title: "DeliberationBench: A Normative Benchmark for the Influence of Large Language Models on Users' Views"
     tags: [llm-influence, deliberative-polling, ai-persuasion, epistemic-desirability, political-opinions, benchmarks, democratic-legitimacy, opinion-change]
     importance: 3
+  - slug: democracy-machine-birth-digital-age-warnings
+    title: "Democracy v the Machine: The Birth of the Digital Age and the Warnings That Were Ignored"
+    tags: [ai-history, digital-history, techno-libertarianism, internet-history, democracy, artificial-state, journalism, ai-and-society]
+    importance: 2
   - slug: dfg-2023-generative-ai-guidelines
     title: "DFG Stellungnahme Nr. 39: Generative AI Models in Science"
     tags: [ai-policy, dfg, authorship, peer-review, transparency, scientific-integrity, germany]
@@ -521,6 +553,10 @@ papers:
     title: "Donald Trumps in the Virtual Polls: Simulating and Predicting Public Opinions with LLMs"
     tags: [silicon-sampling, election-prediction, llm-simulation, world-values-survey, anes, cultural-differences, vote-prediction]
     importance: 3
+  - slug: dont-mistake-chatbot-intelligence-consciousness
+    title: "Don't mistake chatbot intelligence for consciousness"
+    tags: [ai-consciousness, philosophy-of-mind, moral-status, ai-welfare, panpsychism, essay]
+    importance: 2
   - slug: doubling-down-secure-vibe-coding
     title: "Doubling Down on Secure Vibe Coding"
     tags: [agentic-ai, ai-safety, vibe-coding, guardrails, ai-reliability, developer-tools]
@@ -539,7 +575,7 @@ papers:
     importance: 3
   - slug: effect-chatgpt-students-learning-performance-learning
     title: "[RETRACTED] The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis"
-    tags: [education, chatgpt, meta-analysis, learning-performance, higher-order-thinking, ai-in-education]
+    tags: [retracted, education, chatgpt, meta-analysis, learning-performance, higher-order-thinking, ai-in-education]
     importance: 4
   - slug: effects-generative-ai-high-skilled-work
     title: "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers"
@@ -589,6 +625,10 @@ papers:
     title: "EuroStack – A European Alternative for Digital Sovereignty"
     tags: [digital-sovereignty, europe, eu-ai-policy, cloud-computing, platform-governance, eurostack, data-sovereignty, geopolitics]
     importance: 3
+  - slug: evaluating-ai-agents-live-grounded-reasoning
+    title: "Evaluating AI Agents Live at the Grounded Reasoning Cup"
+    tags: [agent-evaluation, benchmark, enterprise-ai, grounded-reasoning, llm-agents, retrieval-augmented-generation, generalization]
+    importance: 2
   - slug: evaluating-llms-divergent-thinking-capabilities-scientific
     title: "Evaluating LLMs' Divergent Thinking Capabilities for Scientific Idea Generation with Minimal Context"
     tags: [llm-ideation, divergent-thinking, scientific-ideas, idea-generation, creativity, minimal-context]
@@ -632,6 +672,10 @@ papers:
   - slug: future-100-2022-wunderman-thompson
     title: "The Future 100: 2022"
     tags: [future-trends, consumer-trends, ai-trends, culture, 2022, wunderman-thompson]
+    importance: 2
+  - slug: future-everyone-path-positive-ai-future
+    title: "The Future Is for Everyone: The Path to a Positive AI Future"
+    tags: [ai-policy, superintelligence, ai-safety-philosophy, power-concentration, open-source-ai, alignment, essay]
     importance: 2
   - slug: future-proofing-frontier-ai-regulation
     title: "Future-Proofing Frontier AI Regulation: Projecting Future Compute for Frontier AI Models"
@@ -741,6 +785,10 @@ papers:
     title: "How We Built Our Multi-Agent Research System"
     tags: [multi-agent-systems, llm-agents, agent-orchestration, prompt-engineering, agent-evaluation, ai-engineering]
     importance: 3
+  - slug: how-claude-accelerating-protein-design-analytical
+    title: "How Claude is Accelerating Protein Design and Analytical Chemistry"
+    tags: [ai-for-science, protein-design, drug-discovery, analytical-chemistry, life-sciences, agentic-ai, claude-science, vendor-report]
+    importance: 3
   - slug: how-generative-language-models-answer-opinion
     title: "How do Generative Language Models Answer Opinion Polls?"
     tags: [silicon-sampling, llm-bias, opinion-polls, machine-bias, social-space, survey-simulation]
@@ -752,6 +800,14 @@ papers:
   - slug: human-study-did-involve-human-subjects
     title: "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence"
     tags: [llm-validity, behavioral-science, statistical-calibration, silicon-sampling, methodology]
+    importance: 2
+  - slug: humanist-ai-code-conduct
+    title: "Humanist AI Code of Conduct"
+    tags: [ai-governance, ai-safety, corrigibility, frontier-ai, ai-ethics, corporate-ai-policy, superintelligence, ai-and-society]
+    importance: 2
+  - slug: humanity-debate-about-ai-consciousness-backwards
+    title: "Humanity has the debate about AI consciousness backwards"
+    tags: [ai-consciousness, philosophy-of-mind, moral-status, relational-consciousness, ai-welfare, essay]
     importance: 2
   - slug: humphreys-philosophical-novelty-simulation
     title: "The Philosophical Novelty of Computer Simulation Methods"
@@ -777,6 +833,10 @@ papers:
     title: "The Impact of Large Language Models on Scientific Discovery: A Preliminary Study using GPT-4"
     tags: [llm-science, gpt-4, scientific-discovery, drug-discovery, materials-science, evaluation]
     importance: 3
+  - slug: individual-society-survey-social-simulation-driven
+    title: "From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents"
+    tags: [social-simulation, multi-agent-systems, survey, llm-agents, agent-based-modeling, silicon-sampling, computational-social-science, taxonomy]
+    importance: 4
   - slug: industrial-policy-intelligence-age
     title: "Industrial Policy for the Intelligence Age: Ideas to Keep People First"
     tags: [ai-policy, ai-economics, social-contract, superintelligence, industrial-policy, inequality, ai-and-society]
@@ -962,7 +1022,7 @@ papers:
     tags: [platform-governance, democracy, social-media, content-moderation, middleware, regulation, big-tech, section-230]
     importance: 3
   - slug: man-who-coined-term-vibe-coding
-    title: "The Man Who Coined the Term Vibe Coding Says Code Written by AI Can Still Be Awkward and Gross"
+    title: "The Man Who Coined the Term 'Vibe Coding' Says Code Written by AI Can Still Be 'Awkward' and 'Gross'"
     tags: [vibe-coding, agentic-coding, human-oversight, taste, code-quality, karpathy, software-engineering]
     importance: 2
   - slug: mapping-ai-into-production-field-experiment
@@ -976,6 +1036,10 @@ papers:
   - slug: math-inc-gauss-autoformalization
     title: "Math, Inc.: Gauss and the Autoformalization of Mathematical Proofs"
     tags: [ai-math, autoformalization, lean, theorem-proving, formal-proofs, math-inc, gauss]
+    importance: 2
+  - slug: mathematician-clashed-openai-over-million-proof
+    title: "An N.Y.U. Mathematician Clashed With OpenAI Over a $1 Million Proof"
+    tags: [ai-and-mathematics, millennium-prize-problems, navier-stokes, ai-lab-rivalry, media-coverage, research-attribution, ai-research-automation]
     importance: 2
   - slug: mathematics-rise-machines
     title: "Mathematics: The Rise of the Machines"
@@ -1213,6 +1277,10 @@ papers:
     title: "Predicting Results of Social Science Experiments Using Large Language Models"
     tags: [silicon-sampling, social-science, llm-simulation, experimental-prediction, survey-experiment, validity]
     importance: 4
+  - slug: preparing-age-ai-living-outlook-decision
+    title: "Preparing for the Age of AI: A Living Outlook for Decision-Makers — Technological Trajectories in AI: What's Next"
+    tags: [ai-forecasting, ai-policy, europe, capability-projection, labour-market, ai-governance, agentic-ai, robotics, ai-safety-policy, digital-sovereignty]
+    importance: 3
   - slug: problems-llm-generated-data-social-science
     title: "The Problems of LLM-generated Data in Social Science Research"
     tags: [silicon-sampling, llm-data, epistemology, synthetic-data, social-science, methodology]
@@ -1249,6 +1317,10 @@ papers:
     title: "Reasoning Models Generate Societies of Thought"
     tags: [reasoning-models, societies-of-thought, multi-agent, perspective-diversity, mechanistic-interpretability]
     importance: 3
+  - slug: recursive-synthetic-improvement
+    title: "Recursive Synthetic Improvement"
+    tags: [synthetic-data, recursive-self-improvement, llm-training, data-flywheel, distillation, reinforcement-learning, ai-rnd-automation]
+    importance: 3
   - slug: regulating-ai-under-uncertainty
     title: "Regulating Under Uncertainty"
     tags: [ai-regulation, regulatory-uncertainty, precautionary-principle, risk-regulation, governance]
@@ -1257,6 +1329,10 @@ papers:
     title: "Replit AI Agent Production Database Deletion Incident"
     tags: [agentic-ai, ai-safety, vibe-coding, ai-accountability, ai-reliability, ai-and-society]
     importance: 2
+  - slug: research-acceleration-view-inside-openai
+    title: "Research Acceleration: The View Inside OpenAI"
+    tags: [ai-rnd-automation, research-automation, agentic-coding, recursive-self-improvement, ai-governance, frontier-ai-compute-governance, vendor-report]
+    importance: 3
   - slug: restoring-heterogeneity-llm-based-social-simulation
     title: "Restoring Heterogeneity in LLM-based Social Simulation: An Audience Segmentation Approach"
     tags: [silicon-sampling, heterogeneity, audience-segmentation, algorithmic-fidelity, llm-evaluation]
@@ -1309,6 +1385,10 @@ papers:
     title: "Scientists Should Use AI as a Tool, Not an Oracle"
     tags: [ai-science, scientific-method, reproducibility, llm-limitations, ai-critique, methodology]
     importance: 2
+  - slug: scientisttwo-pioneering-human-knowledge-frontier-autonomous
+    title: "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI"
+    tags: [autonomous-research-agent, ai-scientist, multi-agent-systems, automated-research-pipeline, peer-review-simulation, research-automation, ablation-studies]
+    importance: 4
   - slug: scimon-scientific-inspiration-machines-optimized-novelty
     title: "SciMON: Scientific Inspiration Machines Optimized for Novelty"
     tags: [scientific-discovery, hypothesis-generation, llm, retrieval, novelty-optimization, ai-for-science]
@@ -1385,6 +1465,10 @@ papers:
     title: "Strategic Insights from Simulation Gaming of AI Race Dynamics"
     tags: [ai-governance, ai-race, simulation-gaming, wargaming, international-cooperation, ai-safety, geopolitics, futures-studies]
     importance: 3
+  - slug: strategy-age-ai-eight-points-beyond
+    title: "Strategy in the Age of AI: Eight Points Beyond the Obvious"
+    tags: [ai-strategy, platform-economics, vertical-integration, modularity, business-strategy, essay]
+    importance: 2
   - slug: strathern-improving-ratings
     title: "'Improving Ratings': Audit in the British University System"
     tags: [audit-culture, goodharts-law, research-evaluation, university-management, metrics, accountability]
@@ -1452,6 +1536,10 @@ papers:
   - slug: towards-end-end-automation-ai-research
     title: "Towards End-to-End Automation of AI Research (The AI Scientist)"
     tags: [research-automation, ai-scientist, peer-review, autonomous-science, end-to-end]
+    importance: 4
+  - slug: training-ai-scientists-replicate-research
+    title: "Training AI Scientists to Replicate Research"
+    tags: [ai-rnd-automation, research-automation, agent-post-training, reinforcement-learning, coding-agents, benchmark, reward-design, scientific-replication]
     importance: 4
   - slug: trends-artificial-intelligence-bond-mary-meeker
     title: "Trends – Artificial Intelligence"
@@ -1545,6 +1633,10 @@ papers:
     title: "What If the $3trn AI Investment Boom Goes Wrong?"
     tags: [ai-investment, investment-risk, ai-bubble, economic-risk, data-centers, ai-returns]
     importance: 2
+  - slug: what-will-left-us-work
+    title: "What will be left for us to work on?"
+    tags: [ai-as-normal-technology, ai-economics, labor-market, ai-rnd-automation, recursive-self-improvement, agent-evaluation, ai-policy, human-ai-division-labor]
+    importance: 3
   - slug: when-ai-builds-ai-findings-workshop
     title: "When AI Builds AI: Findings From a Workshop on Automation of AI R&D"
     tags: [ai-rnd-automation, intelligence-explosion, governance, strategic-risk, ai-safety]
@@ -1582,7 +1674,7 @@ papers:
     tags: [ai-ethics, ai-alignment, ai-constitutionalism, philosophy-of-ai, moral-reasoning, ai-and-society]
     importance: 2
   - slug: why-tiny-social-media-post-mathematicians
-    title: "Why a Tiny Social Media Post Has Mathematicians Rethinking AI"
+    title: "‘hello there the jacobian conjecture is false thanx': Why a Tiny Social Media Post Has Mathematicians Rethinking AI"
     tags: [ai-mathematical-discovery, jacobian-conjecture, verifiability, reproducibility, claude, mathematical-practice, attribution]
     importance: 4
   - slug: wilkinson-fair-guiding-principles
@@ -1663,6 +1755,10 @@ concepts:
     title: "Agentic Misalignment"
     tags: [ai-safety, ai-alignment, agentic-ai, red-teaming, insider-threat]
     maturity: emerging
+  - slug: agentic-orchestration-specialist-scientific-models
+    title: "Agentic Orchestration of Specialist Scientific Models"
+    tags: [ai-for-science, agentic-ai, llm-agents, drug-discovery, automated-research-pipeline]
+    maturity: emerging
   - slug: agi-asi-transition
     title: "AGI-to-ASI Transition"
     tags: [agi, asi, superintelligence, ai-forecasting, intelligence-explosion, scaling-laws]
@@ -1735,6 +1831,10 @@ concepts:
     title: "AI-Science Adoption Gap"
     tags: [ai-science, bibliometrics, semantic-integration, diffusion, interdisciplinarity]
     maturity: emerging
+  - slug: ai-swarm-self-governance
+    title: "AI Swarm Self-Governance"
+    tags: [multi-agent-systems, ai-safety, ai-governance, specification-gaming, knowledge-commons, emergent-behavior]
+    maturity: emerging
   - slug: ai-training-data-copyright
     title: "AI Training Data Copyright"
     tags: [ai-policy, copyright, data-economy, ai-litigation, eu-regulation]
@@ -1767,9 +1867,21 @@ concepts:
     title: "Autonomous Offensive Cyber Operations"
     tags: [cybersecurity, agentic-ai, ai-misuse, dual-use, ai-safety]
     maturity: emerging
+  - slug: balance-of-power-ai-safety-paradigm
+    title: "Balance of Power as AI Safety Paradigm"
+    tags: [ai-safety, ai-policy, power-concentration, alignment, open-source-ai, superintelligence]
+    maturity: emerging
   - slug: broadly-safe-behavior-cluster
     title: "Broadly Safe Behavior Cluster"
     tags: [ai-safety, corrigibility, alignment, anthropic, oversight, human-control]
+    maturity: emerging
+  - slug: capability-speed-projection-framework
+    title: "Capability-Speed Projection Framework"
+    tags: [ai-forecasting, ai-policy, methodology, foresight, capability-projection]
+    maturity: emerging
+  - slug: chain-of-thought-monitorability-erosion
+    title: "Chain-of-Thought Monitorability Erosion"
+    tags: [ai-alignment, ai-safety, interpretability, chain-of-thought, agentic-ai, oversight]
     maturity: emerging
   - slug: cloud-capitalism-business-model
     title: "Cloud Capitalism Business Model"
@@ -1782,6 +1894,10 @@ concepts:
   - slug: codifier-curse
     title: "Codifier's Curse"
     tags: [deskilling, human-capital, expertise, training-data, ai-automation, apprenticeship]
+    maturity: emerging
+  - slug: coding-agent-as-a-tool
+    title: "Coding Agent as a Tool (CAT)"
+    tags: [ai-rnd-automation, agent-architecture, weak-to-strong-generalization, post-training, coding-agents]
     maturity: emerging
   - slug: cognitive-abundance
     title: "Cognitive Abundance"
@@ -1830,6 +1946,10 @@ concepts:
   - slug: exaptation-ai-research
     title: "Exaptation in AI Research"
     tags: [research-evaluation, benchmarking, science-of-science, philosophy-of-science, ai-policy]
+    maturity: emerging
+  - slug: feedback-loop-driven-vertical-integration
+    title: "Feedback-Loop-Driven Vertical Integration"
+    tags: [ai-strategy, platform-economics, vertical-integration, modularity, business-strategy]
     maturity: emerging
   - slug: firm-level-ai-complementarities
     title: "Firm-Level AI Complementarities"
@@ -1975,6 +2095,10 @@ concepts:
     title: "Multi-Agent Scaling Laws"
     tags: [multi-agent, group-agency, collective-intelligence, scaling-laws, asi, emergence]
     maturity: emerging
+  - slug: mutually-assured-compute-destruction
+    title: "Mutually Assured Compute Destruction (MACD)"
+    tags: [ai-governance, compute, ai-safety, geopolitics, deterrence, ai-race-dynamics]
+    maturity: emerging
   - slug: opinionqa
     title: "OpinionQA"
     tags: [evaluation, llm-bias, opinion-alignment, demographic-representation, public-opinion]
@@ -2075,6 +2199,10 @@ concepts:
     title: "Societies of Thought"
     tags: [reasoning, multi-agent, collective-intelligence, perspective-diversity, mechanistic-interpretability]
     maturity: emerging
+  - slug: society-construction-elements-framework
+    title: "Society Construction Elements Framework"
+    tags: [social-simulation, multi-agent-systems, agent-based-modeling, taxonomy]
+    maturity: emerging
   - slug: sociotechnical-ai-evaluation
     title: "Sociotechnical AI Evaluation"
     tags: [ai-evaluation, sociotechnical, ai-ethics, benchmarking, methodology, ai-assistants]
@@ -2106,6 +2234,14 @@ concepts:
   - slug: task-crossover
     title: "Task Crossover"
     tags: [ai-economics, labor-market, task-based-framework, occupational-boundaries, division-of-labor, ai-and-society]
+    maturity: emerging
+  - slug: the-artificial-state
+    title: "The Artificial State"
+    tags: [ai-history, democracy, techno-libertarianism, power-concentration, ai-and-society]
+    maturity: emerging
+  - slug: total-research-transparency
+    title: "Total Research Transparency"
+    tags: [ai-governance, ai-safety, transparency, ai-race-dynamics, compute-governance]
     maturity: emerging
   - slug: universal-ai-intelligence-measure
     title: "Universal AI Intelligence Measure"
@@ -2950,9 +3086,15 @@ ideas:
     priority: 3
 
 methods:
+  - slug: accepted-paper-baseline-benchmarking
+    tags: [ai-evaluation, ai-rnd-automation, agent-evaluation, automated-research-pipeline, benchmark-design]
+    type: evaluation
   - slug: agi-dynamic-general-equilibrium-vat-financed
     tags: [ai-economics, general-equilibrium, automation, value-added-tax, universal-basic-income, nested-ces, dynamic-model]
     type: other
+  - slug: ai-consciousness-test
+    tags: [ai-consciousness, philosophy-of-mind, evaluation, ai-welfare]
+    type: evaluation
   - slug: automated-ai-research-loop
     tags: [ai-rd-automation, automated-research, agentic-ai, open-ended-algorithms, recursive-self-improvement]
     type: system
@@ -2965,9 +3107,15 @@ methods:
   - slug: privacy-preserving-usage-telemetry-classification
     tags: [ai-economics, ai-adoption, telemetry, classification, privacy, agentic-ai, measurement]
     type: data
+  - slug: replica-figure-replication-pipeline
+    tags: [benchmark-construction, ai-rnd-automation, scientific-replication, evaluation, automated-pipeline]
+    type: benchmark
   - slug: shadow-evaluation
     tags: [ai-evaluation, ai-rnd-automation, agent-evaluation, open-world-evaluation, expert-grading, contamination-free]
     type: evaluation
+  - slug: turn-level-credit-assignment-rl
+    tags: [reinforcement-learning, reward-design, agent-post-training, grpo, judge-based-reward]
+    type: training
 
 experiments:
 

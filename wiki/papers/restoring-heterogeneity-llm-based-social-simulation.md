@@ -59,3 +59,4 @@ A practically useful contribution for researchers designing silicon sampling stu
 - supports: [[llm-social-simulations-structural-heterogeneity-ceiling]]
 - [[silicon-sampling]]
 - [[algorithmic-fidelity]]
+- [[individual-society-survey-social-simulation-driven]] — complements this survey's composition/precision-vs-scale discussion.

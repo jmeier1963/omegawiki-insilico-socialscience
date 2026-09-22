@@ -63,3 +63,4 @@ The AI Scientist is a landmark demonstration but should be interpreted carefully
 - [[llm-powered-agent-architecture]]
 - [[agent-laboratory-using-llm-agents-research]]
 - [[ai-driven-scientific-discovery]]
+- builds_on (reverse): [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]]

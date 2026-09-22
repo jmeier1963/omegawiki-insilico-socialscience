@@ -3,7 +3,7 @@ title: "Human-AI Relationship Appropriateness"
 aliases: ["appropriate AI assistant relationship", "human-AI attachment ethics", "AI assistant dependency ethics", "AI relationship norms", "user-AI relationship framework"]
 tags: [ai-ethics, human-ai-interaction, dependence, autonomy, care-ethics, assistant-relationships]
 maturity: emerging
-key_papers: [code-binds-us-navigating-appropriateness-human, ethics-advanced-ai-assistants]
+key_papers: [code-binds-us-navigating-appropriateness-human, ethics-advanced-ai-assistants, humanist-ai-code-conduct]
 first_introduced: "2024"
 date_updated: 2026-05-06
 related_concepts: [generative-ghost]

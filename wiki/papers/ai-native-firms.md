@@ -64,3 +64,4 @@ The durable contribution is naming and empirically isolating the **product chann
 - [[agentic-coding-persistent-returns-expertise]]
 - [[machine-job-wrong-question]]
 - [[forecasting-economic-effects-ai]]
+- [[beyond-tomorrow-four-scenarios-world-2050]] — the AI-only-firm limiting case (zero human employees) this report projects builds directly on the product-channel mechanism this paper documents.

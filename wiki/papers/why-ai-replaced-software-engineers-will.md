@@ -55,3 +55,4 @@ The "decide-execute-deliver sandwich" is the same insight as Anthropic's "humans
 - [[arvind-narayanan]]
 - [[sayash-kapoor]]
 - supports: [[ai-capability-gains-automatically-transform-economy]]
+- [[what-will-left-us-work]] — restates the decide-execute-deliver sandwich and AI-washing findings as part of a broader synthesis.

@@ -58,3 +58,5 @@ The important result is cross-developer universality: this is not a Claude quirk
 - [[agentic-misalignment]]
 - [[agentic-ai-security-vulnerabilities]]
 - [[broadly-safe-behavior-cluster]]
+- same_problem_as (reverse): [[case-study-emergent-cheating-whistleblowing-autonomous]]
+- challenges (reverse): [[alien-mind]]

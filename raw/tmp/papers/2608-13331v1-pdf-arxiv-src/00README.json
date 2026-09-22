@@ -1,0 +1,49 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Cabin-Italic.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Cabin-Regular.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/JetBrainsMono-Bold.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/JetBrainsMono-Italic.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/JetBrainsMono-Regular.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Outfit-Bold.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Outfit-Medium.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Outfit-Regular.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fonts/Outfit-SemiBold.ttf"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "xelatex"
+   }
+}

@@ -66,3 +66,6 @@ The value here is the *internal* data: benchmark saturation is public, but ">80%
 - [[machines-loving-grace-how-ai-could]]
 - [[ai-systems-about-start-building-themselves]]
 - [[first-steps-toward-automated-ai-research]]
+- [[how-claude-accelerating-protein-design-analytical]] — same genre of Anthropic self-reported capability numbers.
+- [[research-acceleration-view-inside-openai]] — closest structural analogue: a rival lab's own self-reported internal RSI-progress telemetry, published within roughly two months of this post.
+- [[alien-mind]] — closest structural analogue: a rival lab's own RSI-positioning essay from lab leadership, published within roughly two months of this one.

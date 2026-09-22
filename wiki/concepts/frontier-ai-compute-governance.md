@@ -3,10 +3,10 @@ title: "Frontier AI Compute Governance"
 aliases: ["compute governance", "frontier AI governance", "compute thresholds", "FLOP thresholds", "compute-based AI safety"]
 tags: [frontier-ai, compute, ai-safety, ai-governance, regulation, scaling-laws]
 maturity: active
-key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house, policy-ai-exponential, when-ai-builds-itself, state-ai-report-2025, decoupled-diloco-resilient-distributed-ai-training, trends-artificial-intelligence-bond-mary-meeker, artificial-intelligence-index-report-2025-stanford, microsoft-openai-partnership-new-yorker-inside, meta-open-source-llama-ai-decision, white-house-national-policy-framework-artificial, andrew-ng-commentary-ai-policy-voluntary, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, openai-economic-blueprint-ai-america]
+key_papers: [future-proofing-frontier-ai-regulation, large-language-models-generative-ai-house, policy-ai-exponential, when-ai-builds-itself, state-ai-report-2025, decoupled-diloco-resilient-distributed-ai-training, trends-artificial-intelligence-bond-mary-meeker, artificial-intelligence-index-report-2025-stanford, microsoft-openai-partnership-new-yorker-inside, meta-open-source-llama-ai-decision, white-house-national-policy-framework-artificial, andrew-ng-commentary-ai-policy-voluntary, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, openai-economic-blueprint-ai-america, ai-2040-plan-deal, research-acceleration-view-inside-openai, alien-mind]
 first_introduced: "2023"
 date_updated: 2026-06-20
-related_concepts: [ai-race-dynamics, software-intelligence-explosion]
+related_concepts: [ai-race-dynamics, software-intelligence-explosion, mutually-assured-compute-destruction, total-research-transparency]
 ---
 
 ## Definition
@@ -46,6 +46,7 @@ When analyzing: EU AI Act scope, US AI executive order compliance, export contro
 - Compute-capability relationship may change with efficiency breakthroughs (DeepSeek-style training)
 - Fixed thresholds become obsolete rapidly as frontier advances
 - Compute is a poor proxy for deployment risks in specific applications
+- **Restricted compute is fungible, not idle.** First-party telemetry (OpenAI, 2026) shows GPU allocation withdrawn from a safety-restricted model class after an incident was substituted into other training/experimentation workloads rather than left unused within weeks — complicating what a voluntary "pause" or "slow down" capability-threshold commitment actually constrains, since the underlying compute keeps producing progress elsewhere.
 
 ## Open problems
 

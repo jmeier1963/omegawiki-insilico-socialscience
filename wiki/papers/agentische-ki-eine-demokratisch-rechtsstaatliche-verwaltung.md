@@ -116,3 +116,4 @@ Worth reading directly against [[applied-ai-most-impactful-agentic-enterprise]],
 - [[agentic-ai-security-vulnerabilities]]
 - [[agentic-democratic-mediation]]
 - challenges: [[applied-ai-most-impactful-agentic-enterprise]]
+- same_problem_as: [[preparing-age-ai-living-outlook-decision]]

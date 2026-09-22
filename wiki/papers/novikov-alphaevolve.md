@@ -65,3 +65,4 @@ The algorithmic improvements are modest but verifiable — that's what distingui
 - [[hacking-representing-intervening]]
 - [[alphaevolve-how-gemini-powered-coding-agent]] — DeepMind impact report on real-world AlphaEvolve deployments
 - supports: [[llm-evolutionary-coding-agents-achieve-real]]
+- [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]] — comparable 'agent discovers a better algorithm than SOTA' result in a broader, multi-dataset setting.

@@ -24,6 +24,7 @@ date_updated: 2026-06-20
 - [[ai-wont-make-legal-services-cheaper]]
 - [[open-world-evaluations-measuring-frontier-ai]] — lead author; introduces open-world evaluations and CRUX, debuting with an autonomous iOS app deployment case study.
 - [[ai-agents-conduct-open-ended-ai]] — co-lead author; introduces shadow evaluation, grading agent output on unpublished NeurIPS submissions by the papers' own authors.
+- [[what-will-left-us-work]] — co-author of the ICML 2026 keynote (delivered by Narayanan) synthesizing the Normal Technology framework against recursive-self-improvement anxiety.
 The "AI as Normal Technology" essay series (with Arvind Narayanan).
 
 ## Collaborators

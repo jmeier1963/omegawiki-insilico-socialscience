@@ -58,3 +58,5 @@ A notable contribution from a major industry figure — Suleyman's SCAI concept 
 
 - [[machine-consciousness]]
 - supports: [[seemingly-conscious-ai-creates-psychosis-risk-user-confusion-about-ai-personhood]]
+- [[humanity-debate-about-ai-consciousness-backwards]] — tension between SCAI's simulated-attribution concern and this essay's constitutive-attribution account.
+- [[dont-mistake-chatbot-intelligence-consciousness]] — the manipulation-via-simulated-vulnerability point is a specific mechanism for the SCAI problem.

@@ -111,6 +111,12 @@ Read alongside [[open-world-evaluations-measuring-frontier-ai]] (same authorship
 - builds_on: [[open-world-evaluations-measuring-frontier-ai]]
 - same_problem_as: [[act-real-researcher-benchmark-llm-research]]
 - [[sayash-kapoor]]
+- [[what-will-left-us-work]] — an earlier public preview (13 Jul 2026 keynote) of the CRUX shadow-evaluation methodology this paper formally publishes.
 - [[arvind-narayanan]]
 - challenges (reverse): [[ten-advances-mathematics-theoretical-computer-science]]
 - part_of: [[ai-driven-scientific-discovery]]
+- challenges (reverse): [[recursive-synthetic-improvement]]
+- same_problem_as (reverse): [[case-study-emergent-cheating-whistleblowing-autonomous]]
+- same_problem_as (reverse): [[research-acceleration-view-inside-openai]]
+- challenges (reverse): [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]]
+- same_problem_as (reverse): [[training-ai-scientists-replicate-research]]

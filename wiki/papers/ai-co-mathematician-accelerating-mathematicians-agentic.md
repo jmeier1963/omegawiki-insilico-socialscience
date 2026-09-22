@@ -59,3 +59,4 @@ A compelling demonstration that the bottleneck in AI-for-mathematics is not reas
 - [[ai-mathematical-discovery]]
 - [[automated-research-pipeline]]
 - supports: [[stateful-agentic-workbench-enables-longer-horizon]]
+- [[mathematician-clashed-openai-over-million-proof]] — real-world adversarial instance of AI-accelerated mathematical proof-finding.

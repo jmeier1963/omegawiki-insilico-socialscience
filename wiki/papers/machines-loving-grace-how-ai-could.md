@@ -60,3 +60,5 @@ The most detailed and influential published articulation of the beneficial AI th
 
 - [[marginal-returns-to-intelligence]]
 - supports: [[ai-could-compress-decades-scientific-progress-into-years-biology-intelligence-bottleneck]]
+- [[alien-mind]] — same genre: lab chief scientist/CEO essay blending genuine technical ideas with self-interested positioning about AI's trajectory.
+- challenges (reverse): [[future-everyone-path-positive-ai-future]] — opposite premise on AI safety: distribute superintelligence widely (Zuckerberg) vs. a small number of safety-focused labs staying ahead (this essay).

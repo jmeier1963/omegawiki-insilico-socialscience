@@ -4,7 +4,7 @@ aliases: ["agent-native organization", "E2E agentic process redesign", "multiste
 tags: [agentic-ai, enterprise-transformation, organizational-ai, process-redesign, ai-adoption, ai-and-society]
 maturity: emerging
 definition: "The redesign of end-to-end enterprise processes for multistep AI autonomy, managed by outcomes rather than tasks and steered by a single accountable process owner, in contrast to embedding AI tools inside human-led workflows."
-key_papers: [applied-ai-most-impactful-agentic-enterprise]
+key_papers: [applied-ai-most-impactful-agentic-enterprise, beyond-tomorrow-four-scenarios-world-2050]
 first_introduced: "2026"
 date_updated: 2026-08-04
 related_concepts: [agentic-ai-delegated-production, ai-adoption-pressure-corporate-organizations, genai-divide-enterprise-learning-gap, systematization-agentic-work, ai-native-research-organization, agentic-ai-public-administration]

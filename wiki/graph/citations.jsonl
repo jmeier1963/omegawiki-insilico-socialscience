@@ -18,3 +18,5 @@
 {"from": "papers/ai-agents-conduct-open-ended-ai", "to": "papers/ai-2027-scenario", "type": "cites", "source": "semantic_scholar", "date": "2026-08-04"}
 {"from": "papers/ai-agents-conduct-open-ended-ai", "to": "papers/novikov-alphaevolve", "type": "cites", "source": "semantic_scholar", "date": "2026-08-04"}
 {"from": "papers/ai-agents-conduct-open-ended-ai", "to": "papers/liang-monitoring-ai-modified-content", "type": "cites", "source": "semantic_scholar", "date": "2026-08-04"}
+{"from": "papers/ai-making-us-all-think-same", "to": "papers/shumailov-model-collapse", "type": "cites", "source": "manual", "date": "2026-09-22"}
+{"from": "papers/mathematician-clashed-openai-over-million-proof", "to": "papers/new-york-times-company-microsoft-corporation", "type": "cites", "source": "manual", "date": "2026-09-22"}

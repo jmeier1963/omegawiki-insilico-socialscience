@@ -54,3 +54,4 @@ This is the most credible large-scale empirical evidence to date that generative
 - [[automation-augmentation-employment-divide]]
 - [[post-labor-economy]]
 - [[erik-brynjolfsson]]
+- challenges (reverse): [[what-will-left-us-work]] — opposing empirical prior on whether the adaptation phase cushions displacement.

@@ -58,3 +58,4 @@ The most detailed public specification of intended AI assistant values and behav
 - [[broadly-safe-behavior-cluster]]
 - supports: [[ai-safety-requires-prioritizing-human-oversight]]
 - [[teaching-claude-why]]
+- [[humanist-ai-code-conduct]] — Microsoft's draft framework asserts corrigibility as an achieved directive; this page treats it as an open technical problem to train toward.

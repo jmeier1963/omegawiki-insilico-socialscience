@@ -8,6 +8,7 @@ related_topics:
   - llm-human-simulacra
   - persona-conditioning-evaluation
 key_people: []
+key_papers: [individual-society-survey-social-simulation-driven]
 ---
 
 ## Overview
@@ -26,6 +27,7 @@ This approach extends classical agent-based modeling (ABM) by replacing hand-cod
 
 ## Seminal works
 
+- [[individual-society-survey-social-simulation-driven]] — Mou et al. 2024/ACM CSUR, master taxonomy organizing the field into Individual / Scenario / Society tiers; the reference framework for this topic.
 - [[generative-agents-interactive-simulacra-human-behavior]] — Park et al. 2023, "Generative Agents: Interactive Simulacra of Human Behavior"
 - [[concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior]] — DeepMind Concordia simulation framework
 - [[agentsociety-large-scale-simulation-llm-driven]] — AgentSociety 2025

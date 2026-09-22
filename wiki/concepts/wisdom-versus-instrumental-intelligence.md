@@ -4,7 +4,7 @@ aliases: ["wisdom gap", "instrumental vs hermeneutic knowing", "attention as kno
 tags: [ai-philosophy, wisdom, agi-discourse, ai-and-society, alignment, humanism]
 maturity: emerging
 definition: "The position that humanity's binding constraint is not a deficit of instrumental intelligence but a neglected capacity for attention, care and relational knowing, so that scaling intelligence alone can make a civilization more powerful and less wise."
-key_papers: [intelligence-wise]
+key_papers: [intelligence-wise, alien-mind]
 first_introduced: "2026"
 date_updated: 2026-08-04
 related_concepts: [marginal-returns-to-intelligence, pluralistic-alignment, positive-alignment, cognitive-surrender, universal-ai-intelligence-measure]

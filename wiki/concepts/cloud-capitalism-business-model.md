@@ -3,10 +3,10 @@ title: "Cloud Capitalism Business Model"
 aliases: ["cloud capitalism", "cloud business model", "asset-heavy platform capitalism", "infrastructure capitalism", "cloud choke point"]
 tags: [platform-capitalism, cloud-computing, political-economy, big-tech, infrastructure, techno-nationalism]
 maturity: active
-key_papers: [cloud-capitalism-ai-transition, algorithmic-invisible-hand-friction-trust-repricing, trends-artificial-intelligence-bond-mary-meeker, other-red-tape-market-concentration-private, making-internet-safe-democracy, what-if-ai-investment-boom-goes, deepseek-view-china, us-vs-china-how-win-wrong, eurostack-european-alternative-digital-sovereignty]
+key_papers: [cloud-capitalism-ai-transition, algorithmic-invisible-hand-friction-trust-repricing, trends-artificial-intelligence-bond-mary-meeker, other-red-tape-market-concentration-private, making-internet-safe-democracy, what-if-ai-investment-boom-goes, deepseek-view-china, us-vs-china-how-win-wrong, eurostack-european-alternative-digital-sovereignty, strategy-age-ai-eight-points-beyond, future-everyone-path-positive-ai-future]
 first_introduced: "2025"
 date_updated: 2026-05-06
-related_concepts: []
+related_concepts: [feedback-loop-driven-vertical-integration]
 ---
 
 ## Definition

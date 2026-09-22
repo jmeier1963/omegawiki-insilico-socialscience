@@ -62,3 +62,4 @@ That gap is the same one that matters for the epistemic argument. Interpretabili
 - [[machine-consciousness]]
 - [[alvarado-explaining-epistemic-opacity]]
 - [[boge-two-dimensions-opacity-deep-learning]]
+- [[humanity-debate-about-ai-consciousness-backwards]] — complementary interpretability angle this essay doesn't engage with.

@@ -76,3 +76,4 @@ A concrete, benchmark-grounded data point for the automated-AI-R&D thesis: it co
 - [[automating-gpu-kernel-generation-deepseek]] — LLM-driven GPU kernel generation; SOL-ExecBench here tackles the same kernel-optimization problem
 - [[alphaevolve-how-gemini-powered-coding-agent]] — evolutionary coding agent that discovers algorithms/optimizations; same-problem automated discovery
 - [[agent-laboratory-using-llm-agents-research]] — LLM-agent research automation framework
+- [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]] — thematically adjacent autonomous-AI-research-automation work.

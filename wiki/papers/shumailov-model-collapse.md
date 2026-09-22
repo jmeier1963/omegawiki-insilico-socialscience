@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [model collapse, synthetic data, recursive training, distribution shift, tail erosion, AI sustainability]
 domain: "NLP"
 code_url: ""
-cited_by: [how-ai-companies-pay-fair-rates]
+cited_by: [how-ai-companies-pay-fair-rates, ai-making-us-all-think-same]
 ---
 
 ## Problem
@@ -61,3 +61,4 @@ An alarming result for the long-term sustainability of LLM training. As AI-gener
 - [[richardson-scancar-papermill-detection]]
 - [[eisenstein-printing-press-agent-change]]
 - [[messeri-crockett-ai-illusions-understanding]]
+- [[ai-making-us-all-think-same]] — cites and explicitly distinguishes this paper's model-collapse mechanism from mode collapse.

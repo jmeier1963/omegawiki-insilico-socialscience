@@ -3,7 +3,7 @@ title: "AI Product Channel"
 aliases: ["product channel", "process vs product channel", "embedding AI into the product", "productized AI capability", "AI-native firm organization"]
 tags: [ai-economics, organizational-form, labor-market, startups, firm-performance]
 maturity: emerging
-key_papers: [ai-native-firms]
+key_papers: [ai-native-firms, beyond-tomorrow-four-scenarios-world-2050]
 first_introduced: "2026"
 date_updated: 2026-06-26
 related_concepts: [self-service-labour-displacement, human-ai-division-labor-agentic-work]
@@ -23,6 +23,7 @@ A traditional presentation-service company scales by turning each deck request i
 - **Product channel — full automation** — AI in the product performs tasks workers used to do (~43% of AI-tagged YC startups).
 - **Product channel — augmentation** — AI tools sold to augment workers at customer firms (~24%).
 - **Product channel — infrastructure** — AI capability another developer integrates into their own AI product (~15%).
+- **AI-only firm** (limiting case) — networks of hyperspecialized AI agents, coordinated by a central agent, operating with zero human employees; cost structure dominated by compute and energy rather than labor at all. Speculative rather than observed at scale; BCG Henderson Institute projects this emerging first in digital-native, minimal-physical-interface sectors (software development, digital marketing, algorithmic trading) under favorable AI-governance and cost conditions.
 
 ## Comparison
 

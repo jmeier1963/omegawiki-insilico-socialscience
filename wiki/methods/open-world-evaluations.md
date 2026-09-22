@@ -53,3 +53,5 @@ CRUX (Collaborative Research for Updating AI eXpectations), the project introduc
 Open-world evaluations gain construct validity and upper-bound elicitation at the direct cost of the properties that make benchmarking broadly scalable: standardization, reproducibility, and comparability across agents/models. They are a complement to, not a replacement for, benchmark-based evaluation with log analysis (e.g., METR's time-horizon methodology) — the source paper explicitly recommends running both, since unsaturated benchmarks (SciCode, MMLU-Pro, Humanity's Last Exam, SWE-Bench Pro) remain valuable for longitudinal, cross-model comparison in ways open-world evaluations structurally cannot provide.
 
 ## Evaluated by
+
+- [[evaluating-ai-agents-live-grounded-reasoning]] — Databricks's live, held-out competition format (frozen agents applied to a corpus released 36 hours prior) is an enterprise-context instance of this evaluation paradigm.

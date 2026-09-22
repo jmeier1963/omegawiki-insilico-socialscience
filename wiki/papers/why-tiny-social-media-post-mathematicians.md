@@ -67,3 +67,4 @@ Mathematics is the field best equipped to tolerate that split, because it has a 
 - [[ten-advances-mathematics-theoretical-computer-science]]
 - [[novikov-alphaevolve]]
 - [[verification-bandwidth]]
+- [[mathematician-clashed-openai-over-million-proof]] — companion coverage of the same underlying AI-research-culture tension from a different angle (inter-lab rivalry over a Millennium Prize problem).

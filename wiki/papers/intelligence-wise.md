@@ -84,3 +84,4 @@ Where it lands against the wiki: it is the humanistic counterpart to [[marginal-
 - [[marginal-returns-to-intelligence]]
 - [[pluralistic-alignment]]
 - [[positive-alignment]]
+- [[alien-mind]] — technical-alignment counterpart grappling with what current AI paradigms miss about the nature of cognition.

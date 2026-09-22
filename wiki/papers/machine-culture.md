@@ -12,7 +12,7 @@ s2_id: ""
 keywords: [machine culture, cultural evolution, variation, transmission, selection, social learning, recommender algorithms, generative AI, chatbots, model collapse]
 domain: Social Science
 code_url: ""
-cited_by: []
+cited_by: [ai-making-us-all-think-same]
 ---
 
 ## Problem
@@ -71,3 +71,4 @@ This is the most comprehensive agenda-setting framing paper connecting cultural 
 - [[levin-brinkmann]]
 - [[iyad-rahwan]]
 - [[joel-leibo]]
+- builds_on (reverse): [[ai-making-us-all-think-same]] — Nature feature citing concrete 2025-2026 empirical studies (LLM-diversity comparison, creative-scar persistence, cultural-flattening) documenting the phenomena this paper surveys more systematically.

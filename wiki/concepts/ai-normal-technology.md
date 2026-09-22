@@ -3,7 +3,7 @@ title: "AI as Normal Technology"
 aliases: ["normal technology framework", "AI normal technology", "capability vs impact gap", "decide-execute-deliver sandwich", "adoption bottlenecks"]
 tags: [ai-economics, labor-market, automation, ai-and-society, ai-policy]
 maturity: emerging
-key_papers: [why-ai-replaced-software-engineers-will, ai-wont-make-legal-services-cheaper, artificial-intelligence-lessons-history]
+key_papers: [why-ai-replaced-software-engineers-will, ai-wont-make-legal-services-cheaper, artificial-intelligence-lessons-history, what-will-left-us-work]
 first_introduced: "2025"
 date_updated: 2026-06-20
 related_concepts: [human-ai-division-labor-agentic-work, ai-science-adoption-gap]
@@ -26,6 +26,7 @@ Informal. Useful decompositions: the **decide–execute–deliver sandwich** (AI
 - **Decide-execute-deliver sandwich** — AI automates the middle (execution) layer of knowledge work while the surrounding decision and delivery layers resist (software-engineering essay).
 - **Three bottlenecks to transformation** — regulatory barriers, adversarial dynamics, and human involvement block capability→cost-reduction (legal-services essay).
 - **AI washing** — attributing layoffs/decisions to AI when the real drivers are financial or organisational.
+- **Capability-reliability gap** — the specific empirical instance of the capability-vs-impact gap where capability rises sharply on benchmarks while consistency, robustness, calibration, and operational safety move only marginally over the same period; offered as the actual current bottleneck on automation deployment, distinct from and prior to the [[research-taste-bottleneck]] (ICML 2026 keynote, Narayanan).
 
 ## Comparison
 

@@ -3,7 +3,7 @@ title: "Software Intelligence Explosion"
 aliases: ["SIE", "intelligence explosion", "recursive self-improvement", "ASARA feedback loop", "AI R&D automation explosion", "AI software feedback loop"]
 tags: [intelligence-explosion, ai-rnd-automation, feedback-loops, agi, ai-safety, software-progress]
 maturity: emerging
-key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos, from-agi-to-asi, first-steps-toward-automated-ai-research, if-you-thought-global-financial-crisis, when-ai-builds-itself, measuring-ai-ability-complete-long-software, artificial-intelligence-index-report-2025-stanford, deepseek-view-china, ai-agents-conduct-open-ended-ai]
+key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos, from-agi-to-asi, first-steps-toward-automated-ai-research, if-you-thought-global-financial-crisis, when-ai-builds-itself, measuring-ai-ability-complete-long-software, artificial-intelligence-index-report-2025-stanford, deepseek-view-china, ai-agents-conduct-open-ended-ai, ai-2040-plan-deal, what-will-left-us-work, recursive-synthetic-improvement, research-acceleration-view-inside-openai, alien-mind]
 first_introduced: "2025"
 date_updated: 2026-05-29
 related_concepts: [automated-research-pipeline, gradual-disempowerment, agi-asi-transition, multi-agent-scaling-laws]
@@ -28,6 +28,7 @@ Let C(t) = AI capability at time t. SIE condition: dC/dt ∝ C(t)^r where r > 1 
 - **Partial SIE**: rapid but bounded acceleration; not runaway
 - **ASARA scenario**: AI Systems for AI R&D Automation reach the capability threshold for end-to-end AI research
 - **Collective/institutional RSI**: recursive improvement applied to entire research lab (models, allocation, infrastructure, teaming) — Inherent Labs manifesto; inspired by cultural evolution rather than software-only compounding
+- **Data-pipeline / synthetic-data-flywheel RSI**: a narrower, falsifiable operationalization tracking which specific training-stack layers (Judge, Corpus, Teacher, Curriculum, Environment) have already shifted from human-generated to model-generated inputs — a candidate empirical proxy for the growth-rate parameter r in the software-only variant (Stojanovski 2026)
 
 ## Known limitations
 

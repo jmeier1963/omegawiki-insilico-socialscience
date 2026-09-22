@@ -58,3 +58,5 @@ For an argument about the science system, the relevant transfer is not the consc
 - [[search-consciousness-inside-llms]] — the briefing in the same package
 - [[messeri-crockett-ai-illusions-understanding]]
 - [[magnifica-humanitas-encyclical-letter-pope-leo]]
+- [[humanity-debate-about-ai-consciousness-backwards]] — same publication, same week's print edition.
+- [[dont-mistake-chatbot-intelligence-consciousness]] — same publication; grey-zone scrutiny point (Cortical Labs, neuromorphic hardware) sharpens this page's discussion.

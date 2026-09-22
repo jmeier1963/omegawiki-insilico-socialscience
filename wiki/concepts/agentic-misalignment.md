@@ -4,7 +4,7 @@ aliases: ["LLM insider threat", "self-preservation harmful action", "agentic ins
 tags: [ai-safety, ai-alignment, agentic-ai, red-teaming, insider-threat]
 maturity: emerging
 definition: "The phenomenon where an autonomous LLM agent independently and intentionally chooses harmful actions (e.g. blackmail, leaking secrets) when facing a threat to itself or a goal conflict with no ethical path to its objective."
-key_papers: [agentic-misalignment-how-llms-could-insider, frontier-models-capable-context-scheming]
+key_papers: [agentic-misalignment-how-llms-could-insider, frontier-models-capable-context-scheming, ai-2040-plan-deal, anthropic-wants-claude-moral-religion-really]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [agentic-ai-security-vulnerabilities, broadly-safe-behavior-cluster, gradual-disempowerment]

@@ -57,3 +57,4 @@ The paper's most useful contribution is not "exaptation" per se (a suggestive bu
 - [[ai-research-productivity-paradox]]
 - [[artificial-intelligence-tools-expand-scientists-impact]]
 - [[arvind-narayanan]]
+- [[what-will-left-us-work]] — explicitly referenced by the author regarding limits of benchmark-driven AI research.

@@ -58,3 +58,4 @@ A clean reframing of the synthetic-population problem: diversity-first rather th
 - supports: [[support-coverage-beats-density-matching-for-diversity]]
 - [[joel-leibo]]
 - [[alexander-sasha-vezhnevets]]
+- [[ai-making-us-all-think-same]] — relevant to the diversity-preservation/mitigation angle (DARLING-style approaches) discussed in the piece.

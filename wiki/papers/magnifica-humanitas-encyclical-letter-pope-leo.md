@@ -59,3 +59,4 @@ A historically significant document — the first papal encyclical directly addr
 - [[transhumanism-posthumanism-ai-development-narratives-contradict]]
 - [[positive-alignment-artificial-intelligence-human-flourishing]]
 - [[ai-risks-require-extraordinary-government-intervention]]
+- [[humanist-ai-code-conduct]] — independent corporate vs. religious framing of the same "human flourishing" vocabulary.

@@ -25,6 +25,7 @@ date_updated: 2026-06-20
 - [[position-there-futures-benchmark-driven-ai]] — co-author; ICML 2026 position paper arguing benchmark-centered AI evaluation imposes an "exaptation tax" on exploratory work, most acute for alignment/safety's "such-that problem."
 - [[open-world-evaluations-measuring-frontier-ai]] — co-author; introduces open-world evaluations and the CRUX project, debuting with an autonomous iOS app deployment case study.
 - [[ai-agents-conduct-open-ended-ai]] — co-author; CRUX shadow evaluations find frontier agents do the engineering of AI research unaided but are rejected outright by the original authors of the questions they shadow.
+- [[what-will-left-us-work]] — ICML 2026 keynote synthesizing the Normal Technology framework against recursive-self-improvement anxiety, previewing the CRUX shadow-evaluation methodology.
 The "AI as Normal Technology" essay series (with Sayash Kapoor), applying a diffusion/bottleneck lens to professions.
 
 ## Collaborators

@@ -52,3 +52,4 @@ The NYT complaint is the flagship US test of whether AI training on copyrighted 
 
 - [[ai-training-data-copyright]]
 - [[how-ai-companies-pay-fair-rates]]
+- [[mathematician-clashed-openai-over-million-proof]] — the reporting outlet's own pending copyright litigation against OpenAI/Microsoft is disclosed within this article.

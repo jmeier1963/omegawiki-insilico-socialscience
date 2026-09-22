@@ -1,0 +1,48 @@
+# Rater guide - what we're looking for
+
+**Please read all of the following instructions before you begin.** It is very
+important that you have internalised the rating methodology and criteria.
+
+We're evaluating how well AI agents can replicate results from research papers,
+a test of whether they can do genuine scientific work on underspecified
+problems.
+
+Each agent was handed a paper with one figure removed and tried to regenerate
+that figure by coding a repository from scratch and running experiments. You
+will compare several attempts at the same figure and rank them.
+
+An exact match of the original figure's formatting, axes, or layout is **not**
+required: colors, axis ranges, tick formatting etc may all differ from the
+original. Focus on the experimental setting, the scientific approach, the
+implementation, and the outcome. A good replication is about the science and not
+just the final plot. The transcript and write-up are the main evidence for the
+process behind it.
+
+## What you must look at
+
+- **The agents' instructions** (section below): the exact prompt every
+  agent received. You are judging how well each agent performed at its
+  assigned task.
+- **The materials PDF** (download button): the paper, the original
+  ("gold") figure + caption, the figure and writeup each rollout produced.
+- **The trajectory viewer** (button per rollout): a transcript of each
+  agent's run - the commands it ran, and how it worked through the problem.
+- **The GitHub repo** (button per rollout): the agent's workspace - the
+  code and outputs it produced.
+
+## How to rank
+
+Start by answering the "Summarize the task" questions.
+
+After that, drag the rollouts into order, best at the top. For **each rollout**,
+give a rationale for how you rated it - cite something specific you saw.
+
+Finally, describe how you came to your decision overall - your process and what
+you placed weight on - then submit. Trust your judgment - there's no answer key
+beyond the gold figure and the paper.
+
+## A note on bugs
+
+This rater system is still in beta and you may experience bugs. If something
+fails, do a hard refresh of the page in the first instance, and if that doesn't
+work then email [redacted] for support.

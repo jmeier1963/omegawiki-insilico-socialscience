@@ -58,3 +58,6 @@ The most detailed and widely discussed specific AI catastrophe scenario as of 20
 
 - supports: [[adversarial-misalignment-may-emerge-before-interpretability-can-detect-it-enabling-power-seizure]]
 - [[machines-loving-grace-how-ai-could]]
+- [[preparing-age-ai-living-outlook-decision]] — comparable 2026 institutional capability forecast; worth a side-by-side probability comparison.
+- [[ai-2040-plan-deal]] — direct sequel by the same team; revises this paper's default timeline and offers Plan A as the positive counterpart to AI 2027's two catastrophe branches.
+- same_problem_as (reverse): [[democracy-machine-birth-digital-age-warnings]]

@@ -49,3 +49,4 @@ Sharp analysis of an emerging political dynamic. The "structural alliance" argum
 
 - supports: [[platform-scale-threatens-democracy-middleware-solution]]
 - [[big-tech-big-problem]]
+- [[future-everyone-path-positive-ai-future]] — bears on this essay's American-leadership/government-collaboration proposals (checkpoint-sharing, export controls).

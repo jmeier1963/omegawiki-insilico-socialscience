@@ -51,4 +51,5 @@ A concise, well-structured policy analysis of the AI equity challenge in the Ger
 ## Related
 
 - supports [[ai-adoption-reinforces-existing-socioeconomic-inequalities]]
+- [[preparing-age-ai-living-outlook-decision]] — relevant to the digital-equity/local-institutions impact categories.
 - [[digitalization-undermines-social-consensus-legitimacy-collective]]

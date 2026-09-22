@@ -58,3 +58,5 @@ The most operationally concrete item is the **Special Compute Zones / "bolt it t
 - [[digital-sovereignty]]
 - [[ai-policy-pacing-problem]]
 - supports: [[europe-loses-strategic-relevance-without-urgent]]
+- [[preparing-age-ai-living-outlook-decision]] — same "Europe falling behind" framing from a different institutional angle; shares EU compute-share and adoption-gap figures.
+- same_problem_as (reverse): [[beyond-tomorrow-four-scenarios-world-2050]]

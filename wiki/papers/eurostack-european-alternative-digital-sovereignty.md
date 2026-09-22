@@ -54,3 +54,4 @@ Important policy framework for European AI governance debates. The EuroStack vis
 - supports: [[european-digital-sovereignty-requires-sovereign-ai]]
 - [[cloud-capitalism-business-model]]
 - [[digital-sovereignty]]
+- [[preparing-age-ai-living-outlook-decision]] — relevant to this report's dependency-exposure baseline (compute/energy sovereignty measures).

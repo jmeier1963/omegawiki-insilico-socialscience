@@ -7,7 +7,7 @@ definition: "A workflow in which a single human oversees, delegates to, monitors
 key_papers: [shift-agentic-ai-evidence-codex, how-built-multi-agent-research-system]
 first_introduced: "The Shift to Agentic AI: Evidence from Codex (2026)"
 date_updated: 2026-06-26
-related_concepts: [agentic-ai-delegated-production]
+related_concepts: [agentic-ai-delegated-production, coding-agent-as-a-tool]
 parent_topic: ""
 ---
 

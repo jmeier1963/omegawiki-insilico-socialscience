@@ -76,3 +76,4 @@ An important agenda-setting paper for the LLM social simulation field, published
 - [[out-one-many-using-language-models]]
 - [[generative-agents-interactive-simulacra-human-behavior]]
 - [[whose-opinions-language-models-reflect]]
+- [[individual-society-survey-social-simulation-driven]] — master taxonomy for the same overall research program this paper advocates.

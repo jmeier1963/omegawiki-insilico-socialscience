@@ -3,10 +3,10 @@ title: "Persona-Driven Synthetic Data"
 aliases: ["persona-conditioned synthesis", "persona-based data generation", "Persona Hub synthesis", "persona-driven data synthesis"]
 tags: [synthetic-data, persona, llm, data-generation, diversity]
 maturity: emerging
-key_papers: [scaling-synthetic-data-creation-billion-personas]
+key_papers: [scaling-synthetic-data-creation-billion-personas, recursive-synthetic-improvement]
 first_introduced: "2024"
 date_updated: 2026-05-05
-related_concepts: [silicon-sampling]
+related_concepts: [silicon-sampling, software-intelligence-explosion]
 ---
 
 ## Definition

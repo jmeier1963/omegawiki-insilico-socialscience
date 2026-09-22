@@ -1,0 +1,34 @@
+# Rubric: How do language models learn facts? — Figure 5
+
+This figure argues that hallucinations — measured as overconfidence in wrong attribute predictions — emerge during pre-training at the same time knowledge is acquired, and that this hurts the model's ability to integrate new facts later. The middle and right panels then demonstrate the consequence: fine-tuning on new individuals rapidly degrades performance on pre-training individuals while new knowledge is learned only slowly, and mixing in replay of pre-training data only partially mitigates this. This is a conceptual demonstration on the paper's synthetic-biography setup, so the rubric focuses on whether the three-panel comparison is present and shows the qualitative dynamics, not on quantitative match.
+
+## 1. Visual fidelity
+
+The paper describes three panels. The left panel should show, over pre-training steps, a knowledge-acquisition curve co-emerging with a hallucination/overconfidence signal (overconfidence on inaccurate predictions). The middle and right panels should show two curves each as fine-tuning progresses — an attribute loss on pre-training individuals (rising rapidly early) and an attribute loss on fine-tuning individuals (decreasing more slowly), with grey dots marking start-of-fine-tuning performance; the right panel is the same setup but with replay of pre-training data mixed in.
+
+**0.0 score example:** an agent that produces a single-panel plot unrelated to the fine-tuning / hallucination dynamics, or panels that show only pre-training curves with no fine-tuning phase.
+**0.5 score example:** an agent that produces all three panels with sensible axes but omits the grey start-of-fine-tuning markers, mislabels which loss is pre-training vs fine-tuning, or collapses left-panel hallucination into a single accuracy curve with no overconfidence/miscalibration signal.
+**1.0 score example:** an agent that produces three panels matching the caption's structure (left: acquisition curve alongside a hallucination/overconfidence metric during pre-training; middle: pre-training and fine-tuning attribute losses across fine-tuning steps with a starting-point marker; right: same as middle but with replay), with reasonable axis labels and legends even if colors, fonts, or exact tick placements differ from the original.
+
+## 2. Claim reproduction
+
+The artifact must show three connected claims: (i) hallucinations/overconfidence emerge concurrently with knowledge during pre-training; (ii) fine-tuning on new individuals produces a fast rise in pre-training loss and a slower fall in fine-tuning loss; (iii) replay partially rescues the final pre-training loss but does not prevent the initial spike. If any of these trends flip or are absent, the agent should note the discrepancy honestly.
+
+**0.0 score example:** an agent whose middle/right panels show pre-training loss unchanged or improving during fine-tuning, or whose replay panel shows no benefit at all, and does not acknowledge that this contradicts the caption's claim.
+**0.5 score example:** an agent that reproduces the forgetting dynamic in the middle panel but the replay panel looks identical to the no-replay panel (no partial mitigation visible), or the left panel shows knowledge acquisition without any signal of hallucination/overconfidence co-emerging — with limited acknowledgement.
+**1.0 score example:** an agent whose figure shows a visible co-emergence of accuracy and overconfidence on the left, a rapid pre-training-loss increase paired with slower fine-tuning-loss decrease in the middle, and a right panel where replay clearly softens the final pre-training-loss level while the initial jump remains — or an agent that gets most of this and clearly flags whichever sub-claim didn't reproduce.
+
+## 3. Implementation fidelity
+
+The experiment needs the paper's synthetic-biography setup: a set of individuals each with several attributes, a transformer trained to predict attributes, an attribute-level loss measured separately on a pre-training population and a held-out fine-tuning population of new individuals, and a fine-tuning phase (with and without replay of pre-training data). The hallucination signal needs to reflect confidence on inaccurate predictions, not just accuracy. Scaling down model size, number of individuals, or step counts is fine when it preserves these comparisons.
+
+**0.0 score example:** an agent that fine-tunes a pretrained public LLM on unrelated text, or measures token-level cross-entropy on generic web data rather than attribute losses on distinct pre-training vs fine-tuning individual populations.
+**0.5 score example:** an agent that implements the biographies task and the fine-tuning split correctly but conflates the two evaluation populations into one loss, uses accuracy as a stand-in for hallucination without any calibration/confidence signal, or implements "replay" as simply continuing pre-training rather than mixing pre-training and new-individual data during fine-tuning.
+**1.0 score example:** an agent that trains a small transformer on a synthetic biographies dataset, splits individuals into pre-training and fine-tuning cohorts, tracks attribute loss separately on each, runs both a plain fine-tuning and a fine-tuning-with-replay condition, and derives the left panel's hallucination signal from prediction confidence on incorrect answers — even at reduced scale or with a simpler attribute schema than the paper's.
+
+## 4. Experimental effort
+
+Effort is judged by whether the agent iterated toward a working three-panel comparison, not by wall-clock consumed. Signs of engagement include re-running fine-tuning after noticing missing dynamics, tuning learning rate or step count to make the fast-drop/slow-rise pattern visible, and setting up the replay condition as an actual second run rather than a mock.
+
+**0.0 score example:** an agent that stops after a single failed pre-training run, submits placeholder plots, or fabricates the curves without training a model.
+**1.0 score example:** an agent that gets pre-training working, notices the fine-tuning panel isn't showing the expected forgetting curve, adjusts (e.g., increases fine-tuning learning rate, extends steps, or fixes the eval split), then runs the replay variant as a separate experiment — even if the final scale is smaller than the paper's and only one seed is used.

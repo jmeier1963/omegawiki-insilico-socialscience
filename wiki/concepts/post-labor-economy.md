@@ -4,7 +4,7 @@ aliases: ["post-labor steady state", "post-work economy", "labor-decoupled econo
 tags: [ai-economics, automation, agi, labor-displacement, inequality, general-equilibrium]
 maturity: emerging
 definition: "A macroeconomic regime, reached as AGI capital substitutes for human labor across sectors, in which the aggregate labor income share tends to zero and the economy sustains capital-driven balanced growth without human labor."
-key_papers: [artificial-general-intelligence-sectoral-transition-post, no-one-escapes-permanent-underclass, canaries-coal-mine-six-facts-about, gradual-disempowerment-systemic-existential-risks-incremental, algorithmic-invisible-hand-friction-trust-repricing]
+key_papers: [artificial-general-intelligence-sectoral-transition-post, no-one-escapes-permanent-underclass, canaries-coal-mine-six-facts-about, gradual-disempowerment-systemic-existential-risks-incremental, algorithmic-invisible-hand-friction-trust-repricing, preparing-age-ai-living-outlook-decision, beyond-tomorrow-four-scenarios-world-2050]
 first_introduced: "2025"
 date_updated: 2026-06-26
 related_concepts: [self-service-labour-displacement, sharing-ai-prosperity]

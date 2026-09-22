@@ -55,3 +55,4 @@ Interesting contrarian perspective on US-China AI competition. The "coordination
 - supports: [[ai-races-destabilizing-increase-catastrophic-risk]]
 - [[ai-race-dynamics]]
 - [[cloud-capitalism-business-model]]
+- [[strategy-age-ai-eight-points-beyond]] — same author, same newsletter; applies the same coordination/feedback-loop lens at firm scale rather than geopolitical scale.

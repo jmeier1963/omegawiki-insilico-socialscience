@@ -61,3 +61,4 @@ The most clearly argued case that peer review's reputation far exceeds its evide
 - [[open-science-collaboration-reproducibility]]
 - [[merton-sociology-of-science]]
 - supports: [[peer-review-epistemic-conservatism]]
+- [[aussen-vor-zum-gegenwaertigen-verhaeltnis-von]] — systems-theoretic (Luhmann) reframing of peer-review-count as science's own accountability-avoidance strategy, converging with this paper's empirical documentation of peer review's flaws.

@@ -4,7 +4,7 @@ aliases: ["human verification bandwidth", "cost to verify", "verification bottle
 tags: [agi-economics, human-oversight, verification, agentic-ai, human-ai-division-labor, liability]
 maturity: emerging
 definition: "The scarce human capacity to validate outcomes, audit behaviour and underwrite responsibility for machine-generated output; once execution is abundant, this capacity rather than intelligence becomes the binding constraint on realized economic value."
-key_papers: [why-tiny-social-media-post-mathematicians, performance-reproducibility-large-language-models-named, vertrauen-die-wissenschaft-philosophische-erw-gungen, some-simple-economics-agi]
+key_papers: [why-tiny-social-media-post-mathematicians, performance-reproducibility-large-language-models-named, vertrauen-die-wissenschaft-philosophische-erw-gungen, some-simple-economics-agi, how-claude-accelerating-protein-design-analytical]
 first_introduced: "2026"
 date_updated: 2026-08-22
 related_concepts: [measurability-gap, codifier-curse, research-taste-bottleneck, ai-accountability-gap, human-ai-division-labor-agentic-work]

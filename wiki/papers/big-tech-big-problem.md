@@ -48,3 +48,4 @@ Sharp analysis of why Big Tech regulation is harder than political demand for it
 
 - supports: [[platform-scale-threatens-democracy-middleware-solution]]
 - [[private-market-concentration-imposes-red-tape]]
+- same_problem_as (reverse): [[future-everyone-path-positive-ai-future]]

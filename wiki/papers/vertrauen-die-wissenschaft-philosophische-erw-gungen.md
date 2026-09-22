@@ -58,3 +58,4 @@ The reason this piece matters beyond the pandemic is the Hardwig line it carries
 - [[longino-science-social-knowledge]]
 - [[verification-bandwidth]]
 - [[kaldewey-wahrheit-nuetzlichkeit]]
+- [[aussen-vor-zum-gegenwaertigen-verhaeltnis-von]] — same genre and adjacent concern (trust/autonomy of science vis-a-vis society), different specific argument.

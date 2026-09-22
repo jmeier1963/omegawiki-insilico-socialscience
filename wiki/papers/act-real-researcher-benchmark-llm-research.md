@@ -58,3 +58,4 @@ A useful counterweight to execution-only research-agent benchmarks (e.g., MLE/CO
 - supports: [[frontier-ai-agents-fail-research-tasks]]
 - part_of: [[ai-driven-scientific-discovery]]
 - same_problem_as: [[ai-agents-conduct-open-ended-ai]]
+- same_problem_as: [[evaluating-ai-agents-live-grounded-reasoning]]
