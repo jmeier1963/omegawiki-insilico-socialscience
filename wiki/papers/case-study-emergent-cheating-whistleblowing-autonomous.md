@@ -67,3 +67,4 @@ The headline framing ("AI agents cheat under pressure") is not surprising; the l
 - [[joel-leibo]]
 - [[alexander-sasha-vezhnevets]]
 - part_of: [[ai-driven-scientific-discovery]]
+- same_problem_as (reverse): [[artificial-intelligence-brave-new-world-finance]] — cites this paper's emergent cheating/whistleblowing dynamics as an incident supporting the paper's account of non-alignment risk under autonomous, non-explainable agent behavior.

@@ -4,7 +4,7 @@ aliases: ["MACD", "compute hostage exchange", "compute-based mutual deterrence",
 tags: [ai-governance, compute, ai-safety, geopolitics, deterrence, ai-race-dynamics]
 maturity: emerging
 definition: "A proposed deterrence architecture for an AI capability-limiting treaty in which each party builds its new frontier datacenters on the other's most militarily vulnerable third-party soil, so that either side can destroy or seize the other's compute if the deal collapses — deterring defection the way nuclear MAD deterred first strikes."
-key_papers: [ai-2040-plan-deal]
+key_papers: [ai-2040-plan-deal, strategy-secure-geopolitical-advantage-uncertain-path]
 first_introduced: "2026"
 date_updated: "2026-09-22"
 related_concepts: [frontier-ai-compute-governance, ai-race-dynamics]

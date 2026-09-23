@@ -41,6 +41,8 @@ This approach extends classical agent-based modeling (ABM) by replacing hand-cod
 | AgentSociety (2025) | 10K+ agents | Scalable social dynamics | |
 | Light Society (2025) | 10^6–10^9 target | Efficient scaling | Architecture TBD |
 
+Reference/taxonomy work (not itself a system): [[social-simulations-agent-based-modeling-digital]] — names a third paradigm orthogonal to scale, Social Digital Twins, distinguished from the systems above by referent-anchoring (a specific real system) rather than task orientation.
+
 ## Open problems
 
 - **Scalability vs. fidelity tradeoff**: richer agents (longer context, more memory) are expensive; cheaper agents lose behavioral richness

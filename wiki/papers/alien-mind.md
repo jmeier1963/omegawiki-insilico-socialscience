@@ -62,3 +62,4 @@ Flag the vendor self-interest angle prominently: OpenAI's Chief Scientist is pub
 - [[frontier-ai-compute-governance]] — the essay explicitly calls for evolving Preparedness-Framework/RSP-style capability thresholds into externally enforced, internationally coordinated safety bars.
 - [[intelligence-wise]] — both are essays (from opposite ends: technical alignment vs. humanistic critique) grappling with what current AI paradigms miss about the nature of cognition.
 - [[wisdom-versus-instrumental-intelligence]] — thematic counterpart on whether scaling intelligence per se addresses the field's actual bottlenecks.
+- [[artificial-intelligence-brave-new-world-finance]] — cites this essay's account of AI's inner workings becoming increasingly non-transparent even to its own developers as a concrete instance of the non-explainability mechanism behind asymmetric understanding.

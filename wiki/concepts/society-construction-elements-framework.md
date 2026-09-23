@@ -4,10 +4,10 @@ aliases: ["composition-network-influence-outcomes framework", "society-scale LLM
 tags: [social-simulation, multi-agent-systems, agent-based-modeling, taxonomy]
 maturity: emerging
 definition: "A four-part decomposition of what it takes to construct a society-scale LLM agent simulation — composition (how the agent population is drawn), network (how agents are connected), social influence (how agents affect and are affected by others), and outcomes (what macro-level phenomena emerge) — used to compare society-simulation systems on a common basis."
-key_papers: [individual-society-survey-social-simulation-driven]
+key_papers: [individual-society-survey-social-simulation-driven, social-simulations-agent-based-modeling-digital]
 first_introduced: "2024"
 date_updated: "2026-09-22"
-related_concepts: [generative-agent-based-modeling, silicon-sampling, algorithmic-fidelity]
+related_concepts: [generative-agent-based-modeling, silicon-sampling, algorithmic-fidelity, social-digital-twin]
 ---
 
 ## Definition

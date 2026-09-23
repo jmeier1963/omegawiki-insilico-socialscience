@@ -50,6 +50,7 @@
 {"from": "concepts/agentic-misalignment", "to": "papers/frontier-models-capable-context-scheming", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/agentic-misalignment", "to": "papers/ai-2040-plan-deal", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/agentic-misalignment", "to": "papers/anthropic-wants-claude-moral-religion-really", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/agentic-misalignment", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/agentic-misalignment", "to": "concepts/agentic-ai-security-vulnerabilities", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/agentic-misalignment", "to": "concepts/broadly-safe-behavior-cluster", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/agentic-misalignment", "to": "concepts/gradual-disempowerment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -166,6 +167,8 @@
 {"from": "concepts/ai-race-dynamics", "to": "papers/humanist-ai-code-conduct", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-race-dynamics", "to": "papers/ai-2040-plan-deal", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-race-dynamics", "to": "papers/mathematician-clashed-openai-over-million-proof", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/ai-race-dynamics", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/ai-race-dynamics", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-research-productivity-paradox", "to": "papers/ai-tools-boost-scientists-impact-narrow", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-research-productivity-paradox", "to": "papers/rise-large-language-models-direction-impact", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-research-productivity-paradox", "to": "papers/artificial-intelligence-tools-expand-scientists-impact", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -180,6 +183,13 @@
 {"from": "concepts/ai-science-adoption-gap", "to": "concepts/automated-research-pipeline", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/ai-science-adoption-gap", "to": "concepts/ai-research-productivity-paradox", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/ai-science-adoption-gap", "to": "concepts/ai-adoption-depth-breadth-gap", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "papers/extended-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "concepts/freedom-action-ai-strategy", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "concepts/seven-archetypal-ai-strategies", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "concepts/gradual-disempowerment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "concepts/digital-sovereignty", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/ai-strategy-foreclosure-mechanisms", "to": "concepts/extended-mind-active-externalism", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/ai-swarm-self-governance", "to": "papers/case-study-emergent-cheating-whistleblowing-autonomous", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/ai-swarm-self-governance", "to": "concepts/co-evolving-evaluator-hardening", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/ai-swarm-self-governance", "to": "concepts/societal-reward-hacking", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -216,6 +226,11 @@
 {"from": "concepts/algorithmic-invisible-hand", "to": "concepts/cognitive-abundance", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/algorithmic-invisible-hand", "to": "concepts/cloud-capitalism-business-model", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/algorithmic-invisible-hand", "to": "concepts/post-labor-economy", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/asymmetric-understanding", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/asymmetric-understanding", "to": "concepts/ai-race-dynamics", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/asymmetric-understanding", "to": "concepts/agentic-misalignment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/asymmetric-understanding", "to": "concepts/broadly-safe-behavior-cluster", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/asymmetric-understanding", "to": "concepts/chain-of-thought-monitorability-erosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/automated-research-pipeline", "to": "papers/living-within-experiment-inherent-labs-manifesto", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/automated-research-pipeline", "to": "papers/agent-laboratory-using-llm-agents-research", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/automated-research-pipeline", "to": "papers/towards-end-end-automation-ai-research", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -279,6 +294,7 @@
 {"from": "concepts/broadly-safe-behavior-cluster", "to": "papers/positive-alignment-artificial-intelligence-human-flourishing", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/broadly-safe-behavior-cluster", "to": "papers/case-study-emergent-cheating-whistleblowing-autonomous", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/broadly-safe-behavior-cluster", "to": "papers/alien-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/broadly-safe-behavior-cluster", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/capability-speed-projection-framework", "to": "papers/preparing-age-ai-living-outlook-decision", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/capability-speed-projection-framework", "to": "concepts/ai-policy-pacing-problem", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/chain-of-thought-monitorability-erosion", "to": "papers/alien-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -324,8 +340,10 @@
 {"from": "concepts/cognitive-surrender", "to": "papers/why-big-ai-labs-hiring-so", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/cognitive-surrender", "to": "papers/when-everyone-uses-ai-companies-risk", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/cognitive-surrender", "to": "papers/positive-alignment-artificial-intelligence-human-flourishing", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/cognitive-surrender", "to": "papers/extended-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/cognitive-surrender", "to": "concepts/human-ai-relationship-appropriateness", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/cognitive-surrender", "to": "concepts/wisdom-versus-instrumental-intelligence", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/cognitive-surrender", "to": "concepts/extended-mind-active-externalism", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/collective-attention", "to": "papers/engineering-collective-attention-age-artificial-intelligence", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/collective-attention", "to": "papers/invisible-architectures-thought-toward-new-science", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/collective-attention", "to": "concepts/cognitive-infrastructure", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -358,6 +376,8 @@
 {"from": "concepts/digital-sovereignty", "to": "papers/vesthager-european-digital-rights-principles", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/digital-sovereignty", "to": "papers/beyond-tomorrow-four-scenarios-world-2050", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/digital-sovereignty", "to": "papers/democracy-machine-birth-digital-age-warnings", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/digital-sovereignty", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/digital-sovereignty", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/digital-sovereignty", "to": "concepts/cloud-capitalism-business-model", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/digital-sovereignty", "to": "concepts/agentic-ai-public-administration", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/distributed-de-skilling", "to": "papers/when-everyone-uses-ai-companies-risk", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -370,6 +390,10 @@
 {"from": "concepts/economically-valuable-task-benchmark", "to": "concepts/marginal-returns-to-intelligence", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/exaptation-ai-research", "to": "papers/position-there-futures-benchmark-driven-ai", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/exaptation-ai-research", "to": "concepts/ai-research-productivity-paradox", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/extended-mind-active-externalism", "to": "papers/extended-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/extended-mind-active-externalism", "to": "concepts/gradual-disempowerment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/extended-mind-active-externalism", "to": "concepts/cognitive-surrender", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/extended-mind-active-externalism", "to": "concepts/ai-strategy-foreclosure-mechanisms", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/feedback-loop-driven-vertical-integration", "to": "papers/strategy-age-ai-eight-points-beyond", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/feedback-loop-driven-vertical-integration", "to": "concepts/cloud-capitalism-business-model", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/firm-level-ai-complementarities", "to": "papers/mapping-ai-into-production-field-experiment", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -385,6 +409,10 @@
 {"from": "concepts/foundation-model-of-cognition", "to": "concepts/homo-silicus", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/foundation-model-of-cognition", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/foundation-model-of-cognition", "to": "concepts/scm-based-automated-experimentation", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/freedom-action-ai-strategy", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/freedom-action-ai-strategy", "to": "concepts/seven-archetypal-ai-strategies", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/freedom-action-ai-strategy", "to": "concepts/ai-strategy-foreclosure-mechanisms", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/freedom-action-ai-strategy", "to": "concepts/ai-race-dynamics", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/future-proofing-frontier-ai-regulation", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/large-language-models-generative-ai-house", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/policy-ai-exponential", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -403,6 +431,8 @@
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/ai-2040-plan-deal", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/research-acceleration-view-inside-openai", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "papers/alien-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/frontier-ai-compute-governance", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/frontier-ai-compute-governance", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "concepts/ai-race-dynamics", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "concepts/software-intelligence-explosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/frontier-ai-compute-governance", "to": "concepts/mutually-assured-compute-destruction", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -429,6 +459,7 @@
 {"from": "concepts/generative-agent-based-modeling", "to": "papers/law-silico-simulating-legal-society-llm", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/generative-agent-based-modeling", "to": "papers/agentic-ai-next-intelligence-explosion", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/generative-agent-based-modeling", "to": "papers/individual-society-survey-social-simulation-driven", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/generative-agent-based-modeling", "to": "papers/social-simulations-agent-based-modeling-digital", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/generative-agent-based-modeling", "to": "concepts/llm-powered-agent-architecture", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/generative-agent-based-modeling", "to": "concepts/generative-agent-memory-stream", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/generative-agent-based-modeling", "to": "concepts/silicon-sampling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -449,6 +480,9 @@
 {"from": "concepts/gradual-disempowerment", "to": "papers/industrial-policy-intelligence-age", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/gradual-disempowerment", "to": "papers/ai-2040-plan-deal", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/gradual-disempowerment", "to": "papers/beyond-tomorrow-four-scenarios-world-2050", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/gradual-disempowerment", "to": "papers/artificial-intelligence-brave-new-world-finance", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/gradual-disempowerment", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/gradual-disempowerment", "to": "papers/extended-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/gradual-disempowerment", "to": "concepts/cognitive-surrender", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/gradual-disempowerment", "to": "concepts/human-ai-relationship-appropriateness", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/gradual-disempowerment", "to": "concepts/balance-of-power-ai-safety-paradigm", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -494,6 +528,9 @@
 {"from": "concepts/human-ai-relationship-appropriateness", "to": "papers/ethics-advanced-ai-assistants", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/human-ai-relationship-appropriateness", "to": "papers/humanist-ai-code-conduct", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/human-ai-relationship-appropriateness", "to": "concepts/generative-ghost", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/human-quality-data-ceiling", "to": "papers/data-bottlenecks-won-prevent-intelligence-explosion", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/human-quality-data-ceiling", "to": "concepts/paradigm-tax", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/human-quality-data-ceiling", "to": "concepts/software-intelligence-explosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/hybrid-human-ai-experimentation-platform", "to": "papers/deliberate-lab-platform-real-time-human", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/hybrid-human-ai-experimentation-platform", "to": "papers/llm-agents-social-scientists-human-ai", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/hybrid-human-ai-experimentation-platform", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -551,6 +588,7 @@
 {"from": "concepts/llm-simulation-validity-guardrails", "to": "papers/evaluating-use-large-language-models-synthetic", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/llm-simulation-validity-guardrails", "to": "papers/human-study-did-involve-human-subjects", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/llm-simulation-validity-guardrails", "to": "papers/individual-society-survey-social-simulation-driven", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/llm-simulation-validity-guardrails", "to": "papers/social-simulations-agent-based-modeling-digital", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/llm-simulation-validity-guardrails", "to": "concepts/silicon-sampling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/llm-simulation-validity-guardrails", "to": "concepts/algorithmic-fidelity", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/llm-social-network-generation", "to": "papers/llms-generate-structurally-realistic-social-networks", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -599,6 +637,7 @@
 {"from": "concepts/multi-agent-scaling-laws", "to": "concepts/societies-of-thought", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/multi-agent-scaling-laws", "to": "concepts/software-intelligence-explosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/mutually-assured-compute-destruction", "to": "papers/ai-2040-plan-deal", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/mutually-assured-compute-destruction", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/mutually-assured-compute-destruction", "to": "concepts/frontier-ai-compute-governance", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/mutually-assured-compute-destruction", "to": "concepts/ai-race-dynamics", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/opinionqa", "to": "papers/whose-opinions-language-models-reflect", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -610,6 +649,9 @@
 {"from": "concepts/optimization-induced-uniformity", "to": "papers/persona-generators-generating-diverse-synthetic-personas", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/optimization-induced-uniformity", "to": "papers/ai-making-us-all-think-same", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/optimization-induced-uniformity", "to": "concepts/heterogeneity-collapse", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/paradigm-tax", "to": "papers/data-bottlenecks-won-prevent-intelligence-explosion", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/paradigm-tax", "to": "concepts/software-intelligence-explosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/paradigm-tax", "to": "concepts/human-quality-data-ceiling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/parallel-agent-supervision", "to": "papers/shift-agentic-ai-evidence-codex", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/parallel-agent-supervision", "to": "papers/how-built-multi-agent-research-system", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/parallel-agent-supervision", "to": "concepts/agentic-ai-delegated-production", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -665,6 +707,9 @@
 {"from": "concepts/post-labor-economy", "to": "concepts/sharing-ai-prosperity", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/predictive-world-model-architecture", "to": "papers/path-towards-autonomous-machine-intelligence", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/predictive-world-model-architecture", "to": "concepts/llm-powered-agent-architecture", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/pretraining-data-vs-model-compute-efficiency", "to": "papers/pretraining-progress-mostly-coming-data", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/pretraining-data-vs-model-compute-efficiency", "to": "concepts/software-intelligence-explosion", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/pretraining-data-vs-model-compute-efficiency", "to": "concepts/scaling-law-data-compensation", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/principled-alignment-training", "to": "papers/teaching-claude-why", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/principled-alignment-training", "to": "papers/why-big-ai-labs-hiring-so", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/principled-alignment-training", "to": "concepts/broadly-safe-behavior-cluster", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -695,8 +740,10 @@
 {"from": "concepts/retrieval-poisoning-attack", "to": "concepts/agentic-ai-security-vulnerabilities", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/scaling-law-data-compensation", "to": "papers/how-ai-companies-pay-fair-rates", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/scaling-law-data-compensation", "to": "papers/two-radical-ways-share-ai-ownership", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/scaling-law-data-compensation", "to": "papers/pretraining-progress-mostly-coming-data", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/scaling-law-data-compensation", "to": "concepts/sharing-ai-prosperity", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/scaling-law-data-compensation", "to": "concepts/post-labor-economy", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/scaling-law-data-compensation", "to": "concepts/pretraining-data-vs-model-compute-efficiency", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/scm-based-automated-experimentation", "to": "papers/automated-social-science-language-models-scientist", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/scm-based-automated-experimentation", "to": "papers/llm-agents-social-scientists-human-ai", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/scm-based-automated-experimentation", "to": "papers/automatize-scientific-discovery-cognitive-sciences", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -712,6 +759,11 @@
 {"from": "concepts/semantic-prompt-caching", "to": "papers/modeling-earth-scale-human-like-societies", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/semantic-prompt-caching", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/semantic-prompt-caching", "to": "concepts/llm-powered-agent-architecture", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/seven-archetypal-ai-strategies", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/seven-archetypal-ai-strategies", "to": "concepts/freedom-action-ai-strategy", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/seven-archetypal-ai-strategies", "to": "concepts/ai-strategy-foreclosure-mechanisms", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/seven-archetypal-ai-strategies", "to": "concepts/ai-race-dynamics", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/seven-archetypal-ai-strategies", "to": "concepts/mutually-assured-compute-destruction", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/sharing-ai-prosperity", "to": "papers/industrial-policy-intelligence-age", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/sharing-ai-prosperity", "to": "papers/how-share-ai-riches", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/sharing-ai-prosperity", "to": "papers/artificial-general-intelligence-sectoral-transition-post", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
@@ -782,6 +834,10 @@
 {"from": "concepts/silicon-valley-transhumanism", "to": "papers/democracy-machine-birth-digital-age-warnings", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/silicon-valley-transhumanism", "to": "concepts/gradual-disempowerment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/silicon-valley-transhumanism", "to": "concepts/cloud-capitalism-business-model", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/social-digital-twin", "to": "papers/social-simulations-agent-based-modeling-digital", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/social-digital-twin", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/social-digital-twin", "to": "concepts/llm-simulation-validity-guardrails", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/social-digital-twin", "to": "concepts/society-construction-elements-framework", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/social-simulacra", "to": "papers/social-simulacra-creating-populated-prototypes-social", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/social-simulacra", "to": "concepts/silicon-sampling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/social-simulacra", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -797,9 +853,11 @@
 {"from": "concepts/societies-of-thought", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/societies-of-thought", "to": "concepts/multi-agent-scaling-laws", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/society-construction-elements-framework", "to": "papers/individual-society-survey-social-simulation-driven", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/society-construction-elements-framework", "to": "papers/social-simulations-agent-based-modeling-digital", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/society-construction-elements-framework", "to": "concepts/generative-agent-based-modeling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/society-construction-elements-framework", "to": "concepts/silicon-sampling", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/society-construction-elements-framework", "to": "concepts/algorithmic-fidelity", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
+{"from": "concepts/society-construction-elements-framework", "to": "concepts/social-digital-twin", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/sociotechnical-ai-evaluation", "to": "papers/ethics-advanced-ai-assistants", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/sociotechnical-ai-evaluation", "to": "papers/gdpval-evaluating-ai-model-performance-real", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/sociotechnical-ai-evaluation", "to": "concepts/human-ai-relationship-appropriateness", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
@@ -820,6 +878,9 @@
 {"from": "concepts/software-intelligence-explosion", "to": "papers/recursive-synthetic-improvement", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/software-intelligence-explosion", "to": "papers/research-acceleration-view-inside-openai", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/software-intelligence-explosion", "to": "papers/alien-mind", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/software-intelligence-explosion", "to": "papers/pretraining-progress-mostly-coming-data", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/software-intelligence-explosion", "to": "papers/data-bottlenecks-won-prevent-intelligence-explosion", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
+{"from": "concepts/software-intelligence-explosion", "to": "papers/strategy-secure-geopolitical-advantage-uncertain-path", "type": "fm_concepts_key_papers", "source": "frontmatter", "field": "concepts.key_papers"}
 {"from": "concepts/software-intelligence-explosion", "to": "concepts/automated-research-pipeline", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/software-intelligence-explosion", "to": "concepts/gradual-disempowerment", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}
 {"from": "concepts/software-intelligence-explosion", "to": "concepts/agi-asi-transition", "type": "fm_concepts_related_concepts", "source": "frontmatter", "field": "concepts.related_concepts"}

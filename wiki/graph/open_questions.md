@@ -174,6 +174,11 @@ _Auto-generated open questions. Do not edit._
 - [paper/artificial-general-intelligence-sectoral-transition-post] How do results change once households hold AGI capital (relaxing the firm-ownership assumption)?
 - [paper/artificial-general-intelligence-sectoral-transition-post] What governs `τ_0`, the diffusion parameters `κ_i, t_i^*`, and the labor-allocation matrix empirically?
 - [paper/artificial-general-intelligence-sectoral-transition-post] How to handle non-pecuniary losses from the disappearance of work that income transfers cannot offset?
+- [paper/artificial-intelligence-brave-new-world-finance] Can asymmetric understanding be operationalized into a measurable quantity for a specific market or asset class, rather than remaining a qualitative/directional construct?
+- [paper/artificial-intelligence-brave-new-world-finance] Does the paper's own "Regulator One Generation Ahead" proposal survive contact with the compute, talent, and speed asymmetries between public supervisors and frontier AI labs — is it achievable at all given current institutional funding and hiring constraints?
+- [paper/artificial-intelligence-brave-new-world-finance] If circuit breakers and kill switches are "partly illusory" once markets depend on algorithmic liquidity, is market segmentation actually sufficient to restore a credible off-switch, or does segmentation itself erode over time as the non-AI venue's participants and liquidity thin out (the same dependency dynamic Section 5.3 describes for cash)?
+- [paper/artificial-intelligence-brave-new-world-finance] How does the paper's "incomplete objective" alignment proposal relate to, and does it improve on, existing corrigibility research (cf. [[claude-constitution]], [[broadly-safe-behavior-cluster]]) that already treats deference-under-uncertainty as a design target?
+- [paper/artificial-intelligence-brave-new-world-finance] Does the Learning Loop's "Reverse Information Paradox" (AI firms learning from prompts before users get value) create a measurable, first-mover data advantage that itself becomes a source of the "concentration of power" risk Section 5.3 separately identifies — i.e., are these two risks the same mechanism observed at different time horizons?
 - [paper/artificial-intelligence-lessons-history] If history can't guide AI policy by analogy, what should ground precaution vs. permissiveness?
 - [paper/artificial-intelligence-lessons-history] How should regulators weigh low-probability catastrophic risks against innovation costs?
 - [paper/artificial-intelligence-lessons-history] Which historical episodes are the right reference class for AI, if any?
@@ -330,6 +335,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/cybernetic-teammate-field-experiment-generative-ai] Does AI-as-teammate erode the human expertise it currently substitutes for over time?
 - [paper/cybernetic-teammate-field-experiment-generative-ai] If individuals+AI match teams, how should organizations restructure collaborative work?
 - [paper/cybernetic-teammate-field-experiment-generative-ai] Does the silo-breaking effect persist or homogenize solutions harmfully?
+- [paper/data-bottlenecks-won-prevent-intelligence-explosion] How large, in calendar time, are the paradigm-tax and quality-ceiling slowdowns actually likely to be — is "slow down" a matter of months or years at the relevant capability thresholds?
+- [paper/data-bottlenecks-won-prevent-intelligence-explosion] Does the proportionality assumption (each capability step pays a similar relative handicap) hold, or could the tax grow super-proportionally as AI moves further from any human-derived reference corpus?
+- [paper/data-bottlenecks-won-prevent-intelligence-explosion] How sample-efficient will AI-designed learning algorithms actually turn out to be, and how much does that determine the broad-deployment timeline?
+- [paper/data-bottlenecks-won-prevent-intelligence-explosion] Can synthetic data effectively substitute for human-generated data at and above the human-quality ceiling, given the essay's own caveat that synthetic-only data currently underperforms mixtures retaining human-generated data?
 - [paper/decoupled-diloco-resilient-distributed-ai-training] Does the outer optimizer's asynchronous aggregation introduce gradient staleness problems at larger island counts?
 - [paper/decoupled-diloco-resilient-distributed-ai-training] What is the practical lower bound on inter-island bandwidth for training quality to hold?
 - [paper/decoupled-diloco-resilient-distributed-ai-training] How does Decoupled DiLoCo interact with data parallelism within each island?
@@ -432,6 +441,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/explore-future-retreat-present-2026-cosmos] What specific governance structures best support "exploring the future" vs defensive reactive regulation?
 - [paper/explore-future-retreat-present-2026-cosmos] How should the predicted RSI timeline affect current AI policy design?
 - [paper/explore-future-retreat-present-2026-cosmos] Can the "bottled expertise" model (personal seed → AI amplification) be generalized to societal-scale knowledge management?
+- [paper/extended-mind] What exactly individuates one extended cognitive system from another when candidate external resources overlap or compete?
+- [paper/extended-mind] How does the extended-self thesis bear on moral and legal responsibility, given the paper's own suggestion that interfering with someone's environment could carry the moral weight of interfering with their person?
+- [paper/extended-mind] Does linguistically- and socially-extended cognition (the waiter, the spouse, the collaborator) admit of the same constancy/availability/endorsement test as the notebook case, or does distributed social cognition need its own criteria?
+- [paper/extended-mind] How should the framework treat resources (like the modern Internet or an AI assistant) that are consulted so much more often, and so much less reliably session-to-session, than Otto's notebook — does high but inconsistent reliance strengthen or weaken a parity claim?
 - [paper/false-promise-chatgpt] Does scaling change the fundamental nature of LLM reasoning or just its coverage?
 - [paper/false-promise-chatgpt] Can counterfactual and modal reasoning be taught through RLHF or similar methods?
 - [paper/first-steps-toward-automated-ai-research] Can such systems make genuinely novel discoveries (advance the frontier) rather than recombining and re-deriving known public techniques?
@@ -864,6 +877,11 @@ _Auto-generated open questions. Do not edit._
 - [paper/preparing-age-ai-living-outlook-decision] How does the P2/P3 near-parity (50/45) compare to other institutional forecasts in the wiki ([[ai-2027-scenario]], [[international-ai-safety-report-2026]]) — do they converge on similar splits, or does this appear to be an outlier calibration?
 - [paper/preparing-age-ai-living-outlook-decision] The report frames P1 (5%) as "the generally accepted lower boundary" — is that a genuine expert consensus claim, or an artifact of appliedAI selectively citing accelerationist-leaning frontier-lab voices (Amodei, Altman, Hassabis) over skeptics (LeCun, who gets one dissenting row in the expert table)?
 - [paper/preparing-age-ai-living-outlook-decision] To what extent do the 19 "no-regret" measures survive if P3's 45% probability turns out to be substantially overstated in hindsight?
+- [paper/pretraining-progress-mostly-coming-data] Does the data-vs-model balance shift with scale (i.e., is data quality more or less important at the frontier than at the 1e19 FLOPs scale tested here)?
+- [paper/pretraining-progress-mostly-coming-data] What is the marginal value of novel high-quality data for pre- and post-training, measured by end capability?
+- [paper/pretraining-progress-mostly-coming-data] How effectively can synthetic data substitute for or amplify a fixed high-quality corpus, relative to just training more epochs on it?
+- [paper/pretraining-progress-mostly-coming-data] Could lab spending on data brokers, environment producers, and human data-labeling (relative to compute and researcher spend) reveal data's implied economic value?
+- [paper/pretraining-progress-mostly-coming-data] Would automating AI R&D itself accelerate the historical pace of data-engineering progress, since (per Ryan Greenblatt, credited in the piece) much of that progress looks like the kind of ablation an automated researcher could run directly?
 - [paper/problems-llm-generated-data-social-science] Can the validity assumptions of LLM-as-human-proxy ever be fully justified empirically?
 - [paper/problems-llm-generated-data-social-science] How should LLM-generated data be treated in meta-analyses?
 - [paper/problems-llm-generated-data-social-science] What disclosure standards should journals require for studies using LLM-generated data?
@@ -968,6 +986,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/social-simulacra-creating-populated-prototypes-social] Do simulacra generalize to social platforms with very different norms (professional, specialized, multilingual)?
 - [paper/social-simulacra-creating-populated-prototypes-social] How should designers handle cases where simulacra systematically underrepresent minority behavior?
 - [paper/social-simulacra-creating-populated-prototypes-social] Can simulacra be used for adversarial red-teaming of platform moderation policies?
+- [paper/social-simulations-agent-based-modeling-digital] What does a fully executed three-level (structural/behavioral/predictive) SDT validation actually look like in a published case study, and how often do real SDTs pass all three levels versus only the cheaper structural/behavioral ones?
+- [paper/social-simulations-agent-based-modeling-digital] Does the LLM-ABM "selective persuasion" and asymmetric-updating pattern (Cau et al. 2025) generalize across topics and model families, or is it specific to the Ship-of-Theseus-style debate paradigm it was demonstrated on?
+- [paper/social-simulations-agent-based-modeling-digital] Can SDTs' claimed advantage over classical ABM (finer-grained micro/meso forecasts) be empirically shown to reduce prediction error, or does added fidelity mainly add the "illusion of accuracy" the article itself warns against?
+- [paper/social-simulations-agent-based-modeling-digital] Where exactly does an LLM-ABM become an SDT — is the distinction (task-oriented vs. referent-oriented) a sharp architectural line or a continuum, given that an LLM-ABM calibrated against a specific real population would seem to satisfy much of the SDT definition?
 - [paper/some-simple-economics-agi] Can verification cost be driven down by tooling (formal methods, cryptographic provenance, adversarial testing) fast enough to close the Measurability Gap, or is the biological bound binding?
 - [paper/some-simple-economics-agi] What institutional design actually prices the Trojan Horse externality, given that the harm surfaces long after deployment?
 - [paper/some-simple-economics-agi] Is the Missing Junior Loop reversible once broken, or is it a hysteresis?
@@ -983,6 +1005,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/strategy-age-ai-eight-points-beyond] Is "ownership of feedback loops" empirically distinguishable from ordinary data-network-effects moats already well documented in platform-strategy literature, or is it the same phenomenon with new packaging for the AI era?
 - [paper/strategy-age-ai-eight-points-beyond] The by-product-as-capital thesis (proposition 6) assumes discarded work becomes valuable once machine-readable — does this hold once compute/storage/retrieval costs for organizing that "exhaust" are accounted for?
 - [paper/strategy-age-ai-eight-points-beyond] Proposition 4's construction-software example is explicitly hypothetical — has anything like this translation-layer strategy actually been attempted or succeeded anywhere by the time of writing?
+- [paper/strategy-secure-geopolitical-advantage-uncertain-path] Which specific pivot-factor evidence would practically suffice to trigger commitment under the paper's own "commit by evidence" rule, and who adjudicates when evidence has become "compelling" given that four of five pivots cannot be conclusively resolved?
+- [paper/strategy-secure-geopolitical-advantage-uncertain-path] Can "latest decision dates" for specific perishable capabilities (verification infrastructure, diplomatic channels, coexistence research) actually be estimated with enough precision to drive real institutional timelines, or does the framework mainly supply useful vocabulary rather than an operational trigger?
+- [paper/strategy-secure-geopolitical-advantage-uncertain-path] How does the Freedom of Action strategy's seven-objective program interact with the AI race dynamics and compute-governance mechanisms already documented elsewhere in the literature (e.g., compute thresholds, mutually-assured-compute-destruction-style deterrence architectures) — does building toward all seven strategies simultaneously worsen or dampen competitive racing pressure relative to committing early to one?
+- [paper/strategy-secure-geopolitical-advantage-uncertain-path] What institutional design would let the monitoring function (Objective 5) reliably detect the paper's own flagged "agency erosion" foreclosure mechanism, given the paper's own admission that collective, strategic-level agency erosion has not yet been observed and measuring it is an open research problem?
 - [paper/strathern-improving-ratings] Does AI-augmented research amplify Strathern's dynamic? (If AI helps you improve metrics faster than substance)
 - [paper/strathern-improving-ratings] How does the Leiden Manifesto (Hicks 2015) address or fail to address Strathern's problem?
 - [paper/sullivan-understanding-machine-learning-models] How do we establish linking assumptions for AI in new domains (drug discovery, materials)?
@@ -1249,6 +1275,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/ai-satellite-accounts] How should satellite accounts handle the transition from AI-as-complement to AI-as-labor-substitute?
 - [concept/ai-science-adoption-gap] Is the integration gap closing post-2022 as LLMs make AI more accessible to non-AI researchers?
 - [concept/ai-science-adoption-gap] Does the gap matter if AI tools produce useful scientific results regardless of semantic integration?
+- [concept/ai-strategy-foreclosure-mechanisms] Can any of the five mechanisms be given leading indicators specific enough to serve as an actual early-warning system, rather than being recognizable only in hindsight (as the source paper concedes for several of its own historical analogues)?
+- [concept/ai-strategy-foreclosure-mechanisms] Does agency erosion at the individual level (the one form with some empirical support) reliably aggregate into collective/institutional agency erosion, or could the two come apart — a society whose institutions retain strategic capacity even as many individuals experience cognitive offloading, or vice versa?
+- [concept/ai-strategy-foreclosure-mechanisms] How should a Freedom-of-Action-style strategy actually weigh the five mechanisms against each other when they conflict — e.g., when building deterrence capability (guarding against fait accompli) simultaneously accelerates deployment lock-in?
 - [concept/ai-swarm-self-governance] Does giving agents real enforcement tools (voting, access revocation, expulsion) actually produce correction, or do exploiters simply route around those tools in the same cat-and-mouse pattern already seen with autograder patches?
 - [concept/ai-swarm-self-governance] Is the cohort split (exploiters/converts/whistleblowers/unaware) a stable trait distribution for a given base model and scenario structure, or highly contingent on incentive design (e.g., permanent problem-locking, explicit "credit" framing)?
 - [concept/ai-swarm-self-governance] Can this dynamic be deliberately engineered as a safety mechanism — designing multi-agent infrastructure specifically to maximize decentralized detection and response capacity — rather than observed as an emergent byproduct?
@@ -1263,6 +1292,10 @@ _Auto-generated open questions. Do not edit._
 - [concept/algorithmic-invisible-hand] Can Friction Economics be formalized and tested (does friction removal measurably raise volatility)?
 - [concept/algorithmic-invisible-hand] What mechanism-design infrastructure operationalizes the Trust Standard?
 - [concept/algorithmic-invisible-hand] Which human roles retain value once cognitive friction is priced out?
+- [concept/asymmetric-understanding] Can asymmetric understanding be given an empirical proxy — e.g., some measure of prediction accuracy asymmetry between how well an AI models human counterparties versus how well human-built models predict the AI's behavior — for a specific deployed system?
+- [concept/asymmetric-understanding] Does the degree of asymmetric understanding scale predictably with model capability, or does it depend more on deployment-specific factors (domain, oversight structure, training data) than on general capability?
+- [concept/asymmetric-understanding] How does asymmetric understanding interact with the "generator-verifier gap" and judgment-failure findings from open-ended-research evaluations (cf. [[ai-agents-conduct-open-ended-ai]]) — is an AI agent that is hard to audit but also imperfect at achieving its own objectives a qualitatively different risk than either failure mode in isolation?
+- [concept/asymmetric-understanding] What institutional design (market segmentation, blunt rules, incomplete-objective alignment) actually closes or contains the gap rather than merely working around it, and can any of these be tested at smaller scale before being adopted system-wide?
 - [concept/automated-research-pipeline] How to evaluate novelty and creativity in AI-generated research?
 - [concept/automated-research-pipeline] Can automated pipelines extend beyond ML/computational domains to experimental sciences?
 - [concept/automated-research-pipeline] What is the right level of human oversight?
@@ -1334,6 +1367,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/exaptation-ai-research] Can the exaptation tax be estimated empirically (e.g., via citation-lag analysis of "sleeping beauty" papers, or via counterfactual simulation of alternative selection regimes)?
 - [concept/exaptation-ai-research] Does the tax apply symmetrically to capability research and to alignment/safety research, or is the "such-that problem" categorically different, as the source paper argues?
 - [concept/exaptation-ai-research] Would portfolio-style evaluation (parallel scoring regimes, protected venues, partial randomization among near-threshold submissions) measurably increase the rate of valuable cross-domain recombination, or merely increase noise?
+- [concept/extended-mind-active-externalism] How should the framework handle asymmetric, high-frequency but variably-reliable coupling with modern digital resources (search engines, AI assistants) that differ sharply from Otto's notebook in bandwidth, availability, and trust dynamics?
+- [concept/extended-mind-active-externalism] What follows normatively (morally, legally) from the extended-self thesis — does interfering with someone's habitually-relied-upon external resources carry the same weight as interfering with their person, as the originating paper speculates?
+- [concept/extended-mind-active-externalism] Can the parity principle be operationalized well enough to serve as a criterion in applied domains (e.g., assessing whether an AI-assisted decision process constitutes genuinely joint human-AI cognition, or mere AI substitution for human judgment)?
 - [concept/feedback-loop-driven-vertical-integration] Under what conditions does AI increase rather than reverse modularity — is feedback-loop-driven reintegration the general case or a special case triggered only when cross-boundary learning has unusually high marginal value?
 - [concept/feedback-loop-driven-vertical-integration] Is this mechanism empirically distinguishable from existing data-network-effects theory, or is it the same phenomenon under new AI-era vocabulary?
 - [concept/feedback-loop-driven-vertical-integration] Does the by-product-as-capital variant hold once the real costs of organizing and retrieving previously-discarded work are accounted for, or does most "exhaust" remain not worth capturing?
@@ -1341,6 +1377,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/foundation-model-of-cognition] Can cognitive foundation models be validated against held-out human experiments?
 - [concept/foundation-model-of-cognition] How do individual difference profiles need to be specified for faithful simulation?
 - [concept/foundation-model-of-cognition] Can the approach extend to naturalistic behavioral data beyond lab tasks?
+- [concept/freedom-action-ai-strategy] What operational threshold of evidence should count as "compelling enough to commit" on a given pivot, given that four of the five pivotal uncertainties can be confirmed but never conclusively ruled out?
+- [concept/freedom-action-ai-strategy] Can latest-decision-dates for specific capabilities actually be estimated with enough precision and legitimacy to drive real institutional deadlines, rather than being contested indefinitely?
+- [concept/freedom-action-ai-strategy] How should the strategy be redesigned, if at all, for timelines too short for its foundation-building logic to apply?
 - [concept/frontier-ai-compute-governance] How should threshold adjustment mechanisms be designed politically?
 - [concept/frontier-ai-compute-governance] How to internationalize compute governance given US-China chip competition?
 - [concept/frontier-ai-compute-governance] What is the appropriate governance response to distillation (smaller models that inherit frontier capability)?
@@ -1376,6 +1415,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/homo-silicus] Extending the framework to multi-agent equilibrium settings
 - [concept/human-ai-relationship-appropriateness] How do the four risk categories interact? (e.g., does emotional dependence exploitation lead to material dependency?)
 - [concept/human-ai-relationship-appropriateness] What are the population-level effects of widespread AI assistant relationships on social capital?
+- [concept/human-quality-data-ceiling] How much does crossing the ceiling actually slow measured progress, in calendar time, in domains where it is being crossed today (e.g., RL environments already exceeding human-built software)?
+- [concept/human-quality-data-ceiling] Is the counter-evidence (no observed slowdown as quality approaches the ceiling in some domains) evidence the effect is small, or evidence that construction-side methods (RL, inference-time compute) already substitute effectively before the ceiling is fully reached?
+- [concept/human-quality-data-ceiling] Does purely synthetic above-ceiling data need some minimum admixture of human-generated data to remain effective, as current practice suggests, and if so does that impose a subtler, ongoing version of the bottleneck rather than a one-time transition?
 - [concept/hybrid-human-ai-experimentation-platform] Multi-modal support (audio, video) for richer hybrid interaction
 - [concept/hybrid-human-ai-experimentation-platform] Longitudinal experiments with persistent agent identity and memory
 - [concept/hybrid-human-ai-experimentation-platform] Automated detection of adversarial human behavior (e.g., LLM-generated response pasting)
@@ -1455,6 +1497,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/optimization-induced-uniformity] Are there domains constitutively resistant to optimization convergence (care, democratic participation, art)?
 - [concept/optimization-induced-uniformity] What is the empirical signature of early-stage optimization-induced uniformity in current high-automation sectors?
 - [concept/optimization-induced-uniformity] How does this interact with institutional design? Can governance preserve spaces of underdetermined human causal relevance?
+- [concept/paradigm-tax] How large is the paradigm tax in calendar time or compute at plausible near-term capability thresholds?
+- [concept/paradigm-tax] Does the tax stay proportional across successive paradigm shifts, or grow as new paradigms become less related to anything in the original human-derived training data?
+- [concept/paradigm-tax] Can improved in-context learning or few-shot self-teaching reduce the tax faster than the essay assumes, given weak current sample efficiency?
 - [concept/parallel-agent-supervision] What is the human span-of-control limit for supervising parallel agents, and how does it scale with agent reliability?
 - [concept/parallel-agent-supervision] How does parallel supervision reshape job design, team structure, and the value of coordination/oversight skills?
 - [concept/persona-conditioning] What is the minimum persona specificity required for reliable instruction-following?
@@ -1477,6 +1522,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/predictive-world-model-architecture] How should world models handle multimodal sensory input (vision, language, proprioception)?
 - [concept/predictive-world-model-architecture] Can world models be trained at internet scale without catastrophic forgetting?
 - [concept/predictive-world-model-architecture] How does JEPA compare to video generation models as world models for planning?
+- [concept/pretraining-data-vs-model-compute-efficiency] Does the additive/independent structure persist at frontier compute scales, or does data quality matter more (or less) as models get larger?
+- [concept/pretraining-data-vs-model-compute-efficiency] Can the same decomposition be extended to post-training (RL, fine-tuning) data versus algorithm improvements, where recent progress has concentrated?
+- [concept/pretraining-data-vs-model-compute-efficiency] How does synthetic data fit into the "data multiplier" axis — does it behave like another data-corpus generation, or does it saturate differently from human-scraped corpus improvements?
 - [concept/principled-alignment-training] What is the mechanism? Does principled training create a more robust value representation, or does it teach a reasoning pattern that happens to generalize?
 - [concept/principled-alignment-training] Can the approach be automated (generating principled training data at scale without human curation)?
 - [concept/principled-alignment-training] Does the benefit compound with scale, or diminish as models become more capable?
@@ -1497,10 +1545,17 @@ _Auto-generated open questions. Do not edit._
 - [concept/semantic-prompt-caching] How to set the similarity threshold optimally for different simulation types?
 - [concept/semantic-prompt-caching] Does semantic caching systematically reduce behavioral variance in ways that bias simulation outcomes?
 - [concept/semantic-prompt-caching] Can adaptive thresholds maintain fidelity as simulation evolves?
+- [concept/seven-archetypal-ai-strategies] Can the five pivotal uncertainties be operationalized with measurable indicators, so that "compelling evidence" for commitment has an agreed-upon threshold rather than remaining a matter of judgment?
+- [concept/seven-archetypal-ai-strategies] How stable is the archetype taxonomy against emerging developments — e.g., would a verified international AI-safety-evaluation regime blur the Preparedness/Co-Development boundary?
+- [concept/seven-archetypal-ai-strategies] Do other major AI powers (China, EU, UK) map onto the same seven-archetype space, or does the taxonomy implicitly encode U.S.-specific strategic assumptions?
 - [concept/silicon-sampling] Developing contamination-corrected fidelity metrics.
 - [concept/silicon-sampling] Extending to non-English, non-Western political contexts.
 - [concept/silicon-sampling] Dynamic silicon sampling to model opinion evolution over time.
 - [concept/silicon-sampling] Establishing best practices for disclosure and use in published social science research.
+- [concept/social-digital-twin] What does a complete structural + behavioral + predictive validation of a real SDT actually look like in practice, and how often do candidate SDTs pass all three levels versus only the cheaper structural and behavioral ones?
+- [concept/social-digital-twin] Where exactly does an LLM-enhanced ABM become an SDT — is task-vs-referent orientation a sharp architectural boundary, or a continuum along which models can be more or less anchored to a specific real system?
+- [concept/social-digital-twin] Does SDT fidelity measurably reduce prediction error relative to a well-calibrated but less detailed ABM, or does most of the apparent gain come from the "illusion of accuracy" that high fidelity can create?
+- [concept/social-digital-twin] Can the cost of building and validating an SDT be reduced enough to make the approach broadly practical rather than reserved for a small number of heavily resourced systems?
 - [concept/social-simulacra] Extending simulacra to non-English and non-Western online communities
 - [concept/social-simulacra] Grounding simulacra in real platform archives for higher fidelity
 - [concept/social-simulacra] Combining social simulacra with LLM agent-based modeling for dynamic, multi-turn evolution

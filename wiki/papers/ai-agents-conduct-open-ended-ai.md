@@ -117,6 +117,7 @@ Read alongside [[open-world-evaluations-measuring-frontier-ai]] (same authorship
 - part_of: [[ai-driven-scientific-discovery]]
 - challenges (reverse): [[recursive-synthetic-improvement]]
 - same_problem_as (reverse): [[case-study-emergent-cheating-whistleblowing-autonomous]]
+- same_problem_as (reverse): [[artificial-intelligence-brave-new-world-finance]] — both examine whether an AI agent's own reported judgment/self-assessment can be trusted absent independent human verification, from complementary angles (research judgment vs. financial-market asymmetric understanding).
 - same_problem_as (reverse): [[research-acceleration-view-inside-openai]]
 - challenges (reverse): [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]]
 - same_problem_as (reverse): [[training-ai-scientists-replicate-research]]

@@ -54,3 +54,4 @@ Useful for understanding the policy application context and ethical concerns tha
 
 - [[generative-agent-based-modeling]]
 - [[agentsociety-large-scale-simulation-llm-driven]]
+- [[social-simulations-agent-based-modeling-digital]] — supplies the architectural/validation framework (three-level structural/behavioral/predictive check) this paper's ethics-and-limitations discussion presupposes.

@@ -83,3 +83,4 @@ Skeptical note: as with most surveys, its evaluation taxonomy is a map of what t
 - [[agentsociety-large-scale-simulation-llm-driven]]
 - [[restoring-heterogeneity-llm-based-social-simulation]]
 - same_problem_as: [[position-llm-social-simulations-promising-research]]
+- same_problem_as: [[social-simulations-agent-based-modeling-digital]]

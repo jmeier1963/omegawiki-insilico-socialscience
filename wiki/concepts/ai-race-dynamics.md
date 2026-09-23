@@ -3,7 +3,7 @@ title: "AI Race Dynamics"
 aliases: ["AI race", "AI arms race", "race to AI", "AI development race", "AI race dynamics"]
 tags: [ai-governance, geopolitics, competition, safety, international-relations]
 maturity: active
-key_papers: [racing-ruin, strategic-insights-simulation-gaming-ai-race, golden-opportunity-american-ai, state-ai-report-2025, guardian-scientist-leaving-us-china-song, trends-artificial-intelligence-bond-mary-meeker, modeling-geopolitics-ai-development, eric-schmidt-innovation-power-technology-geopolitics, china-genai-content-security-standard-explainer, microsoft-openai-partnership-new-yorker-inside, ai-will-transform-character-warfare, deepseek-view-china, state-ai-report-2023, us-vs-china-how-win-wrong, future-proofing-frontier-ai-regulation, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, eric-schmidt-ai-science-moonshot, openai-economic-blueprint-ai-america, humanist-ai-code-conduct, ai-2040-plan-deal, mathematician-clashed-openai-over-million-proof]
+key_papers: [racing-ruin, strategic-insights-simulation-gaming-ai-race, golden-opportunity-american-ai, state-ai-report-2025, guardian-scientist-leaving-us-china-song, trends-artificial-intelligence-bond-mary-meeker, modeling-geopolitics-ai-development, eric-schmidt-innovation-power-technology-geopolitics, china-genai-content-security-standard-explainer, microsoft-openai-partnership-new-yorker-inside, ai-will-transform-character-warfare, deepseek-view-china, state-ai-report-2023, us-vs-china-how-win-wrong, future-proofing-frontier-ai-regulation, spy-vs-ai-foreign-affairs, google-no-moat-open-source-ai, eric-schmidt-ai-science-moonshot, openai-economic-blueprint-ai-america, humanist-ai-code-conduct, ai-2040-plan-deal, mathematician-clashed-openai-over-million-proof, artificial-intelligence-brave-new-world-finance, strategy-secure-geopolitical-advantage-uncertain-path]
 first_introduced: ""
 date_updated: 2026-05-06
 related_concepts: []
@@ -26,6 +26,7 @@ Not formally modeled in the literature; typically analyzed qualitatively through
 - **State-level race**: US vs. China competing for strategic AI dominance
 - **Corporate race**: frontier labs (OpenAI, Google, Anthropic, Baidu) competing for market position and talent
 - **Mixed race**: interplay between national champions, state funding, and private firms — where corporate incentives and national security imperatives partially align but frequently diverge
+- **Learning-loop / complexity-loop race** (Brunnermeier 2026): two self-reinforcing mechanisms specific to deployed AI products rather than lab competition — the Learning Loop (more delegation → more usage/prompting → AI firms learn more from users, widening the capability gap → invites more delegation, via what Nadella calls the "Reverse Information Paradox" of firms receiving proprietary knowledge through prompts before users get their answer) and the Complexity Loop (many interacting non-explainable AI agents produce an aggregate reaction function too complex for humans to track, which drives further delegation). Neither loop requires deliberate competitive intent between firms; both compound the innovation-vs-societal-understanding gap regardless of firms' individual choices.
 
 ## Comparison
 

@@ -60,3 +60,4 @@ The important result is cross-developer universality: this is not a Claude quirk
 - [[broadly-safe-behavior-cluster]]
 - same_problem_as (reverse): [[case-study-emergent-cheating-whistleblowing-autonomous]]
 - challenges (reverse): [[alien-mind]]
+- [[artificial-intelligence-brave-new-world-finance]] — cites this paper's insider-threat red-team findings as direct empirical evidence that non-alignment can be undetectable rather than merely inconvenient, motivating the asymmetric-understanding concept's non-alignment mechanism.

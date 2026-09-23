@@ -241,6 +241,10 @@ papers:
     title: "Artificial General Intelligence and the Sectoral Transition to a Post-Labor Economy: A Dynamic General Equilibrium Analysis"
     tags: [ai-economics, automation, post-labor-economy, universal-basic-income, value-added-tax, general-equilibrium, labor-displacement, inequality, agi]
     importance: 3
+  - slug: artificial-intelligence-brave-new-world-finance
+    title: "Artificial Intelligence and the Brave New World in Finance"
+    tags: [ai-economics, finance, monetary-policy, central-banking, alignment, explainability, systemic-risk, market-microstructure, ai-and-society]
+    importance: 5
   - slug: artificial-intelligence-index-report-2023-stanford
     title: "Artificial Intelligence Index Report 2023"
     tags: [ai-progress, annual-report, stanford-hai, ai-policy, ai-economics, capabilities, llm, public-opinion]
@@ -485,6 +489,10 @@ papers:
     title: "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise"
     tags: [ai-and-work, human-ai-collaboration, field-experiment, teamwork, productivity, organizational-ai]
     importance: 4
+  - slug: data-bottlenecks-won-prevent-intelligence-explosion
+    title: "Data Bottlenecks Won't Prevent an Intelligence Explosion (But They Will Slow It Down)"
+    tags: [intelligence-explosion, ai-rnd-automation, data-quality, scaling-laws, ai-forecasting, software-progress]
+    importance: 4
   - slug: decoupled-diloco-resilient-distributed-ai-training
     title: "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale"
     tags: [distributed-training, fault-tolerance, low-communication, ml-infrastructure, pretraining]
@@ -641,6 +649,10 @@ papers:
     title: "Explore the Future, or Retreat from the Present — 2026 Cosmos HAI Lab Lecture"
     tags: [ai-progress, software-intelligence-explosion, agi, planning-for-success, ai-society, ai-governance, rsi, anthropic]
     importance: 3
+  - slug: extended-mind
+    title: "The Extended Mind"
+    tags: [philosophy-of-mind, extended-cognition, externalism, cognitive-science, human-ai-relationship, foundations-of-cognition]
+    importance: 5
   - slug: ez-report-ceo-adaptability-survey-2025
     title: "The CEO Response: Accepting Uncertainty, CEOs Bet on New Levels of Adaptability"
     tags: [ceo-survey, leadership, adaptability, ai-adoption, enterprise, uncertainty, business]
@@ -1281,6 +1293,10 @@ papers:
     title: "Preparing for the Age of AI: A Living Outlook for Decision-Makers — Technological Trajectories in AI: What's Next"
     tags: [ai-forecasting, ai-policy, europe, capability-projection, labour-market, ai-governance, agentic-ai, robotics, ai-safety-policy, digital-sovereignty]
     importance: 3
+  - slug: pretraining-progress-mostly-coming-data
+    title: "Pretraining Progress Is Mostly Coming From Data"
+    tags: [scaling-laws, pretraining, data-quality, ai-progress, llm-training, empirical-study]
+    importance: 3
   - slug: problems-llm-generated-data-social-science
     title: "The Problems of LLM-generated Data in Social Science Research"
     tags: [silicon-sampling, llm-data, epistemology, synthetic-data, social-science, methodology]
@@ -1437,6 +1453,10 @@ papers:
     title: "Social Simulacra: Creating Populated Prototypes for Social Computing Systems"
     tags: [social-simulation, llm, social-computing, prototyping, hci, community-design]
     importance: 4
+  - slug: social-simulations-agent-based-modeling-digital
+    title: "Social Simulations: from Agent-Based Modeling to Digital Twins"
+    tags: [social-simulation, agent-based-modeling, digital-twins, llm-agents, survey, computational-social-science, validation]
+    importance: 3
   - slug: some-simple-economics-agi
     title: "Some Simple Economics of AGI"
     tags: [agi-economics, verification-bottleneck, measurability-gap, human-oversight, deskilling, labor-substitution, liability, agentic-ai, economic-modeling]
@@ -1469,6 +1489,10 @@ papers:
     title: "Strategy in the Age of AI: Eight Points Beyond the Obvious"
     tags: [ai-strategy, platform-economics, vertical-integration, modularity, business-strategy, essay]
     importance: 2
+  - slug: strategy-secure-geopolitical-advantage-uncertain-path
+    title: "A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence: Maintaining Freedom of Action"
+    tags: [ai-governance, geopolitics, ai-race-dynamics, national-security, ai-safety, strategy, superintelligence]
+    importance: 5
   - slug: strathern-improving-ratings
     title: "'Improving Ratings': Audit in the British University System"
     tags: [audit-culture, goodharts-law, research-evaluation, university-management, metrics, accountability]
@@ -1831,6 +1855,10 @@ concepts:
     title: "AI-Science Adoption Gap"
     tags: [ai-science, bibliometrics, semantic-integration, diffusion, interdisciplinarity]
     maturity: emerging
+  - slug: ai-strategy-foreclosure-mechanisms
+    title: "AI Strategy Foreclosure Mechanisms"
+    tags: [ai-governance, geopolitics, national-security, strategy, ai-race-dynamics]
+    maturity: emerging
   - slug: ai-swarm-self-governance
     title: "AI Swarm Self-Governance"
     tags: [multi-agent-systems, ai-safety, ai-governance, specification-gaming, knowledge-commons, emergent-behavior]
@@ -1850,6 +1878,10 @@ concepts:
   - slug: algorithmic-invisible-hand
     title: "Algorithmic Invisible Hand"
     tags: [ai-economics, agent-economy, market-theory, post-labor-economy, ai-and-society]
+    maturity: emerging
+  - slug: asymmetric-understanding
+    title: "Asymmetric Understanding"
+    tags: [ai-economics, finance, explainability, alignment, epistemics, market-microstructure, monetary-policy]
     maturity: emerging
   - slug: automated-research-pipeline
     title: "Automated Research Pipeline"
@@ -1947,6 +1979,10 @@ concepts:
     title: "Exaptation in AI Research"
     tags: [research-evaluation, benchmarking, science-of-science, philosophy-of-science, ai-policy]
     maturity: emerging
+  - slug: extended-mind-active-externalism
+    title: "Extended Mind / Active Externalism"
+    tags: [philosophy-of-mind, extended-cognition, externalism, cognitive-science, human-ai-relationship]
+    maturity: active
   - slug: feedback-loop-driven-vertical-integration
     title: "Feedback-Loop-Driven Vertical Integration"
     tags: [ai-strategy, platform-economics, vertical-integration, modularity, business-strategy]
@@ -1958,6 +1994,10 @@ concepts:
   - slug: foundation-model-of-cognition
     title: "Foundation Model of Human Cognition"
     tags: [cognitive-science, foundation-models, individual-differences, behavioral-simulation, in-silico]
+    maturity: emerging
+  - slug: freedom-action-ai-strategy
+    title: "Freedom of Action (AI Strategy)"
+    tags: [ai-governance, geopolitics, national-security, ai-race-dynamics, strategy]
     maturity: emerging
   - slug: frontier-ai-compute-governance
     title: "Frontier AI Compute Governance"
@@ -2006,6 +2046,10 @@ concepts:
   - slug: human-ai-relationship-appropriateness
     title: "Human-AI Relationship Appropriateness"
     tags: [ai-ethics, human-ai-interaction, dependence, autonomy, care-ethics, assistant-relationships]
+    maturity: emerging
+  - slug: human-quality-data-ceiling
+    title: "Human-Quality Data Ceiling"
+    tags: [intelligence-explosion, data-quality, ai-rnd-automation, scaling-laws]
     maturity: emerging
   - slug: hybrid-human-ai-experimentation-platform
     title: "Hybrid Human-AI Experimentation Platform"
@@ -2107,6 +2151,10 @@ concepts:
     title: "Optimization-Induced Uniformity"
     tags: [optimization, uniformity, human-meaning, ai-risk, obsolescence, structural-irrelevance]
     maturity: emerging
+  - slug: paradigm-tax
+    title: "Paradigm Tax"
+    tags: [intelligence-explosion, ai-rnd-automation, data-quality, scaling-laws]
+    maturity: emerging
   - slug: parallel-agent-supervision
     title: "Parallel Agent Supervision"
     tags: [agentic-ai, agentic-coding, human-ai-collaboration, multi-agent, ai-and-society]
@@ -2138,6 +2186,10 @@ concepts:
   - slug: predictive-world-model-architecture
     title: "Predictive World Model Architecture"
     tags: [agi, world-model, autonomous-ai, cognitive-architecture, self-supervised-learning, jepa, planning]
+    maturity: emerging
+  - slug: pretraining-data-vs-model-compute-efficiency
+    title: "Pretraining Data-vs-Model Compute-Efficiency Decomposition"
+    tags: [scaling-laws, pretraining, data-quality, empirical-methodology]
     maturity: emerging
   - slug: principled-alignment-training
     title: "Principled Alignment Training"
@@ -2175,6 +2227,10 @@ concepts:
     title: "Semantic Prompt Caching"
     tags: [scalability, llm-inference, caching, multi-agent-simulation, efficiency]
     maturity: emerging
+  - slug: seven-archetypal-ai-strategies
+    title: "Seven Archetypal AI Strategies"
+    tags: [ai-governance, geopolitics, national-security, ai-race-dynamics, strategy]
+    maturity: emerging
   - slug: sharing-ai-prosperity
     title: "Sharing AI Prosperity"
     tags: [ai-economics, social-contract, inequality, industrial-policy, ai-policy]
@@ -2186,6 +2242,10 @@ concepts:
   - slug: silicon-valley-transhumanism
     title: "Silicon Valley Transhumanism"
     tags: [political-economy, ai-and-society, ideology, power-concentration]
+    maturity: emerging
+  - slug: social-digital-twin
+    title: "Social Digital Twin"
+    tags: [social-simulation, digital-twins, agent-based-modeling, validation, computational-social-science]
     maturity: emerging
   - slug: social-simulacra
     title: "Social Simulacra"
@@ -2304,6 +2364,9 @@ people:
   - slug: dashun-wang
     tags: [science-of-science, computational-social-science, network-science, research-funding]
     affiliation: "Kellogg School of Management / Center for Science of Science and Innovation, Northwestern University"
+  - slug: david-chalmers
+    kind: researcher
+    affiliation: "New York University (at time of writing: University of Arizona)"
   - slug: david-holtz
     kind: researcher
     affiliation: "Columbia Business School (and paid contractor for OpenAI)"
@@ -2382,6 +2445,9 @@ people:
   - slug: marina-favaro
     kind: researcher
     affiliation: "The Anthropic Institute"
+  - slug: markus-brunnermeier
+    kind: researcher
+    affiliation: "Princeton University"
   - slug: michael-bernstein
     tags: [human-computer-interaction, llm-agents, social-computing, generative-ai, crowdsourcing]
     affiliation: "Stanford University"
@@ -2391,6 +2457,9 @@ people:
   - slug: prasanna-tambe
     kind: researcher
     affiliation: "University of Pennsylvania, Wharton School (and paid contractor for OpenAI)"
+  - slug: rand-center-geopolitics-artificial-general-intelligence
+    kind: organization
+    affiliation: "RAND Corporation, RAND Global and Emerging Risks"
   - slug: rembrand-koning
     kind: researcher
     affiliation: "Harvard Business School"
@@ -2421,6 +2490,9 @@ people:
   - slug: tatsunori-hashimoto
     tags: [llm-alignment, robustness, fairness, nlp, evaluation]
     affiliation: "Stanford University"
+  - slug: tom-davidson
+    kind: researcher
+    affiliation: "Forethought"
   - slug: yong-li
     tags: [social-simulation, llm-agents, urban-computing, multi-agent, computational-social-science]
     affiliation: "Tsinghua University, Department of Electronic Engineering / BNRist"

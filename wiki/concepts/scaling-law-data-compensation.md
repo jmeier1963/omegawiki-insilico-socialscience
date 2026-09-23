@@ -4,10 +4,10 @@ aliases: ["data dividend", "mixture-weight data pricing", "collective management
 tags: [data-economy, ai-compensation, scaling-laws, data-markets, ai-policy]
 maturity: emerging
 definition: "A market mechanism that prices AI training data using the data-mixture weights and scaling laws firms already compute during training, distributing a share of per-model operating profit to content creators through collective management organizations."
-key_papers: [how-ai-companies-pay-fair-rates, two-radical-ways-share-ai-ownership]
+key_papers: [how-ai-companies-pay-fair-rates, two-radical-ways-share-ai-ownership, pretraining-progress-mostly-coming-data]
 first_introduced: "2026"
 date_updated: 2026-07-05
-related_concepts: [sharing-ai-prosperity, post-labor-economy]
+related_concepts: [sharing-ai-prosperity, post-labor-economy, pretraining-data-vs-model-compute-efficiency]
 ---
 
 ## Definition
