@@ -3,10 +3,10 @@ title: "Software Intelligence Explosion"
 aliases: ["SIE", "intelligence explosion", "recursive self-improvement", "ASARA feedback loop", "AI R&D automation explosion", "AI software feedback loop"]
 tags: [intelligence-explosion, ai-rnd-automation, feedback-loops, agi, ai-safety, software-progress]
 maturity: emerging
-key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos, from-agi-to-asi, first-steps-toward-automated-ai-research, if-you-thought-global-financial-crisis, when-ai-builds-itself, measuring-ai-ability-complete-long-software, artificial-intelligence-index-report-2025-stanford, deepseek-view-china, ai-agents-conduct-open-ended-ai, ai-2040-plan-deal, what-will-left-us-work, recursive-synthetic-improvement, research-acceleration-view-inside-openai, alien-mind, pretraining-progress-mostly-coming-data, data-bottlenecks-won-prevent-intelligence-explosion, strategy-secure-geopolitical-advantage-uncertain-path]
+key_papers: [living-within-experiment-inherent-labs-manifesto, will-ai-automation-cause-software-intelligence, modeling-geopolitics-ai-development, explore-future-retreat-present-2026-cosmos, from-agi-to-asi, first-steps-toward-automated-ai-research, if-you-thought-global-financial-crisis, when-ai-builds-itself, measuring-ai-ability-complete-long-software, artificial-intelligence-index-report-2025-stanford, deepseek-view-china, ai-agents-conduct-open-ended-ai, ai-2040-plan-deal, what-will-left-us-work, recursive-synthetic-improvement, research-acceleration-view-inside-openai, alien-mind, pretraining-progress-mostly-coming-data, data-bottlenecks-won-prevent-intelligence-explosion, strategy-secure-geopolitical-advantage-uncertain-path, what-if-automating-ai-triggers-intelligence]
 first_introduced: "2025"
-date_updated: 2026-05-29
-related_concepts: [automated-research-pipeline, gradual-disempowerment, agi-asi-transition, multi-agent-scaling-laws]
+date_updated: 2026-10-04
+related_concepts: [automated-research-pipeline, gradual-disempowerment, agi-asi-transition, multi-agent-scaling-laws, returns-research-effort]
 ---
 
 ## Definition
@@ -46,3 +46,5 @@ Let C(t) = AI capability at time t. SIE condition: dC/dt ∝ C(t)^r where r > 1 
 
 - [[will-ai-automation-cause-software-intelligence]] — Eth & Davidson (2025, Epoch AI); technical analysis with empirical calibration; argues SIE is plausible given current AI software progress dynamics
 - [[living-within-experiment-inherent-labs-manifesto]] — collective/institutional RSI variant inspired by cultural evolution (Inherent Labs, 2026)
+- [[what-if-automating-ai-triggers-intelligence]] — 22-author CASP/GovAI consensus policy paper; r > 1 model and visibility/steering/adaptation agenda
+

@@ -4,7 +4,7 @@ affiliation: "Anthropic (co-founder)"
 tags: [ai-policy, ai-safety, research-automation, forecasting, agentic-ai]
 homepage: ""
 scholar: ""
-date_updated: 2026-05-05
+date_updated: 2026-10-04
 ---
 
 ## Research areas
@@ -27,6 +27,7 @@ date_updated: 2026-05-05
 - Co-founder of Anthropic (since 2021); formerly OpenAI Policy Director
 - Import AI newsletter: weekly synthesis of AI research developments
 - Automated Alignment Research: Anthropic proof-of-concept (AI agents beating human baseline on scalable oversight)
+- [[what-if-automating-ai-triggers-intelligence]] — co-author of the 22-author CASP/GovAI paper on AI R&D automation triggering an intelligence explosion.
 
 ## Collaborators
 

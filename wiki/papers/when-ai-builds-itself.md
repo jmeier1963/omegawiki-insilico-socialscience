@@ -13,7 +13,7 @@ tldr: "The Anthropic Institute presents public benchmarks and previously unrepor
 contribution_type: [analysis, position]
 datasets: [SWE-bench, CORE-Bench]
 code_url: ""
-cited_by: [ai-agents-conduct-open-ended-ai]
+cited_by: [ai-agents-conduct-open-ended-ai, what-if-automating-ai-triggers-intelligence]
 ---
 
 ## Problem & Context

@@ -121,6 +121,10 @@ papers:
     title: "AI Education: 2024 Bond Capital Report"
     tags: [ai-education, market-analysis, bond-capital, edtech, investor-report]
     importance: 1
+  - slug: ai-existential-risk-probabilities-too-unreliable
+    title: "AI Existential Risk Probabilities Are Too Unreliable to Inform Policy"
+    tags: [ai-safety, existential-risk, forecasting, p-doom, ai-policy, ai-as-normal-technology, epistemics]
+    importance: 3
   - slug: ai-experimentation-implementation-eiu
     title: "AI: From Experimentation to Implementation?"
     tags: [ai-adoption, enterprise-ai, generative-ai, eiu, use-cases, election-risks, implementation]
@@ -361,6 +365,10 @@ papers:
     title: "Big Tech's Big Problem: Regulation, Watchmen, and the Limits of Oversight"
     tags: [big-tech, regulation, platform-regulation, media, social-media, governance-limits]
     importance: 2
+  - slug: big-tent-small-tent-ai-safety
+    title: "A Big-Tent or Small-Tent AI Safety Movement?"
+    tags: [ai-safety, existential-risk, ai-policy, ai-as-normal-technology, systemic-risk, cybersecurity, social-movements, polarization]
+    importance: 3
   - slug: binding-public-sector-ai-diffusion
     title: "Binding Public Sector AI Diffusion: Will new OMB AI Safety policies do more harm than good?"
     tags: [ai-governance, public-sector-ai, regulation, omb, federal-agencies, compliance-cost, ai-adoption]
@@ -1329,6 +1337,10 @@ papers:
     title: "AI Gigafactories: EU Council Paves the Way for Large-Scale AI Compute Infrastructure"
     tags: [eu-policy, ai-infrastructure, gigafactories, eurohpc, compute, public-ai, european-ai]
     importance: 2
+  - slug: reading-great-books-age-ai
+    title: "Reading the Great Books in the Age of AI: On Attention, Judgment, and Remaining Human"
+    tags: [ai-philosophy, humanism, liberal-education, attention, human-nature, ai-and-society, cognitive-off-loading, essay]
+    importance: 2
   - slug: reasoning-models-generate-societies-thought
     title: "Reasoning Models Generate Societies of Thought"
     tags: [reasoning-models, societies-of-thought, multi-agent, perspective-diversity, mechanistic-interpretability]
@@ -1657,6 +1669,10 @@ papers:
     title: "What If the $3trn AI Investment Boom Goes Wrong?"
     tags: [ai-investment, investment-risk, ai-bubble, economic-risk, data-centers, ai-returns]
     importance: 2
+  - slug: what-if-automating-ai-triggers-intelligence
+    title: "What If Automating AI R&D Triggers an Intelligence Explosion?"
+    tags: [intelligence-explosion, ai-rnd-automation, recursive-self-improvement, ai-governance, ai-safety, loss-of-control, power-concentration, ai-policy]
+    importance: 4
   - slug: what-will-left-us-work
     title: "What will be left for us to work on?"
     tags: [ai-as-normal-technology, ai-economics, labor-market, ai-rnd-automation, recursive-self-improvement, agent-evaluation, ai-policy, human-ai-division-labor]
@@ -1847,6 +1863,10 @@ concepts:
     title: "AI Research Productivity Paradox"
     tags: [ai-science, productivity, research-diversity, scientometrics, bibliometrics]
     maturity: emerging
+  - slug: ai-risk-pseudo-quantification
+    title: "AI X-Risk Pseudo-Quantification"
+    tags: [ai-safety, existential-risk, forecasting, epistemics, ai-policy, p-doom]
+    maturity: emerging
   - slug: ai-satellite-accounts
     title: "AI Satellite Accounts"
     tags: [ai-economics, gdp, macroeconomics, measurement, national-accounts, policy]
@@ -1902,6 +1922,10 @@ concepts:
   - slug: balance-of-power-ai-safety-paradigm
     title: "Balance of Power as AI Safety Paradigm"
     tags: [ai-safety, ai-policy, power-concentration, alignment, open-source-ai, superintelligence]
+    maturity: emerging
+  - slug: big-tent-ai-safety
+    title: "Big-Tent AI Safety"
+    tags: [ai-safety, ai-policy, social-movements, existential-risk, systemic-risk, resilience]
     maturity: emerging
   - slug: broadly-safe-behavior-cluster
     title: "Broadly Safe Behavior Cluster"
@@ -2211,6 +2235,10 @@ concepts:
     title: "Retrieval Poisoning of Generative Search"
     tags: [ai-security, retrieval-augmented-generation, deep-research-agents, information-integrity]
     maturity: emerging
+  - slug: returns-research-effort
+    title: "Returns to Research Effort (r)"
+    tags: [intelligence-explosion, ai-rnd-automation, growth-economics, feedback-loops, semi-endogenous-growth]
+    maturity: active
   - slug: scaling-law-data-compensation
     title: "Scaling-Law Data Compensation"
     tags: [data-economy, ai-compensation, scaling-laws, data-markets, ai-policy]

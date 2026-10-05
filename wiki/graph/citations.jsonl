@@ -20,3 +20,13 @@
 {"from": "papers/ai-agents-conduct-open-ended-ai", "to": "papers/liang-monitoring-ai-modified-content", "type": "cites", "source": "semantic_scholar", "date": "2026-08-04"}
 {"from": "papers/ai-making-us-all-think-same", "to": "papers/shumailov-model-collapse", "type": "cites", "source": "manual", "date": "2026-09-22"}
 {"from": "papers/mathematician-clashed-openai-over-million-proof", "to": "papers/new-york-times-company-microsoft-corporation", "type": "cites", "source": "manual", "date": "2026-09-22"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/will-ai-automation-cause-software-intelligence", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/when-ai-builds-itself", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/research-acceleration-view-inside-openai", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/alien-mind", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/agentic-ai-next-intelligence-explosion", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/measuring-ai-ability-complete-long-software", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/towards-end-end-automation-ai-research", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/international-ai-safety-report-2026", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/ai-2040-plan-deal", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/ai-2027-scenario", "type": "cites", "source": "manual", "date": "2026-10-04"}

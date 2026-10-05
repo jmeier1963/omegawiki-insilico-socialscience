@@ -29,7 +29,7 @@ _Auto-generated open questions. Do not edit._
 ## Failed Ideas (avoid repeating)
 - AI Safety Commons as Repeated Game: Formal Economic Model — Core formal framework already published. RAND RRA4245-1 (Abraham, Kavner, Moon) provides a formal mathematical model of AGI development as a prisoner's dilemma with conditions on when acceleration becomes dominant and what coordination mechanisms break the equilibrium. arXiv:2501.15280 'Who's Driving? Game Theoretic Path Risk of AGI Development' presents a game-theoretic framework with concrete stabilization mechanisms (pre-registration, shared infrastructure, automated deterrence). The Cooperative AI Foundation has a substantial program on this exact class of problems. The general 'AI race as prisoner's dilemma' framing is standard in policy literature. Differentiation would need to focus on a specific uninvestigated mechanism triplet (e.g., compute governance + mandatory disclosure + joint audit together) or a multi-player repeated game with heterogeneous actors — but this is incremental relative to RAND RRA4245-1.
 - Augmentation Trap Formalization: Conditions for Net-Negative Human Capital Effects — Eliminated at Phase 3: overlaps too closely with active ideas 'bildung-casualty-ai-erosion-scientific-formation' (Bildung-formation hypothesis — AI erodes scientific formation) and 'epistemic-calibration-ai-assisted-science-measuring' (assumption recall deficit). The labor market / organizational context differentiates somewhat, but the formal model structure (conditions under which AI augmentation produces net-negat
-## Papers (434 total)
+## Papers (438 total)
 - [4] Can AI agents conduct open-ended AI research? Early evidence from two case studies — Two frontier agents given six days, $3,000 in API credits and GPU access to answer the central research question of an unpublished NeurIPS 2026 submission completed all the engineering unaided but were unambiguously rejected by the original authors, exposing five recurring failure modes in judgment, exploration and instruction-following.
 - [4] When AI Builds Itself — The Anthropic Institute presents public benchmarks and previously unreported internal data showing AI is already accelerating AI development (>80% of Anthropic's merged code written by Claude, ~8x code per engineer, agents recovering 97% of an open research gap), and argues recursive self-improvement could arrive faster than institutions are prepared for.
 - [4] From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents — A systematic survey organizing LLM-driven social simulation into three progressively-scaled tiers — Individual, Scenario, and Society simulation — each analyzed by architecture/construction, objective/scenario taxonomy, and evaluation method, with catalogued datasets and per-tier historical trend narratives.
@@ -40,13 +40,13 @@ _Auto-generated open questions. Do not edit._
 - [5] Out of One, Many: Using Language Models to Simulate Human Samples
 - [4] Position: LLM Social Simulations Are a Promising Research Method
 - [4] The Shift to Agentic AI: Evidence from Cod
-## Recent Relationships (950 total)
-  papers/artificial-intelligence-brave-new-world-finance --uses_concept--> concepts/gradual-disempowerment
-  papers/artificial-intelligence-brave-new-world-finance --uses_concept--> concepts/digital-sovereignty
-  papers/artificial-intelligence-brave-new-world-finance --uses_concept--> concepts/frontier-ai-compute-governance
-  papers/artificial-intelligence-brave-new-world-finance --uses_concept--> concepts/broadly-safe-behavior-cluster
-  papers/artificial-intelligence-brave-new-world-finance --uses_concept--> concepts/agentic-misalignment
-  papers/ai-agents-conduct-open-ended-ai --same_problem_as--> papers/artificial-intelligence-brave-new-world-finance
-  papers/artificial-intelligence-brave-new-world-finance --same_problem_as--> papers/case-study-emergent-cheating-whistleblowing-autonomous
-  papers/pretraining-progress-mostly-coming-data --introduces_concept--> concepts/pretraining-data-vs-model-compute-efficiency
-  papers/pretraining-progress-mostly-coming-data --uses_concept--> conc
+## Recent Relationships (963 total)
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/freedom-action-ai-strategy
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/seven-archetypal-ai-strategies
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/ai-strategy-foreclosure-mechanisms
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --extends_concept--> concepts/ai-race-dynamics
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/frontier-ai-compute-governance
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/mutually-assured-compute-destruction
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/gradual-disempowerment
+  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/digital-sovereignty
+  papers/strategy-secure-geopolitical-

@@ -13,7 +13,7 @@ tldr: "The AI Futures Project's sequel to AI 2027 lays out 'Plan A,' a recommend
 contribution_type: [position]
 datasets: []
 code_url: ""
-cited_by: []
+cited_by: [what-if-automating-ai-triggers-intelligence]
 ---
 
 ## Problem & Context

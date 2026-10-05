@@ -4,7 +4,7 @@ affiliation: "University of Virginia / PIIE / Anthropic Institute"
 tags: [ai-economics, macroeconomics, transformative-ai, public-finance, labor-economics]
 homepage: ""
 scholar: ""
-date_updated: 2026-06-04
+date_updated: 2026-10-04
 ---
 
 ## Research areas
@@ -21,6 +21,7 @@ date_updated: 2026-06-04
 ## Recent work
 
 - [[where-ai-gdp-statistics-filling-measurement]]
+- [[what-if-automating-ai-triggers-intelligence]] — co-author of the CASP/GovAI intelligence-explosion policy paper (r > 1 feedback-loop analysis, policy agenda).
 Head of Transformative AI Economic Studies at the Anthropic Institute (from May 2026); nonresident senior fellow at PIIE; professor of economics and faculty director of the EconTAI Initiative at UVA (on educational leave 2026). Co-authoring "Public Finance in the Age of AI" (Korinek and Lockwood 2026) and "Economic Growth Under Transformative AI" (Trammell and Korinek 2026).
 
 ## Collaborators

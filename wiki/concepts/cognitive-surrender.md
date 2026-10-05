@@ -3,9 +3,9 @@ title: "Cognitive Surrender"
 aliases: ["AI cognitive surrender", "System 3 surrender", "AI-induced accuracy loss", "AI uncritical adoption", "surrender to AI"]
 tags: [cognitive-surrender, ai-reliance, dual-process, decision-making, human-ai-interaction, automation-bias]
 maturity: emerging
-key_papers: [thinking-fast-slow-artificial-how-ai, why-big-ai-labs-hiring-so, when-everyone-uses-ai-companies-risk, positive-alignment-artificial-intelligence-human-flourishing, extended-mind]
+key_papers: [thinking-fast-slow-artificial-how-ai, why-big-ai-labs-hiring-so, when-everyone-uses-ai-companies-risk, positive-alignment-artificial-intelligence-human-flourishing, extended-mind, reading-great-books-age-ai]
 first_introduced: "2026"
-date_updated: 2026-05-06
+date_updated: 2026-10-04
 related_concepts: [human-ai-relationship-appropriateness, wisdom-versus-instrumental-intelligence, extended-mind-active-externalism]
 ---
 
@@ -48,3 +48,5 @@ Behavioral signature: AI-Accurate vs. AI-Faulty accuracy contrast; high in surre
 ## Key papers
 
 - [[thinking-fast-slow-artificial-how-ai]] — Shaw & Nave 2026, Wharton; introduces Tri-System Theory and operationalizes cognitive surrender via randomized AI accuracy manipulation
+- [[reading-great-books-age-ai]] — Aristotelian worry that AI takes thinking and judging out of human hands
+

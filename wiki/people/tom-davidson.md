@@ -4,7 +4,7 @@ affiliation: "Forethought"
 research_areas: [ai-forecasting, intelligence-explosion-dynamics, ai-safety, technology-forecasting]
 homepage: ""
 scholar: ""
-date_updated: "2026-09-23"
+date_updated: 2026-10-04
 type:
   kind: researcher
 ---
@@ -17,6 +17,7 @@ type:
 ## Recent work
 
 - [[data-bottlenecks-won-prevent-intelligence-explosion]] — argues that data-quantity, -quality, and -coverage bottlenecks will slow but not stop a software intelligence explosion, introducing the [[paradigm-tax]] and [[human-quality-data-ceiling]] concepts to explain why each bottleneck imposes a proportional rather than absolute handicap.
+- [[what-if-automating-ai-triggers-intelligence]] — co-author of the CASP/GovAI intelligence-explosion policy paper building on his software-intelligence-explosion modelling.
 
 ## My notes
 

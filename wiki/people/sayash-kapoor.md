@@ -4,7 +4,7 @@ affiliation: "Princeton University (Center for Information Technology Policy)"
 tags: [ai-economics, ai-policy, ai-as-normal-technology, evaluation]
 homepage: "https://www.cs.princeton.edu/~sayashk/"
 scholar: ""
-date_updated: 2026-06-20
+date_updated: 2026-10-04
 ---
 
 ## Research areas
@@ -25,6 +25,8 @@ date_updated: 2026-06-20
 - [[open-world-evaluations-measuring-frontier-ai]] — lead author; introduces open-world evaluations and CRUX, debuting with an autonomous iOS app deployment case study.
 - [[ai-agents-conduct-open-ended-ai]] — co-lead author; introduces shadow evaluation, grading agent output on unpublished NeurIPS submissions by the papers' own authors.
 - [[what-will-left-us-work]] — co-author of the ICML 2026 keynote (delivered by Narayanan) synthesizing the Normal Technology framework against recursive-self-improvement anxiety.
+- [[ai-existential-risk-probabilities-too-unreliable]] — 2026 repost: AI x-risk probabilities lack inductive, deductive or track-record justification.
+- [[big-tent-small-tent-ai-safety]] — argues x-risk framing is counterproductive; calls for a pluralist big-tent safety movement.
 The "AI as Normal Technology" essay series (with Arvind Narayanan).
 
 ## Collaborators
