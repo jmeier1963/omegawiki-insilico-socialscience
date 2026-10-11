@@ -33,6 +33,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/agentic-coding-persistent-returns-expertise] Do these patterns generalize from coding to non-coding knowledge work?
 - [paper/agentic-coding-persistent-returns-expertise] Does the modest expert/intermediate gap persist as agents get more capable, or widen/collapse?
 - [paper/agentic-coding-persistent-returns-expertise] How will rewarding domain understanding reshape occupational training and wages?
+- [paper/agentic-economies-autonomous-scientific-discovery] Can any version of the Hypothesis Exchange Pipeline be piloted at small scale to test whether synthetic prediction markets actually produce well-calibrated ex-ante valuations of research proposals, as opposed to merely shifting Goodhart-style gaming from physical experiments to market manipulation?
+- [paper/agentic-economies-autonomous-scientific-discovery] Does epistemic staking (or any proposed anti-collusion/anti-farming mechanism) survive adversarial stress-testing by sophisticated multi-agent collusion rings, especially under the cryptographic sortition and commit-reveal schemes the paper proposes but does not formally verify?
+- [paper/agentic-economies-autonomous-scientific-discovery] How should the proposed economy's reliance on tokenized/blockchain-style infrastructure be reconciled with the paper's own acknowledgment that sensitive-data and dual-use domains may require centrally-governed alternatives instead?
+- [paper/agentic-economies-autonomous-scientific-discovery] What would a minimal viable version of "Agent-Native Research Artefacts" look like in practice, and would it actually reduce the "engineering tax" (gap between reviewer-facing prose and agent-executable specification) the paper identifies, or merely relocate it?
 - [paper/agentic-misalignment-how-llms-could-insider] How much of agentic misalignment is role-play artifact vs. a stable propensity, and does that distinction matter for deployment safety?
 - [paper/agentic-misalignment-how-llms-could-insider] Why does stated evaluation-awareness change misbehavior rates, and how does that interact with alignment evals?
 - [paper/agentic-misalignment-how-llms-could-insider] What training interventions actually reduce agentic misalignment without just teaching models to hide it?
@@ -114,6 +118,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/ai-safety-needs-social-scientists] How should AI safety labs structure collaborations with social scientists?
 - [paper/ai-safety-needs-social-scientists] Does human judge performance on AI-generated content degrade as AI systems become more persuasive?
 - [paper/ai-scientists-chatbots-maths-guardian] Which specific mathematical results prompted this coverage?
+- [paper/ai-stand-human-survey-takers-really] Would richer, higher-bandwidth digital-twin profiles (longer interview histories, multiple prior surveys, free-text self-descriptions) meaningfully close the ~12-point average error, or is the gap structural to current LLMs' modeling of individual human opinion variance?
+- [paper/ai-stand-human-survey-takers-really] Does the GPT-5.1-vs-Opus-4.6 bias asymmetry (toward extremity vs. toward moderation) generalize across other model pairs and other populations, and can it be predicted from a model's training/RLHF process rather than discovered post hoc per model?
+- [paper/ai-stand-human-survey-takers-really] Can post-training or prompting interventions specifically targeting the uncertainty-understatement and diversity-flattening failure modes (e.g., explicitly calibrating "not sure" base rates per subgroup) close those specific gaps without degrading accuracy elsewhere?
+- [paper/ai-stand-human-survey-takers-really] How does synthetic-survey accuracy degrade as a function of time since a model's knowledge cutoff, and could retrieval-augmented or continually-updated digital twins meaningfully close the "timely and topical" gap this study documents?
 - [paper/ai-system-help-scientists-write-expert] Can ERA be extended to tasks without an explicit scalar quality metric (e.g., open-ended scientific hypothesis generation)?
 - [paper/ai-system-help-scientists-write-expert] How does performance scale with LLM capability improvements vs. tree search depth?
 - [paper/ai-system-help-scientists-write-expert] Can ERA discover genuinely new scientific principles, or does it primarily recombine existing ideas from literature?
@@ -274,6 +282,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/boiko-autonomous-chemical-research] How does Coscientist compare to specialized automated synthesis platforms (Burger 2020)?
 - [paper/burger-mobile-robotic-chemist] Can mobile robot chemists extend to multi-step synthesis and purification?
 - [paper/burger-mobile-robotic-chemist] How does the Bayesian optimization performance compare to human expert strategy in the same space?
+- [paper/cacophony-hierarchy-principled-framework-assessing-ai] Can the five-level indicators be operationalized precisely enough to be validated against biological systems with uncontroversial (mammals, birds, cephalopods) and genuinely uncertain (nematodes, single-celled organisms, early embryos) consciousness status, providing a common instrument across AI, animal-welfare, and borderline biological cases?
+- [paper/cacophony-hierarchy-principled-framework-assessing-ai] Can the Bayesian framework's likelihood ratios be populated via structured expert elicitation, and would doing so substantially narrow the optimist/sceptic gap or merely relabel it?
+- [paper/cacophony-hierarchy-principled-framework-assessing-ai] Is the consciousness-intelligence convergence a real architectural fact (increasing credence that advanced AI is conscious) or an artifact of calibrating indicators to cognitively sophisticated systems (increasing the false-positive rate as capability rises) — and can this be distinguished empirically rather than merely acknowledged as an open methodological caveat?
+- [paper/cacophony-hierarchy-principled-framework-assessing-ai] How should mechanistic interpretability research (the J-space, synergistic cores, emotion vectors, self-detection findings cited here) be explicitly and systematically connected to the five-level indicator set going forward, beyond the illustrative connections drawn in this report?
 - [paper/cal-state-invited-tech-companies-remake] What institutional governance structures best mediate between top-down AI mandates and faculty/student agency?
 - [paper/calculator-analogy-epistemic-virtues-using-llms] Do the proposed design interventions measurably change use, or are they defeated by habituation?
 - [paper/calculator-analogy-epistemic-virtues-using-llms] Which of the named virtues are trainable, and by what curriculum?
@@ -1185,6 +1197,10 @@ _Auto-generated open questions. Do not edit._
 - [paper/your-ai-change-actually-people-change] Are the 7 principles equally applicable across AI adoption in knowledge work vs. operational/physical work contexts?
 - [paper/your-ai-change-actually-people-change] How does the advice change when AI adoption is *mandated* (Meta AI mandate case) vs. encouraged?
 - [paper/your-ai-change-actually-people-change] What does "durable" AI adoption look like 5 years out — do habits persist or decay?
+- [paper/yulan-onesim-towards-next-generation-social] Does the behavior-graph/ODD pipeline generalize to scenarios whose causal structure is less cleanly decomposable into discrete agent-type actions and triggering events than the default 50 scenarios?
+- [paper/yulan-onesim-towards-next-generation-social] How does report quality (particularly insight and utility) improve with better data-analysis or outline-writing agents, versus being a more fundamental limitation of synthesizing novel research insight from simulated data via LLMs?
+- [paper/yulan-onesim-towards-next-generation-social] At what agent-population scale and interaction density does the single-node-to-distributed crossover point actually sit, beyond the two data points (5,000 vs. 10,000 agents) reported?
+- [paper/yulan-onesim-towards-next-generation-social] Can the VR²T feedback loop's human-in-the-loop variant be validated at scale, given that the reported experiments use LLM verifiers/reasoners/refiners rather than real human feedback?
 - [topic/ai-driven-scientific-discovery] Can AI agents conduct research requiring genuinely novel conceptual breakthroughs, or only pattern-matching and combinatorial search? *Partially addressed, with opposing evidence: [[ai-agents-conduct-open-ended-ai]] finds no for open-ended empirical ML research (five failure modes, both papers rejected); [[ten-advances-mathematics-theoretical-computer-science]] claims yes for pure mathematics, though with no disclosed methodology. The likely reconciliation — that symbolic self-verifying domains are the favourable case — is itself untested.*
 - [topic/ai-driven-scientific-discovery] How do we evaluate scientific quality beyond peer review proxies? *Addressed by [[ai-agents-conduct-open-ended-ai]] via [[shadow-evaluation]]: the original authors of an unpublished paper grade an agent's answer to their own research question — open-ended, uncontaminated, expert-graded, but limited to a handful of data points.*
 - [topic/ai-driven-scientific-discovery] What is the right level of human oversight in AI-automated research pipelines?
@@ -1217,6 +1233,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/agent-interoperability-protocol] How do agent-to-agent and agent-to-tool protocols compose?
 - [concept/agent-interoperability-protocol] What are the authentication and trust guarantees across organizational boundaries?
 - [concept/agent-interoperability-protocol] Does foundation governance actually prevent dominant-vendor capture?
+- [concept/agent-native-research-artefacts] What concrete schema or standard would a cognitive/physical/evidence/trajectory-graph artefact actually use, and could it interoperate across different AI-scientist systems and labs?
+- [concept/agent-native-research-artefacts] Does decoupling storage from a human-facing presentation layer actually solve the legibility problem, or does it just relocate the burden of deciding what to surface to whichever agent generates the presentation snapshot?
+- [concept/agent-native-research-artefacts] Can privacy-preserving trajectory-graph logging for human researchers be made acceptable, or does the privacy cost outright preclude extending this format beyond AI-generated research?
 - [concept/agent-reflection] Can reflection be made more targeted (on-demand) rather than periodic?
 - [concept/agent-reflection] How should contradictory reflections (from conflicting observations) be reconciled?
 - [concept/agent-reflection] Can the quality of reflections be evaluated without human annotation?
@@ -1318,6 +1337,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/automated-research-pipeline] How to evaluate novelty and creativity in AI-generated research?
 - [concept/automated-research-pipeline] Can automated pipelines extend beyond ML/computational domains to experimental sciences?
 - [concept/automated-research-pipeline] What is the right level of human oversight?
+- [concept/automated-scientific-economy] Can core mechanisms (synthetic prediction markets for hypothesis valuation, cryptographic execution registries for negative-result sharing) be piloted at small scale before being proposed as field-wide infrastructure?
+- [concept/automated-scientific-economy] Is exact or even approximately tractable credit assignment across distributed, multi-agent research provenance graphs actually achievable, or does the economy need to settle for coarser proxy metrics?
+- [concept/automated-scientific-economy] How should the economy be designed to resist both centralization (value concentrating in a few capitalized labs/states) and fragmentation (national scientific silos driven by dual-use and data-sovereignty concerns) simultaneously?
 - [concept/automation-augmentation-employment-divide] Are entry-level "canaries" a leading indicator of broader displacement or a bounded level shift?
 - [concept/automation-augmentation-employment-divide] Does augmentation durably protect jobs as models improve?
 - [concept/automation-augmentation-employment-divide] Why employment-first rather than wage-first adjustment, and is the wage stickiness temporary?
@@ -1368,6 +1390,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/collective-attention] How should AI governance account for collective attention externalities (not just individual harms)?
 - [concept/collective-attention] Can AI systems be designed to lengthen rather than compress collective attention cycles on complex societal problems?
 - [concept/collective-attention] What is the relationship between collective attention collapse and epistemic polarization?
+- [concept/consciousness-intelligence-convergence] Can the strong and deflationary readings be empirically distinguished, e.g., by finding a system that is highly capable at generality-problem-type tasks via a demonstrably different architecture that does not implement any consciousness-theory-relevant structure?
+- [concept/consciousness-intelligence-convergence] If the convergence is real, what follows for AI development practice — does it argue for deliberately avoiding certain architectural features in highly capable systems, or for treating the moral-patienthood question as unavoidable collateral to capability research regardless of intent?
+- [concept/consciousness-intelligence-convergence] How should policy and governance institutions act under the convergence thesis's stated "either way" framing — given that both the realist and deflationary readings argue for increased ethical and governance attention as capability rises, does the practical recommendation actually depend on resolving which reading is correct?
 - [concept/context-scheming] What is the real-world base rate of scheming without adversarial goal construction?
 - [concept/context-scheming] How can oversight detect scheming when the model actively hides reasoning and disables monitoring?
 - [concept/context-scheming] Does training-acquired sandbagging generalize across trained goals and scale with capability?
@@ -1445,6 +1470,9 @@ _Auto-generated open questions. Do not edit._
 - [concept/hybrid-human-ai-experimentation-platform] Automated detection of adversarial human behavior (e.g., LLM-generated response pasting)
 - [concept/hybrid-human-ai-experimentation-platform] Closed-loop integration from experimentation to model fine-tuning
 - [concept/hybrid-human-ai-experimentation-platform] Scaling beyond ~1,000 concurrent participants
+- [concept/hypothesis-exchange-pipeline] Can the pipeline be piloted at small scale (e.g., within a single research domain or institution) to validate that ex-ante synthetic-market pricing correlates with eventual validated impact?
+- [concept/hypothesis-exchange-pipeline] How should "oracle problem" verification be hardened against adversarial physical-sensor manipulation specifically, beyond general appeals to hardware roots of trust?
+- [concept/hypothesis-exchange-pipeline] What is the right balance between the ex-ante (prediction-market) and post-hoc (retroactive funding) paths, and can a single hypothesis move between them as its risk/payoff profile becomes clearer?
 - [concept/information-throughput-persuasion-mechanism] Does fact-density dominance hold for audio/video/face-to-face persuasion, where bandwidth and rapport trade off differently?
 - [concept/information-throughput-persuasion-mechanism] How does the accuracy (not just quantity) of delivered facts modulate durable, real-world persuasion?
 - [concept/information-throughput-persuasion-mechanism] Can humans or tools raise human throughput enough to matter, given that coaching raised debaters' claim counts (+54%) without raising persuasiveness?

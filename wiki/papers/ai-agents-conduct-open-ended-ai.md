@@ -121,3 +121,5 @@ Read alongside [[open-world-evaluations-measuring-frontier-ai]] (same authorship
 - same_problem_as (reverse): [[research-acceleration-view-inside-openai]]
 - challenges (reverse): [[scientisttwo-pioneering-human-knowledge-frontier-autonomous]]
 - same_problem_as (reverse): [[training-ai-scientists-replicate-research]]
+- same_problem_as (reverse): [[yulan-onesim-towards-next-generation-social]]
+- same_problem_as (reverse): [[agentic-economies-autonomous-scientific-discovery]]

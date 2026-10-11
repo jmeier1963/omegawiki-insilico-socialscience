@@ -8,7 +8,7 @@ related_topics:
   - llm-human-simulacra
   - persona-conditioning-evaluation
 key_people: []
-key_papers: [individual-society-survey-social-simulation-driven]
+key_papers: [individual-society-survey-social-simulation-driven, yulan-onesim-towards-next-generation-social]
 ---
 
 ## Overview
@@ -31,6 +31,7 @@ This approach extends classical agent-based modeling (ABM) by replacing hand-cod
 - [[generative-agents-interactive-simulacra-human-behavior]] — Park et al. 2023, "Generative Agents: Interactive Simulacra of Human Behavior"
 - [[concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior]] — DeepMind Concordia simulation framework
 - [[agentsociety-large-scale-simulation-llm-driven]] — AgentSociety 2025
+- [[yulan-onesim-towards-next-generation-social]] — RUC YuLan Team 2025, code-free natural-language scenario construction (behavior-graph intermediate representation), 100,000-agent distributed simulation, and an autonomous "AI social researcher" closing the topic-to-report research loop
 - [[mobility-network-models-covid-19-explain]] — Chang et al. 2020, mobility-network SEIR model explains COVID-19 health disparities (pre-LLM seminal baseline)
 
 ## SOTA tracker
@@ -39,6 +40,7 @@ This approach extends classical agent-based modeling (ABM) by replacing hand-cod
 |--------|-------|---------------|-------|
 | Generative Agents (Park 2023) | 25 agents | Full social sandbox | GPT-4 based |
 | AgentSociety (2025) | 10K+ agents | Scalable social dynamics | |
+| YuLan-OneSim (2025) | 100K agents | Code-free construction + AI social researcher | Distributed Master-Worker architecture |
 | Light Society (2025) | 10^6–10^9 target | Efficient scaling | Architecture TBD |
 
 Reference/taxonomy work (not itself a system): [[social-simulations-agent-based-modeling-digital]] — names a third paradigm orthogonal to scale, Social Digital Twins, distinguished from the systems above by referent-anchoring (a specific real system) rather than task orientation.

@@ -17,7 +17,7 @@ type:
 
 ## Recent work
 
-Senior researcher at Google DeepMind and professor at the Australian National University. Co-author on [[from-agi-to-asi]] (2026); the report's formal grounding rests on his AIXI / Universal AI framework (Hutter 2005; Hutter et al. 2024) and the Legg-Hutter intelligence score.
+Senior researcher at Google DeepMind and professor at the Australian National University. Co-author on [[from-agi-to-asi]] (2026); the report's formal grounding rests on his AIXI / Universal AI framework (Hutter 2005; Hutter et al. 2024) and the Legg-Hutter intelligence score. Also a co-author on [[cacophony-hierarchy-principled-framework-assessing-ai]] (2026), a multi-institution framework for assessing AI consciousness via a five-level supervenience hierarchy and Bayesian attribution model.
 
 ## My notes
 

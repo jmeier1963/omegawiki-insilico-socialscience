@@ -8,6 +8,7 @@ related_topics:
   - llm-human-simulacra
   - persona-conditioning-evaluation
 key_people: []
+key_papers: [ai-stand-human-survey-takers-really]
 ---
 
 ## Overview
@@ -30,6 +31,7 @@ Validation — comparing synthetic responses to real survey data and to behavior
 - synthetic survey (Chile) — large-scale population survey
 - validating LLM simulations (behavioral evidence) — behavioral validity
 - [[deliberationbench-normative-benchmark-influence-large-language]] — 2026, normative benchmark using deliberative polling as standard for LLM influence on real users
+- [[ai-stand-human-survey-takers-really]] — Pew Research Center (2026), large-scale "digital twin" replication of three real survey waves (~300 questions) finding a 12-point average error, systematic diversity-flattening, and uncertainty-understatement — the field's clearest large-institution negative result to date
 
 ## SOTA tracker
 
@@ -37,6 +39,7 @@ Validation — comparing synthetic responses to real survey data and to behavior
 |--------|-----------|-----------|-------|
 | GPT-4 + GSS personas | German GSS | TBD | 2025 |
 | LLM synthetic panel | Chile | TBD | 2025 |
+| Digital-twin replication (Claude Opus 4.6) | US ATP panel (~300 Qs) | ~12pt avg. error (poor) | 2026, Pew Research Center |
 
 ## Open problems
 

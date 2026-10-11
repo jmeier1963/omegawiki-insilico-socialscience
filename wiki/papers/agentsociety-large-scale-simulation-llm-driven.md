@@ -82,3 +82,4 @@ AgentSociety represents the most ambitious LLM social simulation to date in term
 - supports: [[concordia-enables-grounded-llm-agent-simulations-of-human-social-behavior]]
 - same_problem_as: [[individual-society-survey-social-simulation-driven]]
 - same_problem_as: [[social-simulations-agent-based-modeling-digital]]
+- similar_method_to (reverse): [[yulan-onesim-towards-next-generation-social]]

@@ -3,7 +3,7 @@ title: "Generative Agent-Based Modeling"
 aliases: ["GABM", "generative ABM", "LLM agent-based model", "LLM-powered agent-based modeling", "generative agent-based simulation"]
 tags: [multi-agent, social-simulation, llm-agents, agent-based-modeling]
 maturity: emerging
-key_papers: [generative-agent-based-modeling-actions-grounded, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human, modeling-earth-scale-human-like-societies, social-life-silico-science-artificial-societies, agent-based-modeling-economics-finance-past, social-simulacra-creating-populated-prototypes-social, persona-generators-generating-diverse-synthetic-personas, llm-agent-based-social-simulation-attitude, automated-social-science-language-models-scientist, digital-twins-potentials-ethical-issues-limitations, law-silico-simulating-legal-society-llm, agentic-ai-next-intelligence-explosion, individual-society-survey-social-simulation-driven, social-simulations-agent-based-modeling-digital]
+key_papers: [generative-agent-based-modeling-actions-grounded, agentsociety-large-scale-simulation-llm-driven, beyond-static-responses-multi-agent-llm, deliberate-lab-platform-real-time-human, modeling-earth-scale-human-like-societies, social-life-silico-science-artificial-societies, agent-based-modeling-economics-finance-past, social-simulacra-creating-populated-prototypes-social, persona-generators-generating-diverse-synthetic-personas, llm-agent-based-social-simulation-attitude, automated-social-science-language-models-scientist, digital-twins-potentials-ethical-issues-limitations, law-silico-simulating-legal-society-llm, agentic-ai-next-intelligence-explosion, individual-society-survey-social-simulation-driven, social-simulations-agent-based-modeling-digital, yulan-onesim-towards-next-generation-social]
 first_introduced: "2023"
 date_updated: 2026-04-12
 related_concepts: [llm-powered-agent-architecture, generative-agent-memory-stream, silicon-sampling, game-master-architecture]
@@ -84,6 +84,11 @@ where:
 
 - [[generative-agent-based-modeling-actions-grounded]] — Concordia library, introduces GABM as a distinct modeling paradigm
 - [[deliberate-lab-platform-real-time-human]] — complementary hybrid platform enabling human–AI experiments that can validate GABM simulations against real behavior
+- [[yulan-onesim-towards-next-generation-social]] — realizes GABM via [[scenario-auto-construction-subsystem]], a code-free natural-language-to-behavior-graph-to-code pipeline for constructing LLM-agent scenarios, demonstrated at 100,000-agent scale
+
+## Realized by
+
+- [[scenario-auto-construction-subsystem]]
 
 ## My understanding
 

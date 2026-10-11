@@ -60,3 +60,4 @@ Best read as a directly paired counterpoint to [[dont-mistake-chatbot-intelligen
 - [[dont-mistake-chatbot-intelligence-consciousness]] — explicitly paired by the publisher; opposite methodological stance (physics/testable criterion vs. relational attribution).
 - [[must-build-ai-people-person]] — Suleyman's SCAI concept is arguably in tension with this essay's account (SCAI worries about *simulated* attribution-eliciting behavior; this essay treats attribution itself as constitutive).
 - [[search-consciousness-inside-llms]] — interpretability angle this essay doesn't engage with at all.
+- [[cacophony-hierarchy-principled-framework-assessing-ai]] — incorporates this essay's quasi-subject/quasi-belief framework and thread-level moral-individuation argument as the Level 1 philosophical grounding for its five-level hierarchy.

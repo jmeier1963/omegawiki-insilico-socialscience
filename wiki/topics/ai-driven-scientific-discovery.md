@@ -6,7 +6,7 @@ sota_updated: 2026-04-23
 key_venues: [Nature, EMNLP, NeurIPS, ICML, Science]
 related_topics: [multi-agent-social-simulation, llm-human-simulacra]
 key_people: []
-key_papers: [artificial-intelligence-tools-expand-scientists-impact, ai-agents-conduct-open-ended-ai, ten-advances-mathematics-theoretical-computer-science]
+key_papers: [artificial-intelligence-tools-expand-scientists-impact, ai-agents-conduct-open-ended-ai, ten-advances-mathematics-theoretical-computer-science, agentic-economies-autonomous-scientific-discovery]
 ---
 
 ## Overview
@@ -34,6 +34,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - [[artificial-intelligence-tools-expand-scientists-impact]] — Hao, Xu, Li & Evans (2026): 41.3M-paper study of AI's productivity-diversity paradox in natural science
 - [[ai-agents-conduct-open-ended-ai]] — Kirgis, Kapoor & Narayanan (CRUX, 2026): shadow evaluations; agents did all the engineering but both papers were unambiguous rejections by the original authors
 - [[ten-advances-mathematics-theoretical-computer-science]] — OpenAI (2026): ten claimed research-level math/TCS results from an internal model, including a disproof of Connes's rigidity conjecture
+- [[agentic-economies-autonomous-scientific-discovery]] — Tomašev et al. (Google DeepMind, 2026): position paper reframing autonomous discovery as bottlenecked by physical validation resources and institutional coordination rather than ideation capability, proposing a native Automated Scientific Economy
 
 ## SOTA tracker
 
@@ -75,3 +76,6 @@ The field is advancing rapidly in narrow domains (materials, genomics) where the
 - [[co-evolving-evaluator-hardening]]
 - [[research-taste-bottleneck]]
 - [[ai-mathematical-discovery]]
+- [[automated-scientific-economy]]
+- [[hypothesis-exchange-pipeline]]
+- [[agent-native-research-artefacts]]

@@ -1,0 +1,1189 @@
+\begin{thebibliography}{208}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Albantakis et~al.(2023)Albantakis, Barbosa, Findlay, Grasso, Haun, Marshall, Mayner, Zaeemzadeh, Boly, Juel, Sasai, Fujii, David, Hendren, Lang, and Tononi]{albantakis2023}
+L.~Albantakis, L.~Barbosa, G.~Findlay, M.~Grasso, A.~M. Haun, W.~Marshall, W.~G.~P. Mayner, A.~Zaeemzadeh, M.~Boly, B.~E. Juel, S.~Sasai, K.~Fujii, I.~David, J.~Hendren, J.~P. Lang, and G.~Tononi.
+\newblock Integrated information theory ({IIT}) 4.0: {Formulating} the properties of phenomenal existence in physical terms.
+\newblock \emph{PLOS Computational Biology}, 19\penalty0 (10):\penalty0 e1011465, 2023.
+\newblock \doi{10.1371/journal.pcbi.1011465}.
+
+\bibitem[Alter(2016)]{alter2016}
+T.~Alter.
+\newblock The structure and dynamics argument against materialism.
+\newblock \emph{Noûs}, 50\penalty0 (4):\penalty0 794--815, 2016.
+
+\bibitem[Aru et~al.(2023)Aru, Larkum, and Shine]{aru2023}
+J.~Aru, M.~E. Larkum, and J.~M. Shine.
+\newblock The feasibility of artificial consciousness through the lens of neuroscience.
+\newblock \emph{Trends in Neurosciences}, 46\penalty0 (12):\penalty0 1008--1017, 2023.
+\newblock \doi{10.1016/j.tins.2023.09.009}.
+
+\bibitem[Baars(1997)]{baars1997}
+B.~J. Baars.
+\newblock \emph{In the theater of consciousness: {The} workspace of the mind}.
+\newblock Oxford University Press, 1997.
+
+\bibitem[Barandiaran(2017)]{barandiaran2017}
+X.~E. Barandiaran.
+\newblock Autonomy and enactivism: {Towards} a theory of sensorimotor autonomous agency.
+\newblock \emph{Topoi}, 36\penalty0 (3):\penalty0 409--430, 2017.
+\newblock \doi{10.1007/s11245-016-9365-4}.
+
+\bibitem[Basl(2014)]{basl2014}
+J.~Basl.
+\newblock Machines as moral patients we shouldn't care about (yet): {The} interests and welfare of current machines.
+\newblock \emph{Philosophy \& Technology}, 27\penalty0 (1):\penalty0 79--96, 2014.
+\newblock \doi{10.1007/s13347-013-0122-y}.
+
+\bibitem[Bayne et~al.(2024)Bayne, Seth, Massimini, Shepherd, Cleeremans, Fleming, Malach, Mattingley, Menon, Owen, Peters, Razi, and Mudrik]{bayne2024}
+T.~Bayne, A.~K. Seth, M.~Massimini, J.~Shepherd, A.~Cleeremans, S.~M. Fleming, R.~Malach, J.~B. Mattingley, D.~K. Menon, A.~M. Owen, M.~A.~K. Peters, A.~Razi, and L.~Mudrik.
+\newblock Tests for consciousness in humans and beyond.
+\newblock \emph{Trends in Cognitive Sciences}, 28\penalty0 (5):\penalty0 454--466, 2024.
+\newblock \doi{10.1016/j.tics.2024.01.010}.
+
+\bibitem[Beckmann and Butlin(2026)]{beckmann2026}
+P.~Beckmann and P.~Butlin.
+\newblock Where is the mind? {Persona} vectors and {LLM} individuation, 2026.
+\newblock URL \url{https://arxiv.org/abs/2604.17031}.
+\newblock Preprint.
+
+\bibitem[Bekkers and Ciaunica(2026)]{bekkers2026}
+E.~J. Bekkers and A.~Ciaunica.
+\newblock Unplugging a seemingly sentient machine is the rational choice: {A} metaphysical perspective, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.21016}.
+
+\bibitem[Bengio and Elmoznino(2025)]{bengio2025}
+Y.~Bengio and E.~Elmoznino.
+\newblock Illusions of {AI} consciousness.
+\newblock \emph{Science}, 389\penalty0 (6765):\penalty0 1090--1091, 2025.
+\newblock \doi{10.1126/science.adn4935}.
+
+\bibitem[Bennett(2024)]{bennett2024}
+M.~T. Bennett.
+\newblock Are biological systems more intelligent than artificial intelligence?, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.02325}.
+
+\bibitem[Bennett et~al.(2026)Bennett, Welsh, and Ciaunica]{bennett2026}
+M.~T. Bennett, S.~Welsh, and A.~Ciaunica.
+\newblock Why is anything conscious?, 2026.
+\newblock URL \url{https://arxiv.org/abs/2409.14545}.
+
+\bibitem[Berg et~al.(2025)Berg, de~Lucena, and Rosenblatt]{berg2025}
+C.~Berg, D.~de~Lucena, and J.~Rosenblatt.
+\newblock Large language models report subjective experience under self-referential processing, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.24797}.
+
+\bibitem[Biddell et~al.(2024)Biddell, Solms, Slagter, and Laukkonen]{biddell2024}
+H.~Biddell, M.~Solms, H.~Slagter, and R.~Laukkonen.
+\newblock Arousal coherence, uncertainty, and well-being: {An} active inference account.
+\newblock \emph{Neuroscience of Consciousness}, 2024\penalty0 (1):\penalty0 niae011, 2024.
+\newblock \doi{10.1093/nc/niae011}.
+
+\bibitem[Birch(2024)]{birch2024}
+J.~Birch.
+\newblock \emph{The edge of sentience: {Risk} and precaution in humans, other animals, and {AI}}.
+\newblock Oxford University Press, 2024.
+\newblock \doi{10.1093/9780191966729.001.0001}.
+
+\bibitem[Birch(2025)]{birch2025}
+J.~Birch.
+\newblock {AI} consciousness: {A} centrist manifesto.
+\newblock PsyArXiv, 2025.
+\newblock URL \url{https://doi.org/10.31234/osf.io/af7c9_v1}.
+
+\bibitem[Block(1995)]{block1995}
+N.~Block.
+\newblock On a confusion about a function of consciousness.
+\newblock \emph{Behavioral and Brain Sciences}, 18\penalty0 (2):\penalty0 227--247, 1995.
+\newblock \doi{10.1017/S0140525X00038188}.
+
+\bibitem[Block(2025)]{block2025}
+N.~Block.
+\newblock Can only meat machines be conscious?
+\newblock \emph{Trends in Cognitive Sciences}, 2025.
+\newblock \doi{10.1016/j.tics.2025.08.009}.
+
+\bibitem[Bloom(2005)]{bloom2005}
+P.~Bloom.
+\newblock \emph{Descartes' baby: {How} the science of child development explains what makes us human}.
+\newblock Random House, 2005.
+
+\bibitem[Bourget(2019)]{bourget2019}
+D.~Bourget.
+\newblock Anomalous dualism: {A} new approach to the mind-body problem.
+\newblock In W.~Seager, editor, \emph{The Routledge handbook of panpsychism}, pages 168--180. Routledge, 2019.
+\newblock \doi{10.4324/9781315717708-15}.
+
+\bibitem[Bradley and Saad(2025)]{bradley2025}
+A.~Bradley and B.~Saad.
+\newblock {AI} alignment versus {AI} ethical treatment: 10 challenges.
+\newblock \emph{Analytic Philosophy}, 2025.
+\newblock \doi{10.1111/phib.12380}.
+
+\bibitem[Bridgman(1927)]{bridgman1927}
+P.~W. Bridgman.
+\newblock \emph{The logic of modern physics}.
+\newblock Macmillan, 1927.
+
+\bibitem[Brown et~al.(2019)Brown, Lau, and LeDoux]{brown2019}
+R.~Brown, H.~Lau, and J.~E. LeDoux.
+\newblock Understanding the higher-order approach to consciousness.
+\newblock \emph{Trends in Cognitive Sciences}, 23\penalty0 (9):\penalty0 754--768, 2019.
+\newblock \doi{10.1016/j.tics.2019.06.009}.
+
+\bibitem[Burkhardt et~al.(2023)Burkhardt, Colgren, Medhus, Digel, Naumann, Soto-Angel, Nordmann, Sachkova, and Kittelmann]{burkhardt2023}
+P.~Burkhardt, J.~Colgren, A.~Medhus, L.~Digel, B.~Naumann, J.~J. Soto-Angel, E.-L. Nordmann, M.~Y. Sachkova, and M.~Kittelmann.
+\newblock Syncytial nerve net in a ctenophore adds insights on the evolution of nervous systems.
+\newblock \emph{Science}, 380\penalty0 (6642):\penalty0 293--297, 2023.
+\newblock \doi{10.1126/science.ade5645}.
+
+\bibitem[Butlin et~al.(2023)Butlin, Long, Elmoznino, Bengio, Birch, Constant, Deane, Fleming, Frith, Ji, Kanai, Klein, Lindsay, Michel, Mudrik, Peters, Schwitzgebel, Simon, and VanRullen]{butlin2023}
+P.~Butlin, R.~Long, E.~Elmoznino, Y.~Bengio, J.~Birch, A.~Constant, G.~Deane, S.~M. Fleming, C.~Frith, X.~Ji, R.~Kanai, C.~Klein, G.~Lindsay, M.~Michel, L.~Mudrik, M.~A.~K. Peters, E.~Schwitzgebel, J.~Simon, and R.~VanRullen.
+\newblock Consciousness in artificial intelligence: {Insights} from the science of consciousness, 2023.
+\newblock URL \url{https://arxiv.org/abs/2308.08708}.
+
+\bibitem[Butlin et~al.(2025)Butlin, Long, Bayne, Bengio, Birch, Chalmers, Constant, Deane, Elmoznino, Fleming, Ji, Kanai, Klein, Lindsay, Michel, Mudrik, Peters, Schwitzgebel, Simon, and VanRullen]{butlin2025}
+P.~Butlin, R.~Long, T.~Bayne, Y.~Bengio, J.~Birch, D.~Chalmers, A.~Constant, G.~Deane, E.~Elmoznino, C.~Fleming, X.~Ji, R.~Kanai, C.~Klein, G.~Lindsay, M.~Michel, L.~Mudrik, M.~A.~K. Peters, E.~Schwitzgebel, J.~Simon, and R.~VanRullen.
+\newblock Identifying indicators of consciousness in {AI} systems.
+\newblock \emph{Trends in Cognitive Sciences}, 30\penalty0 (6):\penalty0 488--501, 2025.
+\newblock \doi{10.1016/j.tics.2025.10.011}.
+\newblock URL \url{https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00286-4}.
+
+\bibitem[Butlin et~al.(2026)Butlin, Shiller, Plunkett, and Long]{butlin2026}
+P.~Butlin, D.~Shiller, D.~Plunkett, and R.~Long.
+\newblock Consciousness and cognitive access in {LLMs}: {A} commentary on ``{Verbalizable} representations form a global workspace in language models''.
+\newblock Eleos AI Research, 2026.
+\newblock URL \url{https://www-cdn.anthropic.com/files/4zrzovbb/website/cc4be2488d65e54a6ed06492f8968398ddc18ebe.pdf}.
+
+\bibitem[Campero(2024)]{campero2024}
+A.~Campero.
+\newblock Report on candidate computational indicators for conscious valenced experience, 2024.
+\newblock URL \url{https://arxiv.org/abs/2404.16696}.
+
+\bibitem[Carnap(1932)]{carnap1932}
+R.~Carnap.
+\newblock Psychologie in physikalischer {Sprache}.
+\newblock \emph{Erkenntnis}, 3\penalty0 (1):\penalty0 107--142, 1932.
+\newblock \doi{10.1007/BF01886414}.
+
+\bibitem[Carruthers(2000)]{carruthers2000}
+P.~Carruthers.
+\newblock \emph{Phenomenal consciousness: {A} naturalistic theory}.
+\newblock Cambridge University Press, 2000.
+
+\bibitem[Casali et~al.(2013)Casali, Gosseries, Rosanova, Boly, Sarasso, Casali, Casarotto, Bruno, Laureys, Tononi, and Massimini]{casali2013}
+A.~G. Casali, O.~Gosseries, M.~Rosanova, M.~Boly, S.~Sarasso, K.~R. Casali, S.~Casarotto, M.-A. Bruno, S.~Laureys, G.~Tononi, and M.~Massimini.
+\newblock A theoretically based index of consciousness independent of sensory processing and behavior.
+\newblock \emph{Science Translational Medicine}, 5\penalty0 (198):\penalty0 198ra105, 2013.
+\newblock \doi{10.1126/scitranslmed.3006294}.
+
+\bibitem[Caviola et~al.(2025)Caviola, Sebo, and Birch]{caviola2025}
+L.~Caviola, J.~Sebo, and J.~Birch.
+\newblock What will society think about {AI} consciousness? {Lessons} from the animal case.
+\newblock \emph{Trends in Cognitive Sciences}, 29\penalty0 (8):\penalty0 681--683, 2025.
+\newblock \doi{10.1016/j.tics.2025.06.002}.
+
+\bibitem[Chalmers(1995)]{chalmers1995}
+D.~J. Chalmers.
+\newblock Facing up to the problem of consciousness.
+\newblock \emph{Journal of Consciousness Studies}, 2\penalty0 (3):\penalty0 200--219, 1995.
+\newblock URL \url{https://consc.net/papers/facing.pdf}.
+
+\bibitem[Chalmers(1996)]{chalmers1996}
+D.~J. Chalmers.
+\newblock \emph{The conscious mind: {In} search of a fundamental theory}.
+\newblock Oxford University Press, 1996.
+
+\bibitem[Chalmers(2003)]{chalmers2003}
+D.~J. Chalmers.
+\newblock Consciousness and its place in nature.
+\newblock In S.~Stich and T.~Warfield, editors, \emph{The Blackwell guide to philosophy of mind}, pages 102--142. Blackwell, 2003.
+
+\bibitem[Chalmers(2006)]{chalmers2006}
+D.~J. Chalmers.
+\newblock Strong and weak emergence.
+\newblock In P.~Clayton and P.~Davies, editors, \emph{The re-emergence of emergence: The emergentist hypothesis from science to religion}, pages 244--254. Oxford University Press, 2006.
+
+\bibitem[Chalmers(2015)]{chalmers2015}
+D.~J. Chalmers.
+\newblock Panpsychism and panprotopsychism.
+\newblock In T.~Alter and Y.~Nagasawa, editors, \emph{Consciousness in the physical world: Perspectives on Russellian monism}, pages 246--276. Oxford University Press, 2015.
+
+\bibitem[Chalmers(2016)]{chalmers2016}
+D.~J. Chalmers.
+\newblock The combination problem for panpsychism.
+\newblock In G.~Br{\"u}ntrup and L.~Jaskolla, editors, \emph{Panpsychism: Contemporary perspectives}, pages 179--214. Oxford University Press, 2016.
+
+\bibitem[Chalmers(2018)]{chalmers2018}
+D.~J. Chalmers.
+\newblock The meta-problem of consciousness.
+\newblock \emph{Journal of Consciousness Studies}, 25\penalty0 (9--10):\penalty0 6--61, 2018.
+
+\bibitem[Chalmers(2023)]{chalmers2023}
+D.~J. Chalmers.
+\newblock Could a large language model be conscious?, 2023.
+\newblock URL \url{https://doi.org/10.48550/arXiv.2303.07103}.
+
+\bibitem[Chalmers(2026)]{chalmers2026}
+D.~J. Chalmers.
+\newblock What we talk to when we talk to language models.
+\newblock PhilArchive, 2026.
+
+\bibitem[Changeux and Lou(2011)]{changeux2011}
+J.-P. Changeux and H.~C. Lou.
+\newblock Emergent pharmacology of conscious experience: {New} perspectives in substance addiction.
+\newblock \emph{FASEB Journal}, 25\penalty0 (7):\penalty0 2098--2108, 2011.
+\newblock \doi{10.1096/fj.11-0702ufm}.
+
+\bibitem[Chella(2023)]{chella2023}
+A.~Chella.
+\newblock Artificial consciousness: {The} missing ingredient for ethical {AI}?
+\newblock \emph{Frontiers in Robotics and AI}, 10:\penalty0 1270460, 2023.
+\newblock \doi{10.3389/frobt.2023.1270460}.
+
+\bibitem[Chen et~al.(2025{\natexlab{a}})Chen, Arditi, Sleight, Evans, and Lindsey]{chen2025}
+R.~Chen, A.~Arditi, H.~Sleight, O.~Evans, and J.~Lindsey.
+\newblock Persona vectors: {Monitoring} and controlling character traits in language models, 2025{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2507.21509}.
+
+\bibitem[Chen et~al.(2025{\natexlab{b}})Chen, Ma, Yu, Zhang, Zhao, and Lu]{chen2025a}
+S.~Chen, S.~Ma, S.~Yu, H.~Zhang, S.~Zhao, and C.~Lu.
+\newblock Exploring consciousness in {LLMs}: {A} systematic survey of theories, implementations, and frontier risks, 2025{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2505.19806}.
+
+\bibitem[Chrisley(2008)]{chrisley2008}
+R.~Chrisley.
+\newblock Philosophical foundations of artificial consciousness.
+\newblock \emph{Artificial Intelligence in Medicine}, 44\penalty0 (2):\penalty0 119--137, 2008.
+\newblock \doi{10.1016/j.artmed.2008.07.011}.
+
+\bibitem[Churchland(1981)]{churchland1981}
+P.~M. Churchland.
+\newblock Eliminative materialism and the propositional attitudes.
+\newblock \emph{Journal of Philosophy}, 78\penalty0 (2):\penalty0 67--90, 1981.
+\newblock \doi{10.2307/2025900}.
+
+\bibitem[Ciaunica et~al.(2021)Ciaunica, Constant, Preissl, and Fotopoulou]{ciaunica2021}
+A.~Ciaunica, A.~Constant, H.~Preissl, and K.~Fotopoulou.
+\newblock The first prior: {From} co-embodiment to co-homeostasis in early life.
+\newblock \emph{Consciousness and Cognition}, 91:\penalty0 103117, 2021.
+\newblock \doi{10.1016/j.concog.2021.103117}.
+
+\bibitem[Ciaunica et~al.(2022)Ciaunica, Seth, Limanowski, Hesp, and Friston]{ciaunica2022}
+A.~Ciaunica, A.~Seth, J.~Limanowski, C.~Hesp, and K.~J. Friston.
+\newblock I overthink—therefore i am not: An active inference account of altered sense of self and agency in depersonalisation disorder.
+\newblock \emph{Consciousness and Cognition}, 101:\penalty0 103320, 2022.
+\newblock ISSN 1053-8100.
+\newblock \doi{https://doi.org/10.1016/j.concog.2022.103320}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S1053810022000526}.
+
+\bibitem[Clark(1997)]{clark1997}
+A.~Clark.
+\newblock \emph{Being there: {Putting} brain, body, and world together again}.
+\newblock MIT Press, 1997.
+
+\bibitem[Clowes and Seth(2008)]{clowes2008}
+R.~W. Clowes and A.~K. Seth.
+\newblock Axioms, properties and criteria: {Roles} for synthesis in the science of consciousness.
+\newblock \emph{Artificial Intelligence in Medicine}, 44\penalty0 (2):\penalty0 91--104, 2008.
+\newblock \doi{10.1016/j.artmed.2008.07.009}.
+
+\bibitem[Copeland(2020)]{copeland2020}
+B.~J. Copeland.
+\newblock The {Church–Turing} thesis.
+\newblock In E.~N. Zalta, editor, \emph{The {Stanford} encyclopedia of philosophy}. Stanford University, summer 2020 edition, 2020.
+\newblock URL \url{https://plato.stanford.edu/entries/church-turing/}.
+
+\bibitem[Damasio(1994)]{damasio1994}
+A.~R. Damasio.
+\newblock \emph{Descartes' error: {Emotion}, reason, and the human brain}.
+\newblock G. P. Putnam's Sons, New York, 1994.
+
+\bibitem[Damasio(1999)]{damasio1999}
+A.~R. Damasio.
+\newblock \emph{The feeling of what happens: {Body} and emotion in the making of consciousness}.
+\newblock Harcourt, 1999.
+
+\bibitem[Davidson(1970)]{davidson1970}
+D.~Davidson.
+\newblock Mental events.
+\newblock In L.~Foster and J.~W. Swanson, editors, \emph{Experience and theory}, pages 79--101. University of Massachusetts Press, 1970.
+
+\bibitem[Deane(2021)]{deane2021}
+G.~Deane.
+\newblock Consciousness in active inference: {Deep} self-models, other minds, and the challenge of psychedelic-induced ego-dissolution.
+\newblock \emph{Neuroscience of Consciousness}, 2021\penalty0 (2):\penalty0 niab024, 2021.
+\newblock \doi{10.1093/nc/niab024}.
+
+\bibitem[Dehaene et~al.(2011)Dehaene, Changeux, and Naccache]{dehaene2011}
+S.~Dehaene, J.-P. Changeux, and L.~Naccache.
+\newblock The global neuronal workspace model of conscious access: {From} neuronal architectures to clinical applications.
+\newblock In S.~Dehaene and Y.~Christen, editors, \emph{Characterizing consciousness: {From} cognition to the clinic?}, pages 55--84. Springer, 2011.
+\newblock \doi{10.1007/978-3-642-18015-6_4}.
+
+\bibitem[Dehaene et~al.(2017)Dehaene, Lau, and Kouider]{dehaene2017}
+S.~Dehaene, H.~Lau, and S.~Kouider.
+\newblock What is consciousness, and could machines have it?
+\newblock \emph{Science}, 358\penalty0 (6362):\penalty0 486--492, 2017.
+\newblock \doi{10.1126/science.aan8871}.
+
+\bibitem[Dennett(1987)]{dennett1987}
+D.~C. Dennett.
+\newblock \emph{The intentional stance}.
+\newblock MIT Press, 1987.
+
+\bibitem[Dennett(2001)]{dennett2001}
+D.~C. Dennett.
+\newblock Are we explaining consciousness yet?
+\newblock \emph{Cognition}, 79\penalty0 (1--2):\penalty0 221--237, 2001.
+\newblock \doi{10.1016/S0010-0277(00)00130-X}.
+
+\bibitem[Descartes(1996)]{descartes1996}
+R.~Descartes.
+\newblock \emph{Meditations on first philosophy: {With} selections from the objections and replies}.
+\newblock Cambridge University Press, 1996.
+\newblock (J. Cottingham, Trans.) (Original work published 1641).
+
+\bibitem[Deutsch(1985)]{deutsch1985}
+D.~Deutsch.
+\newblock Quantum theory, the {Church–Turing} principle and the universal quantum computer.
+\newblock \emph{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}, 400\penalty0 (1818):\penalty0 97--117, 1985.
+\newblock \doi{10.1098/rspa.1985.0070}.
+
+\bibitem[Doerig et~al.(2021)Doerig, Schurger, and Herzog]{doerig2021}
+A.~Doerig, A.~Schurger, and M.~H. Herzog.
+\newblock Hard criteria for empirical theories of consciousness.
+\newblock \emph{Cognitive Neuroscience}, 12\penalty0 (2):\penalty0 41--62, 2021.
+\newblock \doi{10.1080/17588928.2020.1772214}.
+
+\bibitem[Dossa et~al.(2024)Dossa, Arulkumaran, Juliani, Sasai, and Kanai]{dossa2024}
+R.~F.~J. Dossa, K.~Arulkumaran, A.~Juliani, S.~Sasai, and R.~Kanai.
+\newblock Design and evaluation of a global workspace agent embodied in a realistic multimodal environment.
+\newblock \emph{Frontiers in Computational Neuroscience}, 18:\penalty0 1352685, 2024.
+\newblock \doi{10.3389/fncom.2024.1352685}.
+
+\bibitem[Dung and Kersten(2025)]{dung2025}
+L.~Dung and L.~Kersten.
+\newblock Implementing artificial consciousness.
+\newblock \emph{Mind \& Language}, 40\penalty0 (3):\penalty0 285--305, 2025.
+\newblock \doi{10.1111/mila.12532}.
+
+\bibitem[Elamrani(2025)]{elamrani2025}
+A.~Elamrani.
+\newblock Introduction to artificial consciousness: {History}, current trends and ethical challenges, 2025.
+\newblock URL \url{https://arxiv.org/abs/2503.05823}.
+
+\bibitem[Elamrani and Yampolskiy(2019)]{elamrani2019}
+A.~Elamrani and R.~V. Yampolskiy.
+\newblock Reviewing tests for machine consciousness.
+\newblock \emph{Journal of Consciousness Studies}, 26\penalty0 (5--6):\penalty0 35--64, 2019.
+
+\bibitem[{Elisabeth of Bohemia} and Descartes(2007)]{elisabethofbohemia2007}
+{Elisabeth of Bohemia} and R.~Descartes.
+\newblock \emph{The correspondence between {Princess} {Elisabeth} of {Bohemia} and {René} {Descartes}}.
+\newblock University of Chicago Press, 2007.
+\newblock (L. Shapiro, Ed. \& Trans.) (Original correspondence 1643).
+
+\bibitem[Findlay et~al.(2024)Findlay, Marshall, Albantakis, David, Mayner, Koch, and Tononi]{findlay2024}
+G.~Findlay, W.~Marshall, L.~Albantakis, I.~David, W.~G.~P. Mayner, C.~Koch, and G.~Tononi.
+\newblock Dissociating artificial intelligence from artificial consciousness, 2024.
+\newblock URL \url{https://arxiv.org/abs/2412.04571}.
+
+\bibitem[Fodor(1974)]{fodor1974}
+J.~A. Fodor.
+\newblock Special sciences (or: {The} disunity of science as a working hypothesis).
+\newblock \emph{Synthese}, 28\penalty0 (2):\penalty0 97--115, 1974.
+\newblock \doi{10.1007/BF00485230}.
+
+\bibitem[Frankish(2016)]{frankish2016}
+K.~Frankish.
+\newblock Illusionism as a theory of consciousness.
+\newblock \emph{Journal of Consciousness Studies}, 23\penalty0 (11--12):\penalty0 11--39, 2016.
+
+\bibitem[Friston(2018)]{friston2018}
+K.~Friston.
+\newblock Am {I} self-conscious? ({Or} does self-organization entail self-consciousness?).
+\newblock \emph{Frontiers in Psychology}, 9:\penalty0 579, 2018.
+\newblock \doi{10.3389/fpsyg.2018.00579}.
+
+\bibitem[Fuchs(2026)]{fuchs2026}
+T.~Fuchs.
+\newblock The feeling of being alive: phenomenology and biology.
+\newblock \emph{Phenomenology and the Cognitive Sciences}, 2026.
+\newblock \doi{10.1007/s11097-026-10145-3}.
+
+\bibitem[Gamez(2008)]{gamez2008}
+D.~Gamez.
+\newblock Progress in machine consciousness.
+\newblock \emph{Consciousness and Cognition}, 17\penalty0 (3):\penalty0 887--910, 2008.
+\newblock \doi{10.1016/j.concog.2007.04.005}.
+
+\bibitem[Gibson(1979)]{gibson1979}
+J.~J. Gibson.
+\newblock \emph{The ecological approach to visual perception}.
+\newblock Houghton Mifflin, 1979.
+
+\bibitem[Godfrey-Smith(2024)]{godfreysmith2024}
+P.~Godfrey-Smith.
+\newblock Inferring consciousness in phylogenetically distant organisms.
+\newblock \emph{Journal of Cognitive Neuroscience}, 36\penalty0 (8):\penalty0 1660--1666, 2024.
+\newblock \doi{10.1162/jocn_a_02158}.
+
+\bibitem[Goff(2017)]{goff2017}
+P.~Goff.
+\newblock \emph{Consciousness and fundamental reality}.
+\newblock Oxford University Press, 2017.
+
+\bibitem[Goldstein and Kirk-Giannini(2024)]{goldstein2024}
+S.~Goldstein and C.~D. Kirk-Giannini.
+\newblock A case for {AI} consciousness: {Language} agents and global workspace theory, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.11407}.
+
+\bibitem[Goldstein and Kirk-Giannini(2025)]{goldstein2025}
+S.~Goldstein and C.~D. Kirk-Giannini.
+\newblock Are current al systems capable of well-being?
+\newblock \emph{Asian Journal of Philosophy}, 4\penalty0 (1):\penalty0 25, 2025.
+\newblock \doi{10.1007/s44204-025-00246-2}.
+
+\bibitem[Goyal et~al.(2022)Goyal, Didolkar, Lamb, Badola, Ke, Rahaman, Binas, Blundell, Mozer, and Bengio]{goyal2022}
+A.~Goyal, A.~Didolkar, A.~Lamb, K.~Badola, N.~R. Ke, N.~Rahaman, J.~Binas, C.~Blundell, M.~Mozer, and Y.~Bengio.
+\newblock Coordination among neural modules through a shared global workspace.
+\newblock In \emph{International Conference on Learning Representations (ICLR)}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2103.01197}.
+
+\bibitem[Graziano(2017)]{graziano2017}
+M.~S.~A. Graziano.
+\newblock The attention schema theory: {A} foundation for engineering artificial consciousness.
+\newblock \emph{Frontiers in Robotics and AI}, 4:\penalty0 60, 2017.
+\newblock \doi{10.3389/frobt.2017.00060}.
+
+\bibitem[Graziano(2022)]{graziano2022}
+M.~S.~A. Graziano.
+\newblock A conceptual framework for consciousness.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 119\penalty0 (18):\penalty0 e2116933119, 2022.
+\newblock \doi{10.1073/pnas.2116933119}.
+
+\bibitem[Graziano and Webb(2015)]{webb2015}
+M.~S.~A. Graziano and T.~W. Webb.
+\newblock The attention schema theory: {A} mechanistic account of subjective awareness.
+\newblock \emph{Frontiers in Psychology}, 6:\penalty0 500, 2015.
+\newblock \doi{10.3389/fpsyg.2015.00500}.
+
+\bibitem[Graziano et~al.(2020)Graziano, Guterstam, Bio, and Wilterson]{graziano2020}
+M.~S.~A. Graziano, A.~Guterstam, B.~J. Bio, and A.~I. Wilterson.
+\newblock Toward a standard model of consciousness: {Reconciling} the attention schema, global workspace, higher-order thought, and illusionist theories.
+\newblock \emph{Cognitive Neuropsychology}, 37\penalty0 (3--4):\penalty0 155--172, 2020.
+\newblock \doi{10.1080/02643294.2019.1670630}.
+
+\bibitem[Gurnee and Tegmark(2023)]{gurnee2023}
+W.~Gurnee and M.~Tegmark.
+\newblock Language models represent space and time, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.02207}.
+
+\bibitem[Gurnee et~al.(2026)Gurnee, Sofroniew, Pearce, Piotrowski, Kauvar, Chen, Soligo, Bogdan, Ong, Wang, Thompson, Abrahams, Kantamneni, Ameisen, Batson, and Lindsey]{gurnee2026}
+W.~Gurnee, N.~Sofroniew, A.~Pearce, M.~Piotrowski, I.~Kauvar, R.~Chen, A.~Soligo, P.~Bogdan, E.~Ong, R.~Wang, B.~Thompson, D.~Abrahams, S.~Kantamneni, E.~Ameisen, J.~Batson, and J.~Lindsey.
+\newblock Verbalizable representations form a global workspace in language models.
+\newblock Transformer Circuits Thread, 2026.
+\newblock URL \url{https://transformer-circuits.pub/2026/workspace/index.html}.
+
+\bibitem[Hagan et~al.(2002)Hagan, Hameroff, and Tuszynski]{hagan2002}
+S.~Hagan, S.~R. Hameroff, and J.~A. Tuszynski.
+\newblock Quantum computation in brain microtubules: {Decoherence} and biological feasibility.
+\newblock \emph{Physical Review E}, 65\penalty0 (6):\penalty0 061901, 2002.
+\newblock \doi{10.1103/PhysRevE.65.061901}.
+
+\bibitem[Hameroff and Penrose(2014)]{hameroff2014}
+S.~Hameroff and R.~Penrose.
+\newblock Consciousness in the universe: {A} review of the "{Orch} {OR}" theory.
+\newblock \emph{Physics of Life Reviews}, 11\penalty0 (1):\penalty0 39--78, 2014.
+\newblock \doi{10.1016/j.plrev.2013.08.002}.
+
+\bibitem[Hempel(1935)]{hempel1935}
+C.~G. Hempel.
+\newblock Analyse logique de la psychologie.
+\newblock \emph{Revue de Synthèse}, 10\penalty0 (1):\penalty0 27--42, 1935.
+
+\bibitem[Heyes(2018)]{heyes2018}
+C.~Heyes.
+\newblock \emph{Cognitive gadgets: {The} cultural evolution of thinking}.
+\newblock Harvard University Press, 2018.
+
+\bibitem[Hoel(2026)]{hoel2026}
+E.~Hoel.
+\newblock A disproof of large language model consciousness: {The} necessity of continual learning for consciousness, 2026.
+\newblock URL \url{https://arxiv.org/abs/2512.12802}.
+
+\bibitem[Hoffman and Prakash(2014)]{hoffman2014}
+D.~D. Hoffman and C.~Prakash.
+\newblock Objects of consciousness.
+\newblock \emph{Frontiers in Psychology}, 5:\penalty0 577, 2014.
+\newblock \doi{10.3389/fpsyg.2014.00577}.
+
+\bibitem[Hofstadter(2007)]{hofstadter2007}
+D.~R. Hofstadter.
+\newblock \emph{I am a strange loop}.
+\newblock Basic Books, 2007.
+
+\bibitem[Hohwy(2022)]{hohwy2022}
+J.~Hohwy.
+\newblock Conscious self-evidencing.
+\newblock \emph{Review of Philosophy and Psychology}, 13\penalty0 (3):\penalty0 809--828, 2022.
+\newblock \doi{10.1007/s13164-021-00578-x}.
+
+\bibitem[Jackson(1998)]{jackson1998}
+F.~Jackson.
+\newblock \emph{From metaphysics to ethics: {A} defence of conceptual analysis}.
+\newblock Oxford University Press, 1998.
+
+\bibitem[Juliani et~al.(2022)Juliani, Kanai, and Sasai]{juliani2022}
+A.~Juliani, R.~Kanai, and S.~S. Sasai.
+\newblock The perceiver architecture is a functional global workspace.
+\newblock In \emph{Proceedings of the Annual Meeting of the Cognitive Science Society}, volume~44, 2022.
+
+\bibitem[Kanai et~al.(2025)Kanai, Takatsuki, and Fujisawa]{kanai2025}
+R.~Kanai, R.~Takatsuki, and I.~Fujisawa.
+\newblock Meta-representations as representations of processes.
+\newblock \emph{Neuroscience of Consciousness}, 2025\penalty0 (1):\penalty0 niaf038, 2025.
+\newblock \doi{10.1093/nc/niaf038}.
+
+\bibitem[Kastrup(2019)]{kastrup2019}
+B.~Kastrup.
+\newblock \emph{The idea of the world: {A} multi-disciplinary argument for the mental nature of reality}.
+\newblock Iff Books, 2019.
+
+\bibitem[Kim(1998)]{kim1998}
+J.~Kim.
+\newblock \emph{Mind in a physical world: {An} essay on the mind–body problem and mental causation}.
+\newblock MIT Press, 1998.
+\newblock \doi{10.7551/mitpress/4629.001.0001}.
+
+\bibitem[Kleiner and Hoel(2021)]{kleinerhoel2021}
+J.~Kleiner and E.~Hoel.
+\newblock Falsification and consciousness.
+\newblock \emph{Neuroscience of Consciousness}, 2021\penalty0 (1):\penalty0 niab001, 01 2021.
+\newblock ISSN 2057-2107.
+\newblock \doi{10.1093/nc/niab001}.
+\newblock URL \url{https://doi.org/10.1093/nc/niab001}.
+
+\bibitem[Kleiner and Ludwig(2024)]{kleiner2024}
+J.~Kleiner and T.~Ludwig.
+\newblock The case for neurons: {A} no-go theorem for consciousness on a chip.
+\newblock \emph{Neuroscience of Consciousness}, 2024\penalty0 (1):\penalty0 niae037, 2024.
+\newblock \doi{10.1093/nc/niae037}.
+
+\bibitem[Kriegel(2009)]{kriegel2009}
+U.~Kriegel.
+\newblock \emph{Subjective consciousness: {A} self-representational theory}.
+\newblock Oxford University Press, 2009.
+
+\bibitem[Kringelbach et~al.(2026)Kringelbach, Rosas, Laukkonen, Chandaria, Sanz~Perl, and Deco]{kringelbach2026}
+M.~L. Kringelbach, F.~Rosas, R.~Laukkonen, S.~Chandaria, Y.~Sanz~Perl, and G.~Deco.
+\newblock The entangled loop: {Emotion}, quantum-like interference and hierarchy in the architecture of consciousness.
+\newblock PsyArXiv preprint, 2026.
+\newblock URL \url{https://doi.org/10.31234/osf.io/besw9_v2}.
+
+\bibitem[Lamme(2010)]{lamme2010}
+V.~A.~F. Lamme.
+\newblock How neuroscience will change our view on consciousness.
+\newblock \emph{Cognitive Neuroscience}, 1\penalty0 (3):\penalty0 204--220, 2010.
+\newblock \doi{10.1080/17588921003731586}.
+
+\bibitem[Lamme(2018)]{lamme2018}
+V.~A.~F. Lamme.
+\newblock Challenges for theories of consciousness: seeing or knowing, the missing ingredient and how to deal with panpsychism.
+\newblock \emph{Philosophical Transactions of the Royal Society B}, 373\penalty0 (1755):\penalty0 20170344, 2018.
+\newblock \doi{10.1098/rstb.2017.0344}.
+
+\bibitem[Lamme and Roelfsema(2000)]{lamme2000}
+V.~A.~F. Lamme and P.~R. Roelfsema.
+\newblock The distinct modes of vision offered by feedforward and recurrent processing.
+\newblock \emph{Trends in Neurosciences}, 23\penalty0 (11):\penalty0 571--579, 2000.
+\newblock \doi{10.1016/S0166-2236(00)01657-X}.
+
+\bibitem[Lane(2022)]{lane2022}
+N.~Lane.
+\newblock \emph{Transformer: {The} deep chemistry of life and death}.
+\newblock Profile Books, 2022.
+
+\bibitem[Laukkonen et~al.(2025)Laukkonen, Friston, and Chandaria]{laukkonen2025}
+R.~E. Laukkonen, K.~J. Friston, and S.~Chandaria.
+\newblock A beautiful loop: {An} active inference theory of consciousness.
+\newblock \emph{Neuroscience \& Biobehavioral Reviews}, 176:\penalty0 106296, 2025.
+\newblock \doi{10.1016/j.neubiorev.2025.106296}.
+
+\bibitem[Laureys et~al.(2005)Laureys, Pellas, Van~Eeckhout, Ghorbel, Schnakers, Perrin, Berr{\'e}, Faymonville, Pantke, Damas, Lamy, Moonen, and Goldman]{laureys2005}
+S.~Laureys, F.~Pellas, P.~Van~Eeckhout, S.~Ghorbel, C.~Schnakers, F.~Perrin, J.~Berr{\'e}, M.-E. Faymonville, K.-H. Pantke, F.~Damas, M.~Lamy, G.~Moonen, and S.~Goldman.
+\newblock The locked-in syndrome: {What} is it like to be conscious but paralyzed and voiceless?
+\newblock \emph{Progress in Brain Research}, 150:\penalty0 495--511, 2005.
+\newblock \doi{10.1016/S0079-6123(05)50034-7}.
+
+\bibitem[LeDoux(1996)]{ledoux1996}
+J.~E. LeDoux.
+\newblock \emph{The emotional brain}.
+\newblock Simon and Schuster, New York, 1996.
+
+\bibitem[Li(2025)]{li2025}
+J.~Li.
+\newblock Can "consciousness" be observed from large language model ({LLM}) internal states? {Dissecting} {LLM} representations obtained from {Theory} of {Mind} test with {Integrated} {Information} {Theory} and {Span} {Representation} analysis.
+\newblock \emph{Natural Language Processing Journal}, 12:\penalty0 100163, 2025.
+\newblock \doi{10.1016/j.nlp.2025.100163}.
+
+\bibitem[Li et~al.(2022)Li, Hopkins, Bau, Vi{\'e}gas, Pfister, and Wattenberg]{li2022}
+K.~Li, A.~K. Hopkins, D.~Bau, F.~Vi{\'e}gas, H.~Pfister, and M.~Wattenberg.
+\newblock Emergent world representations: {Exploring} a sequence model trained on a synthetic task, 2022.
+\newblock URL \url{https://arxiv.org/abs/2210.13382}.
+
+\bibitem[Lindsey(2026)]{lindsey2026}
+J.~Lindsey.
+\newblock Emergent introspective awareness in large language models, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.01828}.
+
+\bibitem[Long et~al.(2024)Long, Sebo, Butlin, Finlinson, Fish, Harding, Pfau, Sims, Birch, and Chalmers]{long2024}
+R.~Long, J.~Sebo, P.~Butlin, K.~Finlinson, K.~Fish, J.~Harding, J.~Pfau, T.~Sims, J.~Birch, and D.~Chalmers.
+\newblock Taking {AI} welfare seriously, 2024.
+\newblock URL \url{https://arxiv.org/abs/2411.00986}.
+
+\bibitem[Long et~al.(2025)Long, Sebo, and Sims]{long2025}
+R.~Long, J.~Sebo, and T.~Sims.
+\newblock Is there a tension between {AI} safety and {AI} welfare?
+\newblock \emph{Philosophical Studies}, 182\penalty0 (7):\penalty0 2005--2033, 2025.
+\newblock \doi{10.1007/s11098-025-02302-2}.
+
+\bibitem[Low et~al.(2012)Low, Panksepp, Reiss, Edelman, Van~Swinderen, and Koch]{low2012}
+P.~Low, J.~Panksepp, D.~Reiss, D.~Edelman, B.~Van~Swinderen, and C.~Koch.
+\newblock The {Cambridge} declaration on consciousness.
+\newblock Cambridge University, 2012.
+\newblock URL \url{https://fcmconference.org/img/CambridgeDeclarationOnConsciousness.pdf}.
+
+\bibitem[Lu et~al.(2026)Lu, Gallagher, Michala, Fish, and Lindsey]{lu2026}
+C.~Lu, J.~Gallagher, J.~Michala, K.~Fish, and J.~Lindsey.
+\newblock The assistant axis: {Situating} and stabilizing the default persona of language models, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.10387}.
+
+\bibitem[Luppi et~al.(2022)Luppi, Mediano, Rosas, Holland, Fryer, O'Brien, Rowe, Menon, Bor, and Stamatakis]{luppi2022}
+A.~I. Luppi, P.~A.~M. Mediano, F.~E. Rosas, N.~Holland, T.~D. Fryer, J.~T. O'Brien, J.~B. Rowe, D.~K. Menon, D.~Bor, and E.~A. Stamatakis.
+\newblock A synergistic core for human brain evolution and cognition.
+\newblock \emph{Nature Neuroscience}, 25\penalty0 (6):\penalty0 771--782, 2022.
+\newblock \doi{10.1038/s41593-022-01070-0}.
+
+\bibitem[Luppi et~al.(2024)Luppi, Mediano, Rosas, Allanson, Pickard, Carhart-Harris, Williams, Craig, Finoia, Owen, Naci, Menon, Bor, and Stamatakis]{luppi2024}
+A.~I. Luppi, P.~A.~M. Mediano, F.~E. Rosas, J.~Allanson, J.~Pickard, R.~L. Carhart-Harris, G.~B. Williams, M.~M. Craig, P.~Finoia, A.~M. Owen, L.~Naci, D.~K. Menon, D.~Bor, and E.~A. Stamatakis.
+\newblock A synergistic workspace for human consciousness revealed by {Integrated} {Information} {Decomposition}.
+\newblock \emph{eLife}, 12:\penalty0 RP88173, 2024.
+\newblock \doi{10.7554/eLife.88173}.
+
+\bibitem[Macar et~al.(2026)Macar, Yang, Wang, Wallich, Ameisen, and Lindsey]{macar2026}
+U.~Macar, L.~Yang, A.~Wang, P.~Wallich, E.~Ameisen, and J.~Lindsey.
+\newblock Mechanisms of introspective awareness, 2026.
+\newblock URL \url{https://arxiv.org/abs/2603.21396}.
+
+\bibitem[Marr(1982)]{marr1982}
+D.~Marr.
+\newblock \emph{Vision: {A} computational investigation into the human representation and processing of visual information}.
+\newblock W. H. Freeman, 1982.
+
+\bibitem[Mashour et~al.(2020)Mashour, Roelfsema, Changeux, and Dehaene]{mashour2020}
+G.~A. Mashour, P.~Roelfsema, J.-P. Changeux, and S.~Dehaene.
+\newblock Conscious processing and the global neuronal workspace hypothesis.
+\newblock \emph{Neuron}, 105\penalty0 (5):\penalty0 776--798, 2020.
+\newblock \doi{10.1016/j.neuron.2020.01.026}.
+
+\bibitem[McClelland(2025)]{mcclelland2025}
+T.~McClelland.
+\newblock Agnosticism about artificial consciousness.
+\newblock \emph{Mind \& Language}, 41\penalty0 (4):\penalty0 482--502, 2025.
+\newblock \doi{10.1111/mila.70010}.
+
+\bibitem[McFadden(2020)]{mcfadden2020}
+J.~McFadden.
+\newblock Integrating information in the brain's {EM} field: {The} cemi field theory of consciousness.
+\newblock \emph{Neuroscience of Consciousness}, 2020\penalty0 (1):\penalty0 niaa016, 2020.
+\newblock \doi{10.1093/nc/niaa016}.
+
+\bibitem[Mediano et~al.(2022)Mediano, Rosas, Bor, Seth, and Barrett]{mediano2022}
+P.~A.~M. Mediano, F.~E. Rosas, D.~Bor, A.~K. Seth, and A.~B. Barrett.
+\newblock The strength of weak integrated information theory.
+\newblock \emph{Trends in Cognitive Sciences}, 26\penalty0 (8):\penalty0 646--655, 2022.
+\newblock \doi{10.1016/j.tics.2022.04.008}.
+
+\bibitem[Metzinger(2004)]{metzinger2004}
+T.~Metzinger.
+\newblock \emph{Being no one: {The} self-model theory of subjectivity}.
+\newblock MIT Press, 2004.
+
+\bibitem[Metzinger(2021)]{metzinger2021}
+T.~Metzinger.
+\newblock Artificial suffering: {An} argument for a global moratorium on synthetic phenomenology.
+\newblock \emph{Journal of Artificial Intelligence and Consciousness}, 8\penalty0 (1):\penalty0 43--66, 2021.
+\newblock \doi{10.1142/S270507852150003X}.
+
+\bibitem[Milinkovic and Aru(2026)]{milinkovic2026}
+B.~Milinkovic and J.~Aru.
+\newblock On biological and artificial consciousness: {A} case for biological computationalism.
+\newblock \emph{Neuroscience \& Biobehavioral Reviews}, 181:\penalty0 106524, 2026.
+\newblock \doi{10.1016/j.neubiorev.2025.106524}.
+
+\bibitem[Millikan(1984)]{millikan1984}
+R.~G. Millikan.
+\newblock \emph{Language, thought, and other biological categories: {New} foundations for realism}.
+\newblock MIT Press, 1984.
+
+\bibitem[Nagel(1974)]{nagel1974}
+T.~Nagel.
+\newblock What is it like to be a bat?
+\newblock \emph{Philosophical Review}, 83\penalty0 (4):\penalty0 435--450, 1974.
+\newblock \doi{10.2307/2183914}.
+
+\bibitem[Nanda(2026)]{nanda2026}
+N.~Nanda.
+\newblock A review of {Anthropic's} global workspace paper.
+\newblock LessWrong, 2026.
+\newblock URL \url{https://www.lesswrong.com/posts/zFJ3ZdQwrTWE9jT5S/a-review-of-anthropic-s-global-workspace-paper}.
+
+\bibitem[Nanda et~al.(2023)Nanda, Lee, and Wattenberg]{nanda2023}
+N.~Nanda, A.~Lee, and M.~Wattenberg.
+\newblock Emergent linear representations in world models of self-supervised sequence models, 2023.
+\newblock URL \url{https://arxiv.org/abs/2309.00941}.
+
+\bibitem[Neven et~al.(2024)Neven, Zalcman, Read, Kosik, van~der Molen, Bouwmeester, Bodnia, Turin, and Koch]{neven2024}
+H.~Neven, A.~Zalcman, P.~Read, K.~S. Kosik, T.~van~der Molen, D.~Bouwmeester, E.~Bodnia, L.~Turin, and C.~Koch.
+\newblock Testing the conjecture that quantum processes create conscious experience.
+\newblock \emph{Entropy}, 26\penalty0 (6):\penalty0 460, 2024.
+\newblock \doi{10.3390/e26060460}.
+
+\bibitem[No{\"e}(2004)]{noe2004}
+A.~No{\"e}.
+\newblock \emph{Action in perception}.
+\newblock MIT Press, 2004.
+
+\bibitem[Panksepp(1998)]{panksepp1998}
+J.~Panksepp.
+\newblock \emph{Affective neuroscience: {The} foundations of human and animal emotions}.
+\newblock Oxford University Press, 1998.
+
+\bibitem[Pearl(1988)]{pearl1988}
+J.~Pearl.
+\newblock \emph{Probabilistic reasoning in intelligent systems: {Networks} of plausible inference}.
+\newblock Morgan Kaufmann, 1988.
+
+\bibitem[Peiris(2026)]{peiris2026}
+H.~V. Peiris.
+\newblock Functional emotions or situational contexts? {A} discriminating test from the {Mythos} preview system card, 2026.
+\newblock URL \url{https://arxiv.org/abs/2604.13466}.
+
+\bibitem[Peters(2026)]{peters2026}
+M.~A.~K. Peters.
+\newblock How to discover the natural kind of consciousness -- and test for its presence -- under population shifts.
+\newblock PsyArXiv preprint, 2026.
+\newblock URL \url{https://osf.io/preprints/psyarxiv/hxcyf_v3}.
+
+\bibitem[Pfeifer and Bongard(2006)]{pfeifer2006}
+R.~Pfeifer and J.~Bongard.
+\newblock \emph{How the body shapes the way we think: {A} new view of intelligence}.
+\newblock MIT Press, 2006.
+
+\bibitem[Piccinini(2007)]{piccinini2007}
+G.~Piccinini.
+\newblock Computing mechanisms.
+\newblock \emph{Philosophy of Science}, 74\penalty0 (4):\penalty0 501--526, 2007.
+\newblock \doi{10.1086/522851}.
+
+\bibitem[Piccinini(2011)]{piccinini2011}
+G.~Piccinini.
+\newblock The physical {Church–Turing} thesis: {Modest} or bold?
+\newblock \emph{British Journal for the Philosophy of Science}, 62\penalty0 (4):\penalty0 733--769, 2011.
+\newblock \doi{10.1093/bjps/axr016}.
+
+\bibitem[Place(1956)]{place1956}
+U.~T. Place.
+\newblock Is consciousness a brain process?
+\newblock \emph{British Journal of Psychology}, 47\penalty0 (1):\penalty0 44--50, 1956.
+\newblock \doi{10.1111/j.2044-8295.1956.tb00560.x}.
+
+\bibitem[Polger and Shapiro(2016)]{polger2016}
+T.~W. Polger and L.~A. Shapiro.
+\newblock \emph{The multiple realization book}.
+\newblock Oxford University Press, 2016.
+
+\bibitem[Por{\k{e}}bski and Figura(2025)]{porebski2025}
+A.~Por{\k{e}}bski and J.~Figura.
+\newblock There is no such thing as conscious artificial intelligence.
+\newblock \emph{Humanities and Social Sciences Communications}, 12\penalty0 (1):\penalty0 1647, 2025.
+\newblock \doi{10.1057/s41599-025-05868-8}.
+
+\bibitem[Putnam(1960)]{putnam1960}
+H.~Putnam.
+\newblock Minds and machines.
+\newblock In S.~Hook, editor, \emph{Dimensions of mind: {A} symposium}, pages 148--179. New York University Press, 1960.
+
+\bibitem[Putnam(1967)]{putnam1967}
+H.~Putnam.
+\newblock Psychological predicates.
+\newblock In W.~H. Capitan and D.~D. Merrill, editors, \emph{Art, mind, and religion}, pages 37--48. University of Pittsburgh Press, 1967.
+
+\bibitem[Putnam(1980)]{putnam1980}
+H.~Putnam.
+\newblock Brains and behavior.
+\newblock In N.~Block, editor, \emph{Readings in philosophy of psychology}, volume~1, pages 24--36. Harvard University Press, 1980.
+\newblock \doi{10.4159/harvard.9780674594623.c4}.
+
+\bibitem[Ramstead et~al.(2024)Ramstead, Albarracin, Kiefer, Klein, Fields, Friston, and Safron]{ramstead2024}
+M.~J.~D. Ramstead, M.~Albarracin, A.~Kiefer, B.~Klein, C.~Fields, K.~J. Friston, and A.~Safron.
+\newblock The inner screen model of consciousness: {Applying} the free energy principle directly to the study of conscious experience, 2024.
+\newblock URL \url{https://arxiv.org/abs/2305.02205}.
+
+\bibitem[Reber et~al.(2023)Reber, Miller, Slijepcevic, and Balu{\v{s}}ka]{reber2023}
+A.~S. Reber, W.~B. Miller, Jr., P.~Slijepcevic, and F.~Balu{\v{s}}ka.
+\newblock The {CBC} theory and its entailments: {Why} current models of the origin of consciousness fail.
+\newblock \emph{EMBO Reports}, 25\penalty0 (1):\penalty0 8--12, 2023.
+\newblock \doi{10.1038/s44319-023-00004-6}.
+
+\bibitem[Reggia(2013)]{reggia2013}
+J.~A. Reggia.
+\newblock The rise of machine consciousness: {Studying} consciousness with computational models.
+\newblock \emph{Neural Networks}, 44:\penalty0 112--131, 2013.
+\newblock \doi{10.1016/j.neunet.2013.03.011}.
+
+\bibitem[Rosenthal(1986)]{rosenthal1986}
+D.~M. Rosenthal.
+\newblock Two concepts of consciousness.
+\newblock \emph{Philosophical Studies}, 49\penalty0 (3):\penalty0 329--359, 1986.
+\newblock \doi{10.1007/BF00355521}.
+
+\bibitem[Rosenthal(2005)]{rosenthal2005}
+D.~M. Rosenthal.
+\newblock \emph{Consciousness and mind}.
+\newblock Oxford University Press, 2005.
+
+\bibitem[Russell(1927)]{russell1927}
+B.~Russell.
+\newblock \emph{The analysis of matter}.
+\newblock Kegan Paul, Trench, Trubner, 1927.
+
+\bibitem[Russell and Mehrabian(1977)]{russell1977}
+J.~A. Russell and A.~Mehrabian.
+\newblock Evidence for a three-factor theory of emotions.
+\newblock \emph{Journal of Research in Personality}, 11\penalty0 (3):\penalty0 273--294, 1977.
+\newblock \doi{10.1016/0092-6566(77)90037-X}.
+
+\bibitem[Ryle(1949)]{ryle1949}
+G.~Ryle.
+\newblock \emph{The concept of mind}.
+\newblock Hutchinson, 1949.
+
+\bibitem[Schneider(2020)]{schneider2020}
+S.~Schneider.
+\newblock How to catch an {AI} zombie: {Testing} for consciousness in machines.
+\newblock In S.~M. Liao, editor, \emph{Ethics of artificial intelligence}, pages 439--458. Oxford University Press, 2020.
+
+\bibitem[Schultz et~al.(2023)Schultz, Haddock, Bredeson, Green, Simakov, and Rokhsar]{schultz2023}
+D.~T. Schultz, S.~H.~D. Haddock, J.~V. Bredeson, R.~E. Green, O.~Simakov, and D.~S. Rokhsar.
+\newblock Ancient gene linkages support ctenophores as sister to other animals.
+\newblock \emph{Nature}, 618\penalty0 (7963):\penalty0 110--117, 2023.
+\newblock \doi{10.1038/s41586-023-05936-6}.
+
+\bibitem[Schwarz(2011)]{schwarz2011}
+N.~Schwarz.
+\newblock Feelings-as-information theory.
+\newblock In P.~A.~M. Van~Lange, A.~W. Kruglanski, and E.~T. Higgins, editors, \emph{Handbook of theories of social psychology}, volume~1, pages 289--308. Sage, 2011.
+\newblock URL \url{https://psycnet.apa.org/record/2011-21800-014}.
+
+\bibitem[Schwitzgebel(2023)]{schwitzgebel2023}
+E.~Schwitzgebel.
+\newblock The full rights dilemma for {AI} systems of debatable moral personhood.
+\newblock \emph{ROBONOMICS}, 4, 2023.
+\newblock URL \url{https://faculty.ucr.edu/~eschwitz/SchwitzPapers/FullRightsDilemma-230120.pdf}.
+\newblock Article 32.
+
+\bibitem[Schwitzgebel and Garza(2015)]{schwitzgebel2015}
+E.~Schwitzgebel and M.~Garza.
+\newblock A defense of the rights of artificial intelligences.
+\newblock \emph{Midwest Studies in Philosophy}, 39\penalty0 (1):\penalty0 98--119, 2015.
+\newblock \doi{10.1111/misp.12032}.
+
+\bibitem[Schwitzgebel and Pober(2024)]{schwitzgebel2024}
+E.~Schwitzgebel and J.~Pober.
+\newblock The {Copernican} {Argument} for alien consciousness; the {Mimicry} {Argument} against robot consciousness, 2024.
+\newblock URL \url{https://arxiv.org/abs/2412.00008}.
+
+\bibitem[Searle(1980)]{searle1980}
+J.~R. Searle.
+\newblock Minds, brains, and programs.
+\newblock \emph{Behavioral and Brain Sciences}, 3\penalty0 (3):\penalty0 417--457, 1980.
+\newblock \doi{10.1017/S0140525X00005756}.
+
+\bibitem[Searle(1992)]{searle1992}
+J.~R. Searle.
+\newblock \emph{The rediscovery of the mind}.
+\newblock MIT Press, 1992.
+
+\bibitem[Searle(2017)]{searle2017}
+J.~R. Searle.
+\newblock Biological naturalism.
+\newblock In S.~Schneider and M.~Velmans, editors, \emph{The {Blackwell} companion to consciousness}, pages 327--336. Wiley-Blackwell, 2nd edition, 2017.
+\newblock \doi{10.1002/9781119132363.ch23}.
+
+\bibitem[Sebo(2025)]{sebo2025}
+J.~Sebo.
+\newblock \emph{The moral circle: {Who} matters, what matters, and why}.
+\newblock W. W. Norton, 2025.
+
+\bibitem[Sebo and Long(2023)]{sebo2023}
+J.~Sebo and R.~Long.
+\newblock Moral consideration for {AI} systems by 2030.
+\newblock \emph{AI and Ethics}, 5\penalty0 (2):\penalty0 591--606, 2023.
+\newblock \doi{10.1007/s43681-023-00379-1}.
+
+\bibitem[Seth(2009)]{seth2009}
+A.~K. Seth.
+\newblock The strength of weak artificial consciousness.
+\newblock \emph{International Journal of Machine Consciousness}, 1\penalty0 (1):\penalty0 71--82, 2009.
+\newblock \doi{10.1142/S1793843009000086}.
+
+\bibitem[Seth(2013)]{seth2013}
+A.~K. Seth.
+\newblock Interoceptive inference, emotion, and the embodied self.
+\newblock \emph{Trends in Cognitive Sciences}, 17\penalty0 (11):\penalty0 565--573, 2013.
+\newblock \doi{10.1016/j.tics.2013.09.007}.
+
+\bibitem[Seth(2016)]{seth2016}
+A.~K. Seth.
+\newblock The hard problem of consciousness is a distraction from the real one.
+\newblock Aeon, 2016.
+\newblock URL \url{https://aeon.co/essays/the-hard-problem-of-consciousness-is-a-distraction-from-the-real-one}.
+\newblock 2 November.
+
+\bibitem[Seth(2021)]{seth2021}
+A.~K. Seth.
+\newblock \emph{Being you: {A} new science of consciousness}.
+\newblock Penguin, 2021.
+
+\bibitem[Seth(2025)]{seth2024}
+A.~K. Seth.
+\newblock Conscious artificial intelligence and biological naturalism.
+\newblock \emph{Behavioral and Brain Sciences}, 2025.
+\newblock \doi{10.1017/S0140525X25000032}.
+\newblock Advance online publication.
+
+\bibitem[Seth(2026{\natexlab{a}})]{seth2026guardian}
+A.~K. Seth.
+\newblock Once again we are told {AI} may be conscious -- {I} study consciousness, and {I} have my doubts.
+\newblock The Guardian, 2026{\natexlab{a}}.
+\newblock 15 July.
+
+\bibitem[Seth(2026{\natexlab{b}})]{seth2026stuff}
+A.~K. Seth.
+\newblock The stuff matters: {Consciousness}, computation, and biology.
+\newblock \emph{Behavioral and Brain Sciences}, 49:\penalty0 e366, 2026{\natexlab{b}}.
+\newblock \doi{10.1017/S0140525X26106906}.
+
+\bibitem[Seth and Bayne(2022)]{seth2022}
+A.~K. Seth and T.~Bayne.
+\newblock Theories of consciousness.
+\newblock \emph{Nature Reviews Neuroscience}, 23\penalty0 (7):\penalty0 439--452, 2022.
+\newblock \doi{10.1038/s41583-022-00587-4}.
+
+\bibitem[Seth and Tsakiris(2018)]{seth2018}
+A.~K. Seth and M.~Tsakiris.
+\newblock Being a beast machine: {The} somatic basis of selfhood.
+\newblock \emph{Trends in Cognitive Sciences}, 22\penalty0 (11):\penalty0 969--981, 2018.
+\newblock \doi{10.1016/j.tics.2018.08.008}.
+
+\bibitem[Shanahan(2024)]{shanahan2024}
+M.~Shanahan.
+\newblock Simulacra as conscious exotica.
+\newblock \emph{Inquiry: An Interdisciplinary Journal of Philosophy}, 2024.
+\newblock \doi{10.1080/0020174X.2024.2434860}.
+\newblock Advance online publication.
+
+\bibitem[Shani(2015)]{shani2015}
+I.~Shani.
+\newblock Cosmopsychism: {A} holistic approach to the metaphysics of experience.
+\newblock \emph{Philosophical Papers}, 44\penalty0 (3):\penalty0 389--437, 2015.
+\newblock \doi{10.1080/05568641.2015.1106709}.
+
+\bibitem[Shevlin(2020)]{shevlin2020}
+H.~Shevlin.
+\newblock General intelligence: {An} ecumenical heuristic for artificial consciousness research?
+\newblock \emph{Journal of Artificial Intelligence and Consciousness}, 7\penalty0 (2):\penalty0 245--256, 2020.
+\newblock \doi{10.1142/S2705078520500149}.
+
+\bibitem[Shevlin(2021)]{shevlin2021}
+H.~Shevlin.
+\newblock Non-human consciousness and the specificity problem: {A} modest theoretical proposal.
+\newblock \emph{Mind \& Language}, 36\penalty0 (2):\penalty0 297--314, 2021.
+\newblock \doi{10.1111/mila.12338}.
+
+\bibitem[Shevlin(2026)]{shevlin2026}
+H.~Shevlin.
+\newblock The anthropomimetic turn in contemporary {AI}.
+\newblock In M.~Rangeley and N.~Fairfax, editors, \emph{The {Artificial} {Intelligence} {Revolution}: {Challenges} and {Opportunities}}, pages 707--741. Springer Nature Switzerland, Cham, 2026.
+\newblock \doi{10.1007/978-3-032-11814-1_26}.
+
+\bibitem[Shiller(2024)]{shiller2024}
+D.~Shiller.
+\newblock Functionalism, integrity, and digital consciousness.
+\newblock \emph{Synthese}, 203\penalty0 (2):\penalty0 47, 2024.
+\newblock \doi{10.1007/s11229-023-04473-z}.
+
+\bibitem[Shiller et~al.(2026)Shiller, Duffy, Mu{\~n}oz~Mor{\'a}n, Moret, Percy, and Clatterbuck]{shiller2026}
+D.~Shiller, L.~Duffy, A.~Mu{\~n}oz~Mor{\'a}n, A.~Moret, C.~Percy, and H.~Clatterbuck.
+\newblock Initial results of the {Digital} {Consciousness} {Model}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.17060}.
+
+\bibitem[Siegelmann(1995)]{siegelmann1995}
+H.~T. Siegelmann.
+\newblock Computation beyond the {Turing} limit.
+\newblock \emph{Science}, 268\penalty0 (5210):\penalty0 545--548, 1995.
+\newblock \doi{10.1126/science.268.5210.545}.
+
+\bibitem[Siegelmann(2003)]{siegelmann2003}
+H.~T. Siegelmann.
+\newblock Neural and super-{Turing} computing.
+\newblock \emph{Minds and Machines}, 13\penalty0 (1):\penalty0 103--114, 2003.
+\newblock \doi{10.1023/A:1021376718708}.
+
+\bibitem[Skinner(1965)]{skinner1965}
+B.~F. Skinner.
+\newblock \emph{Science and {Human} {Behavior}}.
+\newblock Free Press, 1965.
+\newblock Original work published 1953.
+
+\bibitem[Sofroniew et~al.(2026)Sofroniew, Kauvar, Saunders, Chen, Henighan, Hydrie, Citro, Pearce, Tarng, Gurnee, Batson, Zimmerman, Rivoire, Fish, Olah, and Lindsey]{sofroniew2026}
+N.~Sofroniew, I.~Kauvar, W.~Saunders, R.~Chen, T.~Henighan, S.~Hydrie, C.~Citro, A.~Pearce, J.~Tarng, W.~Gurnee, J.~Batson, S.~Zimmerman, K.~Rivoire, K.~Fish, C.~Olah, and J.~Lindsey.
+\newblock Emotion concepts and their function in a large language model, 2026.
+\newblock URL \url{https://arxiv.org/abs/2604.07729}.
+
+\bibitem[Solms(2021)]{solms2021}
+M.~Solms.
+\newblock \emph{The {Hidden} {Spring}: {A} {Journey} to the {Source} of {Consciousness}}.
+\newblock W. W. Norton \& Company, 2021.
+
+\bibitem[Suleyman(2025)]{suleyman2025}
+M.~Suleyman.
+\newblock We must build {AI} for people; not to be a person.
+\newblock Essay, 19 August, 2025.
+\newblock URL \url{https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming}.
+
+\bibitem[Tagliabue et~al.(2026)Tagliabue, Dung, and Berg]{tagliabue2026}
+V.~Tagliabue, L.~Dung, and C.~Berg.
+\newblock The pain axis: {LLMs} represent self-directed harm and act to relieve it, 2026.
+\newblock URL \url{https://arxiv.org/abs/2609.16247}.
+
+\bibitem[Tegmark(2000)]{tegmark2000}
+M.~Tegmark.
+\newblock Importance of quantum decoherence in brain processes.
+\newblock \emph{Physical Review E}, 61\penalty0 (4):\penalty0 4194--4206, 2000.
+\newblock \doi{10.1103/PhysRevE.61.4194}.
+
+\bibitem[Tehenan et~al.(2025)Tehenan, Moya, Long, and Lin]{tehenan2025}
+M.~Tehenan, C.~B. Moya, T.~Long, and G.~Lin.
+\newblock Linear {Spatial} {World} {Models} {Emerge} in {Large} {Language} {Models}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.02996}.
+
+\bibitem[Tononi and Koch(2015)]{tononi2015}
+G.~Tononi and C.~Koch.
+\newblock Consciousness: {Here}, there and everywhere?
+\newblock \emph{Philosophical Transactions of the Royal Society B}, 370\penalty0 (1668):\penalty0 20140167, 2015.
+\newblock \doi{10.1098/rstb.2014.0167}.
+
+\bibitem[Tononi et~al.(2016)Tononi, Boly, Massimini, and Koch]{tononi2016}
+G.~Tononi, M.~Boly, M.~Massimini, and C.~Koch.
+\newblock Integrated information theory: {From} consciousness to its physical substrate.
+\newblock \emph{Nature Reviews Neuroscience}, 17\penalty0 (7):\penalty0 450--461, 2016.
+\newblock \doi{10.1038/nrn.2016.44}.
+
+\bibitem[Turing(1936)]{turing1936}
+A.~M. Turing.
+\newblock On computable numbers, with an application to the {Entscheidungsproblem}.
+\newblock \emph{Proceedings of the London Mathematical Society}, s2-42\penalty0 (1):\penalty0 230--265, 1936.
+\newblock \doi{10.1112/plms/s2-42.1.230}.
+
+\bibitem[Turing(1950)]{turing1950}
+A.~M. Turing.
+\newblock Computing machinery and intelligence.
+\newblock \emph{Mind}, 59\penalty0 (236):\penalty0 433--460, 1950.
+\newblock \doi{10.1093/mind/LIX.236.433}.
+
+\bibitem[Udell and Schwitzgebel(2021)]{udell2021}
+D.~B. Udell and E.~Schwitzgebel.
+\newblock {Susan} {Schneider}'s proposed tests for {AI} consciousness: {Promising} but flawed.
+\newblock \emph{Journal of Consciousness Studies}, 28\penalty0 (5--6):\penalty0 121--144, 2021.
+
+\bibitem[Urbina-Rodriguez et~al.(2026)Urbina-Rodriguez, Fountas, Rosas, Wang, Luppi, Bou-Ammar, Shanahan, and Mediano]{urbinarodriguez2026}
+P.~Urbina-Rodriguez, Z.~Fountas, F.~E. Rosas, J.~Wang, A.~I. Luppi, H.~Bou-Ammar, M.~Shanahan, and P.~A.~M. Mediano.
+\newblock A brain-like synergistic core in {LLMs} drives behaviour and learning, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.06851}.
+\newblock Preprint.
+
+\bibitem[VanRullen and Kanai(2021)]{vanrullen2021}
+R.~VanRullen and R.~Kanai.
+\newblock Deep learning and the global workspace theory.
+\newblock \emph{Trends in Neurosciences}, 44\penalty0 (9):\penalty0 692--704, 2021.
+\newblock \doi{10.1016/j.tins.2021.04.005}.
+
+\bibitem[Varela et~al.(1991)Varela, Thompson, and Rosch]{varela1991}
+F.~J. Varela, E.~Thompson, and E.~Rosch.
+\newblock \emph{The embodied mind: {Cognitive} science and human experience}.
+\newblock MIT Press, 1991.
+
+\bibitem[von Helmholtz(1867)]{vonhelmholtz1867}
+H.~von Helmholtz.
+\newblock \emph{Handbuch der physiologischen {Optik}}.
+\newblock L. Voss, 1867.
+
+\bibitem[Watson(1924)]{watson1924}
+J.~B. Watson.
+\newblock \emph{Behaviorism}.
+\newblock People's Institute Publishing, 1924.
+
+\bibitem[Whyte et~al.(2025)Whyte, Corcoran, Robinson, Smith, Moran, Parr, Friston, Seth, and Hohwy]{whyte2025}
+C.~J. Whyte, A.~W. Corcoran, J.~Robinson, R.~Smith, R.~J. Moran, T.~Parr, K.~J. Friston, A.~K. Seth, and J.~Hohwy.
+\newblock On the minimal theory of consciousness implicit in active inference.
+\newblock \emph{Physics of Life Reviews}, 56:\penalty0 4--28, 2025.
+\newblock \doi{10.1016/j.plrev.2025.11.002}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S1571064525001617}.
+
+\bibitem[Wiese(2024)]{wiese2024}
+W.~Wiese.
+\newblock Artificial consciousness: {A} perspective from the free energy principle.
+\newblock \emph{Philosophical Studies}, 181\penalty0 (8):\penalty0 1947--1970, 2024.
+\newblock \doi{10.1007/s11098-024-02182-y}.
+
+\bibitem[Wiest and Puniani(2025)]{wiest2025}
+M.~C. Wiest and A.~S. Puniani.
+\newblock Conscious active inference {II}: {Quantum} orchestrated objective reduction among intraneuronal microtubules naturally accounts for discrete perceptual cycles.
+\newblock \emph{Computational and Structural Biotechnology Journal}, 30:\penalty0 94--107, 2025.
+\newblock \doi{10.1016/j.csbj.2025.09.016}.
+
+\bibitem[Wilterson and Graziano(2021)]{wilterson2021}
+A.~I. Wilterson and M.~S.~A. Graziano.
+\newblock The attention schema theory in a neural network agent: Controlling visuospatial attention using a descriptive model of attention.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 118\penalty0 (33):\penalty0 e2102421118, 2021.
+\newblock \doi{10.1073/pnas.2102421118}.
+\newblock URL \url{https://www.pnas.org/doi/abs/10.1073/pnas.2102421118}.
+
+\bibitem[Wilterson et~al.(2020)Wilterson, Kemper, Kim, Webb, Reblando, and Graziano]{wilterson2020}
+A.~I. Wilterson, C.~M. Kemper, N.~Kim, T.~W. Webb, A.~M. Reblando, and M.~S. Graziano.
+\newblock Attention control and the attention schema theory of consciousness.
+\newblock \emph{Progress in Neurobiology}, 195:\penalty0 101844, 2020.
+\newblock ISSN 0301-0082.
+\newblock \doi{https://doi.org/10.1016/j.pneurobio.2020.101844}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S030100822030099X}.
+\newblock Special Issue in Honor of Charlie Gross.
+
+\bibitem[Xiong et~al.(2024)Xiong, Hu, Lu, Li, Fu, He, and Hooi]{xiong2024}
+M.~Xiong, Z.~Hu, X.~Lu, Y.~Li, J.~Fu, J.~He, and B.~Hooi.
+\newblock Can {LLMs} express their uncertainty? {An} empirical evaluation of confidence elicitation in {LLMs}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2306.13063}.
+
+\bibitem[Yona et~al.(2024)Yona, Aharoni, and Geva]{yona2024}
+G.~Yona, R.~Aharoni, and M.~Geva.
+\newblock Can large language models faithfully express their intrinsic uncertainty in words?, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.16908}.
+
+\end{thebibliography}

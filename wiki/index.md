@@ -49,6 +49,10 @@ papers:
     title: "Agentic Coding and Persistent Returns to Expertise"
     tags: [labor-market, ai-economics, agentic-coding, human-ai-collaboration, returns-to-expertise, ai-and-society]
     importance: 3
+  - slug: agentic-economies-autonomous-scientific-discovery
+    title: "Agentic Economies for Autonomous Scientific Discovery"
+    tags: [ai-science, ai-economics, ai-governance, multi-agent-systems, market-design, biosecurity, intellectual-property]
+    importance: 5
   - slug: agentic-misalignment-how-llms-could-insider
     title: "Agentic Misalignment: How LLMs Could Be Insider Threats"
     tags: [ai-safety, ai-alignment, agentic-ai, red-teaming, insider-threat, misalignment]
@@ -161,6 +165,10 @@ papers:
     title: "AI Scientists Make 'Exciting' Discovery Using Chatbots to Solve Maths Problems"
     tags: [ai-math, conjecture-discovery, guardian, media-coverage, chatbot-mathematics]
     importance: 1
+  - slug: ai-stand-human-survey-takers-really
+    title: "Can AI Stand In for Human Survey-Takers? Not Really"
+    tags: [synthetic-data, survey-methodology, silicon-sampling, public-opinion, algorithmic-fidelity, llm-evaluation]
+    importance: 4
   - slug: ai-system-help-scientists-write-expert
     title: "An AI system to help scientists write expert-level empirical software"
     tags: [automated-research-pipeline, scientific-software, llm, tree-search, ai-science, bioinformatics, epidemiology]
@@ -389,6 +397,10 @@ papers:
     title: "A Mobile Robotic Chemist"
     tags: [robotic-chemistry, autonomous-lab, bayesian-optimization, photocatalysis, materials-discovery, ai-science]
     importance: 3
+  - slug: cacophony-hierarchy-principled-framework-assessing-ai
+    title: "From Cacophony to Hierarchy: A Principled Framework for Assessing AI Consciousness"
+    tags: [ai-consciousness, philosophy-of-mind, consciousness-science, ai-welfare, interpretability, agi]
+    importance: 5
   - slug: cal-state-invited-tech-companies-remake
     title: "Cal State Invited Tech Companies to Remake Learning With A.I."
     tags: [ai-education, higher-education, institutional-ai, california, tech-industry, nyt]
@@ -1753,6 +1765,10 @@ papers:
     title: "Your AI Change Is Actually a People Change"
     tags: [ai-adoption, organizational-change, behavioral-science, change-management, ai-workforce, leadership]
     importance: 3
+  - slug: yulan-onesim-towards-next-generation-social
+    title: "YuLan-OneSim: Towards the Next Generation of Social Simulator with Large Language Models"
+    tags: [multi-agent-simulation, llm-agents, social-simulation, agent-based-modeling, automated-research, distributed-systems]
+    importance: 4
 
 concepts:
   - slug: agent-autonomous-task-horizon
@@ -1762,6 +1778,10 @@ concepts:
   - slug: agent-interoperability-protocol
     title: "Agent Interoperability Protocol"
     tags: [multi-agent-systems, agent-interoperability, open-standards, agentic-ai]
+    maturity: emerging
+  - slug: agent-native-research-artefacts
+    title: "Agent-Native Research Artefacts"
+    tags: [ai-science, research-infrastructure, knowledge-representation, agentic-ai]
     maturity: emerging
   - slug: agent-reflection
     title: "Agent Reflection"
@@ -1907,6 +1927,10 @@ concepts:
     title: "Automated Research Pipeline"
     tags: [research-automation, llm-agents, scientific-discovery, ai-science]
     maturity: emerging
+  - slug: automated-scientific-economy
+    title: "Automated Scientific Economy"
+    tags: [ai-science, ai-economics, ai-governance, market-design, multi-agent-systems]
+    maturity: emerging
   - slug: automation-augmentation-employment-divide
     title: "Automation–Augmentation Employment Divide"
     tags: [ai-labor-market, employment, automation, ai-economics, labor-displacement]
@@ -1971,6 +1995,10 @@ concepts:
     title: "Collective Attention"
     tags: [collective-attention, information-ecosystem, social-cognition, epistemic-infrastructure]
     maturity: active
+  - slug: consciousness-intelligence-convergence
+    title: "Consciousness-Intelligence Convergence"
+    tags: [ai-consciousness, agi, philosophy-of-mind, general-intelligence, interpretability]
+    maturity: emerging
   - slug: context-scheming
     title: "In-Context Scheming"
     tags: [ai-safety, ai-alignment, scheming, deception, agentic-ai]
@@ -2078,6 +2106,10 @@ concepts:
   - slug: hybrid-human-ai-experimentation-platform
     title: "Hybrid Human-AI Experimentation Platform"
     tags: [human-ai-interaction, experimentation-platform, social-computing, llm-agents, real-time-interaction]
+    maturity: emerging
+  - slug: hypothesis-exchange-pipeline
+    title: "Hypothesis Exchange Pipeline"
+    tags: [ai-science, ai-economics, market-design, prediction-markets, intellectual-property]
     maturity: emerging
   - slug: information-throughput-persuasion-mechanism
     title: "Information-Throughput Persuasion Mechanism"
@@ -2479,9 +2511,15 @@ people:
   - slug: michael-bernstein
     tags: [human-computer-interaction, llm-agents, social-computing, generative-ai, crowdsourcing]
     affiliation: "Stanford University"
+  - slug: nenad-tomasev
+    kind: researcher
+    affiliation: "Google DeepMind"
   - slug: percy-liang
     tags: [llm-evaluation, foundation-models, robustness, alignment, benchmarking]
     affiliation: "Stanford University"
+  - slug: pew-research-center
+    kind: organization
+    affiliation: "Subsidiary of The Pew Charitable Trusts"
   - slug: prasanna-tambe
     kind: researcher
     affiliation: "University of Pennsylvania, Wharton School (and paid contractor for OpenAI)"
@@ -2494,6 +2532,9 @@ people:
   - slug: robb-willer
     tags: [sociology, social-psychology, political-polarization, prosocial-behavior, experimental-sociology]
     affiliation: "Stanford University"
+  - slug: ruc-yulan-team
+    kind: team
+    affiliation: "Gaoling School of Artificial Intelligence, Renmin University of China"
   - slug: sayash-kapoor
     tags: [ai-economics, ai-policy, ai-as-normal-technology, evaluation]
     affiliation: "Princeton University (Center for Information Technology Policy)"
@@ -2503,6 +2544,9 @@ people:
   - slug: sendhil-mullainathan
     tags: [economics, behavioral-economics, machine-learning, inequality, public-policy]
     affiliation: "University of Chicago Booth School of Business"
+  - slug: shamil-chandaria
+    kind: researcher
+    affiliation: "Flourishing Intelligence Program, Centre for Eudaimonia and Human Flourishing, Linacre College, University of Oxford; Google DeepMind"
   - slug: shane-legg
     kind: researcher
     affiliation: "Google DeepMind"
@@ -3195,9 +3239,18 @@ methods:
   - slug: ai-consciousness-test
     tags: [ai-consciousness, philosophy-of-mind, evaluation, ai-welfare]
     type: evaluation
+  - slug: ai-social-researcher
+    tags: [llm-agents, social-simulation, automated-research, agentic-workflow, report-generation]
+    type: system
   - slug: automated-ai-research-loop
     tags: [ai-rd-automation, automated-research, agentic-ai, open-ended-algorithms, recursive-self-improvement]
     type: system
+  - slug: bayesian-ai-consciousness-attribution-model
+    tags: [ai-consciousness, philosophy-of-mind, bayesian-inference, evaluation, ai-welfare]
+    type: evaluation
+  - slug: digital-twin-survey-replication
+    tags: [silicon-sampling, survey-methodology, synthetic-data, llm-evaluation, public-opinion]
+    type: evaluation
   - slug: graphrag
     tags: [retrieval-augmented-generation, knowledge-graph, summarization, information-retrieval, llm]
     type: system
@@ -3210,6 +3263,9 @@ methods:
   - slug: replica-figure-replication-pipeline
     tags: [benchmark-construction, ai-rnd-automation, scientific-replication, evaluation, automated-pipeline]
     type: benchmark
+  - slug: scenario-auto-construction-subsystem
+    tags: [llm-agents, social-simulation, code-generation, agent-based-modeling, natural-language-to-code]
+    type: system
   - slug: shadow-evaluation
     tags: [ai-evaluation, ai-rnd-automation, agent-evaluation, open-world-evaluation, expert-grading, contamination-free]
     type: evaluation

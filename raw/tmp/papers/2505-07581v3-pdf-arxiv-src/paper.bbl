@@ -1,0 +1,198 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Squazzoni et~al.(2014)Squazzoni, Jager, and Edmonds]{squazzoni2014social}
+Flaminio Squazzoni, Wander Jager, and Bruce Edmonds.
+\newblock Social simulation in the social sciences: A brief overview.
+\newblock \emph{Social Science Computer Review}, 32\penalty0 (3):\penalty0 279--294, 2014.
+
+\bibitem[Heath et~al.(2009)Heath, Hill, and Ciarallo]{heath2009survey}
+Brian Heath, Raymond Hill, and Frank Ciarallo.
+\newblock A survey of agent-based modeling practices (january 1998 to july 2008).
+\newblock \emph{Journal of Artificial Societies and Social Simulation}, 12\penalty0 (4):\penalty0 9, 2009.
+
+\bibitem[Bianchi and Squazzoni(2015)]{bianchi2015agent}
+Federico Bianchi and Flaminio Squazzoni.
+\newblock Agent-based models in sociology.
+\newblock \emph{Wiley Interdisciplinary Reviews: Computational Statistics}, 7\penalty0 (4):\penalty0 284--306, 2015.
+
+\bibitem[Gao et~al.(2024{\natexlab{a}})Gao, Lan, Li, Yuan, Ding, Zhou, Xu, and Li]{gao2024large}
+Chen Gao, Xiaochong Lan, Nian Li, Yuan Yuan, Jingtao Ding, Zhilun Zhou, Fengli Xu, and Yong Li.
+\newblock Large language models empowered agent-based modeling and simulation: A survey and perspectives.
+\newblock \emph{Humanities and Social Sciences Communications}, 11\penalty0 (1):\penalty0 1--24, 2024{\natexlab{a}}.
+
+\bibitem[Zhao et~al.(2023)Zhao, Zhou, Li, Tang, Wang, Hou, Min, Zhang, Zhang, Dong, et~al.]{zhao2023survey}
+Wayne~Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et~al.
+\newblock A survey of large language models.
+\newblock \emph{arXiv preprint arXiv:2303.18223}, 1\penalty0 (2), 2023.
+
+\bibitem[Achiam et~al.(2023)Achiam, Adler, Agarwal, Ahmad, Akkaya, Aleman, Almeida, Altenschmidt, Altman, Anadkat, et~al.]{achiam2023gpt}
+Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia~Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et~al.
+\newblock Gpt-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2303.08774}, 2023.
+
+\bibitem[Tang et~al.(2024)Tang, Gao, Pan, Wang, Tan, Gao, Chen, Chen, Lin, Li, et~al.]{gensim}
+Jiakai Tang, Heyang Gao, Xuchen Pan, Lei Wang, Haoran Tan, Dawei Gao, Yushuo Chen, Xu~Chen, Yankai Lin, Yaliang Li, et~al.
+\newblock Gensim: A general social simulation platform with large language model based agents.
+\newblock \emph{arXiv preprint arXiv:2410.04360}, 2024.
+
+\bibitem[Yang et~al.(2024{\natexlab{a}})Yang, Zhang, Zheng, Jiang, Gan, Wang, Ling, Chen, Ma, Dong, et~al.]{oasis}
+Ziyi Yang, Zaibin Zhang, Zirui Zheng, Yuxian Jiang, Ziyue Gan, Zhiyu Wang, Zijian Ling, Jinsong Chen, Martz Ma, Bowen Dong, et~al.
+\newblock Oasis: Open agents social interaction simulations on one million agents.
+\newblock \emph{arXiv preprint arXiv:2411.11581}, 2024{\natexlab{a}}.
+
+\bibitem[Piao et~al.(2025)Piao, Yan, Zhang, Li, Yan, Lan, Lu, Zheng, Wang, Zhou, et~al.]{agentsociety}
+Jinghua Piao, Yuwei Yan, Jun Zhang, Nian Li, Junbo Yan, Xiaochong Lan, Zhihong Lu, Zhiheng Zheng, Jing~Yi Wang, Di~Zhou, et~al.
+\newblock Agentsociety: Large-scale simulation of llm-driven generative agents advances understanding of human behaviors and society.
+\newblock \emph{arXiv preprint arXiv:2502.08691}, 2025.
+
+\bibitem[Schelling(1971)]{schelling1971dynamic}
+Thomas~C Schelling.
+\newblock Dynamic models of segregation.
+\newblock \emph{Journal of mathematical sociology}, 1\penalty0 (2):\penalty0 143--186, 1971.
+
+\bibitem[Axelrod(1997)]{axelrod1997dissemination}
+Robert Axelrod.
+\newblock The dissemination of culture: A model with local convergence and global polarization.
+\newblock \emph{Journal of conflict resolution}, 41\penalty0 (2):\penalty0 203--226, 1997.
+
+\bibitem[Palmer et~al.(1999)Palmer, Arthur, Holland, and LeBaron]{palmer1999artificial}
+Richard~G Palmer, W~Brian Arthur, John~H Holland, and Blake LeBaron.
+\newblock An artificial stock market.
+\newblock \emph{Artificial Life and Robotics}, 3:\penalty0 27--31, 1999.
+
+\bibitem[Ie et~al.(2019)Ie, Hsu, Mladenov, Jain, Narvekar, Wang, Wu, and Boutilier]{ie2019recsim}
+Eugene Ie, Chih-wei Hsu, Martin Mladenov, Vihan Jain, Sanmit Narvekar, Jing Wang, Rui Wu, and Craig Boutilier.
+\newblock Recsim: A configurable simulation platform for recommender systems.
+\newblock \emph{arXiv preprint arXiv:1909.04847}, 2019.
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and Bernstein]{park2023generative}
+Joon~Sung Park, Joseph O'Brien, Carrie~Jun Cai, Meredith~Ringel Morris, Percy Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th annual acm symposium on user interface software and technology}, pages 1--22, 2023.
+
+\bibitem[Wang et~al.(2025)Wang, Zhang, Yang, Chen, Tang, Zhang, Chen, Lin, Sun, Song, et~al.]{wang2025user}
+Lei Wang, Jingsen Zhang, Hao Yang, Zhi-Yuan Chen, Jiakai Tang, Zeyu Zhang, Xu~Chen, Yankai Lin, Hao Sun, Ruihua Song, et~al.
+\newblock User behavior simulation with large language model-based agents.
+\newblock \emph{ACM Transactions on Information Systems}, 43\penalty0 (2):\penalty0 1--37, 2025.
+
+\bibitem[Gao et~al.(2023)Gao, Lan, Lu, Mao, Piao, Wang, Jin, and Li]{gao2023s3}
+Chen Gao, Xiaochong Lan, Zhihong Lu, Jinzhu Mao, Jinghua Piao, Huandong Wang, Depeng Jin, and Yong Li.
+\newblock S3: Social-network simulation system with large language model-empowered agents.
+\newblock \emph{arXiv preprint arXiv:2307.14984}, 2023.
+
+\bibitem[Li et~al.(2023)Li, Gao, Li, Li, and Liao]{li2023econagent}
+Nian Li, Chen Gao, Mingyu Li, Yong Li, and Qingmin Liao.
+\newblock Econagent: large language model-empowered agents for simulating macroeconomic activities.
+\newblock \emph{arXiv preprint arXiv:2310.10436}, 2023.
+
+\bibitem[Hua et~al.(2023)Hua, Fan, Li, Mei, Ji, Ge, Hemphill, and Zhang]{hua2023war}
+Wenyue Hua, Lizhou Fan, Lingyao Li, Kai Mei, Jianchao Ji, Yingqiang Ge, Libby Hemphill, and Yongfeng Zhang.
+\newblock War and peace (waragent): Large language model-based multi-agent simulation of world wars.
+\newblock \emph{arXiv preprint arXiv:2311.17227}, 2023.
+
+\bibitem[Zhang et~al.(2024{\natexlab{a}})Zhang, Lian, Ma, Qu, Luo, Wang, Li, Chen, Lin, Wu, et~al.]{zhang2024trendsim}
+Zeyu Zhang, Jianxun Lian, Chen Ma, Yaning Qu, Ye~Luo, Lei Wang, Rui Li, Xu~Chen, Yankai Lin, Le~Wu, et~al.
+\newblock Trendsim: Simulating trending topics in social media under poisoning attacks with llm-based multi-agent system.
+\newblock \emph{arXiv preprint arXiv:2412.12196}, 2024{\natexlab{a}}.
+
+\bibitem[Li et~al.(2024)Li, Lai, Li, Ren, Zhang, Kang, Wang, Li, Zhang, Ma, et~al.]{li2024agent}
+Junkai Li, Yunghwei Lai, Weitao Li, Jingyi Ren, Meng Zhang, Xinhui Kang, Siyu Wang, Peng Li, Ya-Qin Zhang, Weizhi Ma, et~al.
+\newblock Agent hospital: A simulacrum of hospital with evolvable medical agents.
+\newblock \emph{arXiv preprint arXiv:2405.02957}, 2024.
+
+\bibitem[Yu et~al.(2024)Yu, Yao, Li, Deng, Jiang, Cao, Chen, Suchow, Cui, Liu, et~al.]{yu2024fincon}
+Yangyang Yu, Zhiyuan Yao, Haohang Li, Zhiyang Deng, Yuechen Jiang, Yupeng Cao, Zhi Chen, Jordan Suchow, Zhenyu Cui, Rong Liu, et~al.
+\newblock Fincon: A synthesized llm multi-agent system with conceptual verbal reinforcement for enhanced financial decision making.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37:\penalty0 137010--137045, 2024.
+
+\bibitem[Zhang et~al.(2024{\natexlab{b}})Zhang, Chen, Sheng, Wang, and Chua]{zhang2024generative}
+An~Zhang, Yuxin Chen, Leheng Sheng, Xiang Wang, and Tat-Seng Chua.
+\newblock On generative agents in recommendation.
+\newblock In \emph{Proceedings of the 47th international ACM SIGIR conference on research and development in Information Retrieval}, pages 1807--1817, 2024{\natexlab{b}}.
+
+\bibitem[Xu et~al.(2023)Xu, Zhang, Gao, Feng, and Li]{xu2023urban}
+Fengli Xu, Jun Zhang, Chen Gao, Jie Feng, and Yong Li.
+\newblock Urban generative intelligence (ugi): A foundational platform for agents in embodied city environment.
+\newblock \emph{arXiv preprint arXiv:2312.11813}, 2023.
+
+\bibitem[Chuang et~al.(2023)Chuang, Goyal, Harlalka, Suresh, Hawkins, Yang, Shah, Hu, and Rogers]{chuang2023simulating}
+Yun-Shiuan Chuang, Agam Goyal, Nikunj Harlalka, Siddharth Suresh, Robert Hawkins, Sijia Yang, Dhavan Shah, Junjie Hu, and Timothy~T Rogers.
+\newblock Simulating opinion dynamics with networks of llm-based agents.
+\newblock \emph{arXiv preprint arXiv:2311.09618}, 2023.
+
+\bibitem[Acerbi and Stubbersfield(2023)]{acerbi2023large}
+Alberto Acerbi and Joseph~M Stubbersfield.
+\newblock Large language models show human-like content biases in transmission chain experiments.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 120\penalty0 (44):\penalty0 e2313790120, 2023.
+
+\bibitem[Zhang et~al.(2024{\natexlab{c}})Zhang, Lin, Sun, Qi, Yang, Chen, Lyu, Mou, Chen, Luo, et~al.]{zhang2024electionsim}
+Xinnong Zhang, Jiayu Lin, Libo Sun, Weihong Qi, Yihang Yang, Yue Chen, Hanjia Lyu, Xinyi Mou, Siming Chen, Jiebo Luo, et~al.
+\newblock Electionsim: Massive population election simulation powered by large language model driven agents.
+\newblock \emph{arXiv preprint arXiv:2410.20746}, 2024{\natexlab{c}}.
+
+\bibitem[Gao et~al.(2024{\natexlab{b}})Gao, Li, Pan, Kuang, Ma, Qian, Wei, Zhang, Xie, Chen, et~al.]{gao2024agentscope}
+Dawei Gao, Zitao Li, Xuchen Pan, Weirui Kuang, Zhijian Ma, Bingchen Qian, Fei Wei, Wenhao Zhang, Yuexiang Xie, Daoyuan Chen, et~al.
+\newblock Agentscope: A flexible yet robust multi-agent platform.
+\newblock \emph{arXiv preprint arXiv:2402.14034}, 2024{\natexlab{b}}.
+
+\bibitem[Pan et~al.(2024)Pan, Gao, Xie, Chen, Wei, Li, Ding, Wen, and Zhou]{pan2024very}
+Xuchen Pan, Dawei Gao, Yuexiang Xie, Yushuo Chen, Zhewei Wei, Yaliang Li, Bolin Ding, Ji-Rong Wen, and Jingren Zhou.
+\newblock Very large-scale multi-agent simulation in agentscope.
+\newblock \emph{arXiv preprint arXiv:2407.17789}, 2024.
+
+\bibitem[Zhang et~al.(2025)Zhang, Lin, Mou, Yang, Liu, Sun, Lyu, Yang, Qi, Chen, et~al.]{zhang2025socioverse}
+Xinnong Zhang, Jiayu Lin, Xinyi Mou, Shiyue Yang, Xiawei Liu, Libo Sun, Hanjia Lyu, Yihang Yang, Weihong Qi, Yue Chen, et~al.
+\newblock Socioverse: A world model for social simulation powered by llm agents and a pool of 10 million real-world users.
+\newblock \emph{arXiv preprint arXiv:2504.10157}, 2025.
+
+\bibitem[Zhou et~al.(2023)Zhou, Zhu, Mathur, Zhang, Yu, Qi, Morency, Bisk, Fried, Neubig, et~al.]{zhou2023sotopia}
+Xuhui Zhou, Hao Zhu, Leena Mathur, Ruohong Zhang, Haofei Yu, Zhengyang Qi, Louis-Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, et~al.
+\newblock Sotopia: Interactive evaluation for social intelligence in language agents.
+\newblock \emph{arXiv preprint arXiv:2310.11667}, 2023.
+
+\bibitem[Zhou et~al.(2025)Zhou, Su, Feng, Zhou, Huang, Kao, Lynch, Volkova, Wu, Woolley, et~al.]{zhou2025sotopia}
+Xuhui Zhou, Zhe Su, Sophie Feng, Jiaxu Zhou, Jen-tse Huang, Hsien-Te Kao, Spencer Lynch, Svitlana Volkova, Tongshuang~Sherry Wu, Anita Woolley, et~al.
+\newblock Sotopia-s4: a user-friendly system for flexible, customizable, and large-scale social simulation.
+\newblock \emph{arXiv preprint arXiv:2504.16122}, 2025.
+
+\bibitem[Tang et~al.(2023)Tang, Zou, Zhang, Li, Zhao, Zhang, Cohan, and Gerstein]{tang2023medagents}
+Xiangru Tang, Anni Zou, Zhuosheng Zhang, Ziming Li, Yilun Zhao, Xingyao Zhang, Arman Cohan, and Mark Gerstein.
+\newblock Medagents: Large language models as collaborators for zero-shot medical reasoning.
+\newblock \emph{arXiv preprint arXiv:2311.10537}, 2023.
+
+\bibitem[Grimm et~al.(2010)Grimm, Berger, DeAngelis, Polhill, Giske, and Railsback]{grimm2010odd}
+Volker Grimm, Uta Berger, Donald~L DeAngelis, J~Gary Polhill, Jarl Giske, and Steven~F Railsback.
+\newblock The odd protocol: a review and first update.
+\newblock \emph{Ecological modelling}, 221\penalty0 (23):\penalty0 2760--2768, 2010.
+
+\bibitem[Wang et~al.(1993)Wang, Zhao, and Zhu]{wang1993grpc}
+Xingwei Wang, Hong Zhao, and Jiakeng Zhu.
+\newblock Grpc: A communication cooperation mechanism in distributed systems.
+\newblock \emph{ACM SIGOPS Operating Systems Review}, 27\penalty0 (3):\penalty0 75--86, 1993.
+
+\bibitem[Furtado(2018)]{policyspace}
+Bernardo~Alves Furtado.
+\newblock Policyspace: agent-based modeling.
+\newblock 2018.
+
+\bibitem[Yang et~al.(2024{\natexlab{b}})Yang, Yang, Zhang, Hui, Zheng, Yu, Li, Liu, Huang, Wei, et~al.]{yang2024qwen2}
+An~Yang, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen Yu, Chengyuan Li, Dayiheng Liu, Fei Huang, Haoran Wei, et~al.
+\newblock Qwen2. 5 technical report.
+\newblock \emph{arXiv preprint arXiv:2412.15115}, 2024{\natexlab{b}}.
+
+\bibitem[Kwon et~al.(2023)Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang, and Stoica]{kwon2023efficient}
+Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody~Hao Yu, Joseph Gonzalez, Hao Zhang, and Ion Stoica.
+\newblock Efficient memory management for large language model serving with pagedattention.
+\newblock In \emph{Proceedings of the 29th Symposium on Operating Systems Principles}, pages 611--626, 2023.
+
+\bibitem[Hurst et~al.(2024)Hurst, Lerer, Goucher, Perelman, Ramesh, Clark, Ostrow, Welihinda, Hayes, Radford, et~al.]{hurst2024gpt}
+Aaron Hurst, Adam Lerer, Adam~P Goucher, Adam Perelman, Aditya Ramesh, Aidan Clark, AJ~Ostrow, Akila Welihinda, Alan Hayes, Alec Radford, et~al.
+\newblock Gpt-4o system card.
+\newblock \emph{arXiv preprint arXiv:2410.21276}, 2024.
+
+\end{thebibliography}

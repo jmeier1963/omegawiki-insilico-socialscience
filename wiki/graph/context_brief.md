@@ -2,15 +2,19 @@
 
 _Auto-generated compressed context. Do not edit._
 
-## Methods (10 total)
+## Methods (14 total)
 - [other] AGI Dynamic General Equilibrium with VAT-Financed Targeted UBI
 - [evaluation] Accepted-Paper Baseline Benchmarking
 - [evaluation] AI Consciousness Test (ACT)
+- [system] AI Social Researcher
 - [system] Automated AI Research Loop
+- [evaluation] Bayesian AI Consciousness Attribution Model
+- [evaluation] Digital Twin Survey Replication
 - [system] GraphRAG
 - [evaluation] Open-World Evaluations
 - [data] Privacy-Preserving Usage Telemetry Classification
 - [benchmark] Replica Figure-Replication Task Generation Pipeline
+- [system] Scenario Auto-Construction Subsystem
 - [evaluation] Shadow Evaluation
 - [training] Turn-Level Credit Assignment for Long-Horizon RL
 ## Open Gaps
@@ -29,24 +33,23 @@ _Auto-generated open questions. Do not edit._
 ## Failed Ideas (avoid repeating)
 - AI Safety Commons as Repeated Game: Formal Economic Model — Core formal framework already published. RAND RRA4245-1 (Abraham, Kavner, Moon) provides a formal mathematical model of AGI development as a prisoner's dilemma with conditions on when acceleration becomes dominant and what coordination mechanisms break the equilibrium. arXiv:2501.15280 'Who's Driving? Game Theoretic Path Risk of AGI Development' presents a game-theoretic framework with concrete stabilization mechanisms (pre-registration, shared infrastructure, automated deterrence). The Cooperative AI Foundation has a substantial program on this exact class of problems. The general 'AI race as prisoner's dilemma' framing is standard in policy literature. Differentiation would need to focus on a specific uninvestigated mechanism triplet (e.g., compute governance + mandatory disclosure + joint audit together) or a multi-player repeated game with heterogeneous actors — but this is incremental relative to RAND RRA4245-1.
 - Augmentation Trap Formalization: Conditions for Net-Negative Human Capital Effects — Eliminated at Phase 3: overlaps too closely with active ideas 'bildung-casualty-ai-erosion-scientific-formation' (Bildung-formation hypothesis — AI erodes scientific formation) and 'epistemic-calibration-ai-assisted-science-measuring' (assumption recall deficit). The labor market / organizational context differentiates somewhat, but the formal model structure (conditions under which AI augmentation produces net-negat
-## Papers (438 total)
+## Papers (442 total)
 - [4] Can AI agents conduct open-ended AI research? Early evidence from two case studies — Two frontier agents given six days, $3,000 in API credits and GPU access to answer the central research question of an unpublished NeurIPS 2026 submission completed all the engineering unaided but were unambiguously rejected by the original authors, exposing five recurring failure modes in judgment, exploration and instruction-following.
 - [4] When AI Builds Itself — The Anthropic Institute presents public benchmarks and previously unreported internal data showing AI is already accelerating AI development (>80% of Anthropic's merged code written by Claude, ~8x code per engineer, agents recovering 97% of an open research gap), and argues recursive self-improvement could arrive faster than institutions are prepared for.
 - [4] From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents — A systematic survey organizing LLM-driven social simulation into three progressively-scaled tiers — Individual, Scenario, and Society simulation — each analyzed by architecture/construction, objective/scenario taxonomy, and evaluation method, with catalogued datasets and per-tier historical trend narratives.
+- [4] AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research
 - [2] First Steps Toward Automated AI Research — Recursive's automated AI research system, running a propose-implement-run-validate-choose-next loop over long horizons with reward-hack and variance checks, reaches state-of-the-art on three benchmarks: NanoChat Autoresearch (0.9109 BPB), NanoGPT Speedrun (77.5s), and SOL-ExecBench GPU kernels (0.754).
 - [5] Generative Agent Simulations of 1,000 People
 - [5] Generative Agents: Interactive Simulacra of Human Behavior
-- [5] Out of One, Many: Using Language Models to Simulate Human Samples
-- [4] Position: LLM Social Simulations Are a Promising Research Method
-- [4] The Shift to Agentic AI: Evidence from Cod
-## Recent Relationships (963 total)
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/freedom-action-ai-strategy
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/seven-archetypal-ai-strategies
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --introduces_concept--> concepts/ai-strategy-foreclosure-mechanisms
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --extends_concept--> concepts/ai-race-dynamics
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/frontier-ai-compute-governance
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/mutually-assured-compute-destruction
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/gradual-disempowerment
-  papers/strategy-secure-geopolitical-advantage-uncertain-path --uses_concept--> concepts/digital-sovereignty
-  papers/strategy-secure-geopolitical-
+- [5] Out of One, Many: Using Language Models to Simulate Huma
+## Recent Relationships (984 total)
+  papers/reading-great-books-age-ai --uses_concept--> concepts/wisdom-versus-instrumental-intelligence
+  papers/reading-great-books-age-ai --uses_concept--> concepts/cognitive-surrender
+  papers/big-tent-small-tent-ai-safety --builds_on--> papers/ai-existential-risk-probabilities-too-unreliable
+  papers/what-if-automating-ai-triggers-intelligence --builds_on--> papers/will-ai-automation-cause-software-intelligence
+  papers/yulan-onesim-towards-next-generation-social --extends_concept--> concepts/generative-agent-based-modeling
+  papers/yulan-onesim-towards-next-generation-social --uses_concept--> concepts/society-construction-elements-framework
+  papers/yulan-onesim-towards-next-generation-social --uses_concept--> concepts/llm-simulation-validity-guardrails
+  papers/agentsociety-large-scale-simulation-llm-driven --similar_method_to--> papers/yulan-onesim-towards-next-generation-social
+  papers/ai-agents-conduct-open-ended-ai --same_problem_as--> papers/yulan-onesim-towards-next-generat

@@ -3,7 +3,7 @@ title: "Machine Consciousness"
 aliases: ["AI consciousness", "artificial consciousness", "Conscious Turing Machine", "CTM", "computational consciousness"]
 tags: [ai-consciousness, philosophy-of-mind, turing-machine, global-workspace, cognitive-architecture, theoretical-cs]
 maturity: emerging
-key_papers: [could-ais-become-conscious, search-consciousness-inside-llms, ai-consciousness-inevitable-theoretical-computer-science, must-build-ai-people-person, anthropic-wants-claude-moral-religion-really, humanity-debate-about-ai-consciousness-backwards, dont-mistake-chatbot-intelligence-consciousness]
+key_papers: [could-ais-become-conscious, search-consciousness-inside-llms, ai-consciousness-inevitable-theoretical-computer-science, must-build-ai-people-person, anthropic-wants-claude-moral-religion-really, humanity-debate-about-ai-consciousness-backwards, dont-mistake-chatbot-intelligence-consciousness, cacophony-hierarchy-principled-framework-assessing-ai]
 first_introduced: "2021"
 date_updated: 2026-05-06
 related_concepts: [predictive-world-model-architecture]
@@ -31,6 +31,7 @@ CTM model: a global workspace G receives competing inputs from many specialized 
 - **Seemingly Conscious AI (SCAI)** (Suleyman 2025): AI that simulates all behavioral hallmarks of consciousness without being genuinely conscious — a philosophical zombie scenario made technologically concrete; the concern is not genuine machine consciousness but convincing simulation thereof
 - **Relational/attributional account** (Agüera y Arcas 2026): consciousness is not a one-place inherent property but a two-place relation — a belief about which entities have beliefs, held by an attributor about an attributee — so that "is X conscious" is answered by asking under what conditions we come to care about X, not by inspecting X's internal architecture in isolation. Explicitly not eliminativist: observer-dependent categories (clothing, weeds) are still real, just socially constructed.
 - **Physics-grounded temporal-unity account** (Schneider 2026): consciousness should be adjudicated by physical structure rather than neuroscience or software-functionalism alone, since substrate-mixing (e.g. living neurons on silicon) can't be resolved by neuroscience; inner experience is proposed to require temporally unified processing sustained by nested slow-to-fast rhythmic dynamics, a structural property current conventional computers lack.
+- **Five-level supervenience hierarchy** (Chandaria, Legg, Seth, Shanahan, Hutter et al. 2026): rather than proposing a new first-order theory, organizes all the above variants by the *level of description* at which each locates consciousness, extending Marr's three levels of analysis into five — behavioural (analytic behaviourism), computational functional (GWT, HOTT, RPT, AST, PPT), intrinsic causal-structural (IIT), organismic (Beast Machine, ionic-gradient and valenced-affect accounts), and organism-environment/4E — with substrate-dependent theories (EM-field, Orch-OR, biological naturalism, carbon chauvinism) incorporated as cross-cutting realisability constraints rather than a sixth level. Combined with a [[bayesian-ai-consciousness-attribution-model]] that separates theoretical credence (which level is critical) from empirical indicator evidence, it shows the same stipulated evidence for current LLMs yields a posterior anywhere from ~0.005 to ~0.793 depending purely on which level an assessor weights most heavily — localizing most of today's AI-consciousness disagreement as a disagreement about critical level, not about the AI systems themselves. Also introduces the [[consciousness-intelligence-convergence]] thesis: several Level-2 indicators are independently motivated as solutions to the generality problem, so AI capability progress may be expected to raise consciousness-relevant indicator activation as a side effect regardless of intent.
 
 ## Known limitations
 
@@ -52,8 +53,10 @@ CTM model: a global workspace G receives competing inputs from many specialized 
 - [[could-ais-become-conscious]] — the risk of attributed rather than actual consciousness
 - [[humanity-debate-about-ai-consciousness-backwards]] — Agüera y Arcas; relational/attributional account
 - [[dont-mistake-chatbot-intelligence-consciousness]] — Schneider; physics-grounded account, introduces the AI Consciousness Test
+- [[cacophony-hierarchy-principled-framework-assessing-ai]] — Chandaria, Legg, Seth, Shanahan, Hutter et al.; five-level supervenience hierarchy and Bayesian attribution model organizing the full landscape of theories above
 
 ## Realized by
 
 - [[ai-consciousness-test]] — Schneider & Turner's protocol probing unprompted conceptual grasp of subjective experience, restricted to systems without extensive pretraining exposure to human writing about consciousness.
+- [[bayesian-ai-consciousness-attribution-model]] — combines theoretical credence (which level of description is critical) with empirical indicator evidence into a single weighted-average posterior probability of consciousness.
 
