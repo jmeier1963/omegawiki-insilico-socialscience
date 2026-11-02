@@ -4,7 +4,7 @@ affiliation: "Google DeepMind"
 research_areas: [artificial-general-intelligence, machine-intelligence-measures, agi-safety, reinforcement-learning]
 homepage: ""
 scholar: ""
-date_updated: 2026-06-26
+date_updated: 2026-11-02
 type:
   kind: researcher
 ---
@@ -17,7 +17,7 @@ type:
 
 ## Recent work
 
-Co-founder and Chief AGI Scientist at Google DeepMind. Senior author on [[from-agi-to-asi]] (2026), which uses the Legg-Hutter / Universal AI framework he helped originate to ground a continuum from human-level AGI to artificial general superintelligence and map the technological pathways and frictions between them. Also a co-author on [[cacophony-hierarchy-principled-framework-assessing-ai]] (2026), a multi-institution framework for assessing AI consciousness via a five-level supervenience hierarchy and Bayesian attribution model.
+Co-founder and Chief AGI Scientist at Google DeepMind. Senior author on [[from-agi-to-asi]] (2026), which uses the Legg-Hutter / Universal AI framework he helped originate to ground a continuum from human-level AGI to artificial general superintelligence and map the technological pathways and frictions between them. Also a co-author on [[cacophony-hierarchy-principled-framework-assessing-ai]] (2026), a multi-institution framework for assessing AI consciousness via a five-level supervenience hierarchy and Bayesian attribution model. Co-author (with Alex Imas and Andrew Koh) on [[organizing-intelligence]] (2026), a formal equilibrium model of how AI competence and coordination capabilities reshape firm size, composition, and human wages, applying the Legg-Hutter intelligence framing at the organizational rather than single-agent level.
 
 ## My notes
 

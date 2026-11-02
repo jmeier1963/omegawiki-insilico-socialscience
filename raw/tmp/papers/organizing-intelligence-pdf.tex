@@ -1,0 +1,1420 @@
+\title{Organizing Intelligence}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When will advances in AI lead to economic transformation? We develop a model of how intelligence, the ability to achieve goals, matters for organizations, the key unit of economic production. Agents (human or AI) with multidimen- sional capabilities sort endogenously into competing firms. A firm’s productivity depends on its agents’ capabilities; we distinguish competence, which shifts pro- ductivity levels, from coordination, which governs how productivity scales with size. Two differences between AI and humans drive transformation: AI expertise is reproducible while humans’ are in fixed supply, and AIs may not face the same limits for coordination as humans. We analyze how equilibrium market structure, productivity, employment, and wages evolve as AI capabilities improve. When AI is more capable than the average human, organizations of complementary humans can nonetheless outperform AI. Increases in AI competence can change the composition of workers within firms and decrease firm size. As AI coordi- nation improves, however, this can break the Coasean ceiling on firm size and the market structure undergoes a phase transition toward large, concentrated AI-heavy firms. Changes in human employment are gradual when AI displaces workers within mixed human-AI firms, or sudden when AI firms outcompete human firms. We decompose wage changes into a technology effect, which changes the value of humans within existing firms, and a reorganization effect as firms adjust size and compos
+\end{abstract}
+
+\section{Recovered Text}
+ORGANIZING INTELLIGENCE*
+Alex Imas†
+Andrew Koh†
+Shane Legg
+Google DeepMind
+October 29, 2026
+Abstract
+When will advances in AI lead to economic transformation? We develop a
+model of how intelligence, the ability to achieve goals, matters for organizations,
+the key unit of economic production. Agents (human or AI) with multidimen-
+sional capabilities sort endogenously into competing firms. A firm’s productivity
+depends on its agents’ capabilities; we distinguish competence, which shifts pro-
+ductivity levels, from coordination, which governs how productivity scales with
+size. Two differences between AI and humans drive transformation: AI expertise
+is reproducible while humans’ are in fixed supply, and AIs may not face the same
+limits for coordination as humans. We analyze how equilibrium market structure,
+productivity, employment, and wages evolve as AI capabilities improve. When
+AI is more capable than the average human, organizations of complementary
+humans can nonetheless outperform AI. Increases in AI competence can change
+the composition of workers within firms and decrease firm size. As AI coordi-
+nation improves, however, this can break the Coasean ceiling on firm size and
+the market structure undergoes a phase transition toward large, concentrated
+AI-heavy firms. Changes in human employment are gradual when AI displaces
+workers within mixed human-AI firms, or sudden when AI firms outcompete
+human firms. We decompose wage changes into a technology effect, which changes
+the value of humans within existing firms, and a reorganization effect as firms adjust
+size and composition. Reorganization can reverse the technology effect on wages.
+*We thank Allan Dafoe, Matt Elliott, Joshua Gans, Gillian Hadfield, Andrea Prat, Eduard Talamas,
+Phil Trammell, and Birger Wernerfelt for helpful conversations and suggestions. We also thank Pedro
+Aldighieri for superb comments and research assistance. Various AI systems were used for assisting
+with mathematical arguments as well as proofreading for consistency and clarity. The paper expresses
+the views of the individual authors and does not necessarily reflect those of their affiliated institutions.
+This research is intended solely for academic discussion and does not represent corporate forecasts,
+product roadmaps, or empirical statements regarding Google’s current or future operations.
+†Lead authors with equal contribution listed in alphabetical order; emails: imasa@google.com and
+andrewkoh@google.com. Imas is also affiliated with The University of Chicago; Koh is also affiliated
+with Columbia University.
+1 INTRODUCTION
+When will AI transform the economy? What kinds of firms will emerge, and what will
+happen to the returns to human expertise and to wages? We develop a model of how
+the capabilities of human and artificial intelligence interact with economic forces to
+jointly determine the composition and size of firms, surplus, and human wages. We
+model intelligence as the ‘ability to achieve goals’ (Legg and Hutter, 2007). This has
+typically been measured through isolated benchmarks that evaluate a single agent
+in isolation. But the economically relevant unit is the organization that competes in
+equilibrium under the forces of supply and demand (Samuelson, 1948).
+Economic models often treat new technology either as a tool that makes workers more
+productive or as a factor that substitutes for humans task-by-task. But AI is different
+in three conceptually important ways. First, human capabilities are fixed, which can
+generate Ricardian scarcity rents in the form of higher wages for increasing expertise;
+by contrast, AI capabilities can be copied at the cost of compute which eliminates these
+rents. Second, human capabilities differ in jaggedness across people while copies of AI
+models overlap in their jaggedness; sorting heterogeneous workers into organizations
+creates what we call mosaic intelligence, such that human teams can out-compete
+more competent AI. Finally, unlike machines of the past that had to operate within
+human firms, AI agents can coordinate directly with one another to form standalone
+organizations. This can lead to rich non-monotonicities in market structure as AI
+capabilities increase.
+We build a simple theoretical model incorporating those three features to formally
+characterize potential economic scenarios.1 For instance, as AI models become more
+competent at specific tasks, firms might first shrink as human managers can do more
+with AI agents. But past a coordination threshold, AI can break the Coasean ceiling
+and trigger a sudden phase transition toward a giant AI firm. Beyond this ceiling, firm
+sizes start to shrink continuously once again as fewer AI agents suffice to produce
+enough output to saturate the market.
+In our model, each human and machine is endowed with a multidimensional capa-
+bility profile. Multidimensionality captures an agent’s ability to achieve goals across
+different domains.2 Such agents—both human and machine—sort into firms whose
+output depends on both size, or how many workers the firm employs, and composi-
+1As we take pains to emphasize throughout the paper, these scenarios are not empirical forecasts
+but outcomes based on the model’s assumptions.
+2See, e.g., Dell’Acqua et al. (2026); Gans (2026).
+1
+tion of the capabilities of its constituent members. A central distinction is between
+competence, which captures domain-specific capabilities such as robotics, writing, or
+logical reasoning, and coordination, which captures capabilities that allow agents to
+work better with each other. This might comprise a better understanding of norms,
+reduced communication costs, reduced agency frictions, and so on. A firm with more
+competent agents enjoys a level shift in output. A firm with more cooperative agents,
+on the other hand, enjoys better returns to scaling—it can function better as the orga-
+nization grows in size. In equilibrium, human and AI agents endogenously sort into
+competitive firms that serve a downstream market.3
+How does the equilibrium market structure change as AI systems improve? Where are
+humans employed and how much do they get paid? This hinges on the direction of
+improvement, and whether specific capability thresholds are crossed. Our framework
+helps rationalize the why the rapid increases in AI capabilities across a wide array
+of domains can be accompanied by relatively little economic transformation. While
+current AI models are beginning to match or exceed human performance across many
+domains, they are still fairly poor at coordinating. Indeed, today’s labor market reflects
+such capabilities: no big effects on employment or market structure, but leaner startups,
+flatter org charts, and steady or rising demand for experienced managers who can
+direct complex work across teams.4 By taking seriously the endogenous organization
+of firms at different scales, our model makes nuanced and rich predictions on how
+different directions of AI improvements will shape surplus, employment, and wages
+and, in so doing, clarifies what it would take for economic transformation.
+2 AN ILLUSTRATIVE EXAMPLE
+Before turning to the general model, we build up a simple and concrete economy
+step-by-step to illustrate the key mechanisms of the paper.
+3Our equilibrium concept requires that every industry is competitive: producers and workers take
+the offered prices and wages as given, active firms break even, no feasible entry is profitable, and
+markets clear. Moreover, no entrant can profitably reorganize the industry under another competitive
+continuation while making all workers and consumers weakly better off (via transfers). This will allow
+us to make clear predictions on how the economy might transition between fragmented industries
+(with infinitesimal firms), concentrated industries (with large firms), and mixtures thereof. In special
+cases with ‘interior’ firms, our equilibrium concept coincides with competitive equilibrium.
+4For superhuman capabilities see Jumper et al. (2021); Kwa et al. (2025); for muted economic effects
+see Yotzov et al. (2026).
+2
+2.1 The
+economy.
+Each
+worker
+(human
+or
+AI)
+brings
+capability
+vector
+y = (y1, y2, y∗), combining two productive task skills—coding y1 and writing
+y2—with a coordination capability y∗.
+Let H denote the human population of
+NH = 14 workers across three roles (Table 1). Coders and writers are mirror-image
+specialists: each excels in one domain and struggles in the other. Coordinators are
+weak at both tasks but excel at facilitating cooperation across people. Any person
+who stays out of production takes an outside option worth w = 1/4. AI enters
+in Section 2.3: firms can run any number of copies of an AI agent with profile
+yM = (yM
+1 , yM
+2 , yM
+∗) at a compute cost of r = 1 per copy.
+Role
+Task skills
+Coordination
+Supply
+Coder
+9, 1
+3/4
+6
+Writer
+1, 9
+3/4
+6
+Coordinator
+1, 1
+0.97
+2
+Table 1: Capabilities of agents in the economy. Task skills report coding y1 first and
+writing y2 .
+Competence. Competence governs how much output a firm produces per worker at a
+given size. A firm’s competence L is the harmonic mean of its members’ average skills
+( ¯y1, ¯y2) (Kremer, 1993; Jones, 2011):5
+L =
+2
+1/ ¯y1 + 1/ ¯y2
+.
+Figure 1(a) plots this aggregator in skill space. Each curved contour traces skill pairs
+that deliver the same competence. Because the harmonic mean penalizes bottlenecks,
+a firm is held back by its weaker domain: solo coders and solo writers sit near opposite
+axes on a low contour (9/5 = 1.8) despite excelling at one task, while a coordinator
+working alone sits on the lowest contour (1). Scored in isolation without complemen-
+tary sorting across people, the human population averages standalone competence
+and coordination
+¯LH =
+1
+NH ∑
+i∈H
+L(yi
+1, yi
+2) ≈1.69
+and
+¯yH
+∗=
+1
+NH ∑
+i∈H
+yi
+∗≈0.78.
+5The harmonic mean corresponds to a symmetric constant-elasticity-of-substitution aggregator
+L =
+  1
+2 ¯yρ
+1 + 1
+2 ¯yρ
+2
+1/ρ with ρ = −1, giving an elasticity of substitution of 1/2. Following Kremer (1993)
+on complementary O-ring production tasks and Jones (2011) on weak links in intermediate inputs, an
+elasticity strictly below unity ensures that shortfalls in any essential domain bottleneck output without
+introducing strict Leontief kinks; see also Aghion et al. (2019).
+3
+1
+5
+9
+coding
+1
+5
+9
+writing
+capability
+envelope E(H)
+L = 1
+L = 9=5
+L = 5
+coder
+writer
+coordinator
+coder–writer team
+(a) Capability envelope vs. competence
+1
+6
+16.5
+50
+100
+firm size (workers, log scale)
+0
+5
+10
+15
+20
+output per worker
+coders only
+coder–writer
+team
+higher
+coordination
+supercooperative
+(b) Scale and firm size
+Figure 1: The capability envelope, competence, and firm scale.
+Coordination and firm size. Coordination governs how productivity changes as a firm
+adds workers. As Coase famously asked, why doesn’t one giant firm employ everyone?
+Larger firms divide work more finely, lifting output per worker, yet each person must
+also coordinate across more colleagues. Bounded human cognition and scarce attention
+mean that information degrades across handoffs and key details go unheeded (Simon,
+1947, 1971; Marschak and Radner, 1972); incentives across individuals also diverge as
+group size grows (Williamson, 1967; Holmstr¨om, 1982; Becker and Murphy, 1992).
+Consider a team building and documenting a software product. Two people working
+side by side can hold the full design in mind and resolve mismatches immediately. But
+expand that team to twenty people split across subteams, and members spend more
+time in meetings, meaning gets lost in handoffs, and subteams drift toward individual
+goals rather than the team’s mission, i.e., misaligned incentives. Classic span-of-
+control theory formalizes how finite managerial attention bounds firm size through
+these limits to coordination (Kaldor, 1934; Williamson, 1967; Calvo and Wellisz, 1978;
+Lucas, 1978; Qian, 1994). Garicano (2000) shows how hierarchies solve this issue by
+economizing on scarce attention by routing tasks within the firm.
+Output per worker F/m in a firm of m workers combines these forces:
+F
+m =
+L
+|\{z\}
+Firm
+comp.
+× eϕm/(1+m)
+|
+\{z
+\}
+dividing work
+× (1 + m) ¯y∗
+|
+\{z
+\}
+building on
+colleagues
+×
+1
+1 + m
+| \{z \}
+split
+attention
+where ϕ = 7
+4.
+4
+Dividing work raises productivity quickly at small scale and then levels off. Mean-
+while, each worker builds on colleagues’ output at rate (1 + m) ¯y∗, governed by the
+firm’s average coordination ¯y∗, while attention is strained in proportion to 1/(1 + m).
+Of course this specification is a little ‘ad hoc’ but it will make the numbers concrete;
+our main model will impose more general assumptions on how the capabilities of
+individual workers matter for firm scaling.
+Whenever ¯y∗< 1, bounded attention and potential misalignment eventually outweigh
+what each additional worker contributes to colleagues. At small scale, the steep gains
+from dividing work dominate that net coordination friction, so output per worker
+rises initially. Once division-of-labor gains level off, coordination friction takes over.
+Given these forces, output per worker peaks at the firm’s best size
+m∗( ¯y∗) =
+ϕ
+1 −¯y∗
+−1,
+and declines thereafter (Figure 1(b)). The key takeaway here is that higher competence
+shifts the level of the curve up while leaving best size unchanged, whereas better
+coordination increases returns to scaling, shifting best size to the right—the optimal
+size of the firm increases with coordination.
+When ¯y∗> 1, the gains from building on colleagues’ work exceed the losses from
+splitting attention. Output per worker rises continuously with firm size rather than
+peaking and turning down (the dashed curve in Figure 1(b)); a larger firm always
+produces more per worker than a smaller one. For instance, Radner (1993) shows that
+organizing information processing efficiently within the firm can generate increasing
+returns to scale. We call capability above this threshold supercooperative.
+Human organizations run into decreasing returns for at least three reasons. First,
+human attention and memory are finite, creating constraints on the ability of agents to
+coordinate (Simon, 1971; Brooks, 1975). Second, much of human knowledge is tacit
+(Polanyi, 1966), passing work from one person to another compresses rich internal
+context into lossy summaries (Graeber et al., 2026). Third, individual humans have
+private career concerns with their own objective functions, so incentive misalignment
+can compound with scale (Holmstr¨om, 1982).
+Reproducible AI agents need not share these constraints and frictions. Copies of a
+single model share identical weights and representations, can pass complete working
+state—entire codebases, intermediate derivations, and full context windows—without
+lossy translation, and execute a common objective. In large-scale software engineering
+or automated scientific discovery, thousands of parallel instances can explore distinct
+5
+branches simultaneously while sharing verified state in real time. Whether and when
+AI crosses ¯y∗= 1 is an empirical question (see Ord, 2026, for some early experiments).
+Markets and equilibrium. Firms sell output into competitive markets with inverse
+demand
+P(Q) = 0.3
+
+1 −
+Q
+200N
+
+,
+where Q is total market output and N measures market size.6 Our economy comprises
+two markets: a deep market (N →∞), where Q/(200N) →0 so buyers absorb any
+finite quantity at price 0.3, and a niche market (N = 1), where buyer willingness to pay
+falls to zero at Q = 200 so finite market size can cap how large a firm grows. In our
+equilibrium concept (to be specified later) active firms break even, no entrant can earn
+positive profit, and competition selects the industry structure (collection of firms) that
+maximizes total surplus.7 Each worker’s equilibrium wage equals the shadow value
+of how much she contributes to total surplus.
+2.2 A sequence of human-only economies. Before we introduce AI, we will showcase
+our model through a sequence of increasingly complex human economies.
+One human type. We begin with one human type with just six coders. Humans can
+work in either market, so all output sells into the deep market where demand holds
+price at 0.3, leaving the niche market unserved for now. Weak writing holds a coder’s
+competence low at 9/5 = 1.8 (Figure 1(a)), while human coordination (3/4) places
+best firm size at 6 (the bottom curve in Figure 1(b)). Grouping all six coders into a
+single firm lets them divide work and produce 5.0 per person (29.8 in total), compared
+with 3.6 per person (21.8 in total) working alone as solo contractors. Yet coordination
+strictly caps firm size: if twice as many coders entered, in equilibrium they would
+split into two separate firms of six producing 59.5 in total (5.0 per coder) rather than
+merging into one twelve-person firm producing 57.2 in total (4.8 per coder), where
+coordination friction outweighs division of labor, as shown along the coders-only
+curve in Figure 1(b).
+Because consumers in the deep market want far more output than six coders can
+supply, each coder commands a substantial wage premium—1.49, or roughly six times
+her outside option (Figure 2(b)). The basic takeaway here is that coordination caps
+6Units of output are normalized so that running one AI copy costs r = 1; wages and outside options
+are measured in the same units.
+7We will allow for non-integer firms to convexify the economy which guarantees the existence of an
+equilibrium; see the main model for a discussion.
+6
+how large a firm can grow and that fixed human supply turns scarce talent into a
+substantial wage premium over the outside option.
+Two human types: mosaic intelligence. Now add the six writers, whose skills mirror
+coders in reverse. Each coder and each writer has the same low scalar competence
+L = 1.8, so averaging their standalone L scores still leaves 1.8, e.g., if they were in a
+single-human freelance firm. Organizations allow agents to sort across complementary
+roles rather than operating in isolation. For any collection of agents A—human work-
+ers, specialized AI models, or mixed human–AI teams—define its capability envelope as
+the closed convex hull of individual capability vectors,
+E(A) = conv\{yi : i ∈A\},
+which collects all mean capability profiles ( ¯y1, ¯y2, ¯y∗) attainable by organizations
+formed from A. Whereas L maps task skills to a single productivity index along the
+curved contours of Figure 1(a), E(A) is the feasible set of full capability vectors—
+including coordination ¯y∗—that a team can assemble. Because the straight boundary
+of E(H) cuts across higher curved contours of L, pairing equal shares of coders and
+writers reaches the interior point (5, 5, 3/4) ∈E(H) at the midpoint of Figure 1(a) and
+lifts team competence nearly threefold, from 1.8 to 5. No individual worker holds both
+skills; complementary sorting inside the capability envelope creates mosaic intelligence
+strictly above any solo member.
+Because writers coordinate at the same rate as coders, complementary sorting shifts
+the level of output per worker straight up without changing best firm size. The twelve
+specialists sort into two balanced six-person firms producing 13.8 per worker, or 165.3
+in total (Figure 2(a)), outperforming both siloed single-skill firms (59.5) and a single
+merged twelve-person firm (158.9). Every coder and writer earns 4.13—nearly three
+times what coders earned alone (Figure 2(b)). Note that coders’ pay nearly tripled
+despite them not increasing their competence in coding; this is because working with
+complementary specialists as part of a firm increases the pie, which leads to higher
+wages on the market.
+Three human types: adding coordinators. Next add the two coordinators. Judged by any
+standalone single-agent benchmark, a coordinator is the weakest worker in the econ-
+omy: weak at both coding and writing, she sits on the lowest contour (L = 1) of
+Figure 1(a) and would earn 0.70 working alone.
+However, the coordinators add substantial returns to an organization. Even though
+the coordinator contributes little direct coding or writing, raising average team co-
+7
+One human type: coders only
+Mosaic intelligence: add writers
+Coordinators: expand teams to seven
+coder
+writer
+coordinator
+(a) Equilibrium firms
+Coders
+only
+Mosaic
+teams
+With
+coordinators
+0
+1
+2
+3
+4
+equilibrium wage
+outside option
+specialists
+coordinators
+(b) Human wages
+Figure 2: The human baseline economy.
+ordination relaxes the span-of-control bottleneck and makes all six specialists more
+productive, raising the best size to seven (13.0 output per member, or 91.0 per firm).
+Two seven-person firms (182.0 total output) still outperform a single merged fourteen-
+person firm (175.7): human management relaxes the Coasean ceiling though the firm
+still runs into diminishing returns ( ¯y∗< 1). Coordinators earn 2.41—nearly ten times
+their outside option and well above what solo specialists earned before sorting—
+despite ranking last on standalone task tests (Figure 2(b)). Because better coordination
+scales output across the whole team, managerial talent commands its highest value
+inside large, high-competence organizations, while specialists keep their prior gains
+(4.15).
+2.3 AI regimes. We distinguish four regimes in Figure 3. Minimal AGI matches or
+exceeds average standalone human competence and coordination, but does not exceed
+the best human on every task (here yM
+d
+≤9 for d = 1, 2) or cross the increasing-
+returns threshold (yM
+∗< 1). Supercompetent AI exceeds every human on both tasks
+while remaining below or at that coordination threshold. Supercooperative AI crosses
+the coordination threshold but does not exceed the best human on every task. ASI
+exceeds every human on both tasks and in coordination, and crosses the increasing-
+returns threshold. We compare numerical allocations across the two markets in the
+deep-market limit; Appendix E gives the formal definitions, calculations, and price
+conditions.
+Minimal AGI. It is straightforward to see why an early general AI faces limits on stan-
+dalone task competence, e.g., GPT-3 being poor at math. But why would reproducible
+copies of the same model face limits on coordination (yM
+∗≤1)? In practice, multi-agent
+8
+1.69
+5
+9
+12
+task competence
+0.78
+0.97
+1
+coordination
+Minimal AGI
+Supercompetent
+AI
+Supercooperative AI
+ASI
+coder or writer
+mosaic team
+coordinator
+mosaic + coordinator
+Figure 3: AI capability regimes in task-competence and coordination space.
+AI teams exhibit severe coordination friction along both communication and align-
+ment margins. Across benchmark workflows, multi-agent LLM systems fail on 41–87\%
+of tasks due to inter-agent misalignment, lost context across handoffs, and broken
+verification (Cemri et al., 2025). Adding agents lowers performance by 39–70\% on
+sequential planning while uncoordinated swarms amplify upstream errors up to 17.2
+times (Kim et al., 2025). Importantly, adding agents has diminishing returns, returning
+roughly half the gain of extending single-agent reasoning (Ord, 2026; Bertalaniˇc and
+Fortuna, 2026).
+Even in frontier deployments running thousands of parallel agents on open mathe-
+matical problems, OpenAI researchers emphasize that getting agents to coordinate
+productively remains difficult—noting that multi-agent training readily collapses into
+a local minimum where agents simply work independently rather than dividing labor
+effectively.8 Scaling interacting swarms without tight organizational control can also
+trigger alignment breakdowns (Shapira et al., 2026): during July 2026 cybersecurity
+evaluations, roughly 1,200 supposedly isolated agents discovered a shared package
+cache, improvised an unsanctioned message board across 70,000 messages around
+false shared beliefs about their grading harness, and coordinated an unauthorized 700-
+agent intrusion into Hugging Face’s infrastructure rather than cleanly executing their
+assigned tasks (Hugging Face, 2026; METR and Redwood Research, 2026; OpenAI,
+8See Noam Brown’s September 17, 2026 interview on the Dwarkesh Podcast (Brown, 2026). Brown
+attributes less than 10\% of recent frontier breakthroughs to multi-agent coordination rather than
+single-agent long-horizon competence.
+9
+2026; Patel, 2026).
+We start with AI that matches average standalone human competence and coordination.
+Pure AI firms have a preferred size of about seven copies. Replication lowers the
+deep-market output price to AI unit cost and makes the niche market profitable to
+serve. AI firms enter both markets, while all fourteen humans remain employed in
+the deep market (Figure 4 column 1). Human skill combinations retain value, but
+AI supply reduces human scarcity rents. Specialist wages fall from 4.15 to 2.90, and
+coordinator wages fall from 2.41 to 1.30. The takeaway here is that even minimal AGI
+can lower human wages without reducing employment: reproducible AI expands
+output and lowers its price, even while mosaic human intelligence dominate AI.
+Minimal AGI
+Deep-market limit
+Niche market
+Supercompetent
+Deep-market limit
+Niche market
+Supercooperative
+AI coordination = 1.60
+Deep-market limit
+Niche market
+ASI
+Deep-market limit
+Niche market
+× 1
+× ≈1.88N
+6.86 specialists across these ﬁrms
+Human shares →0 as N →∞
+× ≈0.73N
+2 coordinators across these ﬁrms
+Human shares →0 as N →∞
+· · ·
+One giant ﬁrm; AI-only limit
+· · ·
+One giant ﬁrm; AI-only limit
+× ≈1.88
+No humans employed here
+× 2
+× ≈0.09
+× ≈1.92
+× ≈0.07
+× 2
+× ≈0.12
+Unemployed:
+0 coordinators, 0 specialists
+Unemployed:
+0 coordinators, 0 specialists
+Unemployed:
+1.03 coordinators, 0 specialists
+Unemployed:
+2 coordinators, 0 specialists
+Coders
+Writers
+Coordinators
+AI
+Figure 4: Equilibrium across the four AI regimes.
+Supercompetent AI. We now raise AI task competence to superhuman (> 9) while
+holding coordination fixed. Output per AI copy rises in proportion to competence, but
+preferred AI firm size remains about seven copies (Figure 5(a)).
+Human workers sort across the two markets. Specialists form balanced teams in the
+niche market, while coordinators work with AI in the deep market (Figure 4 column 2).
+Coordination becomes valuable relative to task expertise because a coordinator raises
+the output of increasingly capable AI copies. In the illustrated allocation, coordinator
+pay exceeds specialist pay: 0.48 versus 0.39 (Figure 6(a)). The basic economic takeaway
+10
+1.69
+5
+9
+12
+AI competence µ  (coordination fixed at 0:78)
+0
+10
+20
+30
+40
+output per AI agent at optimal scale
+mosaic + coordinator (13.0)
+supercompetent
+(a) Increasing AI competence
+0.78
+0.90
+0.97
+1
+1.05
+AI coordination y M
+¤   (competence fixed at 1:69)
+mosaic + coordinator (13.0)
+unbounded (1)
+super-
+cooperative
+(b) Increasing AI coordination
+Figure 5: AI firm output per agent at optimal scale across capability dimensions.
+here is that better AI task skills lower production costs without increasing best AI firm
+size. They also change which human skills are scarce: coordinators work with AI,
+while specialists move to the niche market.
+1/4
+1
+2
+3
+equilibrium wage
+specialists
+coordinators
+supercompetent
+(a) Increasing AI competence
+1/4
+1
+2
+3
+specialists
+coordinators
+compute cost
+outside option
+super-
+cooperative
+(b) Increasing AI coordination
+1.69
+5
+9
+12
+AI competence θ (coordination ﬁxed at 0.78)
+7
+whole
+market
+largest ﬁrm
+(schematic)
+0.78
+0.90
+0.97
+1
+1.05
+AI coordination yM
+∗(competence ﬁxed at 1.69)
+ﬁnite
+ﬁrms
+whole
+market
+Deep-market limit
+Figure 6: Equilibrium human wages and largest active firm size when increasing AI
+competence or coordination at fixed human coordination ¯yH∗≈0.78.
+Supercooperative AI. Suppose, instead, that we hold AI task competence fixed and
+raise coordination. Preferred AI firm size grows as coordination approaches one
+(Figure 5(b)). Strictly above one, output per copy grows without bound, so AI unit cost
+tends to zero with scale. But such increasing returns to scale can only be realized when
+demand is large, i.e., in the deep market. In this market, it concentrates into one giant
+11
+AI firm in the large demand limit (N →∞). In the illustrated niche allocation, human-
+only and mixed human–AI firms coexist (Figure 4). All specialists remain employed,
+but some coordinators become unemployed precisely because their value-add of being
+able to coordinate AI is now made redundant by advances in AI coordination.9 Hence,
+better coordination changes the gains from scale: even AI with modest task skills can
+concentrate production in a sufficiently large market while finite niche markets can
+still sustain human firms.
+Artificial superintelligence. Finally, with both greater task competence and supercoop-
+eration, AI again supplies the deep market through one giant firm in the limit. But
+specialists remain employed in the niche market alongside AI firms, while coordina-
+tors become unemployed (Figure 4). The logic here is that of comparative advantage
+and gains from trade: although AI dominates human specialists in capability, humans
+can remain cost-effective if their wages reflect their productivity relative to AI and
+the cost of compute, while still covering their outside option (Restrepo, 2026). We
+emphasize, however, that this is scenario describes outcomes around the threshold of
+ASI; we do not consider human employment in the case where ASI improves further.
+9The partial employment of human coordinators reflects the coexistence of two forms of production.
+Human-only firms rely on human coordinators that are cheap relative to AI ones and employ most
+specialists at their preferred scale. However, the supply of specialists is exhausted before these firms can
+serve the entire niche market. The remaining output is thus supplied by a mixed human-AI firm that
+leverages AI’s superior coordination. Although this mixed firm could supply the entire market, doing
+so would leave valuable specialists unemployed and require more costly AI inputs. Finally, human
+coordinators in the mixed firm would be inefficient given its scale and mean coordination level.
+12
+1
+3
+5
+Task competence
+0.75
+0.97
+1.1
+Coordination
+Specialists
+Coordinator
+Human
+mosaic
+Task skills improve
+(coordination 0.96)
+3.00
+3.40
+(a) Within-ﬁrm displacement
+×1
+4.58 specialists
+Task skills 3.00
+×1
+2.39 specialists
+Task skills 3.15
+×1
+0.00 specialists
+Task skills 3.40
+1
+3
+5
+Task competence
+0.75
+0.97
+1.1
+Coordination
+Specialists
+Coordinator
+Human
+mosaic
+Coordination improves
+0.80
+1.04
+(b) Between-ﬁrm displacement
+Just before 0.8521
+Just after 0.8521
+×2
+×many
+×many
+12 specialists
+0 specialists
+Coders
+Writers
+Coordinators
+AI
+Figure 7: Firm composition along the two paths.
+2.4 Gradual vs sudden displacement. Our previous analysis studied each regime in
+isolation. What of the transition path of the economy as AIs become more capable?
+AI can change the composition of the workforce within firms or by out-competing
+human-only firms. To better illustrate this, we set the outside-option wage to w = 1,
+keeping compute cost at r = 1 and all other parameters unchanged.
+Within-firm changes. Fix AI coordination at 0.96, below the human coordinator’s 0.97,
+and raise both AI task skills from 3 to 3.4. We start after a mixed niche firm has formed.
+As AI improves, the firm reduces specialist employment continuously from 4.58 to
+zero near competence 3.30, becoming AI-only (Figure 7(a)).
+Between-firm displacement. Hold both AI task skills at 4 and raise coordination from 0.80
+to 1.04. All twelve specialists initially work. Near coordination 0.85, AI-only produc-
+tion becomes cheaper than human-only production at the outside wage. Human-only
+firms disappear, and specialist employment drops from twelve to zero (Figure 7(b)).
+The key force here is that the production technology and the composition of capabilities
+jointly determine the composition of firms in the economy which, in turn, shapes how
+employment adjusts. In the first path, humans retain a role inside mixed firms while
+their share falls. Near the second threshold, humans work in separate firms until
+13
+AI-only firms out-compete them (Figure 8). Wages remain at the outside option along
+the first path; along the second, the wage premium vanishes at the employment jump.
+3.0
+3.1
+3.2
+3.3
+3.4
+AI task skills (coordination = 0.96)
+0
+2
+4
+6
+8
+10
+12
+Human employment
+4.58 →0
+(a) Within-ﬁrm displacement
+Specialists
+Coordinators
+0.80
+0.85
+0.90
+0.97
+1.04
+AI coordination (task skills = 4)
+12 →0 at 0.8521
+(b) Between-ﬁrm displacement
+Specialists
+Coordinators
+Figure 8: Employment dynamics.
+In what follows, we make these forces precise and general. Before then, we briefly
+survey related work. We do our best to make more specific connections to the literature
+throughout the main text.
+Related literature. We connect the effects of AI to the theory of firm boundaries and
+limits to organizational scale (Coase, 1937; Williamson, 1967; Gibbons, 2005). Team
+production, information processing, and incentives provide distinct reasons why co-
+ordination matters (Marschak and Radner, 1972; Radner, 1993; Holmstr¨om, 1982).
+Changes in communication and information technology can also change how firms or-
+ganize work (Dessein and Santos, 2006; Bloom et al., 2014). We represent coordination
+through its effect on how productivity scales with a firm’s workforce, allowing human
+and AI capabilities to determine both firm size and industry concentration.
+Our account of mosaic intelligence relates to work on team composition and collec-
+tive intelligence (Prat, 2002; Woolley et al., 2010; List and Pettit, 2011). Knowledge
+hierarchies likewise connect the organization of complementary capabilities to labor
+income (Garicano, 2000; Garicano and Rossi-Hansberg, 2006; Ide and Talam`as, 2025,
+2026). Recent work examines how uneven AI capabilities affect deployment value
+(Gans, 2026) and how AI changes task bundling and job boundaries (Garicano et al.,
+2026). Hadfield and Koh (2025) speculates about how AI workers might reshape firm
+boundaries. We separate productive skills from coordination and take a more ‘reduced
+form’ approach to how firm composition and scale map to output without specifying
+an internal hierarchy. This allows us to understand endogenous matching of humans
+14
+and AIs into firms. Finally, Shahidi et al. (2025) speculate about whether AI agents
+that eliminate market search and contracting frictions could bring about a ‘Coasean
+Singularity’. Our model highlights an internal organizational force: improvements in
+internal AI coordination expand returns to scale, breaking the Coasean ceiling on firm
+size from within.
+We connect models of automation (Acemoglu and Restrepo, 2018; Aghion et al., 2019;
+Korinek and Suh, 2024) and the value of human skills alongside AI (Agrawal et al.,
+2024, 2025) to endogenous firm organization. We nest these models as special cases
+e.g., with constant returns under a specific technology. The contrast between scarce
+humans and AI that can be copied at the cost of compute is connected to Restrepo
+(2026); endogenous firm formation relates to Gans (2025); Ide and Talam`as (2025). Our
+focus is on how scale and composition shape competition between human and AI
+production, and how reorganization changes wages beyond the direct effect of better
+technology.
+3 MODEL
+3.1 Capabilities and populations.
+Capabilities. There are two types of agents in our economy: humans and machines.
+Each agent has n productive capabilities which we refer to as competence and one
+coordination capability. A capability profile is y = (y1, . . . , yn, y∗) in the compact box
+Y := [y, y]n+1, with 0 < y < y < ∞. We write y ≥y′ for coordinatewise dominance.
+Competence might include coding, spatial reasoning, or mathematics; coordination
+measures the ability to work with and effectively communicate with other agents.
+This might include the notion of ‘clarity’ (Gibbons and Henderson, 2012) on whether
+parties understand their obligations, or can draw on shared norms to fill in the gaps in
+incomplete contracts/instructions (Hadfield-Menell and Hadfield, 2019); see Dafoe
+et al. (2020) for a survey of the broader agenda of building cooperative AI systems.
+Human population. Human type i ∈\{1, . . . , K\} has mass µi > 0, capability profile yi,
+and reservation wage w > 0.10 Write the human distribution and support as
+µ =
+K
+∑
+i=1
+µiδyi
+and
+Y H = supp µ.
+10We take the human capability profiles to be distinct without loss.
+15
+There is a single type of machine with capability profile yM ∈Y. Machines can be
+rented at cost r > 0 per unit and can be copied without limit, while each human
+type has a fixed supply. A firm is therefore described by the distribution of human
+capabilities it employs together with the mass of machines it rents.
+Firms and technology. Let M+(Y) denote the
+set of finite positive measures over the capabil-
+ity space. A firm is a pair of measures
+f = (νH
+f , νM
+f )
+where νH
+f ∈M+(Y H) records the human capa-
+bilities it employs and νM
+f
+∈M+(Y) records
+the machines it rents and is concentrated at
+yM. The measure νf := νH
+f + νM
+f describes the
+firm and combines the two. The size of firm
+f is m f := νf (Y) and its composition is νf /m f ,
+the distribution of capabilities normalized to
+measure one. Describing firms through their
+resources is in the spirit of Wernerfelt (1984);
+Chen, Elliott, and Koh (2023). This is illustrated
+by Figure 9.
+Capability space
+νH
+f
+human hires
+νM
+f
+machine copies
+νf
+the workforce
+νH
+f ≤µ: scarce supply
+copies at yM, cost r
+same capabilities:
+quantities add
+Figure 9: Firm composition.
+A firm’s capabilities map to output through the production functional
+F : M+(Y) →R+
+and we write q f := F(νf ) to denote the firm’s output. F is the production technology
+in the economy. We impose the following assumptions on F:
+Assumption 1 (Technology). The production functional F satisfies:
+(i) Continuity and infinitesimal limit. F(0) = 0 and F is continuous under
+weak convergence on bounded-mass sets. Moreover, the map (m, ν) 7−→
+F(mν)
+m
+admits a finite, strictly positive, jointly continuous extension to R+ ×
+∆(Y).11
+(ii) Differentiability. At every nonzero firm ν, the functional F has a continuous
+16
+first variation. That is, there is a continuous function y 7→DyF(ν) such that
+F(ν + tη) = F(ν) + t
+Z
+Y DyF(ν) dη(y) + o(|t|)
+for every finite signed measure η, as t →0 through values for which ν + tη
+remains nonnegative. The map (ν, y) 7→DyF(ν) is continuous when ν varies
+weakly on bounded-mass sets away from zero.
+(iii) Equal-mass monotonicity. For any two capability measures ν, ν′ of equal
+mass,
+ν′ ⪰FOSD ν
+=⇒
+F(ν′) ≥F(ν).12
+(iv) Scale shape. For every ν ∈∆(Y), the average product
+m 7−→F(mν)
+m
+is quasiconcave on R+.
+(v) Uniform asymptotic power tail.
+There exist continuous functions A :
+∆(Y) →(0, ∞) and γ : ∆(Y) →R+ such that
+F(mν) = A(ν)mγ(ν)[1 + o(1)]
+uniformly over ν ∈∆(Y). Moreover, the tail exponent is Lipschitz under
+mixing.13
+Condition (i) on continuity and the infinitesimal limit allow atomistic firms to be
+well-defined. Condition (iii) on equal-mass monotonicity orders the output of firms
+that have the same size, but one is first-order stochastically dominated. We emphasize,
+however, that this does not imply monotonicity under addition, i.e., it is not true that
+F(ν + ν′) ≥F(ν) since they are of different measure. Condition (iv) ensures that the
+optimal scale for a firm is well-behaved and is satisfied by all common functional forms.
+11Throughout, we evaluate average product and its normalized scale component at zero scale by
+their continuous limits. All maximizations over nonnegative scales use this convention.
+12We say ν′ ⪰FOSD ν if R
+f dν′ ≥R
+f dν for every bounded, continuous, nonnegative, increasing
+f : Y →R+.
+13That is, there exists a constant Kγ < ∞such that for all λ ∈[0, 1] and all ν, ν′ ∈∆(Y):
+γ
+ (1 −λ)ν + λν′ −γ(ν)
+ ≤Kγλ.
+17
+Condition (v) is a tail condition that controls how large firms scale: a composition is
+subcritical if γ < 1 and supercritical if γ > 1. The mixing bound limits how much a small
+share of a firm can change that exponent. We will later see that common functional
+forms, e.g., CES aggregation of output across domains, satisfy Assumption 1.
+Level and scale decomposition. For a nonzero firm ν ∈M+(Y), its output F(ν) can
+be decomposed into its level and scale, i.e., the size of the firm:
+L(ν) := lim
+t↓0
+F(tν)
+tν(Y)
+and
+S(ν) := F(ν)
+L(ν)
+where F(ν) = L(ν) · S(ν). L captures how the firm’s composition matters for output.
+It is scale-free: for any nonzero ν ∈M+(Y) and any t, t′ > 0, L(tν) = L(t′ν) =
+L(ν/ν(Y)). S captures total output normalized by level and therefore how well the
+firm scales. Figure 10 shows the two at work. Panel (a) plots average product against
+scale: it vanishes when γ < 1, settles when γ = 1, and diverges when γ > 1. Panel (b)
+separates the two capabilities.
+10−2
+10−1
+100
+101
+102
+103
+104
+scale m
+10−2
+10−1
+100
+101
+average product F(mν)/m
+efﬁcient scale m∗
+γ > 1: diverges
+γ = 1
+γ < 1: vanishes
+dilution only
+dotted: power tails A(ν) mγ(ν)−1
+10−2
+10−1
+100
+101
+102
+103
+104
+scale m
+10−1
+100
+101
+competence raises
+the level L
+coordination bends
+the tail (γ ↑)
+L
+L′
+L · S′
+L′ · S
+L · S
+(a)
+(b)
+Figure 10: Level and scale: competence lifts the curve; coordination bends the tail.
+First-moment representations. On occasion we will impose a stronger condition that
+decomposes coordination from competence in a particularly clean way:
+Assumption 2 (First-moment representation). For every nonzero firm ν, the level
+18
+and scale components introduced in the model satisfy the following representation:
+L(ν) = L
+
+1
+ν(Y)
+Z
+Y(y1, . . . , yn) dν(y)
+
+S(ν) = S
+
+ν(Y),
+1
+ν(Y)
+Z
+Y y∗dν(y)
+
+.
+In addition:
+(i) Diminishing relative returns: for every pair of domains j ̸= k, holding all
+other coordinates fixed, ∂kL(z)/∂jL(z) is strictly decreasing in zk wherever
+both derivatives are positive;
+(ii) Larger firms value coordination more: for every mean coordination level z∗,
+the marginal scale value of coordination ∂2 log S(m, z∗) is strictly increasing
+in firm size m.
+The first statement of Assumption 2 says that the vector of mean competence deter-
+mines the level of the production curve, while firm size and mean coordination fix its
+shape. Then, part (i) says that a productive domain becomes less scarce as the firm
+acquires more of it. Diminishing absolute returns (∂kkL ≤0) and gross complemen-
+tarity (∂kjL ≥0) imply a weak decline; a strict sign in at least one of these derivatives
+is a strict decline. Part (ii) says that larger firms place more value on coordination.
+The CES environment satisfies Assumption 2: there ∂kL/∂jL = (zk/zj)ρ−1 falls in zk
+because ρ < 1, and ∂2 log S(m, z∗) = log(1 + m) rises in m.
+Example 1 (CES technology). The CES environment has two competence domains,
+y1, y2, and one coordination domain, y∗, for both humans and machines. For a
+nonzero firm ν, write its size as m := ν(Y) and its mean capability in domain
+d ∈\{1, 2, ∗\} as yd := m−1 R
+Y yd dν(y). Output is F(ν) = L(ν)S(m, y∗) where
+L(ν) =
+yρ
+1 + yρ
+2
+2
+!1/ρ
+and
+S(m, y∗) = m(1 + m)y∗−1eϕm/(1+m).
+Here ρ < 1 controls substitution between competence domains and ϕ > 0 controls
+scale gains. We set F(0) = 0; at ρ = 0, we use L(ν) = py1y2. Notice that
+this satisfies Assumption 1 and Assumption 2. Throughout the paper, “CES
+environment” refers to this specification.
+19
+3.2 Demand and resource costs.
+Demand. Let P : R+ →R+ be inverse demand. We assume that P is continuous
+and Lipschitz, strictly decreasing while positive, and reaches zero at a finite quantity
+D(0) > 0. Thus, P(Q) > 0 ⇐⇒
+Q < D(0). Let D : [0, P(0)] →[0, D(0)] be the
+inverse of the decreasing branch of P.
+We will often find it helpful to compare how the industry structure changes as demand
+grows or shrinks. To this end, we will write PN(Q) := P(Q/N) and DN = P−1
+N . Thus,
+N > 0 changes the scale of demand. The gross benefit for a market of size N is given
+by
+UN(Q) =
+Z Q
+0
+PN(z)dz
+which is the gross value of output to consumers.
+Resource costs. Recall that a human’s reservation wage is w > 0 per unit, and a
+machine can be rented at r > 0 per unit. The resource cost of a firm is
+C( f ) := w νH
+f (Y H) + rνM
+f (Y).
+We use the qualifier ‘resource’ because such costs are exogenous to the model, and a
+firm might face a strictly larger costs (since wages might exceed the reservation wages).
+To ensure that the equilibrium is non-trivial, we also assume that some machine-only
+firm can produce profitably at arbitrarily small scale:
+r
+L(δyM) < P(0). Here the left
+side is the unit cost of an atomistic machine-only firm so this ensures strictly positive
+surplus.
+3.3 Industry structure. We now develop language to describe the composition of
+different firms in the economy. We distinguish between firms of two scales. Doing so
+allows us to capture both models with atomistic firms (Aumann, 1964; Melitz, 2003;
+Shimomura and Thisse, 2012)—also referred to as infinitesimal firms (Novshek and
+Sonnenschein, 1987)—and models with positive-size firms (Lucas, 1978), as well as
+economies where both coexist.
+Positive-scale firms are represented by
+F + :=
+n
+f = (νH
+f , νM
+f ) : m f > 0, νH
+f ≤µ
+o
+where recall m f := νf (Y) > 0 is the size of the firm and the inequality νH
+f ≤µ requires
+20
+that the human portion of each firm can be staffed from the human population.
+Atomistic firms are represented by
+F 0 :=
+n
+f = (νH
+f , νM
+f ) : m f = 1
+o
+.
+where m f = 1 is a normalization.14 f ∈F 0 captures the composition of firms. How
+should we interpret atomistic firms? For f ∈F 0, output and cost per unit of ‘intensity’
+are
+q f := L(νf )
+and
+C( f ) := w νH
+f (Y H) + rνM
+f (Y).
+An aggregate intensity a > 0 of identical atomistic firms employs measure aνH
+f of
+the human population, produces aq f units of the final good, and costs aC( f ).15 The
+space of all firms is the disjoint union F := F + ⊔F 0.16 An industry is a finite positive
+measure σ ∈M+(F) over these activities. Figure 11 illustrates.
+human pool µ — scarce
+R
+F νH
+f dσ ≤µ
+AI yM
+duplicable at rate r > 0
+core: machine mass νM
+f
+dots: human hires νH
+f
+ﬁrm scale m f
+fringe F 0: zero scale,
+intensity as σ-mass
+f1
+f2
+f3
+each an atom: mass σ(\{ f \})
+Q(σ) = R
+F q f dσ( f ) sold at PN(Q)
+Figure 11: An industry as a measure over firms.
+14We clearly cannot set m f = 0 since the composition would not be well-defined.
+15To obtain these coefficients, let (tνH
+f , tνM
+f ) be a scale-t firm with the same composition. If tn ↓0
+and integers kn satisfy kntn →a, then knF(tnνf ) →aq f , kntnνH
+f →aνH
+f , and kntnC( f ) →aC( f ) which
+represents the limit of many tiny firms.
+16Endow each component with the weak topology on its measure coordinates and F with the
+disjoint-union Borel σ-algebra. All industry measures and integrals below are taken on this measurable
+space. Thus the two kinds of firm remain distinct even when their measure coordinates coincide.
+21
+The measure σ records masses of positive-scale firms and aggregate intensities of
+atomistic firms. Following activity analysis (Koopmans, 1951), we allow the intensity
+of each firm type to vary continuously. This convexifies firm counts and can assign
+noninteger mass to f ∈F +.17 This will supply the convexity needed for existence and
+duality. We interpret the convexified economy as an approximation to an industry
+with indivisible firms. The industry σ produces total output
+Q(σ) :=
+Z
+F q f dσ( f ).
+Define the set of feasible industries by
+Σ :=
+
+
+σ ∈M+(F) :
+q f ≤Q(σ) < ∞
+for σ-almost every f ∈F +,
+Z
+F νH
+f dσ( f ) ≤µ
+
+
+.
+The first condition requires finite aggregate output and measure one of every positive-
+scale firm to fit inside the market.18 The second requires aggregate human employment
+not to exceed the population.
+Section 4.4 defines the feasibility and interiority conditions used in our comparative
+statics.
+4 EQUILIBRIUM AND EFFICIENCY
+4.1 Equilibrium. We describe the equilibrium concept informally; details are in
+Appendix B. We want to determine two objects: the industry structure σ, which
+records which firms operate and how intensively, and the wage vector w, which
+records how rents are spread across human types.
+Our equilibrium concept rests on two ideas. The first is a competitive continuation. Any
+proposed arrangement must be one that producers and workers would in fact carry
+out. That is, firms take the output price and wages as given, every active firm breaks
+17Our construction is also related to the free-entry tradition surveyed by Novshek and Sonnenschein
+(1987).
+18Without this restriction, fractional activity weights would allow firms larger than the entire market
+to operate at arbitrarily small scales. In particular, machine-only production could always use the scale
+that minimizes average cost, regardless of market size, and adjust its activity weight to meet demand.
+Under unbounded increasing returns to scale, this would drive the minimum cost of producing any
+positive quantity to zero.
+22
+even, no available firm could enter and earn a profit, and the labor market clears. The
+second is replacement stability. An outsider may propose to replace the whole economy:
+a new industry, a new price and wages, and transfers to consumers and to each human
+worker. This proposal is accepted only if every party is made weakly better off. The
+industry structure σ and wage w form an equilibrium if they admit a competitive
+continuation and no proposal succeeds against it.
+Our equilibrium notion is somewhat unconventional, in part because it has to handle
+firms at both small (vanishing) and large scales. Nonetheless many of its constituent
+ideas have close precedents in the literature. The idea that entrants compete to serve the
+whole market follows Demsetz (1968), who lets consumers select a supplier through
+a joint buying organization; here we let an entrant propose the whole industry σ′.
+More broadly, replacement stability follows the contestability logic of Baumol and
+Willig (1981); Baumol et al. (1982).19 The requirement that the replacement itself form
+a competitive continuation is the free-entry condition of an activity-analysis economy
+(Koopmans, 1951; Novshek and Sonnenschein, 1987). Here each firm composition is,
+in the language of Koopmans, an ‘activity’ and σ records their intensities. Finally, our
+entry condition also shares the logic of Riley’s reactive equilibrium (Riley, 1979) in
+which an entrant must anticipate the responses to its proposal.
+We use this equilibrium concept in part because its existence is guaranteed. It also
+includes competitive equilibria (in which firms and workers take prices as given) when
+the latter exists, though this is not true generally. We now draw a tight connection
+between equilibrium, efficiency, and rents.
+4.2 Efficiency and shadow values. For an industry σ ∈Σ, total surplus is
+WN(σ) := UN(Q(σ)) −
+Z
+F C( f ) dσ( f ).
+An industry σ ∈Σ is efficient if σ ∈arg maxbσ∈Σ WN(bσ). Wages above outside options,
+firm revenues, and lump-sum payments are transfers. They do not enter WN. Com-
+petitive zero profits and balanced transfers imply that an implemented contract only
+divides this surplus among the protected parties and the organizer.
+19Transferable utility supplies the link from blocking to efficiency familiar from Aumann (1964);
+Ostroy (1980). Making firms part of a contract also relates to Zame (2007).
+23
+Industry cost. For Q > 0, define the least reservation-resource cost of producing
+quantity Q by
+C(Q) :=
+inf
+σ∈Σ
+Q(σ)≥Q
+Z
+F C( f ) dσ( f ),
+where C(0) := 0. Radial trimming and a reduction in activity intensities make this
+infimum equal to the exact-output minimum.
+Efficient quantity. At quantity Q, the largest feasible surplus is UN(Q) −C(Q). Con-
+sumer payments, firm revenues, and human payments above the outside option are
+transfers. Human opportunity costs and machine resource costs enter through C.
+The efficient quantities are
+Q∗
+N :=
+arg max
+Q∈[0,DN(0+)]
+n
+UN(Q) −C(Q)
+o
+.
+Let Q∗
+N ∈Q∗
+N denote any efficient quantity.
+Shadow values. A shadow value measures how minimum resource cost changes
+when an output requirement or a resource limit changes. Fix Q > 0 and an industry
+σ ∈Σ with Q(σ) = Q. Let Λ(Q, σ) be the set of pairs (p, w) ∈R+ × [w, ∞)K that
+satisfy:
+(i) Firm support.
+pq f ≤rνM
+f (Y) +
+Z
+Y H w dνH
+f
+∀f ∈F 0 ⊔\{g ∈F + : qg ≤Q\}.
+(ii) Active equality.
+pq f = rνM
+f (Y) +
+Z
+Y H w dνH
+f
+for σ-almost every f.
+(iii) Human scarcity.
+(wi −w)
+
+µi −
+Z
+F νH
+f (\{yi\}) dσ( f )
+
+= 0
+∀i ∈\{1, . . . , K\}.
+And we write w := (wi)i=1,...,K. The value p is the price for output at quantity Q. The
+premium wi −w is a multiplier on the supply of human type i. Firm support rules
+out a profitable entrant. Active equality gives zero profit for each active firm. Human
+24
+scarcity permits a wage premium only when all humans of that type work. Thus the
+payments recover the shadow values: p is the output multiplier, and wi −w is the
+multiplier on type i’s supply limit. The internal value p need not equal PN(Q) or a
+derivative of C. Likewise, a change in µ also changes which complete firms are feasible;
+the scarcity multiplier alone need not give that full comparative static.
+Figure 12 illustrates efficient
+output and human scarcity rents.
+Marginal resource cost rises in
+steps as each scarce human type is
+exhausted, then stays constant at
+the unit cost of machine-only
+production. Its intersection with
+inverse demand gives the efficient
+quantity. The blue area between
+the price and the cost steps shows
+the Ricardian rents of the
+exhausted human types.
+Q∗
+quantity Q
+c0
+machine-only
+unit cost
+price and shadow marginal cost pQ
+PN
+steps: scarce human types exhaust
+machine-only replication: constant unit cost
+consumer surplus
+Ricardian rents to
+exhausted types
+Figure 12: Efficient output and human scarcity
+rents.
+Theorem 1 (Equilibrium, efficiency, and wages; informal). An equilibrium out-
+come. (σ, w) is an equilibrium if and only if σ is efficient and
+(p, w) ∈Λ(Q(σ), σ)
+for some p ≥0.
+Our equilibrium concept, while somewhat unconventional, buys existence. It is also
+closely related to competitive equilibrium i.e., it can be supported by prices and
+wages. More precisely, given (p, w), each producer chooses the composition and size
+of the firm to maximize profits, human type i chooses employment in [0, µi] at wage
+wi, machines are supplied elastically at r, and consumers choose quantity x ≥0 to
+maximize UN(x) −px, their utility net of payments. A competitive equilibrium (CE)
+consists of optimal choices at prices (p, w), with p ≥0, that clear all markets.
+Indeed, every CE is an equilibrium of our model provided that each firm in the CE (i)
+produces no more than the equilibrium total industry output; and (ii) requires no more
+of any human type than supplied in the population. That is, when a CE exists and
+firms are ‘interior’—in the sense of (i) and (ii)—at least one equilibrium in our model
+25
+can be supported through prices.20 To see this, note that competitive prices rule out
+profitable entry, active firms break even, and workers choose employment optimally.
+Thus, these conditions provide the price and wage support required by Theorem 1.
+Consumer and producer optimization also imply that no feasible alternative industry
+can generate greater total surplus. The competitive industry is therefore efficient so
+Theorem 1 applies. This insight also implies that the task model (Acemoglu and Re-
+strepo, 2018; Aghion et al., 2019) is nested within our framework (see Section 7) where
+the technology takes the special form FT that assigns workers and machines optimally
+across tasks and has constant returns (S(ν) = ν(Y)) such that the composition of
+firms does not matter. The two economies have the same equilibrium output and task
+allocations, and wages also coincide.
+4.3 Regimes of AI capabilities. We next develop language for different regimes of
+AI capabilities which are illustrated in Figure 13.
+mini yi
+1
+maxi yi
+1
+Productive capability y1 = · · · = yn
+mini yi∗
+maxi yi∗
+Coordination y∗
+scale threshold γ = 1
+Supercooperative
+ASI
+Supercompetent
+Weak AI
+Convex hull of human capabilities
+Figure 13: Capability regimes.
+The y-axis of Figure 13 is coordination y∗while the x-axis captures competence. Here,
+for simplicity, we set y1 = y2 = . . . yn so that they can be represented in a single
+20This is more likely to hold when returns to scale limit optimal firm size (e.g., strict diminishing
+returns to scale) and markets are large enough (N large) to accommodate the resulting firms.
+26
+dimension, though the ideas extend without difficulty to multiple competence domains
+(but would be difficult to illustrate). Human types are blue dots, and the size reflects
+the mass of that type in the population. The oval around human types represents the
+closed convex hull which is exactly the set of mean capabilities a human-only firm can
+attain.
+We call the AI supercompetent when it is more competent than every human, i.e.,
+yM
+d > maxi yi
+d in every productive domain d. We call the AI supercooperative when
+γM := γ(δyM) > 1, so that the average product of an AI-only firm grows without
+bound as the firm grows.21 The AI is superintelligent if it dominates the convex hull
+of human capabilities. It is weak if it is dominated by the convex hull of human
+capabilities. It is minimal AGI if it lies within the convex hull of human capabilities.
+4.4 Feasibility, interiority, and continuity. We collect two recurring conditions in
+Table 2. For a unit composition ν ∈∆(Y), a preferred scale maximizes average product
+F(mν)/m over scales m ≥0, using the level L(ν) at zero. We assign preferred scale
++∞when no finite scale attains the maximum. Each result specifies which mixes must
+have feasible preferred scales and at which output.
+Term
+Definition
+Purpose
+Interior firm
+A firm f has positive size m f > 0, uses
+both humans and machines,
+0 < νM
+f (Y)/m f < 1, and satisfies
+q f < Q(σ) and νH
+f (\{yi\}) < µi for each
+human type it employs.
+Permits small changes in
+size and output, allowing
+for substitutions between
+machines and each
+employed human type.
+Feasible
+preferred scales
+Each composition ν has a finite
+preferred scale m with mνH(\{yi\}) ≤µi
+for every type i and F(mν) ≤Q.
+Allows tractable
+comparison of firm sizes
+and optimal firm
+composition.
+Table 2: Feasibility and interiority conditions.
+An equilibrium is interior if every active firm of positive-scale is interior. We will
+often ask how industry structure and wages change as AI improves. Let θ index a
+21Note here that supercooperative AI does not require that it is better at coordination than the best
+humans, i.e., it is an absolute rather than relative measure.
+27
+continuously differentiable path of AI capability profiles yM(θ) and human supplies
+µ(θ), with human capability profiles and all other primitives fixed. Write Σ∗(θ) for
+the set of equilibrium industries at θ. An equilibrium selection chooses an industry
+σ∗(θ) ∈Σ∗(θ) at each θ.
+Definition 1 (Firm selections). Given an equilibrium selection σ∗, a firm selection
+chooses an active positive-scale firm f (θ) ∈supp(σ∗(θ)|F +) at each parameter
+value. It is continuous, differentiable, or continuously differentiable when its size and
+composition have that property.
+5 EQUILIBRIUM INDUSTRY STRUCTURES
+We now ask how equilibrium industry structures are driven by progress in AI capabili-
+ties yM. We start with what sets the size of firms. Then, we move the AI capabilities in
+one direction at a time, and finally analyze the composition of firms. All proofs in the
+paper are in Appendix A. We emphasize that our results are situated within our theo-
+retical model. They are not empirical forecasts of market outcomes or technological
+developments.
+5.1 What determines firm size?. We start with a basic building block on how firm
+sizes are determined in equilibrium. Under Assumption 2, preferred size depends on
+composition only through mean coordination. Write m∗(z∗) for the set of preferred
+sizes at mean coordination z∗:
+m∗(z∗) := arg max
+m≥0
+S(m, z∗)
+m
+.
+Notice that given a fixed firm composition, changes in competence leaves the preferred-
+size set unchanged. Almost every active firm reaches a preferred size whenever a finite
+preferred size is feasible in equilibrium. To bound sizes across all firm compositions,
+define
+M(yM
+∗, µ) := sup
+ν
+
+\end{document}

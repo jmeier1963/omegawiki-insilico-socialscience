@@ -4,7 +4,7 @@ aliases: ["GenAI divide", "enterprise AI adoption gap", "pilot-to-production gap
 tags: [enterprise-ai, ai-adoption, ai-roi, organizational-ai, genai]
 maturity: emerging
 definition: "The bimodal split between the small share of enterprise GenAI deployments that capture real P&L value and the majority that do not, driven not by model quality but by a 'learning gap' — systems that fail to retain feedback, adapt to context, or improve over time."
-key_papers: [genai-divide-state-ai-business-2025, applied-ai-most-impactful-agentic-enterprise]
+key_papers: [genai-divide-state-ai-business-2025, applied-ai-most-impactful-agentic-enterprise, how-employment-changing-anthropic]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [firm-level-ai-complementarities, ai-adoption-pressure-corporate-organizations, ai-native-firms, ai-adoption-depth-breadth-gap, agentic-enterprise-operations]

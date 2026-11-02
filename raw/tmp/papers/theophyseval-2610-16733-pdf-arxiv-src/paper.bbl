@@ -1,0 +1,853 @@
+%theophyseval-apsrev.bst (modified); see theophyseval-apsrev.NOTICE
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{61}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Georgiev}\ \emph {et~al.}(2025)\citenamefont
+  {Georgiev}, \citenamefont {G{\'o}mez-Serrano}, \citenamefont {Tao},\ and\
+  \citenamefont {Wagner}}]{Georgiev2025MathematicalDiscovery}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Georgiev}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {G{\'o}mez-Serrano}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Tao}},\ and\ \bibinfo {author} {\bibfnamefont {A.~Z.}\ \bibnamefont
+  {Wagner}},\ }\href {https://doi.org/10.48550/arXiv.2511.02864} {\bibinfo
+  {title} {Mathematical exploration and discovery at scale}} (\bibinfo {year}
+  {2025}),\ \Eprint {https://arxiv.org/abs/2511.02864} {arXiv:2511.02864
+  [cs.NE]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sothanaphan}(2026)}]{Sothanaphan2026Erdos728}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Sothanaphan}},\ }\href {https://doi.org/10.48550/arXiv.2601.07421} {\bibinfo
+  {title} {Resolution of {Erd\H{o}s} problem \#728: a writeup of {Aristotle}'s
+  {Lean} proof}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2601.07421} {arXiv:2601.07421 [math.NT]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Alon}\ \emph {et~al.}(2026)\citenamefont {Alon},
+  \citenamefont {Bloom}, \citenamefont {Gowers}, \citenamefont {Litt},
+  \citenamefont {Sawin}, \citenamefont {Shankar}, \citenamefont {Tsimerman},
+  \citenamefont {Wang},\ and\ \citenamefont {Wood}}]{Alon2026UnitDistance}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Alon}}, \bibinfo {author} {\bibfnamefont {T.~F.}\ \bibnamefont {Bloom}},
+  \bibinfo {author} {\bibfnamefont {W.~T.}\ \bibnamefont {Gowers}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Litt}}, \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Sawin}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Shankar}}, \emph {et~al.},\ }\href
+  {https://doi.org/10.48550/arXiv.2605.20695} {\bibinfo {title} {Remarks on the
+  disproof of the unit distance conjecture}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2605.20695} {arXiv:2605.20695 [math.CO]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont
+  {{OpenAI}}(2026{\natexlab{a}})}]{openai2026mathprogress}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{OpenAI}}},\ }\href
+  {https://openai.com/index/sharing-ai-progress-in-mathematics/} {\bibinfo
+  {title} {Sharing {AI} progress in mathematics}} (\bibinfo {year}
+  {2026}{\natexlab{a}}),\ \bibinfo {note} {published October 6, 2026}.\EOS\
+  \url
+  {https://openai.com/index/sharing-ai-progress-in-mathematics/}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont
+  {{OpenAI}}(2026{\natexlab{b}})}]{openai2026navierstokes}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{OpenAI}}},\ }\href
+  {https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf}
+  {\bibinfo {title} {Finite time blowup for {Navier--Stokes}}},\ \bibinfo
+  {howpublished} {OpenAI preprint} (\bibinfo {year} {2026}{\natexlab{b}}),\
+  \bibinfo {note} {released September 8, 2026; announcement and formal proof:
+  \url{https://openai.com/index/navier-stokes-solution/}}.\EOS\ \url
+  {https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Leder}(2026)}]{leder2026percolation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Leder}},\ }\href
+  {https://github.com/anthropics/formal-math/blob/795efb86f191735c5481675763537cfb4ff37e55/percolation/summary.pdf}
+  {\bibinfo {title} {$\theta(p_{\mathrm c})=0$ for {Bernoulli} bond percolation
+  on $\mathbb{Z}^d$ in all dimensions $d\ge 2$: A guide to the {Lean}
+  formalization}},\ \bibinfo {howpublished} {GitHub} (\bibinfo {year}
+  {2026}).\EOS\ \url
+  {https://github.com/anthropics/formal-math/blob/795efb86f191735c5481675763537cfb4ff37e55/percolation/summary.pdf}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Giraudin}(2026)}]{giraudin2026counterexample}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~N.}\ \bibnamefont
+  {Giraudin}},\ }\href {https://doi.org/10.48550/arXiv.2607.15305} {\bibinfo
+  {title} {A counterexample to a conjecture of {Thakur} on {Carlitz-Wieferich}
+  primes}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2607.15305} {arXiv:2607.15305 [math.NT]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Parisi}\ and\ \citenamefont
+  {Zamponi}(2026)}]{parisi2026jamming}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Parisi}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Zamponi}},\ }\bibfield  {title} {\bibinfo {title} {A proof of an identity
+  for the critical exponents of jamming},\ }\href
+  {https://doi.org/10.1088/1742-5468/ae7bd7} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Stat. Mech.}\ }\textbf {\bibinfo {volume} {2026}},\ \bibinfo
+  {pages} {073301} (\bibinfo {year} {2026})},\ \Eprint
+  {https://arxiv.org/abs/2606.03300} {arXiv:2606.03300 [cond-mat.stat-mech]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chen}\ and\ \citenamefont
+  {Yin}(2026)}]{chen2026veneziano}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Chen}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yin}},\
+  }\href {https://arxiv.org/abs/2608.25183} {\bibinfo {title} {Exact all-level
+  positivity of the bosonic {Veneziano} amplitude}} (\bibinfo {year} {2026}),\
+  \Eprint {https://arxiv.org/abs/2608.25183} {arXiv:2608.25183 [hep-th]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Craig}(2026)}]{craig2026gaugeinvariant}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Craig}},\ }\href {https://doi.org/10.48550/arXiv.2610.09093} {\bibinfo
+  {title} {A gauge-invariant measure for lattice chiral fermions}} (\bibinfo
+  {year} {2026}),\ \Eprint {https://arxiv.org/abs/2610.09093} {arXiv:2610.09093
+  [hep-lat]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {von Hippel}(2026)}]{vonhippel2026nineloops}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {von
+  Hippel}},\ }\href
+  {https://www.anthropic.com/research/yes-claude-can-do-nine-loops} {\bibinfo
+  {title} {{Yes, Claude can do Nine Loops}}},\ \bibinfo {howpublished}
+  {Anthropic Science} (\bibinfo {year} {2026}),\ \bibinfo {note} {published 25
+  September 2026; with an addendum by Lance Dixon}.\EOS\ \url
+  {https://www.anthropic.com/research/yes-claude-can-do-nine-loops}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hsu}\ \emph {et~al.}(2004)\citenamefont {Hsu},
+  \citenamefont {Brewe}, \citenamefont {Foster},\ and\ \citenamefont
+  {Harper}}]{Hsu2004ProblemSolving}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Hsu}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Brewe}}, \bibinfo
+  {author} {\bibfnamefont {T.~M.}\ \bibnamefont {Foster}},\ and\ \bibinfo
+  {author} {\bibfnamefont {K.~A.}\ \bibnamefont {Harper}},\ }\bibfield  {title}
+  {\bibinfo {title} {Resource letter {RPS-1}: Research in problem solving},\
+  }\href {https://doi.org/10.1119/1.1763175} {\bibfield  {journal} {\bibinfo
+  {journal} {Am. J. Phys.}\ }\textbf {\bibinfo {volume} {72}},\ \bibinfo
+  {pages} {1147} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Docktor}\ and\ \citenamefont
+  {Mestre}(2014)}]{Docktor2014Synthesis}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Docktor}}\ and\ \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Mestre}},\ }\bibfield  {title} {\bibinfo {title} {Synthesis of
+  discipline-based education research in physics},\ }\href
+  {https://doi.org/10.1103/PhysRevSTPER.10.020119} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. ST Phys. Educ. Res.}\ }\textbf {\bibinfo
+  {volume} {10}},\ \bibinfo {pages} {020119} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hayano}(2024)}]{Hayano:2024IPhO}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Hayano}},\ }\bibfield  {title} {\bibinfo {title} {Nurturing the future stars
+  of physics---the {International Physics Olympiad (IPhO)}},\ }\href
+  {https://doi.org/10.5506/APhysPolBSupp.17.7-A5} {\bibfield  {journal}
+  {\bibinfo  {journal} {Acta Phys. Pol. B Proc. Suppl.}\ }\textbf {\bibinfo
+  {volume} {17}},\ \bibinfo {pages} {7} (\bibinfo {year} {2024})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Miller}\ \emph {et~al.}(2019)\citenamefont {Miller},
+  \citenamefont {Zwickl}, \citenamefont {Posselt}, \citenamefont
+  {Silvestrini},\ and\ \citenamefont {Hodapp}}]{Miller:2019Admissions}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Miller}}, \bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont {Zwickl}},
+  \bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Posselt}}, \bibinfo
+  {author} {\bibfnamefont {R.~T.}\ \bibnamefont {Silvestrini}},\ and\ \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Hodapp}},\ }\bibfield  {title}
+  {\bibinfo {title} {Typical physics {Ph.D.} admissions criteria limit access
+  to underrepresented groups but fail to predict doctoral completion},\ }\href
+  {https://doi.org/10.1126/sciadv.aat7550} {\bibfield  {journal} {\bibinfo
+  {journal} {Sci. Adv.}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
+  {eaat7550} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Newbury}\ \emph {et~al.}(1991)\citenamefont
+  {Newbury}, \citenamefont {Newman}, \citenamefont {Ruhl}, \citenamefont
+  {Staggs},\ and\ \citenamefont {Thorsett}}]{newbury1991princeton}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Newbury}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Newman}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ruhl}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Staggs}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Thorsett}},\ }\href
+  {https://doi.org/10.2307/j.ctv3f8r5s} {\emph {\bibinfo {title} {Princeton
+  Problems in Physics with Solutions}}}\ (\bibinfo  {publisher} {Princeton
+  University Press},\ \bibinfo {address} {Princeton, New Jersey},\ \bibinfo
+  {year} {1991})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alper}\ \emph {et~al.}(2026)\citenamefont {Alper},
+  \citenamefont {Barany}, \citenamefont {Chavarri~Villarello}, \citenamefont
+  {Dahmen}, \citenamefont {Dean}, \citenamefont {Ganapathy}, \citenamefont
+  {Harris}, \citenamefont {Holmes}, \citenamefont {Jamnik}, \citenamefont
+  {Kelk}, \citenamefont {Kra}, \citenamefont {Martin}, \citenamefont {Naskr{\k
+  e}cki}, \citenamefont {Ochigame}, \citenamefont {Portegies},\ and\
+  \citenamefont {Schmitt}}]{alper2026leiden}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Alper}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Barany}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Chavarri~Villarello}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Dahmen}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {Dean}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Ganapathy}}, \emph {et~al.},\ }\href
+  {https://doi.org/10.5281/zenodo.20302944} {\bibinfo {title} {{Leiden
+  Declaration on Artificial Intelligence and Mathematics}}},\ \bibinfo
+  {howpublished} {Zenodo} (\bibinfo {year} {2026}).\EOS\ \url
+  {https://leidendeclaration.ai/}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Avila}\ \emph {et~al.}(2026)\citenamefont {Avila},
+  \citenamefont {Bhargava}, \citenamefont {Birkar}, \citenamefont {Deligne},
+  \citenamefont {Deng}, \citenamefont {Donaldson}, \citenamefont
+  {Duminil-Copin}, \citenamefont {Figalli}, \citenamefont {Hairer},
+  \citenamefont {Huh}, \citenamefont {Kontsevich}, \citenamefont
+  {Lindenstrauss}, \citenamefont {Lions}, \citenamefont {Maynard},
+  \citenamefont {McMullen}, \citenamefont {Mori}, \citenamefont {Ng{\^o}},
+  \citenamefont {Okounkov}, \citenamefont {Scholze}, \citenamefont {Smirnov},
+  \citenamefont {Tao}, \citenamefont {Viazovska}, \citenamefont {Villani},
+  \citenamefont {Werner},\ and\ \citenamefont
+  {Zelmanov}}]{avila2026misalignment}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Avila}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Bhargava}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Birkar}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Deligne}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Deng}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Donaldson}}, \emph {et~al.},\ }\href
+  {https://mathandai.org/} {\bibinfo {title} {A severe misalignment of {AI} in
+  mathematics}},\ \bibinfo {howpublished} {Math and AI} (\bibinfo {year}
+  {2026}).\EOS\ \url {https://mathandai.org/}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ding}\ \emph {et~al.}(2023)\citenamefont {Ding},
+  \citenamefont {Cen},\ and\ \citenamefont {Wei}}]{ding2023physqa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Ding}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Cen}},\ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Wei}},\ }\href
+  {https://arxiv.org/abs/2309.08182} {\bibinfo {title} {Using large language
+  model to solve and explain physics word problems approaching human level}}
+  (\bibinfo {year} {2023}),\ \Eprint {https://arxiv.org/abs/2309.08182}
+  {arXiv:2309.08182 [cs.CL]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Qiu}\ \emph {et~al.}(2025)\citenamefont {Qiu},
+  \citenamefont {Guo}, \citenamefont {Song}, \citenamefont {Sun}, \citenamefont
+  {Cai}, \citenamefont {Wei}, \citenamefont {Luo}, \citenamefont {Yin},
+  \citenamefont {Zhang}, \citenamefont {Hu} \emph {et~al.}}]{qiu2025phybench}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Qiu}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Guo}}, \bibinfo
+  {author} {\bibfnamefont {Z.-Y.}\ \bibnamefont {Song}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Sun}}, \bibinfo {author} {\bibfnamefont
+  {Z.}~\bibnamefont {Cai}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Wei}}, \emph {et~al.},\ }\href {https://arxiv.org/abs/2504.16074} {\bibinfo
+  {title} {{PHYBench}: Holistic evaluation of physical perception and reasoning
+  in large language models}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2504.16074} {arXiv:2504.16074 [cs.CL]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {He}\ \emph {et~al.}(2024)\citenamefont {He},
+  \citenamefont {Luo}, \citenamefont {Bai}, \citenamefont {Hu}, \citenamefont
+  {Thai}, \citenamefont {Shen}, \citenamefont {Hu}, \citenamefont {Han},
+  \citenamefont {Huang}, \citenamefont {Zhang}, \citenamefont {Liu},
+  \citenamefont {Qi}, \citenamefont {Liu},\ and\ \citenamefont
+  {Sun}}]{he2024olympiadbench}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {He}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Luo}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Bai}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Hu}}, \bibinfo {author} {\bibfnamefont
+  {Z.}~\bibnamefont {Thai}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Shen}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{OlympiadBench}: A challenging benchmark for promoting {AGI} with
+  olympiad-level bilingual multimodal scientific problems},\ }in\ \href
+  {https://doi.org/10.18653/v1/2024.acl-long.211} {\emph {\bibinfo {booktitle}
+  {Proceedings of the 62nd Annual Meeting of the Association for Computational
+  Linguistics (Volume 1: Long Papers)}}}\ (\bibinfo  {publisher} {Association
+  for Computational Linguistics},\ \bibinfo {year} {2024})\ pp.\ \bibinfo
+  {pages} {3828--3850}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yu}\ \emph {et~al.}(2025)\citenamefont {Yu},
+  \citenamefont {Wan}, \citenamefont {Cheng}, \citenamefont {Zhang},
+  \citenamefont {Chen}, \citenamefont {Han}, \citenamefont {Wu}, \citenamefont
+  {Yao}, \citenamefont {Hu}, \citenamefont {Ding}, \citenamefont {Cheng},
+  \citenamefont {Chen}, \citenamefont {Bai}, \citenamefont {Zhou},
+  \citenamefont {Luo}, \citenamefont {Cui},\ and\ \citenamefont
+  {Ye}}]{yu2025hipho}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Yu}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Wan}}, \bibinfo
+  {author} {\bibfnamefont {Q.}~\bibnamefont {Cheng}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Han}}, \emph {et~al.},\ }\href {https://arxiv.org/abs/2509.07894} {\bibinfo
+  {title} {{HiPhO}: How far are {(M)LLMs} from humans in the latest high school
+  physics olympiad benchmark?}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2509.07894} {arXiv:2509.07894 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Xu}\ \emph {et~al.}(2025)\citenamefont {Xu},
+  \citenamefont {Xu}, \citenamefont {Xiao}, \citenamefont {Chen}, \citenamefont
+  {Yan}, \citenamefont {Zhang}, \citenamefont {Diao}, \citenamefont {Yang},\
+  and\ \citenamefont {Wang}}]{xu2025ugphysics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Xu}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Xu}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Xiao}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Yan}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Zhang}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{UGPhysics}: A comprehensive benchmark for undergraduate physics reasoning
+  with large language models},\ }in\ \href
+  {https://proceedings.mlr.press/v267/xu25ai.html} {\emph {\bibinfo {booktitle}
+  {Proceedings of the 42nd International Conference on Machine Learning}}},\
+  \bibinfo {series} {Proceedings of Machine Learning Research}, Vol.\ \bibinfo
+  {volume} {267}\ (\bibinfo  {publisher} {PMLR},\ \bibinfo {year} {2025})\ pp.\
+  \bibinfo {pages} {69849--69877}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chung}\ \emph {et~al.}(2025)\citenamefont {Chung},
+  \citenamefont {Gao}, \citenamefont {Kvasiuk}, \citenamefont {Li},
+  \citenamefont {M{\"u}nchmeyer}, \citenamefont {Rudolph}, \citenamefont
+  {Sala},\ and\ \citenamefont {Tadepalli}}]{chung2025tpbench}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.~H.}\
+  \bibnamefont {Chung}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Gao}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kvasiuk}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {M{\"u}nchmeyer}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Rudolph}}, \emph {et~al.},\ }\bibfield
+  {title} {\bibinfo {title} {Theoretical physics benchmark ({TPBench})---a
+  dataset and study of {AI} reasoning capabilities in theoretical physics},\
+  }\href {https://doi.org/10.1088/2632-2153/adfcb0} {\bibfield  {journal}
+  {\bibinfo  {journal} {Machine Learning: Science and Technology}\ }\textbf
+  {\bibinfo {volume} {6}},\ \bibinfo {pages} {030505} (\bibinfo {year}
+  {2025})},\ \Eprint {https://arxiv.org/abs/2502.15815} {arXiv:2502.15815
+  [cs.LG]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tian}\ \emph {et~al.}(2024)\citenamefont {Tian},
+  \citenamefont {Gao}, \citenamefont {Zhang}, \citenamefont {Chen},
+  \citenamefont {Fan}, \citenamefont {Guo}, \citenamefont {Haas}, \citenamefont
+  {Ji}, \citenamefont {Krongchon}, \citenamefont {Li} \emph
+  {et~al.}}]{tian2024scicode}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Tian}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Gao}}, \bibinfo
+  {author} {\bibfnamefont {S.~D.}\ \bibnamefont {Zhang}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Fan}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Guo}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{SciCode}: A
+  research coding benchmark curated by scientists},\ }in\ \href
+  {https://doi.org/10.52202/079017-0963} {\emph {\bibinfo {booktitle} {Advances
+  in Neural Information Processing Systems}}},\ Vol.~\bibinfo {volume} {37}\
+  (\bibinfo {year} {2024})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2026)\citenamefont {Wang},
+  \citenamefont {Lin}, \citenamefont {Hu}, \citenamefont {Jiao}, \citenamefont
+  {Chowdhury}, \citenamefont {Chang},\ and\ \citenamefont
+  {Patwardhan}}]{wang2026frontierscience}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Wang}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lin}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Hu}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Jiao}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Chowdhury}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Chang}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2601.21165} {\bibinfo {title} {{FrontierScience}:
+  Evaluating {AI}'s ability to perform expert-level scientific tasks}}
+  (\bibinfo {year} {2026}),\ \Eprint {https://arxiv.org/abs/2601.21165}
+  {arXiv:2601.21165 [cs.AI]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Miao}\ \emph {et~al.}(2026)\citenamefont {Miao},
+  \citenamefont {Jin}, \citenamefont {Zhang}, \citenamefont {Tan},
+  \citenamefont {Hu}, \citenamefont {Guo}, \citenamefont {Zhang}, \citenamefont
+  {Wang}, \citenamefont {Li}, \citenamefont {Gao}, \citenamefont {Chen},
+  \citenamefont {Jiang}, \citenamefont {Hu}, \citenamefont {Lei}, \citenamefont
+  {Pang}, \citenamefont {Liu}, \citenamefont {Zhang}, \citenamefont {Zhang},
+  \citenamefont {Chen}, \citenamefont {Wang}, \citenamefont {E},\ and\
+  \citenamefont {Chen}}]{miao2026prlbench}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Miao}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Jin}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Zhang}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Tan}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Hu}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Guo}}, \emph {et~al.},\ }\href {https://arxiv.org/abs/2604.15411} {\bibinfo
+  {title} {{PRL-Bench}: A comprehensive benchmark evaluating {LLMs}'
+  capabilities in frontier physics research}} (\bibinfo {year} {2026}),\
+  \Eprint {https://arxiv.org/abs/2604.15411} {arXiv:2604.15411 [cs.LG]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2025)\citenamefont {Wang},
+  \citenamefont {Jiang}, \citenamefont {Golovanova}, \citenamefont {Das},
+  \citenamefont {Bae}, \citenamefont {Zhao}, \citenamefont {Le}, \citenamefont
+  {Chatterjee}, \citenamefont {Liu}, \citenamefont {Liu}, \citenamefont
+  {da~Jornada}, \citenamefont {Yan},\ and\ \citenamefont
+  {Qi}}]{wang2025qmbench}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Wang}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Jiang}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Golovanova}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Das}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Bae}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Zhao}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2512.19753} {\bibinfo {title} {{QMBench}: A research
+  level benchmark for quantum materials research}} (\bibinfo {year} {2025}),\
+  \Eprint {https://arxiv.org/abs/2512.19753} {arXiv:2512.19753
+  [cond-mat.mtrl-sci]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(2025)\citenamefont {Zhu},
+  \citenamefont {Tian}, \citenamefont {Yang}, \citenamefont {Zhou},
+  \citenamefont {Yuan}, \citenamefont {Zhu}, \citenamefont {Chertkov},
+  \citenamefont {Liu}, \citenamefont {Du}, \citenamefont {Ji} \emph
+  {et~al.}}]{zhu2025probing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zhu}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Tian}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Zhou}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Yuan}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Zhu}}, \emph {et~al.},\ }\href {https://arxiv.org/abs/2509.26574} {\bibinfo
+  {title} {Probing the critical point ({CritPt}) of {AI} reasoning: a frontier
+  physics research benchmark}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2509.26574} {arXiv:2509.26574 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Terminal-Bench-Science
+  Team}}(2026)}]{terminalbenchscience2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Terminal-Bench-Science
+  Team}}},\ }\href {https://doi.org/10.5281/zenodo.22110253} {\bibinfo {title}
+  {{Terminal-Bench-Science}: Evaluating {AI} agents on research workflows
+  across scientific domains}},\ \bibinfo {howpublished} {Computer software}
+  (\bibinfo {year} {2026}).\EOS\ \url
+  {https://github.com/harbor-framework/terminal-bench-science}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abouzaid}\ \emph
+  {et~al.}(2026{\natexlab{a}})\citenamefont {Abouzaid}, \citenamefont
+  {Blumberg}, \citenamefont {Hairer}, \citenamefont {Kileel}, \citenamefont
+  {Kolda}, \citenamefont {Nelson}, \citenamefont {Spielman}, \citenamefont
+  {Srivastava}, \citenamefont {Ward}, \citenamefont {Weinberger},\ and\
+  \citenamefont {Williams}}]{abouzaid2026first}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Abouzaid}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Blumberg}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hairer}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kileel}}, \bibinfo
+  {author} {\bibfnamefont {T.~G.}\ \bibnamefont {Kolda}}, \bibinfo {author}
+  {\bibfnamefont {P.~D.}\ \bibnamefont {Nelson}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2602.05192} {\bibinfo {title} {{First Proof}}}
+  (\bibinfo {year} {2026}{\natexlab{a}}),\ \Eprint
+  {https://arxiv.org/abs/2602.05192} {arXiv:2602.05192 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abouzaid}\ \emph
+  {et~al.}(2026{\natexlab{b}})\citenamefont {Abouzaid}, \citenamefont
+  {Blumberg}, \citenamefont {Hairer}, \citenamefont {Kileel}, \citenamefont
+  {Kolda}, \citenamefont {Nelson}, \citenamefont {Spielman}, \citenamefont
+  {Srivastava}, \citenamefont {Ward}, \citenamefont {Weinberger},\ and\
+  \citenamefont {Williams}}]{abouzaid2026firstproofsolutions}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Abouzaid}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Blumberg}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hairer}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kileel}}, \bibinfo
+  {author} {\bibfnamefont {T.~G.}\ \bibnamefont {Kolda}}, \bibinfo {author}
+  {\bibfnamefont {P.~D.}\ \bibnamefont {Nelson}}, \emph {et~al.},\ }\href
+  {https://1stproof.org/documents/FirstProofSolutionsComments.pdf} {\bibinfo
+  {title} {{First Proof} solutions and comments}} (\bibinfo {year}
+  {2026}{\natexlab{b}}).\EOS\ \url
+  {https://1stproof.org/documents/FirstProofSolutionsComments.pdf}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abouzaid}\ \emph
+  {et~al.}(2026{\natexlab{c}})\citenamefont {Abouzaid}, \citenamefont
+  {Srivastava}, \citenamefont {Ward},\ and\ \citenamefont
+  {Williams}}]{abouzaid2026firstsecond}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Abouzaid}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Srivastava}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Ward}},\
+  and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Williams}},\ }\href
+  {https://arxiv.org/abs/2606.18119} {\bibinfo {title} {{First Proof Second
+  Batch}}} (\bibinfo {year} {2026}{\natexlab{c}}),\ \Eprint
+  {https://arxiv.org/abs/2606.18119} {arXiv:2606.18119 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Feng}\ \emph {et~al.}(2026)\citenamefont {Feng},
+  \citenamefont {Jung}, \citenamefont {Kim}, \citenamefont {Pagano},
+  \citenamefont {Gukov}, \citenamefont {Tsai}, \citenamefont {Woodruff},
+  \citenamefont {Javanmard}, \citenamefont {Mokhtari}, \citenamefont {Hwang},
+  \citenamefont {Chervonyi}, \citenamefont {Lee}, \citenamefont {Bingham},
+  \citenamefont {Trinh}, \citenamefont {Mirrokni}, \citenamefont {Le},\ and\
+  \citenamefont {Luong}}]{feng2026aletheiafirstproof}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Feng}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Jung}}, \bibinfo
+  {author} {\bibfnamefont {S.-h.}\ \bibnamefont {Kim}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Pagano}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Gukov}}, \bibinfo {author} {\bibfnamefont {C.-C.}\
+  \bibnamefont {Tsai}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2602.21201} {\bibinfo {title} {{Aletheia} tackles
+  {FirstProof} autonomously}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2602.21201} {arXiv:2602.21201 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Geng}\ \emph {et~al.}(2021)\citenamefont {Geng},
+  \citenamefont {Karch}, \citenamefont {Perez-Pardavila}, \citenamefont {Raju},
+  \citenamefont {Randall}, \citenamefont {Riojas},\ and\ \citenamefont
+  {Shashi}}]{Geng:2020fxl}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Geng}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Karch}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Perez-Pardavila}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Raju}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Randall}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Riojas}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo
+  {title} {{Information Transfer with a Gravitating Bath}},\ }\href
+  {https://doi.org/10.21468/SciPostPhys.10.5.103} {\bibfield  {journal}
+  {\bibinfo  {journal} {SciPost Phys.}\ }\textbf {\bibinfo {volume} {10}},\
+  \bibinfo {pages} {103} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2012.04671} {arXiv:2012.04671 [hep-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Singam}\ \emph {et~al.}(2026)\citenamefont {Singam},
+  \citenamefont {Jones},\ and\ \citenamefont {Prakash}}]{singam2026textured}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Singam}}, \bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont {Jones}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Prakash}},\ }\href
+  {https://arxiv.org/abs/2605.20339} {\bibinfo {title} {Textured phase diagrams
+  of featureless insulators}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2605.20339} {arXiv:2605.20339 [cond-mat.str-el]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Press}\ \emph {et~al.}(1992)\citenamefont {Press},
+  \citenamefont {Teukolsky}, \citenamefont {Vetterling},\ and\ \citenamefont
+  {Flannery}}]{press1992numerical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~H.}\ \bibnamefont
+  {Press}}, \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Teukolsky}}, \bibinfo {author} {\bibfnamefont {W.~T.}\ \bibnamefont
+  {Vetterling}},\ and\ \bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Flannery}},\ }\href@noop {} {\emph {\bibinfo {title} {Numerical Recipes in
+  {C}: The Art of Scientific Computing}}},\ \bibinfo {edition} {2nd}\ ed.\
+  (\bibinfo  {publisher} {Cambridge University Press},\ \bibinfo {address} {New
+  York},\ \bibinfo {year} {1992})\BibitemShut {NoStop}%
+\bibitem [{the(2026)}]{theophyseval2026dataset}%
+  \BibitemOpen
+  \href {https://huggingface.co/datasets/RameshChandra1/TheoPhysEval} {\bibinfo
+  {title} {{TheoPhysEval}: Assessing {AI} agents at autonomous theoretical
+  physics problem solving}},\ \bibinfo {howpublished} {Hugging Face dataset
+  repository} (\bibinfo {year} {2026}).\EOS\ \url
+  {https://huggingface.co/datasets/RameshChandra1/TheoPhysEval}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Harbor Framework
+  Team}}(2026)}]{harbor2026framework}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Harbor Framework
+  Team}}},\ }\href {https://doi.org/10.5281/zenodo.20953922} {\bibinfo {title}
+  {{Harbor}: A framework for evaluating and optimizing agents and models in
+  container environments}},\ \bibinfo {howpublished} {Computer software}
+  (\bibinfo {year} {2026}).\EOS\ \url
+  {https://doi.org/10.5281/zenodo.20953922}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Merrill}\ \emph {et~al.}(2026)\citenamefont
+  {Merrill}, \citenamefont {Shaw}, \citenamefont {Carlini}, \citenamefont {Li},
+  \citenamefont {Raj}, \citenamefont {Bercovich}, \citenamefont {Shi},
+  \citenamefont {Shin}, \citenamefont {Walshe}, \citenamefont {Buchanan} \emph
+  {et~al.}}]{merrill2026terminal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Merrill}}, \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Shaw}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Carlini}}, \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Raj}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Bercovich}}, \emph {et~al.},\ }\bibfield  {title}
+  {\bibinfo {title} {{Terminal-Bench}: Benchmarking agents on hard, realistic
+  tasks in command line interfaces},\ }in\ \href
+  {https://arxiv.org/abs/2601.11868} {\emph {\bibinfo {booktitle}
+  {International Conference on Learning Representations}}}\ (\bibinfo {year}
+  {2026})\ \Eprint {https://arxiv.org/abs/2601.11868} {arXiv:2601.11868}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {{OpenAI}}(2026{\natexlab{c}})}]{openai2026astrasystemcard}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{OpenAI}}},\ }\href
+  {https://deploymentsafety.openai.com/gpt-6-astra} {\bibinfo {title} {{GPT-6
+  Astra System Card}}} (\bibinfo {year} {2026}{\natexlab{c}}),\ \bibinfo {note}
+  {published September 3, 2026}.\EOS\ \url
+  {https://deploymentsafety.openai.com/gpt-6-astra}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{OpenAI}}(2025)}]{openai2025codexga}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{OpenAI}}},\ }\href
+  {https://openai.com/index/codex-now-generally-available/} {\bibinfo {title}
+  {{Codex} is now generally available}} (\bibinfo {year} {2025}),\ \bibinfo
+  {note} {published October 6, 2025}.\EOS\ \url
+  {https://openai.com/index/codex-now-generally-available/}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont
+  {{Anthropic}}(2026{\natexlab{a}})}]{anthropic2026opus55}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
+  {https://www.anthropic.com/claude-opus-5-5} {\bibinfo {title} {Introducing
+  {Claude Opus 5.5}}} (\bibinfo {year} {2026}{\natexlab{a}}),\ \bibinfo {note}
+  {published September 22, 2026}.\EOS\ \url
+  {https://www.anthropic.com/claude-opus-5-5}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Anthropic}}(2025)}]{anthropic2025claudecode}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
+  {https://www.anthropic.com/news/claude-3-7-sonnet} {\bibinfo {title} {{Claude
+  3.7 Sonnet and Claude Code}}} (\bibinfo {year} {2025}),\ \bibinfo {note}
+  {published February 24, 2025}.\EOS\ \url
+  {https://www.anthropic.com/news/claude-3-7-sonnet}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Google
+  DeepMind}}(2026)}]{googledeepmind2026gemini38flash}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Google DeepMind}}},\
+  }\href {https://deepmind.google/models/model-cards/gemini-3-8-flash/}
+  {\bibinfo {title} {{Gemini 3.8 Flash: Model Card}}} (\bibinfo {year}
+  {2026}),\ \bibinfo {note} {published September 2, 2026}.\EOS\ \url
+  {https://deepmind.google/models/model-cards/gemini-3-8-flash/}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{The Antigravity
+  Team}}(2025)}]{google2025antigravity}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{The Antigravity
+  Team}}},\ }\href
+  {https://antigravity.google/blog/introducing-google-antigravity} {\bibinfo
+  {title} {Introducing {Google Antigravity}, a new era in {AI}-assisted
+  software development}} (\bibinfo {year} {2025}),\ \bibinfo {note} {published
+  November 18, 2025}.\EOS\ \url
+  {https://antigravity.google/blog/introducing-google-antigravity}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{DeepSeek-AI}}(2026)}]{deepseek2026v41flash}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{DeepSeek-AI}}},\
+  }\href {https://arxiv.org/abs/2609.19969} {\bibinfo {title}
+  {{DeepSeek-V4.1-Flash}: Pushing the limits of {KV} cache compression}}
+  (\bibinfo {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.19969}
+  {arXiv:2609.19969 [cs.CL]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{GLM-5-Team}}\ \emph {et~al.}(2026)\citenamefont
+  {{GLM-5-Team}} \emph {et~al.}}]{glm5team2026glm5}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{GLM-5-Team}}} \emph
+  {et~al.},\ }\href {https://arxiv.org/abs/2602.15763} {\bibinfo {title}
+  {{GLM-5}: from vibe coding to agentic engineering}} (\bibinfo {year}
+  {2026}),\ \Eprint {https://arxiv.org/abs/2602.15763} {arXiv:2602.15763
+  [cs.LG]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Z.ai}}(2026)}]{zai2026glm53}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Z.ai}}},\ }\href
+  {https://huggingface.co/zai-org/GLM-5.3} {\bibinfo {title} {{GLM-5.3}}},\
+  \bibinfo {howpublished} {Model card} (\bibinfo {year} {2026}),\ \bibinfo
+  {note} {accessed October 6, 2026}.\EOS\ \url
+  {https://huggingface.co/zai-org/GLM-5.3}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ansari}\ \emph {et~al.}(2026)\citenamefont {Ansari},
+  \citenamefont {Sun}, \citenamefont {Liu}, \citenamefont {Jabbour},
+  \citenamefont {Ding}, \citenamefont {Girvin}, \citenamefont {He},
+  \citenamefont {Ismail-Beigi}, \citenamefont {Kubica}, \citenamefont {Miller},
+  \citenamefont {O'Hern}, \citenamefont {Ozolins}, \citenamefont {Poland},
+  \citenamefont {Stone}, \citenamefont {van~den Bosch}, \citenamefont {Wright},
+  \citenamefont {Akbari}, \citenamefont {Antu}, \citenamefont {Cai},
+  \citenamefont {Calabrese-Day}, \citenamefont {Wuttig}, \citenamefont {Cheng},
+  \citenamefont {Chiang}, \citenamefont {Ghorashi}, \citenamefont {Gu},
+  \citenamefont {Huang}, \citenamefont {Kang}, \citenamefont {Kienesberger},
+  \citenamefont {Liu}, \citenamefont {Lomba}, \citenamefont {Lu}, \citenamefont
+  {Ma}, \citenamefont {McIntosh}, \citenamefont {McKinney}, \citenamefont
+  {Rojkov}, \citenamefont {Sun}, \citenamefont {Tokayer}, \citenamefont
+  {Umasankar}, \citenamefont {Varma}, \citenamefont {Wang}, \citenamefont
+  {Wang}, \citenamefont {Wang}, \citenamefont {Wei}, \citenamefont {Yang},
+  \citenamefont {Zhao}, \citenamefont {Zhao}, \citenamefont {Zheng},
+  \citenamefont {Zou}, \citenamefont {Baker}, \citenamefont {Cohan},\ and\
+  \citenamefont {Sous}}]{ansari2026goodfrontiermodelsphysics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Ansari}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Sun}},
+  \bibinfo {author} {\bibfnamefont {A.~Z.}\ \bibnamefont {Liu}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Jabbour}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Ding}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Girvin}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2609.13009} {\bibinfo {title} {How good are frontier
+  models at physics? expert re-grading reveals broken evaluations and
+  near-saturation of leading benchmarks}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2609.13009} {arXiv:2609.13009 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kapoor}\ \emph {et~al.}(2024)\citenamefont {Kapoor},
+  \citenamefont {Jaganathan},\ and\ \citenamefont
+  {Govindarajan}}]{kapoor2024trapping}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kapoor}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Jaganathan}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Govindarajan}},\
+  }\bibfield  {title} {\bibinfo {title} {Trapping and extreme clustering of
+  finitely dense inertial particles near a rotating vortex pair},\ }\href
+  {https://doi.org/10.1017/jfm.2024.706} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {996}},\
+  \bibinfo {pages} {A44} (\bibinfo {year} {2024})},\ \Eprint
+  {https://arxiv.org/abs/2405.04949} {arXiv:2405.04949 [physics.flu-dyn]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bena}\ \emph {et~al.}(2016)\citenamefont {Bena},
+  \citenamefont {Giusto}, \citenamefont {Martinec}, \citenamefont {Russo},
+  \citenamefont {Shigemori}, \citenamefont {Turton},\ and\ \citenamefont
+  {Warner}}]{Bena:2016ypk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Bena}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Giusto}},
+  \bibinfo {author} {\bibfnamefont {E.~J.}\ \bibnamefont {Martinec}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Russo}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Shigemori}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Turton}}, \emph {et~al.},\ }\bibfield
+  {title} {\bibinfo {title} {{Smooth horizonless geometries deep inside the
+  black-hole regime}},\ }\href {https://doi.org/10.1103/PhysRevLett.117.201601}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {117}},\ \bibinfo {pages} {201601} (\bibinfo {year}
+  {2016})},\ \Eprint {https://arxiv.org/abs/1607.03908} {arXiv:1607.03908
+  [hep-th]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Morgensztern}\ \emph {et~al.}(2026)\citenamefont
+  {Morgensztern}, \citenamefont {Fierro~Cota},\ and\ \citenamefont
+  {Mininno}}]{morgensztern2026solveragent}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Morgensztern}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Fierro~Cota}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Mininno}},\ }\href {https://arxiv.org/abs/2609.35958} {\bibinfo {title}
+  {{Solver Agent}: an agentic {AI} framework for theoretical physics
+  computations applied to {F-theory} uplifts of {O3-planes} and {S-folds}}}
+  (\bibinfo {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.35958}
+  {arXiv:2609.35958 [hep-th]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schwartz}(2026)}]{schwartz2026bootloops}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~D.}\ \bibnamefont
+  {Schwartz}},\ }\href {https://bootloops.ai/} {\bibinfo {title} {{BootLoops
+  1.0}}} (\bibinfo {year} {2026}),\ \bibinfo {note} {accessed October 8,
+  2026}.\EOS\ \url {https://bootloops.ai/}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {{Anthropic}}(2026{\natexlab{b}})}]{anthropic2026claudescience}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
+  {https://www.anthropic.com/news/claude-science-ai-workbench} {\bibinfo
+  {title} {{Claude Science}, an {AI} workbench for scientists, is now
+  available}} (\bibinfo {year} {2026}{\natexlab{b}}),\ \bibinfo {note}
+  {published June 30, 2026}.\EOS\ \url
+  {https://www.anthropic.com/news/claude-science-ai-workbench}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gottweis}\ \emph {et~al.}(2025)\citenamefont
+  {Gottweis}, \citenamefont {Weng}, \citenamefont {Daryin}, \citenamefont {Tu},
+  \citenamefont {Palepu}, \citenamefont {Sirkovic}, \citenamefont {Myaskovsky},
+  \citenamefont {Weissenberger}, \citenamefont {Rong}, \citenamefont {Tanno},
+  \citenamefont {Saab}, \citenamefont {Popovici}, \citenamefont {Blum},
+  \citenamefont {Zhang}, \citenamefont {Chou}, \citenamefont {Hassidim},
+  \citenamefont {Gokturk}, \citenamefont {Vahdat}, \citenamefont {Kohli},
+  \citenamefont {Matias}, \citenamefont {Carroll}, \citenamefont {Kulkarni},
+  \citenamefont {Tomasev}, \citenamefont {Guan}, \citenamefont {Dhillon},
+  \citenamefont {Vaishnav}, \citenamefont {Lee}, \citenamefont {Costa},
+  \citenamefont {Penad{\'e}s}, \citenamefont {Peltz}, \citenamefont {Xu},
+  \citenamefont {Pawlosky}, \citenamefont {Karthikesalingam},\ and\
+  \citenamefont {Natarajan}}]{gottweis2025aicoscientist}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Gottweis}}, \bibinfo {author} {\bibfnamefont {W.-H.}\ \bibnamefont {Weng}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Daryin}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Tu}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Palepu}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Sirkovic}}, \emph {et~al.},\ }\href
+  {https://doi.org/10.48550/arXiv.2502.18864} {\bibinfo {title} {Towards an
+  {AI} co-scientist}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2502.18864} {arXiv:2502.18864 [cs.AI]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lu}\ \emph {et~al.}(2026)\citenamefont {Lu},
+  \citenamefont {Lu}, \citenamefont {Lange}, \citenamefont {Yamada},
+  \citenamefont {Hu}, \citenamefont {Foerster}, \citenamefont {Ha},\ and\
+  \citenamefont {Clune}}]{lu2026automationairesearch}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Lu}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Lu}}, \bibinfo
+  {author} {\bibfnamefont {R.~T.}\ \bibnamefont {Lange}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Yamada}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Hu}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Foerster}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Towards
+  end-to-end automation of {AI} research},\ }\href
+  {https://doi.org/10.1038/s41586-026-10265-5} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {651}},\ \bibinfo {pages}
+  {914} (\bibinfo {year} {2026})},\ \Eprint {https://arxiv.org/abs/2606.15497}
+  {arXiv:2606.15497 [cs.AI]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schmitt}\ \emph {et~al.}(2026)\citenamefont
+  {Schmitt}, \citenamefont {Gehrunger}, \citenamefont {Dekoninck},
+  \citenamefont {B{\'e}rczi}, \citenamefont {Kreitner}, \citenamefont {Price},\
+  and\ \citenamefont {Holmes}}]{schmitt2026proofcouncil}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Schmitt}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Gehrunger}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Dekoninck}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {B{\'e}rczi}}, \bibinfo {author}
+  {\bibfnamefont {U.}~\bibnamefont {Kreitner}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Price}}, \emph {et~al.},\ }\href
+  {https://arxiv.org/abs/2607.09474} {\bibinfo {title} {{ProofCouncil}: An
+  {LLM} agent for solving open mathematical problems}} (\bibinfo {year}
+  {2026}),\ \Eprint {https://arxiv.org/abs/2607.09474} {arXiv:2607.09474
+  [cs.AI]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tsoukalas}\ \emph {et~al.}(2026)\citenamefont
+  {Tsoukalas}, \citenamefont {Kovsharov}, \citenamefont {Shirobokov},
+  \citenamefont {Surina}, \citenamefont {Firsching}, \citenamefont
+  {B{\'e}rczi}, \citenamefont {Ruiz}, \citenamefont {Suggala}, \citenamefont
+  {Wagner}, \citenamefont {Wieser}, \citenamefont {Yu}, \citenamefont {Huang},
+  \citenamefont {Horv{\'a}th}, \citenamefont {Ferraiuolo}, \citenamefont
+  {Michalewski}, \citenamefont {Lockhart}, \citenamefont {Grosu}, \citenamefont
+  {Hubert}, \citenamefont {Balog}, \citenamefont {Kohli},\ and\ \citenamefont
+  {Chaudhuri}}]{tsoukalas2026alphaproofnexus}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Tsoukalas}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kovsharov}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Shirobokov}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Surina}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Firsching}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {B{\'e}rczi}}, \emph {et~al.},\
+  }\href {https://doi.org/10.48550/arXiv.2605.22763} {\bibinfo {title}
+  {Advancing mathematics research with {AI}-driven formal proof search}}
+  (\bibinfo {year} {2026}),\ \Eprint {https://arxiv.org/abs/2605.22763}
+  {arXiv:2605.22763 [cs.AI]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mermin}(1989)}]{mermin1989pillow}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~D.}\ \bibnamefont
+  {Mermin}},\ }\bibfield  {title} {\bibinfo {title} {What's wrong with this
+  pillow?},\ }\href {https://doi.org/10.1063/1.2810963} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physics Today}\ }\textbf {\bibinfo {volume} {42}},\
+  \bibinfo {pages} {9} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Arav}\ \emph {et~al.}(2026)\citenamefont {Arav},
+  \citenamefont {Bertrand}, \citenamefont {Chapman}, \citenamefont
+  {Policastro},\ and\ \citenamefont {Waeber}}]{Arav:2026bbn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Arav}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Bertrand}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chapman}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Policastro}},\ and\ \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Waeber}},\ }\href@noop {}
+  {\bibinfo {title} {{Energy Transmission Across Holographic Conformal
+  Interfaces in General Dimensions}}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2609.38318} {arXiv:2609.38318 [hep-th]} \BibitemShut
+  {NoStop}%
+\end{thebibliography}%

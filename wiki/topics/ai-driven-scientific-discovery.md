@@ -6,7 +6,7 @@ sota_updated: 2026-04-23
 key_venues: [Nature, EMNLP, NeurIPS, ICML, Science]
 related_topics: [multi-agent-social-simulation, llm-human-simulacra]
 key_people: []
-key_papers: [artificial-intelligence-tools-expand-scientists-impact, ai-agents-conduct-open-ended-ai, ten-advances-mathematics-theoretical-computer-science, agentic-economies-autonomous-scientific-discovery]
+key_papers: [artificial-intelligence-tools-expand-scientists-impact, ai-agents-conduct-open-ended-ai, ten-advances-mathematics-theoretical-computer-science, agentic-economies-autonomous-scientific-discovery, theophyseval-assessing-ai-agents-autonomous-theoretical, math-terence-tao-caltech-talk-proof]
 ---
 
 ## Overview
@@ -35,6 +35,8 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 - [[ai-agents-conduct-open-ended-ai]] — Kirgis, Kapoor & Narayanan (CRUX, 2026): shadow evaluations; agents did all the engineering but both papers were unambiguous rejections by the original authors
 - [[ten-advances-mathematics-theoretical-computer-science]] — OpenAI (2026): ten claimed research-level math/TCS results from an internal model, including a disproof of Connes's rigidity conjecture
 - [[agentic-economies-autonomous-scientific-discovery]] — Tomašev et al. (Google DeepMind, 2026): position paper reframing autonomous discovery as bottlenecked by physical validation resources and institutional coordination rather than ideation capability, proposing a native Automated Scientific Economy
+- [[theophyseval-assessing-ai-agents-autonomous-theoretical]] — 19-institution consortium (2026): 50-problem benchmark finds frontier agents reach 98% accuracy on expert-level theoretical physics calculation, largely via literature memorization, despite no agent-led research breakthroughs in the field
+- [[math-terence-tao-caltech-talk-proof]] — Terence Tao (2026): argues AI is driving mathematics from an era of proof scarcity to one of proof abundance, requiring the field to decenter problem-solving as its primary goal
 
 ## SOTA tracker
 
@@ -49,7 +51,7 @@ A key distinction is between **narrow AI tools** (models trained on domain-speci
 
 ## Open problems
 
-- Can AI agents conduct research requiring genuinely novel conceptual breakthroughs, or only pattern-matching and combinatorial search? *Partially addressed, with opposing evidence: [[ai-agents-conduct-open-ended-ai]] finds no for open-ended empirical ML research (five failure modes, both papers rejected); [[ten-advances-mathematics-theoretical-computer-science]] claims yes for pure mathematics, though with no disclosed methodology. The likely reconciliation — that symbolic self-verifying domains are the favourable case — is itself untested.*
+- Can AI agents conduct research requiring genuinely novel conceptual breakthroughs, or only pattern-matching and combinatorial search? *Partially addressed, with opposing evidence: [[ai-agents-conduct-open-ended-ai]] finds no for open-ended empirical ML research (five failure modes, both papers rejected); [[ten-advances-mathematics-theoretical-computer-science]] claims yes for pure mathematics, though with no disclosed methodology. The likely reconciliation — that symbolic self-verifying domains are the favourable case — is itself untested. [[theophyseval-assessing-ai-agents-autonomous-theoretical]] adds a sharp data point within a symbolic, self-verifying domain: agents reach near-perfect accuracy on expert-level theoretical-physics calculation, yet the authors explicitly note this has not translated into any agent-led research breakthrough — suggesting calculation competence and research "taste"/problem-selection are separable skills, not that symbolic verifiability alone suffices for breakthrough-level autonomy.*
 - How do we evaluate scientific quality beyond peer review proxies? *Addressed by [[ai-agents-conduct-open-ended-ai]] via [[shadow-evaluation]]: the original authors of an unpublished paper grade an agent's answer to their own research question — open-ended, uncontaminated, expert-graded, but limited to a handful of data points.*
 - What is the right level of human oversight in AI-automated research pipelines?
 - Will AI-generated science suffer from self-reinforcing biases as it trains on its own outputs?

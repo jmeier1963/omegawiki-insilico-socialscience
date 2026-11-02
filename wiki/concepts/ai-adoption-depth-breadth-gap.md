@@ -4,7 +4,7 @@ aliases: ["breadth-depth dissociation", "shallow AI penetration", "AI adoption d
 tags: [ai-economics, ai-adoption, labor-market, measurement, diffusion, ai-and-society]
 maturity: emerging
 definition: "The empirical dissociation between how widely AI has spread across occupations and activities (breadth) and how much of any given role's task set it actually touches (depth) — adoption reaching nearly all occupations while penetrating only a minority of tasks within them."
-key_papers: [google-ai-economy-atlas-v1-mapping]
+key_papers: [google-ai-economy-atlas-v1-mapping, dusting-off-tweet-april-llm-capability, how-employment-changing-anthropic, organizing-intelligence]
 first_introduced: "2026"
 date_updated: 2026-08-04
 related_concepts: [automation-augmentation-employment-divide, genai-divide-enterprise-learning-gap, ai-science-adoption-gap, task-crossover, agentic-enterprise-operations]
@@ -56,6 +56,7 @@ Rests on the task-based framework of labor economics (Autor, Levy & Murnane 2003
 ## Realized by
 
 - [[privacy-preserving-usage-telemetry-classification]] — the measurement apparatus that makes the gap observable: classifier pipelines over de-identified interaction logs mapped onto official occupational and time-use taxonomies.
+- [[staggered-ai-adoption-within-person-design]] — a causal-identification method isolating AI adoption's within-person productivity effect from business-context confounds, used to quantify the depth side of the gap.
 
 ## My understanding
 

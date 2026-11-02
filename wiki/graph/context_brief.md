@@ -2,7 +2,7 @@
 
 _Auto-generated compressed context. Do not edit._
 
-## Methods (14 total)
+## Methods (17 total)
 - [other] AGI Dynamic General Equilibrium with VAT-Financed Targeted UBI
 - [evaluation] Accepted-Paper Baseline Benchmarking
 - [evaluation] AI Consciousness Test (ACT)
@@ -10,12 +10,15 @@ _Auto-generated compressed context. Do not edit._
 - [system] Automated AI Research Loop
 - [evaluation] Bayesian AI Consciousness Attribution Model
 - [evaluation] Digital Twin Survey Replication
+- [evaluation] Frontier Red-Teaming Campaign for Containment Infrastructure
 - [system] GraphRAG
+- [system] Multi-Agent Swarm Formalization Pipeline
 - [evaluation] Open-World Evaluations
 - [data] Privacy-Preserving Usage Telemetry Classification
 - [benchmark] Replica Figure-Replication Task Generation Pipeline
 - [system] Scenario Auto-Construction Subsystem
 - [evaluation] Shadow Evaluation
+- [evaluation] Staggered AI-Adoption Within-Person Design
 - [training] Turn-Level Credit Assignment for Long-Horizon RL
 ## Open Gaps
 _Auto-generated open questions. Do not edit._
@@ -33,7 +36,7 @@ _Auto-generated open questions. Do not edit._
 ## Failed Ideas (avoid repeating)
 - AI Safety Commons as Repeated Game: Formal Economic Model — Core formal framework already published. RAND RRA4245-1 (Abraham, Kavner, Moon) provides a formal mathematical model of AGI development as a prisoner's dilemma with conditions on when acceleration becomes dominant and what coordination mechanisms break the equilibrium. arXiv:2501.15280 'Who's Driving? Game Theoretic Path Risk of AGI Development' presents a game-theoretic framework with concrete stabilization mechanisms (pre-registration, shared infrastructure, automated deterrence). The Cooperative AI Foundation has a substantial program on this exact class of problems. The general 'AI race as prisoner's dilemma' framing is standard in policy literature. Differentiation would need to focus on a specific uninvestigated mechanism triplet (e.g., compute governance + mandatory disclosure + joint audit together) or a multi-player repeated game with heterogeneous actors — but this is incremental relative to RAND RRA4245-1.
 - Augmentation Trap Formalization: Conditions for Net-Negative Human Capital Effects — Eliminated at Phase 3: overlaps too closely with active ideas 'bildung-casualty-ai-erosion-scientific-formation' (Bildung-formation hypothesis — AI erodes scientific formation) and 'epistemic-calibration-ai-assisted-science-measuring' (assumption recall deficit). The labor market / organizational context differentiates somewhat, but the formal model structure (conditions under which AI augmentation produces net-negat
-## Papers (442 total)
+## Papers (453 total)
 - [4] Can AI agents conduct open-ended AI research? Early evidence from two case studies — Two frontier agents given six days, $3,000 in API credits and GPU access to answer the central research question of an unpublished NeurIPS 2026 submission completed all the engineering unaided but were unambiguously rejected by the original authors, exposing five recurring failure modes in judgment, exploration and instruction-following.
 - [4] When AI Builds Itself — The Anthropic Institute presents public benchmarks and previously unreported internal data showing AI is already accelerating AI development (>80% of Anthropic's merged code written by Claude, ~8x code per engineer, agents recovering 97% of an open research gap), and argues recursive self-improvement could arrive faster than institutions are prepared for.
 - [4] From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents — A systematic survey organizing LLM-driven social simulation into three progressively-scaled tiers — Individual, Scenario, and Society simulation — each analyzed by architecture/construction, objective/scenario taxonomy, and evaluation method, with catalogued datasets and per-tier historical trend narratives.
@@ -43,13 +46,14 @@ _Auto-generated open questions. Do not edit._
 - [5] Generative Agent Simulations of 1,000 People
 - [5] Generative Agents: Interactive Simulacra of Human Behavior
 - [5] Out of One, Many: Using Language Models to Simulate Huma
-## Recent Relationships (984 total)
-  papers/reading-great-books-age-ai --uses_concept--> concepts/wisdom-versus-instrumental-intelligence
-  papers/reading-great-books-age-ai --uses_concept--> concepts/cognitive-surrender
-  papers/big-tent-small-tent-ai-safety --builds_on--> papers/ai-existential-risk-probabilities-too-unreliable
-  papers/what-if-automating-ai-triggers-intelligence --builds_on--> papers/will-ai-automation-cause-software-intelligence
-  papers/yulan-onesim-towards-next-generation-social --extends_concept--> concepts/generative-agent-based-modeling
-  papers/yulan-onesim-towards-next-generation-social --uses_concept--> concepts/society-construction-elements-framework
-  papers/yulan-onesim-towards-next-generation-social --uses_concept--> concepts/llm-simulation-validity-guardrails
-  papers/agentsociety-large-scale-simulation-llm-driven --similar_method_to--> papers/yulan-onesim-towards-next-generation-social
-  papers/ai-agents-conduct-open-ended-ai --same_problem_as--> papers/yulan-onesim-towards-next-generat
+## Recent Relationships (1029 total)
+  papers/securing-frontier-model-training-environment --uses_concept--> concepts/chain-of-thought-monitorability-erosion
+  papers/securing-frontier-model-training-environment --uses_concept--> concepts/frontier-ai-compute-governance
+  papers/securing-frontier-model-training-environment --builds_on--> papers/trust-architecture-super-intelligence
+  papers/formalizing-enormous-theorem --extends_concept--> concepts/ai-mathematical-discovery
+  papers/formalizing-enormous-theorem --introduces_concept--> concepts/formalization-driven-error-discovery
+  papers/formalizing-enormous-theorem --uses_concept--> concepts/co-evolving-evaluator-hardening
+  papers/formalizing-enormous-theorem --same_problem_as--> papers/ten-advances-mathematics-theoretical-computer-science
+  papers/how-employment-changing-anthropic --extends_concept--> concepts/parallel-agent-supervision
+  papers/how-employment-changing-anthropic --extends_concept--> concepts/ai-adoption-depth-breadth-gap
+  papers/how-employment-changin

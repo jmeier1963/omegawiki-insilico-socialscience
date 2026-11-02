@@ -70,3 +70,5 @@ The value here is the *internal* data: benchmark saturation is public, but ">80%
 - [[research-acceleration-view-inside-openai]] — closest structural analogue: a rival lab's own self-reported internal RSI-progress telemetry, published within roughly two months of this post.
 - [[alien-mind]] — closest structural analogue: a rival lab's own RSI-positioning essay from lab leadership, published within roughly two months of this one.
 - [[artificial-intelligence-brave-new-world-finance]] — cites this post's self-reported RSI-progress telemetry as evidence for the Learning Loop dynamic (faster in-house capability growth from internal AI R&D use) underlying the paper's AI-race-dynamics extension.
+- [[pretraining-scale-without-pretraining-team]] — compares: both are self-reported, agentic-AI-accelerated AI-development telemetry, from a frontier lab and a small company respectively, at very different organizational scales.
+- [[securing-frontier-model-training-environment]] — compares: both are first-party frontier-lab disclosures about securing and accelerating internal AI R&D infrastructure, from Anthropic and OpenAI respectively.

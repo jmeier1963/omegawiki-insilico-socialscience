@@ -3,9 +3,9 @@ title: "AI-Assisted Mathematical Discovery"
 aliases: ["AI math discovery", "formal reasoning agent", "ai theorem proving", "semi-autonomous mathematics", "LLM for mathematics"]
 tags: [ai-math, formal-reasoning, theorem-proving, mathematical-discovery, llm]
 maturity: emerging
-key_papers: [why-tiny-social-media-post-mathematicians, triumvirate-ai-driven-theoretical-discovery, semi-autonomous-mathematics-discovery-gemini-case, numina-lean-agent-open-general-agentic, novikov-alphaevolve, alphaevolve-how-gemini-powered-coding-agent, ai-co-mathematician-accelerating-mathematicians-agentic, advancing-mathematics-research-ai-driven-formal, math-inc-gauss-autoformalization, ai-scientists-chatbots-maths-guardian, single-minus-gluon-tree-amplitudes-nonzero, mathematics-rise-machines, murmuration-conjecture-finding-new-maths-ai, gemini-deep-think-scientific-research, ai-coming-mathematics-nyt, ten-advances-mathematics-theoretical-computer-science]
+key_papers: [why-tiny-social-media-post-mathematicians, triumvirate-ai-driven-theoretical-discovery, semi-autonomous-mathematics-discovery-gemini-case, numina-lean-agent-open-general-agentic, novikov-alphaevolve, alphaevolve-how-gemini-powered-coding-agent, ai-co-mathematician-accelerating-mathematicians-agentic, advancing-mathematics-research-ai-driven-formal, math-inc-gauss-autoformalization, ai-scientists-chatbots-maths-guardian, single-minus-gluon-tree-amplitudes-nonzero, mathematics-rise-machines, murmuration-conjecture-finding-new-maths-ai, gemini-deep-think-scientific-research, ai-coming-mathematics-nyt, ten-advances-mathematics-theoretical-computer-science, formalizing-enormous-theorem, math-terence-tao-caltech-talk-proof, theophyseval-assessing-ai-agents-autonomous-theoretical]
 first_introduced: "2023"
-date_updated: 2026-05-29
+date_updated: "2026-11-02"
 related_concepts: [llm-powered-agent-architecture, automated-research-pipeline]
 ---
 
@@ -58,6 +58,8 @@ When mathematical problems can be represented formally (Lean/Coq/Isabelle) or wh
 - [[numina-lean-agent-open-general-agentic]] — general coding agent solves Putnam 2025 via Lean MCP integration
 - [[ai-co-mathematician-accelerating-mathematicians-agentic]] — stateful multi-agent workbench for long-horizon mathematical research; SOTA on FrontierMath Tier 4 (48%)
 - [[why-tiny-social-media-post-mathematicians]] — Jacobian conjecture counterexample: checkable result, unreconstructable genesis
+- [[math-terence-tao-caltech-talk-proof]] — normative argument that abundant AI-generated proofs decenter problem-solving as a proxy for the field's health; introduces [[proof-abundance-era]] and [[experimental-mathematics-population-surveys]]
+- [[theophyseval-assessing-ai-agents-autonomous-theoretical]] — adjacent-domain (theoretical physics) parallel to the Erdős "obscurity not difficulty" finding: near-perfect calculation accuracy via literature memorization, with no corresponding research breakthroughs
 
 ## My understanding
 

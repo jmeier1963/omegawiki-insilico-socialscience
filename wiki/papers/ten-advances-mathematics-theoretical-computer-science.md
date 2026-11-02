@@ -93,3 +93,4 @@ Worth watching against [[ai-agents-conduct-open-ended-ai]], which found frontier
 - challenges (reverse): [[intelligence-wise]]
 - part_of: [[ai-driven-scientific-discovery]]
 - [[why-tiny-social-media-post-mathematicians]] — the Jacobian conjecture case, where verification is cheap and genesis unavailable
+- [[formalizing-enormous-theorem]] — compares: both report AI systems producing research-level mathematical results, but that paper's result is independently, mechanically verified by a proof assistant and developed with disclosed, direct human-expert collaboration, a stronger trust profile than this paper's internally-claimed, undisclosed-methodology results.

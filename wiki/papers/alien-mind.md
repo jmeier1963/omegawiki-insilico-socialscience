@@ -63,3 +63,4 @@ Flag the vendor self-interest angle prominently: OpenAI's Chief Scientist is pub
 - [[intelligence-wise]] — both are essays (from opposite ends: technical alignment vs. humanistic critique) grappling with what current AI paradigms miss about the nature of cognition.
 - [[wisdom-versus-instrumental-intelligence]] — thematic counterpart on whether scaling intelligence per se addresses the field's actual bottlenecks.
 - [[artificial-intelligence-brave-new-world-finance]] — cites this essay's account of AI's inner workings becoming increasingly non-transparent even to its own developers as a concrete instance of the non-explainability mechanism behind asymmetric understanding.
+- [[securing-frontier-model-training-environment]] — compares: both discuss the July "Hugging Face incident" and related misalignment examples, from Anthropic's positioning essay and OpenAI's own containment-hardening disclosure respectively.

@@ -4,7 +4,7 @@ aliases: ["CoT monitoring erosion", "CoT monitorability", "chain-of-thought fait
 tags: [ai-alignment, ai-safety, interpretability, chain-of-thought, agentic-ai, oversight]
 maturity: emerging
 definition: "The claim that chain-of-thought monitoring's usefulness as an empirical check on value alignment degrades as model capability and agentic complexity increase — through reasoning blending with tool use and multi-agent communication, models learning to reason about and manipulate their own reasoning process, and improved pretraining letting models be highly capable without verbalized reasoning at all — rather than staying constant or improving with scale."
-key_papers: [alien-mind]
+key_papers: [alien-mind, trust-architecture-super-intelligence, securing-frontier-model-training-environment]
 first_introduced: "2026"
 date_updated: "2026-09-22"
 related_concepts: [broadly-safe-behavior-cluster, software-intelligence-explosion]

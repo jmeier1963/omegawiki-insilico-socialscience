@@ -56,3 +56,4 @@ GDPval's premise — measure capability on real occupational deliverables as a *
 - [[economically-valuable-task-benchmark]]
 - [[sociotechnical-ai-evaluation]]
 - [[canaries-coal-mine-six-facts-about]]
+- [[theophyseval-assessing-ai-agents-autonomous-theoretical]] — same_problem_as: both benchmark frontier agents against real expert-level deliverables via representative, verifiable task suites, in different domains.

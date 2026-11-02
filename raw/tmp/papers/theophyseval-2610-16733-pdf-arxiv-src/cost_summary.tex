@@ -1,0 +1,19 @@
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{ruledtabular}
+\begin{tabular}{l|r|r}
+\textbf{Agent} & \textbf{Realistic} & \textbf{Isolated} \\
+\hline
+Astra & 116.28 & 95.20 \\
+Opus & 240.43 & 275.46 \\
+Gemini & 95.01 & 90.48 \\
+DeepSeek & 37.42 & 36.23 \\
+GLM & \multicolumn{2}{c}{180\textsuperscript{\textdagger}} \\
+\end{tabular}
+\end{ruledtabular}
+\caption{Evaluation costs (USD) inferred from token usage. \textsuperscript{\textdagger}GLM's coding plan covered both tracks; API costs would have been USD 311.71 for the realistic track and USD 371.46 for the isolated track.}
+\label{tab:api-costs}
+\end{table}

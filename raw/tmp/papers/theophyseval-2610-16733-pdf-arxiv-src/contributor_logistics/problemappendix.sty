@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{problemappendix}[2026/09/12 Support for the benchmark problem appendix]
+\RequirePackage{amsmath,amssymb,mathtools,bm,braket,graphicx,xcolor,etoolbox}
+\RequirePackage{listings,siunitx,enumitem}
+\newcounter{problemappendixanchor}
+\newcommand{\parthead}[1]{\par\smallskip\noindent\textbf{#1}\par\nopagebreak}
+\newenvironment{urlblock}
+  {\begin{list}{}{\setlength{\leftmargin}{14pt}\setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}\setlength{\topsep}{2pt}}\raggedright\small}
+  {\end{list}}
+
+\newcommand{\ProblemAppendixSetup}{\def\p@subsubsection{\arabic{subsection}}\setcounter{MaxMatrixCols}{20}\setlength{\emergencystretch}{3em}\appto\UrlBreaks{\do\-}\lstset{basicstyle=\ttfamily\scriptsize,columns=fullflexible,
+    keepspaces=true,showstringspaces=false,breaklines=true}\@ifpackageloaded{hyperref}{\let\ProblemOriginalMakeCurrent\hyper@makecurrent
+    \def\theHequation{problem.\arabic{problemappendixanchor}}\def\hyper@makecurrent##1{\edef\ProblemAnchorCounter{##1}\ifdefstring{\ProblemAnchorCounter}{equation}{\stepcounter{problemappendixanchor}}{}\ProblemOriginalMakeCurrent{##1}}}{}\def\USp{\operatorname{USp}}\def\tr{\operatorname{tr}}\def\dd{\mathrm{d}}\def\xh{\hat{\mathbf{x}}}\def\one{\mathbf{1}}\def\AN{A_N}\def\AM{A_M}\def\FN{F_N}\def\FM{F_M}\def\RC##1{\textcolor{red}{\textsf{[RC: ##1]}}}\allowdisplaybreaks[3]}
+
+\newcommand{\ProblemSourceFigure}[2][]{\IfFileExists{#2}{\includegraphics[width=0.8\linewidth,#1]{#2}}{\PackageWarning{problemappendix}{Missing source figure #2}\fbox{\parbox{0.8\linewidth}{\centering
+      \textbf{Source figure missing: \texttt{\detokenize{#2}}}\\
+      The supplied trajectory is required to state this problem completely.}}}}

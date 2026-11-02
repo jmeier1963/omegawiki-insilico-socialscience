@@ -30,3 +30,5 @@
 {"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/international-ai-safety-report-2026", "type": "cites", "source": "manual", "date": "2026-10-04"}
 {"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/ai-2040-plan-deal", "type": "cites", "source": "manual", "date": "2026-10-04"}
 {"from": "papers/what-if-automating-ai-triggers-intelligence", "to": "papers/ai-2027-scenario", "type": "cites", "source": "manual", "date": "2026-10-04"}
+{"from": "papers/emerging-trends-ai-agent-evaluation", "to": "papers/open-world-evaluations-measuring-frontier-ai", "type": "cites", "source": "manual", "date": "2026-11-02"}
+{"from": "papers/emerging-trends-ai-agent-evaluation", "to": "papers/ai-agents-conduct-open-ended-ai", "type": "cites", "source": "manual", "date": "2026-11-02"}

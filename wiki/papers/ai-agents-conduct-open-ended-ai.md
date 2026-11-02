@@ -1,19 +1,19 @@
 ---
-title: "Can AI agents conduct open-ended AI research? Early evidence from two case studies"
+title: Can AI agents conduct open-ended AI research? Early evidence from two case studies
 slug: ai-agents-conduct-open-ended-ai
-arxiv: "2607.27191"
-venue: "Preprint (arXiv) — CRUX"
+arxiv: 2607.27191
+venue: Preprint (arXiv) — CRUX
 year: 2026
 tags: [ai-rnd-automation, agent-evaluation, research-automation, recursive-self-improvement, open-world-evaluation, ai-policy]
 importance: 4
 date_added: 2026-08-04
 source_type: tex
-s2_id: "63274010bca2e5b4246f4640e166bfa5ef15c61b"
+s2_id: 63274010bca2e5b4246f4640e166bfa5ef15c61b
 tldr: "Two frontier agents given six days, $3,000 in API credits and GPU access to answer the central research question of an unpublished NeurIPS 2026 submission completed all the engineering unaided but were unambiguously rejected by the original authors, exposing five recurring failure modes in judgment, exploration and instruction-following."
 contribution_type: [analysis, evaluation, position]
 datasets: []
 code_url: "https://cruxevals.com"
-cited_by: []
+cited_by: [emerging-trends-ai-agent-evaluation]
 ---
 
 ## Problem & Context

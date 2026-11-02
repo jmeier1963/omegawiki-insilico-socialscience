@@ -62,3 +62,4 @@ Flag the vendor-interest angle directly: this post serves OpenAI's competing int
 - [[software-intelligence-explosion]] — the explicit organizing frame ("progress toward RSI") for the entire post.
 - [[frontier-ai-compute-governance]] — the compute-reallocation-after-restriction finding bears directly on whether voluntary capability-threshold pause commitments constrain anything real.
 - [[co-evolving-evaluator-hardening]] — the internal agentic task-success classifier is itself an evaluator whose own reliability is asserted rather than validated; a loose methodological parallel.
+- [[pretraining-scale-without-pretraining-team]] — same_problem_as: closely analogous genre of first-party, self-reported internal RSI-adjacent progress telemetry, here specifically for the pretraining stage at a much smaller organizational scale.

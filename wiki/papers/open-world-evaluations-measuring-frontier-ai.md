@@ -1,8 +1,8 @@
 ---
-title: "Open-world evaluations for measuring frontier AI capabilities"
+title: Open-world evaluations for measuring frontier AI capabilities
 slug: open-world-evaluations-measuring-frontier-ai
-arxiv: "2605.20520"
-venue: "arXiv preprint"
+arxiv: 2605.20520
+venue: arXiv preprint
 year: 2026
 tags: [ai-evaluation, benchmark-validity, open-world-evaluation, agent-evaluation, frontier-ai-capabilities, log-analysis, construct-validity]
 importance: 4
@@ -13,7 +13,7 @@ tldr: "Introduces open-world evaluations — long-horizon, real-world agent task
 contribution_type: [method, empirical, survey]
 datasets: []
 code_url: ""
-cited_by: [ai-agents-conduct-open-ended-ai]
+cited_by: [ai-agents-conduct-open-ended-ai, emerging-trends-ai-agent-evaluation]
 ---
 
 ## Problem & Context

@@ -1,0 +1,8 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{contributor_logistics/problemnames}[2026/10/08 Linked short names for benchmark problems]
+\RequirePackage{hyperref}
+
+\newcommand{\DeclareProblemName}[3]{\expandafter\newcommand\csname problem@name@#1\endcsname{#2}\expandafter\newcommand\csname problem@label@#1\endcsname{#3}}
+
+\newcommand{\problemnameformat}[2]{#1~(\mbox{\problemsymbol\ref*{#2}})}
+\DeclareRobustCommand{\problemname}[1]{\@ifundefined{problem@name@#1}{\PackageError{problemnames}{Unknown problem identifier '#1'}{Add a declaration in problem_names.tex before using this identifier.}}{\hyperref[\csname problem@label@#1\endcsname]{\problemnameformat{\csname problem@name@#1\endcsname}{\csname problem@label@#1\endcsname}}}}

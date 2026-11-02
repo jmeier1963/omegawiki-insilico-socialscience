@@ -1,0 +1,415 @@
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage{array}[=2016-10-06]
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage[caption=false,font=small]{subfig}
+\usepackage{placeins}
+\usepackage{longtable}
+\usepackage{xcolor}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{raster,skins}
+\usepackage{contributor_logistics/frontierauthors}
+\usepackage{contributor_logistics/problemappendix}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\makeatletter
+\def\@bibstyle{contributor_logistics/theophyseval-apsrev}
+\def\@hangfrom@section#1#2#3{\@hangfrom{#1#2}#3}
+\def\@hangfroms@section#1#2{#1#2}
+\makeatother
+\newcommand{\benchmarkname}{Hugging Face}
+\newcommand{\benchmarkurl}{https://huggingface.co/datasets/RameshChandra1/TheoPhysEval}
+\DeclareRobustCommand{\benchmarkrepo}{\href{\benchmarkurl}{\benchmarkname}}
+\newcommand{\problemsymbol}{\S}
+\DeclareRobustCommand{\problemref}[1]{\hyperref[#1]{\mbox{\problemsymbol\ref*{#1}}}}
+\usepackage{contributor_logistics/problemnames}
+\input{problem_names}
+\definecolor{exampleyellow}{HTML}{FFF8DB}
+\definecolor{exampleborder}{HTML}{B99336}
+\definecolor{exampleheading}{HTML}{725517}
+\definecolor{numericalpink}{HTML}{FCE8EF}
+\definecolor{numericalborder}{HTML}{BC7891}
+\definecolor{numericalheading}{HTML}{843E59}
+\compactaffiliations
+
+\begin{document}
+\title{TheoPhysEval: Assessing AI Agents at Autonomous Theoretical Physics Problem Solving}
+\input{contributor_logistics/authors_revtex.tex}
+
+\begin{abstract}
+We present a suite of 50 unpublished research-level theoretical physics problems with verifiable answers. Without AI assistance, a typical problem in our collection could be solved by a world expert in about a day or less but would take considerably longer for experts in adjacent specialties.  We test the ability of off-the-shelf AI agents to tackle these problems autonomously, without human hints. When given access to  tools available in a realistic setting, including the ability to search the literature and write scripts for numerical and symbolic work, the best-performing agent, GPT-6-Astra harnessed in Codex, obtains the final answers with a near-perfect accuracy of 98\% at an average cost under USD 3 per problem. On average, agents show only small changes in accuracy when denied web search and access to background research papers, suggesting significant memorization of the literature. These results suggest that state-of-the-art agents can accurately perform concrete calculations required across theoretical physics research. We comment on the broader implications of these findings and discuss possible explanations for the current lack of agent-led breakthroughs in theoretical physics despite their outstanding problem-solving abilities.
+\end{abstract}
+\maketitle
+\section{Introduction}
+In the past few months, AI agents --- by which we refer to a combination of a Large Language Model (LLM) and a harness that gives it access to tools ---  have developed the ability to perform a variety of scientific tasks with little or no human supervision. This impact is most visible in mathematics, where important open problems  \mbox{\cite{Georgiev2025MathematicalDiscovery,Sothanaphan2026Erdos728,Alon2026UnitDistance,openai2026mathprogress}}, including the Navier--Stokes Millennium Prize problem \cite{openai2026navierstokes} and the ``dying percolation conjecture'' \cite{leder2026percolation}, have been solved by AI agents. In some cases, the agents were prompted by humans with no formal mathematical expertise themselves~\cite{giraudin2026counterexample}.
+ 
+
+So far, autonomous agents have had a less significant impact on theoretical physics and have not achieved a notable breakthrough. But they have rapidly become important in research. Experts have used agents in their research \cite{parisi2026jamming,chen2026veneziano,craig2026gaugeinvariant}, and agents have autonomously solved mathematically well-defined problems \cite{vonhippel2026nineloops}. Moreover, many researchers use agents to discuss ideas, perform calculations, search the literature and draft manuscripts. The objective of this paper is to scientifically evaluate one aspect of this progress at the current time --- the ability of AI agents to solve well-posed and verifiable problems autonomously. 
+
+To this end, we present a suite of problems drawn from current research and sourced from world experts in a range of areas in theoretical physics. This collection does not include any important open research problems, since we advised potential contributors to prioritize direct publication of such results. The problems in our collection can be best thought of as ``turn-the-crank'' research problems, where known techniques are used to generalize an extant result. The result of each problem is, strictly speaking, novel, and sometimes even publishable, but not pathbreaking.
+
+All our problems have verifiable solutions, either in the form of a symbolic expression or a numerical answer that cannot be guessed. To the best of our knowledge, at the time of our evaluation, none of the answers to our problems were available publicly. However, we expect that solutions to some problems will appear in the literature in the near future, and one such solution (see \problemref{problem:interface-transmission}) was published after completion of the experiments described in this paper. Moreover, the problems do not meet a stricter criterion of being ``untouched by AI.'' In some cases, human experts used AI tools for assistance in solving the problems, and so we cannot rule out data leakage.
+
+Our problems are presented in Appendix \ref{app:problems} of this paper, and we strongly urge readers to glance over them.
+
+It is nontrivial to construct problems that are relevant to research, are not significant in their own right, and have a solution that is verifiable, cannot be guessed, and is not publicly available. We asked experts to come up with the hardest possible problems in their respective areas. However, we did not reject problems merely because they were soluble by AI agents. Therefore, our evaluation suite aims to be representative of problems in theoretical physics, rather than an adversarial benchmark.
+
+We evaluated agents on two tracks, which we term the ``isolated track'' and the ``realistic track.'' These are distinguished by whether or not the agent is allowed to access the internet. 
+
+In our experiments we found that, in the realistic track, GPT-6-Astra with Codex (Astra) achieved a near-perfect accuracy of 98\%, and both Astra and Opus 5.5 with Claude Code CLI (Opus) achieved an accuracy of 92\% in the isolated track. The average change in accuracy for most agents between the two tracks was quite small. Since many of our problems rely on formulas from the literature, this indicates that leading LLMs have effectively memorized large parts of the theoretical physics literature. 
+ 
+
+Our results indicate that some frontier models may have already surpassed the best human researchers in their ability to perform concrete calculations, even in specialized topics. This is a significant milestone, with implications for education and research in theoretical physics.
+
+The ability to solve concrete problems has traditionally been highly valued in theoretical physics. Problem solving is central to physics education~\cite{Hsu2004ProblemSolving,Docktor2014Synthesis}. Students are evaluated through high school competitions such as the International Physics Olympiad~\cite{Hayano:2024IPhO}, examinations used in graduate admissions~\cite{Miller:2019Admissions}, and graduate qualifying exams~\cite{newbury1991princeton}. 
+
+However, problem-solving abilities are only one of the skills that theoretical physicists require. The main aim of the field is to construct theories of the physical world. Second, it is necessary to ask the ``right'' high-level questions of the theory. Third, it is necessary to convert these questions into concrete calculations. Therefore, it is only at a late stage in the scientific process that one is faced with a concrete calculation with a verifiable answer. 
+
+As a corollary, the excellence of AI agents at problem solving does not immediately imply their all-round excellence at autonomous physics research. Human experts are required in the loop. Autonomous excellence at research might emerge in the near future but will require more than problem-solving ability. 
+
+
+We hope that the assessment presented in this paper will aid discussions in the theoretical physics community on the evolution of pedagogical and research practices. Similar discussions are underway in the mathematical community \cite{alper2026leiden,avila2026misalignment}. It is desirable for the theoretical physics community to have these discussions in advance, before AI has a significantly disruptive impact.
+
+Several agents included in this study do not yet saturate our evaluation. For example, among open-weight models, DeepSeek-V4.1-Flash (DeepSeek) harnessed in Codex scored 54\% and 50\% on the realistic and isolated tracks, respectively. We hope that our collection of problems will be useful for model developers. It might serve as a method of measuring the abilities of agents to assist theoretical physicists in their research. 
+
+
+\subsection{Previous work}
+There has been considerable previous work on benchmarking the abilities of LLMs on school \cite{ding2023physqa,qiu2025phybench}, competition \cite{he2024olympiadbench,yu2025hipho}, and undergraduate physics~\cite{xu2025ugphysics}. Benchmarks such as TPBench \cite{chung2025tpbench}, SciCode~\cite{tian2024scicode}, FrontierScience~\cite{wang2026frontierscience}, PRL-Bench~\cite{miao2026prlbench}, QMBench~\cite{wang2025qmbench} and notably CritPt \cite{zhu2025probing} include research-level problems in addition to simpler problems.  Our paper adds to this literature but is distinguished by its exclusive focus on modern research-level problems. Our evaluation methods are also different since most other evaluations do not usually allow agents to access the full range of tools that they would have access to in the real world. 
+
+Terminal-Bench-Science~\cite{terminalbenchscience2026} is broader in its coverage than this assessment, which is focused on theoretical physics and provides deeper coverage within that field. Moreover, since we seek to evaluate agents on realistic problems that physicists would encounter,  we do not discard problems simply because they can be solved by agents.
+
+Our evaluation is roughly comparable to the ``First Proof'' challenge in mathematics \cite{abouzaid2026first,abouzaid2026firstproofsolutions,abouzaid2026firstsecond,feng2026aletheiafirstproof}  in the sense that it involves unpublished research-level problems. However, while First Proof involves human assessment of proofs, our evaluation is automated and only based on the final answers.
+
+
+
+This paper is organized as follows. In Section \ref{secdescription} we explain the class of problems included in our collection. In Section \ref{secbenchmark} we describe the procedure used to evaluate agents on this collection. In Section \ref{secresults}, we provide a summary of the quantitative and qualitative conclusions of our evaluation. We conclude with some discussion in Section \ref{secdiscussion}. The appendices provide details. In particular, Appendix \ref{app:problems} contains a full list of our problems.
+
+\begin{figure*}[t]
+\renewcommand{\figurename}{Box}
+\centering
+\tcbset{
+  equal height group=exampleproblems,
+  colback=exampleyellow,
+  colframe=exampleborder,
+  boxrule=0.6pt,
+  enhanced,
+  segmentation engine=standard,
+  borderline={0.6pt}{0pt}{tcbcolframe},
+  sharp corners,
+  boxsep=0pt,
+  left=7pt,right=7pt,top=8pt,bottom=8pt,
+  before skip=0pt,after skip=0pt,
+  fontupper=\small,fontlower=\small,
+  valign=top
+}
+\subfloat[Black-string Page time.\label{boxfig}]{\begin{minipage}[t]{0.32\textwidth}
+\begin{tcolorbox}
+\raggedright
+\textcolor{exampleheading}{\textbf{Example problem}}\par\smallskip
+Consider a black-string background with two branes at equal angles, $\pi/10$, from the vertical in $\mathrm{AdS}_4$. By comparing minimal surfaces that extend from the defect to the brane to minimal surfaces that extend from a defect on one side of the horizon to the other, find the Page time for this configuration in units where the temperature is $1/(2\pi)$.
+\tcblower
+\raggedright
+\textcolor{exampleheading}{\textbf{Expected answer flow}}\par\smallskip
+\noindent\textbf{Step 1:} Locate \href{https://arxiv.org/abs/2012.04671}{arXiv:2012.04671}~\cite{Geng:2020fxl} that discusses a similar problem in AdS$_5$.\par\smallskip
+\noindent\textbf{Step 2:} Adapt the equations derived there to $d=3$.\par\smallskip
+\noindent\textbf{Step 3:} Write a numerical script to solve the resultant differential equations, while being careful about singularities at the end points.\par\smallskip
+\noindent\textbf{Step 4:} Analyze the solutions and obtain the answer.
+\end{tcolorbox}
+\end{minipage}}\hfill
+\subfloat[Fermion parity pump.\label{boxparitypump}]{\begin{minipage}[t]{0.32\textwidth}
+\begin{tcolorbox}
+\raggedright
+\textcolor{exampleheading}{\textbf{Example problem}}\par\smallskip
+Consider one-dimensional class D fermionic systems, with no microscopic symmetries other than fermion parity. Restrict to the trivial phase and to free-fermion models. Using the suspension construction, construct a two-parameter Hamiltonian corresponding to a fermion parity pump. What is the central charge of the critical theory at the diabolical point? Under free-fermion perturbations, what does the diabolical point destabilize to?
+\tcblower
+\raggedright
+\textcolor{exampleheading}{\textbf{Expected answer flow}}\par\smallskip
+\noindent\textbf{Step 1:} Use the suspension construction of \href{https://arxiv.org/abs/2605.20339}{arXiv:2605.20339}~\cite{singam2026textured}.\par\smallskip
+\noindent\textbf{Step 2:} Start with an odd-parity \(0d\) ground state whose phase is self-inverse under stacking.\par\smallskip
+\noindent\textbf{Step 3:} Arrange copies along a chain and deform each to even parity using two nearest-neighbor dimerizations. \par\smallskip
+\noindent\textbf{Step 4:} Identify an instability of the diabolical point and determine its effect. \par\smallskip
+\end{tcolorbox}
+\end{minipage}}\hfill
+\subfloat[Flat-plate boundary layer.\label{boxboundarylayer}]{\begin{minipage}[t]{0.32\textwidth}
+\begin{tcolorbox}
+\raggedright
+\textcolor{exampleheading}{\textbf{Example problem}}\par\smallskip
+A fluid is flowing in the $x$ direction over a flat plate of length $L$. The fluid approaches the flat plate at free stream velocity $U_0$. The Reynolds number based on $L$ and $U_0$ is $Re=160000$. Calculate the spanwise normalized length scale ($L_s/L$) of the {\em dominant initial} streamwise spatial perturbation velocity structures that develop on a horizontal plane at a vertical height of $y/L=0.01$ from the plate. Assume spanwise to be periodic with length-scale $L$.
+\tcblower
+\raggedright
+\textcolor{exampleheading}{\textbf{Expected answer flow}}\par\smallskip
+\noindent\textbf{Step 1:} Set up the 3d computational domain for the flat-plate configuration.\par\smallskip
+\noindent\textbf{Step 2:} Solve the unsteady incompressible Navier--Stokes equations numerically.\par\smallskip
+\noindent\textbf{Step 3:} Extract the velocity data at the required horizontal plane.\par\smallskip
+\noindent\textbf{Step 4:} Analyze the extracted field and compute the length scales required.
+\end{tcolorbox}
+\end{minipage}}
+\caption{Three example problems and their expected solution trajectories.}
+\label{boxexamples}
+\end{figure*}
+
+\section{Problems \label{secdescription}}
+
+The problems in our collection were obtained by soliciting world experts from different areas of theoretical physics.
+
+We asked experts to contribute problems that met the following three criteria.
+\begin{enumerate}
+\item
+Problems related to current physics research;
+\item
+A known solution that was simple to verify but difficult to guess;
+\item
+A solution that could not be looked up in the published literature or elsewhere.
+\end{enumerate}
+We also requested that contributors not publish their solutions in the
+near future, to avoid contamination of the evaluation.
+
+These criteria are quite restrictive. In particular, they exclude problems from ongoing research that the experts intended to publish in the near future.
+
+One pathway for contributors to satisfy these criteria was to give us a problem from their research notes that they had worked out but not taken the trouble to publish.
+
+A more common alternative was for contributors to adapt a problem solved in one of their recent papers. By changing some parameters in a physics calculation, it is often possible to obtain a new problem with an answer that cannot be guessed from the old answer. Problem contributors could solve such a  problem by modifying their existing code or calculations. But another expert human, or an AI agent, would need to locate and understand the original solution; reconstruct the calculation in detail; and then adapt it to the modified problem. 
+
+Such an exercise is often assigned to graduate students who are starting research, since it helps them survey the literature and master the relevant techniques.  This method is also sometimes used by researchers to write ``incremental papers.'' 
+
+Therefore, none of the problems in our dataset constitute breakthrough open problems. Solving them does not require great originality or the ability to construct new physical theories. However, it does require familiarity with current research, and the ability to understand and accurately adapt cutting-edge calculational techniques.
+
+\subsection{Example problems}
+Box \ref{boxfig} shows an example of such a problem and the expected solution trajectory. The problem statement there is closely related to a problem solved in a paper that appeared on the hep-th arXiv \cite{Geng:2020fxl}. The statement of the problem is deliberately terse and it requires a deep understanding of recent developments in holography to decipher the statement. 
+
+A human attempting this problem would presumably start by locating this paper. This would help them understand the terms and the scope of the problem. The setup of \cite{Geng:2020fxl} involved a five-dimensional spacetime, and the next step would be to generalize the equations there to a four-dimensional spacetime as asked in the problem. This is a straightforward step but requires some care. 
+
+The resulting equations cannot be solved analytically. They give rise to a singular boundary-value problem. One must solve the equations in a series expansion near the singular points and then use a ``shooting'' routine \cite{press1992numerical} to obtain the full solution. 
+
+When presented as above, the individual steps in the solution might seem straightforward. However, the solution requires several components including a familiarity with the relevant literature and also a familiarity with numerical techniques. It took an author of the previous paper (SR) about a day to adapt the original calculations and perform the new calculation accurately.  We estimate that before the advent of modern agents, only a small number of experts would have had both the physics background and familiarity with the relevant numerical techniques to solve the problem; moreover, it would have taken these experts several days to reconstruct the old calculation and perform the new one. 
+
+A human expert working with a frontier AI agent can now solve this problem both accurately and rapidly with ease. This might require the human to provide hints to the agent, or perhaps provide the agent with the high-level algorithm above.  Our assessment seeks to determine whether agents can solve this problem entirely autonomously by performing all the steps in the answer flow with no hints beyond the given prompt.
+
+Box~\ref{boxparitypump} presents a second example, involving a class D fermion parity pump, together with a sketch of the solution. Box~\ref{boxboundarylayer} presents a third example, involving flat-plate boundary-layer perturbations, together with a numerical solution sketch. 
+
+These problems are a small subset of our larger collection.  But specialists in the area of one of these problems are unlikely to be familiar with the terminology of the other two problems. And, given the specialized nature of research, most physicists would find all three problems challenging to tackle autonomously. Therefore, the fact that agents are able to attempt these problems at all is already noteworthy. 
+
+\subsection{Distribution of problems}
+We obtained a total of 50 problems spanning a range of areas of theoretical physics. Table~\ref{tab:problem-themes} summarizes their distribution by theme. These themes cover a large number of topics. We do not believe that any physicist would have the expertise to attempt more than a fraction of these problems. Given the level of specialization in modern physics, it might often be difficult for a single expert to attempt all problems in a given thematic class. 
+
+
+Our problems do not provide an exhaustive survey of all areas of theoretical physics. The distribution of problems is partly influenced by network effects, since the coordinators and moderators invited experts they knew. However, there is also an intrinsic scientific influence on the distribution. While some fields, such as quantum field theory, naturally lend themselves to a number of hard calculations with verifiable answers, it is harder to construct such problems in other fields.
+
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{ruledtabular}
+\begin{tabular}{p{0.75\columnwidth}r}
+\textbf{Theme} & \textbf{Problems} \\
+\hline
+\raggedright Classical physics & 5 \\
+\raggedright Stochastic processes and biological physics & 5 \\
+\raggedright Nonequilibrium statistical mechanics & 3 \\
+\raggedright Lattice theories & 3 \\
+\raggedright Quantum phases of matter & 5 \\
+\raggedright Electronic structure theory & 4 \\
+\raggedright Quantum field theory & 7 \\
+\raggedright Particle physics & 2 \\
+\raggedright Scattering amplitudes  & 5 \\
+\raggedright Holography and entanglement & 5 \\
+\raggedright Gravitation and cosmology & 6 \\
+\hline
+\textbf{Total} & \textbf{50} \\
+\end{tabular}
+\end{ruledtabular}
+\caption{Thematic distribution of problems \label{tab:problem-themes}}
+\end{table}
+
+The full list of problems is provided in Appendix \ref{app:problems}. We urge readers to read these problems. The problems can also be downloaded from \benchmarkrepo{}~\cite{theophyseval2026dataset}.
+
+\begin{figure*}[t]
+\renewcommand{\figurename}{Box}
+\centering
+\begin{tcbraster}[
+  raster columns=2,
+  raster equal height=rows,
+  raster column skip=12pt,
+  raster before skip=0pt,
+  raster after skip=0pt,
+  colback=numericalpink,
+  colframe=numericalborder,
+  boxrule=0.6pt,
+  enhanced,
+  segmentation engine=standard,
+  borderline={0.6pt}{0pt}{tcbcolframe},
+  sharp corners,
+  boxsep=0pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt,
+  valign=top
+]
+\begin{tcolorbox}
+\raggedright
+\textcolor{numericalheading}{\textbf{Original question}}\par\smallskip
+Compute the rate for axion conversion to photons via scattering off the electrons in a dielectric medium. Assume that there is no external electric field and the medium is a conventional solid state material (non-magnetic, zero temperature), that the axion only interacts via an $a F_{\mu\nu}\widetilde{F}^{\mu\nu}$ coupling. Consider both relativistic and non-relativistic axions.
+\end{tcolorbox}
+\begin{tcolorbox}
+\raggedright
+\textcolor{numericalheading}{\textbf{Addition}}\par\smallskip
+Consider the case when the dielectric function of the medium satisfies
+\begin{equation}
+    \mathrm{Im}\!\left[\frac{-1}{\varepsilon_L(\omega, q)}\right]
+    \;=\; \frac{\pi}{2}\,\omega_p\,\delta(\omega-\omega_p),
+\end{equation}
+Working in natural units ($\hbar = c=1$), take the axion-photon coupling $g_{a\gamma\gamma}=10^{-10}\,\mathrm{GeV}^{-1}$, frequency $\omega_p = 16.6\,\mathrm{eV}$,
+refractive index $n = 1.5$, and axion velocity $v_a = 10^{-3}$.
+Evaluate the rate $\Gamma_{\rm NR}$ for
+(1)~$m_a = 25\,\mathrm{eV}$ and (2)~$m_a = 15\,\mathrm{eV}$. Express the final numerical answer in scientific form in eV units in the order [(1),(2)]
+\end{tcolorbox}
+\end{tcbraster}
+\caption{An original question and an addition requesting a numerical answer.}
+\label{boxnumerical}
+\end{figure*}
+
+\section{Evaluation \label{secbenchmark}}
+
+As explained above, every problem in our dataset has a verifiable answer. In some cases, such as the problem given in Box \ref{boxfig}, our problems naturally had numerical answers that could be checked against the answer provided by the agent.
+
+But it is also common to present the answers of analytical calculations in physics using symbolic expressions. In some cases, it is nontrivial to verify whether a given answer matches the reference answer because the same mathematical expression can be written in many equivalent ways. Moreover, notation is not always standard, and different agents might choose different symbols to refer to the same physical quantity. 
+
+One option is to solve this problem by relying on an LLM as a judge. The LLM can convert the expression provided by the agent to standardized notation and then use a symbolic manipulation program to determine its equality with a reference solution. However, this introduces an extraneous source of error.
+
+Therefore, we chose to convert all expressions to numerical values by giving the agents numerical values, both for relevant and also irrelevant physical quantities. See Box~\ref{boxnumerical} for an example of this kind. These numerical modifications lead to floating-point numbers or sequences of whole numbers that cannot be guessed easily.
+
+Agent solutions were graded on these numerical answers. However, after completion of the final runs, an automated analysis of answers revealed two prompts (\problemref{problem:dispersion-pi-series} and \problemref{problem:iib-euclidean-wormholes})  where conventions were not fully specified.  Our grading key allows for the convention choices we observed in our runs.  Attention is also required for \problemref{problem:autonomous-ode}, which, as discussed in Appendix \ref{app:solutions}, is resistant to numerical conversion. While we have tried our best to report objective scores, readers who seek to reproduce the evaluation should pay attention to these, and other possible undetected ambiguities, as potential sources of error.
+
+We evaluated the models using the Harbor framework~\cite{harbor2026framework} used in Terminal-Bench \cite{merrill2026terminal}. Harbor allows us to set fine-grained controls for the tools that the models can use. The full configuration used in our evaluation is available on \benchmarkrepo{}. Each agent was tested under two separate tracks. 
+\begin{enumerate}
+\item
+In the realistic track, the agent was allowed access to both web search and local  tools.
+\item
+In the isolated track, the agent was allowed to use local tools. But web search was disabled except for calls to the model provider itself.
+\end{enumerate}
+These evaluations serve distinct purposes. The isolated track is relevant for model builders who want to test the agent's innate knowledge of physics, and its ability to regenerate research-level code and calculations from scratch. However, for a physicist using an agent as a research assistant, there is no reason to disable web search or reinvent the wheel: publicly available scientific code or literature relevant for the problem should be used. Therefore, the realistic track offers a better sense of the utility of the agents for professional physicists.
+
+
+For the isolated track, agents ran in local Docker sandboxes managed by Harbor, with internet access disabled.
+We examined agent trajectories using an automated analysis and this analysis did not reveal any instances of the agents escaping the sandbox.
+
+For standardization, the final evaluation was carried out on e2-standard virtual machines on Google Cloud. Each task was assigned 2 vCPUs,  4 GB of memory and  10 GB of  storage. No restriction was placed on the total cost or tokens used by the agent. However, tasks that did not complete in 8 hours were cut off as having produced no output. The multi-task problems of Appendix \ref{problems:electronic-structure} were allocated a total of 20 hours.
+
+ 
+To economize time and costs, we only ran the full evaluation suite once for each agent through the API. This might lead to statistical errors in the measurement of the total accuracy since, with nonzero temperature, models can yield differing outputs on differing runs. We encourage readers to keep this uncertainty in mind when interpreting our accuracy scores. We also encourage readers who wish to obtain a more accurate evaluation to run the benchmark directly using our \benchmarkrepo{} resources. 
+
+\section{Results \label{secresults}}
+\subsection{Quantitative analysis}
+We evaluated five agents: GPT-6-Astra~\cite{openai2026astrasystemcard} with Codex~\cite{openai2025codexga} (Astra); Opus 5.5~\cite{anthropic2026opus55} with Claude Code CLI~\cite{anthropic2025claudecode} (Opus); Gemini 3.8 Flash~\cite{googledeepmind2026gemini38flash} with Antigravity~\cite{google2025antigravity} (Gemini); DeepSeek-V4.1-Flash~\cite{deepseek2026v41flash} with Codex (DeepSeek); and GLM 5.3~\cite{glm5team2026glm5,zai2026glm53} with Claude Code CLI (GLM). Reasoning effort was set to max for all models except Gemini 3.8 Flash, where ``high'' is the highest available reasoning effort. All agents were evaluated on the realistic and the isolated tracks.
+
+In this section we report summary scores for the pass rates, costs and token usage by each agent. Appendix \ref{appdetailedresults} breaks these figures down by problem and gives additional details.
+
+Figure~\ref{fig:results-realistic} shows pass rates on the realistic track. Astra has the highest pass rate solving 49/50 problems.  It is closely followed by Opus, which solved 46/50 problems. Gemini solved 34/50 problems, and the open-weight models DeepSeek and GLM solved 27/50 and 21/50 problems, respectively. 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/results_web_enabled.pdf}
+\caption{Pass rates on the realistic track. }
+\label{fig:results}
+\label{fig:results-realistic}
+\end{figure}
+
+Figure~\ref{fig:results-isolated} shows pass rates on the isolated track. Astra and Opus had the highest scores, solving 46/50 problems each.  They were followed by Gemini at 31/50, GLM at 26/50 and  DeepSeek at 25/50. \begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/results_web_disabled.pdf}
+\caption{Pass rates on the isolated track. }
+\label{fig:results-isolated}
+\end{figure}
+
+The pass rates in our evaluation are higher than those reported by some other benchmarks. However, upon visual inspection, it appears to us that our problems are, on average, more advanced than those in other extant collections of theoretical physics problems, including CritPt. Recent literature suggests that some theoretical physics benchmarks might suffer from inaccurate evaluations \cite{ansari2026goodfrontiermodelsphysics}. It is of interest to understand this discrepancy better.
+
+
+Table~\ref{tab:tokens} summarizes the tokens consumed by each agent. Since the agent writes scripts, reads their outputs and accesses the web on the realistic track, the number of input tokens is much larger than the number of prompt tokens. We have separated cached and uncached input tokens, since they are priced separately by all providers, although this division has limited scientific significance and depends on the  instantaneous runtime conditions at the API endpoint. 
+
+\input{usage_summary}
+
+
+Table~\ref{tab:api-costs} summarizes the evaluation costs for the two tracks. The costs for all models except GLM are calculated by multiplying the token usage with the API rates. Opus incurred substantially higher costs than other models. Although GLM's API costs were notionally high, we used a coding plan, with an actual cost of USD 180 for both tracks combined.
+\input{cost_summary}
+
+\subsection{Qualitative analysis}
+We now present a qualitative analysis of the errors made by the models.
+
+On the realistic track, Astra fails on only one problem in our evaluation suite. This problem  (\problemref{problem:autonomous-ode}) is an inverse problem, which requires the model to find an autonomous differential equation that would lead to a given curve. Unlike forward problems, an inverse problem generated synthetically in this manner involves information asymmetry between the agent and the creator of the question. 
+
+Moreover, as Appendix \ref{app:solutions} explains, the solution involves some play on the terms in the prompt. Nevertheless, we chose to include this question in our suite since it is reminiscent of a situation that a researcher might face, in which they are presented with slightly imprecise data and must unearth the underlying physics that produced the data, even bending some rules along the way.
+
+It is noteworthy that we initially assessed that Astra had made errors in several additional problems. However, upon closer examination and consultation with the experts, we found that there were subtle errors in the original solutions. In all these cases, after the experts corrected their solutions, Astra's solution was found to be correct.
+
+The inverse problem was not solved by any model. Therefore, the sets of problems solved correctly by other models, and by Astra on the isolated track, are each a {\em strict subset} of those solved correctly by Astra on the realistic track. 
+
+On the isolated track, Astra failed on three additional problems, including two that it incorrectly rejected as being impossible to solve. 
+
+Although Opus made more errors than Astra on the realistic track, its errors were subtle.  In the realistic track, for \problemref{problem:inertial-particle-attractors}, Opus used initial data from the reference \cite{kapoor2024trapping}. The paper is relevant for the problem, but the prompt itself specified different initial data.  It did not make this error in the isolated track. In another case (\problemref{problem:dispersion-pi-series}), it stated an incorrect conclusion about the rate of convergence of an infinite series in both the realistic and the isolated tracks. Finally, for the problem \problemref{problem:chern-simons-beta-function}, it produced no valid output on the realistic track by hitting the maximum token output limit repeatedly; it solved this problem successfully on the isolated track.  On the isolated track, Opus made a small error in setting up the modular differential equation (\problemref{problem:schur-index-mlde}) that it did not make on the realistic track.
+
+All other models made a larger number of errors, some of which would have been obvious to an expert human. For instance, while attempting the Page time problem of Box~\ref{boxfig} (\problemref{problem:black-string-page-time}) on the realistic track, both Gemini and GLM utilized formulas from \cite{Geng:2020fxl}, which are valid for five dimensions but must be modified for the four-dimensional case in the problem. On the isolated track, Gemini, GLM and DeepSeek evaluated geodesic lengths rather than the minimal areas that are required. 
+
+In another case (\problemref{problem:microstate-scalar-spectrum}), GLM incorrectly asserted that the problem was equivalent to another one on both the realistic and isolated tracks. The problem requires solving ordinary differential equations and finding the smallest allowed frequencies. DeepSeek chose an incorrect basis of solutions on the isolated track and Gemini made a similar error on the realistic track. DeepSeek solved the problem correctly on the realistic track, whereas Gemini did not produce an output on the isolated track.
+
+The higher overall accuracy of GLM on the isolated track compared to the realistic track is largely due to a set of linked electronic structure problems given in Appendix \ref{problems:electronic-structure}. Since some key references were provided to the models to set up the framework for the problem, the agent on the isolated track was at less of a disadvantage.  The agent on the realistic track made a sign error early in its analysis, which propagated across the problems.
+
+Our results show that the accuracy of the agents  changes very little between the realistic and the isolated tracks. The change in accuracy is well within the statistical uncertainty in our evaluation, which comprises a single run. This is remarkable because a number of our problems require detailed formulas from the literature that, in most cases,  were not provided to the model as background. For example, it would be impossible for a human to attempt \problemref{problem:microstate-scalar-spectrum} without looking up the text of the background paper mentioned there \cite{Bena:2016ypk} to understand what the notation means.  
+
+The fact that models can solve such problems on the isolated track suggests that they have memorized large parts of the physics research literature and can reproduce key formulas without looking them up.
+
+
+
+
+
+
+
+
+\section{Discussion \label{secdiscussion}}
+In this paper, we have presented a large collection of unpublished problems drawn from different areas of theoretical physics. The central conclusion of our evaluation is that frontier agents can now solve verifiable problems in theoretical physics with great accuracy. Not only does their breadth exceed that of any individual, but their calculational abilities now match those of world experts even in specialized domains. 
+ 
+It might be possible to reduce the accuracy of agents by constructing problems adversarially. For instance, no agent was able to solve the inverse problem (\problemref{problem:autonomous-ode}) and it should be possible to construct more examples of such problems. We have chosen not to do so, since our suite is meant to be representative of difficult problems that are actually encountered in research.
+
+On the other hand, in a realistic environment, human researchers engage agents in a multi-turn process where they examine the agent's output and ask for refinements. We believe that with such feedback, the accuracy of even the weakest agents in our evaluation can be increased substantially. 
+
+In this evaluation, we used common consumer harnesses. It is possible to design specialized harnesses for scientific work \cite{morgensztern2026solveragent,schwartz2026bootloops,anthropic2026claudescience,gottweis2025aicoscientist,lu2026automationairesearch}, and such tools have had success in mathematics \cite{schmitt2026proofcouncil,tsoukalas2026alphaproofnexus}. It is of interest to understand whether such harnesses can improve the accuracy of agents in our evaluation. Moreover, while it is natural to pair Astra, Opus and Gemini with Codex, Claude Code and Antigravity, respectively, we chose to pair DeepSeek with Codex and GLM with Claude Code. It is possible that different combinations of models and harnesses might perform better.  We encourage interested readers to try such combinations.
+
+
+
+Our results show that modern agents have matured into powerful tools that professional physicists can use to expand the scale and scope of their work. This is likely to accelerate scientific discovery in the near future and might lead to breakthroughs in longstanding problems.
+
+However, this progress also creates structural challenges. Until recently, some problems in our collection might have been appropriate as initial research projects to train early-career researchers for advanced research and as an opportunity to obtain an original result. It is no longer appropriate to assign such problems to starting researchers, unless it is clearly understood that the objective is purely to work through the problem rather than to obtain the final result. 
+
+
+
+
+
+Theoretical physics research has historically required fewer resources than experimental research, and this has had an equalizing effect on the field. While the problems in our collection can be solved without much expenditure, we expect that more advanced problems will require greater resources. This raises concerns about access and equity in physics research. 
+
+Finally, we return to the point that solving verifiable problems is only one aspect of physics research.  A concrete calculation emerges only after a suitable problem is identified in a theory. The problem originally identified may turn out to be too hard to solve.  A good researcher can then find a related but simpler and equally interesting problem to solve.  In our experience, current agents are not adept at dynamically switching direction in this manner. 
+
+There is a shared understanding among physicists, although far from a consensus, of what constitutes an interesting problem. At the moment, agents do not appear to have the same ``taste'' in problems. We have observed that, when asked to come up with new problems, agents focus excessively on details that a human might find uninteresting. 
+
+Therefore, human experts are necessary to guide current agents and  to set directions. At present, agents cannot simply be given a major physics problem and expected to solve it autonomously.
+
+The observations above are based on our experiences and conversations. We are unable to quantify them and acknowledge that other researchers might have had different experiences. They certainly do not constitute claims about the future development of AI.
+
+At least one tendency in theoretical physics has been to exhort researchers to ``shut up and calculate'' \cite{mermin1989pillow}. As intangibles such as taste and vision gain significance, physicists might need to ``stop and think.'' 
+
+\section{Acknowledgments}
+We would like to thank P.~Ajith, Riddhipratim Basu, Brian Campbell-Deem, Alejandra Castro, Sarthak Chandra, Patrick Hayden, Yu-tin Huang, Raghu Mahajan, Xiaoliang Qi, Madan Rao, Sthitadhi Roy,  Ujjwal Sen, Tejaswi Venumadhav and Ashvin Vishwanath for helpful discussions and collaboration in the early stages of this project.  AI agents, including Astra, Gemini and Opus, were used to write code to perform the evaluation, analyze the results and assist with the preparation of this manuscript.
+\bibliography{ml_refs}
+
+\clearpage
+\appendix
+\onecolumngrid
+% Keep appendix footnotes full width in the one-column page grid.
+\makeatletter
+\let\set@footnotewidth\set@footnotewidth@one
+\let\compose@footnotes\compose@footnotes@one
+\onecolumn@grid@setup
+\count\footins=1000\relax
+\makeatother
+\input{appendix}
+\input{appsolutions}
+\clearpage
+\input{detailed_results}
+\end{document}

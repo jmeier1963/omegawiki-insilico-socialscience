@@ -4,7 +4,7 @@ aliases: ["AI complementarities", "complementary investments AI", "reorganizing 
 tags: [ai-firm-performance, complementarities, general-purpose-technology, productivity-paradox, organizational-economics]
 maturity: emerging
 definition: "The proposition that AI's task-level productivity gains aggregate to firm-level performance only when complementary activities in a firm's production process are reorganized around AI, so that gains in tightly coupled activities reinforce rather than dissipate at unchanged bottlenecks."
-key_papers: [mapping-ai-into-production-field-experiment, genai-divide-state-ai-business-2025, rethinking-organisation-when-knowledge-no-longer, cybernetic-teammate-field-experiment-generative-ai, effects-generative-ai-high-skilled-work]
+key_papers: [mapping-ai-into-production-field-experiment, genai-divide-state-ai-business-2025, rethinking-organisation-when-knowledge-no-longer, cybernetic-teammate-field-experiment-generative-ai, effects-generative-ai-high-skilled-work, organizing-intelligence]
 first_introduced: "2026"
 date_updated: 2026-06-26
 related_concepts: [mapping-problem, marginal-returns-to-intelligence]

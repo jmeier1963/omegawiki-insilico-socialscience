@@ -1,0 +1,997 @@
+\title{Emerging Trends in AI Agent Evaluation}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+AI models are increasingly deployed as agents: rather than responding to a single prompt, they plan over many steps, call external tools, and act within software and real-world environments. This shift challenges the existing outcome-focused benchmarking paradigm for evaluating AI models. Evaluating these agent systems must now encompass an array of scaffolds, tools, and environments that present a far more complex challenge for evaluators today. First, this shift has necessitated many improvements to measurement methodology, scientific rigor, and evaluation infrastructure. Second, the deployment of agents in real settings has expanded the scope of evaluation from the lab to the field. Third, the accompanying changes within the broader evaluator ecosystem hold new implications for those interested in contributing to this work. We survey 33 shifts, practices, and questions driven by the AI agent paradigm across the above three dimensions—the “How,” “What,” and “Who” of AI agent evaluation. Our goal is to help consolidate the emerging discipline of agent evaluation, equipped with an evolving methodological toolkit (Part 1), an orienting research agenda (Part 2), and an updated portrait of the evaluation landscape (Part 3). Part 1: How Evaluation science and methods 1a Validity 1b Benchmark quality 1c Metrics beyond accuracy 1d Statistical rigor 1e Causal attribution 1f Contamination 1g Dynamic benchmarks 1h LLM judges and monitors 1i Log analysis 1j Evaluation infrastructure 1k
+\end{abstract}
+
+\section{Recovered Text}
+Emerging Trends in AI Agent Evaluation
+Felix Chen1,*
+Stephan Rabanser1,*
+Peter Kirgis1
+Nitya Nadgir1
+Rishi Bommasani2
+Magda Dubois3
+Elham Tabassi4
+Cozmin Ududec3
+Anka Reuel2
+Sanmi Koyejo2
+Sayash Kapoor1,5,*
+Arvind Narayanan1,6,*
+1Princeton University
+2Stanford University
+3UK AI Security Institute
+4The Brookings Institution
+5UC Berkeley
+6Institute for Advanced Study
+*Corresponding authors: \{felix\_chen, rabanser, arvindn\}@princeton.edu, sayashk@berkeley.edu
+October 19, 2026
+Abstract
+AI models are increasingly deployed as agents: rather than responding to a single prompt, they plan
+over many steps, call external tools, and act within software and real-world environments. This shift
+challenges the existing outcome-focused benchmarking paradigm for evaluating AI models. Evaluating
+these agent systems must now encompass an array of scaffolds, tools, and environments that present a
+far more complex challenge for evaluators today. First, this shift has necessitated many improvements
+to measurement methodology, scientific rigor, and evaluation infrastructure. Second, the deployment
+of agents in real settings has expanded the scope of evaluation from the lab to the field. Third, the
+accompanying changes within the broader evaluator ecosystem hold new implications for those interested
+in contributing to this work. We survey 33 shifts, practices, and questions driven by the AI agent paradigm
+across the above three dimensions—the “How,” “What,” and “Who” of AI agent evaluation. Our goal is to
+help consolidate the emerging discipline of agent evaluation, equipped with an evolving methodological
+toolkit (Part 1), an orienting research agenda (Part 2), and an updated portrait of the evaluation
+landscape (Part 3).
+Part 1: How
+Evaluation science and methods
+1a
+Validity
+1b
+Benchmark quality
+1c
+Metrics beyond accuracy
+1d
+Statistical rigor
+1e
+Causal attribution
+1f
+Contamination
+1g
+Dynamic benchmarks
+1h
+LLM judges and monitors
+1i
+Log analysis
+1j
+Evaluation infrastructure
+1k
+Red-teaming
+1l
+Open-world evaluations
+1m Human baselines
+each trend closes with
+best practices
+Part 2: What
+Expanded research agenda
+2a Simulated users
+2b Lab experiments
+2c Field experiments
+2d Observational usage data
+2e Domain-specific evaluation
+2f
+Economic impact
+2g Behavior under evaluation
+2h Dangerous capabilities
+2i
+Security
+2j
+Interaction harms
+2k Systemic evaluation
+each trend closes with
+research directions
+Part 3: Who
+Evaluator ecosystem
+3a Who evaluates
+3b Independence
+3c Labs shaping evaluations
+3d Evaluations shaping labs
+3e Funding
+3f
+Rising costs
+3g Venues
+3h Public sector
+3i
+Disciplinary entry points
+each trend closes with
+practical considerations
+Figure 1: Overview of the 33 trends surveyed in this paper.
+1
+Contents
+Introduction
+3
+Scope and methods
+6
+Intended audience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Agents as the object of evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+Part 1: Improved Evaluation Science and Methods (“How”)
+8
+1a. How does validity change for agents? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+1b. How should we evaluate benchmark quality?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+1c. What should agent evaluations measure beyond accuracy? . . . . . . . . . . . . . . . . . . . . . . . . . 11
+1d. How can agent evaluations achieve statistical rigor? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+1e. How can agent evaluations attribute causal changes in performance? . . . . . . . . . . . . . . . . . . . 14
+1f. How can agent evaluations resist contamination?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+1g. What role do dynamic benchmarks play, and what are their tradeoffs?
+. . . . . . . . . . . . . . . . . . 16
+1h. Where should LLMs judge and monitor agents? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+1i. What can log analysis reveal beyond outcomes? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+1j. What is the value of standardized evaluation infrastructure for agents?
+. . . . . . . . . . . . . . . . . . 19
+1k. How should red-teaming evolve for agents? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+1l. What can open-world evaluations reveal that benchmarks cannot? . . . . . . . . . . . . . . . . . . . . . 21
+1m. How can evaluators interpret agent performance relative to human capabilities?
+. . . . . . . . . . . . 21
+Part 2: Expanding the Research Agenda for Evaluation (“What”)
+23
+2a. Human-agent interaction: evaluation with simulated users . . . . . . . . . . . . . . . . . . . . . . . . . 24
+2b. Human-agent interaction: experiments in the lab . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+2c. Human-agent interaction: field experiments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+2d. Observational data on real-world usage
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+2e. Domain-specific evaluation
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+2f. Economic impact evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+2g. Agent behavior under evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+2h. Dangerous capabilities and risk . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+2i. Agent and evaluation security . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+2j. Interaction harms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+2k. Systemic evaluation
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Part 3: The Evolving Evaluator Ecosystem (“Who”)
+34
+3a. Who evaluates? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+3b. What does independence require?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+3c. Does lab direction drive evaluations? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+3d. Do evaluations drive lab direction? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+3e. How does funding shape independent evaluation?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+3f. How do rising costs affect evaluations? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+3g. Where are the venues for evaluations? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+3h. How is the public sector responding? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+3i. Where are the entry points for different disciplines? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Conclusion
+45
+Acknowledgements
+45
+A
+Best Practices, Research Directions, and Practical Considerations
+66
+2
+Introduction
+For much of the history of artificial intelligence (AI) and machine learning (ML) models, evaluation followed
+a simple template: query a model, collect its response, and compare that response against a given reference
+answer. However, with the advent of AI agents, evaluation has grown into a significantly more complex
+enterprise (see Figure 2). The basic mental model of evaluation as outlined above belies the sprawling set
+of resources, infrastructure, and design considerations required by evaluators today. Questions of interest
+for evaluation of AI agents today no longer implicate models alone, but rather expand to the larger systems
+around them, consisting of scaffolds (also referred to as “agent harnesses”) [16, 116, 138], tools, testing
+environments, and user interfaces. As a result, long-standing concerns may manifest differently for agents
+than they did for models, and previous assumptions may not hold (see Table 1). These changes in the
+overall evaluation landscape are taking place amidst rising expectations for AI agents and demands for
+longer-horizon tasks. Meeting these demands requires updating our understanding of principled AI agent
+evaluation in three key dimensions (see Figure 1): how to evaluate, what to evaluate, and who evaluates.
+1) Rethink evaluation methodology (“How?”). First, agent evaluation requires revisiting and imagining
+evaluation methods. Conceptually, familiar concerns about evaluation take new form within the agentic
+paradigm. For example, establishing validity becomes harder when performance depends not only on the
+underlying model, but also on the particular agent scaffold and environment. Achieving statistical rigor must
+better account for long, stochastic trajectories, where small differences early on can compound into sharply
+divergent outcomes. Concerns about contamination extend beyond training data alone; agents now have
+access to a wide array of tools and web access that make identifying such instances harder. Methodologically,
+these shifts create new opportunities for metrics of interest and evaluation infrastructure. Conducting
+evaluations today requires an elaborate set of harnesses, autograders, and sandboxed environments, which
+are themselves new surfaces for scrutiny. We offer a set of emerging best practices.
+2) Broaden the scope of evaluation (“What?”). Second, the agentic shift demands a broadened research
+agenda for evaluators. Agent deployment in real settings has expanded the scope of evaluation from the
+lab to the field, necessitating coverage of capabilities, human interactions, and systemic considerations.
+No longer can questions for evaluation be confined to a question of capabilities in a vacuum, but must
+also examine how agents are situated in new relationships with humans and each other. Fueled by public
+debates around the economic and societal impact of AI, we separate evaluations that ask whether an
+agent can do a task on its own (automation) from those that ask whether they can support human work
+(augmentation). We offer a set of relevant research directions.
+3) Recognize the role of evaluators (“Who?”). Third, evaluators shape the evidence that developers,
+policymakers, and the general public rely on. Evaluators influence the broader discourse not only by setting
+questions of interest, but by determining how evidence is produced, analyzed, and shared. Who designs
+an evaluation therefore matters because the choices evaluators make about scaffolds, prompts, tool use,
+environments, budgets, points of human intervention, and statistical analyses all create substantial degrees
+of freedom. Consequently, the historic understanding of benchmarks as a source of evaluator-agnostic
+results can no longer be taken for granted. Reflecting the changing landscape of this work, we offer practical
+considerations for researchers interested in this work.
+There is an urgent need to identify and disseminate best practices, chart a path forward for the agent
+research community, and develop an ecosystem capable of conducting these evaluations. This paper is a
+step in that direction. We begin by clarifying its scope and methodology. Part 1 examines the conceptual
+concerns, emerging tools, and evolving protocols that are shaping a science of AI agent evaluation. Part 2
+turns to the widened scope of evaluation, emphasizing both technical and sociotechnical lenses, micro-
+and macro-levels of analysis, and evolving conceptions of safety, security, and harm. Part 3 characterizes
+3
+the current evaluation ecosystem, and discusses how changes in evaluators’ material conditions and
+independence impact the choices available.
+Table 1: Why agent evaluation is a new field and why LLM evaluation practices are insufficient. Practical suggestions
+for the evaluator ecosystem are treated separately.
+Methodological Question or Area of
+Evaluation
+How Agents Exacerbate Existing Model Evaluation Challenges, or
+Create New Ones
+1a. How does validity change for
+agents?
+The outcome-oriented focus of model evaluations breaks down with
+agents, since they can reach the same outcomes through disparate
+trajectories, possibly via shortcuts. Moreover, constructs of interest are
+harder to operationalize due to the dynamic nature of agents’ real-world
+interactions. Evaluators must be more precise about constructs, metrics,
+and how they think about validity.
+1b. How should we evaluate
+benchmark quality?
+Manual human review of model benchmark questions was more feasible,
+and impossible tasks more clear to verify—with the increase in
+components for agent evaluation tasks, it is far more tedious to attempt
+validating broken or impossible agent tasks.
+1c. What should agent evaluations
+measure beyond accuracy?
+An outcome-oriented evaluation mindset for models prioritized accuracy
+(i.e., success on tasks) as the key metric of interest. But agent
+performance includes far more than just accuracy; deployment in the real
+world involves tradeoffs between cost, latency, and reliability, important
+concerns not captured by accuracy alone.
+1d. How can agent evaluations
+achieve statistical rigor?
+Agents create greater variance across runs and over multi-step, possibly
+disparate, trajectories; this increased variance demands better ways to
+capture and model this uncertainty.
+1e. How can agent evaluations
+attribute causal changes in
+performance?
+Model evaluation benefited from clear causal attribution—changes in
+models drove changes in outputs. With a larger number of sources of
+variance (e.g., environments, tools, scaffolds, etc) agents now have more
+possible potential causal sources to rule out when agent performance
+changes. Moreover, the same scaffold may not interact with all models in
+the same way, complicating the separation of model from scaffold
+attribution.
+1f. How can agent evaluations resist
+contamination?
+Contamination for model evaluation largely was conceptualized in terms
+of prior exposure to benchmark content. With agents and their access to
+scaffolds and tool use, there are now far more possible sources of
+contamination.
+1g. What role do dynamic benchmarks
+play, and what are their tradeoffs?
+Dynamic benchmarks offer one response to contamination and saturation,
+but their distribution shifts are known to create comparability and
+coverage issues. This dynamic nature creates another variance source for
+agent evaluations, making attributions of score changes even harder.
+1h. Where should LLMs judge and
+monitor agents?
+Agent evaluations have dramatically amplified the need and utility of
+LLM judges and monitoring thanks to long trajectories and open-ended
+outputs that are outpacing manual human review. The increasing
+centrality of these setups is creating fresh risks around overreliance and
+questions about their efficacy and validity. Moreover, it is raising questions
+of when—and where—we need humans in the loop to judge and monitor
+agents? What information do LLMs or humans need for that task?
+4
+Methodological Question or Area of
+Evaluation
+How Agents Exacerbate Existing Model Evaluation Challenges, or
+Create New Ones
+1i. What can log analysis reveal
+beyond outcomes?
+Agent success or failure cannot be fully understood by outcome metrics
+alone. Trajectory analysis can reveal validity challenges (Section 1a),
+benchmark quality issues (Section 1b), contamination (Section 1f), and
+surface underlying patterns in agent performance.
+1j. What is the value of standardized
+evaluation infrastructure for agents?
+Model benchmarks were far simpler and cheaper. Trying to conduct
+rigorous agent evaluations requires significant engineering effort and an
+ecosystem of infrastructure such as reproducible environments, reusable
+scaffolds, and common reporting standards. Standardized evaluation
+infrastructure can help to simplify costs and develop greater
+comparability of work.
+1k. How should red-teaming evolve
+for agents?
+Model red-teaming was primarily focused on scrutinizing harmful
+outputs and possible prompt vulnerabilities. For agents, there is a much
+larger attack surface in addition to the model itself (e.g., from the
+scaffold). Moreover, harmful model outputs in the agentic paradigm can
+more directly lead to harmful action thanks to tool use and expanded
+capabilities.
+1l. What can open-world evaluations
+reveal that benchmarks cannot?
+Benchmarks flatten performance through scoped tasks and outcome
+taxonomies. This was sufficient for the uni-dimensional form of model
+outputs. But as expectations for agents rise in real-world settings,
+understanding their performance demands more open-ended
+examination, through detailed real-world cases with long-horizon,
+complex agent trajectories. What does comparability look like for
+open-world evaluations?
+1m. How can evaluators interpret
+agent performance relative to human
+capabilities?
+For model evaluations, comparison to human capabilities largely revolved
+around comparing accuracy. But we are now demanding much more from
+agents, applying them to work-like tasks. This creates new avenues for
+comparison, by quantifying agent performance in terms of human time,
+quality of output, and reliability.
+Expanded Research Agenda
+2a–2d. Human-agent interaction:
+evaluation across simulated,
+laboratory, field, and observational
+settings
+Model evaluations largely made sense in the context of prompts and
+outputs. Agents are often situated in particular human-agent interactions
+that are multi-turn and stateful, and require study across a variety of
+evaluation settings: through simulated users, in laboratory settings with
+humans, in field experiments, and through observational data on
+real-world usage.
+2e. Domain-specific evaluation
+Model evaluation in specific domains largely tested whether models
+possess specific knowledge within a domain. Agents are being tested on
+domain-specific workflows.
+2f. Economic impact evaluation
+Model capability scores alone do not establish economic impact; actual
+adoption, usage, and aggregate outcomes with agents are what matter.
+2g. Agent behavior under evaluation
+Agents in stateful environments create expanded opportunities to assess
+the implications of reward hacking behavior and consequences of
+evaluation awareness.
+2h. Dangerous capabilities and misuse
+Agent access to tool use, permissions, and stateful environments
+amplifies ability to conduct consequential harmful actions.
+2i. Agent and evaluation security
+Security is no longer about the model alone, but now includes the
+scaffold and wider evaluation environment as well.
+5
+Methodological Question or Area of
+Evaluation
+How Agents Exacerbate Existing Model Evaluation Challenges, or
+Create New Ones
+2j. Interaction harms
+Model evaluation surfaced potential harmful outputs, but largely in
+atomic individual responses. Persistent interactions with stateful agents
+equipped with memory can create feedback loops that can accumulate
+harms and lead to new ones across long trajectories.
+2k. Systemic evaluation
+Model evaluation was largely done in isolation. As agents embed in
+organizations and institutions and interact with humans and other agents,
+their effects on incentive structures demand study.
+Scope and methods
+Intended audience
+This paper is written primarily for researchers who are interested in understanding the current state of
+research of AI agent evaluation or to enter the field. It may be particularly useful for researchers who are
+familiar with model-level benchmarking, but who are less familiar with agent-specific research. Researchers
+who are already working on AI agents may find this paper helpful for understanding other aspects of the
+broader agent ecosystem, or as an opportunity to reflect on the future direction of the field. We expect our
+paper to be most relevant to researchers seeking generalizable knowledge, though much of the discussion
+will also be useful to engineers doing downstream evaluations.
+The paper also targets a broader audience of stakeholders interested in weighing the claims around AI
+agents and their capabilities. For these readers, it offers a reference point for judging the current state
+of agent capabilities, broadly and within particular domains. It does so by surfacing shared evaluation
+challenges and emerging best practices within the latest paradigm of agents.
+Table 2 suggests where readers with different goals might start.
+Agents as the object of evaluation
+We focus on evaluations of agent systems (“AI agents”): systems combining large language models (LLMs)
+with scaffolds and tools to plan and act to achieve goals, without human intervention required at all
+steps [129, 133, 142, 146, 246, 287, 305]. Moreover, we primarily discuss frontier AI agents whose
+performance approaches the state-of-the-art across a wide range of capabilities [43]. We examine agent
+evaluation at three levels of analysis: (i) the agent system itself, consisting of the combined behavior of its
+components; (ii) agents in tandem with each other and with humans, e.g., human-agent interaction and
+collaboration; and (iii) agents and their effects on institutions and organizations.
+This survey emphasizes trends relevant to agent evaluations and how they have evolved relative to model
+evaluations. We largely discuss agent systems rather than the model internals alone. For example, we
+include work on agent security that emphasizes scaffold, environment, and harness design (e.g., indirect
+prompt injection). However, we generally exclude from scope work solely concerning model internals, such
+as mechanistic interpretability research into Sparse Autoencoders (SAE). We also exclude from scope work
+that primarily focuses on simulation fidelity using “digital twins,” [217] rather than the capabilities and
+risks related to the agents themselves.
+We use evaluation to describe works that “measure, characterize, or analyze properties of AI models or
+systems.” [43] Evaluations may occur before or after deployment, and may be conducted by a wide range
+6
+Table 2: Relevant sections organized by use case.
+Use Case
+Start With
+Also Relevant
+Entering
+agent-evaluation
+research
+Agents as the object of evaluation; Validity (1a);
+Part 2 introduction; Who evaluates (3a);
+Disciplinary entry points (3i)
+Venues (3g); Part 2 research
+directions
+Implementing an
+evaluation
+Metrics beyond accuracy (1c); Statistical
+rigor (1d); Causal attribution (1e); LLM judges
+and monitors (1h); Log analysis (1i); Evaluation
+infrastructure (1j); Security (2i)
+Contamination (1f); Behavior under
+evaluation (2g); Rising costs (3f)
+Weighing evaluation
+claims
+Validity (1a); Benchmark quality (1b); Statistical
+rigor (1d); Contamination (1f); Human
+baselines (1m)
+Behavior under evaluation (2g);
+Security (2i); Independence (3b);
+Labs shaping evaluations (3c)
+Evaluating agents for a
+deployment
+Field experiments (2c); Observational usage
+data (2d); Domain-specific evaluation (2e)
+Open-world evaluations (1l);
+Simulated users and lab
+experiments (2a–2b); Interaction
+harms (2j)
+Policy and oversight
+Dangerous capabilities (2h); Systemic
+evaluation (2k); Independence (3b); Public
+sector (3h)
+Red-teaming (1k); Economic
+impact (2f); Labs and evaluations’
+relationship (3c–3d)
+Funding evaluations
+Part 2 introduction; Independence (3b);
+Funding (3e); Rising costs (3f)
+Evaluation infrastructure (1j); Labs
+and evaluations’
+relationship (3c–3d); Venues (3g)
+Model evaluation
+Prompt
+Model
+Response
+Grader
+Reference answer
+Agent evaluation
+Agent system
+Model
+Scaffold
+Tools
+Task
+Environment
+actions
+observations
+Human
+may intervene
+at some steps
+Trajectory
+Final state
+every step
+Grader
+Tests
+Rubric
+LLM judge
+Figure 2: Model evaluation grades a single response against a reference answer. Agent evaluation covers a system of
+LLM, scaffold, and tools that acts in an environment over many steps, sometimes with human intervention; instead of
+a reference answer, the grader uses tests, a rubric, or an LLM judge to assess the trajectory (the process), the final
+state (the result), or both.
+7
+of actors, including agent developers, governments, non-profit, or for-profit actors. Both technical and
+sociotechnical forms of evaluation are in scope, with one complementing the other—technical evaluation
+provides insight into capabilities and constraints of these systems, while sociotechnical evaluation allows us
+to contextualize agents and understand how they interact in deployment settings.
+We draw a few conceptual boundaries between evaluation and overlapping concepts of verification and
+auditing. Evaluation is broader than verification work [43], since evaluators have methodological freedom
+in designing and conducting evaluations, rather than strictly reproducing an existing process [255]. We
+consider evaluation to be broader in purpose than auditing, since auditing incorporates evaluations primarily
+in service of accountability [8, 39, 57, 198, 224]. We do not restrict our focus to evaluations with an
+explicit accountability focus, but instead include it as part of the broader category of evaluations.
+Methods
+We use the term trend to describe a documented change in how agents are evaluated or in what evaluations
+try to measure. Trends take on different forms—they may be new formulations of old problems or challenges,
+for example in examining how agents create new validity challenges, or in new practices that have grown
+to meet the needs within agent evaluations, for example in the increased reliance on LLM-as-judge setups.
+We draw upon different forms of evidence, from public leaderboards, benchmarks, preprints, research
+notes, online essays, blog posts, and position papers, from a variety of sources including industry, academic,
+governmental, for-profit, non-profit, and philanthropic actors. Our examination of the ecosystem relies upon
+snowball sampling, following citation chains, and examining points of collaboration between authors and
+organizations. We rely solely on public-facing materials and publicly disclosed funding and grantmaking,
+which at times limits the granularity of detail we can provide.
+We structure our overall findings in three parts: the how, what, and who, of evals. While several trends
+straddle multiple categories, our goal is to locate them alongside relevant trends expanding upon similar
+themes. Our selection of trends is opinionated and the selection of citations within each trend is illustrative—
+neither is intended to be comprehensive.
+Part 1: Improved Evaluation Science and Methods (“How”)
+Amid growing calls for a science of evaluations [26, 112, 113, 218, 293], AI agents have revealed important
+shortcomings in previous evaluation practices, creating increased demand for scientific rigor [199]—in
+how measurement is defined, how evaluation is conducted, and how it is reported. At the same time,
+researchers increasingly recognize AI evaluation as a social science measurement challenge [282], one that
+requires being explicit about constructs, how they are operationalized, and how they are measured.
+This section begins by highlighting some animating concerns within the science of evaluations, by exploring
+questions around validity, statistical rigor, causality, contamination and saturation. Next, we explore the
+emerging toolkit for evaluations which aim to address these concerns: dynamic benchmarks, log analysis,
+and LLM-based judging and monitoring (see Figure 3). Lastly, we examine the new evaluation formats
+that are being applied to understand agents, as evaluators seek to complement benchmarks with new
+approaches.
+1a. How does validity change for agents?
+Consider the example of a “replay agent” for computer use—one that merely copies a single successful
+agent trajectory on a task and reproduces those exact actions [59]. No matter the state of the environment,
+8
+Construct
+validity
+Quality and
+saturation
+Statistical
+rigor
+Causal
+attribution
+Data
+contamination
+Ecological
+validity
+Design practices
+1b
+Item-level analysis
+1d
+Repeated runs
+1e
+Factorial designs
+1f
+Held-out test sets
+Tools and formats
+1g
+Dynamic benchmarks
+1h
+LLM judges and monitors
+1i
+Log analysis
+1j
+Standardized infrastructure
+1l
+Open-world evaluations
+addresses the concern
+introduces a risk for it
+Figure 3: How the methods discussed in Part 1 relate to its recurring concerns: which concerns each method is
+presented as addressing, and where it is flagged as introducing a new risk.
+the replay agent plods along. There is no reasoning involved, only blind recitation of a particular action
+sequence. It scores highly on certain benchmarks, even achieving higher success rates than agents powered
+by frontier models. Does this higher success rate imply that the replay agent is better at computer-use
+reasoning than those of frontier models? What does “better” mean in this context?
+This example highlights the importance of construct validity, which asks to what extent a metric—in this
+case, success on various computer-use tasks—accurately represents the abstract concept (the “construct”)
+it claims to measure: computer-use capability. This question of validity also assumes that the construct is
+adequately defined, a prerequisite which itself may not be satisfied. Moreover, for agents, constructs of
+interest are harder to operationalize due to the dynamic nature of their real-world interactions. Assessing
+construct validity therefore requires a clear definition of both the construct of interest and its corresponding
+metric [234].
+The increased complexity of agents, along with their environments, scaffolds, and trajectories, has made
+the task of assessing not only construct validity, but validity generally, more difficult and urgent. Construct
+validity is one of many interrelated validity concerns (see Figure 4)—we discuss many of these in further
+detail throughout this section, as validity underpins many trends as a first-order concern in evaluation.1
+Internal validity specifies the strength of the causal relationship between changes to agents and measured
+outcomes, and to what extent that attribution is defensible—a challenge we explore in Section 1e. External
+validity examines whether evaluation results are generalizable to other contexts. We explore a specific
+iteration of this concern, ecological validity in Section 1l, through the need for naturalistic evaluation
+environments and settings.
+best practices
+• Define explicitly the underlying construct before choosing a metric. Walk through different ways that metric
+1See also Goodhart’s law, which describes how a metric can diverge from the actual construct of interest.
+9
+Change to the agent
+model, scaffold, tools
+Metric
+task success rate
+Construct
+computer-use capability
+Other contexts
+tasks, settings, users
+internal validity
+did the change
+cause the difference?
+construct validity
+does the metric
+capture the concept?
+external validity
+do the results generalize?
+Ecological validity: do they hold under
+real-world conditions of use?
+Figure 4: Kinds of validity and the link each one concerns, illustrated with the computer-use example.
+might be gamed by an agent strategy which lacks the capability of interest.
+• Scrutinize the validity of evaluation results and the claims they support (e.g., using a validity frame-
+work [234]), and how they rely on construct, internal, and external validity.
+• Apply appropriate tooling (e.g., log analysis) to inspect possible sources of validity error—for example,
+through shortcuts, contamination, or reward hacking [186]. We explore these methods in greater detail in
+Sections 1h and 1i.
+1b. How should we evaluate benchmark quality?
+Underneath the broad umbrella of validity, a key concern is around the quality of an agent benchmark
+as a whole. Ensuring benchmark quality is difficult for a few reasons. On a purely technical basis, tasks
+are tedious for humans to check manually. Agents have amplified this challenge further, by expanding the
+number of components where possible errors may reside. Moreover, constructs of interest are harder to
+operationalize because of the dynamic nature of agents’ real-world interactions—lengthening the distance
+between upstream evaluation and the downstream deployments of these systems. And with increasing
+focus on multi-agent systems, the potential variance quickly becomes much larger.
+Compounding this technical challenge are disincentives for benchmark quality assurance. Benchmarks
+have touted how “impossible” their tasks are [231], while simultaneously overclaiming on the construct
+a benchmark intends to represent [181]. Evaluation as a whole is also increasingly costly [92]: since
+additional time and resources spent verifying tasks carry additional cost, benchmark developers may feel
+pressure to prioritize other aspects of benchmark design. Benchmarks are also not immune to the pressure
+to publish first—among similar benchmarks, the first one to be released has a strong advantage in adoption
+by the community. While the peer review process might ideally surface potential issues, reviewers may
+lack the time, resources, and expertise to conduct quality control on specific task contents, as specific task
+contents are not within their remit.
+Indeed, many potential problems are difficult to discern and become most visible once a benchmark reaches
+saturation [186]. Saturation refers to when a benchmark can no longer reliably distinguish between the
+performance of different agents (see Figure 5). For example, this may occur when several agents have
+approached the benchmark ceiling and their performances have plateaued so closely together that they
+are statistically indistinguishable from each other [6]. Saturation can be evidence of genuine progress in
+underlying capabilities, while also offering an opportunity for introspection and iteration on a benchmark
+and to identify validity issues. Following saturation, there is an opportunity to examine benchmark validity.
+For example, plateauing performance could be indicative of reward hacking, or that the agent has exploited
+some aspect of the evaluation test set [186, 268]. In the case of the replay agent, its successful performance
+10
+demonstrated the validity issues with its benchmark, a claim that would not necessarily merit attention
+had its performance not reached parity with other approaches.
+Successive agent releases
+Benchmark score
+benchmark ceiling
+statistically
+indistinguishable
+Responses to saturation
+Scrutinize the benchmark’s validity
+Build a harder successor benchmark
+Refresh the task set with new content
+Keep the tasks that still discriminate
+Incorporate metrics beyond accuracy
+Figure 5: Schematic of benchmark saturation. Once the leading agents are statistically indistinguishable near the
+ceiling, the benchmark no longer discriminates them, which prompts the responses on the right.
+One response is to focus attention on developing the next, typically more challenging, version of the
+benchmark. In fact, this very approach to iterating upon benchmarks can help set concrete targets
+for future agent development (e.g., SWE-bench [124] and SWE-agent [302]). Another response is by
+refreshing the task sets with new content, perhaps drawing from production traffic on a continual basis
+(see Section 1g) [301]. Individual benchmark tasks may also be reused for greater benchmark efficiency,
+through item-analysis of existing tasks to identify which tasks still discern between agents. For example,
+a psychometric framework such as Item Response Theory (IRT) could be used to streamline the tasks,
+such that a reduced subset of tasks still discriminates among top agents [191]. Alternatively, the same
+benchmarks can be repurposed with a focus on new metrics beyond accuracy.
+best practices
+• Use saturation on one metric as a trigger for deeper benchmark scrutiny.
+• Check for the possibility of impossible tasks, incorrect grading, task errors, and usage of shortcuts to review
+benchmark validity.
+• Apply item-level analysis (e.g., Item Response Theory (IRT) from measurement science) to determine which
+benchmark tasks continue to discriminate among top agents, possibly to repurpose subsets into more efficient
+benchmarks [191].
+1c. What should agent evaluations measure beyond accuracy?
+Even if task success serves as a valid metric, it may only capture one dimension of agent performance.
+Evaluation has historically defined success in the context of a narrowly bounded task, for example through
+a metric of “functional correctness.” [309] As agents take on longer trajectory tasks and deploy into
+economically relevant areas of work, they merit a more holistic performance profile, adding, for example,
+measures of cost, latency, or reliability.
+This idea of bringing together many different measures of agent performance has roots in prior work on
+model performance, such as the Holistic Evaluation of Language Models (HELM) [149]. Agents, which may
+require multiple reasoning steps, access to tool use, and include much greater variance in cost and compute,
+create additional dimensions for consideration. Relevant examples of quantitative metrics include:
+11
+• Cost: how many credits or compute an agent consumes. Cost can be a decisive factor in domain-specific
+implementations, perhaps with respect to profitability [132, 133].
+• Latency: how long it takes for models (or agents) to return a response. For time-sensitive applications,
+latency has a substantial impact on usability. With agents, assessing latency requires not only factoring
+in the model latency but also the latency of its other components (e.g., tool use) [133, 279].
+• Reliability: a composite metric capturing how consistent, robust, and predictable an agent is [223].
+Agents shipped in differing deployment scenarios may require adaptive thresholds of acceptable
+reliability [223].
+These quantitative metrics can also be complemented by qualitative analyses of agent trajectories, a trend
+we explore further in Section 1i. Even if final outcomes are identical across multiple runs, the possibility of
+highly disparate trajectories, perhaps with unsafe behaviors, merits study.
+The way in which these dimensions together are being communicated also frames discussion around
+agents. For example, Pareto frontiers [132, 133, Sec. 2.2, 82], such as between accuracy versus cost, or
+performance versus token usage [31], more clearly enable joint consideration of these metrics [72, 161,
+206, 286]. They help evaluators visualize the tradeoffs involved, since maximizing on certain metrics
+such as accuracy alone can lead to unbounded cost [133]. This is especially relevant for agents, since cost
+variance can be much higher for agents than models alone. These metrics may also be reported with respect
+to release date to contextualize progress over time [114, 145, 223, 240].
+Cost
+Accuracy
+on the Pareto frontier
+dominated
+Far along the frontier, large increases in
+cost buy little additional accuracy.
+Dominated: another agent is both
+cheaper and more accurate.
+Figure 6: Schematic accuracy vs cost plot. Agents on the Pareto frontier are not beaten on both dimensions by any
+other agent; the remaining agents are dominated.
+best practices
+• Report accuracy jointly with an appropriate notion of cost (e.g., monetary value, latency) and illustrate the
+tradeoff as a Pareto curve [133] (see Figure 6).
+• Measure reliability as a metric in its own right and set an acceptable threshold scaled to the specific
+deployment scenario.
+• Clarify what model-scaffold combinations are being measured, to better understand model × scaffold
+interaction effects.
+1d. How can agent evaluations achieve statistical rigor?
+Agent performance on benchmarks can vary widely, due to particular tasks selected into the benchmark, or
+variance across different agent trajectories within the same task. Certain approaches to aggregating or
+12
+subsetting these trajectories may obscure this variance. Increased statistical rigor can capture this variance
+and help to address concerns around cherry-picking in measuring agent performance, and distinguish
+between best-case and typical performance, which may be of interest to different audiences and interpreted
+differently as such.
+Repeated runs are increasingly adopted for agent evaluations, but single-run evaluations remain common due
+to the constraints from cost and compute [16, 223, 255]. One popular performance metric is pass@k [49],
+originally popularized for measuring functional correctness of AI-generated code [49] and subsequently
+adopted for agent evaluations [132, 133, 278, 302]. Pass@k represents the probability of “success” at least
+once within k attempts. For example, pass@1 communicates the expected performance of an agent on a
+single attempt [40]. Yet, for stateful interactions such as computer use, pass@k may be an inappropriate
+measure for reliability or consistency [59]. In contrast, pass∧k quantifies consistency in task success by
+representing the probability of success over all k runs [304] (see Figure 7). Neither metric necessarily
+captures how robust an agent is to changes in the testing environment; for example, gaming through a
+replay agent (see Section 1a) may still report high scores for both metrics while still being very brittle for
+other environments. Multi-agent contexts introduce additional sources of variance evaluators must contend
+with.
+Five runs per task
+filled: success
+hollow: failure
+pass@1
+a single run
+succeeds
+pass@5
+at least one run
+succeeds
+pass∧5
+all five runs
+succeed
+Task A
+5/5
+Task B
+3/5
+Task C
+1/5
+Task D
+0/5
+Across the four tasks
+45\%
+75\%
+25\%
+Figure 7: pass@1, pass@k, and pass∧k computed on the same illustrative runs (k = 5). pass@k credits a task after
+a single success, whereas pass∧k requires every run to succeed.
+Reporting point estimates alongside uncertainty with error bars is a standard practice among many
+evaluators [182, 279], but evaluations are broadening to specify sources of variation as well. Generalizability
+theory, rooted in the field of measurement science, has a long history of formalizing this need for variance
+decomposition—and can serve as a framework for tackling these challenges in agent evaluation as well.
+One important distinction for rigor in evaluation is between benchmark accuracy—which concerns expected
+performance of an agent on a specific benchmark—and generalized accuracy—which concerns the tasks that
+get selected into a benchmark relative to the entire population of tasks. That is, benchmark accuracy asks,
+“how well would an agent perform on these exact tasks again?” In contrast, generalized accuracy asks, “how
+well would an agent perform on new tasks similar to these tasks?” The latter has wider uncertainty because
+sampling the tasks themselves adds variance. This distinction between benchmark and generalized accuracy
+also has clear roots in measurement science, through latent variable modeling. NIST has explored two
+approaches to estimating benchmark accuracy and generalized accuracy. First, a regression-free approach
+directly averages across task-level success rates without quantifying capability or difficulty. Second, a
+generalized linear mixed model (GLMM) approach estimates benchmark accuracy by averaging over tested
+tasks, and estimates generalized accuracy by generating a distribution of possible task difficulties and
+13
+averaging over said distribution. As another example, the HiBayES framework for hierarchical Bayesian
+models from the UK AI Security Institute (UK AISI) factors in the families of tasks and domains that can
+characterize subdivisions of a larger benchmark [157, 273]. These approaches involve tradeoffs between
+efficiency and relying on various assumptions about the benchmark, namely, how tasks are sampled for the
+benchmark and the difficulty of those tasks [134].
+best practices
+• Conduct repeated runs to measure consistency for each task, and report how many runs were conducted.
+Avoid claims relying on low run-to-run variance if only a single run is affordable.
+• Ensure that the metric of interest and the stated claim are aligned: report pass@k when it matters whether
+an agent can succeed at all, and report pass∧k for whether it succeeds every time—pass@k should not serve
+as evidence of reliability.
+• Account for different sources of variance (e.g., judge error) in reported uncertainty, particularly for LLM-as-
+judge setups (see Section 1h), where raw scores may understate uncertainty.
+1e. How can agent evaluations attribute causal changes in performance?
+If an agent’s performance does improve in a statistically significant manner, can we pinpoint why? Agent
+performance is jointly influenced by the model, scaffold, tool use, budget constraints, the environment,
+and how it is evaluated [133]. When several of these components change at once, a statistically significant
+impact on performance does not allow us to disaggregate which precise factors drove that change (see
+Figure 8). And even when only one component changes, its effect may be attributable not only to the
+change in isolation, but rather to interactions with the system as a whole.
+For example, an agent scaffold may create variable effects when paired with different models. As the
+PaperBench [252] benchmark highlights, some configurations may yield improvements on metrics, while
+others may not. This further complicates this question of attribution, and highlights the need to think of
+the interaction between model and scaffold in a holistic manner—that is, as a model × scaffold interaction
+effect.
+(a) Changing both at once
+Model A
+Model B
+Model C
+Scaffold 1
+Scaffold 2
+Scaffold 3
+The two runs differ in model and scaffold, so the
+difference cannot be attributed to either one.
+(b) Factorial design
+Model A
+Model B
+Model C
+Scaffold 1
+Scaffold 2
+Scaffold 3
+Every pairing is run with environment and budget
+fixed, separating model effects, scaffold effects and
+their interaction.
+Figure 8: Attributing a change in agent performance to model vs scaffold. (a) When model and scaffold change
+together, their effects are confounded. (b) A factorial design runs every model-scaffold pairing under fixed conditions.
+Carefully parsing these factors helps to ensure that causal claims are well supported. Even though agents
+are built around a core underlying LLM, improvements or limitations of an agent cannot be used to
+infer limitations of a model itself. It is also worth asking whether existing limitations are attributable
+14
+to implementation challenges such as under-elicitation [140, 169].2 Indeed, in work such as CORE-
+Bench [248], significant gains in performance were made possible by improved scaffolds, even when models
+were held constant.
+Disaggregating these different components enables greater comparability over time, as models, scaffolds, and
+environments evolve independently. The growing need to test in multi-agent settings further complicates
+the work to achieve comparability. Attribution therefore requires instituting appropriate controls and
+baselines in the experimental design in order to best isolate specific effects; for example, through keeping
+budgets and environments fixed, and systematically varying discrete components [132, 300]. And in
+continuity with model benchmarks, systematically varying structured prompt templates for agents can help
+to facilitate the robustness of causal findings [183].
+best practices
+• Identify and document clearly different components of an experimental setup—the models used, scaffolds
+paired, environments tested, prompts used, and the budget constraints. When comparing agents, hold all
+but one component fixed such that any change in performance can be properly attributed.
+• Do not attribute an agent’s failure directly to the underlying (language) model, without accounting for
+whether improved scaffolding around the model changes the performance profile [140, 248].
+• When budget allows, systematically test model × scaffold interaction effects in various permutations, e.g.,
+with (fractional) factorial designs—in which multiple independent variables are tested in conjunction.
+1f. How can agent evaluations resist contamination?
+Evaluating agents involves greater challenges of contamination relative to model evaluations alone. For
+model-only evaluations, contamination arises from exposure to evaluation tasks verbatim or with high simi-
+larity, through pre-training data, benchmark content, or public test sets [42, 119, 130]. Evaluation datasets
+may also leak through direct and indirect channels (e.g., via synthetic data), and lead to overfitting [164].
+Agent evaluations introduce additional surfaces for contamination (see Figure 9). Test sample knowledge
+may end up directly programmed into the scaffold, prompts, tool use, or other components of the agent
+system, even without the scaffold developer’s knowledge, a problem described as “harness-level cheat-
+ing” [253]. With access to tool use, agents may be susceptible to search-time contamination, whereby agents
+are able to retrieve answers at inference time. Moreover, longer agent trajectories create more opportunities
+for potential leakage and raise the costs of inspection.
+Training data
+benchmark tasks seen
+verbatim or with high
+similarity during pre-training
+Scaffold and prompts
+knowledge of test samples
+built into the scaffold,
+prompts or tools
+Tool use at test time
+answers retrieved at inference
+time (search-time
+contamination)
+also present in model evaluation
+additional surfaces for agents
+Figure 9: Stages at which contamination can enter an agent evaluation.
+Contamination should also not be conceptualized as merely a binary question of whether certain data
+is included or not. Between direct memorization and robust generalizability lies a spectrum of more
+2Elicitation refers to “getting maximal performance of a model or system on a capability evaluation” [111, 169, 266].
+15
+subtle forms of lack-of-generalization [133, Sec. 5, 54, Sec. I.3.2], in which agents to various degrees may
+exploit knowledge or structural conventions that do not map to environments the benchmark is intended
+to measure. Consequently, evaluation should specify the intended level of generalization that a benchmark
+aims to test and design accordingly.
+best practices
+• Define secret holdouts appropriate to the level of generality expected of the agent [132], and limit repeated
+use and optimization against the holdouts [46, 104, 106].
+• Report test-train overlap [307], any benchmark-specific information used to develop the agent system’s
+prompts, scaffolds, and tool usage, and create transparency on private testing practices [249].
+• Inspect agent trajectories (see Section 1i) for contamination and incorporate clean-room evaluation harnesses
+into the testing setup [126].
+• When a holdout set is publicly available, update the set regularly with refreshed tasks (Section 1g) such that
+benchmark scores do not depend on tasks the agent may already have been exposed to.
+1g. What role do dynamic benchmarks play, and what are their tradeoffs?
+The term dynamic benchmark is currently an unsettled category and encompasses a broad set of different,
+non-exclusive approaches. Here, we use dynamic benchmarks as an umbrella term to include evaluations
+whose tasks, environments, or labels change over time or through changes in model or agent behavior.
+Dynamic benchmarks are relevant for agents because they rely not only on an underlying model, but also
+on scaffolds, tools, and environments, all of which are liable to change over time, and which the agents
+themselves may change.
+For example, dynamic agent benchmarks may:
+• Provide extensible environments that allow new tasks to be updated or modified (e.g., AgentDojo) [62];
+• Evaluate agents on “live” data with test sets that are regularly refreshed [120, 299], perhaps using
+production traffic [313];
+• Compare predictions against new information to test forecasting ability [306];
+• Focus on adversarial data collection, where new tests are selected from previous model failures, e.g.,
+Dynabench [70, 136];
+• Evaluate agents through competition against adaptive agents, e.g., Agent Island [185].
+Each of these approaches offers particular responses to certain limitations of static benchmarks. Refreshing
+or updating benchmarks with new tasks can aim to mitigate possible contamination—for example, LiveBench
+adds new test questions on a monthly basis to resist contamination [299]. Drawing from production traffic
+can aim to increase ecological validity. Adversarial data collection can respond to saturation by probing for
+new failure modes.
+A central tradeoff with modifying and refreshing tasks over time raises the issue of longitudinal compara-
+bility; if the evaluation itself is not consistent across different tests over time, how can we compare the
+results in a relative sense? While comparability is possible when agents are evaluated against the same
+version of a dynamic benchmark, evaluations across different versions may not be comparable. Looking
+toward the field of psychometrics may offer solutions to this issue by embracing test equating and linking,
+whereby tests are designed such that scores on different versions are interchangeable through a shared
+scale (see Figure 10).
+Validity remains a first-order concern—just because a benchmark is dynamic does not necessarily ensure
+16
+Version 1
+Version 2
+Version 3
+anchor tasks
+refreshed tasks that differ in each version
+Scores on a shared scale,
+comparable across versions
+Figure 10: Test equating for a dynamic benchmark. A common set of anchor tasks links versions whose other tasks
+are refreshed. This allows us to place scores on a shared scale.
+the test set continues to accurately map to the construct of interest. For example, in forecasting applications,
+the set of sampled events needs adequate justification for whether it represents the intended forecasting
+domain. Adversarial data collection approaches such as Dynabench intentionally concentrate the data
+toward failures. Although this can help to surface specific failure modes that other benchmarks gloss over,
+it can also mean that there is a distributional shift away from more realistic usage patterns. Consequently,
+performance on such benchmarks may overweight edge cases relative to the conditions under which models
+are typically deployed [87, 107, 247].
+best practices
+• Apply test equating and linking from psychometrics to ensure a common anchor subset across scores, for
+longitudinal comparability.
+• Track distribution shifts and regularly revisit whether results validly support claims about the intended
+construct.
+• Implement version control for each component of the benchmark, to enable reproducibility and comparability
+over time.
+1h. Where should LLMs judge and monitor agents?
+LLM-as-judges (or “autograders”) are becoming a core component for evaluation for open-ended outputs
+and in scenarios where human expert graders are costly [103]. For example, OpenAI’s PaperBench develops
+outcome-focused judging rubrics for its LLM-based judge, SimpleJudge, and then validates its judgement
+of the final submissions against human expert labels using another evaluation, JudgeEval [252]. In recent
+work, UK AISI has used a panel of LLM graders from which a median score is reported [221]. LLM-based
+judges are also playing a key role in understanding not only outcomes but agent trajectories, for example
+through the Agent-as-a-Judge framework [312].
+However, this can come with challenges around grader reliability. In effect, who judges the judges? This is
+a key question raised when LLM-as-judge setups become integrated into the experimental setup with its
+potential to introduce “biases and adversarial vulnerabilities” into the verification process [59]. Relying on
+these tools therefore creates another surface requiring evaluation. LLM-as-judges require validation against
+appropriate holdouts, such as expert labels. Researchers have also examined evaluating LLM-as-judge
+setups using crowdsourced human preferences [308], or through evaluation against response pairs [261].
+Another response is to model judge error rather than agreement alone—for example, UK AISI has also
+systematically assessed the quality and quantified biases in its LLM-as-judges using generalized linear
+models (GLMs) [68]. This judge error should moreover be reflected in how uncertainty is reported, in
+particular to inform how error bars are presented when LLM-as-judges are in play.
+Alongside LLM-as-judge setups are LLM-based monitors [32] (or “scanners”) which inspect agent trajectories,
+17
+either in real time or after the fact, to flag specific instances of agent behavior. In particular, current
+approaches focus on monitoring the agent chain of thought (CoT)—the visible, intermediate reasoning
+steps returned by the model within an agent. Monitoring can be valuable for detecting reward hacking,
+cheating, or particular unsafe behaviors from agents. However, CoT is not foolproof; using this technique
+may not fully surface sandbagging or other scheming behaviors—in effect, the absence of evidence may not
+imply evidence of absence [239]. Moreover, LLM-based monitoring also carries risks of overreliance. The
+volume of agent trajectories, particularly in multi-agent contexts, is outpacing the ability of evaluators to
+manually review this content—a point emphasized in METR’s investigation into the OpenAI–Hugging Face
+incident [179]. As manual analysis becomes less feasible, the need for validating monitoring approaches
+and quantifying their respective biases becomes even more pressing. We explore these challenges and
+different evaluation targets in Section 2g.
+best practices
+• Validate autograders and scanners against human-coded holdouts representative of the intended use case
+with subject matter expert participation.
+• Incorporate targeted manual analysis into automated analysis. In particular, review a subset of the cases a
+judge passed/stopped to quantify how many cases might slip by undetected.
+• Quantify biases in autograder setups, through human-LLM / human-agent agreement and monitor if/when
+training traffic is no longer representative of the object of judgement.
+1i. What can log analysis reveal beyond outcomes?
+Outcomes alone are insufficient for examining agent performance, as they compress an agent’s trajectory
+into metrics that may not fully explain why an agent was successful or not (see Figure 11). Logs—the
+records generated when using an AI system that may include model inputs and outputs, environmental
+interactions, and metadata—offer an opportunity for analyzing evidence from agent trajectories [69, 272].
+Log analysis can prove useful for ensuring construct validity and other potential measurement validity
+concerns. For example, LLM-aided log analysis for the Holistic Agent Leaderboard (HAL) surfaced instances
+of reward hacking and contamination as an agent searched for benchmark answers on Hugging Face [132].
+Log analysis can also assist in addressing challenges to (1) internal validity, (2) external validity, and (3)
+safety evaluation [140, Table 1]. Log analysis enables identification of failure modes, instances where
+shortcuts have been taken, or reward hacking [133, Sec. 5].
+Both manual review and automated analysis are complementary to each other. Manually exploring a log
+sample can help evaluators develop a rubric for later automatic analysis or monitoring. Manual review
+can also help to reveal quality issues hidden by aggregate scores. For example, in METR’s review of its
+evaluation methods, manual review was able to identify that algorithmic scoring had overinflated the
+performance on certain tasks and obscured reward hacking by accessing the answers via GitHub [173].
+However, log analysis has its limitations. First is a question of scale. The sheer volume of agent transcripts,
+particularly in the context of multi-agent interactions, limits the feasibility of manual review and i
+\end{document}

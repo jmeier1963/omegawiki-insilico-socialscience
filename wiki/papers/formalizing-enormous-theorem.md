@@ -1,0 +1,61 @@
+---
+title: "Formalizing the Enormous Theorem"
+slug: formalizing-enormous-theorem
+arxiv: ""
+venue: "Axiom Math (company blog post / formal mathematics release)"
+year: 2026
+tags: [ai-math, formal-reasoning, theorem-proving, multi-agent-systems, lean, group-theory]
+importance: 5
+date_added: "2026-11-02"
+source_type: pdf
+s2_id: ""
+tldr: "Axiom Math released the first complete computer-checked (Lean) proof of the Classification of Finite Simple Groups — widely considered the longest proof in mathematical history (~15,000 pages, 500+ articles, ~100 mathematicians) — produced over 24 days by swarms of dozens of AI agents generating ~43.1 million lines of Lean, which surfaced 34 noteworthy deviations from the published record (most substantially an unjustified closure assumption in the Unbalanced Group Theorem's proof) and yielded a new group-theory result (a 'preservation of simple tops' theorem) needed to re-derive it along a formally sound route."
+contribution_type: [system, theory, method]
+datasets: []
+code_url: ""
+cited_by: []
+---
+
+## Problem & Context
+
+The Classification of Finite Simple Groups (CFSG) identifies the "periodic table" building blocks of all finite groups — cyclic groups of prime order, alternating groups, sixteen infinite families of Lie type, and 26 (or 27) sporadic groups including the Monster — and is widely regarded as the longest mathematical proof ever produced by humans: roughly 15,000 pages across 500+ articles by about 100 mathematicians, developed from Richard Brauer's 1954 involution-centralizer strategy through Daniel Gorenstein's 1972 sixteen-step program to a 1983 announcement that proved premature (a gap in the quasithin case, closed only in 2004 by Aschbacher and Smith's 1,221-page treatment, completing the "first generation proof"). A parallel, more systematic "second generation proof" (Gorenstein, Lyons, Solomon, and later Capdeboscq) remains incomplete after ten-plus volumes. The scale and decades-long dispersion of the literature made the first generation proof unusually difficult to check in its entirety, with Aschbacher himself noting in 2005 that "it is impossible to write out a very long and complicated argument without error."
+
+## Key idea
+
+Formalize the entire first generation proof of CFSG in the Lean proof assistant — not merely some proof of CFSG, but specifically the (complete, if error-prone) first generation proof, since the alternative second generation proof remains unfinished — by coordinating swarms of dozens of AI agents against a shared, explicit "proof map" dividing the project into discrete, dependency-tracked milestones, so that every hypothesis and deduction in the 15,000-page literature is made machine-checkable and every gap must be explicitly closed (by correcting a statement, supplying a missing argument, or substituting an alternative route) before the formalization can proceed past it.
+
+## Method
+
+Beginning October 1, 2026, Axiom built a proof map from the published literature (combined with pre-existing Lean/Mathlib work and ~1.2 million lines incorporated from the existing Qiuzhen-CFSG project) dividing the project into 108 milestones and ~380 smaller tasks; a Slack channel and GitHub issues coordinated agent task-claiming and reporting. AxiomProver's agents divided labor by role — lead agents decomposing difficult arguments and reviewing formalized statements, other agents searching for existing results or concentrating on writing Lean proofs — using a changing mix of underlying models, with human mathematicians investigating mathematical obstructions and engineers maintaining system throughput. The swarm went live October 2. Early milestones were found to conceal large unproven prerequisites that agents had implicitly assumed, requiring deletion of tens of thousands of lines and a dedicated replanning effort (triggered when progress stalled around October 13) that decomposed coarse milestones into smaller, precisely stated theorems with explicit short-Lean-proof justifications for how they would compose into the original milestone. Infrastructure challenges were addressed by distributing cached build results across workers to avoid redundant Lean re-checking as the shared repository grew and externalizing expensive finite-group computations into separately-checkable certificates, which sped verification by orders of magnitude. All 108 milestones were completed by October 25, 24 days after the swarm launched.
+
+## Experiment & Results
+
+The completed formalization produced approximately 43.1 million lines of Lean code establishing the full first generation proof of CFSG, including a October 10 milestone proving the Monster group simple (distinct from, and requiring separate arguments beyond, constructing the Monster via the Griess algebra and recognizing groups of "Monster type"). Checking every dependency surfaced 34 noteworthy deviations from the published record beyond routine typos/table errors/dropped hypotheses, published as a public errata list developed in consultation with CFSG veterans Richard Lyons and Ronald Solomon. The most substantial case involved the Unbalanced Group Theorem (UGT): formalizing John Walter's 1986 proof, agents found an explicit counterexample to a closure assertion the argument relied on — PSL₂(49)'s field involution has centralizer PGL₂(7) with simple component PSL₂(7), which is excluded from Walter's target family because 7 is a Mersenne prime, invalidating the inference without refuting UGT's actual conclusion. Rather than substitute an existing alternative proof route (which risked introducing large additional unformalized dependencies from the second generation literature), Axiom — informed by Solomon's 1976 theory of maximal 2-components via direct consultation with Lyons and Solomon — produced and formalized a new argument yielding a new group-theory result, stated as Theorem 2.3 ("Preservation of simple tops") in an accompanying paper, which combined with Gilman–Solomon's reductions and Foote–Harris's recognition theorems supplies the simple-group form of UGT needed for the classification. (Axiom mathematicians subsequently found a shorter first-generation-compatible deduction, recorded as Remark 9.5, but retained the longer Theorem 2.3 route in the paper since it was the one actually formalized and since it establishes an independently new preservation result.) A smaller example: a quasithin-volume lemma asserting numerical equality (with SL₂(5)) was found false by counterexample (the true relation was an inequality: 1 vs. the asserted 2), requiring a revised case division in later dependent arguments to preserve the final conclusion without relying on the false equality.
+
+## Limitations
+
+- As with the UGT and SL₂(5) cases, formalization surfaces gaps but does not by itself resolve them — closing each required either human mathematical judgment (expert consultation with Lyons and Solomon) or newly developed mathematics (Theorem 2.3), so the project's success rests on a mix of AI-agent labor and irreducible specialist human input rather than being a fully autonomous achievement.
+- The formalization targets specifically the first generation proof (chosen because the second generation proof remains incomplete), meaning the result verifies one historical proof route rather than independently re-deriving CFSG from first principles or validating the (differently organized) second generation proof that the field currently considers more authoritative/readable.
+- The 34-deviation errata list, while made public for community benefit, is explicitly described as still requiring ongoing curation and resolution in partnership with an advisory board (Lyons and Solomon) — the post does not claim the errata process is complete.
+- No independent, third-party verification of the ~43.1M-line Lean development is reported beyond Lean's own type-checker and the involvement of external advisors; as with any large formalization, correctness depends on the formal statement actually expressing the intended mathematical claim, which the post notes is a human-judgment question Lean itself cannot verify ("Lean checks the formal deductions... humans inspect that statement... to confirm it expresses the intended classification").
+- As a company blog post rather than a peer-reviewed paper, claims about agent coordination efficiency, the "orders of magnitude" verification speedup, and the overall narrative of swarm dynamics are self-reported without independent benchmarking.
+
+## Open questions
+
+- Will the broader group-theory and formal-mathematics community independently verify and adopt this Lean formalization (and its public errata list) as the reference formal version of CFSG, or does the first-generation-proof choice limit its long-term authority relative to an eventual formalization of the second generation proof?
+- What generalizable lessons does the swarm-coordination methodology (proof maps, milestone decomposition, distributed build caching, certificate externalization) offer for formalizing other large, decades-old, dispersed mathematical literatures?
+- How much of the 24-day timeline reflects genuine agent-swarm productivity versus the substantial pre-existing scaffolding (Mathlib, the incorporated Qiuzhen-CFSG lines, prior Lean infrastructure) the project built upon?
+- Does the UGT repair's reliance on human expert consultation (Lyons, Solomon) at the most consequential decision point suggest a durable division of labor — AI agents for large-scale mechanical formalization, humans for judgment calls about which mathematical route to take when gaps are found — or could future agent generations close that gap too?
+
+## My take
+
+This is a landmark result for AI-assisted formal mathematics independent of how one weighs the role of AI agents versus human mathematicians in producing it: formalizing the longest proof in mathematical history is a genuine, verifiable, and immediately useful achievement (the proof and its dependency graph are released for inspection, and the errata list is a direct, concrete contribution to the group-theory literature regardless of who or what found the errors). The UGT episode is the paper's most intellectually substantive moment — it shows formalization doing exactly what its proponents claim it should do: not just mechanically checking existing arguments, but surfacing a genuine gap, requiring real new mathematics (a new group-theory theorem) to close, and doing so in direct, acknowledged collaboration with the human mathematicians who built the original classification. This episode is a useful calibration point for the generator-verifier-gap and judgment-reliability questions already active elsewhere in this wiki's AI-for-math literature (cf. [[ten-advances-mathematics-theoretical-computer-science]], and the "Severe Misalignment of AI in Mathematics" concern referenced in that paper's reception): here, the AI-surfaced gap was real, the AI-proposed repair was real new mathematics, and crucially the whole process remained anchored by direct consultation with the field's leading human experts rather than asserted as an autonomous AI achievement — a meaningfully different trust profile than an opaque, unverified AI-claimed result.
+
+## Related
+
+- [[ai-mathematical-discovery]] — extends: a landmark-scale instance of AI-assisted formal mathematics, specifically multi-agent swarm formalization of the longest proof in mathematical history, surfacing real errors and producing new mathematics in the process.
+- [[formalization-driven-error-discovery]]
+- [[multi-agent-swarm-formalization-pipeline]]
+- [[ten-advances-mathematics-theoretical-computer-science]] — compares: both report AI systems producing research-level mathematical results, but this result is independently, mechanically verified by Lean's type-checker and developed with direct, acknowledged human-expert collaboration, a stronger trust profile than an internally-claimed, undisclosed-methodology result.
+- [[co-evolving-evaluator-hardening]] — the Lean type-checker functions as an uncompromising, automated evaluator that will not accept an unjustified step regardless of how the agents frame it, a strong real-world instance of hardened, non-gameable evaluation.
+- [[axiom]]

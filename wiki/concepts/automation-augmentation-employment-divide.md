@@ -4,7 +4,7 @@ aliases: ["entry-level AI displacement", "early-career AI unemployment", "automa
 tags: [ai-labor-market, employment, automation, ai-economics, labor-displacement]
 maturity: emerging
 definition: "The empirical pattern that generative AI reduces employment (especially for early-career workers) in occupations where it automates tasks, but not in those where it augments them, with adjustment occurring through employment rather than wages."
-key_papers: [canaries-coal-mine-six-facts-about, google-ai-economy-atlas-v1-mapping]
+key_papers: [canaries-coal-mine-six-facts-about, google-ai-economy-atlas-v1-mapping, how-employment-changing-anthropic, organizing-intelligence]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [post-labor-economy, self-service-labour-displacement, ai-displacement-market-fragility, ai-adoption-depth-breadth-gap, task-crossover]

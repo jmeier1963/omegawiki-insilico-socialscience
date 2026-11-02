@@ -1,0 +1,43 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{frontierauthors}[2026/09/13 Compact affiliations, roles, and contributions for REVTeX 4.2]
+\RequirePackage{etoolbox,xcolor}
+
+\newcommand{\FP@roles}{}
+\newcommand{\FP@rolekey}{}
+\newcommand*{\FP@contributions}{}
+\DeclareRobustCommand{\AuthorRole}[1]{\def\FP@roles{#1}}
+\newcommand{\AuthorRoleKey}[1]{\gdef\FP@rolekey{#1}}
+\newcommand{\AuthorContributions}[1]{\gdef\FP@contributions{#1}}
+
+\apptocmd{\@affil@present@script}{\ifx\FP@roles\@empty\else
+    \textsuperscript{\ensuremath{,\FP@roles}}\fi
+}{}{\PackageError{frontierauthors}{Cannot attach author role marks}{Use REVTeX 4.2 with superscriptaddress.}}
+
+\apptocmd{\frontmatter@author@produce@script}{\ifx\FP@contributions\@empty
+    \ifx\FP@rolekey\@empty\else
+      \par\smallskip
+      {\centering\normalfont\small\FP@rolekey\par}\fi
+  \fi
+}{}{\PackageError{frontierauthors}{Cannot attach author role key}{Use REVTeX 4.2 with superscriptaddress.}}
+
+\apptocmd{\frontmatter@abstract@produce}{\ifx\FP@contributions\@empty\else
+    \begingroup
+      \normalfont\frontmatter@abstractfont
+      {\centering\color{black!35}\rule{120pt}{0.4pt}\par}\nobreak\smallskip
+      \ifx\FP@rolekey\@empty\else
+        {\centering\FP@rolekey\par}\smallskip
+      \fi
+      \noindent\textit{Author contributions.}\space\FP@contributions\par
+    \endgroup
+  \fi
+}{}{\PackageError{frontierauthors}{Cannot attach contributions after abstract}{Use REVTeX 4.2.}}
+
+\newcommand{\compactaffiliations}{\def\@affil@script##1##2##3##4{\@ifnum{##1=\z@}{}{\begingroup
+        \frontmatter@affiliationfont
+        \@ifnum{\c@affil<\affil@cutoff}{}{\def\@thefnmark{##1}\@makefnmark
+        }\ignorespaces##3\unskip
+        \@if@empty{##4}{}{\frontmatter@footnote{##4}}\ifnum##1<\c@affil;\quad\fi
+      \endgroup
+    }}}
+
+\AtBeginDocument{\@ifpackageloaded{hyperref}{\pdfstringdefDisableCommands{\def\AuthorRole#1{}}}{}}

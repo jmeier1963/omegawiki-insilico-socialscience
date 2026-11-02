@@ -3,9 +3,9 @@ title: "Sociotechnical AI Evaluation"
 aliases: ["holistic AI evaluation", "sociotechnical evaluation framework", "AI assistant evaluation beyond benchmarks", "AI sociotechnical assessment"]
 tags: [ai-evaluation, sociotechnical, ai-ethics, benchmarking, methodology, ai-assistants]
 maturity: emerging
-key_papers: [ethics-advanced-ai-assistants, gdpval-evaluating-ai-model-performance-real]
+key_papers: [ethics-advanced-ai-assistants, gdpval-evaluating-ai-model-performance-real, emerging-trends-ai-agent-evaluation]
 first_introduced: "2024"
-date_updated: 2026-05-06
+date_updated: "2026-11-02"
 related_concepts: [human-ai-relationship-appropriateness]
 ---
 
@@ -54,3 +54,4 @@ Sociotechnical evaluation covers at minimum three levels:
 ## Key papers
 
 - [[ethics-advanced-ai-assistants]] — Gabriel et al. 2024, Google DeepMind; identifies the gap between technical benchmarks and sociotechnical evaluation needs as a central finding
+- [[emerging-trends-ai-agent-evaluation]] — extends this concept to a 33-trend agent-specific taxonomy spanning methodology, scope, and the evaluator ecosystem itself; see [[agent-evaluation-paradigm-shift]]
