@@ -3,7 +3,7 @@ title: "AI Research Productivity Paradox"
 aliases: ["AI science paradox", "AI productivity-diversity tradeoff", "research narrowing paradox", "AI impact-diversity tradeoff"]
 tags: [ai-science, productivity, research-diversity, scientometrics, bibliometrics]
 maturity: emerging
-key_papers: [ai-tools-boost-scientists-impact-narrow, rise-large-language-models-direction-impact, artificial-intelligence-tools-expand-scientists-impact, position-there-futures-benchmark-driven-ai]
+key_papers: [ai-tools-boost-scientists-impact-narrow, rise-large-language-models-direction-impact, artificial-intelligence-tools-expand-scientists-impact, position-there-futures-benchmark-driven-ai, measuring-impact-early-2025-ai-experienced, adoption-impact-command-line-ai-coding]
 first_introduced: "2025"
 date_updated: 2026-07-16
 related_concepts: [ai-science-adoption-gap, knowledge-extent-scientometric-measure]

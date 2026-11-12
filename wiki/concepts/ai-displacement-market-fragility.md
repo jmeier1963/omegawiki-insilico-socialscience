@@ -4,7 +4,7 @@ aliases: ["labor-displacement financial contagion", "passive-flow displacement s
 tags: [ai-economics, financial-markets, passive-investing, systemic-risk, labor-displacement, macro-fragility]
 maturity: emerging
 definition: "The hypothesized transmission channel by which AI-driven displacement of highly-paid knowledge workers propagates into systemic financial instability — via net-negative retirement-fund flows that, amplified by passive-index concentration, force fire-sales of the very AI mega-caps those flows had inflated."
-key_papers: [if-you-thought-global-financial-crisis]
+key_papers: [if-you-thought-global-financial-crisis, transformative-ai-long-term-growth-star]
 first_introduced: "2026"
 date_updated: 2026-06-30
 related_concepts: [self-service-labour-displacement, post-labor-economy, gradual-disempowerment]

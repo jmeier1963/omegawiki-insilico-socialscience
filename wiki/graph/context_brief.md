@@ -36,24 +36,22 @@ _Auto-generated open questions. Do not edit._
 ## Failed Ideas (avoid repeating)
 - AI Safety Commons as Repeated Game: Formal Economic Model — Core formal framework already published. RAND RRA4245-1 (Abraham, Kavner, Moon) provides a formal mathematical model of AGI development as a prisoner's dilemma with conditions on when acceleration becomes dominant and what coordination mechanisms break the equilibrium. arXiv:2501.15280 'Who's Driving? Game Theoretic Path Risk of AGI Development' presents a game-theoretic framework with concrete stabilization mechanisms (pre-registration, shared infrastructure, automated deterrence). The Cooperative AI Foundation has a substantial program on this exact class of problems. The general 'AI race as prisoner's dilemma' framing is standard in policy literature. Differentiation would need to focus on a specific uninvestigated mechanism triplet (e.g., compute governance + mandatory disclosure + joint audit together) or a multi-player repeated game with heterogeneous actors — but this is incremental relative to RAND RRA4245-1.
 - Augmentation Trap Formalization: Conditions for Net-Negative Human Capital Effects — Eliminated at Phase 3: overlaps too closely with active ideas 'bildung-casualty-ai-erosion-scientific-formation' (Bildung-formation hypothesis — AI erodes scientific formation) and 'epistemic-calibration-ai-assisted-science-measuring' (assumption recall deficit). The labor market / organizational context differentiates somewhat, but the formal model structure (conditions under which AI augmentation produces net-negat
-## Papers (453 total)
+## Papers (466 total)
 - [4] Can AI agents conduct open-ended AI research? Early evidence from two case studies — Two frontier agents given six days, $3,000 in API credits and GPU access to answer the central research question of an unpublished NeurIPS 2026 submission completed all the engineering unaided but were unambiguously rejected by the original authors, exposing five recurring failure modes in judgment, exploration and instruction-following.
 - [4] When AI Builds Itself — The Anthropic Institute presents public benchmarks and previously unreported internal data showing AI is already accelerating AI development (>80% of Anthropic's merged code written by Claude, ~8x code per engineer, agents recovering 97% of an open research gap), and argues recursive self-improvement could arrive faster than institutions are prepared for.
 - [4] From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents — A systematic survey organizing LLM-driven social simulation into three progressively-scaled tiers — Individual, Scenario, and Society simulation — each analyzed by architecture/construction, objective/scenario taxonomy, and evaluation method, with catalogued datasets and per-tier historical trend narratives.
+- [4] The Shift to Agentic AI: Evidence from Codex — Large-scale telemetry from OpenAI's Codex shows agentic AI use growing >5x in H1 2026 — fastest outside developers, near-universal inside OpenAI — and shifting work from conversation toward delegated, parallel, increasingly complex production.
 - [4] AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society
 - [3] Beyond Static Responses: Multi-Agent LLM Systems as a New Paradigm for Social Science Research
-- [2] First Steps Toward Automated AI Research — Recursive's automated AI research system, running a propose-implement-run-validate-choose-next loop over long horizons with reward-hack and variance checks, reaches state-of-the-art on three benchmarks: NanoChat Autoresearch (0.9109 BPB), NanoGPT Speedrun (77.5s), and SOL-ExecBench GPU kernels (0.754).
-- [5] Generative Agent Simulations of 1,000 People
-- [5] Generative Agents: Interactive Simulacra of Human Behavior
-- [5] Out of One, Many: Using Language Models to Simulate Huma
-## Recent Relationships (1029 total)
-  papers/securing-frontier-model-training-environment --uses_concept--> concepts/chain-of-thought-monitorability-erosion
-  papers/securing-frontier-model-training-environment --uses_concept--> concepts/frontier-ai-compute-governance
-  papers/securing-frontier-model-training-environment --builds_on--> papers/trust-architecture-super-intelligence
-  papers/formalizing-enormous-theorem --extends_concept--> concepts/ai-mathematical-discovery
-  papers/formalizing-enormous-theorem --introduces_concept--> concepts/formalization-driven-error-discovery
-  papers/formalizing-enormous-theorem --uses_concept--> concepts/co-evolving-evaluator-hardening
-  papers/formalizing-enormous-theorem --same_problem_as--> papers/ten-advances-mathematics-theoretical-computer-science
-  papers/how-employment-changing-anthropic --extends_concept--> concepts/parallel-agent-supervision
-  papers/how-employment-changing-anthropic --extends_concept--> concepts/ai-adoption-depth-breadth-gap
-  papers/how-employment-changin
+- [2] First Steps Toward Automated AI Research — Recursive's automated AI research system, running a propose-implement-run-validate-choose-next loop over long horizons with reward-hack and variance checks, reaches state-of-the-art on 
+## Recent Relationships (1068 total)
+  papers/cognitive-abundance-designing-organization-when-intelligence --uses_concept--> concepts/agent-autonomous-task-horizon
+  papers/state-ai-assisted-software-development-2025 --uses_concept--> concepts/firm-level-ai-complementarities
+  papers/state-ai-assisted-software-development-2025 --uses_concept--> concepts/ai-adoption-depth-breadth-gap
+  papers/kpmg-ai-quarterly-pulse-survey-q2 --uses_concept--> concepts/ai-adoption-depth-breadth-gap
+  papers/kpmg-ai-quarterly-pulse-survey-q2 --uses_concept--> concepts/agentic-enterprise-operations
+  papers/state-ai-2025-agents-innovation-transformation --uses_concept--> concepts/ai-adoption-depth-breadth-gap
+  papers/state-ai-2025-agents-innovation-transformation --uses_concept--> concepts/genai-divide-enterprise-learning-gap
+  papers/adoption-impact-command-line-ai-coding --uses_concept--> concepts/coding-agent-as-a-tool
+  papers/adoption-impact-command-line-ai-coding --uses_concept--> concepts/ai-research-productivity-paradox
+  papers/mea

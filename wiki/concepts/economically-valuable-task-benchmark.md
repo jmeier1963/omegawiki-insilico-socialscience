@@ -4,7 +4,7 @@ aliases: ["GDPval", "occupational deliverable evaluation", "real-world work benc
 tags: [ai-evaluation, benchmark, ai-economics, labor-market, capability-measurement]
 maturity: emerging
 definition: "A benchmark that measures AI capability on representative real-world deliverables drawn from actual occupational work, used as a leading indicator of AI's potential economic impact ahead of adoption."
-key_papers: [gdpval-evaluating-ai-model-performance-real]
+key_papers: [gdpval-evaluating-ai-model-performance-real, remote-labor-index-measuring-ai-automation]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [sociotechnical-ai-evaluation, automation-augmentation-employment-divide, marginal-returns-to-intelligence]

@@ -4,7 +4,7 @@ aliases: ["AI teammate", "AI replicates teamwork", "AI collaboration substitute"
 tags: [human-ai-collaboration, ai-and-work, teamwork, organizational-ai]
 maturity: emerging
 definition: "The finding that generative AI substitutes for specific benefits of human collaboration — matching team-level performance for individuals, bridging functional expertise silos, and partly filling the social/motivational role of a teammate."
-key_papers: [cybernetic-teammate-field-experiment-generative-ai]
+key_papers: [cybernetic-teammate-field-experiment-generative-ai, co-existence-next-phase-ai-reading]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [firm-level-ai-complementarities, human-ai-division-labor-agentic-work, cognitive-abundance]

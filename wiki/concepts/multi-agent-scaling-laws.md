@@ -4,7 +4,7 @@ aliases: ["group agency", "collective superintelligence", "AI group agents", "vi
 tags: [multi-agent, group-agency, collective-intelligence, scaling-laws, asi, emergence]
 maturity: emerging
 definition: "The hypothesis that the intelligence of a coordinated collective of AGI agents scales as a function of agent population size, interaction density, and compute — potentially yielding superintelligence as an emergent group property rather than from a single more-capable model."
-key_papers: [from-agi-to-asi, how-built-multi-agent-research-system]
+key_papers: [from-agi-to-asi, how-built-multi-agent-research-system, mixture-agents-enhances-large-language-model]
 first_introduced: "2026"
 date_updated: 2026-06-26
 related_concepts: [agi-asi-transition, societies-of-thought, software-intelligence-explosion]

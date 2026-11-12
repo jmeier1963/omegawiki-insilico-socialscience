@@ -1813,6 +1813,58 @@ papers:
     title: "YuLan-OneSim: Towards the Next Generation of Social Simulator with Large Language Models"
     tags: [multi-agent-simulation, llm-agents, social-simulation, agent-based-modeling, automated-research, distributed-systems]
     importance: 4
+  - slug: mixture-agents-enhances-large-language-model
+    title: "Mixture-of-Agents Enhances Large Language Model Capabilities"
+    tags: [multi-agent, llm-ensembles, model-collaboration, agent-architecture, benchmark-sota]
+    importance: 4
+  - slug: measuring-impact-early-2025-ai-experienced
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    tags: [developer-productivity, rct, coding-agents, ai-impact-measurement, metr]
+    importance: 5
+  - slug: reasoning-models-don-always-say-what
+    title: "Reasoning Models Don't Always Say What They Think"
+    tags: [chain-of-thought, faithfulness, ai-safety, cot-monitoring, reward-hacking, reasoning-models]
+    importance: 4
+  - slug: language-models-don-always-say-what
+    title: "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting"
+    tags: [chain-of-thought, faithfulness, explainability, ai-safety, sycophancy, bias]
+    importance: 4
+  - slug: remote-labor-index-measuring-ai-automation
+    title: "Remote Labor Index: Measuring AI Automation of Remote Work"
+    tags: [benchmark, labor-automation, agent-evaluation, economic-value, remote-work, freelance]
+    importance: 4
+  - slug: transformative-ai-long-term-growth-star
+    title: "Transformative AI, Long-Term Growth and r-star (BIS Annual Economic Report 2026, Box C)"
+    tags: [macroeconomics, ai-growth, natural-rate-of-interest, demand-bottleneck, labor-share, monetary-policy]
+    importance: 3
+  - slug: co-existence-next-phase-ai-reading
+    title: "Co-Existence: The Next Phase of AI (Reading Highlights)"
+    tags: [jagged-frontier, human-ai-collaboration, ai-scaling, agi, book-notes]
+    importance: 2
+  - slug: system-card-claude-fable-claude-mythos
+    title: "System Card: Claude Fable 5 and Claude Mythos 5"
+    tags: [system-card, frontier-models, ai-safety, rsp-evaluation, cyber-capabilities, alignment-assessment, model-welfare]
+    importance: 4
+  - slug: cognitive-abundance-designing-organization-when-intelligence
+    title: "Cognitive Abundance: Designing the Organization When Intelligence Is No Longer Scarce"
+    tags: [cognitive-abundance, agentic-organization, governance, skill-harness, evaluation, hybrid-human-agent]
+    importance: 3
+  - slug: state-ai-assisted-software-development-2025
+    title: "State of AI-assisted Software Development 2025 (DORA)"
+    tags: [dora, software-delivery, ai-adoption, platform-engineering, developer-productivity, organizational-capabilities]
+    importance: 3
+  - slug: kpmg-ai-quarterly-pulse-survey-q2
+    title: "KPMG AI Quarterly Pulse Survey Q2 2026"
+    tags: [enterprise-ai, survey, ai-cost-management, agent-orchestration, governance, workforce]
+    importance: 2
+  - slug: state-ai-2025-agents-innovation-transformation
+    title: "The State of AI in 2025: Agents, Innovation, and Transformation"
+    tags: [enterprise-ai, survey, ai-agents, scaling, workflow-redesign, ebit-impact, workforce]
+    importance: 3
+  - slug: adoption-impact-command-line-ai-coding
+    title: "Adoption and Impact of Command-Line AI Coding Agents"
+    tags: [coding-agents, adoption, developer-productivity, enterprise-rollout, claude-code, copilot-cli]
+    importance: 3
 
 concepts:
   - slug: agent-autonomous-task-horizon

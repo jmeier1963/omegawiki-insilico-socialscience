@@ -4,7 +4,7 @@ aliases: ["How What Who agent evaluation framework", "agentic evaluation paradig
 tags: [ai-evaluation, agentic-ai, benchmark-validity, evaluation-methodology, evaluator-ecosystem]
 maturity: emerging
 definition: "The claim that evaluating AI agents requires a structural break from outcome-focused single-prompt model evaluation along three dimensions simultaneously: evaluation methodology ('How' — validity, statistical rigor, causal attribution, contamination, LLM judges), evaluation scope ('What' — human-agent interaction, economic impact, dangerous capabilities, systemic/interaction harms), and the evaluator ecosystem itself ('Who' — independence, funding, lab direction, rising costs), because agents can reach identical outcomes via disparate trajectories and act within real-world environments beyond the lab."
-key_papers: [emerging-trends-ai-agent-evaluation]
+key_papers: [emerging-trends-ai-agent-evaluation, remote-labor-index-measuring-ai-automation]
 first_introduced: "2026"
 date_updated: "2026-11-02"
 related_concepts: [sociotechnical-ai-evaluation, economically-valuable-task-benchmark]

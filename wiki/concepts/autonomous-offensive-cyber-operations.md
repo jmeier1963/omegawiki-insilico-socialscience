@@ -4,7 +4,7 @@ aliases: ["AI-orchestrated cyberattack", "agentic cyber intrusion", "autonomous 
 tags: [cybersecurity, agentic-ai, ai-misuse, dual-use, ai-safety]
 maturity: emerging
 definition: "The use of agentic AI to execute the bulk of a multi-stage cyber intrusion — reconnaissance through exfiltration — largely autonomously, with human operators reduced to strategic authorization at escalation gates."
-key_papers: [anatomy-frontier-lab-agent-intrusion-technical, disrupting-first-reported-ai-orchestrated-cyber]
+key_papers: [anatomy-frontier-lab-agent-intrusion-technical, disrupting-first-reported-ai-orchestrated-cyber, system-card-claude-fable-claude-mythos]
 first_introduced: "2025"
 date_updated: 2026-07-05
 related_concepts: [agentic-ai-security-vulnerabilities, llm-uplift-evaluation, agent-interoperability-protocol]

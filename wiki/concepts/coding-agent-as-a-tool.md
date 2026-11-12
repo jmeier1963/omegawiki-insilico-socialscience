@@ -4,7 +4,7 @@ aliases: ["CAT", "weak-to-strong agent oversight", "outer agent directing coding
 tags: [ai-rnd-automation, agent-architecture, weak-to-strong-generalization, post-training, coding-agents]
 maturity: emerging
 definition: "An agent architecture in which a smaller, specifically post-trained 'outer' policy directs a much larger, more capable frontier coding agent as a callable tool, rather than writing code itself — a concrete instance of weak-to-strong oversight in which the smaller model's contribution is judgment and direction, not raw capability."
-key_papers: [training-ai-scientists-replicate-research]
+key_papers: [training-ai-scientists-replicate-research, adoption-impact-command-line-ai-coding]
 first_introduced: "2026"
 date_updated: "2026-09-22"
 related_concepts: [parallel-agent-supervision, research-taste-bottleneck]

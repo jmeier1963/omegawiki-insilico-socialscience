@@ -3,7 +3,7 @@ title: "Agent Autonomous Task Horizon"
 aliases: ["METR task horizon", "autonomous task duration", "AI time horizon", "METR time horizon plot", "agent task duration benchmark"]
 tags: [agentic-ai, benchmark, capability-measurement, metr, autonomous-agents]
 maturity: emerging
-key_papers: [ai-systems-about-start-building-themselves, when-ai-builds-itself, measuring-ai-ability-complete-long-software]
+key_papers: [ai-systems-about-start-building-themselves, when-ai-builds-itself, measuring-ai-ability-complete-long-software, cognitive-abundance-designing-organization-when-intelligence]
 first_introduced: "2023"
 date_updated: 2026-05-05
 related_concepts: [automated-research-pipeline, llm-powered-agent-architecture]

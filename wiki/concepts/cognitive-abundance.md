@@ -4,7 +4,7 @@ aliases: ["zero marginal cost cognition", "cognitive abundance economy", "abunda
 tags: [ai-economics, automation, management-theory, zero-marginal-cost, labor-displacement, organizational-design]
 maturity: emerging
 definition: "An organizational/economic condition in which broadly capable AI drives the marginal cost of a large category of cognitive work — including executive-grade analysis, synthesis, and strategic recommendation — toward zero, inverting the scarcity assumption on which modern firms were architected."
-key_papers: [centaur-organization-redefining-executive-leadership-era, rethinking-organisation-when-knowledge-no-longer, algorithmic-invisible-hand-friction-trust-repricing]
+key_papers: [centaur-organization-redefining-executive-leadership-era, rethinking-organisation-when-knowledge-no-longer, algorithmic-invisible-hand-friction-trust-repricing, cognitive-abundance-designing-organization-when-intelligence]
 first_introduced: "2026"
 date_updated: 2026-06-30
 related_concepts: [self-service-labour-displacement, post-labor-economy, human-ai-division-labor-agentic-work]
